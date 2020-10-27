@@ -14,8 +14,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2020-10-26/imports/uberon_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-10-26</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2020-10-27/imports/uberon_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-10-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -843,6 +843,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <oboInOwl:hasDbXref>RO:0000053</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>bearer_of</oboInOwl:id>
+        <oboInOwl:shorthand>bearer_of</oboInOwl:shorthand>
+        <rdfs:label>bearer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001015 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
@@ -875,6 +887,18 @@
         <oboInOwl:id>located_in</oboInOwl:id>
         <oboInOwl:shorthand>located_in</oboInOwl:shorthand>
         <rdfs:label>located_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002000 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002000">
+        <oboInOwl:hasDbXref>RO:0002000</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>boundary_of</oboInOwl:id>
+        <oboInOwl:shorthand>boundary_of</oboInOwl:shorthand>
+        <rdfs:label>boundary of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2905,7 +2929,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002204"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>OG</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OG</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000043"/>
@@ -3500,7 +3524,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000071"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>ncit:Death is an outcome</owl:annotatedTarget>
-        <oboInOwl:external_ontology>ncit</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncit</oboInOwl:external_ontology>
     </owl:Axiom>
     
 
@@ -9438,7 +9462,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical system that has as its parts the organs devoted to the ingestion, digestion, and assimilation of food and the discharge of residual wastes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Digestive_system"/>
-        <oboInOwl:hasDbXref>FB:gg</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FB:gg</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NLM:alimentary+system</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -12032,7 +12056,7 @@
         <owl:annotatedTarget>A major subdivision of an organism that is the entire part of the organism dorsal to a horizontal plane and bounded on one side by the same transverse plane. In vertebrares this includes the vertebral column..</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Dorsum_(anatomy)"/>
         <oboInOwl:hasDbXref>BSPO:0000063</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UBERONREF:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERONREF:0000006</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001137"/>
@@ -12337,7 +12361,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001434"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>GO defines skeletal system very generically: The skeleton is the bony framework of the body in vertebrates (endoskeleton) or the hard outer envelope of insects (exoskeleton or dermoskeleton) GO:0001501; however, all annotations are to vertebrates</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001434"/>
@@ -12788,7 +12812,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001484"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>check ncita</owl:annotatedTarget>
-        <oboInOwl:external_ontology>ncit</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncit</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001484"/>
@@ -15272,7 +15296,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001776"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>MP treats posterior uvea and optic choroid as distinct</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MP</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>MP</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001776"/>
@@ -16901,7 +16925,7 @@
         <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
         <oboInOwl:external_class>AAO:0011013</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source>XAO:curator</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curator</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001917"/>
@@ -18242,7 +18266,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Muscle tissue that contains fibers that are divided by transverse bands into striations.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CL:0000737</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:mtg_muscle</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -18702,7 +18726,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011825"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>FMA-modified</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA-modified</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002072"/>
@@ -19411,7 +19435,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002099"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>in GO, septum morphogenesis is part of cardiac chamber morphogenesis; need to add axioms to infer this</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002099"/>
@@ -19493,7 +19517,7 @@
         <owl:annotatedTarget>Organism subdivision which is the part of the body posterior to the cervical region (or head, when cervical region not present) and anterior to the caudal region. Includes the sacrum when present.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Torso"/>
         <oboInOwl:hasDbXref>TAO:0001115</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UBERONREF:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERONREF:0000006</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002100"/>
@@ -21817,7 +21841,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://tolweb.org/Chordata/2499"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/25"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/271"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815318960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0815318960</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002328"/>
@@ -23105,7 +23129,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006904"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHDAA2-abduced</oboInOwl:source>
+        <oboInOwl:source>EHDAA2-abduced</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002376"/>
@@ -24864,7 +24888,7 @@
         <oboInOwl:hasDbXref>EHDAA2:0003083</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:24321</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TAO:0001591</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000145</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VSAO:0000145</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0004018</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0001591</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ossified chondrogenic bone</oboInOwl:hasExactSynonym>
@@ -24903,14 +24927,14 @@
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/54"/>
         <oboInOwl:hasDbXref>GO:0001958</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000034</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000145</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VSAO:0000145</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002513"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>Replacement bone that forms within cartilage.[VSAO]</owl:annotatedTarget>
         <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
-        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000145</oboInOwl:external_class>
+        <oboInOwl:external_class>VSAO:0000145</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO</oboInOwl:ontology>
         <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000034, http://dx.plos.org/10.1371/journal.pone.0051070</oboInOwl:source>
         <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSPUB:0000170</oboInOwl:source>
@@ -24925,7 +24949,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002513"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ossified chondrogenic bone</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000145</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VSAO:0000145</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002513"/>
@@ -25164,7 +25188,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002523"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>The tunica intima (or just intima) is the innermost layer of an artery or vein. It is made up of one layer of endothelial cells and is supported by an internal elastic lamina. The endothelial cells are in direct contact with the blood flow. The inner coat (tunica intima) can be separated from the middle by a little maceration, or it may be stripped off in small pieces; but, on account of its friability, it cannot be separated as a complete membrane. It is a fine, transparent, colorless structure which is highly elastic, and, after death, is commonly corrugated into longitudinal wrinkles. The inner coat consists of: A layer of pavement endothelium, the cells of which are polygonal, oval, or fusiform, and have very distinct round or oval nuclei. This endothelium is brought into view most distinctly by staining with silver nitrate. A subendothelial layer, consisting of delicate connective tissue with branched cells lying in the interspaces of the tissue; in arteries of less than 2 mm. in diameter the subendothelial layer consists of a single stratum of stellate cells, and the connective tissue is only largely developed in vessels of a considerable size. An elastic or fenestrated layer, which consists of a membrane containing a net-work of elastic fibers, having principally a longitudinal direction, and in which, under the microscope, small elongated apertures or perforations may be seen, giving it a fenestrated appearance. It was therefore called by Henle the fenestrated membrane. This membrane forms the chief thickness of the inner coat, and can be separated into several layers, some of which present the appearance of a network of longitudinal elastic fibers, and others a more membranous character, marked by pale lines having a longitudinal direction. In minute arteries the fenestrated membrane is a very thin layer; but in the larger arteries, and especially in the aorta, it has a very considerable thickness. [WP,unvetted].[Wikipedia]</owl:annotatedTarget>
-        <oboInOwl:ontology>Wikipedia</oboInOwl:ontology>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://en.wikipedia.org/wiki/Tunica_intima"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -26642,7 +26666,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003071"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>TODO - check that GO&apos;s optic placode is the same as ZFA&apos;s eye primordium; we may want to have separate term for ocular primordium precursor. XAO has both optic field and eye primordium.</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003071"/>
@@ -26993,7 +27017,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A region of embryonic ectodermal cells that lie directly above the notochord. During neurulation, they change shape and produce an infolding of the neural plate (the neural fold) that then seals to form the neural tube[XAO]. The earliest recognizable dorsal ectodermal primordium of the central nervous system present near the end of gastrulation before infolding to form the neural keel; consists of a thickened pseudostratified epithelium[ZFA]</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Neural_plate"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815318960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0815318960</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>OMD:neural+plate</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -27475,7 +27499,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004290"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHDAA2-abduced</oboInOwl:source>
+        <oboInOwl:source>EHDAA2-abduced</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003082"/>
@@ -27634,7 +27658,7 @@
         <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
         <oboInOwl:external_class>AAO:0011044</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source>XAO:curator</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curator</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003084"/>
@@ -35453,7 +35477,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004290"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHDAA2-abduced</oboInOwl:source>
+        <oboInOwl:source>EHDAA2-abduced</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004016"/>
@@ -36424,7 +36448,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004140"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>this term denotes the primary heart field; GO:0003128 denotes the superclass of primary and secondary: specific region of the lateral mesoderm into the area which will form the primary beating heart tube[GO:0003138]</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004140"/>
@@ -36508,7 +36532,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005498"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA-modified</oboInOwl:source>
+        <oboInOwl:source>ZFA-modified</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004141"/>
@@ -38983,7 +39007,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004490"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>in GO, this is equivalent to the atrial myocardium, but FMA distinguishes these two. Consider merging.</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004490"/>
@@ -42369,7 +42393,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>The tissue underlying the tunica mucosa of the pharynx.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/19594009"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:75144</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>pharyngeal submucosa</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pharynx submucosa</oboInOwl:hasExactSynonym>
@@ -42386,7 +42410,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The tissue underlying the tunica mucosa of the pharynx.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
@@ -42412,20 +42436,20 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>tela submucosa pharyngis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>submucous coat of pharynx</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>submucous layer of pharynx</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -42875,7 +42899,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005085"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>in GO, covers optic, otic, olfactory, mammary, hair, tooth, sebaceous - and also insect structures</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
         <oboInOwl:source rdf:resource="https://github.com/geneontology/go-ontology/issues/12223#issuecomment-215692347"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -43448,7 +43472,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005253"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Portion of primordial embryonic connective tissue of the developing head, consisting of mesenchymal cells supported in interlaminar jelly, that derive mostly from the mesoderm and contribute to head connective tissue, bone and musculature in conjunction with cranial neural crest cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0683400088</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0683400088</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MP:0011260</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -47760,7 +47784,7 @@
         <oboInOwl:hasDbXref>EHDAA:385</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:293143</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VHOG:0001641</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0000235</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000235</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cardiogenic splanchnopleure</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>cardiac mesoderm</oboInOwl:hasRelatedSynonym>
@@ -47778,7 +47802,7 @@
         <owl:annotatedTarget>The splanchnic mesoderm in the cardiogenic region where the heart develops; it gives rise to endocardial heart tubes that fuse to form the primordial cardiac tube, the heart primordium[web]. Two migratory heart primordia that move ventrally during the course of neurulation, and then fuse[XAO].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://www.drugs.com/dict/cardiogenic-mesoderm.html"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/insect_neuroanatomy_ontology/issues/7"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0000235</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000235</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007005"/>
@@ -47790,7 +47814,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007005"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>cardiac mesoderm</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0000235</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000235</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007005"/>
@@ -47808,7 +47832,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007005"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>heart primordia</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0000235</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000235</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -50130,7 +50154,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007844"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>TAO still mixes tissue and element</owl:annotatedTarget>
-        <oboInOwl:external_ontology>TAO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007844"/>
@@ -50580,7 +50604,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A transient embryonic complex that comprises the pharyngeal arches, bulges of tissues of mesoderm and neural crest derivation through which pass nerves and pharyngeal arch arteries. The arches are separated internally by pharyngeal pouches, evaginations of foregut endoderm, and externally by pharyngeal clefts, invaginations of surface ectoderm. The development of the system ends when the stucture it contributes to are forming, which may include (depending on species) the thymus, thyroid, parathyroids, maxilla, mandible, aortic arch, cardiac outflow tract, external and middle ear[GO,modified].</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GO:0060037</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008814"/>
@@ -51477,13 +51501,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009494"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget>this represents a part of the entire arch mesenchyme (UBERON:0010046), and is therefore a superclass of the individual arch mesenchyme classes. Alternate definition: primordial embryonic connective tissue associated with the branchial arches, consisting of mesenchymal cells supported in interlaminar jelly, that derive mostly from the mesoderm and contribute to facial and cranial nerve-associated structures.</owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MP:0011262</oboInOwl:source>
+        <oboInOwl:source>MP:0011262</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009494"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>branchial arch mesenchyme</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MP:0011262</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0011262</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009494"/>
@@ -55301,7 +55325,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The part of the trunk that is in the dorsum[cjm].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Human_back"/>
-        <oboInOwl:hasDbXref>UBERONREF:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERONREF:0000006</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011270"/>
@@ -57576,7 +57600,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An anatomical space which is the lumen of some anatomical conduit and connects two or more spaces together[FMA,modified].</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>FMA:9338</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:9338</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>foramen space</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0013686</oboInOwl:id>
@@ -57593,7 +57617,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An anatomical space which is the lumen of some anatomical conduit and connects two or more spaces together[FMA,modified].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
-        <oboInOwl:hasDbXref>FMA:9338</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:9338</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -58718,7 +58742,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Epithelium located in the intersomitic region.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>XAO:0004077</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:EJS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0015179"/>

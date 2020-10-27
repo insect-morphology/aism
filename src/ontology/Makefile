@@ -72,7 +72,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  ro uberon
+IMPORTS =  ro uberon pato bspo pr
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -289,6 +289,36 @@ mirror/uberon.trigger: $(SRC)
 
 mirror/uberon.owl: mirror/uberon.trigger
 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/uberon.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
+## ONTOLOGY: pato
+## Copy of pato is re-downloaded whenever source changes
+mirror/pato.trigger: $(SRC)
+
+mirror/pato.owl: mirror/pato.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/pato.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
+## ONTOLOGY: bspo
+## Copy of bspo is re-downloaded whenever source changes
+mirror/bspo.trigger: $(SRC)
+
+mirror/bspo.owl: mirror/bspo.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/bspo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
+## ONTOLOGY: pr
+## Copy of pr is re-downloaded whenever source changes
+mirror/pr.trigger: $(SRC)
+
+mirror/pr.owl: mirror/pr.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/pr.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
