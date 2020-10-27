@@ -9,18 +9,81 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aism.owl>
-Import(<http://purl.obolibrary.org/obo/aism/releases/2020-10-21/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/aism/imports/pr_import.owl>)
+Import(<http://purl.obolibrary.org/obo/aism/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl>)
 Annotation(dce:description "Ontology about the skeletomuscular system of insects")
 Annotation(dce:title "Anatomy Ontology of Insect Skeletomuscular System")
 Annotation(dcterms:license <CC-BY>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_00000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000402>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000404>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000407>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000411>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000591>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000592>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001154>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001171>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001355>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001369>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001543>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001748>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001873>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002539>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PR_Q9V7U0>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001134>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_6007284>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000009>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000010>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000011>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000012>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PATO_0000642>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001018>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002000>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002008>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002219>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002220>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/pato#different_in_magnitude_relative_to>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/pato#similar_in_magnitude_relative_to>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/AISM_0000009> (proximal_to)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000009> "proximal_to"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/AISM_0000010> (distal_to)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000010> "distal_to"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/AISM_0000011> (lateral_to)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000011> "lateral_to"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/AISM_0000012> (medial_to)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000012> "medial_to"@en)
 
 
 
@@ -31,6 +94,54 @@ Declaration(AnnotationProperty(dcterms:license))
 # Class: <http://purl.obolibrary.org/obo/AISM_00000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_00000000> "root node"@en)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000002> (articulation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000002> "articulation"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000002> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000003>)))))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000003> (sclerite)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000003> "sclerite"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000003> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000004> (conjunctiva)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000004> "conjunctiva"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000005> (cuticular depression)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000005> "cuticular depression"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000005> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000006> (cuticular invagination)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000006> "cuticular invagination"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000006> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000007> (elastic cuticle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000007> "elastic cuticle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000007> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000008> (cuticular protrusion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000008> "cuticular protrusion"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000008> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000013> (evaginated)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000013> "evaginated"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000013> <http://purl.obolibrary.org/obo/PATO_0001355>)
 
 
 )
