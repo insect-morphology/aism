@@ -27,6 +27,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000402>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000404>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000407>))
@@ -142,6 +146,26 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000008> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000013> "evaginated"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000013> <http://purl.obolibrary.org/obo/PATO_0001355>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000014> (cranio-mandibular articulation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000014> "cranio-mandibular articulation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000014> <http://purl.obolibrary.org/obo/AISM_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000015> (cranio-cardinal articulation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000015> "cranio-cardinal articulation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000015> <http://purl.obolibrary.org/obo/AISM_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000016> (cranio-antennal articulation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000016> "cranio-antennal articulation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000016> <http://purl.obolibrary.org/obo/AISM_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000017> (head-cervical articulation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000017> "head-cervical articulation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000017> <http://purl.obolibrary.org/obo/AISM_0000002>)
 
 
 )
