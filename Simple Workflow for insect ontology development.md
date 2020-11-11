@@ -18,9 +18,9 @@ You will be editing this owl file in your computer using Protégé, for which yo
 
 Setup Protégé to auto generate IRI-s:
 
-'File > Preferences > New entities'
+`File > Preferences > New entities`
 
-Specified IRI: 'http://purl.obolibrary.org/obo/'
+Specified IRI: `http://purl.obolibrary.org/obo/`
 
 Set language to ‘en’, digit count to 7
 
@@ -34,20 +34,20 @@ Setup a new import
 
 1. add imports to src/ontology/aism-odk.yaml
 
-'import_group:
+`import_group:
   products:
     - id: ro
     - id: uberon
     - id: pato
-    - id: bspo'
+    - id: bspo`
 
-2. in terminal 'sh run.sh make update_repo' (in src/ontology)
+2. in terminal `sh run.sh make update_repo` (in src/ontology)
 
-'I-Miko-mbp:ontology istvanmiko$ sh run.sh make update_repo'
+`I-Miko-mbp:ontology istvanmiko$ sh run.sh make update_repo`
 
 3. open aism-edit.owl in text editor to add import statement:
 
-'Prefix(:=<http://purl.obolibrary.org/obo/aism.owl#>)
+`Prefix(:=<http://purl.obolibrary.org/obo/aism.owl#>)
 
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 
@@ -61,7 +61,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
-Prefix(dcterms:=<http://purl.org/dc/terms/>)'
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aism.owl>
@@ -71,7 +71,7 @@ Import(<http://purl.obolibrary.org/obo/aism/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl>)
 Annotation(dce:description "Ontology about the skeletomuscular system of insects")
 Annotation(dce:title "Anatomy Ontology of Insect Skeletomuscular System")
-Annotation(dcterms:license <CC-BY>)
+Annotation(dcterms:license <CC-BY>)`
 
 4. open catalog-v001.xml in text editor and add import statement
 
