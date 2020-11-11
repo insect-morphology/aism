@@ -18,81 +18,128 @@ You will be editing this owl file in your computer using Protégé, for which yo
 
 Setup Protégé to auto generate IRI-s:
 
-File > Preferences > New entities
+`File > Preferences > New entities`
 
-Specified IRI: http://purl.obolibrary.org/obo/
+Specified IRI: `http://purl.obolibrary.org/obo/`
 
 Set language to ‘en’, digit count to 7
+
+ <p align="left">
+  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%207.07.48%20AM.png" width="500" title="hover text">
+</p>  
 
 Importing terms from existing ontologies:
 
 Setup a new import
 
-##1. add imports to src/ontology/aism-odk.yaml
+1. add imports to src/ontology/aism-odk.yaml
 
-import_group:
+`import_group:
   products:
     - id: ro
     - id: uberon
     - id: pato
-    - id: bspo
+    - id: bspo`
 
-##2. in terminal sh run.sh make update_repo (in src/ontology)
+2. in terminal `sh run.sh make update_repo` (in src/ontology)
 
-I-Miko-mbp:ontology istvanmiko$ sh run.sh make update_repo
+`I-Miko-mbp:ontology istvanmiko$ sh run.sh make update_repo`
 
-##3. open aism-edit.owl in text editor to add import statement:
+3. open aism-edit.owl in text editor to add import statement:
 
-Prefix(:=<http://purl.obolibrary.org/obo/aism.owl#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dcterms:=<http://purl.org/dc/terms/>)
+`Prefix(:=<http://purl.obolibrary.org/obo/aism.owl#>)`
 
+`Prefix(dce:=<http://purl.org/dc/elements/1.1/>)`
 
-Ontology(<http://purl.obolibrary.org/obo/aism.owl>
-Import(<http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl>)
-Import(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>)
-Import(<http://purl.obolibrary.org/obo/aism/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl>)
-Annotation(dce:description "Ontology about the skeletomuscular system of insects")
-Annotation(dce:title "Anatomy Ontology of Insect Skeletomuscular System")
-Annotation(dcterms:license <CC-BY>)
+`Prefix(owl:=<http://www.w3.org/2002/07/owl#>)`
 
-##4. open catalog-v001.xml in text editor and add import statement
+`Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)`
 
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+`Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)`
+
+`Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)`
+
+`Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)`
+
+`Prefix(dcterms:=<http://purl.org/dc/terms/>)`
 
 
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl" uri="imports/bspo_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/bspo_import.obo" uri="imports/bspo_import.obo"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/pato_import.owl" uri="imports/pato_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/pato_import.obo" uri="imports/pato_import.obo"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+`Ontology(<http://purl.obolibrary.org/obo/aism.owl>`
+`Import(<http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl>)`
+`Import(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>)`
+`Import(<http://purl.obolibrary.org/obo/aism/imports/ro_import.owl>)`
+`Import(<http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl>)`
+`Annotation(dce:description "Ontology about the skeletomuscular system of insects")`
+`Annotation(dce:title "Anatomy Ontology of Insect Skeletomuscular System")`
+`Annotation(dcterms:license <CC-BY>)`
+
+4. open catalog-v001.xml in text editor and add import statement
+
+`<?xml version="1.0" encoding="UTF-8" standalone="no"?>`
+`<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">`
+
+
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl" uri="imports/bspo_import.owl"/>`
+ `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/bspo_import.obo" uri="imports/bspo_import.obo"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/pato_import.owl" uri="imports/pato_import.owl"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/pato_import.obo" uri="imports/pato_import.obo"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/ro_import.owl" uri="imports/ro_import.owl"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/ro_import.obo" uri="imports/ro_import.obo"/>`
 
 
 </catalog>
 
 
-##5. terminal sh run.sh make imports/obi_import.owl
+5. terminal `sh run.sh make imports/obi_import.owl`
 
-I-Miko-mbp:ontology istvanmiko$ ./run.sh make all_imports
+`I-Miko-mbp:ontology istvanmiko$ ./run.sh make all_imports`
 
-##6. open maxo-edit.owl in protege and run reasoner to look for unsatisfiable classes
+6. open `maxo-edit.owl` in protege and run reasoner to look for unsatisfiable classes
 
 
 Once imports are set up
 
-##7. Find your term online and copy its IRI
+7. Find your term online and copy its IRI
 
 In Protégé: add subclass
+
+ <p align="left">
+  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.20%20AM.png" width="500" title="hover text">
+</p>  
+
+Which opens a new window:
+
+<p align="left">
+  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.27%20AM.png" width="500" title="hover text">
+</p>  
+
+8. Paste your link to the Name field and click OK
+
+<p align="left">
+  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.34%20AM.png" width="500" title="hover text">
+ </p>  
+ 
+ The term will now be listed under Thing.
+
+9. Save the `AISM.owl` file and run the following script in terminal in the src/ontology folder:
+
+
+`./run.sh make all_imports`
+
+If you try to import from a larger ontology (like PR, protein ontology) the process might take an extreme long time and might eventually be terminated (like when I tried to import resilin from PR). In this case, it is perhaps best to simply start with 7 (without importing the ontology), so the term will have an iri, but will just hang on Thing.
+
+Additional resources can be found at: [https://go-protege-tutorial.readthedocs.io/en/latest/](https://go-protege-tutorial.readthedocs.io/en/latest/)
+
+
+
+
+
+
+
+
+
 
 
 ## Contact
