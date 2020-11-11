@@ -25,7 +25,7 @@ Specified IRI: http://purl.obolibrary.org/obo/
 Set language to ‘en’, digit count to 7
 
  <p align="left">
-  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%207.07.48%20AM.png" width="100" title="hover text">
+  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%207.07.48%20AM.png" width="500" title="hover text">
 </p>  
 
 Importing terms from existing ontologies:
@@ -99,19 +99,19 @@ Once imports are set up
 In Protégé: add subclass
 
  <p align="left">
-  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.20%20AM.png" width="100" title="hover text">
+  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.20%20AM.png" width="500" title="hover text">
 </p>  
 
 Which opens a new window:
 
 <p align="left">
-  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.27%20AM.png" width="100" title="hover text">
+  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.27%20AM.png" width="500" title="hover text">
 </p>  
 
 8. Paste your link to the Name field and click OK
 
 <p align="left">
-  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.34%20AM.png" width="100" title="hover text">
+  <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.34%20AM.png" width="500" title="hover text">
  </p>  
  
  The term will now be listed under Thing.
