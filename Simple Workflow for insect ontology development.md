@@ -79,24 +79,24 @@ Setup a new import
 `<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">`
 
 
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl" uri="imports/bspo_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/bspo_import.obo" uri="imports/bspo_import.obo"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/pato_import.owl" uri="imports/pato_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/pato_import.obo" uri="imports/pato_import.obo"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl" uri="imports/bspo_import.owl"/>`
+ `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/bspo_import.obo" uri="imports/bspo_import.obo"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/pato_import.owl" uri="imports/pato_import.owl"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/pato_import.obo" uri="imports/pato_import.obo"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/ro_import.owl" uri="imports/ro_import.owl"/>`
+  `<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/ro_import.obo" uri="imports/ro_import.obo"/>`
 
 
 </catalog>
 
 
-5. terminal sh run.sh make imports/obi_import.owl
+5. terminal `sh run.sh make imports/obi_import.owl`
 
-I-Miko-mbp:ontology istvanmiko$ ./run.sh make all_imports
+`I-Miko-mbp:ontology istvanmiko$ ./run.sh make all_imports`
 
-6. open maxo-edit.owl in protege and run reasoner to look for unsatisfiable classes
+6. open `maxo-edit.owl` in protege and run reasoner to look for unsatisfiable classes
 
 
 Once imports are set up
@@ -123,14 +123,14 @@ Which opens a new window:
  
  The term will now be listed under Thing.
 
-9. Save the AISM.owl file and run the following script in terminal in the src/ontology folder:
+9. Save the `AISM.owl` file and run the following script in terminal in the src/ontology folder:
 
 
-10. ./run.sh make all_imports
+`./run.sh make all_imports`
 
 If you try to import from a larger ontology (like PR, protein ontology) the process might take an extreme long time and might eventually be terminated (like when I tried to import resilin from PR). In this case, it is perhaps best to simply start with 7 (without importing the ontology), so the term will have an iri, but will just hang on Thing.
 
-Additional resources can be found at: https://go-protege-tutorial.readthedocs.io/en/latest/ 
+Additional resources can be found at: [https://go-protege-tutorial.readthedocs.io/en/latest/](https://go-protege-tutorial.readthedocs.io/en/latest/)
 
 
 
