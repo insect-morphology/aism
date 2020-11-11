@@ -147,12 +147,25 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000135>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000136>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000137>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000138>))
-Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000139>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000142>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000143>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000144>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000145>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000146>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000147>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000148>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000149>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000151>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000152>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000153>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000154>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000155>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000156>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000157>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000158>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -271,6 +284,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/AISM_0000005> (cuticular depression)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000005> "cuticular depression"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/AISM_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035159>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001857>))))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000005> <http://purl.obolibrary.org/obo/UBERON_6007284>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
 
@@ -926,7 +940,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000125> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000126> "socket membrane"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000126> <http://purl.obolibrary.org/obo/AISM_0000004>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000126> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000039>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000126> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000127>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000126> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/CL_0000066>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000127> (unicellular cuticular evagination)
@@ -945,11 +959,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000128> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000130> "uniporous sensillum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000130> <http://purl.obolibrary.org/obo/AISM_0000127>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000130> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000134>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000131> (multiporous sensillum)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000131> "multiporous sensillum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000131> <http://purl.obolibrary.org/obo/AISM_0000127>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000131> ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000134>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000132> (placoid)
 
@@ -961,11 +977,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000132> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000133> "multiporous plate"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000133> <http://purl.obolibrary.org/obo/AISM_0000127>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000407>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000134> (exocrine gland duct)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000134> "exocrine gland duct"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000134> <http://purl.obolibrary.org/obo/AISM_0000136>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000134> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000140>)))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000135> (spiracle)
 
@@ -989,11 +1007,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000137> <http://purl.obolibrary
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000138> "apophysis"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000138> <http://purl.obolibrary.org/obo/AISM_0000006>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000138> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001873>))))
-
-# Class: <http://purl.obolibrary.org/obo/AISM_0000139> (pore canal)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000139> "pore canal"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000139> <http://purl.obolibrary.org/obo/AISM_0000006>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000140> (taenidium)
 
@@ -1024,6 +1037,90 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000143> ObjectSomeValuesFrom(<h
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000144> "furca"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000144> <http://purl.obolibrary.org/obo/AISM_0000138>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000144> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000061>))))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000145> (procoxal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000145> "procoxal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000145> <http://purl.obolibrary.org/obo/AISM_0000086>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000145> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000066>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000146> (metacoxal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000146> "metacoxal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000146> <http://purl.obolibrary.org/obo/AISM_0000086>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000146> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000065>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000147> (femoral muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000147> "femoral muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000147> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000147> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000076>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000148> (tibial muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000148> "tibial muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000148> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000149> (muscle of the tarsal claw)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000149> "muscle of the tarsal claw"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000149> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000149> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000047>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000150> (profemoral muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000150> "profemoral muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000150> <http://purl.obolibrary.org/obo/AISM_0000147>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000150> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000070>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000151> (mesofemoral muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000151> "mesofemoral muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000151> <http://purl.obolibrary.org/obo/AISM_0000147>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000151> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000071>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000152> (metafemoral muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000152> "metafemoral muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000152> <http://purl.obolibrary.org/obo/AISM_0000147>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000072>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000153> (protibial muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000153> "protibial muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000153> <http://purl.obolibrary.org/obo/AISM_0000148>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000153> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000067>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000154> (mesotibial muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000154> "mesotibial muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000154> <http://purl.obolibrary.org/obo/AISM_0000148>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000154> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000068>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000155> (metatibial muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000155> "metatibial muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000155> <http://purl.obolibrary.org/obo/AISM_0000148>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000069>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000156> (fovea)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000156> "fovea"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000156> <http://purl.obolibrary.org/obo/AISM_0000005>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000156> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/AISM_0000138>)))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000411>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000157> (impression)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000157> "impression"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000157> <http://purl.obolibrary.org/obo/AISM_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000158> (ridge)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000158> "ridge"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000158> <http://purl.obolibrary.org/obo/AISM_0000006>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000003>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001154>))
 
 
 )
