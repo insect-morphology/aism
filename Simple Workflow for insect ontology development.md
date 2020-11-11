@@ -128,6 +128,12 @@ Which opens a new window:
 
 `./run.sh make all_imports`
 
+or
+
+`sh run.sh make imports/cl_import.owl`
+
+for specific ontologies. The latter is recommended if numerous ontologies, including bigger ones (like PR) is used as the system will not import all but the selected ontology (in that case CL, the cell ontology).
+
 If you try to import from a larger ontology (like PR, protein ontology) the process might take an extreme long time and might eventually be terminated (like when I tried to import resilin from PR). In this case, it is perhaps best to simply start with 7 (without importing the ontology), so the term will have an iri, but will just hang on Thing.
 
 Additional resources can be found at: [https://go-protege-tutorial.readthedocs.io/en/latest/](https://go-protege-tutorial.readthedocs.io/en/latest/)
