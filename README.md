@@ -3,7 +3,8 @@
 
 # Anatomy Ontology of Insect Skeletomuscular System
 
-Multispecies insect anatomy ontologies are used as bases for robust knowledge bases for specific anatomical terms ([Yoder et al. 2010](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015991), [HAO Portal](http://portal.hymao.org/projects/32/public/ontology/)), improve the accessibility of morphology descriptions ([Balhoff et al. 2014](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0094056)), and are useful for improving the modeling of discrete morphological characters in phylogenetic context ([Tarasov 2020](https://doi.org/10.1093/sysbio/syz050 )).
+Multispecies insect anatomy ontologies are used as bases for robust knowledge bases for specific anatomical terms ([Yoder et al. 2010](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015991), [HAO Portal](http://portal.hymao.org/projects/32/public/ontology/)), improve the accessibility of morphology descriptions ([Balhoff et al. 2014](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0094056)), and are useful for improving the modeling of discrete morphological characters in phylogenetic context ([Tarasov 2019a](https://academic.oup.com/sysbio/article/68/5/698/5298740), [2019bb](https://academic.oup.com/isd/article/3/6/1/5584145)).
+
 
 There are two major reasons why insects are poorly represented amongst multispecies anatomy ontologies: lack of a base insect anatomy ontology and the lack of infrastructure to build such resource.
 
