@@ -47,36 +47,36 @@ Setup a new import
 
 3. open aism-edit.owl in text editor to add import statement:
 
-`Prefix(:=<http://purl.obolibrary.org/obo/aism.owl#>)
+`Prefix(:=<http://purl.obolibrary.org/obo/aism.owl#>)`
 
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+`Prefix(dce:=<http://purl.org/dc/elements/1.1/>)`
 
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+`Prefix(owl:=<http://www.w3.org/2002/07/owl#>)`
 
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+`Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)`
 
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+`Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)`
 
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+`Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)`
 
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+`Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)`
 
-Prefix(dcterms:=<http://purl.org/dc/terms/>)
+`Prefix(dcterms:=<http://purl.org/dc/terms/>)`
 
 
-Ontology(<http://purl.obolibrary.org/obo/aism.owl>
-Import(<http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl>)
-Import(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>)
-Import(<http://purl.obolibrary.org/obo/aism/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl>)
-Annotation(dce:description "Ontology about the skeletomuscular system of insects")
-Annotation(dce:title "Anatomy Ontology of Insect Skeletomuscular System")
-Annotation(dcterms:license <CC-BY>)`
+`Ontology(<http://purl.obolibrary.org/obo/aism.owl>`
+`Import(<http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl>)`
+`Import(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>)`
+`Import(<http://purl.obolibrary.org/obo/aism/imports/ro_import.owl>)`
+`Import(<http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl>)`
+`Annotation(dce:description "Ontology about the skeletomuscular system of insects")`
+`Annotation(dce:title "Anatomy Ontology of Insect Skeletomuscular System")`
+`Annotation(dcterms:license <CC-BY>)`
 
 4. open catalog-v001.xml in text editor and add import statement
 
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+`<?xml version="1.0" encoding="UTF-8" standalone="no"?>`
+`<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">`
 
 
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
