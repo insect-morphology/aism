@@ -3,7 +3,8 @@
 
 # Anatomy Ontology of Insect Skeletomuscular System
 
-This ontology... YOUR DESCRIPTION HERE
+The Anatomy of Insect Skeletomuscular System, contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system in insect biodiversity research. The cuticle is the product of the single layer epithelium and mirrors changes in the morphology of this single sheet (like  a blanket). 
+
 
 More information can be found at http://obofoundry.org/ontology/aism
 
