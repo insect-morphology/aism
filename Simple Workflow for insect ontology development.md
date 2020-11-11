@@ -24,7 +24,9 @@ Specified IRI: http://purl.obolibrary.org/obo/
 
 Set language to ‘en’, digit count to 7
 
-https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%207.07.48%20AM.png
+![alt text](https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%207.07.48%20AM.png?raw=true)
+
+
 
 ## Contact
 
