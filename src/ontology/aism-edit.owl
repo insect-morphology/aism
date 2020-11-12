@@ -166,6 +166,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000155>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000156>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000157>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000158>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000159>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000160>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000161>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000162>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000163>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000164>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -276,7 +282,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000004> "conjunctiva"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> <http://purl.obolibrary.org/obo/UBERON_6007284>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000003>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/AISM_0000003>))))))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000003>))
@@ -565,7 +570,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000058> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000059> "pronotum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000066>)))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000098>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000098>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000121>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000145>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0002376>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000060> (propeluron)
 
@@ -573,6 +583,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000060> "pr
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000060> <http://purl.obolibrary.org/obo/AISM_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000106>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000121>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000145>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0002376>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000061> (prosternum)
 
@@ -818,6 +830,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000104> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000105> "epipharynx"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000105> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000099>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000042>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000106> (basal procoxal conjunctiva)
@@ -833,17 +846,22 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> <http://purl.obolibrary
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/UBERON_0000955>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000032>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/UBERON_0003128>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0000108>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000097> <http://purl.obolibrary.org/obo/AISM_0000098>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000108> (thorax)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000108> "thorax"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000108> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000031>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000085>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000145>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000098>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000109> (abdomen)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000109> "abdomen"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000109> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000108>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000110> (stipito-cardinal conjunctiva)
 
@@ -1121,6 +1139,41 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000158> "ri
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000158> <http://purl.obolibrary.org/obo/AISM_0000006>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000003>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001154>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000159> (salivarium)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000159> "salivarium"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000159> <http://purl.obolibrary.org/obo/AISM_0000160>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000159> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000087>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000159> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000093>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000159> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000134>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000160> (pouch)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000160> "pouch"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000160> <http://purl.obolibrary.org/obo/AISM_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000161> (discrimenal lamella)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000161> "discrimenal lamella"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000161> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000162> (sulcus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000162> "sulcus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000162> <http://purl.obolibrary.org/obo/AISM_0000005>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000162> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/AISM_0000158>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000163> (discrimen)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000163> "discrimen"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000163> <http://purl.obolibrary.org/obo/AISM_0000162>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000164> (mouthparts)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000164> "mouthparts"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000164> <http://purl.obolibrary.org/obo/UBERON_6007284>)
 
 
 )
