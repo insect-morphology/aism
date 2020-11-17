@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/imports/bspo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2020-11-11/imports/bspo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-11-11</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2020-11-17/imports/bspo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-11-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -290,6 +290,28 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000104"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Crosses at an angle that is 90 degrees, or close to 90 degrees. In any non-linear organism, the main axes are rarely perpendicular when taken through the organism as a whole.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000106 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BSPO_0000106">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000113"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <obo:IAO_0000115>On the opposite side from. For example, the left arm is contralateral to the right arm (and the right leg).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>BSPO:0000106</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>spatial</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>contralateral_to</oboInOwl:id>
+        <oboInOwl:shorthand>contralateral_to</oboInOwl:shorthand>
+        <rdfs:label>contralateral to</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/FBql_00005851"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>On the opposite side from. For example, the left arm is contralateral to the right arm (and the right leg).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
