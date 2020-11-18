@@ -177,6 +177,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000167>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000168>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000169>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000170>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000172>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000173>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -223,9 +225,29 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/pato#decreased_in_mag
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/pato#different_in_magnitude_relative_to>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/pato#similar_in_magnitude_relative_to>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/AISM_0000171>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/AISM_0000171> (sensu)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000115> "This annotation property defines a \"sensu\", that is the combination of a reference, label and class (represented by verbatime and logic definitions). Given this model, independent observations can be inferred across to compute synonymy (multiple labels attached to one ), homonymy (one label is attached to multiple classes). https://doi.org/10.1371/journal.pone.0015991.g004
+
+This annotation property is on the label of a class in owl") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000171> "sensu"@en)
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000171> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (curator note)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000232> "curator note")
+
 
 ############################
 #   Object Properties
@@ -239,9 +261,9 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000011> "la
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000012> "medial_to"@en)
 
-# Object Property: <http://purl.obolibrary.org/obo/AISM_0000078> (encircle)
+# Object Property: <http://purl.obolibrary.org/obo/AISM_0000078> (encircles)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000078> "encircle"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000078> "encircles"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/RO_0002150>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000079>)
 
@@ -276,6 +298,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000004> (conjunctiva)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000004> "The regions of the insect cuticle that are less flexible than the sclerites that they are continuous with.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000004> "Today, micro-CT based methods cannot be used to differentiate slcerites from conjunctiuvae. CLSM (the excitation wavelengths of sclerites and conjunctivae are different in response of 488 nm emission vawelength), histological sections or simple dissections need to be applied to define relative flexibility of the insect cuticle.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000004> "conjunctiva"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> <http://purl.obolibrary.org/obo/UBERON_6007284>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))
@@ -403,6 +427,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000028> ObjectComplementOf(Obje
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000029> (appendage)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000029> "The evagination of the cuticle that is musculated (connected to the body via muscles).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000029> "appendage"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000029> <http://purl.obolibrary.org/obo/AISM_0000128>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001134>))
@@ -449,7 +474,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000036> <http://purl.obolibrary
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000037> "fore wing"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000037> <http://purl.obolibrary.org/obo/AISM_0000033>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000052>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000053>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000038> (hind wing)
 
@@ -505,9 +529,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000045> <http://purl.obolibrary
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000046> "second valvula"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000046> <http://purl.obolibrary.org/obo/AISM_0000029>)
 
-# Class: <http://purl.obolibrary.org/obo/AISM_0000047> (tarsal claw)
+# Class: <http://purl.obolibrary.org/obo/AISM_0000047> (pretarsus)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000047> "tarsal claw"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000047> "pretarsus"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000047> <http://purl.obolibrary.org/obo/AISM_0000029>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000048> (ligula)
@@ -821,15 +845,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000102> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000103> (basal mesocoxal conjunctiva)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000103> "")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000103> "basal mesocoxal conjunctiva"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000103> <http://purl.obolibrary.org/obo/AISM_0000004>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000064>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000103> <http://purl.obolibrary.org/obo/AISM_0000173>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000064>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000104> (basal metacoxal conjunctiva)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000104> "basal metacoxal conjunctiva"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000104> <http://purl.obolibrary.org/obo/AISM_0000004>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000065>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000104> <http://purl.obolibrary.org/obo/AISM_0000173>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000065>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000105> (epipharynx)
 
@@ -841,8 +866,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000105> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/AISM_0000106> (basal procoxal conjunctiva)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000106> "basal procoxal conjunctiva"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000106> <http://purl.obolibrary.org/obo/AISM_0000004>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000066>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000106> <http://purl.obolibrary.org/obo/AISM_0000173>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000066>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000107> (head)
 
@@ -885,6 +910,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000111> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000112> (basal antennal conjunctiva)
 
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000112> "This conjunctiva encircle the base of the antenna (scape) and is encircled by the cranium as the antennal foramen.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000112> "")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000112> "basal antennal conjunctiva"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000112> <http://purl.obolibrary.org/obo/AISM_0000004>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000113>))
@@ -952,7 +979,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000123> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000124> "basal mesofemoral conjunctiva"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000124> <http://purl.obolibrary.org/obo/AISM_0000004>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000071>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000071>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000064>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000125> (basal metafemoral conjunctiva)
 
@@ -1000,7 +1028,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000132> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/AISM_0000133> (multiporous plate)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000133> "multiporous plate"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000133> <http://purl.obolibrary.org/obo/AISM_0000127>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000133> <http://purl.obolibrary.org/obo/AISM_0000131>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000407>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000134> (exocrine gland duct)
@@ -1213,6 +1241,22 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000169> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000170> "metapectus"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000170> <http://purl.obolibrary.org/obo/AISM_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000172> (apical tarsal conjunctiva)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000172> "The distalmost conjunctiva at the tarsus that encircles the pretarsus and encricled by the apicalmost tarsomere.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000172> "")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000172> "apical tarsal conjunctiva"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000172> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000172> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000047>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000173> (basal coxal conjunctiva)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000173> "The conjunctiva that encircles the coxae and connectes them to the ventral and lateral thoracic regions.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000173> "These conjunctivae can be used as stable reference points in insects that poseess legs, and can be used to define sclerites on the lateral side of the thorax.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000173> "basal coxal conjunctiva"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000173> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000173> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000077>))))
 
 
 )
