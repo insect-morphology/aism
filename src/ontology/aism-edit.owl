@@ -292,13 +292,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000002> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000003> (sclerite)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000003> "The region of the insect cuticle that is less flexible than the neighboring conjunctiva(e) (conjunctiva(e) that the sclerite is continuous with).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000003> "sclerite"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000003> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/AISM_0000004>))))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000004> (conjunctiva)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000004> "The regions of the insect cuticle that are less flexible than the sclerites that they are continuous with.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000004> "The region of the insect cuticle that is more flexible than the neighboring sclerite(s) (sclerite(s) that the conjunctiva is continuous with).")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000004> "Conjunctivae are more flexible and usually less thick than sclerties of the cuticle allowing the sclerites to move relative to each other.
 Micro-CT based methods cannot be used to accuirately to differentiate slcerites from conjunctiuvae. CLSM (the excitation wavelengths of sclerites and conjunctivae are different in response of 488 nm emission vawelength), histological sections or simple dissections need to be applied to define relative flexibility of the insect cuticle.
 
@@ -604,6 +605,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000057> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000058> "prepectus"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000058> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000671> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000059>))))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000059> (pronotum)
 
@@ -765,6 +767,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000085> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000086> (coxal muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000086> "All of the coxal muscles, except the second steranl-metacoxal muscle, are attached to the thorax.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") rdfs:comment <http://purl.obolibrary.org/obo/AISM_0000086> "The skeletal muscle that inserts on the coxa.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000086> "coxal muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000086> <http://purl.obolibrary.org/obo/UBERON_0001134>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000086> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000077>))
@@ -886,13 +890,15 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000106> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000107> (head)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000107> "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the antenna, the eyes, mouthparts and surrounds the brain.")
 AnnotationAssertion(dce:description <http://purl.obolibrary.org/obo/AISM_0000107> "")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000107> "head"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/UBERON_0000955>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000098>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000032>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/UBERON_0003128>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000097> <http://purl.obolibrary.org/obo/AISM_0000098>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002221> <http://purl.obolibrary.org/obo/UBERON_0000955>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000108> (thorax)
 
@@ -907,7 +913,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000108> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000109> (abdomen)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000109> "abdomen"@en)
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000109> "The region of the cuticle that is posterior to the thorax.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000109> "The thorax is defined based on local properties (e.g. attachment sites of coxal muscles) and therefore we can reference this class for the definition of the abdomen.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Snodgrass, R.E., 1931. Morphology of the insect abdomen. Smithsonian Miscellaneous Collections.
+
+https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1-128.pdf") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000109> "abdomen"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000109> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000108>))
 
@@ -1135,6 +1145,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000148> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000149> (muscle of the tarsal claw)
 
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000149> "The skeletal muscle that inserts on the pretarsus.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000149> "There are usually two muscle bands of the pretarsal muscle, one is arising from the femur, the other from the tibia. The muscle usually inserts on a resilin rich basal sclerite of the pretarsus, the unguitractor plate.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000149> "muscle of the tarsal claw"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000149> <http://purl.obolibrary.org/obo/UBERON_0001134>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000149> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000047>))
@@ -1177,6 +1189,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000155> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000156> (fovea)
 
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000232> "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000156> "The cuticular depression that is circular.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000156> "fovea"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000156> <http://purl.obolibrary.org/obo/AISM_0000005>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000156> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/AISM_0000138>)))
