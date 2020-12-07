@@ -94,7 +94,7 @@ Setup a new import
 </catalog>
 
 
-5. terminal `sh run.sh make imports/obi_import.owl`
+5. In the terminal `sh run.sh make imports/obi_import.owl`
 
 `$ ./run.sh make all_imports`
 
@@ -123,9 +123,9 @@ Which opens a new window:
   <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.34%20AM.png" width="500" title="hover text">
  </p>  
  
-The term will now be listed under Thing. You don’t need to worry about annotations or placement of new items in your ontology, as the next step will take care of this for you. Keep adding a few more terms in this fashion to run the imports one more time.
+The term will now be listed under Thing. You don’t need to worry about annotations or placement of items newly added to your ontology, as the next step will take care of this for you. Keep adding a few more terms in this fashion. 
 
-9. Save the `AISM.owl` file and run the following script in terminal in the src/ontology folder:
+9. Save the `AISM.owl` file and run the following script in the terminal in the src/ontology folder:
 
 
 `./run.sh make all_imports`
@@ -146,6 +146,15 @@ If you try to import from a larger ontology (like PR, protein ontology) the proc
 ## Annotations
 
 Each term should contain a series of annotations which will be the way to link the term to references, authors, and other sorts of information. These annotations are added using Protégé during the ontology editing process.
+
+Each term should at least have an ‘rdfs: label’ and a ‘definition’. Ideally, each term should include a reference for the definition that is being used. AISM incorporates plenty of **Annotation properties** for these purposes.
+
+To add annotations to an existing term click on the ‘@’ symbol on the right side of the annotations tab.
+
+
+This will open a new window to choose what kind of annotation will be added. Click on the plus sign, which opens the ‘Create annotation’ window.
+
+Choose ‘definition’ to add a natural language verbatim definition for the term. Type the definition in the white box on the right side panel, choose the appropriate language for it, and click OK.
 
 
 Additional resources can be found at: [https://go-protege-tutorial.readthedocs.io/en/latest/](https://go-protege-tutorial.readthedocs.io/en/latest/)
