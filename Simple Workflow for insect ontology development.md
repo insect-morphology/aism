@@ -149,13 +149,13 @@ Each term should contain a series of annotations which will be the way to link t
 
 Each term should at least have an ‘rdfs: label’ and a ‘definition’. Ideally, each term should include a reference for the definition that is being used. AISM incorporates plenty of **Annotation properties** for these purposes.
 
-To add annotations to an existing term click on the ‘@’ symbol on the right side of the annotations tab.
+To add annotations to an existing term click on the plus sign on the left side of the annotations tab.
 
 <p align="left">
   <img src="https://github.com/JCGiron/aism/blob/master/screenshots/Annotations1.jpg" width="500" title="hover text">
  </p>  
  
-This will open a new window to choose what kind of annotation will be added. Click on the plus sign, which opens the ‘Create annotation’ window.
+This will open the ‘Annotations for AnnotationAssertion’ window to choose what kind of annotation will be added. Click on the plus sign, which opens the ‘Create annotation’ window.
 
 <p align="left">
   <img src="https://github.com/JCGiron/aism/blob/master/screenshots/Annotations2.jpg" width="500" title="hover text">
@@ -163,10 +163,29 @@ This will open a new window to choose what kind of annotation will be added. Cli
 
 Choose ‘definition’ to add a natural language verbatim definition for the term. Type the definition in the white box on the right side panel, choose the appropriate language for it, and click OK.
 
-
 <p align="left">
   <img src="https://github.com/JCGiron/aism/blob/master/screenshots/Annotations3.jpg" width="500" title="hover text">
  </p> 
+
+You can add annotations to the annotations. For instance, let's add an author for this definition. Go to the annotation that you want to add details to and click on the closest  ‘@’ symbol on the right side.
+
+<p align="left">
+  <img src="https://github.com/JCGiron/aism/blob/master/screenshots/Annotations4.jpg" width="500" title="hover text">
+ </p>
+
+Which will open the ‘Annotations for AnnotationAssertion’ window. Click on the plus sign.
+
+<p align="left">
+  <img src="https://github.com/JCGiron/aism/blob/master/screenshots/Annotations5.jpg" width="500" title="hover text">
+ </p>
+
+On the new window choose ‘dc:contributor’, add the name of the person on the panel on the right, and press OK. 
+
+<p align="left">
+  <img src="https://github.com/JCGiron/aism/blob/master/screenshots/Annotations6.jpg" width="500" title="hover text">
+ </p>
+
+ Press OK again in the ‘Annotations for AnnotationAssertion’ window, and your new annotation should appear under the definition.
 
 Additional resources can be found at: [https://go-protege-tutorial.readthedocs.io/en/latest/](https://go-protege-tutorial.readthedocs.io/en/latest/)
 
