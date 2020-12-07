@@ -9,9 +9,9 @@ There are two major reasons why insects are poorly represented amongst multispec
 
 In this document, we outline a simple workflow for creating/editing insect ontologies using  [Protégé](https://protege.stanford.edu/) and the [ontology development kit](https://github.com/INCATools/ontology-development-kit).
 
-The first thing you need to do is to install the Ontology Development Kit. Instructions for this are in the README file on https://github.com/INCATools/ontology-development-kit.
+The first thing you need to do is to install the Ontology Development Kit. Instructions for this are in the README file at https://github.com/INCATools/ontology-development-kit.
 
-Follow the steps carefully. This will create a file system on your computer with all the necessary files to create and run your ontology, ready to be uploaded to GitHub, in a mostly automated way. This process might require some preparation and troubleshooting, especially if you are installing the ODK on a Windows machine, and if you are not experienced or set up for working on GitHub from your computer.
+Follow the steps carefully. This will create a file system in your computer with all the necessary files to create and run your ontology, ready to be uploaded to GitHub, in a mostly automated way. This process might require some preparation and troubleshooting, especially if you are installing the ODK on a Windows machine, and if you are not experienced with or set up for working on GitHub from your computer.
 Once your files are created in your computer, it is important that you read the instructions on the README-editors.md file within your src/ontology/ folder.
 You want to upload this initial version of your files into a GitHub repository and make a clone of it. You will be editing the cloned repository, specifically, the AISM-ODK/src/ontology/AISM-edit.owl file. Any edits should only be made to files within this particular folder.
 You will be editing this owl file in your computer using Protégé, for which you need some initial settings:
@@ -28,6 +28,8 @@ Set language to ‘en’, digit count to 7
   <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%207.07.48%20AM.png" width="500" title="hover text">
 </p>  
 
+Start number should be the first number of the range that you have been assigned. If you don't have a range of designated numbers, contact the project manager.
+
 Importing terms from existing ontologies:
 
 Setup a new import
@@ -43,7 +45,7 @@ Setup a new import
 
 2. in terminal `sh run.sh make update_repo` (in src/ontology)
 
-`I-Miko-mbp:ontology istvanmiko$ sh run.sh make update_repo`
+`$ sh run.sh make update_repo`
 
 3. open aism-edit.owl in text editor to add import statement:
 
@@ -94,9 +96,9 @@ Setup a new import
 
 5. terminal `sh run.sh make imports/obi_import.owl`
 
-`I-Miko-mbp:ontology istvanmiko$ ./run.sh make all_imports`
+`$ ./run.sh make all_imports`
 
-6. open `maxo-edit.owl` in protege and run reasoner to look for unsatisfiable classes
+6. open `maxo-edit.owl` in Protégé and run reasoner to look for unsatisfiable classes.
 
 
 Once imports are set up
@@ -121,32 +123,32 @@ Which opens a new window:
   <img src="https://github.com/insect-morphology/aism-ODK/blob/master/screenshots/Screen%20Shot%202020-11-11%20at%2010.44.34%20AM.png" width="500" title="hover text">
  </p>  
  
- The term will now be listed under Thing.
+The term will now be listed under Thing. You don’t need to worry about annotations or placement of new items in your ontology, as the next step will take care of this for you. Keep adding a few more terms in this fashion to run the imports one more time.
 
 9. Save the `AISM.owl` file and run the following script in terminal in the src/ontology folder:
 
 
 `./run.sh make all_imports`
 
+
 or
 
 `sh run.sh make imports/cl_import.owl`
 
-for specific ontologies. The latter is recommended if numerous ontologies, including bigger ones (like PR) is used as the system will not import all but the selected ontology (in that case CL, the cell ontology).
+to import full specific ontologies. 
 
-If you try to import from a larger ontology (like PR, protein ontology) the process might take an extreme long time and might eventually be terminated (like when I tried to import resilin from PR). In this case, it is perhaps best to simply start with 7 (without importing the ontology), so the term will have an iri, but will just hang on Thing.
+The latter is recommended if numerous ontologies, including bigger ones (like PR, protein ontology) are used, as the system will not import all but the selected ontology (in that case CL, the cell ontology).
+
+If you try to import from a larger ontology (like PR, protein ontology) the process might take an extreme long time and might eventually be terminated (like when I tried to import resilin from PR). In this case, it is perhaps best to simply start with step 7 (importing only the specific term you need without importing the full ontology), so the term will have an IRI, but will just hang on Thing.
+
+
+
+## Annotations
+
+Each term should contain a series of annotations which will be the way to link the term to references, authors, and other sorts of information. These annotations are added using Protégé during the ontology editing process.
+
 
 Additional resources can be found at: [https://go-protege-tutorial.readthedocs.io/en/latest/](https://go-protege-tutorial.readthedocs.io/en/latest/)
-
-
-
-
-
-
-
-
-
-
 
 ## Contact
 
