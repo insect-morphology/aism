@@ -152,20 +152,20 @@ Each term should at least have an ‘rdfs: label’ and a ‘definition’. Idea
 To add annotations to an existing term click on the ‘@’ symbol on the right side of the annotations tab.
 
 <p align="left">
-  <img src="https://github.com/JCGiron/aism/tree/master/screenshots/Annotations1.jpg" width="500" title="hover text">
+  <img src="https://github.com/JCGiron/aism/blob/master/screenshots/Annotations1.jpg" width="500" title="hover text">
  </p>  
  
 This will open a new window to choose what kind of annotation will be added. Click on the plus sign, which opens the ‘Create annotation’ window.
 
 <p align="left">
-  <img src="https://github.com/JCGiron/aism/tree/master/screenshots/Annotations2.jpg" width="500" title="hover text">
+  <img src="https://github.com/JCGiron/aism/blob/master/screenshots/Annotations2.jpg" width="500" title="hover text">
  </p> 
 
 Choose ‘definition’ to add a natural language verbatim definition for the term. Type the definition in the white box on the right side panel, choose the appropriate language for it, and click OK.
 
 
 <p align="left">
-  <img src="https://github.com/JCGiron/aism/tree/master/screenshots/Annotations3.jpg" width="500" title="hover text">
+  <img src="https://github.com/JCGiron/aism/blob/master/screenshots/Annotations3.jpg" width="500" title="hover text">
  </p> 
 
 Additional resources can be found at: [https://go-protege-tutorial.readthedocs.io/en/latest/](https://go-protege-tutorial.readthedocs.io/en/latest/)
