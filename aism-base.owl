@@ -2,20 +2,274 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/aism/aism-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/aism/aism-base.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2020-10-18/aism-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2020-12-11/aism-base.owl"/>
         <dc:description>Ontology about the skeletomuscular system of insects</dc:description>
         <dc:title>Anatomy Ontology of Insect Skeletomuscular System</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="CC-BY"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-10-18</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-12-11</owl:versionInfo>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000171 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000171">
+        <rdfs:label xml:lang="en">sensu</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000171"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">sensu</owl:annotatedTarget>
+        <obo:IAO_0000115>This annotation property defines a &quot;sensu&quot;, that is the combination of a reference, label and class (represented by verbatime and logic definitions). Given this model, independent observations can be inferred across to compute synonymy (multiple labels attached to one ), homonymy (one label is attached to multiple classes). https://doi.org/10.1371/journal.pone.0015991.g004
+
+This annotation property is on the label of a class in owl</obo:IAO_0000115>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdfs:label>curator note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000011 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000011">
+        <rdfs:label xml:lang="en">lateral_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000012">
+        <rdfs:label xml:lang="en">medial_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000078 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000078">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+        <rdfs:label xml:lang="en">encircles</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000079 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000079">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+        <rdfs:label xml:lang="en">encircled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000096 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000097 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BSPO_0000097"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000099 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000100 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BSPO_0000100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000106 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000642 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PATO_0000642"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001018"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001019 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002000 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002008 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002150 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002150"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002219 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002219"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002220 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002220"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002221 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002221"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#different_in_magnitude_relative_to -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/pato#different_in_magnitude_relative_to"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pato#similar_in_magnitude_relative_to -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/pato#similar_in_magnitude_relative_to"/>
     
 
 
@@ -30,11 +284,3357 @@
     
 
 
+    <!-- http://flybase.org/reports/FBgn0034157 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0034157"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/AISM_00000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_00000000">
         <rdfs:label xml:lang="en">root node</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000167"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000003"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000167"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The anatomical cluster that is composed two articular surfaces that are adjacent to each other.</obo:IAO_0000115>
+        <obo:IAO_0000232>Articulations are `anatomical clusters`, collections of not direclty connected (continuous) sclerite surfaces that are adjacent to another sclerite. The cranio-mandibular articulation is the articular surface of the cranium and the adjacent articular surface of the mandible. The articular surfaces are sometimes located on the same sclerite.</obo:IAO_0000232>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articulation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>Articulations are `anatomical clusters`, collections of not direclty connected (continuous) sclerite surfaces that are adjacent to another sclerite. The cranio-mandibular articulation is the articular surface of the cranium and the adjacent articular surface of the mandible. The articular surfaces are sometimes located on the same sclerite.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001543"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001543"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The region of the insect cuticle that is less flexible than the neighboring conjunctiva(e) (conjunctiva(e) that the sclerite is continuous with).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sclerite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001543"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001543"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The region of the insect cuticle that is more flexible than the neighboring sclerite(s) (sclerite(s) that the conjunctiva is continuous with).</obo:IAO_0000115>
+        <obo:IAO_0000232>Conjunctivae are more flexible and usually less thick than sclerties of the cuticle allowing the sclerites to move relative to each other.
+Micro-CT based methods cannot be used to accuirately to differentiate slcerites from conjunctiuvae. CLSM (the excitation wavelengths of sclerites and conjunctivae are different in response of 488 nm emission vawelength), histological sections or simple dissections need to be applied to define relative flexibility of the insect cuticle.
+
+If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `encircled by` object properties are used to link the sclerite and the conjunctiva even in cases in which the encircled sclerites or conjunctivae are part of an evagination allowing to model spatial relationship between appendage segments: the pedicel is encircled by the scapal-pedicel conjunctiva, which is encircled by the scape or the the coxa encircles the basal femoral conjunctiuva that encircels the femur.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000005">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035159"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001857"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <obo:IAO_0000115>The portion of the surface of the cuticle that is concave.</obo:IAO_0000115>
+        <obo:IAO_0000232>The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Concavities sometimes correspons with invaginations of the cuticle and the underlaying sinlge layer epidermis, somtimes correspond to a decreased cuticular thickness.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">cuticular depression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The cuticular region that corresponds with an invagination of the single layer epidermis (epidermal fold). The cuticular invagination sometimes corresponds to a cuticular depression (concavity on the surface of the cuticle).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cuticular invagination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001019"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0034157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">elastic cuticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035159"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001355"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The cuticular region that corresponds to a convex cuticular surface.</obo:IAO_0000115>
+        <obo:IAO_0000232>The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.&quot;</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">cuticular protrusion</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The cuticular region that corresponds to a convex cuticular surface.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.&quot;</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001355"/>
+        <rdfs:label xml:lang="en">evaginated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000002"/>
+        <rdfs:label xml:lang="en">cranio-mandibular articulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000018"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000019"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cranio-cardinal articulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000019"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000003"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000032"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The articulation between the scape and the cranium.</obo:IAO_0000115>
+        <obo:IAO_0000232></obo:IAO_0000232>
+        <rdfs:label xml:lang="en">cranio-antennal articulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000019"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000003"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">head-cervical articulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000111"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cardo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002221"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000955"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cranium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">dorsal second axillary sclerite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">first abdominal tergite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">first axillary sclerite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">galea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">labial palpus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">lacinia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The cuticular region that corresponds with an evagination of the cuticle and the single layer epidermis (epidermal fold). The cuticular evagination usually corresponds to a cuticular protrusion (convexity on the surface of the cuticle).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cuticular evagination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000013"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">solid cuticular protrusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000128"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The evagination of the cuticle that is musculated (connected to the body via muscles).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">appendage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">leg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">antenna</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000080"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000407"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">wing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fore leg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mid leg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000031"/>
+        <rdfs:label xml:lang="en">hind leg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fore wing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000169"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">hind wing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000127"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">seta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000128"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of a single sclerite that is encricled by a conjunctiva (moveable), and not musculated.</obo:IAO_0000115>
+        <obo:IAO_0000232>The difference between an appendage and a spur is the lack of muscles attached to the spur, otherwise, the mandible would be also a spur. Spines are multicellular evaginations that are not encircled by conjunctivae. Moveable beetle horns are spurs while not moveable beetle horns are spines.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">spur</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of a single sclerite that is encricled by a conjunctiva (moveable), and not musculated.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>The difference between an appendage and a spur is the lack of muscles attached to the spur, otherwise, the mandible would be also a spur. Spines are multicellular evaginations that are not encircled by conjunctivae. Moveable beetle horns are spurs while not moveable beetle horns are spines.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">spur</owl:annotatedTarget>
+        <obo:AISM_0000171>https://doi.org/10.1016/0020-7322(79)90013-8</obo:AISM_0000171>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">labrum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mandible</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">maxilla</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">second valvifer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">second valvula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">pretarsus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">ligula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">glossa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">paraglossa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">maxillary palpus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">mesonotum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000141"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mesopectus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">mesotrochantin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">protrochantin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">metatrochantin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">prementum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000059"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">prepectus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000066"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000145"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002376"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">pronotum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000100"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000145"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002376"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">propeluron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">prosternum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">ring sclerite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">appendage segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000077"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mesocoxa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000077"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">metacoxa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000077"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">procoxa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000075"/>
+        <rdfs:label xml:lang="en">protibia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000075"/>
+        <rdfs:label xml:lang="en">mesotibia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000075"/>
+        <rdfs:label xml:lang="en">metatibia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000076"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">profemur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000076"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mesofemur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000076"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">metafemur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">tarsomere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000063"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">tibia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000063"/>
+        <rdfs:label xml:lang="en">femur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000063"/>
+        <rdfs:label xml:lang="en">coxa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cranial muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cranio-antennal muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cranio-mandibular muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cranio-labial muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cranio-labral muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000086"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mesocoxal muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000232>All of the coxal muscles, except the second steranl-metacoxal muscle, are attached to the thorax.</obo:IAO_0000232>
+        <rdfs:comment>The skeletal muscle that inserts on the coxa.</rdfs:comment>
+        <rdfs:label xml:lang="en">coxal muscle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000086"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>All of the coxal muscles, except the second steranl-metacoxal muscle, are attached to the thorax.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000086"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>The skeletal muscle that inserts on the coxa.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <rdfs:label xml:lang="en">labium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000964"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">eye cuticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ligament</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The usually cylindircal evagination of the ciuticle that is resilin rich and is continuous with skeletal muscles.</obo:IAO_0000115>
+        <obo:IAO_0000232></obo:IAO_0000232>
+        <rdfs:label xml:lang="en">tendon</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000090"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The usually cylindircal evagination of the ciuticle that is resilin rich and is continuous with skeletal muscles.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000136"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001873"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>&quot;The ivagination of the cuticle that is tubular and contains taenidia.&quot;</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">trachea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">hypopharynx</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">mesopleuro-metapleural conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">mesopostnoto-mesonotal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">mesosterno-mesopleural conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">metanoto-mesopostnotal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">neck membrane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">oral foraminal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">pronoto-mesonotal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">pronoto-mesopectal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ring conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000173"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000064"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The basal conjunctiva of the mesoxoca.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">basal mesocoxal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000173"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000065"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">basal metacoxal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000678"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">epipharynx</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000173"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000066"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">basal procoxal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000097"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002221"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000955"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the antenna, the eyes, mouthparts and surrounds the brain.</obo:IAO_0000115>
+        <dc:description></dc:description>
+        <rdfs:label xml:lang="en">head</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000145"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The region of cuticle that is connected to some muscles of the fore and hind legs and is posterior to the neck membrane and aterior to the first abdominal spiracle.</obo:IAO_0000115>
+        <obo:IAO_0000232>The hind leg muscles sometimes attach to the second abdominal sternite. The abdominal sopiracles are different in their structure from tghe thoracic spiracles as they are opened and closed by two articulating sclerites that are moved by two sets of muscles whereas the thoracic spiracles are closed by only one occlusor muscle and opened by the flexibility of the distal tracheal region. The border between the thorax and the abdomen is sometimes marked by the anterior first abdmonial tergal conjunctiva. In Hymenoptera, the border between the abdomen and the thorax cannot be defined as the anterior first abdmonial tergal conjunctiva is absent, the sclerite that receives muscles from the metacoxa also contains the first abdominal spiracle.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">thorax</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The region of cuticle that is connected to some muscles of the fore and hind legs and is posterior to the neck membrane and aterior to the first abdominal spiracle.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>The hind leg muscles sometimes attach to the second abdominal sternite. The abdominal sopiracles are different in their structure from tghe thoracic spiracles as they are opened and closed by two articulating sclerites that are moved by two sets of muscles whereas the thoracic spiracles are closed by only one occlusor muscle and opened by the flexibility of the distal tracheal region. The border between the thorax and the abdomen is sometimes marked by the anterior first abdmonial tergal conjunctiva. In Hymenoptera, the border between the abdomen and the thorax cannot be defined as the anterior first abdmonial tergal conjunctiva is absent, the sclerite that receives muscles from the metacoxa also contains the first abdominal spiracle.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The region of the cuticle that is posterior to the thorax.</obo:IAO_0000115>
+        <obo:IAO_0000232>The thorax is defined based on local properties (e.g. attachment sites of coxal muscles) and therefore we can reference this class for the definition of the abdomen.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">abdomen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The region of the cuticle that is posterior to the thorax.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>The thorax is defined based on local properties (e.g. attachment sites of coxal muscles) and therefore we can reference this class for the definition of the abdomen.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">abdomen</owl:annotatedTarget>
+        <obo:AISM_0000171>Snodgrass, R.E., 1931. Morphology of the insect abdomen. Smithsonian Miscellaneous Collections.
+
+https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1-128.pdf</obo:AISM_0000171>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">stipito-cardinal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000097"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">stipes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>This conjunctiva encircle the base of the antenna (scape) and is encircled by the cranium as the antennal foramen.</obo:IAO_0000115>
+        <obo:IAO_0000232></obo:IAO_0000232>
+        <rdfs:label xml:lang="en">basal antennal conjunctiva</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000112"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>This conjunctiva encircle the base of the antenna (scape) and is encircled by the cranium as the antennal foramen.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000063"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">scape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">scapal-pedicel conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000063"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000118"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">pedicel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">flagellomere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000116"/>
+        <rdfs:label xml:lang="en">first flagellomere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">pedicel-first flagellomere conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">metapleuron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">pronoto-procoxal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:label xml:lang="en">pronoto-propleural conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000070"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">basal profemoral conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">basal mesofemoral conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000072"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">basal metafemoral conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">socket membrane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">unicellular cuticular evagination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">multicellular cuticular evagination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000127"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">uniporous sensillum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000127"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">multiporous sensillum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000133"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001154"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">placoid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000131"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000407"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">multiporous plate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000136"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000140"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">exocrine gland duct</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000077"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000091"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">spiracle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000402"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">branching cuticular invagination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000136"/>
+        <rdfs:label xml:lang="en">malphigian tube</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000077"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001873"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label xml:lang="en">apophysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000158"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000404"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">taenidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000144"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000064"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mesofurca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000144"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000065"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">metafurca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000144"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000066"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">profurca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000138"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000077"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">furca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000086"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">procoxal muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000086"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">metacoxal muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">femoral muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+        <rdfs:label xml:lang="en">tibial muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The skeletal muscle that inserts on the pretarsus.</obo:IAO_0000115>
+        <obo:IAO_0000232>There are usually two muscle bands of the pretarsal muscle, one is arising from the femur, the other from the tibia. The muscle usually inserts on a resilin rich basal sclerite of the pretarsus, the unguitractor plate.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">muscle of the tarsal claw</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000149"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The skeletal muscle that inserts on the pretarsus.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000149"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>There are usually two muscle bands of the pretarsal muscle, one is arising from the femur, the other from the tibia. The muscle usually inserts on a resilin rich basal sclerite of the pretarsus, the unguitractor plate.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000147"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">profemoral muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000147"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mesofemoral muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000147"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">metafemoral muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000148"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">protibial muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000154 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000148"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mesotibial muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000148"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000069"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">metatibial muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000138"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000411"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The cuticular depression that is circular.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fovea</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000156"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The cuticular depression that is circular.</owl:annotatedTarget>
+        <obo:IAO_0000232>imiko</obo:IAO_0000232>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+        <obo:IAO_0000115>The cuticular depression (concavity on the surface of the cuticle) that does not correspomnd to a cuticular invagination (epithelial fold). The cuticule is less thick at the site of a cuticular impression.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">impression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000157"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The cuticular depression (concavity on the surface of the cuticle) that does not correspomnd to a cuticular invagination (epithelial fold). The cuticule is less thick at the site of a cuticular impression.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001154"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The invagination on a sclerite that is elongated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ridge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000160"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">salivarium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000077"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The invagination of the cuticle that is largely membraneous.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">pouch</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000160"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The invagination of the cuticle that is largely membraneous.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000158"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000112"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000417"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The ridge that is in the sagittal line of the ventral part thorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">discrimenal lamella</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000158"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The cuticular depression (concavity on cuticle surface) that corresponds with a ridge (an elongate cuticular invagination).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sulcus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000163">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000162"/>
+        <obo:IAO_0000115>The ridge that corresponds to the discrimenal lamella.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">discrimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mouthpart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000002"/>
+        <rdfs:label xml:lang="en">propleuro-procoxal artiulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000167">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006984"/>
+        <rdfs:label xml:lang="en">articular surface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000159"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">salivary sclerite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">metanotum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:label xml:lang="en">metapectus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The distalmost conjunctiva at the tarsus that encircles the pretarsus and encricled by the apicalmost tarsomere.</obo:IAO_0000115>
+        <obo:IAO_0000232></obo:IAO_0000232>
+        <rdfs:label xml:lang="en">apical tarsal conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000077"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The conjunctiva that encircles the coxa and connects them to the ventral and lateral thoracic regions.</obo:IAO_0000115>
+        <obo:IAO_0000232>These conjunctivae can be used as stable reference points in insects that poseess legs, and can be used to define sclerites on the lateral side of the thorax.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">basal coxal conjunctiva</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000173"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The conjunctiva that encircles the coxa and connects them to the ventral and lateral thoracic regions.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_6007284"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The region of the insect integument that is part of the insect cuticle.</obo:IAO_0000115>
+        <obo:IAO_0000232>The AISM focuses on anatomical structures that are part of the insect (chitinous) cuticle. These structures are acellular regions of the integument. Regions of the insect cuticle with different mechanical properties (i.e. increased and descresed flexinility, thickness and elasticity) are continuous with each other (e.g. sclerites are continuous with conjunctivae or resilin rich regions are continuou with regions with less resilin content).</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">region of cuticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000077"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000080"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000417"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000671 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000672 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000677 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000678 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000678"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000679"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000682"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000683 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000683"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000684"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000402"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000404"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000407"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000411 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000411"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000591 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000591"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000592 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000592"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000964 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000964"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001154 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001154"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001171"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001355"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001369"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001543"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001748 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001748"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001857 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001857"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001873 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001873"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002254"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002539"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_Q9V7U0 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_Q9V7U0"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000955"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002376"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005157"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006984 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006984"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0035159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035159"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_6007284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_6007284"/>
 </rdf:RDF>
 
 
