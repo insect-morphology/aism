@@ -1,12 +1,16 @@
 format-version: 1.2
-data-version: aism/releases/2020-12-11/aism-simple.owl
+data-version: aism/releases/2021-02-09/aism-simple.owl
 subsetdef: AISM:0000171 ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
 ontology: aism/aism-simple
 property_value: dc-description "Ontology about the skeletomuscular system of insects" xsd:string
 property_value: dc-title "Anatomy Ontology of Insect Skeletomuscular System" xsd:string
-property_value: owl:versionInfo "2020-12-11" xsd:string
+property_value: owl:versionInfo "2021-02-09" xsd:string
 
 [Term]
 id: AISM:00000000
@@ -29,6 +33,7 @@ is_a: AISM:0000174 ! region of cuticle
 id: AISM:0000004
 name: conjunctiva
 def: "The region of the insect cuticle that is more flexible than the neighboring sclerite(s) (sclerite(s) that the conjunctiva is continuous with)." []
+synonym: "membrane" EXACT []
 is_a: AISM:0000174 ! region of cuticle
 relationship: continuous_with AISM:0000003 ! sclerite
 property_value: curator_notes "Conjunctivae are more flexible and usually less thick than sclerties of the cuticle allowing the sclerites to move relative to each other.\nMicro-CT based methods cannot be used to accuirately to differentiate slcerites from conjunctiuvae. CLSM (the excitation wavelengths of sclerites and conjunctivae are different in response of 488 nm emission vawelength), histological sections or simple dissections need to be applied to define relative flexibility of the insect cuticle.\n\nIf a conjunctiva entirelly encircles a sclerites, than the `encircles` and `encircled by` object properties are used to link the sclerite and the conjunctiva even in cases in which the encircled sclerites or conjunctivae are part of an evagination allowing to model spatial relationship between appendage segments: the pedicel is encircled by the scapal-pedicel conjunctiva, which is encircled by the scape or the the coxa encircles the basal femoral conjunctiuva that encircels the femur." xsd:string
@@ -70,14 +75,14 @@ is_a: AISM:0000002 ! articulation
 [Term]
 id: AISM:0000015
 name: cranio-cardinal articulation
+def: "The articulatio between the cardo ad the cranium." [] {http://purl.org/dc/elements/1.1/contributor=""}
 is_a: AISM:0000002 ! articulation
 
 [Term]
 id: AISM:0000016
 name: cranio-antennal articulation
-def: "The articulation between the scape and the cranium." []
+def: "The articulation between the scape and the cranium." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
 is_a: AISM:0000002 ! articulation
-property_value: curator_notes "" xsd:string
 
 [Term]
 id: AISM:0000017
@@ -94,7 +99,8 @@ relationship: proximal_to AISM:0000111 ! stipes
 
 [Term]
 id: AISM:0000019
-name: cranium
+name: head capsule
+synonym: "cranium" EXACT []
 is_a: AISM:0000003 ! sclerite
 relationship: AISM:0000078 AISM:0000099 ! encircles oral foraminal conjunctiva
 relationship: continuous_with AISM:0000098 ! neck membrane
@@ -214,6 +220,7 @@ property_value: curator_notes "The difference between an appendage and a spur is
 [Term]
 id: AISM:0000041
 name: scale
+def: "The seta that is flat." []
 is_a: AISM:0000039 ! seta
 
 [Term]
@@ -280,7 +287,8 @@ is_a: AISM:0000003 ! sclerite
 [Term]
 id: AISM:0000053
 name: mesopectus
-is_a: AISM:0000003 ! sclerite
+is_a: AISM:0000174 ! region of cuticle
+relationship: continuous_with AISM:0000037 ! fore wing
 relationship: continuous_with AISM:0000103 ! basal mesocoxal conjunctiva
 relationship: has_part AISM:0000141 ! mesofurca
 
@@ -425,12 +433,12 @@ is_a: AISM:0000063 ! appendage segment
 [Term]
 id: AISM:0000080
 name: cranial muscle
+relationship: continuous_with AISM:0000019 ! head capsule
 
 [Term]
 id: AISM:0000081
 name: cranio-antennal muscle
 is_a: AISM:0000080 ! cranial muscle
-relationship: continuous_with AISM:0000019 ! cranium
 relationship: continuous_with AISM:0000032 ! antenna
 
 [Term]
@@ -442,7 +450,6 @@ is_a: AISM:0000080 ! cranial muscle
 id: AISM:0000083
 name: cranio-labial muscle
 is_a: AISM:0000080 ! cranial muscle
-relationship: continuous_with AISM:0000019 ! cranium
 relationship: continuous_with AISM:0000087 ! labium
 
 [Term]
@@ -473,7 +480,7 @@ is_a: AISM:0000029 ! appendage
 id: AISM:0000088
 name: eye cuticle
 is_a: AISM:0000007 ! elastic cuticle
-relationship: part_of AISM:0000019 ! cranium
+relationship: part_of AISM:0000019 ! head capsule
 
 [Term]
 id: AISM:0000089
@@ -574,10 +581,11 @@ is_a: AISM:0000173 ! basal coxal conjunctiva
 [Term]
 id: AISM:0000107
 name: head
-def: "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the antenna, the eyes, mouthparts and surrounds the brain." []
+def: "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the head capsule, the antenna, the eyes, mouthparts and surrounds the brain." []
 is_a: AISM:0000174 ! region of cuticle
 relationship: AISM:0000079 AISM:0000098 ! encircled by neck membrane
 relationship: distal_to AISM:0000098 ! neck membrane
+relationship: has_part AISM:0000019 ! head capsule
 relationship: has_part AISM:0000032 ! antenna
 property_value: dc-description "" xsd:string
 
@@ -599,6 +607,7 @@ def: "The region of the cuticle that is posterior to the thorax." [] {http://pur
 is_a: AISM:0000174 ! region of cuticle
 relationship: posterior_to AISM:0000108 ! thorax
 property_value: curator_notes "The thorax is defined based on local properties (e.g. attachment sites of coxal muscles) and therefore we can reference this class for the definition of the abdomen." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko"}
+property_value: http://xmlns.com/foaf/0.1/depiction https://ndownloader.figshare.com/files/6014256/preview/6014256/preview.jpg
 
 [Term]
 id: AISM:0000110
@@ -619,6 +628,7 @@ name: basal antennal conjunctiva
 def: "This conjunctiva encircle the base of the antenna (scape) and is encircled by the cranium as the antennal foramen." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
 is_a: AISM:0000004 ! conjunctiva
 relationship: AISM:0000078 AISM:0000113 ! encircles scape
+relationship: continuous_with AISM:0000019 ! head capsule
 property_value: curator_notes "" xsd:string
 
 [Term]
@@ -699,6 +709,7 @@ relationship: AISM:0000078 AISM:0000127 ! encircles unicellular cuticular evagin
 [Term]
 id: AISM:0000127
 name: unicellular cuticular evagination
+def: "The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
 is_a: AISM:0000027 ! cuticular evagination
 
 [Term]
@@ -709,14 +720,15 @@ is_a: AISM:0000027 ! cuticular evagination
 [Term]
 id: AISM:0000130
 name: uniporous sensillum
-is_a: AISM:0000127 ! unicellular cuticular evagination
-relationship: has_part AISM:0000134 {cardinality="1"} ! exocrine gland duct
+def: "The seta that has one opening distally." []
+is_a: AISM:0000039 ! seta
+relationship: has_part AISM:0000177 {cardinality="1"} ! pore canal
 
 [Term]
 id: AISM:0000131
-name: multiporous sensillum
-is_a: AISM:0000127 ! unicellular cuticular evagination
-relationship: has_part AISM:0000134 {minCardinality="2"} ! exocrine gland duct
+name: multiporous sensillum {http://purl.obolibrary.org/obo/AISM_0000171="Ando, T., Sekine, S., Inagaki, S., Misaki, K., Badel, L., Moriya, H., Sami, M.M., Itakura, Y., Chihara, T., Kazama, H. and Yonemura, S., 2019. Nanopore formation in the cuticle of an insect olfactory sensillum. Current Biology, 29(9), pp.1512-1520.\nhttps://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4"}
+is_a: AISM:0000039 ! seta
+relationship: has_part AISM:0000177 {minCardinality="2"} ! pore canal
 
 [Term]
 id: AISM:0000132
@@ -752,6 +764,8 @@ is_a: AISM:0000136 ! branching cuticular invagination
 id: AISM:0000138
 name: apophysis
 is_a: AISM:0000006 ! cuticular invagination
+relationship: part_of AISM:0000003 ! sclerite
+property_value: curator_notes "The apophysis in HAO referres to an ivagination of the cuticle that is cylindrical as opposed by a ridge that is elongate. Beutel et al. 2013 differentiate apodemes from apophyses in thast apodemes are solid ad apophyses are hollow." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko"}
 
 [Term]
 id: AISM:0000140
@@ -776,6 +790,7 @@ is_a: AISM:0000144 ! furca
 [Term]
 id: AISM:0000144
 name: furca
+def: "The apophysis that is located ventromedially on the thorax and is connected to the coxa via muscles." [] {http://purl.org/dc/elements/1.1/contributor=""}
 is_a: AISM:0000138 ! apophysis
 relationship: part_of AISM:0000108 ! thorax
 
@@ -949,6 +964,52 @@ name: region of cuticle
 def: "The region of the insect integument that is part of the insect cuticle." []
 property_value: curator_notes "The AISM focuses on anatomical structures that are part of the insect (chitinous) cuticle. These structures are acellular regions of the integument. Regions of the insect cuticle with different mechanical properties (i.e. increased and descresed flexinility, thickness and elasticity) are continuous with each other (e.g. sclerites are continuous with conjunctivae or resilin rich regions are continuou with regions with less resilin content)." xsd:string
 
+[Term]
+id: AISM:0000177
+name: pore canal {http://purl.obolibrary.org/obo/AISM_0000171="Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.\n\nhttps://www.degruyter.com/document/doi/10.1515/9783110264043/html"}
+def: "The anatomical space that is contained by the cuticle ad conects the inside of the insect with the outside, tubular and whose diameter is smaller than 100 nm." []
+
+[Term]
+id: AISM:0000178
+name: acantha
+def: "The solid cuticular protrusion that coicides with only one epidermal cell (smaller than the diameter of the epidermal cell)." []
+is_a: AISM:0000028 ! solid cuticular protrusion
+
+[Term]
+id: AISM:0000185
+name: sensillum chaeticum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.\n\nhttps://www.degruyter.com/document/doi/10.1515/9783110264043/html"}
+def: "Hairlike seta that is short and thick walled." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
+is_a: AISM:0000039 ! seta
+
+[Term]
+id: AISM:0000186
+name: sensillum trichodeum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.\n\nhttps://www.degruyter.com/document/doi/10.1515/9783110264043/html"}
+def: "Hairlike seta that is long." []
+is_a: AISM:0000039 ! seta
+
+[Term]
+id: AISM:0000187
+name: sensillum coeloconicum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.\n\nhttps://www.degruyter.com/document/doi/10.1515/9783110264043/html"}
+def: "Seta that is located in the middle of a depression with narrowed external opening." []
+is_a: AISM:0000039 ! seta
+
+[Term]
+id: AISM:0000188
+name: apodeme
+is_a: AISM:0000006 ! cuticular invagination
+relationship: part_of AISM:0000003 ! sclerite
+
+[Term]
+id: AISM:0000189
+name: sensillum basiconicum
+is_a: AISM:0000039 ! seta
+
+[Term]
+id: AISM:0000190
+name: antennifer
+def: "The solid cuticular protrusion (process, protuberace) that bears the condyle of the cranio-antennal articulation." []
+is_a: AISM:0000028 ! solid cuticular protrusion
+
 [Typedef]
 id: AISM:0000011
 name: lateral_to
@@ -960,13 +1021,13 @@ name: medial_to
 [Typedef]
 id: AISM:0000078
 name: encircles
-is_a: continuous_with ! continuous with
+is_a: continuous_with ! continuous_with
 inverse_of: AISM:0000079 ! encircled by
 
 [Typedef]
 id: AISM:0000079
 name: encircled by
-is_a: continuous_with ! continuous with
+is_a: continuous_with ! continuous_with
 
 [Typedef]
 id: RO:0000052
@@ -1009,6 +1070,9 @@ namespace: spatial
 namespace: uberon
 def: "x adjacent to y if and only if x and y share a boundary." []
 def: "x adjacent_to y iff: x and y share a boundary" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: RO:0002220
 property_value: IAO:0000112 "A caterpillar walking on the surface of a leaf is adjacent_to the leaf, if one of the caterpillar appendages is touching the leaf. In contrast, a butterfly flying close to a flower is not considered adjacent, unless there are any touching parts." xsd:string {http://www.w3.org/2000/01/rdf-schema#seeAlso="issuecomment-218584934"}
 property_value: IAO:0000112 "The epidermis layer of a vertebrate is adjacent to the dermis." xsd:string
@@ -1174,6 +1238,7 @@ inverse_of: proximal_to ! proximal_to
 id: has_part
 name: has part
 name: has_part
+namespace: chebi_ontology
 namespace: external
 namespace: protein
 namespace: quality
@@ -1182,6 +1247,9 @@ namespace: uberon
 def: "a core relation that holds between a whole and its part" []
 def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
 comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: BFO:0000051
 property_value: IAO:0000111 "has part" xsd:string
 property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
@@ -1192,6 +1260,7 @@ property_value: IAO:0000116 "Occurrents are not subject to change and so parthoo
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
 property_value: IAO:0000118 "has_part" xsd:string
 property_value: RO:0001900 RO:0001901
+is_cyclic: false
 is_transitive: true
 
 [Typedef]
@@ -1213,6 +1282,10 @@ namespace: quality
 namespace: spatial
 namespace: uberon
 def: "a core relation that holds between a part and its whole" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: BFO:0000050
 property_value: IAO:0000111 "is part of" xsd:string
 property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
@@ -1234,7 +1307,7 @@ property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_a
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
 property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
 is_transitive: true
-inverse_of: has_part ! has part
+inverse_of: has_part ! has_part
 
 [Typedef]
 id: posterior_to

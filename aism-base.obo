@@ -1,12 +1,12 @@
 format-version: 1.2
-data-version: aism/releases/2020-12-11/aism-base.owl
+data-version: aism/releases/2021-02-09/aism-base.owl
 subsetdef: AISM:0000171 ""
 ontology: aism/aism-base
 property_value: http://purl.org/dc/elements/1.1/description "Ontology about the skeletomuscular system of insects" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Anatomy Ontology of Insect Skeletomuscular System" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://purl.obolibrary.org/obo/aism/CC-BY
-property_value: owl:versionInfo "2020-12-11" xsd:string
+property_value: owl:versionInfo "2021-02-09" xsd:string
 
 [Term]
 id: AISM:00000000
@@ -29,6 +29,7 @@ is_a: AISM:0000174 ! region of cuticle
 id: AISM:0000004
 name: conjunctiva
 def: "The region of the insect cuticle that is more flexible than the neighboring sclerite(s) (sclerite(s) that the conjunctiva is continuous with)." []
+synonym: "membrane" EXACT []
 is_a: AISM:0000174 ! region of cuticle
 relationship: RO:0002150 AISM:0000003 ! sclerite
 property_value: IAO:0000232 "Conjunctivae are more flexible and usually less thick than sclerties of the cuticle allowing the sclerites to move relative to each other.\nMicro-CT based methods cannot be used to accuirately to differentiate slcerites from conjunctiuvae. CLSM (the excitation wavelengths of sclerites and conjunctivae are different in response of 488 nm emission vawelength), histological sections or simple dissections need to be applied to define relative flexibility of the insect cuticle.\n\nIf a conjunctiva entirelly encircles a sclerites, than the `encircles` and `encircled by` object properties are used to link the sclerite and the conjunctiva even in cases in which the encircled sclerites or conjunctivae are part of an evagination allowing to model spatial relationship between appendage segments: the pedicel is encircled by the scapal-pedicel conjunctiva, which is encircled by the scape or the the coxa encircles the basal femoral conjunctiuva that encircels the femur." xsd:string
@@ -74,14 +75,14 @@ is_a: AISM:0000002 ! articulation
 [Term]
 id: AISM:0000015
 name: cranio-cardinal articulation
+def: "The articulatio between the cardo ad the cranium." [] {http://purl.org/dc/elements/1.1/contributor=""}
 is_a: AISM:0000002 ! articulation
 
 [Term]
 id: AISM:0000016
 name: cranio-antennal articulation
-def: "The articulation between the scape and the cranium." []
+def: "The articulation between the scape and the cranium." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
 is_a: AISM:0000002 ! articulation
-property_value: IAO:0000232 "" xsd:string
 
 [Term]
 id: AISM:0000017
@@ -98,7 +99,8 @@ relationship: RO:0002150 AISM:0000110 ! stipito-cardinal conjunctiva
 
 [Term]
 id: AISM:0000019
-name: cranium
+name: head capsule
+synonym: "cranium" EXACT []
 is_a: AISM:0000003 ! sclerite
 relationship: AISM:0000078 AISM:0000099 ! encircles oral foraminal conjunctiva
 relationship: BFO:0000051 AISM:0000088 ! eye cuticle
@@ -223,6 +225,7 @@ property_value: IAO:0000232 "The difference between an appendage and a spur is t
 [Term]
 id: AISM:0000041
 name: scale
+def: "The seta that is flat." []
 is_a: AISM:0000039 ! seta
 relationship: RO:0000053 PATO:0002254
 
@@ -290,8 +293,9 @@ is_a: AISM:0000003 ! sclerite
 [Term]
 id: AISM:0000053
 name: mesopectus
-is_a: AISM:0000003 ! sclerite
+is_a: AISM:0000174 ! region of cuticle
 relationship: BFO:0000051 AISM:0000141 ! mesofurca
+relationship: RO:0002150 AISM:0000037 ! fore wing
 relationship: RO:0002150 AISM:0000103 ! basal mesocoxal conjunctiva
 
 [Term]
@@ -439,34 +443,34 @@ is_a: AISM:0000063 ! appendage segment
 id: AISM:0000080
 name: cranial muscle
 is_a: UBERON:0001134
-relationship: RO:0002150 UBERON:0003128
+relationship: RO:0002150 AISM:0000019 ! head capsule
 
 [Term]
 id: AISM:0000081
 name: cranio-antennal muscle
 is_a: AISM:0000080 ! cranial muscle
-relationship: RO:0002150 AISM:0000019 ! cranium
+relationship: RO:0002150 AISM:0000019 ! head capsule
 relationship: RO:0002150 AISM:0000032 ! antenna
 
 [Term]
 id: AISM:0000082
 name: cranio-mandibular muscle
 is_a: AISM:0000080 ! cranial muscle
-relationship: RO:0002150 UBERON:0003128
+relationship: RO:0002150 AISM:0000019 ! head capsule
 
 [Term]
 id: AISM:0000083
 name: cranio-labial muscle
 is_a: AISM:0000080 ! cranial muscle
-relationship: RO:0002150 AISM:0000019 ! cranium
+relationship: RO:0002150 AISM:0000019 ! head capsule
 relationship: RO:0002150 AISM:0000087 ! labium
 
 [Term]
 id: AISM:0000084
 name: cranio-labral muscle
 is_a: AISM:0000080 ! cranial muscle
+relationship: RO:0002150 AISM:0000019 ! head capsule
 relationship: RO:0002150 AISM:0000042 ! labrum
-relationship: RO:0002150 UBERON:0003128
 
 [Term]
 id: AISM:0000085
@@ -491,7 +495,7 @@ is_a: AISM:0000029 ! appendage
 id: AISM:0000088
 name: eye cuticle
 is_a: AISM:0000007 ! elastic cuticle
-relationship: BFO:0000050 AISM:0000019 ! cranium
+relationship: BFO:0000050 AISM:0000019 ! head capsule
 relationship: RO:0000053 PATO:0000964
 
 [Term]
@@ -595,11 +599,12 @@ is_a: AISM:0000173 ! basal coxal conjunctiva
 [Term]
 id: AISM:0000107
 name: head
-def: "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the antenna, the eyes, mouthparts and surrounds the brain." []
+def: "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the head capsule, the antenna, the eyes, mouthparts and surrounds the brain." []
 is_a: AISM:0000174 ! region of cuticle
+is_a: UBERON:6007289
 relationship: AISM:0000079 AISM:0000098 ! encircled by neck membrane
+relationship: BFO:0000051 AISM:0000019 ! head capsule
 relationship: BFO:0000051 AISM:0000032 ! antenna
-relationship: BFO:0000051 UBERON:0003128
 relationship: BSPO:0000097 AISM:0000098 ! neck membrane
 relationship: RO:0002221 UBERON:0000955
 property_value: http://purl.org/dc/elements/1.1/description "" xsd:string
@@ -609,6 +614,7 @@ id: AISM:0000108
 name: thorax
 def: "The region of cuticle that is connected to some muscles of the fore and hind legs and is posterior to the neck membrane and aterior to the first abdominal spiracle." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
 is_a: AISM:0000174 ! region of cuticle
+is_a: UBERON:6007289
 relationship: BFO:0000051 AISM:0000031 ! leg
 relationship: BFO:0000051 AISM:0000085 ! mesocoxal muscle
 relationship: BFO:0000051 AISM:0000145 ! procoxal muscle
@@ -620,7 +626,9 @@ id: AISM:0000109
 name: abdomen {http://purl.obolibrary.org/obo/AISM_0000171="Snodgrass, R.E., 1931. Morphology of the insect abdomen. Smithsonian Miscellaneous Collections.\n\nhttps://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1-128.pdf"}
 def: "The region of the cuticle that is posterior to the thorax." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
 is_a: AISM:0000174 ! region of cuticle
+is_a: UBERON:6007289
 relationship: BSPO:0000099 AISM:0000108 ! thorax
+property_value: http://xmlns.com/foaf/0.1/depiction https://ndownloader.figshare.com/files/6014256/preview/6014256/preview.jpg
 property_value: IAO:0000232 "The thorax is defined based on local properties (e.g. attachment sites of coxal muscles) and therefore we can reference this class for the definition of the abdomen." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko"}
 
 [Term]
@@ -642,7 +650,7 @@ name: basal antennal conjunctiva
 def: "This conjunctiva encircle the base of the antenna (scape) and is encircled by the cranium as the antennal foramen." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
 is_a: AISM:0000004 ! conjunctiva
 relationship: AISM:0000078 AISM:0000113 ! encircles scape
-relationship: RO:0002150 UBERON:0003128
+relationship: RO:0002150 AISM:0000019 ! head capsule
 property_value: IAO:0000232 "" xsd:string
 
 [Term]
@@ -724,6 +732,7 @@ relationship: RO:0002008 CL:0000066 {cardinality="1"}
 [Term]
 id: AISM:0000127
 name: unicellular cuticular evagination
+def: "The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
 is_a: AISM:0000027 ! cuticular evagination
 relationship: RO:0002008 CL:0000066 {cardinality="1"}
 
@@ -736,14 +745,15 @@ relationship: RO:0002008 UBERON:0005157
 [Term]
 id: AISM:0000130
 name: uniporous sensillum
-is_a: AISM:0000127 ! unicellular cuticular evagination
-relationship: BFO:0000051 AISM:0000134 {cardinality="1"} ! exocrine gland duct
+def: "The seta that has one opening distally." []
+is_a: AISM:0000039 ! seta
+relationship: BFO:0000051 AISM:0000177 {cardinality="1"} ! pore canal
 
 [Term]
 id: AISM:0000131
-name: multiporous sensillum
-is_a: AISM:0000127 ! unicellular cuticular evagination
-relationship: BFO:0000051 AISM:0000134 {minCardinality="2"} ! exocrine gland duct
+name: multiporous sensillum {http://purl.obolibrary.org/obo/AISM_0000171="Ando, T., Sekine, S., Inagaki, S., Misaki, K., Badel, L., Moriya, H., Sami, M.M., Itakura, Y., Chihara, T., Kazama, H. and Yonemura, S., 2019. Nanopore formation in the cuticle of an insect olfactory sensillum. Current Biology, 29(9), pp.1512-1520.\nhttps://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4"}
+is_a: AISM:0000039 ! seta
+relationship: BFO:0000051 AISM:0000177 {minCardinality="2"} ! pore canal
 
 [Term]
 id: AISM:0000132
@@ -783,6 +793,9 @@ is_a: AISM:0000136 ! branching cuticular invagination
 id: AISM:0000138
 name: apophysis
 is_a: AISM:0000006 ! cuticular invagination
+relationship: BFO:0000050 AISM:0000003 ! sclerite
+relationship: RO:0000053 PATO:0002078
+property_value: IAO:0000232 "The apophysis in HAO referres to an ivagination of the cuticle that is cylindrical as opposed by a ridge that is elongate. Beutel et al. 2013 differentiate apodemes from apophyses in thast apodemes are solid ad apophyses are hollow." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko"}
 
 [Term]
 id: AISM:0000140
@@ -808,6 +821,7 @@ is_a: AISM:0000144 ! furca
 [Term]
 id: AISM:0000144
 name: furca
+def: "The apophysis that is located ventromedially on the thorax and is connected to the coxa via muscles." [] {http://purl.org/dc/elements/1.1/contributor=""}
 is_a: AISM:0000138 ! apophysis
 relationship: BFO:0000050 AISM:0000108 ! thorax
 relationship: BFO:0000050 BSPO:0000112
@@ -992,6 +1006,64 @@ def: "The region of the insect integument that is part of the insect cuticle." [
 is_a: UBERON:6007284
 relationship: BFO:0000050 UBERON:0001001
 property_value: IAO:0000232 "The AISM focuses on anatomical structures that are part of the insect (chitinous) cuticle. These structures are acellular regions of the integument. Regions of the insect cuticle with different mechanical properties (i.e. increased and descresed flexinility, thickness and elasticity) are continuous with each other (e.g. sclerites are continuous with conjunctivae or resilin rich regions are continuou with regions with less resilin content)." xsd:string
+
+[Term]
+id: AISM:0000177
+name: pore canal {http://purl.obolibrary.org/obo/AISM_0000171="Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.\n\nhttps://www.degruyter.com/document/doi/10.1515/9783110264043/html"}
+def: "The anatomical space that is contained by the cuticle ad conects the inside of the insect with the outside, tubular and whose diameter is smaller than 100 nm." []
+is_a: UBERON:0000464
+relationship: RO:0000053 PATO:0001873
+relationship: RO:0001018 UBERON:0001002
+relationship: RO:0002008 CL:0000066 {cardinality="1"}
+
+[Term]
+id: AISM:0000178
+name: acantha
+def: "The solid cuticular protrusion that coicides with only one epidermal cell (smaller than the diameter of the epidermal cell)." []
+is_a: AISM:0000028 ! solid cuticular protrusion
+relationship: RO:0002008 CL:0000362 {cardinality="1"}
+
+[Term]
+id: AISM:0000185
+name: sensillum chaeticum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.\n\nhttps://www.degruyter.com/document/doi/10.1515/9783110264043/html"}
+def: "Hairlike seta that is short and thick walled." [] {http://purl.org/dc/elements/1.1/contributor="imiko"}
+is_a: AISM:0000039 ! seta
+relationship: RO:0000053 PATO:0002228
+
+[Term]
+id: AISM:0000186
+name: sensillum trichodeum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.\n\nhttps://www.degruyter.com/document/doi/10.1515/9783110264043/html"}
+def: "Hairlike seta that is long." []
+is_a: AISM:0000039 ! seta
+relationship: RO:0000053 PATO:0001154
+relationship: RO:0000053 PATO:0002228
+
+[Term]
+id: AISM:0000187
+name: sensillum coeloconicum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.\n\nhttps://www.degruyter.com/document/doi/10.1515/9783110264043/html"}
+def: "Seta that is located in the middle of a depression with narrowed external opening." []
+is_a: AISM:0000039 ! seta
+
+[Term]
+id: AISM:0000188
+name: apodeme
+is_a: AISM:0000006 ! cuticular invagination
+relationship: BFO:0000050 AISM:0000003 ! sclerite
+
+[Term]
+id: AISM:0000189
+name: sensillum basiconicum
+is_a: AISM:0000039 ! seta
+relationship: RO:0000053 PATO:0002021
+
+[Term]
+id: AISM:0000190
+name: antennifer
+def: "The solid cuticular protrusion (process, protuberace) that bears the condyle of the cranio-antennal articulation." []
+is_a: AISM:0000028 ! solid cuticular protrusion
+
+[Term]
+id: UBERON:0001134
 
 [Typedef]
 id: AISM:0000011

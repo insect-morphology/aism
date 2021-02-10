@@ -7,16 +7,17 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2020-12-11/aism-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-02-09/aism-base.owl"/>
         <dc:description>Ontology about the skeletomuscular system of insects</dc:description>
         <dc:title>Anatomy Ontology of Insect Skeletomuscular System</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="CC-BY"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-12-11</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -92,6 +93,18 @@ This annotation property is on the label of a class in owl</obo:IAO_0000115>
     <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
     
 
 
@@ -428,6 +441,7 @@ This annotation property is on the label of a class in owl</obo:IAO_0000115>
 Micro-CT based methods cannot be used to accuirately to differentiate slcerites from conjunctiuvae. CLSM (the excitation wavelengths of sclerites and conjunctivae are different in response of 488 nm emission vawelength), histological sections or simple dissections need to be applied to define relative flexibility of the insect cuticle.
 
 If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `encircled by` object properties are used to link the sclerite and the conjunctiva even in cases in which the encircled sclerites or conjunctivae are part of an evagination allowing to model spatial relationship between appendage segments: the pedicel is encircled by the scapal-pedicel conjunctiva, which is encircled by the scape or the the coxa encircles the basal femoral conjunctiuva that encircels the femur.</obo:IAO_0000232>
+        <oboInOwl:hasExactSynonym>membrane</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">conjunctiva</rdfs:label>
     </owl:Class>
     
@@ -614,8 +628,15 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The articulatio between the cardo ad the cranium.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cranio-cardinal articulation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The articulatio between the cardo ad the cranium.</owl:annotatedTarget>
+        <dc:contributor></dc:contributor>
+    </owl:Axiom>
     
 
 
@@ -690,9 +711,14 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The articulation between the scape and the cranium.</obo:IAO_0000115>
-        <obo:IAO_0000232></obo:IAO_0000232>
         <rdfs:label xml:lang="en">cranio-antennal articulation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The articulation between the scape and the cranium.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
     
 
 
@@ -814,7 +840,8 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">cranium</rdfs:label>
+        <oboInOwl:hasExactSynonym>cranium</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">head capsule</rdfs:label>
     </owl:Class>
     
 
@@ -955,6 +982,7 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000112"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115></obo:IAO_0000115>
         <rdfs:label xml:lang="en">antenna</rdfs:label>
     </owl:Class>
     
@@ -1146,6 +1174,7 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002254"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The seta that is flat.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">scale</rdfs:label>
     </owl:Class>
     
@@ -1284,11 +1313,17 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
     <!-- http://purl.obolibrary.org/obo/AISM_0000053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000053">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000141"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1707,7 +1742,7 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">cranial muscle</rdfs:label>
@@ -1743,7 +1778,7 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">cranio-mandibular muscle</rdfs:label>
@@ -1779,13 +1814,13 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">cranio-labral muscle</rdfs:label>
@@ -2158,6 +2193,7 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_6007289"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
@@ -2167,13 +2203,13 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000032"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2188,7 +2224,7 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the antenna, the eyes, mouthparts and surrounds the brain.</obo:IAO_0000115>
+        <obo:IAO_0000115>The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the head capsule, the antenna, the eyes, mouthparts and surrounds the brain.</obo:IAO_0000115>
         <dc:description></dc:description>
         <rdfs:label xml:lang="en">head</rdfs:label>
     </owl:Class>
@@ -2199,6 +2235,7 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_6007289"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -2246,6 +2283,7 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_6007289"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
@@ -2255,6 +2293,7 @@ If a conjunctiva entirelly encircles a sclerites, than the `encircles` and `enci
         <obo:IAO_0000115>The region of the cuticle that is posterior to the thorax.</obo:IAO_0000115>
         <obo:IAO_0000232>The thorax is defined based on local properties (e.g. attachment sites of coxal muscles) and therefore we can reference this class for the definition of the abdomen.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">abdomen</rdfs:label>
+        <foaf:depiction rdf:resource="https://ndownloader.figshare.com/files/6014256/preview/6014256/preview.jpg"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
@@ -2328,7 +2367,7 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This conjunctiva encircle the base of the antenna (scape) and is encircled by the cranium as the antennal foramen.</obo:IAO_0000115>
@@ -2571,8 +2610,15 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unicellular cuticular evagination</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000127"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
     
 
 
@@ -2594,14 +2640,15 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
     <!-- http://purl.obolibrary.org/obo/AISM_0000130 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000130">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000127"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The seta that has one opening distally.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">uniporous sensillum</rdfs:label>
     </owl:Class>
     
@@ -2610,16 +2657,23 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
     <!-- http://purl.obolibrary.org/obo/AISM_0000131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000127"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">multiporous sensillum</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000131"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">multiporous sensillum</owl:annotatedTarget>
+        <obo:AISM_0000171>Ando, T., Sekine, S., Inagaki, S., Misaki, K., Badel, L., Moriya, H., Sami, M.M., Itakura, Y., Chihara, T., Kazama, H. and Yonemura, S., 2019. Nanopore formation in the cuticle of an insect olfactory sensillum. Current Biology, 29(9), pp.1512-1520.
+https://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -2734,23 +2788,25 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000077"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001873"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000232>The apophysis in HAO referres to an ivagination of the cuticle that is cylindrical as opposed by a ridge that is elongate. Beutel et al. 2013 differentiate apodemes from apophyses in thast apodemes are solid ad apophyses are hollow.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">apophysis</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000138"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>The apophysis in HAO referres to an ivagination of the cuticle that is cylindrical as opposed by a ridge that is elongate. Beutel et al. 2013 differentiate apodemes from apophyses in thast apodemes are solid ad apophyses are hollow.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
     
 
 
@@ -2876,8 +2932,15 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The apophysis that is located ventromedially on the thorax and is connected to the coxa via muscles.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">furca</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000144"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The apophysis that is located ventromedially on the thorax and is connected to the coxa via muscles.</owl:annotatedTarget>
+        <dc:contributor></dc:contributor>
+    </owl:Axiom>
     
 
 
@@ -3386,6 +3449,225 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AISM_0000177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000464"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001873"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001018"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The anatomical space that is contained by the cuticle ad conects the inside of the insect with the outside, tubular and whose diameter is smaller than 100 nm.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">pore canal</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">pore canal</owl:annotatedTarget>
+        <obo:AISM_0000171>Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+
+https://www.degruyter.com/document/doi/10.1515/9783110264043/html</obo:AISM_0000171>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000362"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The solid cuticular protrusion that coicides with only one epidermal cell (smaller than the diameter of the epidermal cell).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">acantha</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001154"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002228"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Hairlike seta that is short and thick walled.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sensillum chaeticum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000185"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Hairlike seta that is short and thick walled.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000185"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">sensillum chaeticum</owl:annotatedTarget>
+        <obo:AISM_0000171>Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+
+https://www.degruyter.com/document/doi/10.1515/9783110264043/html</obo:AISM_0000171>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001154"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002228"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Hairlike seta that is long.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sensillum trichodeum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000186"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">sensillum trichodeum</owl:annotatedTarget>
+        <obo:AISM_0000171>Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+
+https://www.degruyter.com/document/doi/10.1515/9783110264043/html</obo:AISM_0000171>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000083"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000157"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000411"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Seta that is located in the middle of a depression with narrowed external opening.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sensillum coeloconicum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000187"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">sensillum coeloconicum</owl:annotatedTarget>
+        <obo:AISM_0000171>Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+
+https://www.degruyter.com/document/doi/10.1515/9783110264043/html</obo:AISM_0000171>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000188 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000188">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002078"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">apodeme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000189 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000189">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">sensillum basiconicum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000028"/>
+        <obo:IAO_0000115>The solid cuticular protrusion (process, protuberace) that bears the condyle of the cranio-antennal articulation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">antennifer</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSPO_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000070"/>
@@ -3401,6 +3683,12 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
     <!-- http://purl.obolibrary.org/obo/BSPO_0000080 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000080"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000083"/>
     
 
 
@@ -3467,6 +3755,18 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
     <!-- http://purl.obolibrary.org/obo/CL_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000362"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000052"/>
     
 
 
@@ -3566,6 +3866,24 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0002021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002021"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002078"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002228"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0002254 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002254"/>
@@ -3584,6 +3902,12 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000464"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000955 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000955"/>
@@ -3596,9 +3920,17 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001002"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001134 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001134">
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -3635,6 +3967,12 @@ https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1
     <!-- http://purl.obolibrary.org/obo/UBERON_6007284 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_6007284"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_6007289 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_6007289"/>
 </rdf:RDF>
 
 

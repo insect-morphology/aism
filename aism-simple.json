@@ -1,9 +1,29 @@
 {
   "graphs" : [ {
     "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000177",
+      "meta" : {
+        "definition" : {
+          "val" : "The anatomical space that is contained by the cuticle ad conects the inside of the insect with the outside, tubular and whose diameter is smaller than 100 nm.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "pore canal"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000056",
       "type" : "CLASS",
       "lbl" : "metatrochantin"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000178",
+      "meta" : {
+        "definition" : {
+          "val" : "The solid cuticular protrusion that coicides with only one epidermal cell (smaller than the diameter of the epidermal cell).",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "acantha"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000057",
       "type" : "CLASS",
@@ -73,9 +93,17 @@
       "type" : "CLASS",
       "lbl" : "ring sclerite"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000188",
+      "type" : "CLASS",
+      "lbl" : "apodeme"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000067",
       "type" : "CLASS",
       "lbl" : "protibia"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000189",
+      "type" : "CLASS",
+      "lbl" : "sensillum basiconicum"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000068",
       "type" : "CLASS",
@@ -93,6 +121,16 @@
       "type" : "CLASS",
       "lbl" : "mesocoxa"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000185",
+      "meta" : {
+        "definition" : {
+          "val" : "Hairlike seta that is short and thick walled.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "sensillum chaeticum"
+    }, {
       "id" : "http://purl.org/dc/elements/1.1/description",
       "meta" : {
         "basicPropertyValues" : [ {
@@ -109,6 +147,16 @@
       "type" : "PROPERTY",
       "lbl" : "description"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000186",
+      "meta" : {
+        "definition" : {
+          "val" : "Hairlike seta that is long.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "sensillum trichodeum"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000065",
       "type" : "CLASS",
       "lbl" : "metacoxa"
@@ -116,6 +164,16 @@
       "id" : "http://purl.obolibrary.org/obo/AISM_0000066",
       "type" : "CLASS",
       "lbl" : "procoxa"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000187",
+      "meta" : {
+        "definition" : {
+          "val" : "Seta that is located in the middle of a depression with narrowed external opening.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "sensillum coeloconicum"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000070",
       "type" : "CLASS",
@@ -132,6 +190,16 @@
       "id" : "http://purl.obolibrary.org/obo/AISM_0000073",
       "type" : "CLASS",
       "lbl" : "mere"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000190",
+      "meta" : {
+        "definition" : {
+          "val" : "The solid cuticular protrusion (process, protuberace) that bears the condyle of the cranio-antennal articulation.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "antennifer"
     }, {
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000099",
       "meta" : {
@@ -427,6 +495,12 @@
       "lbl" : "cranio-mandibular articulation"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000015",
+      "meta" : {
+        "definition" : {
+          "val" : "The articulatio between the cardo ad the cranium.",
+          "xrefs" : [ ]
+        }
+      },
       "type" : "CLASS",
       "lbl" : "cranio-cardinal articulation"
     }, {
@@ -435,6 +509,12 @@
       "lbl" : "branching cuticular invagination"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000130",
+      "meta" : {
+        "definition" : {
+          "val" : "The seta that has one opening distally.",
+          "xrefs" : [ ]
+        }
+      },
       "type" : "CLASS",
       "lbl" : "uniporous sensillum"
     }, {
@@ -450,27 +530,26 @@
       "type" : "CLASS",
       "lbl" : "placoid"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000137",
-      "type" : "CLASS",
-      "lbl" : "malphigian tube"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000016",
       "meta" : {
         "definition" : {
           "val" : "The articulation between the scape and the cranium.",
           "xrefs" : [ ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
-          "val" : ""
-        } ]
+        }
       },
       "type" : "CLASS",
       "lbl" : "cranio-antennal articulation"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000137",
+      "type" : "CLASS",
+      "lbl" : "malphigian tube"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000138",
       "meta" : {
-        "comments" : [ "" ]
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "The apophysis in HAO referres to an ivagination of the cuticle that is cylindrical as opposed by a ridge that is elongate. Beutel et al. 2013 differentiate apodemes from apophyses in thast apodemes are solid ad apophyses are hollow."
+        } ]
       },
       "type" : "CLASS",
       "lbl" : "apophysis"
@@ -484,8 +563,15 @@
       "lbl" : "cardo"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000019",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cranium",
+          "xrefs" : [ ]
+        } ]
+      },
       "type" : "CLASS",
-      "lbl" : "cranium"
+      "lbl" : "head capsule"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002008",
       "meta" : {
@@ -506,13 +592,19 @@
       "type" : "PROPERTY",
       "lbl" : "coincident with"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000144",
+      "meta" : {
+        "definition" : {
+          "val" : "The apophysis that is located ventromedially on the thorax and is connected to the coxa via muscles.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "furca"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000023",
       "type" : "CLASS",
       "lbl" : "galea"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000144",
-      "type" : "CLASS",
-      "lbl" : "furca"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000145",
       "type" : "CLASS",
@@ -719,6 +811,12 @@
       "lbl" : "metafemoral muscle"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000032",
+      "meta" : {
+        "definition" : {
+          "val" : "",
+          "xrefs" : [ ]
+        }
+      },
       "type" : "CLASS",
       "lbl" : "antenna"
     }, {
@@ -947,6 +1045,12 @@
       "lbl" : "ligula"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000041",
+      "meta" : {
+        "definition" : {
+          "val" : "The seta that is flat.",
+          "xrefs" : [ ]
+        }
+      },
       "type" : "CLASS",
       "lbl" : "scale"
     }, {
@@ -992,6 +1096,7 @@
           "val" : "x adjacent to y if and only if x and y share a boundary.",
           "xrefs" : [ ]
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_gocam", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension" ],
         "xrefs" : [ {
           "val" : "RO:0002220"
         } ],
@@ -1162,6 +1267,7 @@
           "val" : "a core relation that holds between a part and its whole",
           "xrefs" : [ ]
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_gp2term", "http://purl.obolibrary.org/obo/valid_for_gocam", "http://purl.obolibrary.org/obo/valid_for_go_ontology" ],
         "xrefs" : [ {
           "val" : "BFO:0000050"
         } ],
@@ -1281,6 +1387,7 @@
           "xrefs" : [ "PATOC:CJM" ]
         },
         "comments" : [ "We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_gocam", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension" ],
         "xrefs" : [ {
           "val" : "BFO:0000051"
         } ],
@@ -1300,6 +1407,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "quality"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
+          "val" : "false"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."
         }, {
@@ -1311,6 +1421,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "external"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "chebi_ontology"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "has_part"
@@ -1412,6 +1525,9 @@
           "xrefs" : [ ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://xmlns.com/foaf/0.1/depiction",
+          "val" : "https://ndownloader.figshare.com/files/6014256/preview/6014256/preview.jpg"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
           "val" : "The thorax is defined based on local properties (e.g. attachment sites of coxal muscles) and therefore we can reference this class for the definition of the abdomen."
         } ]
@@ -1434,7 +1550,7 @@
       "id" : "http://purl.obolibrary.org/obo/AISM_0000107",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the antenna, the eyes, mouthparts and surrounds the brain.",
+          "val" : "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the head capsule, the antenna, the eyes, mouthparts and surrounds the brain.",
           "xrefs" : [ ]
         },
         "basicPropertyValues" : [ {
@@ -1533,6 +1649,11 @@
           "val" : "The region of the insect cuticle that is more flexible than the neighboring sclerite(s) (sclerite(s) that the conjunctiva is continuous with).",
           "xrefs" : [ ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "membrane",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
           "val" : "Conjunctivae are more flexible and usually less thick than sclerties of the cuticle allowing the sclerites to move relative to each other.\nMicro-CT based methods cannot be used to accuirately to differentiate slcerites from conjunctiuvae. CLSM (the excitation wavelengths of sclerites and conjunctivae are different in response of 488 nm emission vawelength), histological sections or simple dissections need to be applied to define relative flexibility of the insect cuticle.\n\nIf a conjunctiva entirelly encircles a sclerites, than the `encircles` and `encircled by` object properties are used to link the sclerite and the conjunctiva even in cases in which the encircled sclerites or conjunctivae are part of an evagination allowing to model spatial relationship between appendage segments: the pedicel is encircled by the scapal-pedicel conjunctiva, which is encircled by the scape or the the coxa encircles the basal femoral conjunctiuva that encircels the femur."
@@ -1596,6 +1717,12 @@
       "lbl" : "cuticular invagination"
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000127",
+      "meta" : {
+        "definition" : {
+          "val" : "The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer.",
+          "xrefs" : [ ]
+        }
+      },
       "type" : "CLASS",
       "lbl" : "unicellular cuticular evagination"
     }, {
@@ -1636,6 +1763,10 @@
       "id" : "http://purl.obolibrary.org/obo/AISM_0000099",
       "type" : "CLASS",
       "lbl" : "oral foraminal conjunctiva"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "type" : "PROPERTY",
+      "lbl" : "has_exact_synonym"
     }, {
       "id" : "http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to",
       "meta" : {
@@ -1782,13 +1913,13 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000065"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000126",
-      "pred" : "http://purl.obolibrary.org/obo/AISM_0000078",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000127"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000125",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000126",
+      "pred" : "http://purl.obolibrary.org/obo/AISM_0000078",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000127"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000091",
       "pred" : "is_a",
@@ -1842,6 +1973,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000006"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000188",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000091",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000007"
@@ -1854,13 +1989,13 @@
       "pred" : "http://purl.obolibrary.org/obo/BSPO_0000099",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000098"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000076",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000063"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000107",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000076",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000063"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000134",
       "pred" : "is_a",
@@ -1950,6 +2085,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000080",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000019"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
@@ -1982,25 +2121,29 @@
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000078",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000117"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000112",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000019"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000007",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000174"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000130",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000127"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000052",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000053"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000099",
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000188",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000004"
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000006"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000066",
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000106"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000099",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000042",
       "pred" : "is_a",
@@ -2022,6 +2165,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000147"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000185",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000039"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/pato#different_in_magnitude_relative_to"
@@ -2029,10 +2176,6 @@
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000065",
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000078",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000125"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000053",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000031",
       "pred" : "is_a",
@@ -2114,13 +2257,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000007"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000074",
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000053",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000073"
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000174"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000075",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000063"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000074",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000073"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000157",
       "pred" : "is_a",
@@ -2141,6 +2288,10 @@
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000073",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000062"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000189",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000039"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000141",
       "pred" : "is_a",
@@ -2210,6 +2361,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000158"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000187",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000039"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000109",
       "pred" : "http://purl.obolibrary.org/obo/BSPO_0000099",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000108"
@@ -2222,6 +2377,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000029"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000130",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000039"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000168",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000159"
@@ -2230,13 +2389,13 @@
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000078",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000039",
-      "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000126"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000015",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000002"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000039",
+      "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000126"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000067",
       "pred" : "is_a",
@@ -2245,6 +2404,10 @@
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000029",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000128"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000190",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000028"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000081",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
@@ -2370,10 +2533,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000077"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000083",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000019"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000084",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000080"
@@ -2386,13 +2545,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000111",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000100",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000111",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000040",
       "pred" : "is_a",
@@ -2402,13 +2561,13 @@
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000125"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000096",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000004"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000061",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000096",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000089",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -2457,10 +2616,6 @@
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000059",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000145"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000081",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000019"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000019",
       "pred" : "is_a",
@@ -2546,6 +2701,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000147"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000186",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000039"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000054",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
@@ -2558,17 +2717,21 @@
       "pred" : "http://purl.obolibrary.org/obo/BSPO_0000099",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000098"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000064",
-      "pred" : "http://purl.obolibrary.org/obo/AISM_0000078",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000124"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000065",
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000104"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000064",
+      "pred" : "http://purl.obolibrary.org/obo/AISM_0000078",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000124"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000089",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000107",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000019"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000006",
       "pred" : "is_a",
@@ -2582,13 +2745,13 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000077"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000104",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000173"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000115",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000063"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000104",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000173"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000085",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
@@ -2642,6 +2805,10 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000099"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000138",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000003"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000119",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000108"
@@ -2669,6 +2836,10 @@
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000142",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000144"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000053",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000037"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000074",
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
@@ -2701,6 +2872,10 @@
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000078",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000079"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000178",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000028"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000172",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
@@ -2742,6 +2917,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000080"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000131",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000039"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000053",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002150",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000103"
@@ -2757,10 +2936,6 @@
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000008",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000174"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/AISM_0000131",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000127"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000027",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000053",
@@ -2802,9 +2977,9 @@
         "val" : "Anatomy Ontology of Insect Skeletomuscular System"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2020-12-11"
+        "val" : "2021-02-09"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aism/releases/2020-12-11/aism-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/aism/releases/2021-02-09/aism-simple.json"
     },
     "equivalentNodesSets" : [ ],
     "logicalDefinitionAxioms" : [ ],
