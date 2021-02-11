@@ -188,6 +188,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000187>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000188>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000189>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000190>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000191>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000192>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -1392,9 +1394,26 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000189> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000190> (antennifer)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000190> "The solid cuticular protrusion (process, protuberace) that bears the condyle of the cranio-antennal articulation.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000190> "The solid cuticular protrusion (process, protuberace) that bears the cranial articular surface of the cranio-antennal articulation.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000190> "antennifer"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000190> <http://purl.obolibrary.org/obo/AISM_0000028>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000113>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000191> (tentorium)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000191> "The paired apophysis that connects the posterior (ventral in prognathous head) and anterior (dorsal in priognathous head) walls of the head capsule and serves as site of isertions of atennal ad mouthpart muscles.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000191> "tentorium"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0003128>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000032>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000165>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000191>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000192> (tentorio-antennal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000192> "tentorio-antennal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000192> <http://purl.obolibrary.org/obo/AISM_0000080>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001134> (skeletal muscle tissue)
 
