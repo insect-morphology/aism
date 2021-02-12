@@ -440,6 +440,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000024> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000026> "lacinia"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000026> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000026> <http://purl.obolibrary.org/obo/AISM_0000165>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000027> (cuticular evagination)
 
@@ -541,13 +542,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000041> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000042> "labrum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000042> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000042> <http://purl.obolibrary.org/obo/AISM_0000165>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000043> (mandible)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000043> "mandible"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> <http://purl.obolibrary.org/obo/AISM_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> <http://purl.obolibrary.org/obo/AISM_0000029>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000099>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> <http://purl.obolibrary.org/obo/AISM_0000165>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0000044>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000082>))
 
@@ -555,6 +557,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000044> "maxilla"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000044> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000044> <http://purl.obolibrary.org/obo/AISM_0000165>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000045> (second valvifer)
 
@@ -575,6 +578,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000047> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000048> "ligula"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000048> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000049> (glossa)
 
@@ -592,6 +596,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000050> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000051> "maxillary palpus"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000051> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000052> (mesonotum)
 
@@ -807,6 +812,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000086> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000087> "labium"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000087> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000087> <http://purl.obolibrary.org/obo/AISM_0000165>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000088> (eye cuticle)
 
@@ -867,9 +873,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000097> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000098> (neck membrane)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000098> "neck membrane"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000098> <http://purl.obolibrary.org/obo/AISM_0000004>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000098> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0003128>))))
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000098> "The cojuctiva that is continuous with the posterior margin of the head capsule.")
+AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/AISM_0000098> "")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+
+https://www.degruyter.com/document/doi/10.1515/9783110264043/html
+
+\"Cervical membrane: membrane connecting the head and prothorax.\"") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000098> "cervical membrane")
+AnnotationAssertion(Annotation(rdfs:comment "") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000098> "neck membrane"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000098> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000098> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000099> (oral foraminal conjunctiva)
 
@@ -947,9 +960,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000108> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000109> "The region of the cuticle that is posterior to the thorax.")
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000109> "The thorax is defined based on local properties (e.g. attachment sites of coxal muscles) and therefore we can reference this class for the definition of the abdomen.")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Snodgrass, R.E., 1931. Morphology of the insect abdomen. Smithsonian Miscellaneous Collections.
-
-https://repository.si.edu/bitstream/handle/10088/23927/SMC_85_Snodgrass_1931_6_1-128.pdf") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000109> "abdomen"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000109> "abdomen"@en)
 AnnotationAssertion(<http://xmlns.com/foaf/0.1/depiction> <http://purl.obolibrary.org/obo/AISM_0000109> <https://ndownloader.figshare.com/files/6014256/preview/6014256/preview.jpg>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000109> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000109> <http://purl.obolibrary.org/obo/UBERON_6007289>)
