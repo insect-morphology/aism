@@ -190,6 +190,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000189>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000190>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000191>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000192>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000193>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000194>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000195>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000196>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -260,7 +264,7 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000171> <http://ww
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (curator note)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (curator notes)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000232> "curator note")
 
@@ -630,7 +634,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000058> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000059> (pronotum)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000059> "pronotum"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000059> "The sclerite that is attached to cranial muscles, procoxal muscles, contiuous posterioirly with the neck membrane and with pronoto-propleural conjunctiva and not adjacent (not touching) to the procoxa.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+
+https://www.degruyter.com/document/doi/10.1515/9783110264043/html
+
+\"Pronotum: prothoracic tergum.\"") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000059> "pronotum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> <http://purl.obolibrary.org/obo/AISM_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000066>)))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000098>))
@@ -1100,6 +1109,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000135> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000136> (branching cuticular invagination)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000136> "The cuticular ivagination that is branched into umerous branches.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000136> "Branching cuticular invaginations porvide important models for branchig morphogenesis.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000136> "branching cuticular invagination"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000136> <http://purl.obolibrary.org/obo/AISM_0000006>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000136> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000402>))
@@ -1145,6 +1156,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000143> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(Annotation(dce:contributor "") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000144> "The apophysis that is located ventromedially on the thorax and is connected to the coxa via muscles.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000144> "furca"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000144> <http://purl.obolibrary.org/obo/AISM_0000136>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000144> <http://purl.obolibrary.org/obo/AISM_0000138>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000144> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000144> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BSPO_0000112>))
@@ -1365,7 +1377,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000185> ObjectSomeValuesFrom(<h
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000186> "Hairlike seta that is long.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
 
-https://www.degruyter.com/document/doi/10.1515/9783110264043/html") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000186> "sensillum trichodeum"@en)
+https://www.degruyter.com/document/doi/10.1515/9783110264043/html
+
+\"Sensillum trichodeum: hair-like sensilla, seta associated with sensory cell.\"") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000186> "sensillum trichodeum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000186> <http://purl.obolibrary.org/obo/AISM_0000039>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000186> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001154>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000186> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002228>))
@@ -1404,6 +1418,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000190> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000191> "The paired apophysis that connects the posterior (ventral in prognathous head) and anterior (dorsal in priognathous head) walls of the head capsule and serves as site of isertions of atennal ad mouthpart muscles.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000191> "tentorium"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> <http://purl.obolibrary.org/obo/AISM_0000136>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> <http://purl.obolibrary.org/obo/AISM_0000138>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0003128>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000032>))))
@@ -1414,6 +1429,34 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000191> ObjectExactCardinality(
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000192> "tentorio-antennal muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000192> <http://purl.obolibrary.org/obo/AISM_0000080>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000193> (pit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000193> "The cuticular depression that corresponds to an apophysis.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000193> "pit"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000193> <http://purl.obolibrary.org/obo/AISM_0000005>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000193> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/AISM_0000138>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000194> (anterior tentorial pit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000194> "The tentorial pit that correspods to the anterior (dorsal in prognathous head) end of the tentorium.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000194> "anterior tentorial pit"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000194> <http://purl.obolibrary.org/obo/AISM_0000196>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000194> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000671> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000195> (posterior tetorial pit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000195> "The tentorial pit that correspods to the posterior (ventral in prognathous head) end of the tentorium.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000195> "posterior tetorial pit"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000195> <http://purl.obolibrary.org/obo/AISM_0000196>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000195> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000196> (tentorial pit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000196> "The pit that correspods to the tentorium.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000196> "tentorial pit"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000196> <http://purl.obolibrary.org/obo/AISM_0000193>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000196> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001134> (skeletal muscle tissue)
 
