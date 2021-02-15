@@ -555,9 +555,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000044> (maxilla)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000044> "maxilla"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
+
+https://doi.org/10.1515/9783110264043
+
+\"Maxilla: head appendage of segment 5, innervated by maxillary nerve originating from intermediate part of suboesophageal complex; primarily composed of cardo, stipes, endite lobes (lacinia, galea) and maxillary palp.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000044> "maxilla"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000044> <http://purl.obolibrary.org/obo/AISM_0000029>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000044> <http://purl.obolibrary.org/obo/AISM_0000165>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000045> (second valvifer)
 
