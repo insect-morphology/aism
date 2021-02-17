@@ -194,6 +194,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000193>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000194>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000195>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000196>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -395,11 +401,15 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000017> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000018> (cardo)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000018> "cardo"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000018> <http://purl.obolibrary.org/obo/AISM_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000100> <http://purl.obolibrary.org/obo/AISM_0000111>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000099>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000110>))
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
+
+https://doi.org/10.1515/9783110264043
+
+\"Cardo: basal element of maxilla, articulating with head capsule; usually moved by one cranial muscle and one tentorial muscle.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000018> "cardo"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000018> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000100> <http://purl.obolibrary.org/obo/AISM_0000111>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000099>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000110>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000019> (head capsule)
 
@@ -428,19 +438,34 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000022> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000023> (galea)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000023> "galea"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000023> <http://purl.obolibrary.org/obo/AISM_0000029>)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Galea: outer endite lobe of maxilla, usually semimembranous and equipped with sensilla (mainly chemoreceptors).\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000023> "galea"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000023> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000024> (labial palpus)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000024> "labial palpus"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000024> <http://purl.obolibrary.org/obo/AISM_0000029>)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Labial palp: tactile appendage of the labium.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000024> "labial palpus"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000024> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000026> (lacinia)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000026> "lacinia"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000026> <http://purl.obolibrary.org/obo/AISM_0000029>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000026> <http://purl.obolibrary.org/obo/AISM_0000165>)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Lacinia: inner endite lobe of maxilla, usually firmly connected or fused with stipes; usually sclerotized, with mesally curved apex and articulated spines arranged along mesal edge.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000026> "lacinia"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000026> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004002>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000027> (cuticular evagination)
 
@@ -472,7 +497,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000031> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/AISM_0000032> (antenna)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000032> "")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000032> "antenna"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
+
+https://doi.org/10.1515/9783110264043
+
+\"Antenna: head appendage of segment 2, innervated by deutocerebrum; in Insecta composed of scapus, pedicellus and flagellum; primarily multisegmented and filiform.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000032> "antenna"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000032> <http://purl.obolibrary.org/obo/AISM_0000029>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000112>))
 
@@ -540,29 +569,44 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000041> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000042> (labrum)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000042> "labrum"@en)
+AnnotationAssertion(Annotation(rdfs:comment "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Labrum: unpaired upper lip, connected with distal edge of clypeus.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000042> "labrum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000042> <http://purl.obolibrary.org/obo/AISM_0000029>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000042> <http://purl.obolibrary.org/obo/AISM_0000165>)
 
-# Class: <http://purl.obolibrary.org/obo/AISM_0000043> (mandible)
+# Class: <http://purl.obolibrary.org/obo/AISM_0000043> (insect mandible)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000043> "mandible"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> <http://purl.obolibrary.org/obo/AISM_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> <http://purl.obolibrary.org/obo/AISM_0000029>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> <http://purl.obolibrary.org/obo/AISM_0000165>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0000044>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000082>))
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
-# Class: <http://purl.obolibrary.org/obo/AISM_0000044> (maxilla)
+https://doi.org/10.1515/9783110264043
 
+\"The mandibles are the paired appendages of the 4th head segment and receive their innervation from the anterior part of the suboesophageal ganglion [...] They are primarily a compact, undivided and strongly sclerotized element without appendages.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000043> "insect mandible"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000043> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000043> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000043> <http://purl.obolibrary.org/obo/AISM_0000165>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0000044>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000082>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000044> (insect maxilla)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000044> "Is a mouthpart appendage on the head capsule composed of cardo, stipes, galea, lacinia, palpifer and maxillary palpus."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
 https://doi.org/10.1515/9783110264043
 
-\"Maxilla: head appendage of segment 5, innervated by maxillary nerve originating from intermediate part of suboesophageal complex; primarily composed of cardo, stipes, endite lobes (lacinia, galea) and maxillary palp.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000044> "maxilla"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000044> <http://purl.obolibrary.org/obo/AISM_0000029>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000044> <http://purl.obolibrary.org/obo/AISM_0000165>)
+\"Maxilla: head appendage of segment 5, innervated by maxillary nerve originating from intermediate part of suboesophageal complex; primarily composed of cardo, stipes, endite lobes (lacinia, galea) and maxillary palp.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000044> "insect maxilla"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000044> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000044> <http://purl.obolibrary.org/obo/AISM_0000165>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000018>))
+SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AISM_0000044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000023>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000026>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000051>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000111>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004001>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000045> (second valvifer)
 
@@ -582,26 +626,40 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000047> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/AISM_0000048> (ligula)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000048> "ligula"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000048> <http://purl.obolibrary.org/obo/AISM_0000029>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000048> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000049> (glossa)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000049> "glossa"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000049> <http://purl.obolibrary.org/obo/AISM_0000029>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000048>))
+AnnotationAssertion(Annotation(rdfs:comment "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Glossa: paired inner endite lobes of the prementum.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000049> "glossa"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000049> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000048>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000050> (paraglossa)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000050> "paraglossa"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Paraglossa: paired outer endite lobes of the prementum (labium).\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000050> "paraglossa"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000050> <http://purl.obolibrary.org/obo/AISM_0000029>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000048>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000051> (maxillary palpus)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000051> "maxillary palpus"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
+
+https://doi.org/10.1515/9783110264043
+
+\"Palp: tactile appendage of maxilla\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000051> "maxillary palpus"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000051> <http://purl.obolibrary.org/obo/AISM_0000029>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000052> (mesonotum)
 
@@ -633,8 +691,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000056> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000057> (prementum)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000057> "prementum"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000057> <http://purl.obolibrary.org/obo/AISM_0000003>)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Prementum: distal main element of labium, bearing the endite lobes (glossa and paraglossa) and the labial palp.\"") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000057> "prementum"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000057> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000058> (prepectus)
 
@@ -815,9 +878,20 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000086> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000087> (labium)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000087> "labium"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000087> <http://purl.obolibrary.org/obo/AISM_0000029>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000087> <http://purl.obolibrary.org/obo/AISM_0000165>)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"The labium or lower lip forms the posterior (orthognathous head) or ventral (prognathous head) closure of the preoral space and of the salivarium. It is homologous to the maxilla (2nd maxilla) of crustaceans, but its proximal
+parts form a structural unit without a recognizable median line or suture.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000087> "labium"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000087> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(Annotation(rdfs:comment "imiko") <http://purl.obolibrary.org/obo/AISM_0000087> <http://purl.obolibrary.org/obo/AISM_0000165>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000024>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000048>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000049>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000050>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004004>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004006>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000088> (eye cuticle)
 
@@ -974,15 +1048,22 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000109> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/AISM_0000110> (stipito-cardinal conjunctiva)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000110> "stipito-cardinal conjunctiva"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000110> <http://purl.obolibrary.org/obo/AISM_0000004>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000110> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000018>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000110> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000110> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000110> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000018>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000110> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000111>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000111> (stipes)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000111> "stipes"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000111> <http://purl.obolibrary.org/obo/AISM_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000097> <http://purl.obolibrary.org/obo/AISM_0000018>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000110>))
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Stipes: second element of maxilla, connected with cardo by a hinge; bearing endite lobes (galea and lacinia) and maxillary palp.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000111> "stipes"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000111> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000097> <http://purl.obolibrary.org/obo/AISM_0000018>))
+SubClassOf(Annotation(rdfs:comment "imiko") <http://purl.obolibrary.org/obo/AISM_0000111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000110>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000112> (basal antennal conjunctiva)
 
@@ -1473,6 +1554,64 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000196> "tentorial pit"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000196> <http://purl.obolibrary.org/obo/AISM_0000193>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000196> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004001> (palpifer)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
+
+https://doi.org/10.1515/9783110264043
+
+\"Palpifer: small separate element of stipes, bears the maxillary palp.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004001> "palpifer"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004001> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004002> (galeo-lacinial conjunctiva)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004002> "galeo-lacinial conjunctiva"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004002> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000023>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000026>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004003> (postmentum)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Postmentum: posterior main element of labium, posteriorly adjacent with foramen occipitale in hexapods without gula or hypostomal bridge; often separated into two sclerites, the anterior mentum and the posterior submentum.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004003> "postmentum"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004003> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004004> (mentum)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Mentum: intermediate part of labium, anterior part of postmentum; bears the prementum at its distal edge.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004004> "mentum"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004004> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004005> (submentum)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Submentum: posterior part of a divided postmentum.\"") rdfs:label <http://purl.obolibrary.org/obo/AISM_0004005> "submentum"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004005> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004006> (palpiger)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
+
+https://doi.org/10.1515/9783110264043
+
+\"Palpiger: small separate element of prementum, bears the labial palp.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004006> "palpiger"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004006> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AISM_0004006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001134> (skeletal muscle tissue)
 
