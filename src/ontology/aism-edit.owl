@@ -627,7 +627,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000038> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000039> (seta)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000039> "seta"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Seta (=macrotrichium): articulated hair with socket, formed by trichogen cell.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000039> "seta"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000039> <http://purl.obolibrary.org/obo/AISM_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000039> <http://purl.obolibrary.org/obo/AISM_0000127>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000126>))
@@ -637,7 +641,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000039> ObjectExactCardinality(
 
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000040> "The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of a single sclerite that is encricled by a conjunctiva (moveable), and not musculated.")
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000040> "The difference between an appendage and a spur is the lack of muscles attached to the spur, otherwise, the mandible would be also a spur. Spines are multicellular evaginations that are not encircled by conjunctivae. Moveable beetle horns are spurs while not moveable beetle horns are spines.")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "https://doi.org/10.1016/0020-7322(79)90013-8") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000040> "spur"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Richards AG, Richards PA (1979) The cuticular protuberances of insects. International Journal of Insect Morphology and Embryology 8: 143–157. 
+
+\"Multicellular protuberances without differentiation of specialized cells\""@en) Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "https://doi.org/10.1016/0020-7322(79)90013-8") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000040> "spur"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000040> <http://purl.obolibrary.org/obo/AISM_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000040> <http://purl.obolibrary.org/obo/AISM_0000128>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000040> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001134>)))
@@ -1838,7 +1844,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004003> (postmentum)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004003> "Is the sclerite of the labiumthat is cmposed of the submentum and the mentum, which are connected by the submental-mental conjunctiva"@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004003> "Is the sclerite of the labium that is cmposed of the submentum and the mentum, which are connected by the submental-mental conjunctiva"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -2018,9 +2024,10 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Frons: frontal part of head capsule, delimited by ecdysial lines (frontal sutures); often triangular and bearing unpaired (median) ocellus.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004020> "frons"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004020> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004020> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AISM_0004020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AISM_0004020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0004019>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004029>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004021> (postoccipital ridge)
 
