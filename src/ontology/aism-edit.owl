@@ -247,6 +247,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004054>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -371,8 +374,8 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Sclerite: distinctly sclerotized region of the integument, with thick layer of exocuticle.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000003> "sclerite"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000003> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/AISM_0000004>))))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000003> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/AISM_0000004>))))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000004> (conjunctiva)
 
@@ -411,7 +414,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000007> "elastic cuticle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000007> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001019> <http://flybase.org/reports/FBgn0034157>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001019> <http://purl.obolibrary.org/obo/PR_Q9V7U0>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000008> (cuticular protrusion)
 
@@ -1026,9 +1029,9 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 # Class: <http://purl.obolibrary.org/obo/AISM_0000088> (eye cuticle)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000088> "eye cuticle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000088> <http://purl.obolibrary.org/obo/AISM_0000007>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000088> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000088> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000964>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000088> <http://purl.obolibrary.org/obo/AISM_0000007>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000088> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000088> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000964>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000089> (ligament)
 
@@ -1531,9 +1534,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000155> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000232> "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000156> "The cuticular depression that is circular.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000156> "fovea"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000156> <http://purl.obolibrary.org/obo/AISM_0000005>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000156> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/AISM_0000138>)))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000411>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000156> <http://purl.obolibrary.org/obo/AISM_0000005>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000156> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/AISM_0000138>)))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000411>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000157> (impression)
 
@@ -1578,11 +1581,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000160> ObjectIntersectionOf(Ob
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000161> (discrimenal lamella)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000161> "The ridge that is in the sagittal line of the ventral part thorax.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000161> "The ridge that is in the sagittal line of the ventral part thorax.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000161> "discrimenal lamella"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000161> <http://purl.obolibrary.org/obo/AISM_0000158>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/BSPO_0000417>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000161> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/BSPO_0000417>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000162> (sulcus)
 
@@ -1801,11 +1804,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000196> ObjectSomeValuesFrom(<h
 AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000197> "Is the anatomical space encircled a sclerite"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000197> "arthropod foramen"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000197> <http://purl.obolibrary.org/obo/UBERON_0000464>)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000003>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000174>))
 
-# Class: <http://purl.obolibrary.org/obo/AISM_0000198> (atennal foramen)
+# Class: <http://purl.obolibrary.org/obo/AISM_0000198> (antennal foramen)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000198> "atennal foramen"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000198> "antennal foramen"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000198> <http://purl.obolibrary.org/obo/AISM_0000197>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000198> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000019>))
 
@@ -1996,13 +1999,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004018> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004019> (clypeus)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004019> "Is the sclerite of the head capsule that is anterior to the frons and is attached to the labrum by the clypeo-labral conjunctiva"@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004019> "Is the region of the head capsule that is anterior to the frons and is attached to the labrum by the clypeo-labral conjunctiva"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Clypeus: anteroventral part of head capsule; primarily separated from frons by transverse frontoclypeal strengthening ridge between anterior tentorial pits; usually bearing the labrum at its distal margin.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004019> "clypeus"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004019> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004019> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0004020>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004018>))
@@ -2021,22 +2024,26 @@ SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AIS
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004021> (postoccipital ridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004021> "Is the ridge along the dorsal and lateral regions of the head capsule that is adjacent to the foramen occipitale."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Postoccipital ridge: strengthening ridge enclosing the foramen occipitale dorsally and laterally; also serving as muscle attachment area.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004021> "postoccipital ridge"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004021> <http://purl.obolibrary.org/obo/AISM_0000158>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004021> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004023>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000079> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004022> (circumocular ridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004022> "Is the ridge of the head capsule surrounding the eye cuticle."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Circumocular ridge: internal ridge enclosing compound eye.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004022> "circumocular ridge"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004022> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000088>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004023> (foramen occipitale)
@@ -2052,6 +2059,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004023> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004024> (tentorial bridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004024> "Is the apophysis of the tentorium originating from each posterior tentorial arm."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -2062,43 +2070,44 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Tentorial bridge (=corpotentorium): transverse element connecting posterior tentorial arms, often plate-like.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004024> "tentorial bridge"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004024> <http://purl.obolibrary.org/obo/AISM_0000138>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004024> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004037>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004025> (vertex)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004025> "Is the sclerite on the dorsal region of the head capsule that surrounds the coronal suture, and is connected laterally to the genae."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004025> "Is the dorsal region of the head capsule that surrounds the coronal suture, and is connected laterally to the genae."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Vertex: posterodorsal part of head capsule, usually medially divided by ecdysial line (coronal suture).\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004025> "vertex"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004025> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004025> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004030>))
 SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AISM_0004025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004026>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004026> (gena)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004026> "Is the lateral sclerite of the head capsule, connected dorsally to the sides of the vertex."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004026> "Is the lateral region of the head capsule, connected dorsally to the sides of the vertex."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Gena: lateral region of head capsule; not separated from vertex by a ridge or suture.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004026> "gena"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004026> <http://purl.obolibrary.org/obo/AISM_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004025>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004026> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004025>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004027> (subgena)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004027> "Is the lateral sclerite of the head capsule that connects dorsally to the ventral side of the gena and ventrally to the mandible."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004027> "Is the lateral region of the head capsule that connects dorsally to the ventral side of the gena and ventrally to the mandible."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Subgena: narrow lateral region of head capsule, above external side of mandibular base, usually separated from gena by subgenal ridge.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004027> "subgena"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004027> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004027> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004026>))))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000043>))
@@ -2115,7 +2124,8 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Suture: ecdysial suture, zone of weakness.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004028> "suture"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004028> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004028> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004029> (frontal suture)
 
@@ -2125,6 +2135,8 @@ https://doi.org/10.1515/9783110264043
 
 \"Frontal suture: paired ecdysial sutures enclosing frons; anterior parts of epicranial suture.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004029> "frontal suture"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004029> <http://purl.obolibrary.org/obo/AISM_0004028>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004020>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004030>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004030> (coronal suture)
 
@@ -2136,48 +2148,61 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Coronal suture: unpaired median ecdysial sutures dividing vertex; anteriorly continuous with frontal sutures.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004030> "coronal suture"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004030> <http://purl.obolibrary.org/obo/AISM_0004028>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004030> <http://purl.obolibrary.org/obo/AISM_0004028>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004025>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004029>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004031> (pleurostomal ridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004031> "Is the ridge of the head capsule comprising the posterior region of the subgenal ridge."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 [Pleurostomal ridge: anterior section of the subgenal ridge above the mandibular base. (p. 14)]"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004031> "pleurostomal ridge"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004031> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004031> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004032>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004032> (subgenal ridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004032> "Is the ridge of the head capsule that separates the gena and the subgena."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Subgenal ridge: strengthening ridge separating gena from subgena.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004032> "subgenal ridge"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004032> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004032> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004026>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004027>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004033> (hypostomal bridge)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004033> "Is the sclerite formed by the lateral region of the head capsule that is adjacent to the foramen occipitale"@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004033> "Is the lateral region of the head capsule that is adjacent to the foramen occipitale"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Hypostomal bridge: partial closure of foramen occipitale, formed by ventromedially adjacent extensions of lateral head capsule.\"
 [posterior section of the subgenal ridge; p. 14]"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004033> "hypostomal bridge"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004033> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004033> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004023>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004034> (frontoclypeal ridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004034> "Is the ridge of the head capsule that separates the clypeus and the frons.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Frontoclypeal (strengthening) ridge (=frontoclypeal “suture”, epistomal “suture”): internal ridge separating clypeus from frons, between anterior tentorial pits.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004034> "frontoclypeal ridge"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004034> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004034> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004019>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004020>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004035> (gula)
 
@@ -2195,39 +2220,51 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004036> (gular ridges)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004036> "The ridges on the ventral region of the head capsule marking the sides of the gula."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Gular ridges: lateral internal ridges enclosing the gula.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004036> "gular ridges"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004036> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004036> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004035>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004037> (posterior tentorial arm)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004037> "Is the apophysis of the tentorium that originates from each posterior tetorial pit."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Posterior tentorial arm: paired posterior element of tentorium; originates at posterior tentorial pit.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004037> "posterior tentorial arm"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004037> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004037> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000195>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004038> (anterior tentorial arm)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004038> "Is the apophysis of the tentorium that is connected to an anterior tentorial pit."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
 https://doi.org/10.1515/9783110264043
 
 \"Anterior tentorial arm: paired tentorial element anterior to tentorial bridge; originates at anterior tentorial pit.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004038> "anterior tentorial arm"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004038> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004038> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000194>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004039> (dorsal tentorial arm)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004039> "Is the apophysis of the tentorium that is connected to an anterior tentorial arm."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Dorsal tentorial arm: paired dorsal element of tentorium, originating at anterior arm or connecting area of anterior and posterior arm; often connected with head capsule by fibrillae.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004039> "dorsal tentorial arm"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004039> <http://purl.obolibrary.org/obo/AISM_0004038>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004039> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004038>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004040> (alaforamen)
 
@@ -2251,114 +2288,143 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004041> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004042> (postgena)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004042> "Is the sclerite on the posterior region of the head capsulethat is continuous with the posterior region of the gena and is anterior to the postoccipital ridge."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004042> "Is the posterior region of the head capsule that is continuous with the posterior region of the gena and is anterior to the postoccipital ridge."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Postgena: posterior genal region anterior to postoccipital ridge.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004042> "postgena"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004042> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004042> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004042> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>)))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000071> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004021>))))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004026>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004043> (postgenal bridge)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004043> "Is the sclerite of the head capsule that is continuous with the postgena and adjacent to the foramen occipitale."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004043> "Is the region of the head capsule that is continuous with the postgena and adjacent to the foramen occipitale."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Postgenal bridge: partial closure of foramen occipital formed by postgenal extensions.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004043> "postgenal bridge"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004043> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004043> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004042>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004023>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004044> (circumantennal ridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004044> "Is the ridge of the head capsule that encircles the antennal foramen."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"The antennal foramen is enclosed by a circumantennal ridge, which often bears a small articulatory process, the antennifer.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004044> "circumantennal ridge"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004044> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004044> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000198>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004045> (postocciput)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004045> "Is the sclerite that composes the posterior region of the head capsule and is adacent to the posterior region of the vertex."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004045> "Is the posterior region of the head capsule that is adjacent to the posterior region of the vertex."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Postocciput: posteriormost head region.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004045> "postocciput"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004045> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004045> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004045> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>)))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004045> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/BSPO_0000072>)))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004046> (hypostoma)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004046> "Is the sclerite of the head capsule that comprises the posterior region of the subgena."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004046> "Is the region of the head capsule that comprises the posterior region of the subgena."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Hypostoma: posterior part of subgena.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004046> "hypostoma"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004046> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004046> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004046> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004027>)))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004047> (hypostomal ridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004047> "Is the ridge composing the posterior region of the subgenal ridge."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Hypostomal ridge: posterior part of subgenal ridge.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004047> "hypostomal ridge"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004047> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004047> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004032>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004048> (occipital ridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004048> "Is the ridge that runs along the posterior region of the head capsule."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Occipital ridge (=“occipital suture”): ridge on posterior head region; present in some groups, oblique and short or more or less parallel to postocciptal rigde (Orthoptera). No true segmental border.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004048> "occipital ridge"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004048> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004048> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>)))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004049> (postclypeus)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004049> "Is the sclerite comprising the posterior region of the clypeus."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004049> "Is the region of the cuticle comprising the posterior region of the clypeus."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Postclypeus: sclerotized and pigmented proximal part of clypeus.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004049> "postclypeus"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004049> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004049> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004049> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004019>)))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004050> (anteclypeus)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004050> "Is the sclerite comprising the anterior region of the clypeus."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004050> "Is the region of the cuticle comprising the anterior region of the clypeus."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Anteclypeus: transparent distal part of clypeus.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004050> "anteclypeus"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004050> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004050> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000071> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004019>)))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004051> (clypeolabrum)
 
-AnnotationAssertion(Annotation(dce:contributor "") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004051> "Is the sclerite that is composed of the clypeus and the labrum."@en)
+AnnotationAssertion(Annotation(dce:contributor "") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004051> "Is the region of the cuticle that is composed of the clypeus and the labrum."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Clypeolabrum: area comprising the fused clypeus and labrum.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004051> "clypeolabrum"@en)
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004051> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004051> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000042>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004019>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004052> (compound eye)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004052> "compound eye"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004052> <http://purl.obolibrary.org/obo/AISM_0000088>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004053> (ocellus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004053> "ocellus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004053> <http://purl.obolibrary.org/obo/AISM_0000088>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004054> (laminatentoria)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004054> "Are apophyses of the tentorium originating at each anterior tentorial arm."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"In some groups an accessory bridge is formed by medially fused internally directed processes, the laminatentoria. This feature is sometimes erroneously referred to as “perforated corpotentorium”.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004054> "laminatentoria"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004054> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004038>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001134> (skeletal muscle tissue)
 
