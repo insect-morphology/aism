@@ -2055,14 +2055,18 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004023> (foramen occipitale)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004023> "Is the foramen of the head capsule that connects with the neck membrane and is divided by the tentorial bridge into alaforamen and neuroforamen."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Foramen occipitale (=foramen magnum): posterior opening of head capsule; divided by tentorial bridge into alaforamen and neuroforamen.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004023> "foramen occipitale"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004023> <http://purl.obolibrary.org/obo/AISM_0000197>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000098>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004023> <http://purl.obolibrary.org/obo/AISM_0000197>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004040>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004041>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000098>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004024>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004024> (tentorial bridge)
 
@@ -2290,8 +2294,8 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Neuroforamen: part of foramen occipitale below tentorial bridge; passage of cervical connectives between suboesophageal complex and prothoracic ganglion.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004041> "neuroforamen"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004041> <http://purl.obolibrary.org/obo/AISM_0000197>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004023>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004041> <http://purl.obolibrary.org/obo/AISM_0000197>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004023>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004042> (postgena)
 
