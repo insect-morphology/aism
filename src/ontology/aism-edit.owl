@@ -250,6 +250,33 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004053>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004081>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -838,11 +865,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000058> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/AISM_0000059> (pronotum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000059> "The sclerite that is attached to cranial muscles, procoxal muscles, contiuous posterioirly with the neck membrane and with pronoto-propleural conjunctiva and not adjacent (not touching) to the procoxa.")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
-https://www.degruyter.com/document/doi/10.1515/9783110264043/html
+https://doi.org/10.1515/9783110264043
 
-\"Pronotum: prothoracic tergum.\"") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000059> "pronotum"@en)
+\"Pronotum: prothoracic tergum.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000059> "pronotum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> <http://purl.obolibrary.org/obo/AISM_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000066>)))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000098>))
@@ -1104,11 +1131,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000097> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/AISM_0000098> (neck membrane)
 
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000098> "The conjuctiva that is continuous with the posterior margin of the head capsule."@en)
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
-https://www.degruyter.com/document/doi/10.1515/9783110264043/html
+https://doi.org/10.1515/9783110264043
 
-\"Cervical membrane: membrane connecting the head and prothorax.\"") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000098> "cervical membrane")
+\"Cervical membrane: membrane connecting the head and prothorax.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000098> "cervical membrane")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000098> "neck membrane"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000098> <http://purl.obolibrary.org/obo/AISM_0000004>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000098> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
@@ -1421,7 +1448,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000137> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000138> (apophysis)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000138> "The apophysis in HAO referres to an ivagination of the cuticle that is cylindrical as opposed by a ridge that is elongate. Beutel et al. 2013 differentiate apodemes from apophyses in thast apodemes are solid ad apophyses are hollow.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000138> "The apophysis in HAO refers to an ivagination of the cuticle that is cylindrical as opposed to a ridge that is elongate. Beutel et al. 2014 differentiate apodemes from apophyses in that apodemes are solid and apophyses are hollow."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -1662,14 +1689,17 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000174> "The AISM focuses on anatomical structures that are part of the insect (chitinous) cuticle. These structures are acellular regions of the integument. Regions of the insect cuticle with different mechanical properties (i.e. increased and descresed flexinility, thickness and elasticity) are continuous with each other (e.g. sclerites are continuous with conjunctivae or resilin rich regions are continuou with regions with less resilin content).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000174> "region of cuticle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000174> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000174> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004062>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000174> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001001>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000177> (pore canal)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000177> "The anatomical space that is contained by the cuticle ad connects the inside of the insect with the outside, tubular and whose diameter is smaller than 100 nm.")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
-https://www.degruyter.com/document/doi/10.1515/9783110264043/html") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000177> "pore canal"@en)
+https://doi.org/10.1515/9783110264043
+
+\"Pore canals: thin perforations of the cuticle.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000177> "pore canal"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000177> <http://purl.obolibrary.org/obo/UBERON_0000464>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001873>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001018> <http://purl.obolibrary.org/obo/UBERON_0001002>))
@@ -1689,9 +1719,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000178> ObjectExactCardinality(
 # Class: <http://purl.obolibrary.org/obo/AISM_0000185> (sensillum chaeticum)
 
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000185> "Hairlike seta that is short and thick walled.")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
-https://www.degruyter.com/document/doi/10.1515/9783110264043/html") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000185> "sensillum chaeticum"@en)
+https://doi.org/10.1515/9783110264043
+
+\"Sensillum chaeticum: shorter than sensillum trichodeum, thick-walled.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000185> "sensillum chaeticum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000185> <http://purl.obolibrary.org/obo/AISM_0000039>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000185> ObjectIntersectionOf(ObjectComplementOf(<http://purl.obolibrary.org/obo/PATO_0001154>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000052>)))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000185> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002228>))
@@ -1699,11 +1731,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000185> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/AISM_0000186> (sensillum trichodeum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000186> "Hairlike seta that is long.")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
-https://www.degruyter.com/document/doi/10.1515/9783110264043/html
+https://doi.org/10.1515/9783110264043
 
-\"Sensillum trichodeum: hair-like sensilla, seta associated with sensory cell.\"") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000186> "sensillum trichodeum"@en)
+\"Sensillum trichodeum: hair-like sensilla, seta associated with sensory cell.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000186> "sensillum trichodeum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000186> <http://purl.obolibrary.org/obo/AISM_0000039>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000186> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001154>))
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000186> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002228>))
@@ -1711,9 +1743,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000186> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/AISM_0000187> (sensillum coeloconicum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000187> "Seta that is located in the middle of a depression with narrowed external opening.")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel, R.G., Friedrich, F., Yang, X.K. and Ge, S.Q., 2013. Insect morphology and phylogeny: a textbook for students of entomology. Walter de Gruyter.
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
-https://www.degruyter.com/document/doi/10.1515/9783110264043/html") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000187> "sensillum coeloconicum"@en)
+https://doi.org/10.1515/9783110264043
+
+\"Sensillum coeloconicum: sensillum with modified seta in a cavity, with narrowed external opening of surrounding cuticle.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000187> "sensillum coeloconicum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000187> <http://purl.obolibrary.org/obo/AISM_0000039>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000187> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000083> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000157>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000411>)))))
 
@@ -2436,6 +2470,294 @@ https://doi.org/10.1515/9783110264043
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004054> <http://purl.obolibrary.org/obo/AISM_0000138>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000191>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004038>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004055> (preabdomen)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Preabdomen (=pregenital segments): anterior abdominal segments (I–VII).\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004055> "preabdomen"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004055> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#posteriorly_connected_to> <http://purl.obolibrary.org/obo/AISM_0004056>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004056> (postabdomen)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Postabdomen: posterior segments (VIII–XI) bearing genital appendages.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004056> "postabdomen"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004056> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#anteriorly_connected_to> <http://purl.obolibrary.org/obo/AISM_0004055>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004057> (tergum)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Tergum: plate-like dorsal sclerite of abdominal segment.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004057> "tergum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004057> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004058> (sternum)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Sternum: plate-like ventral sclerite of abdominal segment.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004058> "sternum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004058> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004059> (pleural membrane)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Pleural membrane: lateral unsclerotized part of abdominal segments, connecting tergum and sternum; usually bearing spiracles I–VIII.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004059> "pleural membrane"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004059> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004060> (epiproct)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Epiproct: unpaired dorsal element (tergum) of segment XI.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004060> "epiproct"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004060> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004061> (paraproct)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Paraproct: paired lateral element of segment XI.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004061> "paraproct"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004061> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004062> (aedeagus)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Penis: main element of the male copulatory apparatus.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004062> "insect penis"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Aedeagus (penis is often used as a synonym): male copulatory organ.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004062> "aedeagus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004062> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004056>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004063> (endophallus)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Endophallus: membranous extrusible internal part of aedeagus.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004063> "endophallus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004063> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004056>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004064> (paramere)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Parameres: paired lateral parts of aedeagus.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004064> "paramere"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004064> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004056>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004065> (phallobase)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Phallobase (=basal piece): part of segment IX bearing copulatory organ.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004065> "basal piece"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Phallobase (=basal piece): part of segment IX bearing copulatory organ.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004065> "phallobase"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004065> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004065> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004056>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004066> (endophallite)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Génier F (2019) Endophallites: a proposed neologism for naming the sclerotized elements of the insect endophallus (Arthropoda: Insecta). Annales de la Société entomologique de France (N.S.) 55: 482–484. 
+
+https://doi.org/10.1080/00379271.2019.1685907 
+
+\"endophallite(s) refer to the sclerotized structures of the endophallus whether the structure be circular, flat, folded or spiniform.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004066> "endophallite"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004066> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004056>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004067> (bursa copulatrix)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Bursa copulatrix: evagination of the vagina, receives the copulatory organ.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004067> "bursa copulatrix"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004067> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004056>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004068> (coxopodite)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004068> "gonocoxa"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004068> "gonocoxite"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004068> "valvifer"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004068> "coxopodite"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004068> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004069> (genital chamber)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Genital chamber: cavity formed by an inflection of the body wall, receiving the common oviduct.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004069> "genital chamber"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004069> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004070> (gonapophysis)
+
+AnnotationAssertion(Annotation(rdfs:comment "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Gonapophysis (=valves or valvulae 1–3): distal piece of ovipositor elements of female genital segments VIII and IX, inserted on coxopodites, usually elongated.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004070> "gonapophysis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004070> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004071> (sensillum placodeum)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Sensillum placodeum: flat sensillum with strongly modified plate-like seta.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004071> "sensillum placodeum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004071> <http://purl.obolibrary.org/obo/AISM_0000039>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004072> (trichobothrium)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Trichobothrium: very long and fine sensillum, vibroreceptor.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004072> "trichobothrium"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004072> <http://purl.obolibrary.org/obo/AISM_0000039>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004073> (paraphyses)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Paraphyses (=titillators): paired appendages of aedeagus.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004073> "titillators"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Paraphyses (=titillators): paired appendages of aedeagus.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004073> "paraphyses"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004073> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004074> (ductus ejaculatorius)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Ductus ejaculatorius: unpaired ectodermal duct connecting vasa deferentia (i.e. vesiculae seminales) and aedeagus.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004074> "ductus ejaculatorius"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004074> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004075> (gonopore)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Gonopore: external opening of the common oviduct.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004075> "gonopore"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004075> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004076> (gonostylus)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Gonostyli: appendages of gonocoxae (usually only on coxopodite IX)\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004076> "gonostylus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004076> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004077> (ovipositor)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Ovipositor: paired postabdominal apparatus (segments VIII and IX) primarily used for depositing eggs.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004077> "ovipositor"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004077> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004078> (spermatheca)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Spermatheca (=receptaculum seminis): unpaired or paired evagination of female genital tract; storage of sperm; connected by spermathecal duct (=ductus receptaculi) with vagina or bursa copulatrix.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004078> "spermatheca"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004078> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004079> (spermathecal gland)
+
+AnnotationAssertion(Annotation(rdfs:comment "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Spermathecal gland: provides nourishment for spermatozoa stored in spermatheca.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004079> "spermathecal gland"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004079> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004080> (insect vagina)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Vagina: unpaired terminal part of female genital duct, tube-like vulva.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004080> "insect vagina"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004080> <http://purl.obolibrary.org/obo/AISM_0000174>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004081> (insect vulva)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Vulva: external opening of the female genital tract, often forming a vagina.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004081> "insect vulva"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004081> <http://purl.obolibrary.org/obo/AISM_0000174>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001134> (skeletal muscle tissue)
 
