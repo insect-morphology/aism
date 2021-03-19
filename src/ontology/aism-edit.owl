@@ -196,6 +196,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000195>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000196>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000197>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000198>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000201>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004003>))
@@ -2102,6 +2104,39 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000198> "an
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000198> <http://purl.obolibrary.org/obo/AISM_0000197>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000198> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000019>))
 
+# Class: <http://purl.obolibrary.org/obo/AISM_0000200> (gonocoxa IX)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000200> "Is the paired sclerite that is attached to the abdmonal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000200> "coxopodite"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000200> "gonocoxite"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000200> "valvifer"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000200> "gonocoxa IX"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000200> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000200> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000167> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000167> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004117>))))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000200> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000200>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000200> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000201>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000201> (abdominal tergite IX-gonocoxa IX conjunctiva)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000201> "Is the conjunctiva of the insect abdomen that connects the abdominal tergite IX and the abdominal tergite X."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000201> "abdominal tergite IX-gonocoxa IX conjunctiva"@en)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000201> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000201> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000201> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004117>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000201> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004118>))
+
 # Class: <http://purl.obolibrary.org/obo/AISM_0004001> (palpifer)
 
 AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004001> "Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-palpiferal conjunctiva and to the maxillary palpus by the palpifero-palpal conjunctiva."@en)
@@ -2895,9 +2930,9 @@ https://doi.org/10.1515/9783110264043
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004067> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004056>))
 
-# Class: <http://purl.obolibrary.org/obo/AISM_0004068> (gonocoxa)
+# Class: <http://purl.obolibrary.org/obo/AISM_0004068> (gonocoxa VIII)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004068> "Is the paired sclerite that is attached to the abdominal sternite VIII by the abdominal sternite VIII-gonocoxa conjunctiva, and is attached to the proximal margin of the gonostylus."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004068> "Is the paired sclerite that is attached to the abdominal sternite VII by the abdominal sternite VII-gonocoxa conjunctiva and is articulated with abdominal tergite IX."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -2917,11 +2952,11 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 
 https://doi.org/10.1515/9783110264043
 
-\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004068> "gonocoxa"@en)
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004068> "gonocoxa VIII"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004068> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000167> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000167> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004117>))))))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0004068>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004084>))
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004110>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004076>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004069> (genital chamber)
@@ -2995,13 +3030,13 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004075> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004063>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004068>)))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004075> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004069>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004074>)))
 
-# Class: <http://purl.obolibrary.org/obo/AISM_0004076> (gonostylus)
+# Class: <http://purl.obolibrary.org/obo/AISM_0004076> (gonostylus VIII)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
-\"Gonostyli: appendages of gonocoxae (usually only on coxopodite IX)\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004076> "gonostylus"@en)
+\"Gonostyli: appendages of gonocoxae (usually only on coxopodite IX)\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004076> "gonostylus VIII"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004076> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004076> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0004076>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004076> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000071> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004068>))))
@@ -3080,14 +3115,14 @@ https://doi.org/10.1515/9783110264043
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004083> <http://purl.obolibrary.org/obo/AISM_0000174>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004069>))
 
-# Class: <http://purl.obolibrary.org/obo/AISM_0004084> (abdominal sternite VIII-gonocoxa conjunctiva)
+# Class: <http://purl.obolibrary.org/obo/AISM_0004084> (abdominal sternite VII-gonocoxa conjunctiva)
 
 AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004084> "Is the conjunctiva of the insect abdomen that joins the abdominal sternite VIII and the gonocoxa."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004084> "abdominal sternite VIII-gonocoxa conjunctiva")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004084> "abdominal sternite VII-gonocoxa conjunctiva")
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004084> <http://purl.obolibrary.org/obo/AISM_0000004>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004068>))
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004110>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004109>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004085> (abdominal tergite II)
 
