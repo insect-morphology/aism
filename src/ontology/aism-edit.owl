@@ -431,6 +431,20 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001134>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004175>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_6007284>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_6007289>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002014>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000011>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000012>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000078>))
@@ -4384,6 +4398,195 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 # Class: <http://purl.obolibrary.org/obo/UBERON_0004175> (internal genitalia)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0004175> "internal genitalia"@en)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002001> (antennal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002001> "antennal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002001> <http://purl.obolibrary.org/obo/AISM_0000080>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000032>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002002> (anterior tentorio-scapal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002002> "The antennal muscle that originates at the dorsal tentorial arm and inserts at the scapus."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Anterior or dorsal tentorial arms\"
+
+\"Insertion: Anterior (ventral) basal margin of the scape\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002002> "anterior tentorio-scapal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002002> <http://purl.obolibrary.org/obo/AISM/AISM_0002001>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0004039>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000113>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002003> (posterior tentorio-scapal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002003> "The antennal muscle that originates at the dorsal tentorial arm and inserts at the scapus."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Anterior or dorsal tentorial arms\"
+
+\"Insertion: Posterior (dorsal) basal margin of the scape\"") rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002003> "posterior tentorio-scapal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002003> <http://purl.obolibrary.org/obo/AISM/AISM_0002001>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0004039>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000113>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002004> (lateral tentorio-scapal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002004> "The antennal muscle that originates at the dorsal tentorial arm and inserts at the scapus.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Anterior or dorsal tentorial arms\"
+
+\"Insertion: Lateral basal margin of the scape\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002004> "lateral tentorio-scapal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002004> <http://purl.obolibrary.org/obo/AISM/AISM_0002001>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0004039>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000113>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002005> (medial tentorio-scapal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002005> "The antennal muscle that originates at the dorsal tentorial arm and inserts at the scapus."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Anterior or dorsal tentorial arms\"
+
+\"Insertion: Mesal basal margin of the scape\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002005> "medial tentorio-scapal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002005> <http://purl.obolibrary.org/obo/AISM/AISM_0002001>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0004039>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000113>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002006> (fronto-pedicellar muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002006> "The antennal muscle that originates at the frons and inserts at the pedicellus."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Frons\"
+
+\"Insertion: Lateral edge of the pedicel\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002006> "fronto-pedicellar muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002006> <http://purl.obolibrary.org/obo/AISM/AISM_0002001>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0004020>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000115>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002007> (lateral scapo-pedicellar muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002007> "The antennal muscle that originates at the scapus and inserts at the pedicellus.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Doral or dorsolateral wall of the scape\"
+
+\"Insertion: Lateral or dorsolateral wall of the pedicel\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002007> "lateral scapo-pedicellar muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002007> <http://purl.obolibrary.org/obo/AISM/AISM_0002001>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0000113>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000115>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002008> (medial scapo-pedicellar muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002008> "The antennal muscle that originates at the scapus and inserts at the pedicellus."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Mesal or dorsomesal wall of the scape\"
+
+\"Insertion: Mesal, anteriomesal or anterior edge of the pedicel\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002008> "medial scapo-pedicellar muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002008> <http://purl.obolibrary.org/obo/AISM/AISM_0002001>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0000113>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000115>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002009> (frontolabral muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002009> "The antennal muscle that originates at the frons and inserts at the labrum."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Mesally on the frons or on the antennal base\"
+
+\"Insertion: Mesally on the outer basal wall of the labrum\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002009> "frontolabral muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002009> <http://purl.obolibrary.org/obo/AISM_0000084>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0004020>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000042>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002010> (epistoepipharyngeal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002010> "The antennal muscle that originates at the frontoclypeal ridge and inserts at the labrum."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Epistomal sulcus\"
+
+\"Insertion: Basal labral wall\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002010> "epistoepipharyngeal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002010> <http://purl.obolibrary.org/obo/AISM_0000084>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0004034>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000042>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002011> (frontoepypharyngeal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002011> "The antennal muscle that originates at the frons and inserts at the tormae."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Mesally on the frons or on the antennal base,
+usually on the same level as musculus
+frontolabralis\"
+
+\"Insertion: Basal labral wall or tormae\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002011> "frontoepypharyngeal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002011> <http://purl.obolibrary.org/obo/AISM_0000084>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0004020>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM/AISM_0002012>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002012> (tormae)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+\"Tormae: lateral apodemes of labral base\"") rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002012> "tormae"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002012> <http://purl.obolibrary.org/obo/AISM_0000188>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000042>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002013> (transversal labral muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002013> "The antennal muscle that originates at the labrum and inserts at the labrum."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Ventral labral wall\"
+
+\"Insertion: Ventral labral wall of the other side\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002013> "transversal labral muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002013> <http://purl.obolibrary.org/obo/AISM_0000084>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0000042>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000042>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002014> (internal cranio-mandibular muscle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002014> "The antennal muscle that originates at the head capsule and inserts at the insect mandible."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
+
+ https://doi.org/10.1111/j.1365-3113.2010.00556.x
+
+\"Origin: Ventral, posterior, lateral and/or dorsal parts of
+the head capsule and/or posterior and
+anterior tentorial arms\"
+
+\"Insertion: Tendon that inserts at the median edge of the
+mandible\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002014> "internal cranio-mandibular muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002014> <http://purl.obolibrary.org/obo/AISM_0000082>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002372> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002373> <http://purl.obolibrary.org/obo/AISM_0000043>))
 
 
 )
