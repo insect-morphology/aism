@@ -1,9 +1,12 @@
 [![Build Status](https://travis-ci.org/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system.svg?branch=master)](https://travis-ci.org/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system)
-[![DOI](https://zenodo.org/badge/13996/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system)
+[![DOI](https://zenodo.org/badge/306390445.svg)](https://zenodo.org/badge/latestdoi/306390445)
 
 # Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
 
 A resource managed by [Jennifer C. Girón](https://github.com/JCGiron) and [István Mikó](https://github.com/teleaslamellatus).
+
+**Suggested citation:** Mikó, I., González Montana, L., Girón, J. C. 2021. Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM). GitHub repository. https://doi.org/10.5281/zenodo.4660323
+
 
 Multispecies insect anatomy ontologies are used as bases for robust knowledge bases for specific anatomical terms ([Yoder et al. 2010](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015991), [HAO Portal](http://portal.hymao.org/projects/32/public/ontology/)), improve the accessibility of morphology descriptions ([Balhoff et al. 2014](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0094056)), and are useful for improving the modeling of discrete morphological characters in phylogenetic context ([Tarasov 2019a](https://academic.oup.com/sysbio/article/68/5/698/5298740), [2019b](https://academic.oup.com/isd/article/3/6/1/5584145)).
 
