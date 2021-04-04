@@ -490,6 +490,18 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002062>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002076>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000011>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000012>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000078>))
@@ -1311,7 +1323,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000085> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000086> (coxal muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000086> "All of the coxal muscles, except the second steranl-metacoxal muscle, are attached to the thorax.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000086> "All of the coxal muscles, except the second sternal-metacoxal muscle, are attached to the thorax.")
 AnnotationAssertion(Annotation(dce:contributor "imiko") rdfs:comment <http://purl.obolibrary.org/obo/AISM_0000086> "The skeletal muscle that inserts on the coxa.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000086> "coxal muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000086> <http://purl.obolibrary.org/obo/AISM/AISM_0002064>)
@@ -5213,6 +5225,99 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002064> "leg muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002064> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002065> (thoracic mucle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002065> "thoracic mucle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002065> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002066> (dorsal longitudinal muscle)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002066> "dorsal longitudinal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002066> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002067> (dorsoventral muscle)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002067> "dorsoventral muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002067> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002068> (tergo-pleural muscle)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002068> "tergo-pleural muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002068> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002069> (sterno-pleural)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002069> "sterno-pleural"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002069> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002070> (ventral-longitudinal muscle)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002070> "ventral-longitudinal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002070> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002071> (prophragma-occipital muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002071> "prophragma-occipital muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002071> <http://purl.obolibrary.org/obo/AISM/AISM_0002066>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002072> (pronoto-occipital muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002072> "pronoto-occipital muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002072> <http://purl.obolibrary.org/obo/AISM/AISM_0002066>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002073> (prophragma-cervical muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002073> "prophragma-cervical muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002073> <http://purl.obolibrary.org/obo/AISM/AISM_0002066>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002074> (cervico-occipital muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002074> "The dorsal longitudinal muscle continuous with the cervical sclerite and the postocciput."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003
+
+\"origin: cervical sclerite\"
+\"insertion: postocciput\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002074> "cervico-occipital muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002074> <http://purl.obolibrary.org/obo/AISM/AISM_0002066>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002074> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004045>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002074> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004141>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002075> (pronoto-phragmal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002075> "The dorsal longitudinal muscle continuous with the pronotum and the prophragma."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003
+
+\"origin: pronotum\"
+\"insertion: prophragma\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002075> "pronoto-phragmal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002075> <http://purl.obolibrary.org/obo/AISM/AISM_0002066>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000059>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002076>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002076> (prophragma)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002076> "prophragma"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002076> <http://purl.obolibrary.org/obo/AISM/AISM_0002048>)
 
 
 )
