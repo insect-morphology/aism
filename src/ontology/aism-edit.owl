@@ -489,6 +489,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002062>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM/AISM_0002064>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000011>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000012>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000078>))
@@ -1265,12 +1266,14 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000080> (cranial muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000080> "The skeletal muscle continuous with the head capsule."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000080> "cranial muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000080> <http://purl.obolibrary.org/obo/UBERON_0001134>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000081> (cranio-antennal muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000081> "The skeletal muscle continuous with the head capsule and the antenna."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000081> "cranio-antennal muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000081> <http://purl.obolibrary.org/obo/AISM_0000080>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
@@ -1278,6 +1281,7 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000082> (cranio-mandibular muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000082> "The skeletal muscle continuous with the head capsule and the insect mandible."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000082> "cranio-mandibular muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000082> <http://purl.obolibrary.org/obo/AISM_0000080>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
@@ -1285,13 +1289,15 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000083> (cranio-labial muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000083> "The skeletal muscle continuous with the head capsule and the labium."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000083> "cranio-labial muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000083> <http://purl.obolibrary.org/obo/AISM_0000080>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000087>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000087>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000084> (cranio-labral muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000084> "The skeletal muscle continuous with the head capsule and the labrum."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000084> "cranio-labral muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000084> <http://purl.obolibrary.org/obo/AISM_0000080>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
@@ -1308,7 +1314,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000085> ObjectSomeValuesFrom(<h
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000086> "All of the coxal muscles, except the second steranl-metacoxal muscle, are attached to the thorax.")
 AnnotationAssertion(Annotation(dce:contributor "imiko") rdfs:comment <http://purl.obolibrary.org/obo/AISM_0000086> "The skeletal muscle that inserts on the coxa.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000086> "coxal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000086> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000086> <http://purl.obolibrary.org/obo/AISM/AISM_0002064>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000086> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000077>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000087> (labium)
@@ -1825,20 +1831,20 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000146> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/AISM_0000147> (femoral muscle)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000147> "femoral muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000147> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000147> <http://purl.obolibrary.org/obo/AISM/AISM_0002064>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000147> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000076>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000148> (tibial muscle)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000148> "tibial muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000148> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000148> <http://purl.obolibrary.org/obo/AISM/AISM_0002064>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000149> (muscle of the tarsal claw)
 
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000149> "The skeletal muscle that inserts on the pretarsus.")
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000149> "There are usually two muscle bands of the pretarsal muscle, one is arising from the femur, the other from the tibia. The muscle usually inserts on a resilin rich basal sclerite of the pretarsus, the unguitractor plate.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000149> "muscle of the tarsal claw"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000149> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000149> <http://purl.obolibrary.org/obo/AISM/AISM_0002064>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000149> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000047>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000150> (profemoral muscle)
@@ -4754,10 +4760,11 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002026> (cranio-maxillar muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002026> "The skeletal muscle continuous with the head capsule and the insect maxilla."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002026> "cranio-maxillar muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002026> <http://purl.obolibrary.org/obo/UBERON_0001134>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000044>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000044>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002027> (cranio-cardinal muscle)
 
@@ -5130,8 +5137,11 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002058> (cranio-hypopharyngeal muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002058> "The skeletal muscle continuous with the head capsule and the hypopharynx."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002058> "cranio-hypopharyngeal muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002058> <http://purl.obolibrary.org/obo/AISM_0000080>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000093>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002059> (fronto-oral muscle)
 
@@ -5165,8 +5175,11 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002061> (cranio-tentorial muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002061> "The skeletal muscle continuous with the head capsule and the tentorium."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002061> "cranio-tentorial muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002061> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000191>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002062> (tentorio-frontal muscle)
 
@@ -5195,6 +5208,11 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002063> <http://purl.obolibrary.org/obo/AISM/AISM_0002061>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000191>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004024>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002064> (leg muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002064> "leg muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002064> <http://purl.obolibrary.org/obo/UBERON_0001134>)
 
 
 )
