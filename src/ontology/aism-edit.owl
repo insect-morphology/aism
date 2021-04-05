@@ -551,20 +551,22 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000232> "cur
 
 # Object Property: <http://purl.obolibrary.org/obo/AISM_0000011> (lateral_to)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000011> "lateral_to"@en)
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000011> "lateral_to"@en)
 
 # Object Property: <http://purl.obolibrary.org/obo/AISM_0000012> (medial_to)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000012> "medial_to"@en)
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000012> "medial_to"@en)
 
 # Object Property: <http://purl.obolibrary.org/obo/AISM_0000078> (encircles)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") dce:contributor <http://purl.obolibrary.org/obo/AISM_0000078> "imiko")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000078> "encircles"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/RO_0002150>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000079>)
 
 # Object Property: <http://purl.obolibrary.org/obo/AISM_0000079> (encircled by)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") dce:contributor <http://purl.obolibrary.org/obo/AISM_0000079> "imiko")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000079> "encircled by"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/RO_0002150>)
 
@@ -584,7 +586,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_00000000> "r
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000002> (articulation)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000002> "The anatomical cluster that is composed two articular surfaces that are adjacent to each other.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000002> "The anatomical cluster that is composed two articular surfaces that are adjacent to each other.")
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000002> "Articulations are `anatomical clusters`, collections of not direclty connected (continuous) sclerite surfaces that are adjacent to another sclerite. The cranio-mandibular articulation is the articular surface of the cranium and the adjacent articular surface of the mandible. The articular surfaces are sometimes located on the same sclerite.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000002> "articulation"^^xsd:string)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000002> <http://purl.obolibrary.org/obo/AISM_0000174>)
@@ -592,7 +594,7 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000003> (sclerite)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000003> "The region of the insect cuticle that is less flexible than the neighboring conjunctiva(e) (conjunctiva(e) that the sclerite is continuous with).")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000003> "The region of the insect cuticle that is less flexible than the neighboring conjunctiva(e) (conjunctiva(e) that the sclerite is continuous with).")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -603,7 +605,7 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000004> (conjunctiva)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000004> "The region of the insect cuticle that is more flexible than the neighboring sclerite(s) (sclerite(s) that the conjunctiva is continuous with).")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000004> "The region of the insect cuticle that is more flexible than the neighboring sclerite(s) (sclerite(s) that the conjunctiva is continuous with).")
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000004> "Conjunctivae are more flexible and usually less thick than sclerties of the cuticle allowing the sclerites to move relative to each other.
 Micro-CT based methods cannot be used to accurately differentiate slcerites from conjunctiuvae. CLSM (the excitation wavelengths of sclerites and conjunctivae are different in response of 488 nm emission vawelength), histological sections or simple dissections need to be applied to define relative flexibility of the insect cuticle.
 
@@ -614,76 +616,81 @@ https://doi.org/10.1515/9783110264043
 
 \"Membrane: very flexible, unsclerotized area of the integument.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000004> "membrane")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000004> "conjunctiva"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/AISM_0000003>))))))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000003>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000004> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/AISM_0000003>))))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0001543> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/AISM_0000003>))))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000003>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000005> (cuticular depression)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000005> "The portion of the surface of the cuticle that is concave.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000005> "The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Concavities sometimes correspons with invaginations of the cuticle and the underlaying sinlge layer epidermis, somtimes correspond to a decreased cuticular thickness.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000005> "The region of the cuticle that corresponds to a concave surface."@en)
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000005> "The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Concavities sometimes correspons with invaginations of the cuticle and the underlaying sinlge layer epidermis, somtimes correspond to a decreased cuticular thickness.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000005> "cuticular depression"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000005> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035159>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001857>))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000005> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035159>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001857>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000006> (cuticular invagination)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000006> "The region of cuticle that corresponds with an invagination of the single layer epidermis (epidermal fold). The cuticular invagination sometimes corresponds to a cuticular depression (concavity on the surface of the cuticle)."@en)
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000006> "The region of cuticle that corresponds with an invagination of the single layer epidermis (epidermal fold). The cuticular invagination sometimes corresponds to a cuticular depression (concavity on the surface of the cuticle)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000006> "cuticular invagination"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000006> <http://purl.obolibrary.org/obo/AISM_0000005>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001748>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/UBERON_0005157>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000006> <http://purl.obolibrary.org/obo/AISM_0000005>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001748>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/UBERON_0005157>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000007> (elastic cuticle)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000007> "elastic cuticle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000007> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001019> <http://purl.obolibrary.org/obo/PR_Q9V7U0>))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000007> "elastic cuticle"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000007> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001019> <http://purl.obolibrary.org/obo/PR_Q9V7U0>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000008> (cuticular protrusion)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000008> "The cuticular region that corresponds to a convex cuticular surface.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000008> "The region of the cuticle that corresponds to a convex surface."@en)
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000008> "The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.\"")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000008> "cuticular protrusion"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000008> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035159>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001355>))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000008> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035159>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001355>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000013> (evaginated)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000013> "evaginated"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000013> <http://purl.obolibrary.org/obo/PATO_0001355>)
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000013> "evaginated"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000013> <http://purl.obolibrary.org/obo/PATO_0001355>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000014> (cranio-mandibular articulation)
 
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000014> "The articulation between the mandible and the cranium."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000014> "cranio-mandibular articulation"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000014> <http://purl.obolibrary.org/obo/AISM_0000002>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000014> <http://purl.obolibrary.org/obo/AISM_0000002>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000019> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000043>)))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000043> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/UBERON_0003128>)))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000015> (cranio-cardinal articulation)
 
-AnnotationAssertion(Annotation(dce:contributor "") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000015> "The articulatio between the cardo ad the cranium.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000015> "The articulation between the cardo and the cranium."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000015> "cranio-cardinal articulation"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000015> <http://purl.obolibrary.org/obo/AISM_0000002>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000018> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/UBERON_0003128>)))))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000019> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000018>)))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000015> <http://purl.obolibrary.org/obo/AISM_0000002>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000018> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/UBERON_0003128>)))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000019> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000018>)))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000016> (cranio-antennal articulation)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000016> "The articulation between the scape and the cranium.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000016> "The articulation between the scape and the cranium.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000016> "cranio-antennal articulation"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000016> <http://purl.obolibrary.org/obo/AISM_0000002>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000019> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>)))))))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000032> ObjectIntersectionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/UBERON_0003128>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000003>)))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000016> <http://purl.obolibrary.org/obo/AISM_0000002>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000019> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>)))))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000032> ObjectIntersectionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/UBERON_0003128>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000003>)))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000017> (head-cervical articulation)
 
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000017> "The articulation between the head and the neck."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000017> "head-cervical articulation"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000017> <http://purl.obolibrary.org/obo/AISM_0000002>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000098>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000019>))))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000019> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000098>)))))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000017> <http://purl.obolibrary.org/obo/AISM_0000002>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000098>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000019>))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000019> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BSPO_0000070>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000098>)))))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000018> (cardo)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000018> "Is the sclerite of the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and to the stipes by the stipito-cardinal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000018> "Is the sclerite of the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and to the stipes by the stipito-cardinal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
 https://doi.org/10.1515/9783110264043
@@ -698,7 +705,7 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000019> (head capsule)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000019> "Is the sclerite of the insect head that is attached to the neck membrane and the oral foraminal conjunctiva, bears the eye cuticle and surrounds the brain"@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000019> "Is the sclerite of the insect head that is attached to the neck membrane and the oral foraminal conjunctiva, bears the eye cuticle and surrounds the brain"@en)
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000019> "insect cranium")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
@@ -714,12 +721,12 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000020> (dorsal second axillary sclerite)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000020> "dorsal second axillary sclerite"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000020> <http://purl.obolibrary.org/obo/AISM_0004161>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000020> "dorsal second axillary sclerite"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000020> <http://purl.obolibrary.org/obo/AISM_0004161>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000021> (abdominal tergite I)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000021> "Is the abdominal tergite of the preabdomen that is attached to the posterior margin of the tergum by the metanoto-abdominal tergite I conjunctiva and to the anterior margin of the abdominal tergite II by the abdominal tergite I-abdominal tergite II conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000021> "Is the abdominal tergite of the preabdomen that is attached to the posterior margin of the tergum by the metanoto-abdominal tergite I conjunctiva and to the anterior margin of the abdominal tergite II by the abdominal tergite I-abdominal tergite II conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000021> "abdominal tergite I"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000021> <http://purl.obolibrary.org/obo/AISM_0004057>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004055>))
@@ -730,12 +737,12 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000022> (first axillary sclerite)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000022> "first axillary sclerite"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000022> <http://purl.obolibrary.org/obo/AISM_0004161>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000022> "first axillary sclerite"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000022> <http://purl.obolibrary.org/obo/AISM_0004161>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000023> (galea)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000023> "Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000023> "Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -748,7 +755,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000023> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000024> (labial palpus)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000024> "Is the appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000024> "Is the appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -761,7 +768,7 @@ SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AIS
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000026> (lacinia)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000026> "Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-lacinial conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000026> "Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-lacinial conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -774,28 +781,28 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000027> (cuticular evagination)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000027> "The region of cuticle that corresponds with an evagination of the cuticle and the single layer epidermis (epidermal fold). The cuticular evagination usually corresponds to a cuticular protrusion (convexity on the surface of the cuticle)."@en)
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000027> "The region of cuticle that corresponds with an evagination of the cuticle and the single layer epidermis (epidermal fold). The cuticular evagination usually corresponds to a cuticular protrusion (convexity on the surface of the cuticle)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000027> "cuticular evagination"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000027> <http://purl.obolibrary.org/obo/AISM_0000008>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/AISM_0000013>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/UBERON_0005157>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000027> <http://purl.obolibrary.org/obo/AISM_0000008>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/AISM_0000013>))
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "imiko") <http://purl.obolibrary.org/obo/AISM_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/UBERON_0005157>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000028> (solid cuticular protrusion)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000028> "solid cuticular protrusion"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000028> <http://purl.obolibrary.org/obo/AISM_0000008>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000028> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/AISM_0000013>)))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000028> "solid cuticular protrusion"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000028> <http://purl.obolibrary.org/obo/AISM_0000008>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000028> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/AISM_0000013>)))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000029> (appendage)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000029> "The evagination of the cuticle that is musculated (connected to the body via muscles).")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000029> "The evagination of the cuticle that is musculated (connected to the body via muscles).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000029> "appendage"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000029> <http://purl.obolibrary.org/obo/AISM_0000128>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001134>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000031> (leg)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000031> "Is the paired appendage of the insect thorax that is composed of coxa, trochanter, femur, tibia, tarsus, and pretarsus."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000031> "Is the paired appendage of the insect thorax that is composed of coxa, trochanter, femur, tibia, tarsus, and pretarsus."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000031> "leg"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000031> <http://purl.obolibrary.org/obo/AISM_0000029>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))
@@ -809,7 +816,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000032> (antenna)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000032> "Is the appendage of the head capsule that is connected by the  antenniferal-scapal conjunctiva to the scapus, which is connected by the scapal-pedicellar conjunctiva to the pedicellus; the pedicellus is connected by the pedicellar-first flagellomeral conjunctiva to the first flagellomere; the first flagellomere is connected by interflagellomeral conjunctiva to the next flagellomere. Further flagellomeres are connected to each other by interflagellomeral conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000032> "Is the appendage of the head capsule that is connected by the  antenniferal-scapal conjunctiva to the scapus, which is connected by the scapal-pedicellar conjunctiva to the pedicellus; the pedicellus is connected by the pedicellar-first flagellomeral conjunctiva to the first flagellomere; the first flagellomere is connected by interflagellomeral conjunctiva to the next flagellomere. Further flagellomeres are connected to each other by interflagellomeral conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
 https://doi.org/10.1515/9783110264043
@@ -828,40 +835,69 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000033> (wing)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000033> "wing"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000033> <http://purl.obolibrary.org/obo/AISM_0000029>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000407>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000033> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000033>))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000033> "wing"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000033> <http://purl.obolibrary.org/obo/AISM_0000029>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000407>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000033> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000033>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000034> (fore leg)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000034> "The paired appendage of the prothorax that is anterior to a mid leg and composed of procoxa, protrochanter, profemur, protibia, protarsus, and propretarsus."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000034> "fore leg"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000034> <http://purl.obolibrary.org/obo/AISM_0000031>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0000035>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> <http://purl.obolibrary.org/obo/AISM_0000031>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004125>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000066>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000067>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000070>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004171>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004190>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004194>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0000035>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000034>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000035> (mid leg)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000035> "The paired appendage of the mesothorax that is posterior to a fore leg, anterior to a hind leg, and composed of mesocoxa, mesotrochanter, mesofemur, mesotibia, mesotarsus, and mesopretarsus."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000035> "mid leg"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000035> <http://purl.obolibrary.org/obo/AISM_0000031>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0000036>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> <http://purl.obolibrary.org/obo/AISM_0000031>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004126>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000064>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000068>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000071>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004172>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004189>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004195>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0000036>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000034>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000035>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000036> (hind leg)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000036> "The paired appendage of the metathorax that is posterior to a mid leg and composed of metacoxa, metatrochanter, metafemur, metatibia, metatarsus, and metapretarsus."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000036> "hind leg"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000036> <http://purl.obolibrary.org/obo/AISM_0000031>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> <http://purl.obolibrary.org/obo/AISM_0000031>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004127>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000065>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000069>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000072>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004173>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004188>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0004196>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000035>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000036>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000037> (fore wing)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000037> "fore wing"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000037> <http://purl.obolibrary.org/obo/AISM_0000033>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000052>))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000037> "fore wing"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000037> <http://purl.obolibrary.org/obo/AISM_0000033>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000052>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000038> (hind wing)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000038> "hind wing"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000038> <http://purl.obolibrary.org/obo/AISM_0000033>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000169>))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000038> "hind wing"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000038> <http://purl.obolibrary.org/obo/AISM_0000033>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000169>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000039> (seta)
 
@@ -869,34 +905,34 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 
 https://doi.org/10.1515/9783110264043
 
-\"Seta (=macrotrichium): articulated hair with socket, formed by trichogen cell.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000039> "seta"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000039> <http://purl.obolibrary.org/obo/AISM_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000039> <http://purl.obolibrary.org/obo/AISM_0000127>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000126>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000039> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/CL_0000066>))
+\"Seta (=macrotrichium): articulated hair with socket, formed by trichogen cell.\""@en) Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000039> "seta"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000039> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000039> <http://purl.obolibrary.org/obo/AISM_0000127>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000126>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000039> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/CL_0000066>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000040> (spur)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000040> "The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of a single sclerite that is encricled by a conjunctiva (moveable), and not musculated.")
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000040> "The difference between an appendage and a spur is the lack of muscles attached to the spur, otherwise, the mandible would be also a spur. Spines are multicellular evaginations that are not encircled by conjunctivae. Moveable beetle horns are spurs while not moveable beetle horns are spines.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000040> "The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of a single sclerite that is encricled by a conjunctiva (moveable), and not musculated."@en)
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000040> "The difference between an appendage and a spur is the lack of muscles attached to the spur, otherwise, the mandible would be also a spur. Spines are multicellular evaginations that are not encircled by conjunctivae. Moveable beetle horns are spurs while not moveable beetle horns are spines.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Richards AG, Richards PA (1979) The cuticular protuberances of insects. International Journal of Insect Morphology and Embryology 8: 143–157. 
 
 \"Multicellular protuberances without differentiation of specialized cells\""@en) Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "https://doi.org/10.1016/0020-7322(79)90013-8") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000040> "spur"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000040> <http://purl.obolibrary.org/obo/AISM_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000040> <http://purl.obolibrary.org/obo/AISM_0000128>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000040> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001134>)))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000004>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000040> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000040> <http://purl.obolibrary.org/obo/AISM_0000128>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000040> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001134>)))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000004>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000041> (scale)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000041> "The seta that is flat.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000041> "The seta that is flat.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000041> "scale"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000041> <http://purl.obolibrary.org/obo/AISM_0000039>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002254>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000041> <http://purl.obolibrary.org/obo/AISM_0000039>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002254>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000042> (labrum)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000042> "Is the mouthpart and appendage that is attached to the clypeus by the clypeo-labral conjunctiva and to the proximal margin of the epipharynx."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000042> "Is the mouthpart and appendage that is attached to the clypeus by the clypeo-labral conjunctiva and to the proximal margin of the epipharynx."@en)
 AnnotationAssertion(Annotation(rdfs:comment "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -910,7 +946,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000043> (insect mandible)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000043> "Is a mouthpart and sclerite between the labrum and the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and the cranio-mandibular muscle."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000043> "Is a mouthpart and sclerite between the labrum and the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and the cranio-mandibular muscle."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
 https://doi.org/10.1515/9783110264043
@@ -927,7 +963,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000044> (insect maxilla)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000044> "Is a mouthpart appendage of the head capsule, between the insect mandible and the labium, composed of cardo, which is attached to the stipes by the cardo-stipital conjunctiva; the stipes, which is attached to the galea by the stipito-galeal conjunctiva, to the lacinia by the stipito-lacinial conjunctiva, and to the palpifer by the stipito-palpiferal conjunctiva; the palpifer is attached to the maxillary palpus by the palpifero-palpal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000044> "Is a mouthpart appendage of the head capsule, between the insect mandible and the labium, composed of cardo, which is attached to the stipes by the cardo-stipital conjunctiva; the stipes, which is attached to the galea by the stipito-galeal conjunctiva, to the lacinia by the stipito-lacinial conjunctiva, and to the palpifer by the stipito-palpiferal conjunctiva; the palpifer is attached to the maxillary palpus by the palpifero-palpal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
 https://doi.org/10.1515/9783110264043
@@ -952,14 +988,16 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000045> (mesothorax-metathorax conjunctiva)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000045> "The conjunctiva of the insect thorax that connects the mesothorax and the metathorax."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000045> "mesothorax-metathorax conjunctiva"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000045> <http://purl.obolibrary.org/obo/AISM_0000004>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004126>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004127>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000045> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004126>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004127>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000046> (prothorax-mesothorax conjunctiva)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000046> "The conjunctiva of the insect thorax joining the prothorax and the mesothorax."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000046> "The conjunctiva of the insect thorax joining the prothorax and the mesothorax."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000046> "prothorax-mesothorax conjunctiva"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000046> <http://purl.obolibrary.org/obo/AISM_0000004>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))
@@ -968,7 +1006,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000047> (pretarsus)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000047> "The appendage of the leg that is attached to the tarsus by the tarso-pretarsal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000047> "The appendage of the leg that is attached to the tarsus by the tarso-pretarsal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -982,7 +1020,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000048> (ligula)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000048> "Is the appendage of the labium composed of the glossa and paraglossa jointly."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000048> "Is the appendage of the labium composed of the glossa and paraglossa jointly."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.
 
 https://www.jstor.org/stable/10.7591/j.ctv1nhm1j
@@ -995,7 +1033,7 @@ SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AIS
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000049> (glossa)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000049> "Is the appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-glossal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000049> "Is the appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-glossal conjunctiva."@en)
 AnnotationAssertion(Annotation(rdfs:comment "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -1009,7 +1047,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000050> (paraglossa)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000050> "Is the appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-paraglossal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000050> "Is the appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-paraglossal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -1023,7 +1061,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000051> (maxillary palpus)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000051> "Is the appendage of the insect maxilla that is attached to the palpifer by the palpifero-palpal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000051> "Is the appendage of the insect maxilla that is attached to the palpifer by the palpifero-palpal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
 https://doi.org/10.1515/9783110264043
@@ -1032,40 +1070,40 @@ https://doi.org/10.1515/9783110264043
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000051> <http://purl.obolibrary.org/obo/AISM_0000029>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004012>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004001>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000052> (mesonotum)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000052> "mesonotum"@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000052> "mesonotum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000052> <http://purl.obolibrary.org/obo/AISM_0000003>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000053> (mesopectus)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000053> "mesopectus"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000053> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000141>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000037>))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000103>))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000053> "mesopectus"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000053> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000141>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000037>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000103>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000054> (mesotrochantin)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000054> "mesotrochantin"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000054> <http://purl.obolibrary.org/obo/AISM_0004135>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000054> "mesotrochantin"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000054> <http://purl.obolibrary.org/obo/AISM_0004135>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000055> (protrochantin)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000055> "protrochantin"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000055> <http://purl.obolibrary.org/obo/AISM_0004135>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000055> "protrochantin"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000055> <http://purl.obolibrary.org/obo/AISM_0004135>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000056> (metatrochantin)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000056> "metatrochantin"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000056> <http://purl.obolibrary.org/obo/AISM_0004135>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000056> "metatrochantin"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000056> <http://purl.obolibrary.org/obo/AISM_0004135>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000057> (prementum)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000057> "Is the sclerite of the labium that is connected to the mentum by the mental-premental conjunctiva, to the palpiger by the premental-palpigeral conjunctiva, to the paraglossa by the premental-paraglossal conjunctiva, and to the glossa by the premental-glossal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000057> "Is the sclerite of the labium that is connected to the mentum by the mental-premental conjunctiva, to the palpiger by the premental-palpigeral conjunctiva, to the paraglossa by the premental-paraglossal conjunctiva, and to the glossa by the premental-glossal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -1084,13 +1122,13 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000058> (prepectus)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000058> "prepectus"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000058> <http://purl.obolibrary.org/obo/AISM_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000671> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000059>))))))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000058> "prepectus"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000058> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000671> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000059>))))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000059> (pronotum)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000059> "The sclerite that is attached to cranial muscles, procoxal muscles, contiuous posterioirly with the neck membrane and with pronoto-propleural conjunctiva and not adjacent (not touching) to the procoxa.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000059> "The sclerite that is attached to cranial muscles, procoxal muscles, contiuous posterioirly with the neck membrane and with pronoto-propleural conjunctiva and not adjacent (not touching) to the procoxa.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -1108,7 +1146,7 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000060> (propeluron)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000060> "propeluron"@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000060> "propeluron"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000060> <http://purl.obolibrary.org/obo/AISM_0000003>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000060> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000100>)))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004125>))))
@@ -1119,23 +1157,24 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000061> (prosternum)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000061> "prosternum"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000061> <http://purl.obolibrary.org/obo/AISM_0000003>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000061> "prosternum"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000061> <http://purl.obolibrary.org/obo/AISM_0000003>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000062> (ring sclerite)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000062> "ring sclerite"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000062> <http://purl.obolibrary.org/obo/AISM_0000003>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000062> "ring sclerite"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000062> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001873>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000063> (appendage segment)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000063> "appendage segment"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000063> <http://purl.obolibrary.org/obo/AISM_0000062>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001134>))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000063> "appendage segment"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000063> <http://purl.obolibrary.org/obo/AISM_0000062>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001134>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000064> (mesocoxa)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000064> "The segment of the mid leg that is attached to the latero-ventral region of the mesothorax by the basal mesocoxal conjunctiva and to the mesotrochanter by the mesocoxal-mesotrochanteral conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000064> "The segment of the mid leg that is attached to the latero-ventral region of the mesothorax by the basal mesocoxal conjunctiva and to the mesotrochanter by the mesocoxal-mesotrochanteral conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000064> "mesocoxa"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000064> <http://purl.obolibrary.org/obo/AISM_0000077>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000064> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004126>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004126>)))))
@@ -1146,7 +1185,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000065> (metacoxa)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000065> "The segment of the hind leg that is attached to the latero-ventral region of the metathorax by the basal metacoxal conjunctiva and to the metatrochanter by the metacoxal-metatrochanteral conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000065> "The segment of the hind leg that is attached to the latero-ventral region of the metathorax by the basal metacoxal conjunctiva and to the metatrochanter by the metacoxal-metatrochanteral conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000065> "metacoxa"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000065> <http://purl.obolibrary.org/obo/AISM_0000077>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000065> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004127>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004127>)))))
@@ -1157,7 +1196,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000066> (procoxa)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000066> "The segment of the fore leg that is attached to the latero-ventral region of the prothorax by the basal procoxal conjunctiva and to the protrochanter by the procoxal-protrochanteral conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000066> "The segment of the fore leg that is attached to the latero-ventral region of the prothorax by the basal procoxal conjunctiva and to the protrochanter by the procoxal-protrochanteral conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000066> "procoxa"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000066> <http://purl.obolibrary.org/obo/AISM_0000077>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000066> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004125>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004125>)))))
@@ -1168,22 +1207,46 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000067> (protibia)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000067> "The segment of a fore leg attached to the distal margin of the profemur by the profemoro-protibial conjunctiva and to the proximal margin of the protarsus by the protibio-protarsal conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000067> "protibia"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000067> <http://purl.obolibrary.org/obo/AISM_0000075>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000067> <http://purl.obolibrary.org/obo/AISM_0000063>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000067> <http://purl.obolibrary.org/obo/AISM_0000075>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004183>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004179>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000034>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000067>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004190>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000072>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000068> (mesotibia)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000068> "The segment of a mid leg attached to the distal margin of the mesofemur by the mesofemoro-mesotibial conjunctiva and to the proximal margin of the mesotarsus by the mesotibio-mesotarsal conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000068> "mesotibia"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000068> <http://purl.obolibrary.org/obo/AISM_0000075>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000068> <http://purl.obolibrary.org/obo/AISM_0000063>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000068> <http://purl.obolibrary.org/obo/AISM_0000075>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004184>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004180>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000035>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000068>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004189>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000071>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000069> (metatibia)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000069> "The segment of a hind leg attached to the distal margin of the metafemur by the metafemoro-metatibial conjunctiva and to the proximal margin of the metatarsus by the metatibio-metatarsal conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000069> "metatibia"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000069> <http://purl.obolibrary.org/obo/AISM_0000075>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000069> <http://purl.obolibrary.org/obo/AISM_0000063>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000069> <http://purl.obolibrary.org/obo/AISM_0000075>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004185>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004181>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000036>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000069>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004188>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000072>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000070> (profemur)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000070> "The segment of a fore leg attached to the distal margin of the protrochanter by the protrochantero-profemoral conjunctiva and to the proximal margin of the protibia by the profemoro-protibial conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000070> "The segment of a fore leg attached to the distal margin of the protrochanter by the protrochantero-profemoral conjunctiva and to the proximal margin of the protibia by the profemoro-protibial conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000070> "profemur"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000070> <http://purl.obolibrary.org/obo/AISM_0000076>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004179>))
@@ -1195,7 +1258,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000071> (mesofemur)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000071> "The segment of a mid leg attached to the distal margin of the mesotrochanter by the mesotrochantero-mesofemoral conjunctiva and to the proximal margin of the mesotibia by the mesofemoro-mesotibial conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000071> "The segment of a mid leg attached to the distal margin of the mesotrochanter by the mesotrochantero-mesofemoral conjunctiva and to the proximal margin of the mesotibia by the mesofemoro-mesotibial conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000071> "mesofemur"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000071> <http://purl.obolibrary.org/obo/AISM_0000076>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000071> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004180>))
@@ -1207,7 +1270,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000072> (metafemur)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000072> "The segment of a hind leg attached to the distal margin of the metatrochanter by the metatrochantero-metafemoral conjunctiva and to the proximal margin of the metatibia by the metafemoro-metatibial conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000072> "The segment of a hind leg attached to the distal margin of the metatrochanter by the metatrochantero-metafemoral conjunctiva and to the proximal margin of the metatibia by the metafemoro-metatibial conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000072> "metafemur"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000072> <http://purl.obolibrary.org/obo/AISM_0000076>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004181>))
@@ -1219,9 +1282,9 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000073> (mere)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000073> "mere"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000073> <http://purl.obolibrary.org/obo/AISM_0000062>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000073> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001134>)))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000073> "mere"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000073> <http://purl.obolibrary.org/obo/AISM_0000062>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000073> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001134>)))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000074> (tarsomere)
 
@@ -1229,24 +1292,30 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "\"
 
 https://doi.org/10.1515/9783110264043
 
-\"Tarsomere: subelement of tarsus in Insecta; number often taxon-specific, sometimes differing on legs of different segments (diagnostic value: tarsal formula).\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000074> "tarsomere"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000074> <http://purl.obolibrary.org/obo/AISM_0000073>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000074> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000047>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000073>)))
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000074> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000075>))
+\"Tarsomere: subelement of tarsus in Insecta; number often taxon-specific, sometimes differing on legs of different segments (diagnostic value: tarsal formula).\""@en) Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000074> "tarsomere"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000074> <http://purl.obolibrary.org/obo/AISM_0000073>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000074> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000047>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000073>)))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000074> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000075>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000075> (tibia)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000075> "The segment of a leg attached to the distal margin of the femur by the femoro-tibial conjunctiva and to the proximal margin of the tarsus by the tibio-tarsal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Tibia: 4th element of leg; usually cylindrical and equipped with paired terminal spurs, often with rows of spines.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000075> "tibia"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000075> <http://purl.obolibrary.org/obo/AISM_0000063>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000076>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000075> <http://purl.obolibrary.org/obo/AISM_0000063>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004182>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004178>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000031>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000075>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004169>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000076>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000076> (femur)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000076> "The segment of a leg attached to the distal margin of the trochanter by the trochantero-femoral conjunctiva and to the proximal margin of the tibia by the femoro-tibial conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000076> "The segment of a leg attached to the distal margin of the trochanter by the trochantero-femoral conjunctiva and to the proximal margin of the tibia by the femoro-tibial conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -1262,7 +1331,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000077> (coxa)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000077> "The segment of the leg that is attached to the latero-ventral region of the insect thorax by the basal coxal conjunctiva and to the trochanter by the coxal-trochanteral conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000077> "The segment of the leg that is attached to the latero-ventral region of the insect thorax by the basal coxal conjunctiva and to the trochanter by the coxal-trochanteral conjunctiva."@en)
 AnnotationAssertion(Annotation(rdfs:comment "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -1295,7 +1364,7 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000082> "The skeletal muscle continuous with the head capsule and the insect mandible."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000082> "cranio-mandibular muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000082> <http://purl.obolibrary.org/obo/AISM_0000080>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000082> <http://purl.obolibrary.org/obo/AISM_0000080>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 
@@ -1396,14 +1465,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000091> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000093> (hypopharynx)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000093> "Is the conjunctiva of the head capsule that is attached to the salivarium and to the oral foraminal conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000093> "The conjunctiva of the insect head that is attached to the salivarium and to the oral foraminal conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Hypopharynx: median unpaired lobe between mouthparts and epipharynx; anterior (dorsal) surface continuous with anterior pharynx.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000093> "hypopharynx"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000093> <http://purl.obolibrary.org/obo/AISM_0000004>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000093> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000093> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000107>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000093> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000099>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000093> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000159>))
 
@@ -1483,12 +1552,14 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000105> (epipharynx)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000105> "The conjunctiva of the insect head that is connected to the oral foraminal conjunctiva and to the distal margin of the labrum."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Epipharynx: semimembranous or membranous posterior wall of labrum and roof of cibarium.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000105> "epipharynx"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000105> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000107>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000099>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000042>))))
 
@@ -1629,9 +1700,9 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000116> (flagellomere)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000116> "flagellomere"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000116> <http://purl.obolibrary.org/obo/AISM_0000073>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000032>))
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000116> "flagellomere"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000116> <http://purl.obolibrary.org/obo/AISM_0000073>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000032>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000117> (first flagellomere)
 
@@ -2033,8 +2104,8 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000174> "The region of the insect integument that is part of the insect cuticle."@en)
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000174> "The AISM focuses on anatomical structures that are part of the insect (chitinous) cuticle. These structures are acellular regions of the integument. Regions of the insect cuticle with different mechanical properties (i.e. increased and descresed flexinility, thickness and elasticity) are continuous with each other (e.g. sclerites are continuous with conjunctivae or resilin rich regions are continuou with regions with less resilin content).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000174> "region of cuticle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000174> <http://purl.obolibrary.org/obo/UBERON_6007284>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000174> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001001>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000174> <http://purl.obolibrary.org/obo/UBERON_6007284>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000174> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001001>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000177> (pore canal)
 
@@ -2118,13 +2189,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000189> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000190> (antennifer)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000190> "The solid cuticular protrusion (process, protuberace) that bears the cranial articular surface of the cranio-antennal articulation.")
+AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000190> "The cuticular protrusion (process, protuberace) that bears the cranial articular surface of the cranio-antennal articulation."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Antennifer: small cephalic process articulating with the antenna.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000190> "antennifer"@en)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000190> <http://purl.obolibrary.org/obo/AISM_0000028>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000190> <http://purl.obolibrary.org/obo/AISM_0000008>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004007>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000113>))
@@ -2251,7 +2322,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004002> (mental-premental conjunctiva)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004002> "Is the conjunctiva of the labium that connects the mentum and the prementum."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004002> "The conjunctiva of the labium that connects the mentum and the prementum."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004002> "mental-premental conjunctiva"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004002> <http://purl.obolibrary.org/obo/AISM_0000004>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000087>))
@@ -2416,8 +2487,11 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004018> (clypeo-labral conjunctiva)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004018> "The conjunctiva of the insect maxilla that connects the clypeus and the labrum."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004018> "clypeo-labral conjunctiva"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004018> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004018> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000042>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004019>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004019> (clypeus)
 
@@ -3192,7 +3266,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004079> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004080> (noto-pleural conjunctiva)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004080> "Is the conjunctiva of the insect thorax joining the notum and the pleuron."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004080> "The conjunctiva of the insect thorax joining the notum and the pleuron."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004080> "noto-pleural conjunctiva"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004080> <http://purl.obolibrary.org/obo/AISM_0000004>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))
@@ -3211,12 +3285,12 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Fulcrum (=pleural wing process): anterodorsal apex of the pleural ridge.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004081> "pleural wing process"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004081> <http://purl.obolibrary.org/obo/AISM_0000028>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004081> <http://purl.obolibrary.org/obo/AISM_0000008>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004129>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004082> (metanoto abdominal tergite I conjunctiva)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004082> "Is the conjunctiva between the insect thorax and the insect abdomen that connects the posterior margin of the metanotum to the anterior margin of the abdominal tergite I."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004082> "The conjunctiva between the insect thorax and the insect abdomen that connects the posterior margin of the metanotum to the anterior margin of the abdominal tergite I."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004082> "metanoto abdominal tergite I conjunctiva"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004082> <http://purl.obolibrary.org/obo/AISM_0000004>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000021>))
@@ -3422,7 +3496,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004102> (metasterno-abdominal sternite I conjunctiva)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004102> "Is the conjunctiva between the insect thorax and the insect abdomen that connects the posterior margin of the metasterum to the anterior margin of the abdominal sternite I."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004102> "The conjunctiva between the insect thorax and the insect abdomen that connects the posterior margin of the metasterum to the anterior margin of the abdominal sternite I."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004102> "metasterno-abdominal sternite I conjunctiva"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004102> <http://purl.obolibrary.org/obo/AISM_0000004>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004102> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004100>))
@@ -3430,7 +3504,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004103> (abdominal sternite I-abdominal sternite II conjunctiva)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004103> "Is the conjunctiva of the insect abdomen that connects the abdominal sternite I and the abdominal sternite II."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004103> "The conjunctiva of the insect abdomen that connects the abdominal sternite I and the abdominal sternite II."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004103> "abdominal sternite I-abdominal sternite II conjunctiva"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004103> <http://purl.obolibrary.org/obo/AISM_0000004>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
@@ -3996,7 +4070,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Anapleural suture (=paracoxal suture): suture horizontally delimiting dorsal and ventral parts of episternum and (partially) epimeron; sometimes anteriorly widened and membranous (=anapleural cleft).\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004156> "anapleural sulcus"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004156> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004156> <http://purl.obolibrary.org/obo/AISM_0000174>)
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004157> (paracoxal suture)
 
@@ -4106,7 +4180,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004168> (trochanter)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004168> "The segment of a leg attached to the distal margin of the coxa by the coxal-trochanteral conjunctiva and to the proximal margin of the femur by the trochantero-femoral conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004168> "The segment of a leg attached to the distal margin of the coxa by the coxal-trochanteral conjunctiva and to the proximal margin of the femur by the trochantero-femoral conjunctiva."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -4149,7 +4223,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004171> (protrochanter)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004171> "The segment of a fore leg attached to the distal margin of the procoxa by the procoxal-protrochanteral conjunctiva and to the proximal margin of the profemur by the protrochantero-profemoral conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004171> "The segment of a fore leg attached to the distal margin of the procoxa by the procoxal-protrochanteral conjunctiva and to the proximal margin of the profemur by the protrochantero-profemoral conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004171> "protrochanter"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004171> <http://purl.obolibrary.org/obo/AISM_0004168>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004171> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004175>))
@@ -4161,7 +4235,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004172> (mesotrochanter)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004172> "The segment of a mid leg attached to the distal margin of the mesocoxa by the mesocoxal-mesotrochanteral conjunctiva and to the proximal margin of the mesofemur by the mesotrochantero-mesofemoral conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004172> "The segment of a mid leg attached to the distal margin of the mesocoxa by the mesocoxal-mesotrochanteral conjunctiva and to the proximal margin of the mesofemur by the mesotrochantero-mesofemoral conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004172> "mesotrochanter"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004172> <http://purl.obolibrary.org/obo/AISM_0004168>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004172> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004176>))
@@ -4173,7 +4247,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004173> (metatrochanter)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004173> "The segment of a hind leg attached to the distal margin of the metacoxa by the metacoxal-metatrochanteral conjunctiva and to the proximal margin of the metafemur by the metatrochantero-metafemoral conjunctiva."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-03-18") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004173> "The segment of a hind leg attached to the distal margin of the metacoxa by the metacoxal-metatrochanteral conjunctiva and to the proximal margin of the metafemur by the metatrochantero-metafemoral conjunctiva."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004173> "metatrochanter"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004173> <http://purl.obolibrary.org/obo/AISM_0004168>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004173> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0004177>))
@@ -4611,7 +4685,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Tormae: lateral apodemes of labral base\"") rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002012> "tormae"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002012> <http://purl.obolibrary.org/obo/AISM_0000188>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002012> <http://purl.obolibrary.org/obo/AISM_0000188>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000042>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002013> (transversal labral muscle)
