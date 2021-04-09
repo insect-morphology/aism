@@ -16,9 +16,12 @@ Import(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aism/imports/pr_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aism/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aism/imports/uberon_import.owl>)
-Annotation(dce:description "Ontology about the skeletomuscular system of insects")
-Annotation(dce:title "Anatomy Ontology of Insect Skeletomuscular System")
-Annotation(dcterms:license <CC-BY>)
+Annotation(dce:contributor "István Mikó https://orcid.org/0000-0003-2938-9075")
+Annotation(dce:contributor "Jennifer C. Girón https://orcid.org/0000-0002-0851-6883")
+Annotation(dce:contributor "Luis A. González Montaña https://orcid.org/0000-0002-9136-9932")
+Annotation(dce:description "The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research."@en)
+Annotation(dce:title "Ontology for the Anatomy of the Insect SkeletoMuscular system"@en)
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_00000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000002>))
@@ -397,6 +400,32 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004197>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004198>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004200>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004201>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004202>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004203>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004204>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004205>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004206>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004207>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004208>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004209>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004210>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004212>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004213>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004214>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004215>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004216>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004217>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004218>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004219>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004220>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004221>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004222>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004223>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004224>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004225>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004226>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004227>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -739,6 +768,7 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000020> "dorsal second axillary sclerite"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000020> <http://purl.obolibrary.org/obo/AISM_0004161>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000011> <http://purl.obolibrary.org/obo/AISM_0000022>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000021> (abdominal tergite I)
 
@@ -755,6 +785,8 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000022> "first axillary sclerite"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000022> <http://purl.obolibrary.org/obo/AISM_0004161>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004203>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0004223>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000023> (galea)
 
@@ -1106,16 +1138,19 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000054> "mesotrochantin"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000054> <http://purl.obolibrary.org/obo/AISM_0004135>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000103>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000055> (protrochantin)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000055> "protrochantin"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000055> <http://purl.obolibrary.org/obo/AISM_0004135>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000106>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000056> (metatrochantin)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000056> "metatrochantin"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000056> <http://purl.obolibrary.org/obo/AISM_0004135>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000104>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000057> (prementum)
 
@@ -1175,6 +1210,8 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000061> "prosternum"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000061> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000143>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004202>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000062> (ring sclerite)
 
@@ -1940,11 +1977,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000147> ObjectSomeValuesFrom(<h
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") rdfs:label <http://purl.obolibrary.org/obo/AISM_0000148> "tibial muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000148> <http://purl.obolibrary.org/obo/AISM/AISM_0002064>)
 
-# Class: <http://purl.obolibrary.org/obo/AISM_0000149> (muscle of the tarsal claw)
+# Class: <http://purl.obolibrary.org/obo/AISM_0000149> (pretarsal muscle)
 
 AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000149> "The skeletal muscle that inserts on the pretarsus.")
 AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000149> "There are usually two muscle bands of the pretarsal muscle, one is arising from the femur, the other from the tibia. The muscle usually inserts on a resilin rich basal sclerite of the pretarsus, the unguitractor plate.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000149> "muscle of the tarsal claw"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000149> "pretarsal muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000149> <http://purl.obolibrary.org/obo/AISM/AISM_0002064>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000149> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000047>))
 
@@ -3936,6 +3973,7 @@ https://doi.org/10.1515/9783110264043
 
 \"Trochantin: small triangular or sickle-shaped ventral pleural sclerite; anteriorly articulating with coxa (trochantino-coxal joint).\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004135> "trochantin"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004135> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004135> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000173>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004135> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0000077>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004135> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000085> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))))
 
@@ -4138,6 +4176,9 @@ https://doi.org/10.1515/9783110264043
 
 \"Basalare: sclerite associated with wing base, more or less distinctly separated from anepisternum; usually with internal muscle disc; attachment site of direct flight muscles.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004152> "basalare"@en)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004152> <http://purl.obolibrary.org/obo/AISM_0004151>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004222>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000096> <http://purl.obolibrary.org/obo/AISM_0000022>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004129>))))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004154>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004153> (subalare)
@@ -4149,6 +4190,9 @@ https://doi.org/10.1515/9783110264043
 
 \"Subalare: sclerite associated with wing base, usually embedded in membrane between tergum and pleuron; attachment site of direct flight muscles.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004153> "subalare"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004153> <http://purl.obolibrary.org/obo/AISM_0004151>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004153> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004222>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004153> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000022>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004153> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000077>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004154> (anepisternum)
 
@@ -4241,6 +4285,7 @@ https://doi.org/10.1515/9783110264043
 
 \"Axillary sclerites (=axillaria, pteralia): small sclerites of wing base (usually 3); articulating with notal wing processes.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004161> "axillary sclerite"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004161> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0004203>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004162> (precoxal ridge)
 
@@ -4650,6 +4695,156 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004201> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004056>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004201> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004064>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004201> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004065>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004202> (prosterno-propleural conjunctiva)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004202> "prosterno-propleural conjunctiva"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004202> <http://purl.obolibrary.org/obo/AISM_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004203> (basal wing conjunctiva)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004203> "basal wing conjunctiva")
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004203> <http://purl.obolibrary.org/obo/AISM_0000004>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000033>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004204> (tergo-trochantinal muscle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0004204> "For muscular terminology, tergum has been traditionally used.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004204> "tergo-trochantinal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004204> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004205> (pronoto-protrochantinal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004205> "pronoto-protrochantinal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004205> <http://purl.obolibrary.org/obo/AISM_0004204>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004206> (mesonoto-mesotrochantinal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004206> "mesonoto-mesotrochantinal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004206> <http://purl.obolibrary.org/obo/AISM_0004204>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004207> (metanoto-metatrochantinal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004207> "metanoto-metatrochantinal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004207> <http://purl.obolibrary.org/obo/AISM_0004204>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004208> (tergo-tergal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004208> "tergo-tergal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004208> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004209> (pronoto-mesonotal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004209> "pronoto-mesonotal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004209> <http://purl.obolibrary.org/obo/AISM_0004208>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004210> (mesonoto-metanotal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004210> "mesonoto-metanotal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004210> <http://purl.obolibrary.org/obo/AISM_0004208>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004211> (tergo-coxal muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004211> "tergo-coxal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004211> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004212> (tergo-trochanteral muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004212> "tergo-trochanteral muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004212> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004213> (pleuro-coxal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-09") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004213> "The thoracic muscle that attaches to the pleuron and to a coxa."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004213> "pleuro-coxal muscle"@en)
+SubClassOf(Annotation(rdfs:comment "imiko") <http://purl.obolibrary.org/obo/AISM_0004213> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004213> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000077>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004213> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004129>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004214> (furco-coxal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-08") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004214> "The thoracic muscle that is attached to a furca and to a coxa."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004214> "furco-coxal muscle"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0004214> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004214> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000077>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004214> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000144>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004215> (furco-trochanteral muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-08") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004215> "The thoracic muscle that is attached to a furca and to a trochanter."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004215> "furco-trochanteral muscle"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0004215> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004215> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000144>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004215> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004168>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004216> (interfurcal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-09") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004216> "The thoracic muscle that extends between two furcae."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004216> "interfurcal muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004216> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004216> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000144>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004217> (profurco-mesofurcal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-09") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004217> "The thoracic muscle that extends between the profurca and the mesofurca."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004217> "profurco-mesofurcal muscle"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0004217> <http://purl.obolibrary.org/obo/AISM_0004216>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004217> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000141>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004217> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000143>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004218> (mesofurco-metafurcal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-09") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004218> "The thoracic muscle that extends between the mesofurca and the metafurca."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004218> "mesofurco-metafurcal muscle"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0004218> <http://purl.obolibrary.org/obo/AISM_0004216>)
+SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AISM_0004218> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000141>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004218> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000142>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004219> (mesopleuro-mesonotal conjuntiva)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004219> "mesopleuro-mesonotal conjuntiva"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004219> <http://purl.obolibrary.org/obo/AISM_0004222>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004220> (propleuro-pronotal conjunctiva)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004220> "propleuro-pronotal conjunctiva"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004220> <http://purl.obolibrary.org/obo/AISM_0004222>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004221> (metapleuro-metanotal conjunctiva)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004221> "metapleuro-metanotal conjunctiva"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004221> <http://purl.obolibrary.org/obo/AISM_0004222>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004222> (pleuro-notal conjunctiva)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004222> "pleuro-notal conjunctiva"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004222> <http://purl.obolibrary.org/obo/AISM_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004223> (third axillary sclerite)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004223> "third axillary sclerite"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004223> <http://purl.obolibrary.org/obo/AISM_0004161>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004223> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000099> <http://purl.obolibrary.org/obo/AISM_0000022>))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004223> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004186>))))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004224> (ventral second axillary sclerite)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004224> "ventral second axillary sclerite"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004224> <http://purl.obolibrary.org/obo/AISM_0004161>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004224> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004203>))))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004226> (mesofragmo-abdominal tergite I muscle)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004226> "mesofragmo-abdominal tergite I muscle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0004226> <http://purl.obolibrary.org/obo/AISM_0004208>)
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004227> (metafurco-abdominal sternite muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-09") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004227> "The thoracic muscle that extends between the metafurca and an abdominal sternite."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004227> "metafurco-abdominal sternite muscle"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0004227> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0004227> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000142>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0004227> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004058>))
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002219> (fan-shaped)
 
