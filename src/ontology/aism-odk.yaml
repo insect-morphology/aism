@@ -20,9 +20,12 @@ import_group:
   products:
     - id: ro
     - id: uberon
+      is_large: TRUE
     - id: pato
     - id: bspo
     - id: pr
+      use_gzipped: TRUE
+      is_large: TRUE
     - id: cl
     - id: iao
 robot_java_args: '-Xmx8G'
