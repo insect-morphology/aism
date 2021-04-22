@@ -6598,6 +6598,12 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000080"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -6672,6 +6678,12 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000080"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -6703,6 +6715,12 @@ https://doi.org/10.1515/9783110264043
         <obo:IAO_0000115 xml:lang="en">The skeletal muscle continuous with the head capsule and the labrum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cranio-labral muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000084"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000080"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000084"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -6780,8 +6798,8 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The skeletal muscle that inserts in the coxa.</obo:IAO_0000115>
         <obo:IAO_0000232>All of the coxal muscles, except the second sternal-metacoxal muscle, are attached to the thorax.</obo:IAO_0000232>
-        <rdfs:comment xml:lang="en">The skeletal muscle that inserts in the coxa.</rdfs:comment>
         <rdfs:label xml:lang="en">coxal muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -6803,16 +6821,16 @@ https://doi.org/10.1515/9783110264043
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000086"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
-        <owl:annotatedTarget>All of the coxal muscles, except the second sternal-metacoxal muscle, are attached to the thorax.</owl:annotatedTarget>
-        <dc:contributor>imiko</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000086"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">The skeletal muscle that inserts in the coxa.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000086"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>All of the coxal muscles, except the second sternal-metacoxal muscle, are attached to the thorax.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     
 
@@ -9991,12 +10009,6 @@ https://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4</obo:AI
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000135"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
-        <dc:contributor>imiko</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000135"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">The region of the cuticle that is continuous to the proximal region of the trachea and can be closed by muscles.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -10012,6 +10024,12 @@ https://doi.org/10.1515/9783110264043
 
 &quot;Spiracle: external opening of the tracheal system.&quot;</obo:AISM_0000171>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000135"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
     
 
 
@@ -10025,6 +10043,12 @@ https://doi.org/10.1515/9783110264043
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000136"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000136"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The cuticular ivagination that is branched into umerous branches.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -10036,12 +10060,6 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>Branching cuticular invaginations porvide important models for branchig morphogenesis.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000136"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
-        <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     
 
@@ -12452,7 +12470,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Is the paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym xml:lang="en">coxopodite</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">second coxopodite</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">second gonocoxite</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">second valvifer</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">gonocoxa IX</rdfs:label>
@@ -12537,7 +12555,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000200"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget xml:lang="en">coxopodite</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">second coxopodite</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -16425,7 +16443,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The sclerite of the insect abdomen that is dorsal and medial.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym xml:lang="en">tergum</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">abdominal tergum</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">abdominal tergite</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16455,7 +16473,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004057"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget xml:lang="en">tergum</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">abdominal tergum</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -17488,7 +17506,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The paired sclerite of the postabdomen that is attached to the abdominal sternite VII by the abdominal sternite VII-gonocoxa conjunctiva and is articulated with abdominal tergite IX. It is attached at the base of gonostylus VIII and adjacent to the gonopore.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym xml:lang="en">coxopodite</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">first coxopodite</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">first gonocoxite</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">first valvifer</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">gonocoxa VIII</rdfs:label>
@@ -17584,7 +17602,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004068"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget xml:lang="en">coxopodite</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">first coxopodite</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -17829,7 +17847,7 @@ https://doi.org/10.1515/9783110264043
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004072">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
-        <rdfs:comment xml:lang="en">The seta that is elongated.</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">The seta that is elongated.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">trichobothrium</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -17840,7 +17858,7 @@ https://doi.org/10.1515/9783110264043
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004072"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">The seta that is elongated.</owl:annotatedTarget>
         <dc:contributor>jgiron</dc:contributor>
         <oboInOwl:creation_date>2021-04-05</oboInOwl:creation_date>
@@ -28343,27 +28361,16 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal tentorial arm and  the scapus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is attached to the dorsal tentorial arm and the proximal margin of the scapus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">anterior tentorio-scapal muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002002"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
         <dc:contributor>lagonzalezmo</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -28380,7 +28387,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal tentorial arm and  the scapus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-antennal muscle that is attached to the dorsal tentorial arm and the proximal margin of the scapus.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28418,6 +28425,12 @@ https://doi.org/10.1515/9783110264043
         <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">posterior tentorio-scapal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002003"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002003"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -28484,6 +28497,12 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002004"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002004"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -28532,27 +28551,16 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal or anterior tentorial arm and the proximal margin of the scapus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">medial tentorio-scapal muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002005"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
         <dc:contributor>lagonzalezmo</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -28569,7 +28577,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal or anterior tentorial arm and the proximal margin of the scapus.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28607,6 +28615,12 @@ https://doi.org/10.1515/9783110264043
         <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the frons and the pedicellus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fronto-pedicellar muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002006"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002006"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -28655,47 +28669,19 @@ https://doi.org/10.1515/9783110264043
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000115"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The cranio-antennal muscle that is continuous with the scapus and the pedicellus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal or dorsolateral regions of the scapus and the lateral or dorsolateral regions of the pedicellus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">lateral scapo-pedicellar muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002007"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>lagonzalezmo</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002007"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000115"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
         <dc:contributor>lagonzalezmo</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The cranio-antennal muscle that is continuous with the scapus and the pedicellus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal or dorsolateral regions of the scapus and the lateral or dorsolateral regions of the pedicellus.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28707,7 +28693,7 @@ https://doi.org/10.1515/9783110264043
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
 
-&quot;Origin: Doral or dorsolateral wall of the scape&quot;
+&quot;Origin: Dorsal or dorsolateral wall of the scape&quot;
 
 &quot;Insertion: Lateral or dorsolateral wall of the pedicel&quot;</obo:AISM_0000171>
     </owl:Axiom>
@@ -28733,6 +28719,12 @@ https://doi.org/10.1515/9783110264043
         <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the scapus and the pedicellus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">medial scapo-pedicellar muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002008"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000081"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002008"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -28793,6 +28785,12 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002009"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000084"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002009"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -28836,6 +28834,12 @@ https://doi.org/10.1515/9783110264043
         <obo:IAO_0000115 xml:lang="en">The cranio-labral muscle that is continuous with the frontoclypeal ridge and the labrum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">epistoepipharyngeal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002010"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000084"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002010"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -28891,6 +28895,12 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002011"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000084"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002011"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -28938,12 +28948,7 @@ frontolabralis&quot;
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000188"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The apodeme at either side of the proximal margin of the labrum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tormae</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -28954,14 +28959,10 @@ frontolabralis&quot;
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002012"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>lagonzalezmo</dc:contributor>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The apodeme at either side of the proximal margin of the labrum.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002012"/>
@@ -28980,13 +28981,19 @@ https://doi.org/10.1515/9783110264043
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000084"/>
-        <obo:IAO_0000115 xml:lang="en">The cranio-labral muscle that is continuous with the labrum and the labrum.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-labral muscle that extends betwen the sides of  the labrum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">transversal labral muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002013"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000084"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cranio-labral muscle that is continuous with the labrum and the labrum.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-labral muscle that extends betwen the sides of  the labrum.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -29012,6 +29019,12 @@ https://doi.org/10.1515/9783110264043
         <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that is continuous with the head capsule and the insect mandible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">internal cranio-mandibular muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002014"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002014"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -29050,6 +29063,12 @@ mandible&quot;</obo:AISM_0000171>
         <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that is continuous with the gena and the insect mandible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">posteroexternal cranio-mandibular muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002017"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002017"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -29099,6 +29118,12 @@ mandible&quot;</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002018"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002018"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -29133,12 +29158,43 @@ anterior articulation complex&quot;</obo:AISM_0000171>
     <!-- http://purl.obolibrary.org/obo/AISM/AISM_0002019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The sclerite of the hypopharynx.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">fulturae</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">hypopharyngeal arms</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">oral arms</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">suspensorium</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002019"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002019"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000093"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The sclerite of the hypopharynx.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002019"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -29192,6 +29248,12 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002021"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002021"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -29237,6 +29299,12 @@ the loral arm (Neoptera)&quot;
         <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the insect mandible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">superolateral tentorio-mandibular muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002022"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002022"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -29288,6 +29356,12 @@ articulation&quot;</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002023"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002023"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -29331,6 +29405,12 @@ articulation&quot;</obo:AISM_0000171>
         <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">superomedial tentorio-mandibular muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002024"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002024"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -29382,6 +29462,12 @@ posterior mandibular condyle&quot;</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002025"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002025"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -29429,7 +29515,7 @@ tentoriomandibularis lateralis superior&quot;
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The skeletal muscle continuous with the head capsule and the insect maxilla.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">cranio-maxillar muscle</rdfs:label>
+        <rdfs:label xml:lang="en">insect cranio-maxillar muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
@@ -29482,6 +29568,12 @@ tentoriomandibularis lateralis superior&quot;
         <obo:IAO_0000115 xml:lang="en">The cranio-maxillar muscle that is continuous with the gena and the cardo.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cranio-cardinal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002027"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002027"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -29548,6 +29640,12 @@ tentoriomandibularis lateralis superior&quot;
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002028"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002028"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -29608,6 +29706,12 @@ tentoriomandibularis lateralis superior&quot;
         <obo:IAO_0000115 xml:lang="en">The cranio-maxillar muscle that is continuous with the tentorium and the cardo.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tentorio-cardinal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002029"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002029"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -29675,6 +29779,12 @@ sulcus&quot;</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002030"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002030"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -29723,21 +29833,35 @@ sulcus&quot;</obo:AISM_0000171>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000044"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The ridge that is part of the stipes.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">stipital ridge</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002031"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000158"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002031"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000044"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000111"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The ridge that is part of the stipes.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002031"/>
@@ -29769,6 +29893,12 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
         <obo:IAO_0000115 xml:lang="en">The cranio-maxillar muscle that is continuous with the tentorium and the stipes.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">posterior tentorio-stipital muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002032"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002032"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -29833,6 +29963,12 @@ suture&quot;</obo:AISM_0000171>
         <obo:IAO_0000115 xml:lang="en">The cranio-maxillar muscle that is continuous with the stipes and the lacinia.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">stipito-lacinial muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002033"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002033"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -29901,6 +30037,12 @@ tendon with 0mx4&quot;</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002034"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002034"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -29962,6 +30104,12 @@ palpus&quot;
         <obo:IAO_0000115 xml:lang="en">The cranio-maxillar muscle that is continuous with the stipes and the maxillary palpus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">stipito-palpal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002035"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002035"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -30267,6 +30415,12 @@ palpus&quot;
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002042"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002042"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -30327,6 +30481,12 @@ palpus&quot;
         <obo:IAO_0000115 xml:lang="en">The cranio-maxillar muscle that is continuous with the second maxillar palpomere and  the third maxillar palpomere.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">second maxillar palpopalpal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002043"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002043"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -30393,6 +30553,12 @@ palpus&quot;
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002044"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002044"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -30456,6 +30622,12 @@ palpus&quot;
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002045"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002026"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002045"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -30516,6 +30688,12 @@ palpus&quot;
         <obo:IAO_0000115 xml:lang="en">The cranio-labial muscle that is continuous with the postoccipital phragma and  the glossa.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">postoccipitoglossal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002047"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002047"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -30693,6 +30871,12 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002050"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002050"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -30757,6 +30941,12 @@ postoccipitoparaglossalis&quot;
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002051"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002051"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -30817,6 +31007,12 @@ postoccipitoparaglossalis&quot;
         <obo:IAO_0000115 xml:lang="en">The cranio-labial muscle that is continuous with the posterior tentorial arm and the paraglossa.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tentorio-paraglossal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002052"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002052"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -30884,6 +31080,12 @@ cranium&quot;
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002053"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002053"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -30944,6 +31146,12 @@ cranium&quot;
         <obo:IAO_0000115 xml:lang="en">The cranio-labial muscle that is continuous with the submentum and the mentum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">submentomental muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002054"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002054"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -31010,6 +31218,12 @@ cranium&quot;
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002055"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002055"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -31070,6 +31284,12 @@ cranium&quot;
         <obo:IAO_0000115 xml:lang="en">The cranio-labial muscle that is continuous with the prementum and the glossa.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">premento-glossal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002056"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002056"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -31136,6 +31356,12 @@ cranium&quot;
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002057"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000083"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002057"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -31190,6 +31416,12 @@ cranium&quot;
         <obo:IAO_0000115 xml:lang="en">The skeletal muscle continuous with the head capsule and the hypopharynx.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cranio-hypopharyngeal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002058"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000080"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002058"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -31302,6 +31534,12 @@ cranium&quot;
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002060"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002058"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002060"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -31361,7 +31599,7 @@ seperated from above&quot;</obo:AISM_0000171>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The skeletal muscle continuous with the head capsule and the tentorium.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">cranio-tentorial muscle</rdfs:label>
+        <rdfs:label xml:lang="en">insect cranio-tentorial muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002061"/>
@@ -31414,6 +31652,12 @@ seperated from above&quot;</obo:AISM_0000171>
         <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the tentorial bridge and the frons.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tentorio-frontal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002062"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002061"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002062"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -31474,6 +31718,12 @@ seperated from above&quot;</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002063"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002061"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002063"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
@@ -31507,6 +31757,7 @@ seperated from above&quot;</obo:AISM_0000171>
     <!-- http://purl.obolibrary.org/obo/AISM/AISM_0002064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002065"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -31516,6 +31767,12 @@ seperated from above&quot;</obo:AISM_0000171>
         <obo:IAO_0000115 xml:lang="en">The skeletal muscle tissue that is part of the insect leg.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">insect leg muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002064"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002065"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002064"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -31546,7 +31803,8 @@ seperated from above&quot;</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">thoracic muscle</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The skeletal muscle tissue that is part of the insect thorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">insect thoracic muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002065"/>
@@ -31559,6 +31817,13 @@ seperated from above&quot;</obo:AISM_0000171>
         </owl:annotatedTarget>
         <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002065"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The skeletal muscle tissue that is part of the insect thorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
+    </owl:Axiom>
     
 
 
@@ -31567,7 +31832,7 @@ seperated from above&quot;</obo:AISM_0000171>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002065"/>
         <obo:IAO_0000115 xml:lang="en">The thoracic muscle that is not fan-shaped and runs along the dorsal region, parallel to the anterior-posterior axis.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">dorsal longitudinal muscle</rdfs:label>
+        <rdfs:label xml:lang="en">dorsal longitudinal thoracic muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002066"/>
@@ -31585,7 +31850,7 @@ seperated from above&quot;</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002066"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">dorsal longitudinal muscle</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">dorsal longitudinal thoracic muscle</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
 Arthropod Structure &amp; Development, 37(1), 29-54.
 
@@ -31598,12 +31863,26 @@ https://doi.org/10.1016/j.asd.2007.04.003</obo:AISM_0000171>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002065"/>
-        <rdfs:label xml:lang="en">dorsoventral muscle</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The insect thoracic muscle that runs parallel to the dorsal-ventral axis.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">dorsoventral thoracic muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002065"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The insect thoracic muscle that runs parallel to the dorsal-ventral axis.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">dorsoventral muscle</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">dorsoventral thoracic muscle</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
 Arthropod Structure &amp; Development, 37(1), 29-54.
 
@@ -32143,8 +32422,50 @@ https://doi.org/10.1016/j.asd.2007.04.003
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002078">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
-        <rdfs:label xml:lang="en">cervico-occipital muscle</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The dorsoventral thoracic muscle of the prothorax that is attached to the anterior margin of a cervical sclerite and the dorso-lateral region of the postocciput.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anterior cervico-occipital muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002078"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002078"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004125"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The dorsoventral thoracic muscle of the prothorax that is attached to the anterior margin of a cervical sclerite and the dorso-lateral region of the postocciput.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002078"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">anterior cervico-occipital muscle</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure &amp; Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003
+
+&quot;The dorsoventral muscle that arises from dorsolateral postocciput and inserts on anterior tip of first lateral cervical sclerite.&quot;</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -32152,8 +32473,33 @@ https://doi.org/10.1016/j.asd.2007.04.003
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
-        <rdfs:label xml:lang="en">pronoto-cervical muscle</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The dorsoventral thoracic muscle that extends between the antero-lateral region of the pronotum and the medial region of the propleuron.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anterior pronoto-cervical muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002079"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002079"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The dorsoventral thoracic muscle that extends between the antero-lateral region of the pronotum and the medial region of the propleuron.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002079"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">anterior pronoto-cervical muscle</owl:annotatedTarget>
+        <obo:IAO_0000115 xml:lang="en">Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure &amp; Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003
+
+&quot;The dorsoventral muscle that arises from anterolateral pronotum and inserts on atypically on middle region of anterior propleural sclerite.&quot;</obo:IAO_0000115>
+    </owl:Axiom>
     
 
 
@@ -32161,8 +32507,65 @@ https://doi.org/10.1016/j.asd.2007.04.003
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000191"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The dorsoventral thoracic muscle that extends between the tentorium and the prophragma.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">prophragma-tentorial muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002080"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002080"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000191"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002080"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002076"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002080"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The dorsoventral thoracic muscle that extends between the tentorium and the prophragma.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002080"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">prophragma-tentorial muscle</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure &amp; Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -32170,8 +32573,50 @@ https://doi.org/10.1016/j.asd.2007.04.003
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
-        <rdfs:label xml:lang="en">profurca-phragmal muscle</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The dorsoventral thoracic muscle that extends between the profurca and the lateral region of the prophragma.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">profurca-prophragmal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002081"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002081"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000143"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002081"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The dorsoventral thoracic muscle that extends between the profurca and the lateral region of the prophragma.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002081"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">profurca-prophragmal muscle</owl:annotatedTarget>
+        <obo:AISM_0000171>Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure &amp; Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003
+
+&quot;The dorsoventral muscle that arises from posterior face of proximal profurcal arm and inserts on lateral prophragma.&quot;</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -32179,17 +32624,76 @@ https://doi.org/10.1016/j.asd.2007.04.003
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The dorsoventral thoracic muscle that extends between the posterior region (occipital region) of the head capsule and the profurca.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">profurca-occipital muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002082"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000143"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002082"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The dorsoventral thoracic muscle that extends between the posterior region (occipital region) of the head capsule and the profurca.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002082"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">profurca-occipital muscle</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure &amp; Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AISM/AISM_0002083 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002083">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
-        <rdfs:label xml:lang="en">prophragma-spinal muscle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002066"/>
+        <obo:IAO_0000115 xml:lang="en">The dorsal longitudinal thoracic muscle that extends between the medial region of the prophragma and the medial region of the mesophragma.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">prophragma-mesophragmal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002083"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002066"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002083"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The dorsal longitudinal thoracic muscle that extends between the medial region of the prophragma and the medial region of the mesophragma.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002083"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">prophragma-mesophragmal muscle</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure &amp; Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003
+
+&quot;The dorsal longitudinal muscle that arises from median prophragma and inserts on median mesophragma.&quot;</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -32197,16 +32701,87 @@ https://doi.org/10.1016/j.asd.2007.04.003
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002084">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The dorsoventral thoracic muscle that extends between the profurca and the mesonotum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">profurca-mesonotal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002084"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002084"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000052"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002084"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The dorsoventral thoracic muscle that extends between the profurca and the mesonotum.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002084"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">profurca-mesonotal muscle</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure &amp; Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/AISM/AISM_0002085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002085">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The skeletal muscle tissue that is part of the insect abdomen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">insect abdominal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002085"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002085"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The skeletal muscle tissue that is part of the insect abdomen.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
     
 
 
@@ -32214,8 +32789,22 @@ https://doi.org/10.1016/j.asd.2007.04.003
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002085"/>
+        <obo:IAO_0000115 xml:lang="en">The insect abdominal muscle that runs along the lateral region, parallel to the dorsal-ventral axis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">lateral abdominal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002086"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002085"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002086"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The insect abdominal muscle that runs along the lateral region, parallel to the dorsal-ventral axis.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002086"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -32232,8 +32821,22 @@ https://doi.org/10.1016/j.ode.2005.08.004</obo:AISM_0000171>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002085"/>
+        <obo:IAO_0000115 xml:lang="en">The insect abdominal muscle that runs along the ventral region, parallel to the anterior-posterior axis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ventral longitudinal abdominal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002087"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002085"/>
+        <dc:contributor>lagonzalezmo</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002087"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The insect abdominal muscle that runs along the ventral region, parallel to the anterior-posterior axis.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002087"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -32250,8 +32853,22 @@ https://doi.org/10.1016/j.ode.2005.08.004</obo:AISM_0000171>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002085"/>
+        <obo:IAO_0000115 xml:lang="en">The insect abdominal muscle that runs along the dorsal region, parallel to the anterior-posterior axis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">dorsal longitudinal abdominal muscle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002088"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002085"/>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002088"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The insect abdominal muscle that runs along the dorsal region, parallel to the anterior-posterior axis.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-22</oboInOwl:creation_date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002088"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>

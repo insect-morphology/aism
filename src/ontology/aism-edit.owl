@@ -592,7 +592,7 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000171> <http://ww
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (curator notes)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (curator note)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000232> "curator note")
 
@@ -622,7 +622,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#cre
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000079> "encircled by"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/RO_0002150>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002372> (has_muscle_origin)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002372> (has muscle origin)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002372> "has muscle origin"@en)
 
@@ -1449,7 +1449,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000080> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000081> "The skeletal muscle continuous with the head capsule and the antenna."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000081> "cranio-antennal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000081> <http://purl.obolibrary.org/obo/AISM_0000080>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000081> <http://purl.obolibrary.org/obo/AISM_0000080>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000032>))
 
@@ -1465,7 +1465,7 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000083> "The skeletal muscle continuous with the head capsule and the labium."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000083> "cranio-labial muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000083> <http://purl.obolibrary.org/obo/AISM_0000080>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000083> <http://purl.obolibrary.org/obo/AISM_0000080>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000087>))
 
@@ -1473,7 +1473,7 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000084> "The skeletal muscle continuous with the head capsule and the labrum."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000084> "cranio-labral muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000084> <http://purl.obolibrary.org/obo/AISM_0000080>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000084> <http://purl.obolibrary.org/obo/AISM_0000080>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000042>))
 
@@ -1486,8 +1486,8 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000086> (coxal muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-21") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000086> "The skeletal muscle that inserts in the coxa."@en)
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000086> "All of the coxal muscles, except the second sternal-metacoxal muscle, are attached to the thorax.")
-AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-21") rdfs:comment <http://purl.obolibrary.org/obo/AISM_0000086> "The skeletal muscle that inserts in the coxa."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000086> "coxal muscle"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000086> <http://purl.obolibrary.org/obo/AISM/AISM_0002064>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000086> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000077>))
@@ -2470,7 +2470,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 
 https://doi.org/10.1515/9783110264043
 
-\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000200> "coxopodite"@en)
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0000200> "second coxopodite"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -3168,7 +3168,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 
 https://doi.org/10.1515/9783110264043
 
-\"Tergum: plate-like dorsal sclerite of abdominal segment.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004057> "tergum"@en)
+\"Tergum: plate-like dorsal sclerite of abdominal segment.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004057> "abdominal tergum"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Lawrence J, Ślipiński A (2013) 1 Australian beetles volume 1: morphology, classification and keys. CSIRO Publishing, 520 pp. 
 
 https://www.publish.csiro.au/book/6466/
@@ -3341,7 +3341,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 
 https://doi.org/10.1515/9783110264043
 
-\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004068> "coxopodite"@en)
+\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""@en) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM_0004068> "first coxopodite"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -3404,7 +3404,7 @@ SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0004072> (trichobothrium)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-05") rdfs:comment <http://purl.obolibrary.org/obo/AISM_0004072> "The seta that is elongated."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-05") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004072> "The seta that is elongated."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -5160,7 +5160,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0004175> "
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002002> (anterior tentorio-scapal muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002002> "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and  the scapus."@en)
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002002> "The cranio-antennal muscle that is attached to the dorsal tentorial arm and the proximal margin of the scapus."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
@@ -5168,9 +5168,9 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Anterior or dorsal tentorial arms\"
 
 \"Insertion: Anterior (ventral) basal margin of the scape\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002002> "anterior tentorio-scapal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002002> <http://purl.obolibrary.org/obo/AISM_0000081>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000113>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002002> <http://purl.obolibrary.org/obo/AISM_0000081>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004039>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000113>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002003> (posterior tentorio-scapal muscle)
 
@@ -5182,7 +5182,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Anterior or dorsal tentorial arms\"
 
 \"Insertion: Posterior (dorsal) basal margin of the scape\"") rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002003> "posterior tentorio-scapal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002003> <http://purl.obolibrary.org/obo/AISM_0000081>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> <http://purl.obolibrary.org/obo/AISM_0000081>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000113>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004039>))
 
@@ -5196,13 +5196,13 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Anterior or dorsal tentorial arms\"
 
 \"Insertion: Lateral basal margin of the scape\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002004> "lateral tentorio-scapal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002004> <http://purl.obolibrary.org/obo/AISM_0000081>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> <http://purl.obolibrary.org/obo/AISM_0000081>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000113>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004039>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002005> (medial tentorio-scapal muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002005> "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus."@en)
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002005> "The cranio-antennal muscle that is continuous with the dorsal or anterior tentorial arm and the proximal margin of the scapus."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
@@ -5210,9 +5210,9 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Anterior or dorsal tentorial arms\"
 
 \"Insertion: Mesal basal margin of the scape\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002005> "medial tentorio-scapal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002005> <http://purl.obolibrary.org/obo/AISM_0000081>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000113>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002005> <http://purl.obolibrary.org/obo/AISM_0000081>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004039>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000113>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002006> (fronto-pedicellar muscle)
 
@@ -5224,23 +5224,23 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Frons\"
 
 \"Insertion: Lateral edge of the pedicel\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002006> "fronto-pedicellar muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002006> <http://purl.obolibrary.org/obo/AISM_0000081>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002006> <http://purl.obolibrary.org/obo/AISM_0000081>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000115>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004020>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002007> (lateral scapo-pedicellar muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002007> "The cranio-antennal muscle that is continuous with the scapus and the pedicellus.")
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002007> "The cranio-antennal muscle that is continuous with the dorsal or dorsolateral regions of the scapus and the lateral or dorsolateral regions of the pedicellus."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
 
-\"Origin: Doral or dorsolateral wall of the scape\"
+\"Origin: Dorsal or dorsolateral wall of the scape\"
 
 \"Insertion: Lateral or dorsolateral wall of the pedicel\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002007> "lateral scapo-pedicellar muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002007> <http://purl.obolibrary.org/obo/AISM_0000081>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000113>))
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000115>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002007> <http://purl.obolibrary.org/obo/AISM_0000081>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectUnionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000113>)) ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000113>)))))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectUnionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000115>)) ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000115>)))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002008> (medial scapo-pedicellar muscle)
 
@@ -5252,7 +5252,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Mesal or dorsomesal wall of the scape\"
 
 \"Insertion: Mesal, anteriomesal or anterior edge of the pedicel\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002008> "medial scapo-pedicellar muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002008> <http://purl.obolibrary.org/obo/AISM_0000081>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002008> <http://purl.obolibrary.org/obo/AISM_0000081>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000113>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000115>))
 
@@ -5266,7 +5266,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Mesally on the frons or on the antennal base\"
 
 \"Insertion: Mesally on the outer basal wall of the labrum\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002009> "frontolabral muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002009> <http://purl.obolibrary.org/obo/AISM_0000084>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002009> <http://purl.obolibrary.org/obo/AISM_0000084>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000042>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004020>))
 
@@ -5280,7 +5280,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Epistomal sulcus\"
 
 \"Insertion: Basal labral wall\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002010> "epistoepipharyngeal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002010> <http://purl.obolibrary.org/obo/AISM_0000084>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002010> <http://purl.obolibrary.org/obo/AISM_0000084>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000042>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004034>))
 
@@ -5296,23 +5296,24 @@ usually on the same level as musculus
 frontolabralis\"
 
 \"Insertion: Basal labral wall or tormae\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002011> "frontoepypharyngeal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002011> <http://purl.obolibrary.org/obo/AISM_0000084>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002011> <http://purl.obolibrary.org/obo/AISM_0000084>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004020>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002012>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002012> (tormae)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002012> "The apodeme at either side of the proximal margin of the labrum."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 \"Tormae: lateral apodemes of labral base\"") rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002012> "tormae"@en)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002012> <http://purl.obolibrary.org/obo/AISM_0000188>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000042>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000042>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BSPO_0000082>)))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002013> (transversal labral muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002013> "The cranio-labral muscle that is continuous with the labrum and the labrum."@en)
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002013> "The cranio-labral muscle that extends betwen the sides of  the labrum."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
@@ -5320,9 +5321,9 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Ventral labral wall\"
 
 \"Insertion: Ventral labral wall of the other side\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002013> "transversal labral muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002013> <http://purl.obolibrary.org/obo/AISM_0000084>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000042>))
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000042>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002013> <http://purl.obolibrary.org/obo/AISM_0000084>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000042>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BSPO_0000000>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000042>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BSPO_0000007>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002014> (internal cranio-mandibular muscle)
 
@@ -5337,7 +5338,7 @@ anterior tentorial arms\"
 
 \"Insertion: Tendon that inserts at the median edge of the
 mandible\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002014> "internal cranio-mandibular muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002014> <http://purl.obolibrary.org/obo/AISM_0000082>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002014> <http://purl.obolibrary.org/obo/AISM_0000082>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 
@@ -5351,7 +5352,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Gena and postgena\"
 
 \"Insertion: Tendon that inserts at the lateral edge of the mandible\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002017> "posteroexternal cranio-mandibular muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002017> <http://purl.obolibrary.org/obo/AISM_0000082>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002017> <http://purl.obolibrary.org/obo/AISM_0000082>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004026>))
 
@@ -5366,12 +5367,13 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 
 \"Insertion: With a tendon on the mandible, posterior to the
 anterior articulation complex\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002018> "anteroexternal cranio-mandibular muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002018> <http://purl.obolibrary.org/obo/AISM_0000082>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002018> <http://purl.obolibrary.org/obo/AISM_0000082>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004026>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002019> (suspensorium)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002019> "The sclerite of the hypopharynx."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
 https://doi.org/10.1515/9783110264043") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/AISM/AISM_0002019> "fulturae"@en)
@@ -5386,8 +5388,8 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Suspensorium (=fulturae, hypopharyngeal arms, oral arms): sclerotized strengthening elements of proximal hypopharynx.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002019> "suspensorium"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002019> <http://purl.obolibrary.org/obo/AISM_0000006>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/UBERON_0001002>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002019> <http://purl.obolibrary.org/obo/AISM_0000003>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000093>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002021> (hypopharyngeomandibular muscle)
 
@@ -5401,7 +5403,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 the loral arm (Neoptera)\"
 
 \"Insertion: Inner side of the lateral wall of the mandible\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002021> "hypopharyngeomandibular muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002021> <http://purl.obolibrary.org/obo/AISM_0000082>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002021> <http://purl.obolibrary.org/obo/AISM_0000082>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002019>))
 
@@ -5417,7 +5419,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Insertion: Outer basal edge of the mandibular body, between
 processus paratentorialis and posterior
 articulation\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002022> "superolateral tentorio-mandibular muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002022> <http://purl.obolibrary.org/obo/AISM_0000082>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002022> <http://purl.obolibrary.org/obo/AISM_0000082>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004039>))
 
@@ -5431,7 +5433,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Anterior tentorial arm\"
 
 \"Insertion: Ventral basal margin of the mandible\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002023> "inferolateral tentorio-mandibular muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002023> <http://purl.obolibrary.org/obo/AISM_0000082>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002023> <http://purl.obolibrary.org/obo/AISM_0000082>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004038>))
 
@@ -5447,7 +5449,7 @@ tentoriomandibularis externus dorsalis\"
 
 \"Insertion: Upper inner end of the mandible, just below the
 posterior mandibular condyle\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002024> "superomedial tentorio-mandibular muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002024> <http://purl.obolibrary.org/obo/AISM_0000082>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002024> <http://purl.obolibrary.org/obo/AISM_0000082>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004038>))
 
@@ -5462,15 +5464,15 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 tentoriomandibularis lateralis superior\"
 
 \"Insertion: Mediodorsal wall of the mandibular cavity\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002025> "inferomedial tentorio-mandibular muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002025> <http://purl.obolibrary.org/obo/AISM_0000082>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002025> <http://purl.obolibrary.org/obo/AISM_0000082>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004038>))
 
-# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002026> (cranio-maxillar muscle)
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002026> (insect cranio-maxillar muscle)
 
 AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002026> "The skeletal muscle continuous with the head capsule and the insect maxilla."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002026> "cranio-maxillar muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002026> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002026> "insect cranio-maxillar muscle"@en)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002026> <http://purl.obolibrary.org/obo/UBERON_0001134>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000044>))
 
@@ -5484,7 +5486,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Postgena and gena\"
 
 \"Insertion: Basal cardinal process\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002027> "cranio-cardinal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002027> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002027> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000018>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004026>))
 
@@ -5498,7 +5500,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Posterior part of the gena\"
 
 \"Insertion: Basal edge of lacinia\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002028> "cranio-lacinial muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002028> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002028> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000026>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004026>))
 
@@ -5513,7 +5515,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 
 \"Insertion: Distal part of the cardo, close to the carostipital
 sulcus\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002029> "tentorio-cardinal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002029> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002029> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000018>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000191>))
 
@@ -5527,17 +5529,18 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Tentorium\"
 
 \"Insertion: Stipital ridge\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002030> "anterior tentorio-stipital muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002030> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002030> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000191>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002031>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002031> (stipital ridge)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002031> "The ridge that is part of the stipes."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. 
 
 https://doi.org/10.1515/9783110264043"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002031> "stipital ridge"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002031> <http://purl.obolibrary.org/obo/AISM_0000158>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000044>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002031> <http://purl.obolibrary.org/obo/AISM_0000158>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000111>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002032> (posterior tentorio-stipital muscle)
 
@@ -5550,7 +5553,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 
 \"Insertion: Basally on the stipes, close to the stipitocardinal
 suture\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002032> "posterior tentorio-stipital muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002032> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002032> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000111>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000191>))
 
@@ -5566,7 +5569,7 @@ palpus\"
 
 \"Insertion: Basal edge of lacinia, in some cases common
 tendon with 0mx4\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002033> "stipito-lacinial muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002033> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002033> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000026>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000111>))
 
@@ -5581,7 +5584,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 palpus\"
 
 \"Insertion: Basal edge of galea\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002034> "stipito-galeal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002034> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002034> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000023>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000111>))
 
@@ -5591,7 +5594,7 @@ AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http:
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002035> "stipito-palpal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002035> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002035> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(<http://purl.obolibrary.org/obo/IAO_0000115> "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000051>))
 SubClassOf(Annotation(<http://purl.obolibrary.org/obo/IAO_0000115> "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000111>))
 
@@ -5664,7 +5667,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Basal edge of palpomere 1\"
 
 \"Insertion: Basal edge of palpomere 2\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002042> "first maxillar palpopalpal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002042> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002042> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002037>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002038>))
 
@@ -5678,7 +5681,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Mesal edge of palpomere 2\"
 
 \"Insertion: Mesal edge of palpomere 3\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002043> "second maxillar palpopalpal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002043> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002043> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002038>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002039>))
 
@@ -5692,7 +5695,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Basal edge of palpomere 3\"
 
 \"Insertion: Basal edge of palpomere 4\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002044> "third maxillar palpopalpal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002044> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002044> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002039>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002040>))
 
@@ -5706,7 +5709,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Mesal edge of palpomere 4\"
 
 \"Insertion: Mesal edge of palpomere 5\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002045> "fourth maxillar palpopalpal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002045> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002045> <http://purl.obolibrary.org/obo/AISM/AISM_0002026>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002040>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002041>))
 
@@ -5720,7 +5723,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Postoccipital phragma\"
 
 \"Insertion: glossa\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002047> "postoccipitoglossal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002047> <http://purl.obolibrary.org/obo/AISM_0000083>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002047> <http://purl.obolibrary.org/obo/AISM_0000083>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000049>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002049>))
 
@@ -5759,7 +5762,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 postoccipitoparaglossalis\"
 
 \"Insertion: Posteriolateral angle of the prementum\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002050> "postoccipitopremental muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002050> <http://purl.obolibrary.org/obo/AISM_0000083>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002050> <http://purl.obolibrary.org/obo/AISM_0000083>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000057>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002049>))
 
@@ -5773,7 +5776,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Posterior tentorial arms, cranium\"
 
 \"Insertion: Laterobasal edge of prementum\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002051> "tentorio-premental muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002051> <http://purl.obolibrary.org/obo/AISM_0000083>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002051> <http://purl.obolibrary.org/obo/AISM_0000083>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000057>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004037>))
 
@@ -5788,7 +5791,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 cranium\"
 
 \"Insertion: Paraglossa, close to the labial palp\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002052> "tentorio-paraglossal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002052> <http://purl.obolibrary.org/obo/AISM_0000083>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002052> <http://purl.obolibrary.org/obo/AISM_0000083>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000050>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004037>))
 
@@ -5802,7 +5805,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Mediobasal part of submentum or gula\"
 
 \"Insertion: Mediobasal edge of prementum, close to the gales\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002053> "submentopremental muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002053> <http://purl.obolibrary.org/obo/AISM_0000083>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002053> <http://purl.obolibrary.org/obo/AISM_0000083>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000057>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004005>))
 
@@ -5816,7 +5819,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: submentum\"
 
 \"Insertion: mentum\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002054> "submentomental muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002054> <http://purl.obolibrary.org/obo/AISM_0000083>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002054> <http://purl.obolibrary.org/obo/AISM_0000083>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004004>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004005>))
 
@@ -5830,7 +5833,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Mesal on the basal edge of the prementum\"
 
 \"Insertion: Dorsobasal edge of paraglossa\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002055> "premento-paraglossal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002055> <http://purl.obolibrary.org/obo/AISM_0000083>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002055> <http://purl.obolibrary.org/obo/AISM_0000083>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000050>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000057>))
 
@@ -5844,7 +5847,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Mesally on the prementum\"
 
 \"Insertion: Mediobasal edge of glossa\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002056> "premento-glossal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002056> <http://purl.obolibrary.org/obo/AISM_0000083>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002056> <http://purl.obolibrary.org/obo/AISM_0000083>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000049>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000057>))
 
@@ -5858,7 +5861,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: prementum\"
 
 \"Insertion: labial palpus\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002057> "premento-palpal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002057> <http://purl.obolibrary.org/obo/AISM_0000083>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002057> <http://purl.obolibrary.org/obo/AISM_0000083>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000024>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000057>))
 
@@ -5866,7 +5869,7 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002058> "The skeletal muscle continuous with the head capsule and the hypopharynx."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002058> "cranio-hypopharyngeal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002058> <http://purl.obolibrary.org/obo/AISM_0000080>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002058> <http://purl.obolibrary.org/obo/AISM_0000080>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000093>))
 
@@ -5896,15 +5899,15 @@ frons close to epistomal sulcus\"
 
 \"Insertion: Oral arms of the suspensorial sclerites, well
 seperated from above\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002060> "tentorio-oral muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002060> <http://purl.obolibrary.org/obo/AISM/AISM_0002058>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002060> <http://purl.obolibrary.org/obo/AISM/AISM_0002058>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004038>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002019>))
 
-# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002061> (cranio-tentorial muscle)
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002061> (insect cranio-tentorial muscle)
 
 AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-04") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002061> "The skeletal muscle continuous with the head capsule and the tentorium."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002061> "cranio-tentorial muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002061> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002061> "insect cranio-tentorial muscle"@en)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002061> <http://purl.obolibrary.org/obo/UBERON_0001134>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000191>))
 
@@ -5918,7 +5921,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Laterad on the anterior corpotentorium\"
 
 \"Insertion: Frons\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002062> "tentorio-frontal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002062> <http://purl.obolibrary.org/obo/AISM/AISM_0002061>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002062> <http://purl.obolibrary.org/obo/AISM/AISM_0002061>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004020>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004024>))
 
@@ -5932,7 +5935,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 \"Origin: Ventrolaterad on the anterior corpotentorium\"
 
 \"Insertion: Mesad on the posterior tentorium\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002063> "tentorio-tentorial muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002063> <http://purl.obolibrary.org/obo/AISM/AISM_0002061>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002063> <http://purl.obolibrary.org/obo/AISM/AISM_0002061>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000191>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004024>))
 
@@ -5940,34 +5943,37 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-21") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002064> "The skeletal muscle tissue that is part of the insect leg."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002064> "insect leg muscle"@en)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002064> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002064> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000031>))
 
-# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002065> (thoracic muscle)
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002065> (insect thoracic muscle)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002065> "thoracic muscle"@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-21") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002065> "The skeletal muscle tissue that is part of the insect thorax."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002065> "insect thoracic muscle"@en)
 SubClassOf(Annotation(rdfs:comment "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002065> <http://purl.obolibrary.org/obo/UBERON_0001134>)
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002065> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))
 
-# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002066> (dorsal longitudinal muscle)
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002066> (dorsal longitudinal thoracic muscle)
 
 AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-09") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002066> "The thoracic muscle that is not fan-shaped and runs along the dorsal region, parallel to the anterior-posterior axis."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
 Arthropod Structure & Development, 37(1), 29-54.
 
-https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002066> "dorsal longitudinal muscle"@en)
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002066> "dorsal longitudinal thoracic muscle"@en)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002066> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM/AISM_0002066> ObjectComplementOf(<http://purl.obolibrary.org/obo/PATO_0002219>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM/AISM_0002066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BSPO_0000079>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM/AISM_0002066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/bspo#parallel_to> <http://purl.obolibrary.org/obo/BSPO_0000013>))
 
-# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002067> (dorsoventral muscle)
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002067> (dorsoventral thoracic muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002067> "The insect thoracic muscle that runs parallel to the dorsal-ventral axis."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
 Arthropod Structure & Development, 37(1), 29-54.
 
-https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002067> "dorsoventral muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002067> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002067> "dorsoventral thoracic muscle"@en)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002067> <http://purl.obolibrary.org/obo/AISM/AISM_0002065>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/bspo#parallel_to> <http://purl.obolibrary.org/obo/BSPO_0000016>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002068> (tergo-pleural muscle)
 
@@ -6083,69 +6089,131 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM/AISM_0002076> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000052>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM/AISM_0002076> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000059>))))
 
-# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002078> (cervico-occipital muscle)
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002078> (anterior cervico-occipital muscle)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002078> "cervico-occipital muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002078> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002078> "The dorsoventral thoracic muscle of the prothorax that is attached to the anterior margin of a cervical sclerite and the dorso-lateral region of the postocciput."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
 
-# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002079> (pronoto-cervical muscle)
+https://doi.org/10.1016/j.asd.2007.04.003
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002079> "pronoto-cervical muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002079> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+\"The dorsoventral muscle that arises from dorsolateral postocciput and inserts on anterior tip of first lateral cervical sclerite.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002078> "anterior cervico-occipital muscle"@en)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002078> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002078> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004125>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002078> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004045>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002078> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000671> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004141>))))
+
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002079> (anterior pronoto-cervical muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002079> "The dorsoventral thoracic muscle that extends between the antero-lateral region of the pronotum and the medial region of the propleuron."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000115> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003
+
+\"The dorsoventral muscle that arises from anterolateral pronotum and inserts on atypically on middle region of anterior propleural sclerite.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002079> "anterior pronoto-cervical muscle"@en)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002079> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000059>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004142>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002080> (prophragma-tentorial muscle)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002080> "prophragma-tentorial muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002080> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002080> "The dorsoventral thoracic muscle that extends between the tentorium and the prophragma."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
 
-# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002081> (profurca-phragmal muscle)
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002080> "prophragma-tentorial muscle"@en)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002080> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000191>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM/AISM_0002076>))
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002081> "profurca-phragmal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002081> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002081> (profurca-prophragmal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002081> "The dorsoventral thoracic muscle that extends between the profurca and the lateral region of the prophragma."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003
+
+\"The dorsoventral muscle that arises from posterior face of proximal profurcal arm and inserts on lateral prophragma.\"") rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002081> "profurca-prophragmal muscle"@en)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002081> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000143>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM/AISM_0002076>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002082> (profurca-occipital muscle)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002082> "profurca-occipital muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002082> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002082> "The dorsoventral thoracic muscle that extends between the posterior region (occipital region) of the head capsule and the profurca."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
 
-# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002083> (prophragma-spinal muscle)
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002082> "profurca-occipital muscle"@en)
+SubClassOf(Annotation(rdfs:comment "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002082> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000143>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))))
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002083> "prophragma-spinal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002083> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+# Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002083> (prophragma-mesophragmal muscle)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002083> "The dorsal longitudinal thoracic muscle that extends between the medial region of the prophragma and the medial region of the mesophragma."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003
+
+\"The dorsal longitudinal muscle that arises from median prophragma and inserts on median mesophragma.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002083> "prophragma-mesophragmal muscle"@en)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002083> <http://purl.obolibrary.org/obo/AISM/AISM_0002066>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004225>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM/AISM_0002076>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002084> (profurca-mesonotal muscle)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002084> "profurca-mesonotal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002084> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002084> "The dorsoventral thoracic muscle that extends between the profurca and the mesonotum."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
+Arthropod Structure & Development, 37(1), 29-54.
+
+https://doi.org/10.1016/j.asd.2007.04.003"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002084> "profurca-mesonotal muscle"@en)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002084> <http://purl.obolibrary.org/obo/AISM/AISM_0002067>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000052>))
+SubClassOf(Annotation(rdfs:comment "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000143>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002085> (insect abdominal muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002085> "The skeletal muscle tissue that is part of the insect abdomen."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002085> "insect abdominal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002085> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002085> <http://purl.obolibrary.org/obo/UBERON_0001134>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002085> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000109>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002086> (lateral abdominal muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002086> "The insect abdominal muscle that runs along the lateral region, parallel to the dorsal-ventral axis."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Klug, R., & Bradler, S. (2006). The pregenital abdominal musculature in phasmids and its implications for the basal phylogeny of Phasmatodea (Insecta: Polyneoptera). 
 Organisms Diversity & Evolution, 6(3), 171-184.
 
 https://doi.org/10.1016/j.ode.2005.08.004"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002086> "lateral abdominal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002086> <http://purl.obolibrary.org/obo/AISM/AISM_0002085>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002086> <http://purl.obolibrary.org/obo/AISM/AISM_0002085>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002086> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BSPO_0000082>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002086> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/bspo#parallel_to> <http://purl.obolibrary.org/obo/BSPO_0000016>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002087> (ventral longitudinal abdominal muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002087> "The insect abdominal muscle that runs along the ventral region, parallel to the anterior-posterior axis."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Klug, R., & Bradler, S. (2006). The pregenital abdominal musculature in phasmids and its implications for the basal phylogeny of Phasmatodea (Insecta: Polyneoptera). 
 Organisms Diversity & Evolution, 6(3), 171-184.
 
 https://doi.org/10.1016/j.ode.2005.08.004"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002087> "ventral longitudinal abdominal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002087> <http://purl.obolibrary.org/obo/AISM/AISM_0002085>)
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002087> <http://purl.obolibrary.org/obo/AISM/AISM_0002085>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BSPO_0000084>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/bspo#parallel_to> <http://purl.obolibrary.org/obo/BSPO_0000013>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002088> (dorsal longitudinal abdominal muscle)
 
+AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-22") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002088> "The insect abdominal muscle that runs along the dorsal region, parallel to the anterior-posterior axis."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Klug, R., & Bradler, S. (2006). The pregenital abdominal musculature in phasmids and its implications for the basal phylogeny of Phasmatodea (Insecta: Polyneoptera). 
 Organisms Diversity & Evolution, 6(3), 171-184.
 
 https://doi.org/10.1016/j.ode.2005.08.004"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002088> "dorsal longitudinal abdominal muscle"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM/AISM_0002088> <http://purl.obolibrary.org/obo/AISM/AISM_0002085>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002088> <http://purl.obolibrary.org/obo/AISM/AISM_0002085>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002088> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BSPO_0000079>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002088> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/bspo#parallel_to> <http://purl.obolibrary.org/obo/BSPO_0000013>))
 
 
 )

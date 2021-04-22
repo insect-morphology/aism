@@ -655,7 +655,7 @@ relationship: continuous_with AISM:0000019 ! head capsule
 id: AISM:0000081
 name: cranio-antennal muscle
 def: "The skeletal muscle continuous with the head capsule and the antenna." [] {creation_date="2021-04-04", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000080 ! insect cranial muscle
+is_a: AISM:0000080 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranial muscle
 relationship: continuous_with AISM:0000032 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! antenna
 
 [Term]
@@ -669,14 +669,14 @@ relationship: continuous_with AISM:0000043 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0000083
 name: cranio-labial muscle
 def: "The skeletal muscle continuous with the head capsule and the labium." [] {creation_date="2021-04-04", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000080 ! insect cranial muscle
+is_a: AISM:0000080 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranial muscle
 relationship: continuous_with AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! labium
 
 [Term]
 id: AISM:0000084
 name: cranio-labral muscle
 def: "The skeletal muscle continuous with the head capsule and the labrum." [] {creation_date="2021-04-04", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000080 ! insect cranial muscle
+is_a: AISM:0000080 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranial muscle
 relationship: continuous_with AISM:0000042 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! labrum
 
 [Term]
@@ -689,7 +689,7 @@ relationship: continuous_with AISM:0000064 {http://purl.org/dc/elements/1.1/cont
 [Term]
 id: AISM:0000086
 name: coxal muscle
-comment: The skeletal muscle that inserts in the coxa. {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-04-21"}
+def: "The skeletal muscle that inserts in the coxa." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-04-21"}
 is_a: AISM:0002064 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect leg muscle
 relationship: continuous_with AISM:0000077 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! coxa
 property_value: curator_notes "All of the coxal muscles, except the second sternal-metacoxal muscle, are attached to the thorax." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko"}
@@ -1466,7 +1466,7 @@ relationship: has_part AISM:0000190 {http://purl.org/dc/elements/1.1/contributor
 id: AISM:0000200
 name: gonocoxa IX
 def: "Is the paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-03-19"}
-synonym: "coxopodite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
+synonym: "second coxopodite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "second gonocoxite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "second valvifer" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! sclerite
@@ -1486,16 +1486,15 @@ relationship: part_of AISM:0004056 {http://purl.org/dc/elements/1.1/contributor=
 [Term]
 id: AISM:0002002
 name: anterior tentorio-scapal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior or dorsal tentorial arms\"\n\n\"Insertion: Anterior (ventral) basal margin of the scape\""}
-def: "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and  the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000081 ! cranio-antennal muscle
-relationship: continuous_with AISM:0000113 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! scapus
+def: "The cranio-antennal muscle that is attached to the dorsal tentorial arm and the proximal margin of the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+is_a: AISM:0000081 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-antennal muscle
 relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal tentorial arm
 
 [Term]
 id: AISM:0002003
 name: posterior tentorio-scapal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior or dorsal tentorial arms\"\n\n\"Insertion: Posterior (dorsal) basal margin of the scape\""}
 def: "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000081 ! cranio-antennal muscle
+is_a: AISM:0000081 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-antennal muscle
 relationship: continuous_with AISM:0000113 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! scapus
 relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal tentorial arm
 
@@ -1503,39 +1502,36 @@ relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002004
 name: lateral tentorio-scapal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior or dorsal tentorial arms\"\n\n\"Insertion: Lateral basal margin of the scape\""}
 def: "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000081 ! cranio-antennal muscle
+is_a: AISM:0000081 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-antennal muscle
 relationship: continuous_with AISM:0000113 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! scapus
 relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal tentorial arm
 
 [Term]
 id: AISM:0002005
 name: medial tentorio-scapal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior or dorsal tentorial arms\"\n\n\"Insertion: Mesal basal margin of the scape\""}
-def: "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000081 ! cranio-antennal muscle
-relationship: continuous_with AISM:0000113 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! scapus
+def: "The cranio-antennal muscle that is continuous with the dorsal or anterior tentorial arm and the proximal margin of the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+is_a: AISM:0000081 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-antennal muscle
 relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal tentorial arm
 
 [Term]
 id: AISM:0002006
 name: fronto-pedicellar muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Frons\"\n\n\"Insertion: Lateral edge of the pedicel\""}
 def: "The cranio-antennal muscle that is continuous with the frons and the pedicellus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000081 ! cranio-antennal muscle
+is_a: AISM:0000081 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-antennal muscle
 relationship: continuous_with AISM:0000115 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! pedicellus
 relationship: continuous_with AISM:0004020 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! frons
 
 [Term]
 id: AISM:0002007
-name: lateral scapo-pedicellar muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Doral or dorsolateral wall of the scape\"\n\n\"Insertion: Lateral or dorsolateral wall of the pedicel\""}
-def: "The cranio-antennal muscle that is continuous with the scapus and the pedicellus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000081 ! cranio-antennal muscle
-relationship: continuous_with AISM:0000113 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! scapus
-relationship: continuous_with AISM:0000115 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! pedicellus
+name: lateral scapo-pedicellar muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Dorsal or dorsolateral wall of the scape\"\n\n\"Insertion: Lateral or dorsolateral wall of the pedicel\""}
+def: "The cranio-antennal muscle that is continuous with the dorsal or dorsolateral regions of the scapus and the lateral or dorsolateral regions of the pedicellus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+is_a: AISM:0000081 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-antennal muscle
 
 [Term]
 id: AISM:0002008
 name: medial scapo-pedicellar muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Mesal or dorsomesal wall of the scape\"\n\n\"Insertion: Mesal, anteriomesal or anterior edge of the pedicel\""}
 def: "The cranio-antennal muscle that is continuous with the scapus and the pedicellus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000081 ! cranio-antennal muscle
+is_a: AISM:0000081 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-antennal muscle
 relationship: continuous_with AISM:0000113 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! scapus
 relationship: continuous_with AISM:0000115 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! pedicellus
 
@@ -1543,102 +1539,104 @@ relationship: continuous_with AISM:0000115 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002009
 name: frontolabral muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Mesally on the frons or on the antennal base\"\n\n\"Insertion: Mesally on the outer basal wall of the labrum\""}
 def: "The cranio-labral muscle that is continuous with the frons and the labrum." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000084 ! cranio-labral muscle
+is_a: AISM:0000084 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labral muscle
 relationship: continuous_with AISM:0004020 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! frons
 
 [Term]
 id: AISM:0002010
 name: epistoepipharyngeal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Epistomal sulcus\"\n\n\"Insertion: Basal labral wall\""}
 def: "The cranio-labral muscle that is continuous with the frontoclypeal ridge and the labrum." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000084 ! cranio-labral muscle
+is_a: AISM:0000084 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labral muscle
 relationship: continuous_with AISM:0004034 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! frontoclypeal ridge
 
 [Term]
 id: AISM:0002011
 name: frontoepypharyngeal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Mesally on the frons or on the antennal base,\nusually on the same level as musculus\nfrontolabralis\"\n\n\"Insertion: Basal labral wall or tormae\""}
 def: "The cranio-labral muscle that is continuous with the frons and the tormae." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000084 ! cranio-labral muscle
+is_a: AISM:0000084 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labral muscle
 relationship: continuous_with AISM:0002012 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! tormae
 relationship: continuous_with AISM:0004020 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! frons
 
 [Term]
 id: AISM:0002012
 name: tormae {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tormae: lateral apodemes of labral base\""}
+def: "The apodeme at either side of the proximal margin of the labrum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
 is_a: AISM:0000188 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! apodeme
-relationship: continuous_with AISM:0000042 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! labrum
 
 [Term]
 id: AISM:0002013
 name: transversal labral muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Ventral labral wall\"\n\n\"Insertion: Ventral labral wall of the other side\""}
-def: "The cranio-labral muscle that is continuous with the labrum and the labrum." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000084 ! cranio-labral muscle
+def: "The cranio-labral muscle that extends betwen the sides of  the labrum." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+is_a: AISM:0000084 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labral muscle
 
 [Term]
 id: AISM:0002014
 name: internal cranio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Ventral, posterior, lateral and/or dorsal parts of\nthe head capsule and/or posterior and\nanterior tentorial arms\"\n\n\"Insertion: Tendon that inserts at the median edge of the\nmandible\""}
 def: "The cranio-mandibular muscle that is continuous with the head capsule and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000082 ! cranio-mandibular muscle
+is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 
 [Term]
 id: AISM:0002017
 name: posteroexternal cranio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Gena and postgena\"\n\n\"Insertion: Tendon that inserts at the lateral edge of the mandible\""}
 def: "The cranio-mandibular muscle that is continuous with the gena and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000082 ! cranio-mandibular muscle
+is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! gena
 
 [Term]
 id: AISM:0002018
 name: anteroexternal cranio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Gena, below the compound eye\"\n\n\"Insertion: With a tendon on the mandible, posterior to the\nanterior articulation complex\""}
 def: "The cranio-mandibular muscle that is continuous with the gena and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000082 ! cranio-mandibular muscle
+is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! gena
 
 [Term]
 id: AISM:0002019
 name: suspensorium {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Suspensorium (=fulturae, hypopharyngeal arms, oral arms): sclerotized strengthening elements of proximal hypopharynx.\""}
+def: "The sclerite of the hypopharynx." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
 synonym: "fulturae" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043"}
 synonym: "hypopharyngeal arms" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043"}
 synonym: "oral arms" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043"}
-is_a: AISM:0000006 ! cuticular invagination
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! sclerite
+relationship: continuous_with AISM:0000093 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! hypopharynx
 
 [Term]
 id: AISM:0002021
 name: hypopharyngeomandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Small sclerite close to the loral arm\n(Thermobia), scleroticed arm that elongates\nthe loral arm (Neoptera)\"\n\n\"Insertion: Inner side of the lateral wall of the mandible\""}
 def: "The cranio-mandibular muscle that is continuous with the suspensorium and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000082 ! cranio-mandibular muscle
+is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0002019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! suspensorium
 
 [Term]
 id: AISM:0002022
 name: superolateral tentorio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior and dorsal tentorial arm\"\n\n\"Insertion: Outer basal edge of the mandibular body, between\nprocessus paratentorialis and posterior\narticulation\""}
 def: "The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000082 ! cranio-mandibular muscle
+is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal tentorial arm
 
 [Term]
 id: AISM:0002023
 name: inferolateral tentorio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior tentorial arm\"\n\n\"Insertion: Ventral basal margin of the mandible\""}
 def: "The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000082 ! cranio-mandibular muscle
+is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! anterior tentorial arm
 
 [Term]
 id: AISM:0002024
 name: superomedial tentorio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior and dorsal tentorial arm below musculus\ntentoriomandibularis externus dorsalis\"\n\n\"Insertion: Upper inner end of the mandible, just below the\nposterior mandibular condyle\""}
 def: "The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000082 ! cranio-mandibular muscle
+is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! anterior tentorial arm
 
 [Term]
 id: AISM:0002025
 name: inferomedial tentorio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior tentorial arm, below musculus\ntentoriomandibularis lateralis superior\"\n\n\"Insertion: Mediodorsal wall of the mandibular cavity\""}
 def: "The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000082 ! cranio-mandibular muscle
+is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! anterior tentorial arm
 
 [Term]
 id: AISM:0002026
-name: cranio-maxillar muscle
+name: insect cranio-maxillar muscle
 def: "The skeletal muscle continuous with the head capsule and the insect maxilla." [] {creation_date="2021-04-04", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 relationship: continuous_with AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! head capsule
 relationship: continuous_with AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect maxilla
@@ -1647,7 +1645,7 @@ relationship: continuous_with AISM:0000044 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002027
 name: cranio-cardinal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Postgena and gena\"\n\n\"Insertion: Basal cardinal process\""}
 def: "The cranio-maxillar muscle that is continuous with the gena and the cardo." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0000018 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cardo
 relationship: continuous_with AISM:0004026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! gena
 
@@ -1655,7 +1653,7 @@ relationship: continuous_with AISM:0004026 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002028
 name: cranio-lacinial muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Posterior part of the gena\"\n\n\"Insertion: Basal edge of lacinia\""}
 def: "The cranio-maxillar muscle that is continuous with the gena and the lacinia." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0000026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! lacinia
 relationship: continuous_with AISM:0004026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! gena
 
@@ -1663,7 +1661,7 @@ relationship: continuous_with AISM:0004026 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002029
 name: tentorio-cardinal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Tentorium\"\n\n\"Insertion: Distal part of the cardo, close to the carostipital\nsulcus\""}
 def: "The cranio-maxillar muscle that is continuous with the tentorium and the cardo." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0000018 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cardo
 relationship: continuous_with AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! tentorium
 
@@ -1671,21 +1669,22 @@ relationship: continuous_with AISM:0000191 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002030
 name: anterior tentorio-stipital muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Tentorium\"\n\n\"Insertion: Stipital ridge\""}
 def: "The cranio-maxillar muscle that is continuous with the tentorium and the stipital ridge." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! tentorium
 relationship: continuous_with AISM:0002031 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! stipital ridge
 
 [Term]
 id: AISM:0002031
 name: stipital ridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043"}
-is_a: AISM:0000158 ! ridge
-relationship: part_of AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect maxilla
+def: "The ridge that is part of the stipes." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0000158 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! ridge
+relationship: part_of AISM:0000111 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! stipes
 
 [Term]
 id: AISM:0002032
 name: posterior tentorio-stipital muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Tentorium\"\n\n\"Insertion: Basally on the stipes, close to the stipitocardinal\nsuture\""}
 def: "The cranio-maxillar muscle that is continuous with the tentorium and the stipes." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0000111 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! stipes
 relationship: continuous_with AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! tentorium
 
@@ -1693,7 +1692,7 @@ relationship: continuous_with AISM:0000191 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002033
 name: stipito-lacinial muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Lateral wall of the stipes, basal to the maxillary\npalpus\"\n\n\"Insertion: Basal edge of lacinia, in some cases common\ntendon with 0mx4\""}
 def: "The cranio-maxillar muscle that is continuous with the stipes and the lacinia." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0000026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! lacinia
 relationship: continuous_with AISM:0000111 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! stipes
 
@@ -1701,7 +1700,7 @@ relationship: continuous_with AISM:0000111 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002034
 name: stipito-galeal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Lateral wall of the stipes, basal to the maxillary\npalpus\"\n\n\"Insertion: Basal edge of galea\""}
 def: "The cranio-maxillar muscle that is continuous with the stipes and the galea." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0000023 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! galea
 relationship: continuous_with AISM:0000111 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! stipes
 
@@ -1709,7 +1708,7 @@ relationship: continuous_with AISM:0000111 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002035
 name: stipito-palpal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x"}
 def: "The cranio-maxillar muscle that is continuous with the stipes and the maxillary palpus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0000051 {def="lagonzalezmo"} ! maxillary palpus
 relationship: continuous_with AISM:0000111 {def="lagonzalezmo"} ! stipes
 
@@ -1758,7 +1757,7 @@ is_a: AISM:0002036 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} 
 id: AISM:0002042
 name: first maxillar palpopalpal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Basal edge of palpomere 1\"\n\n\"Insertion: Basal edge of palpomere 2\""}
 def: "The cranio-maxillar muscle that is continuous with the first maxillar palpomere and  the second maxillar palpomere." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0002037 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! maxillary palpomere I
 relationship: continuous_with AISM:0002038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! maxillary palpomere II
 
@@ -1766,7 +1765,7 @@ relationship: continuous_with AISM:0002038 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002043
 name: second maxillar palpopalpal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Mesal edge of palpomere 2\"\n\n\"Insertion: Mesal edge of palpomere 3\""}
 def: "The cranio-maxillar muscle that is continuous with the second maxillar palpomere and  the third maxillar palpomere." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0002038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! maxillary palpomere II
 relationship: continuous_with AISM:0002039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! maxillary palpomere III
 
@@ -1774,7 +1773,7 @@ relationship: continuous_with AISM:0002039 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002044
 name: third maxillar palpopalpal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Basal edge of palpomere 3\"\n\n\"Insertion: Basal edge of palpomere 4\""}
 def: "The cranio-maxillar muscle that is continuous with the third maxillar palpomere and  the fourth maxillar palpomere." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0002039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! maxillary palpomere III
 relationship: continuous_with AISM:0002040 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! maxillary palpomere IV
 
@@ -1782,7 +1781,7 @@ relationship: continuous_with AISM:0002040 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002045
 name: fourth maxillar palpopalpal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Mesal edge of palpomere 4\"\n\n\"Insertion: Mesal edge of palpomere 5\""}
 def: "The cranio-maxillar muscle that is continuous with the fourth maxillar palpomere and  the fifth maxillar palpomere." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002026 ! cranio-maxillar muscle
+is_a: AISM:0002026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-maxillar muscle
 relationship: continuous_with AISM:0002040 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! maxillary palpomere IV
 relationship: continuous_with AISM:0002041 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! maxillary palpomere V
 
@@ -1790,7 +1789,7 @@ relationship: continuous_with AISM:0002041 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002047
 name: postoccipitoglossal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Postoccipital phragma\"\n\n\"Insertion: glossa\""}
 def: "The cranio-labial muscle that is continuous with the postoccipital phragma and  the glossa." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000083 ! cranio-labial muscle
+is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labial muscle
 relationship: continuous_with AISM:0000049 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! glossa
 relationship: continuous_with AISM:0002049 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! postoccipital phragma
 
@@ -1799,7 +1798,7 @@ id: AISM:0002048
 name: phragma {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Phragma: large, ridge-shaped internal apodeme.\"\n\n\"Phragma (=antecosta): dorsal thoracic transverse ridge, attachment site of dorsal longitudinal indirect flight muscles.\" (p. 121)"}
 def: "The internal apodeme that is continuous with the cuticle of the notum and is attached to a dorsal longitudinal muscle." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 is_a: AISM:0000188 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! apodeme
-relationship: continuous_with AISM:0002066 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! dorsal longitudinal muscle
+relationship: continuous_with AISM:0002066 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! dorsal longitudinal thoracic muscle
 relationship: continuous_with AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! notum
 
 [Term]
@@ -1813,7 +1812,7 @@ relationship: continuous_with AISM:0004045 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002050
 name: postoccipitopremental muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Postoccipital phragma, laterad to musculus\npostoccipitoparaglossalis\"\n\n\"Insertion: Posteriolateral angle of the prementum\""}
 def: "The cranio-labial muscle that is continuous with the postoccipital phragma and  the prementum." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000083 ! cranio-labial muscle
+is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labial muscle
 relationship: continuous_with AISM:0000057 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prementum
 relationship: continuous_with AISM:0002049 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! postoccipital phragma
 
@@ -1821,7 +1820,7 @@ relationship: continuous_with AISM:0002049 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002051
 name: tentorio-premental muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Posterior tentorial arms, cranium\"\n\n\"Insertion: Laterobasal edge of prementum\""}
 def: "The cranio-labial muscle that is continuous with the posterior tentorial arm and the prementum." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000083 ! cranio-labial muscle
+is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labial muscle
 relationship: continuous_with AISM:0000057 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prementum
 relationship: continuous_with AISM:0004037 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! posterior tentorial arm
 
@@ -1829,7 +1828,7 @@ relationship: continuous_with AISM:0004037 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002052
 name: tentorio-paraglossal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Posterior tentorial arms, postoccipital ridge or\ncranium\"\n\n\"Insertion: Paraglossa, close to the labial palp\""}
 def: "The cranio-labial muscle that is continuous with the posterior tentorial arm and the paraglossa." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000083 ! cranio-labial muscle
+is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labial muscle
 relationship: continuous_with AISM:0000050 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! paraglossa
 relationship: continuous_with AISM:0004037 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! posterior tentorial arm
 
@@ -1837,7 +1836,7 @@ relationship: continuous_with AISM:0004037 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002053
 name: submentopremental muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Mediobasal part of submentum or gula\"\n\n\"Insertion: Mediobasal edge of prementum, close to the gales\""}
 def: "The cranio-labial muscle that is continuous with the submentum and the prementum." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000083 ! cranio-labial muscle
+is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labial muscle
 relationship: continuous_with AISM:0000057 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prementum
 relationship: continuous_with AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! submentum
 
@@ -1845,7 +1844,7 @@ relationship: continuous_with AISM:0004005 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002054
 name: submentomental muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: submentum\"\n\n\"Insertion: mentum\""}
 def: "The cranio-labial muscle that is continuous with the submentum and the mentum." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000083 ! cranio-labial muscle
+is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labial muscle
 relationship: continuous_with AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! mentum
 relationship: continuous_with AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! submentum
 
@@ -1853,7 +1852,7 @@ relationship: continuous_with AISM:0004005 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002055
 name: premento-paraglossal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Mesal on the basal edge of the prementum\"\n\n\"Insertion: Dorsobasal edge of paraglossa\""}
 def: "The cranio-labial muscle that is continuous with the prementum and the paraglossa." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000083 ! cranio-labial muscle
+is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labial muscle
 relationship: continuous_with AISM:0000050 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! paraglossa
 relationship: continuous_with AISM:0000057 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prementum
 
@@ -1861,7 +1860,7 @@ relationship: continuous_with AISM:0000057 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002056
 name: premento-glossal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Mesally on the prementum\"\n\n\"Insertion: Mediobasal edge of glossa\""}
 def: "The cranio-labial muscle that is continuous with the prementum and the glossa." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000083 ! cranio-labial muscle
+is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labial muscle
 relationship: continuous_with AISM:0000049 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! glossa
 relationship: continuous_with AISM:0000057 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prementum
 
@@ -1869,7 +1868,7 @@ relationship: continuous_with AISM:0000057 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002057
 name: premento-palpal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: prementum\"\n\n\"Insertion: labial palpus\""}
 def: "The cranio-labial muscle that is continuous with the prementum and the labial palpus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000083 ! cranio-labial muscle
+is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-labial muscle
 relationship: continuous_with AISM:0000024 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! labial palpus
 relationship: continuous_with AISM:0000057 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prementum
 
@@ -1877,7 +1876,7 @@ relationship: continuous_with AISM:0000057 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002058
 name: cranio-hypopharyngeal muscle
 def: "The skeletal muscle continuous with the head capsule and the hypopharynx." [] {creation_date="2021-04-04", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0000080 ! insect cranial muscle
+is_a: AISM:0000080 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranial muscle
 relationship: continuous_with AISM:0000093 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! hypopharynx
 
 [Term]
@@ -1892,13 +1891,13 @@ relationship: continuous_with AISM:0004020 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002060
 name: tentorio-oral muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior tentorial arm, epistomal sulcus or\nfrons close to epistomal sulcus\"\n\n\"Insertion: Oral arms of the suspensorial sclerites, well\nseperated from above\""}
 def: "The cranio-antennal muscle that is continuous with the anterior tentorial arm and  the suspensorium." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002058 ! cranio-hypopharyngeal muscle
+is_a: AISM:0002058 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-hypopharyngeal muscle
 relationship: continuous_with AISM:0002019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! suspensorium
 relationship: continuous_with AISM:0004038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! anterior tentorial arm
 
 [Term]
 id: AISM:0002061
-name: cranio-tentorial muscle
+name: insect cranio-tentorial muscle
 def: "The skeletal muscle continuous with the head capsule and the tentorium." [] {creation_date="2021-04-04", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 relationship: continuous_with AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! head capsule
 relationship: continuous_with AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! tentorium
@@ -1907,7 +1906,7 @@ relationship: continuous_with AISM:0000191 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002062
 name: tentorio-frontal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Laterad on the anterior corpotentorium\"\n\n\"Insertion: Frons\""}
 def: "The cranio-antennal muscle that is continuous with the tentorial bridge and the frons." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002061 ! cranio-tentorial muscle
+is_a: AISM:0002061 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-tentorial muscle
 relationship: continuous_with AISM:0004020 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! frons
 relationship: continuous_with AISM:0004024 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! tentorial bridge
 
@@ -1915,36 +1914,39 @@ relationship: continuous_with AISM:0004024 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002063
 name: tentorio-tentorial muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Ventrolaterad on the anterior corpotentorium\"\n\n\"Insertion: Mesad on the posterior tentorium\""}
 def: "The cranio-antennal muscle that is continuous with the tentorial bridge and the tentorium." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002061 ! cranio-tentorial muscle
+is_a: AISM:0002061 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect cranio-tentorial muscle
 relationship: continuous_with AISM:0004024 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! tentorial bridge
 
 [Term]
 id: AISM:0002064
 name: insect leg muscle
 def: "The skeletal muscle tissue that is part of the insect leg." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect thoracic muscle
 relationship: part_of AISM:0000031 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! insect leg
 
 [Term]
 id: AISM:0002065
-name: thoracic muscle
+name: insect thoracic muscle
+def: "The skeletal muscle tissue that is part of the insect thorax." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
 relationship: part_of AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! insect thorax
 
 [Term]
 id: AISM:0002066
-name: dorsal longitudinal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
+name: dorsal longitudinal thoracic muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
 def: "The thoracic muscle that is not fan-shaped and runs along the dorsal region, parallel to the anterior-posterior axis." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect thoracic muscle
 
 [Term]
 id: AISM:0002067
-name: dorsoventral muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
-is_a: AISM:0002065 ! thoracic muscle
+name: dorsoventral thoracic muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
+def: "The insect thoracic muscle that runs parallel to the dorsal-ventral axis." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect thoracic muscle
 
 [Term]
 id: AISM:0002068
 name: tergo-pleural muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
 def: "The thoracic muscle that extends between the notum (or tergum) and the pleura." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect thoracic muscle
 relationship: continuous_with AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! notum
 relationship: continuous_with AISM:0004129 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! pleuron
 
@@ -1952,7 +1954,7 @@ relationship: continuous_with AISM:0004129 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002069
 name: sterno-pleural muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
 def: "The thoracic muscle that extends between the sternum and the pleura." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect thoracic muscle
 relationship: continuous_with AISM:0004129 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! pleuron
 relationship: continuous_with AISM:0004130 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! sternum
 
@@ -1960,13 +1962,13 @@ relationship: continuous_with AISM:0004130 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002070
 name: ventral-longitudinal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
 def: "The thoracic muscle that is not fan-shaped and runs along the ventral region, parallel to the anterior-posterior axis." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect thoracic muscle
 
 [Term]
 id: AISM:0002071
 name: prophragma-occipital muscle {def="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"origin: prophragma\"\n\"insertion: postocciput\""}
 def: "The dorsal longitudinal muscle continuous with the prophragma and the postocciput." [] {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo", creation_date="2021-04-06"}
-is_a: AISM:0002066 ! dorsal longitudinal muscle
+is_a: AISM:0002066 ! dorsal longitudinal thoracic muscle
 relationship: continuous_with AISM:0002076 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prophragma
 relationship: continuous_with AISM:0004045 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! postocciput
 
@@ -1974,7 +1976,7 @@ relationship: continuous_with AISM:0004045 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002072
 name: pronoto-occipital muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"origin: pronotum\"\n\n\"insertion: postocciput\""}
 def: "The dorsal longitudinal muscle continuous with the pronotum and the postocciput." [] {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo", creation_date="2021-04-06"}
-is_a: AISM:0002066 ! dorsal longitudinal muscle
+is_a: AISM:0002066 ! dorsal longitudinal thoracic muscle
 relationship: continuous_with AISM:0000059 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! pronotum
 relationship: continuous_with AISM:0004045 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! postocciput
 
@@ -1982,7 +1984,7 @@ relationship: continuous_with AISM:0004045 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002073
 name: prophragma-cervical muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"origin: prophragma\"\n\"insertion: cervical sclerite\""}
 def: "The dorsal longitudinal muscle continuous with the prophragma and the cervical sclerite." [] {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo", creation_date="2021-04-06"}
-is_a: AISM:0002066 ! dorsal longitudinal muscle
+is_a: AISM:0002066 ! dorsal longitudinal thoracic muscle
 relationship: continuous_with AISM:0002076 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prophragma
 relationship: continuous_with AISM:0004141 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cervical sclerite
 
@@ -1990,7 +1992,7 @@ relationship: continuous_with AISM:0004141 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002074
 name: dorsal cervico-occipital muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"origin: cervical sclerite\"\n\n\"insertion: postocciput\""}
 def: "The dorsal longitudinal muscle continuous with the cervical sclerite and the postocciput." [] {creation_date="2021-04-04", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002066 ! dorsal longitudinal muscle
+is_a: AISM:0002066 ! dorsal longitudinal thoracic muscle
 relationship: continuous_with AISM:0004045 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! postocciput
 relationship: continuous_with AISM:0004141 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cervical sclerite
 
@@ -1998,7 +2000,7 @@ relationship: continuous_with AISM:0004141 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002075
 name: pronoto-phragmal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"origin: pronotum\"\n\"insertion: prophragma\""}
 def: "The dorsal longitudinal muscle continuous with the pronotum and the prophragma." [] {creation_date="2021-04-04", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
-is_a: AISM:0002066 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal longitudinal muscle
+is_a: AISM:0002066 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal longitudinal thoracic muscle
 relationship: continuous_with AISM:0000059 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! pronotum
 relationship: continuous_with AISM:0002076 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prophragma
 
@@ -2011,57 +2013,76 @@ relationship: part_of AISM:0000052 {http://purl.org/dc/elements/1.1/contributor=
 
 [Term]
 id: AISM:0002078
-name: cervico-occipital muscle
-is_a: AISM:0002067 ! dorsoventral muscle
+name: anterior cervico-occipital muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"The dorsoventral muscle that arises from dorsolateral postocciput and inserts on anterior tip of first lateral cervical sclerite.\""}
+def: "The dorsoventral thoracic muscle of the prothorax that is attached to the anterior margin of a cervical sclerite and the dorso-lateral region of the postocciput." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
+relationship: part_of AISM:0004125 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prothorax
 
 [Term]
 id: AISM:0002079
-name: pronoto-cervical muscle
-is_a: AISM:0002067 ! dorsoventral muscle
+name: anterior pronoto-cervical muscle {def="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"The dorsoventral muscle that arises from anterolateral pronotum and inserts on atypically on middle region of anterior propleural sclerite.\""}
+def: "The dorsoventral thoracic muscle that extends between the antero-lateral region of the pronotum and the medial region of the propleuron." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
 
 [Term]
 id: AISM:0002080
-name: prophragma-tentorial muscle
-is_a: AISM:0002067 ! dorsoventral muscle
+name: prophragma-tentorial muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
+def: "The dorsoventral thoracic muscle that extends between the tentorium and the prophragma." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
+relationship: continuous_with AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! tentorium
+relationship: continuous_with AISM:0002076 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! prophragma
 
 [Term]
 id: AISM:0002081
-name: profurca-phragmal muscle
-is_a: AISM:0002067 ! dorsoventral muscle
+name: profurca-prophragmal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"The dorsoventral muscle that arises from posterior face of proximal profurcal arm and inserts on lateral prophragma.\""}
+def: "The dorsoventral thoracic muscle that extends between the profurca and the lateral region of the prophragma." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
+relationship: continuous_with AISM:0000143 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! profurca
 
 [Term]
 id: AISM:0002082
-name: profurca-occipital muscle
-is_a: AISM:0002067 ! dorsoventral muscle
+name: profurca-occipital muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
+def: "The dorsoventral thoracic muscle that extends between the posterior region (occipital region) of the head capsule and the profurca." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002067 ! dorsoventral thoracic muscle
+relationship: continuous_with AISM:0000143 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! profurca
 
 [Term]
 id: AISM:0002083
-name: prophragma-spinal muscle
-is_a: AISM:0002067 ! dorsoventral muscle
+name: prophragma-mesophragmal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"The dorsal longitudinal muscle that arises from median prophragma and inserts on median mesophragma.\""}
+def: "The dorsal longitudinal thoracic muscle that extends between the medial region of the prophragma and the medial region of the mesophragma." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002066 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal longitudinal thoracic muscle
 
 [Term]
 id: AISM:0002084
-name: profurca-mesonotal muscle
-is_a: AISM:0002067 ! dorsoventral muscle
+name: profurca-mesonotal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
+def: "The dorsoventral thoracic muscle that extends between the profurca and the mesonotum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
+relationship: continuous_with AISM:0000052 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! mesonotum
+relationship: continuous_with AISM:0000143 ! profurca
 
 [Term]
 id: AISM:0002085
 name: insect abdominal muscle
+def: "The skeletal muscle tissue that is part of the insect abdomen." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+relationship: part_of AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! insect abdomen
 
 [Term]
 id: AISM:0002086
 name: lateral abdominal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Klug, R., & Bradler, S. (2006). The pregenital abdominal musculature in phasmids and its implications for the basal phylogeny of Phasmatodea (Insecta: Polyneoptera). \nOrganisms Diversity & Evolution, 6(3), 171-184.\n\nhttps://doi.org/10.1016/j.ode.2005.08.004"}
-is_a: AISM:0002085 ! insect abdominal muscle
+def: "The insect abdominal muscle that runs along the lateral region, parallel to the dorsal-ventral axis." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002085 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect abdominal muscle
 
 [Term]
 id: AISM:0002087
 name: ventral longitudinal abdominal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Klug, R., & Bradler, S. (2006). The pregenital abdominal musculature in phasmids and its implications for the basal phylogeny of Phasmatodea (Insecta: Polyneoptera). \nOrganisms Diversity & Evolution, 6(3), 171-184.\n\nhttps://doi.org/10.1016/j.ode.2005.08.004"}
-is_a: AISM:0002085 ! insect abdominal muscle
+def: "The insect abdominal muscle that runs along the ventral region, parallel to the anterior-posterior axis." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002085 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect abdominal muscle
 
 [Term]
 id: AISM:0002088
 name: dorsal longitudinal abdominal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Klug, R., & Bradler, S. (2006). The pregenital abdominal musculature in phasmids and its implications for the basal phylogeny of Phasmatodea (Insecta: Polyneoptera). \nOrganisms Diversity & Evolution, 6(3), 171-184.\n\nhttps://doi.org/10.1016/j.ode.2005.08.004"}
-is_a: AISM:0002085 ! insect abdominal muscle
+def: "The insect abdominal muscle that runs along the dorsal region, parallel to the anterior-posterior axis." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
+is_a: AISM:0002085 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! insect abdominal muscle
 
 [Term]
 id: AISM:0004001
@@ -2528,7 +2549,7 @@ relationship: part_of AISM:0000109 {http://purl.org/dc/elements/1.1/contributor=
 id: AISM:0004057
 name: abdominal tergite {http://purl.obolibrary.org/obo/AISM_0000171="Lawrence J, Ślipiński A (2013) 1 Australian beetles volume 1: morphology, classification and keys. CSIRO Publishing, 520 pp. \n\nhttps://www.publish.csiro.au/book/6466/\n\n\"major plate of the abdominal tergum\""}
 def: "The sclerite of the insect abdomen that is dorsal and medial." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-05"}
-synonym: "tergum" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tergum: plate-like dorsal sclerite of abdominal segment.\""}
+synonym: "abdominal tergum" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tergum: plate-like dorsal sclerite of abdominal segment.\""}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! sclerite
 relationship: part_of AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect abdomen
 
@@ -2635,7 +2656,7 @@ relationship: part_of AISM:0004056 {http://purl.org/dc/elements/1.1/contributor=
 id: AISM:0004068
 name: gonocoxa VIII {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 def: "The paired sclerite of the postabdomen that is attached to the abdominal sternite VII by the abdominal sternite VII-gonocoxa conjunctiva and is articulated with abdominal tergite IX. It is attached at the base of gonostylus VIII and adjacent to the gonopore." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-03-05"}
-synonym: "coxopodite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
+synonym: "first coxopodite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "first gonocoxite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "first valvifer" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! sclerite
@@ -2671,7 +2692,7 @@ is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! seta
 [Term]
 id: AISM:0004072
 name: trichobothrium {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Trichobothrium: very long and fine sensillum, vibroreceptor.\""}
-comment: The seta that is elongated. {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-05"}
+def: "The seta that is elongated." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-05"}
 is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! seta
 
 [Term]
@@ -3767,7 +3788,7 @@ relationship: part_of AISM:0004166 {http://purl.org/dc/elements/1.1/contributor=
 id: AISM:0004204
 name: tergo-trochantinal muscle
 def: "The thoracic muscle that attaches to the notum and to the trochantin." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect thoracic muscle
 relationship: continuous_with AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! notum
 relationship: continuous_with AISM:0004135 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! trochantin
 property_value: curator_notes "For muscular terminology, tergum has been traditionally used instead of notum, even though \"notum\" is the prererred term to refer to the dorsal region of the cuticle of the insect thorax that is attached to the dorsal margin of the pleuron." xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
@@ -3800,7 +3821,7 @@ relationship: continuous_with AISM:0000169 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0004208
 name: tergo-tergal muscle
 def: "The thoracic muscle that extends between two nota (or terga)." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect thoracic muscle
 relationship: continuous_with AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! notum
 
 [Term]
@@ -3823,7 +3844,7 @@ relationship: continuous_with AISM:0000169 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0004211
 name: tergo-coxal muscle
 def: "The thoracic muscle that extends between the notum (or tergum) and the coxa." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect thoracic muscle
 relationship: continuous_with AISM:0000077 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! coxa
 relationship: continuous_with AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! notum
 
@@ -3831,7 +3852,7 @@ relationship: continuous_with AISM:0004128 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0004212
 name: tergo-trochanteral muscle
 def: "The thoracic muscle that extends between the notum (or tergum) and the trochanter." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect thoracic muscle
 relationship: continuous_with AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! notum
 relationship: continuous_with AISM:0004168 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! trochanter
 
@@ -3839,7 +3860,7 @@ relationship: continuous_with AISM:0004168 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0004213
 name: pleuro-coxal muscle
 def: "The thoracic muscle that attaches to the pleuron and to a coxa." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 ! thoracic muscle
+is_a: AISM:0002065 ! insect thoracic muscle
 relationship: continuous_with AISM:0000077 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! coxa
 relationship: continuous_with AISM:0004129 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! pleuron
 
@@ -3847,7 +3868,7 @@ relationship: continuous_with AISM:0004129 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0004214
 name: furco-coxal muscle
 def: "The thoracic muscle that is attached to a furca and to a coxa." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-08"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect thoracic muscle
 relationship: continuous_with AISM:0000077 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! coxa
 relationship: continuous_with AISM:0000144 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! furca
 
@@ -3855,7 +3876,7 @@ relationship: continuous_with AISM:0000144 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0004215
 name: furco-trochanteral muscle
 def: "The thoracic muscle that is attached to a furca and to a trochanter." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-08"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect thoracic muscle
 relationship: continuous_with AISM:0000144 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! furca
 relationship: continuous_with AISM:0004168 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! trochanter
 
@@ -3863,7 +3884,7 @@ relationship: continuous_with AISM:0004168 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0004216
 name: interfurcal muscle
 def: "The thoracic muscle that extends between two furcae." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect thoracic muscle
 relationship: continuous_with AISM:0000144 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! furca
 
 [Term]
@@ -3947,7 +3968,7 @@ relationship: continuous_with AISM:0004225 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0004227
 name: metafurco-abdominal sternite muscle
 def: "The thoracic muscle that extends between the metafurca and an abdominal sternite." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-09"}
-is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! thoracic muscle
+is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect thoracic muscle
 relationship: continuous_with AISM:0000142 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! metafurca
 relationship: continuous_with AISM:0004058 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! abdominal sternite
 
