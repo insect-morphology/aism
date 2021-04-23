@@ -5174,7 +5174,7 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002003> (posterior tentorio-scapal muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002003> "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus."@en)
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002003> "The cranio-antennal muscle that is continuous with the dorsal or anterior tentorial arm and the proximo-dorsal margin of the scapus."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
@@ -5183,12 +5183,12 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 
 \"Insertion: Posterior (dorsal) basal margin of the scape\"") rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002003> "posterior tentorio-scapal muscle"@en)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> <http://purl.obolibrary.org/obo/AISM_0000081>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000113>))
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004039>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> <http://purl.obolibrary.org/obo/BSPO_0000679>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000113>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectUnionOf(<http://purl.obolibrary.org/obo/AISM_0004038> <http://purl.obolibrary.org/obo/AISM_0004039>)))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002004> (lateral tentorio-scapal muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002004> "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus."@en)
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002004> "The cranio-antennal muscle that extends between the dorsal or anterior tentorial arm and the proximo-lateral margin of the scapus."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
@@ -5197,8 +5197,8 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 
 \"Insertion: Lateral basal margin of the scape\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002004> "lateral tentorio-scapal muscle"@en)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> <http://purl.obolibrary.org/obo/AISM_0000081>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000113>))
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004039>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> <http://purl.obolibrary.org/obo/BSPO_0000682>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000113>))))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectUnionOf(<http://purl.obolibrary.org/obo/AISM_0004038> <http://purl.obolibrary.org/obo/AISM_0004039>)))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002005> (medial tentorio-scapal muscle)
 
@@ -5344,7 +5344,7 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002017> (posteroexternal cranio-mandibular muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002017> "The cranio-mandibular muscle that is continuous with the gena and the insect mandible."@en)
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002017> "The cranio-mandibular muscle that extends between the gena and the lateral margin of the insect mandible."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
@@ -5353,8 +5353,8 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 
 \"Insertion: Tendon that inserts at the lateral edge of the mandible\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002017> "posteroexternal cranio-mandibular muscle"@en)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002017> <http://purl.obolibrary.org/obo/AISM_0000082>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004026>))
+SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000682> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000043>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002018> (anteroexternal cranio-mandibular muscle)
 
@@ -5365,8 +5365,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 
 \"Origin: Gena, below the compound eye\"
 
-\"Insertion: With a tendon on the mandible, posterior to the
-anterior articulation complex\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002018> "anteroexternal cranio-mandibular muscle"@en)
+\"Insertion: With a tendon on the mandible, posterior to the anterior articulation complex\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002018> "anteroexternal cranio-mandibular muscle"@en)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002018> <http://purl.obolibrary.org/obo/AISM_0000082>)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004026>))
@@ -5409,23 +5408,21 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002022> (superolateral tentorio-mandibular muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002022> "The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the insect mandible."@en)
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002022> "The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the proximal margin of the insect mandible."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
 
 \"Origin: Anterior and dorsal tentorial arm\"
 
-\"Insertion: Outer basal edge of the mandibular body, between
-processus paratentorialis and posterior
-articulation\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002022> "superolateral tentorio-mandibular muscle"@en)
+\"Insertion: Outer basal edge of the mandibular body, between processus paratentorialis and posterior articulation\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002022> "superolateral tentorio-mandibular muscle"@en)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002022> <http://purl.obolibrary.org/obo/AISM_0000082>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004039>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000043>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002023> (inferolateral tentorio-mandibular muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002023> "The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible."@en)
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002023> "The cranio-mandibular muscle that extends between the anterior tentorial arm and the proximal-ventral margin of the insect mandible."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
@@ -5434,8 +5431,8 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wi
 
 \"Insertion: Ventral basal margin of the mandible\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002023> "inferolateral tentorio-mandibular muscle"@en)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002023> <http://purl.obolibrary.org/obo/AISM_0000082>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004038>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000677> <http://purl.obolibrary.org/obo/BSPO_0000684>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000043>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002024> (superomedial tentorio-mandibular muscle)
 
@@ -5455,18 +5452,17 @@ SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.or
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002025> (inferomedial tentorio-mandibular muscle)
 
-AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002025> "The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible."@en)
+AnnotationAssertion(Annotation(dce:contributor "lagonzalezmo") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-04-03") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM/AISM_0002025> "The cranio-mandibular muscle that extends between the anterior tentorial arm and the dorso-medial region of the insect mandible."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
 
-\"Origin: Anterior tentorial arm, below musculus
-tentoriomandibularis lateralis superior\"
+\"Origin: Anterior tentorial arm, below musculus tentoriomandibularis lateralis superior\"
 
 \"Insertion: Mediodorsal wall of the mandibular cavity\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM/AISM_0002025> "inferomedial tentorio-mandibular muscle"@en)
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002025> <http://purl.obolibrary.org/obo/AISM_0000082>)
-SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000043>))
 SubClassOf(Annotation(dce:contributor "lagonzalezmo") <http://purl.obolibrary.org/obo/AISM/AISM_0002025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0004038>))
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM/AISM_0002025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000043>))))
 
 # Class: <http://purl.obolibrary.org/obo/AISM/AISM_0002026> (insect cranio-maxillar muscle)
 

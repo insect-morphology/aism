@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2021-04-22
+data-version: releases/2021-04-23
 subsetdef: abnormal_slim ""
 subsetdef: AISM:0000171 ""
 subsetdef: attribute_slim ""
@@ -53,7 +53,7 @@ property_value: dc-contributor "Luis A. González Montaña https://orcid.org/000
 property_value: dc-description "The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research." xsd:string
 property_value: dc-title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-04-22" xsd:string
+property_value: owl:versionInfo "2021-04-23" xsd:string
 
 [Term]
 id: AISM:00000000
@@ -1585,18 +1585,14 @@ relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/cont
 [Term]
 id: AISM:0002003
 name: posterior tentorio-scapal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior or dorsal tentorial arms\"\n\n\"Insertion: Posterior (dorsal) basal margin of the scape\""}
-def: "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+def: "The cranio-antennal muscle that is continuous with the dorsal or anterior tentorial arm and the proximo-dorsal margin of the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 is_a: AISM:0000081 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-antennal muscle
-relationship: continuous_with AISM:0000113 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! scapus
-relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal tentorial arm
 
 [Term]
 id: AISM:0002004
 name: lateral tentorio-scapal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior or dorsal tentorial arms\"\n\n\"Insertion: Lateral basal margin of the scape\""}
-def: "The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+def: "The cranio-antennal muscle that extends between the dorsal or anterior tentorial arm and the proximo-lateral margin of the scapus." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 is_a: AISM:0000081 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-antennal muscle
-relationship: continuous_with AISM:0000113 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! scapus
-relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal tentorial arm
 
 [Term]
 id: AISM:0002005
@@ -1670,13 +1666,13 @@ is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} 
 [Term]
 id: AISM:0002017
 name: posteroexternal cranio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Gena and postgena\"\n\n\"Insertion: Tendon that inserts at the lateral edge of the mandible\""}
-def: "The cranio-mandibular muscle that is continuous with the gena and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+def: "The cranio-mandibular muscle that extends between the gena and the lateral margin of the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! gena
 
 [Term]
 id: AISM:0002018
-name: anteroexternal cranio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Gena, below the compound eye\"\n\n\"Insertion: With a tendon on the mandible, posterior to the\nanterior articulation complex\""}
+name: anteroexternal cranio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Gena, below the compound eye\"\n\n\"Insertion: With a tendon on the mandible, posterior to the anterior articulation complex\""}
 def: "The cranio-mandibular muscle that is continuous with the gena and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004026 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! gena
@@ -1700,15 +1696,15 @@ relationship: continuous_with AISM:0002019 {http://purl.org/dc/elements/1.1/cont
 
 [Term]
 id: AISM:0002022
-name: superolateral tentorio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior and dorsal tentorial arm\"\n\n\"Insertion: Outer basal edge of the mandibular body, between\nprocessus paratentorialis and posterior\narticulation\""}
-def: "The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+name: superolateral tentorio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior and dorsal tentorial arm\"\n\n\"Insertion: Outer basal edge of the mandibular body, between processus paratentorialis and posterior articulation\""}
+def: "The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the proximal margin of the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004039 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsal tentorial arm
 
 [Term]
 id: AISM:0002023
 name: inferolateral tentorio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior tentorial arm\"\n\n\"Insertion: Ventral basal margin of the mandible\""}
-def: "The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+def: "The cranio-mandibular muscle that extends between the anterior tentorial arm and the proximal-ventral margin of the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! anterior tentorial arm
 
@@ -1721,8 +1717,8 @@ relationship: continuous_with AISM:0004038 {http://purl.org/dc/elements/1.1/cont
 
 [Term]
 id: AISM:0002025
-name: inferomedial tentorio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior tentorial arm, below musculus\ntentoriomandibularis lateralis superior\"\n\n\"Insertion: Mediodorsal wall of the mandibular cavity\""}
-def: "The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
+name: inferomedial tentorio-mandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior tentorial arm, below musculus tentoriomandibularis lateralis superior\"\n\n\"Insertion: Mediodorsal wall of the mandibular cavity\""}
+def: "The cranio-mandibular muscle that extends between the anterior tentorial arm and the dorso-medial region of the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"}
 is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! cranio-mandibular muscle
 relationship: continuous_with AISM:0004038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! anterior tentorial arm
 

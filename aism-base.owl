@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-04-22/aism-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-04-23/aism-base.owl"/>
         <dc:contributor>István Mikó https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <dc:contributor>Jennifer C. Girón https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <dc:contributor>Luis A. González Montaña https://orcid.org/0000-0002-9136-9932</dc:contributor>
@@ -20,7 +20,7 @@
         <dc:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-22</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -38918,6 +38918,12 @@ https://doi.org/10.1515/9783110264043
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000069"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSPO_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000070"/>
@@ -39398,16 +39404,38 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000679"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0004038"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal or anterior tentorial arm and the proximo-dorsal margin of the scapus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">posterior tentorio-scapal muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -39422,10 +39450,25 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000679"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <dc:contributor>lagonzalezmo</dc:contributor>
+        <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002003"/>
@@ -39433,15 +39476,22 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0004038"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <dc:contributor>lagonzalezmo</dc:contributor>
+        <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal or anterior tentorial arm and the proximo-dorsal margin of the scapus.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -39467,16 +39517,38 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000682"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0004038"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-antennal muscle that extends between the dorsal or anterior tentorial arm and the proximo-lateral margin of the scapus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">lateral tentorio-scapal muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -39491,10 +39563,25 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000682"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000113"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <dc:contributor>lagonzalezmo</dc:contributor>
+        <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002004"/>
@@ -39502,15 +39589,22 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0004038"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <dc:contributor>lagonzalezmo</dc:contributor>
+        <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cranio-antennal muscle that is continuous with the dorsal tentorial arm and the scapus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-antennal muscle that extends between the dorsal or anterior tentorial arm and the proximo-lateral margin of the scapus.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -40416,16 +40510,26 @@ mandible&quot;</obo:AISM_0000171>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004026"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000682"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that is continuous with the gena and the insect mandible.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that extends between the gena and the lateral margin of the insect mandible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">posteroexternal cranio-mandibular muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -40440,7 +40544,7 @@ mandible&quot;</obo:AISM_0000171>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004026"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
@@ -40451,7 +40555,17 @@ mandible&quot;</obo:AISM_0000171>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004026"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000682"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
@@ -40459,7 +40573,7 @@ mandible&quot;</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cranio-mandibular muscle that is continuous with the gena and the insect mandible.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-mandibular muscle that extends between the gena and the lateral margin of the insect mandible.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -40542,8 +40656,7 @@ mandible&quot;</obo:AISM_0000171>
 
 &quot;Origin: Gena, below the compound eye&quot;
 
-&quot;Insertion: With a tendon on the mandible, posterior to the
-anterior articulation complex&quot;</obo:AISM_0000171>
+&quot;Insertion: With a tendon on the mandible, posterior to the anterior articulation complex&quot;</obo:AISM_0000171>
     </owl:Axiom>
     
 
@@ -40703,16 +40816,26 @@ the loral arm (Neoptera)&quot;
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the insect mandible.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the proximal margin of the insect mandible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">superolateral tentorio-mandibular muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -40727,7 +40850,7 @@ the loral arm (Neoptera)&quot;
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
@@ -40738,15 +40861,25 @@ the loral arm (Neoptera)&quot;
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004039"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <dc:contributor>lagonzalezmo</dc:contributor>
+        <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002022"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the insect mandible.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-mandibular muscle that is continuous with the dorsal tentorial arm and the proximal margin of the insect mandible.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -40760,9 +40893,7 @@ the loral arm (Neoptera)&quot;
 
 &quot;Origin: Anterior and dorsal tentorial arm&quot;
 
-&quot;Insertion: Outer basal edge of the mandibular body, between
-processus paratentorialis and posterior
-articulation&quot;</obo:AISM_0000171>
+&quot;Insertion: Outer basal edge of the mandibular body, between processus paratentorialis and posterior articulation&quot;</obo:AISM_0000171>
     </owl:Axiom>
     
 
@@ -40774,16 +40905,31 @@ articulation&quot;</obo:AISM_0000171>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004038"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000684"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that extends between the anterior tentorial arm and the proximal-ventral margin of the insect mandible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">inferolateral tentorio-mandibular muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -40798,7 +40944,7 @@ articulation&quot;</obo:AISM_0000171>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004038"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
@@ -40809,15 +40955,30 @@ articulation&quot;</obo:AISM_0000171>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004038"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000677"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000684"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <dc:contributor>lagonzalezmo</dc:contributor>
+        <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002023"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-mandibular muscle that extends between the anterior tentorial arm and the proximal-ventral margin of the insect mandible.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -40914,16 +41075,26 @@ posterior mandibular condyle&quot;</obo:AISM_0000171>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004038"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000069"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cranio-mandibular muscle that extends between the anterior tentorial arm and the dorso-medial region of the insect mandible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">inferomedial tentorio-mandibular muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -40938,7 +41109,7 @@ posterior mandibular condyle&quot;</obo:AISM_0000171>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004038"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
@@ -40949,15 +41120,25 @@ posterior mandibular condyle&quot;</obo:AISM_0000171>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004038"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000069"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <dc:contributor>lagonzalezmo</dc:contributor>
+        <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002025"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cranio-mandibular muscle that is continuous with the anterior tentorial arm and the insect mandible.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cranio-mandibular muscle that extends between the anterior tentorial arm and the dorso-medial region of the insect mandible.</owl:annotatedTarget>
         <dc:contributor>lagonzalezmo</dc:contributor>
         <oboInOwl:creation_date>2021-04-03</oboInOwl:creation_date>
     </owl:Axiom>
@@ -40969,8 +41150,7 @@ posterior mandibular condyle&quot;</obo:AISM_0000171>
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
 
-&quot;Origin: Anterior tentorial arm, below musculus
-tentoriomandibularis lateralis superior&quot;
+&quot;Origin: Anterior tentorial arm, below musculus tentoriomandibularis lateralis superior&quot;
 
 &quot;Insertion: Mediodorsal wall of the mandibular cavity&quot;</obo:AISM_0000171>
     </owl:Axiom>
