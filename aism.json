@@ -34,6 +34,12 @@
         },
         {
           "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000015"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002233"
+        },
+        {
+          "domainClassIds": [
             "http://purl.obolibrary.org/obo/BSPO_0000010"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/BSPO_0015006"
@@ -225,15 +231,6 @@
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002211",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000015"
-          ]
-        },
-        {
-          "domainClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000015"
-          ],
-          "predicateId": "http://purl.obolibrary.org/obo/RO_0002233",
-          "rangeClassIds": [
-            "http://purl.obolibrary.org/obo/BFO_0000040"
           ]
         },
         {
@@ -2106,6 +2103,11 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000033",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000106",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000033"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000033",
           "pred": "http://purl.obolibrary.org/obo/RO_0002220",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004147"
         },
@@ -2320,9 +2322,19 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004126"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000037",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000106",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000037"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000038",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004127"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000038",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000106",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000038"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000039",
@@ -3596,12 +3608,12 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000088",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004052"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000088",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004053"
         },
         {
@@ -5080,6 +5092,11 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004198"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000177",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000130"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000188",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM/AISM_0002012"
@@ -5133,6 +5150,11 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0000191",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004054"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000191",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000106",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000191"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000191",
@@ -10096,6 +10118,26 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0000066",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000126"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000066",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000127"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000066",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000134"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000066",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000177"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000066",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CL_0000068"
         },
@@ -10128,6 +10170,11 @@
           "obj": "http://purl.obolibrary.org/obo/CL_0000255",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CL_0000548"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000362",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000178"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0000548",
@@ -10276,11 +10323,6 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/GO_0005622",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://purl.obolibrary.org/obo/GO_0043229"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/GO_0005622",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/GO_0043229"
         },
@@ -10308,11 +10350,6 @@
           "obj": "http://purl.obolibrary.org/obo/GO_0043226",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/GO_0043227"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/GO_0043226",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/GO_0043229"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/GO_0043227",
@@ -10682,6 +10719,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/PATO_0000141",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0000973"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0000141",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PATO_0002014"
         },
         {
@@ -10793,6 +10835,26 @@
           "obj": "http://purl.obolibrary.org/obo/PATO_0000964",
           "pred": "http://purl.obolibrary.org/obo/RO_0000053",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000088"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0000973",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0000984"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0000973",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0015024"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0000973",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0015025"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0000984",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000131"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/PATO_0001018",
@@ -11110,6 +11172,11 @@
           "sub": "http://purl.obolibrary.org/obo/PATO_0002288"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0002303",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0015025"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/PATO_0002305",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PATO_0000586"
@@ -11123,6 +11190,11 @@
           "obj": "http://purl.obolibrary.org/obo/PATO_0002305",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PATO_0002287"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0002305",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0015024"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/PATO_0002318",
@@ -11353,11 +11425,6 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0002203",
           "pred": "inverseOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002202"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/RO_0002211",
-          "pred": "subPropertyOf",
-          "sub": "http://purl.obolibrary.org/obo/RO_0002025"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002211",
@@ -25776,18 +25843,6 @@
           ]
         },
         {
-          "definedClassId": "http://purl.obolibrary.org/obo/GO_0043229",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/GO_0043226"
-          ],
-          "restrictions": [
-            {
-              "fillerId": "http://purl.obolibrary.org/obo/GO_0005622",
-              "propertyId": "http://purl.obolibrary.org/obo/BFO_0000050"
-            }
-          ]
-        },
-        {
           "definedClassId": "http://purl.obolibrary.org/obo/PATO_0000586",
           "genusIds": [
             "http://purl.obolibrary.org/obo/PATO_0000117"
@@ -25928,6 +25983,30 @@
             {
               "fillerId": "http://purl.obolibrary.org/obo/PATO_0000461",
               "propertyId": "http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"
+            }
+          ]
+        },
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/PATO_0015024",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/PATO_0000973"
+          ],
+          "restrictions": [
+            {
+              "fillerId": "http://purl.obolibrary.org/obo/PATO_0000461",
+              "propertyId": "http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"
+            }
+          ]
+        },
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/PATO_0015025",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/PATO_0000973"
+          ],
+          "restrictions": [
+            {
+              "fillerId": "http://purl.obolibrary.org/obo/PATO_0000461",
+              "propertyId": "http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"
             }
           ]
         },
@@ -31952,15 +32031,15 @@
         "basicPropertyValues": [
           {
             "pred": "http://purl.org/dc/elements/1.1/contributor",
-            "val": "István Mikó https://orcid.org/0000-0003-2938-9075"
+            "val": "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075"
           },
           {
             "pred": "http://purl.org/dc/elements/1.1/contributor",
-            "val": "Jennifer C. Girón https://orcid.org/0000-0002-0851-6883"
+            "val": "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883"
           },
           {
             "pred": "http://purl.org/dc/elements/1.1/contributor",
-            "val": "Luis A. González Montaña https://orcid.org/0000-0002-9136-9932"
+            "val": "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932"
           },
           {
             "pred": "http://purl.org/dc/elements/1.1/description",
@@ -31976,11 +32055,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-04-23"
+            "val": "2021-04-26"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/aism/releases/2021-04-23/aism.json",
+        "version": "http://purl.obolibrary.org/obo/aism/releases/2021-04-26/aism.json",
         "xrefs": []
       },
       "nodes": [
@@ -33287,7 +33366,7 @@
           "lbl": "fore wing",
           "meta": {
             "definition": {
-              "val": "The insect wing that is continuous with the mesonotum.",
+              "val": "The paired insect wing that is continuous with the mesonotum.",
               "xrefs": []
             }
           },
@@ -33298,7 +33377,7 @@
           "lbl": "hind wing",
           "meta": {
             "definition": {
-              "val": "The insect wing that is continuous with the metanotum.",
+              "val": "The paired insect wing that is continuous with the metanotum.",
               "xrefs": []
             }
           },
@@ -34295,6 +34374,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000126",
           "lbl": "socket membrane",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The conjunctiva that corresponds to one epithelial cell and surrounds a sclerotized unicellular cuticular evagination.",
               "xrefs": []
@@ -34306,6 +34391,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000127",
           "lbl": "unicellular cuticular evagination",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer.",
               "xrefs": []
@@ -34328,6 +34419,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000130",
           "lbl": "uniporous sensillum",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' pore canal, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The seta that has one opening distally.",
               "xrefs": []
@@ -34372,6 +34469,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000134",
           "lbl": "exocrine gland duct",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The branching cuticular invagination that corresponds to the invagination of the membrane of a single cell and does not contain taenidia.",
               "xrefs": []
@@ -34837,6 +34940,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000177",
           "lbl": "pore canal",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The anatomical space that is contained by the cuticle and connects the inside of the insect with the outside, is tubular, and whose diameter is smaller than 100 nm.",
               "xrefs": []
@@ -34848,6 +34957,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000178",
           "lbl": "acantha",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The solid cuticular protrusion that coincides with only one epidermal cell (smaller than the diameter of the epidermal cell).",
               "xrefs": []
@@ -36352,7 +36467,7 @@
           "lbl": "abdominal sternite VIII",
           "meta": {
             "definition": {
-              "val": "Is the abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa,",
+              "val": "The abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa.",
               "xrefs": []
             }
           },
@@ -42843,7 +42958,7 @@
               }
             ],
             "definition": {
-              "val": "The living contents of a cell; the matter contained within (but not including) the plasma membrane, usually taken to exclude large vacuoles and masses of secretory or ingested material. In eukaryotes it includes the nucleus and cytoplasm.",
+              "val": "A component of a cell contained within (but not including) the plasma membrane. In eukaryotes it includes the nucleus and cytoplasm.",
               "xrefs": [
                 "ISBN:0198506732"
               ]
@@ -45302,6 +45417,57 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/PATO_0000973",
+          "lbl": "porosity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "quality"
+              }
+            ],
+            "definition": {
+              "val": "A structure quality inhering in a bearer by virtue of the bearer's disposition to admit the passage of gas or liquid through pores or interstices.",
+              "xrefs": [
+                "PATOC:GVG"
+              ]
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/pato#attribute_slim",
+              "http://purl.obolibrary.org/obo/pato#disposition_slim",
+              "http://purl.obolibrary.org/obo/pato#scalar_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/PATO_0000984",
+          "lbl": "porous",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002604",
+                "val": "http://purl.obolibrary.org/obo/PATO_0000985"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "quality"
+              }
+            ],
+            "definition": {
+              "val": "A porosity quality inhering in a bearer by virtue of the bearer's being capable of admitting the passage of gas or liquid through pores or interstices.",
+              "xrefs": [
+                "PATOC:GVG"
+              ]
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/pato#disposition_slim",
+              "http://purl.obolibrary.org/obo/pato#value_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/PATO_0001018",
           "lbl": "physical quality",
           "meta": {
@@ -46814,6 +46980,54 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/PATO_0015024",
+          "lbl": "increased porosity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "quality"
+              }
+            ],
+            "definition": {
+              "val": "An increase in porosity.",
+              "xrefs": [
+                "https://github.com/pato-ontology/pato/issues/110"
+              ]
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/pato#value_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/PATO_0015025",
+          "lbl": "decreased porosity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002604",
+                "val": "http://purl.obolibrary.org/obo/PATO_0015024"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "quality"
+              }
+            ],
+            "definition": {
+              "val": "An decrease in porosity.",
+              "xrefs": [
+                "https://github.com/pato-ontology/pato/issues/110"
+              ]
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/pato#value_slim"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/PR_000000001",
           "lbl": "protein",
           "meta": {
@@ -47387,6 +47601,9 @@
               "val": "a relation between two independent continuants, the target and the location, in which the target is entirely within the location",
               "xrefs": []
             },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/valid_for_go_gp2term"
+            ],
             "xrefs": [
               {
                 "val": "RO:0001025"
@@ -48527,7 +48744,6 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
-              "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
               "http://purl.obolibrary.org/obo/valid_for_go_ontology",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
             ],
@@ -48575,7 +48791,6 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
-              "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
               "http://purl.obolibrary.org/obo/valid_for_go_ontology",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
             ],
@@ -48623,7 +48838,6 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
-              "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
               "http://purl.obolibrary.org/obo/valid_for_go_ontology",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
             ],
@@ -48669,10 +48883,6 @@
                 "val": "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"."
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000424",
-                "val": "RO_0000053 some (RO_0000054 only ?Y)"
-              },
-              {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "protein"
               },
@@ -48716,10 +48926,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "has function in"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000424",
-                "val": "RO_0000053 some (RO_0000054 only (BFO_0000050 some ?Y))"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -108809,11 +109015,6 @@
             ]
           },
           "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/AISM_00000000",
-          "lbl": "root node",
-          "type": "CLASS"
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000011",

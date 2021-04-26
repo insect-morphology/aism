@@ -1630,6 +1630,11 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000033",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000106",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000033"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000033",
           "pred": "http://purl.obolibrary.org/obo/RO_0002220",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004147"
         },
@@ -1844,9 +1849,19 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004126"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000037",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000106",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000037"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000038",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004127"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000038",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000106",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000038"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000039",
@@ -3120,12 +3135,12 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000088",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004052"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000088",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004053"
         },
         {
@@ -4619,6 +4634,11 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004198"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000177",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000130"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000188",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM/AISM_0002012"
@@ -4672,6 +4692,11 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0000191",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004054"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000191",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000106",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000191"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000191",
@@ -7536,15 +7561,15 @@
         "basicPropertyValues": [
           {
             "pred": "http://purl.org/dc/elements/1.1/contributor",
-            "val": "István Mikó https://orcid.org/0000-0003-2938-9075"
+            "val": "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075"
           },
           {
             "pred": "http://purl.org/dc/elements/1.1/contributor",
-            "val": "Jennifer C. Girón https://orcid.org/0000-0002-0851-6883"
+            "val": "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883"
           },
           {
             "pred": "http://purl.org/dc/elements/1.1/contributor",
-            "val": "Luis A. González Montaña https://orcid.org/0000-0002-9136-9932"
+            "val": "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932"
           },
           {
             "pred": "http://purl.org/dc/elements/1.1/description",
@@ -7560,11 +7585,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-04-23"
+            "val": "2021-04-26"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/aism/releases/2021-04-23/aism-simple.json",
+        "version": "http://purl.obolibrary.org/obo/aism/releases/2021-04-26/aism-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -8849,7 +8874,7 @@
           "lbl": "fore wing",
           "meta": {
             "definition": {
-              "val": "The insect wing that is continuous with the mesonotum.",
+              "val": "The paired insect wing that is continuous with the mesonotum.",
               "xrefs": []
             }
           },
@@ -8860,7 +8885,7 @@
           "lbl": "hind wing",
           "meta": {
             "definition": {
-              "val": "The insect wing that is continuous with the metanotum.",
+              "val": "The paired insect wing that is continuous with the metanotum.",
               "xrefs": []
             }
           },
@@ -9857,6 +9882,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000126",
           "lbl": "socket membrane",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The conjunctiva that corresponds to one epithelial cell and surrounds a sclerotized unicellular cuticular evagination.",
               "xrefs": []
@@ -9868,6 +9899,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000127",
           "lbl": "unicellular cuticular evagination",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer.",
               "xrefs": []
@@ -9890,6 +9927,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000130",
           "lbl": "uniporous sensillum",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' pore canal, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The seta that has one opening distally.",
               "xrefs": []
@@ -9934,6 +9977,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000134",
           "lbl": "exocrine gland duct",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The branching cuticular invagination that corresponds to the invagination of the membrane of a single cell and does not contain taenidia.",
               "xrefs": []
@@ -10399,6 +10448,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000177",
           "lbl": "pore canal",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The anatomical space that is contained by the cuticle and connects the inside of the insect with the outside, is tubular, and whose diameter is smaller than 100 nm.",
               "xrefs": []
@@ -10410,6 +10465,12 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000178",
           "lbl": "acantha",
           "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs."
+              }
+            ],
             "definition": {
               "val": "The solid cuticular protrusion that coincides with only one epidermal cell (smaller than the diameter of the epidermal cell).",
               "xrefs": []
@@ -11914,7 +11975,7 @@
           "lbl": "abdominal sternite VIII",
           "meta": {
             "definition": {
-              "val": "Is the abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa,",
+              "val": "The abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa.",
               "xrefs": []
             }
           },
@@ -14618,11 +14679,6 @@
             ]
           },
           "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/AISM_00000000",
-          "lbl": "root node",
-          "type": "CLASS"
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000011",
