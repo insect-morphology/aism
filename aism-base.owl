@@ -12,15 +12,15 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-04-23/aism-base.owl"/>
-        <dc:contributor>István Mikó https://orcid.org/0000-0003-2938-9075</dc:contributor>
-        <dc:contributor>Jennifer C. Girón https://orcid.org/0000-0002-0851-6883</dc:contributor>
-        <dc:contributor>Luis A. González Montaña https://orcid.org/0000-0002-9136-9932</dc:contributor>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-04-26/aism-base.owl"/>
+        <dc:contributor>István Mikó (imiko) https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <dc:contributor>Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <dc:contributor>Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932</dc:contributor>
         <dc:description xml:lang="en">The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research.</dc:description>
         <dc:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-23</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -398,9 +398,7 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
 
     <!-- http://purl.obolibrary.org/obo/AISM_00000000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_00000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_00000000"/>
     
 
 
@@ -2930,15 +2928,14 @@ https://doi.org/10.1515/9783110264043
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000407"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000407"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The flat, paired appendage on the dorso-lateral region of the pterothorax.</obo:IAO_0000115>
@@ -2976,8 +2973,8 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000407"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -2987,9 +2984,8 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000407"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -3555,11 +3551,17 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000052"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The insect wing that is continuous with the mesonotum.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The paired insect wing that is continuous with the mesonotum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fore wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3573,6 +3575,17 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000037"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000037"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000052"/>
             </owl:Restriction>
@@ -3582,7 +3595,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000037"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The insect wing that is continuous with the mesonotum.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The paired insect wing that is continuous with the mesonotum.</owl:annotatedTarget>
         <dc:contributor>jgiron</dc:contributor>
         <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
     </owl:Axiom>
@@ -3595,11 +3608,17 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000169"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The insect wing that is continuous with the metanotum.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The paired insect wing that is continuous with the metanotum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">hind wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3607,6 +3626,17 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
         <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000038"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000038"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000038"/>
@@ -3622,7 +3652,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000038"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The insect wing that is continuous with the metanotum.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The paired insect wing that is continuous with the metanotum.</owl:annotatedTarget>
         <dc:contributor>jgiron</dc:contributor>
         <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
     </owl:Axiom>
@@ -12533,11 +12563,11 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The conjunctiva that corresponds to one epithelial cell and surrounds a sclerotized unicellular cuticular evagination.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">socket membrane</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -12570,8 +12600,7 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -12582,6 +12611,13 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget xml:lang="en">The conjunctiva that corresponds to one epithelial cell and surrounds a sclerotized unicellular cuticular evagination.</owl:annotatedTarget>
         <dc:contributor>jgiron</dc:contributor>
         <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000126"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-26</oboInOwl:creation_date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000126"/>
@@ -12599,11 +12635,11 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">unicellular cuticular evagination</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -12618,8 +12654,7 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -12630,6 +12665,13 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000127"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-26</oboInOwl:creation_date>
     </owl:Axiom>
     
 
@@ -12687,11 +12729,11 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The seta that has one opening distally.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Should coincide with &apos;exactly one&apos; pore canal, but that violates OWL specs.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">uniporous sensillum</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -12706,8 +12748,7 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -12719,6 +12760,13 @@ https://doi.org/10.1515/9783110264043
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000130"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget xml:lang="en">Should coincide with &apos;exactly one&apos; pore canal, but that violates OWL specs.</owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+        <oboInOwl:creation_date>2021-04-23</oboInOwl:creation_date>
+    </owl:Axiom>
     
 
 
@@ -12728,9 +12776,8 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000984"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The seta that has multiple cuticular pores (openings of class III exocrine glands).</obo:IAO_0000115>
@@ -12747,9 +12794,8 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000984"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -12881,11 +12927,11 @@ https://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4</obo:AI
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The branching cuticular invagination that corresponds to the invagination of the membrane of a single cell and does not contain taenidia.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">exocrine gland duct</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -12915,8 +12961,7 @@ https://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4</obo:AI
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -12927,6 +12972,13 @@ https://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4</obo:AI
         <owl:annotatedTarget xml:lang="en">The branching cuticular invagination that corresponds to the invagination of the membrane of a single cell and does not contain taenidia.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-26</oboInOwl:creation_date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
@@ -14335,11 +14387,11 @@ https://doi.org/10.1515/9783110264043
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000077"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000077"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -14361,11 +14413,11 @@ https://doi.org/10.1515/9783110264043
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000077"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000077"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -15357,11 +15409,11 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The anatomical space that is contained by the cuticle and connects the inside of the insect with the outside, is tubular, and whose diameter is smaller than 100 nm.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">pore canal</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15398,8 +15450,7 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -15410,6 +15461,13 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget xml:lang="en">The anatomical space that is contained by the cuticle and connects the inside of the insect with the outside, is tubular, and whose diameter is smaller than 100 nm.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2021-02-04</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+        <oboInOwl:creation_date>2021-04-26</oboInOwl:creation_date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000177"/>
@@ -15431,11 +15489,11 @@ https://doi.org/10.1515/9783110264043
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000362"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The solid cuticular protrusion that coincides with only one epidermal cell (smaller than the diameter of the epidermal cell).</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">acantha</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15450,8 +15508,7 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000362"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000362"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -15462,6 +15519,13 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget xml:lang="en">The solid cuticular protrusion that coincides with only one epidermal cell (smaller than the diameter of the epidermal cell).</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2021-02-04</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000178"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget xml:lang="en">Should coincide with &apos;exactly one&apos; epithelial cell, but that violates OWL specs.</owl:annotatedTarget>
+        <dc:contributor>2021-04-26</dc:contributor>
+        <dc:contributor>jgiron</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000178"/>
@@ -15937,6 +16001,12 @@ https://doi.org/10.1515/9783110264043
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000191"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -15965,13 +16035,6 @@ https://doi.org/10.1515/9783110264043
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000191"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The solid, paired, branching cuticular invagination of the head capsule that is attached to the antenna and the mouthparts via muscles.</obo:IAO_0000115>
@@ -16006,6 +16069,17 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000191"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000191"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -16039,18 +16113,6 @@ https://doi.org/10.1515/9783110264043
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>imiko</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000191"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AISM_0000191"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
@@ -21083,7 +21145,7 @@ https://doi.org/10.1515/9783110264043
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000088"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -21112,7 +21174,7 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000088"/>
             </owl:Restriction>
         </owl:annotatedTarget>
@@ -21150,7 +21212,7 @@ https://doi.org/10.1515/9783110264043
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000088"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -21179,7 +21241,7 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000088"/>
             </owl:Restriction>
         </owl:annotatedTarget>
@@ -26866,7 +26928,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa,</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite VIII</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -26971,7 +27033,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004110"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa,</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa.</owl:annotatedTarget>
         <dc:contributor>jgiron</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -39113,6 +39175,14 @@ https://doi.org/10.1515/9783110264043
     <!-- http://purl.obolibrary.org/obo/PATO_0000964 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000964"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000984 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000984">
+        <rdfs:label xml:lang="en">porous</rdfs:label>
+    </owl:Class>
     
 
 

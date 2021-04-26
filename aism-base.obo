@@ -1,19 +1,15 @@
 format-version: 1.2
-data-version: aism/releases/2021-04-23/aism-base.owl
+data-version: aism/releases/2021-04-26/aism-base.owl
 subsetdef: AISM:0000171 ""
 ontology: aism/aism-base
-property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó https://orcid.org/0000-0003-2938-9075" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jennifer C. Girón https://orcid.org/0000-0002-0851-6883" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Luis A. González Montaña https://orcid.org/0000-0002-9136-9932" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-04-23" xsd:string
-
-[Term]
-id: AISM:00000000
-name: root node
+property_value: owl:versionInfo "2021-04-26" xsd:string
 
 [Term]
 id: AISM:0000002
@@ -224,7 +220,7 @@ id: AISM:0000033
 name: insect wing
 def: "The flat, paired appendage on the dorso-lateral region of the pterothorax." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
 is_a: AISM:0000029 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! appendage
-relationship: BSPO:0000106 AISM:0000033 {cardinality="1", http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect wing
+relationship: BSPO:0000106 AISM:0000033 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect wing
 relationship: RO:0000053 PATO:0000407 {http://purl.org/dc/elements/1.1/contributor="imiko"}
 
 [Term]
@@ -276,15 +272,17 @@ relationship: BSPO:0000106 AISM:0000036 {http://purl.org/dc/elements/1.1/contrib
 [Term]
 id: AISM:0000037
 name: fore wing
-def: "The insect wing that is continuous with the mesonotum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
+def: "The paired insect wing that is continuous with the mesonotum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
 is_a: AISM:0000033 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect wing
+relationship: BSPO:0000106 AISM:0000037 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! fore wing
 relationship: RO:0002150 AISM:0000052 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! mesonotum
 
 [Term]
 id: AISM:0000038
 name: hind wing
-def: "The insect wing that is continuous with the metanotum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
+def: "The paired insect wing that is continuous with the metanotum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
 is_a: AISM:0000033 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! insect wing
+relationship: BSPO:0000106 AISM:0000038 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! hind wing
 relationship: RO:0002150 AISM:0000169 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! metanotum
 
 [Term]
@@ -1072,14 +1070,16 @@ id: AISM:0000126
 name: socket membrane {creation_date="2020-11-11"}
 def: "The conjunctiva that corresponds to one epithelial cell and surrounds a sclerotized unicellular cuticular evagination." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
 is_a: AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! conjunctiva
-relationship: RO:0002008 CL:0000066 {cardinality="1", http://purl.org/dc/elements/1.1/contributor="imiko"}
+relationship: RO:0002008 CL:0000066 {http://purl.org/dc/elements/1.1/contributor="imiko"}
+property_value: IAO:0000232 "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs." xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-26"}
 
 [Term]
 id: AISM:0000127
 name: unicellular cuticular evagination
 def: "The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2020-11-11"}
 is_a: AISM:0000027 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! cuticular evagination
-relationship: RO:0002008 CL:0000066 {cardinality="1", http://purl.org/dc/elements/1.1/contributor="imiko"}
+relationship: RO:0002008 CL:0000066 {http://purl.org/dc/elements/1.1/contributor="imiko"}
+property_value: IAO:0000232 "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs." xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-26"}
 
 [Term]
 id: AISM:0000128
@@ -1093,14 +1093,15 @@ id: AISM:0000130
 name: uniporous sensillum
 def: "The seta that has one opening distally." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2020-11-11"}
 is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! seta
-relationship: BFO:0000051 AISM:0000177 {cardinality="1", http://purl.org/dc/elements/1.1/contributor="imiko"} ! pore canal
+relationship: BFO:0000051 AISM:0000177 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! pore canal
+property_value: IAO:0000232 "Should coincide with 'exactly one' pore canal, but that violates OWL specs." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-04-23"}
 
 [Term]
 id: AISM:0000131
 name: multiporous sensillum {creation_date="2020-11-11", http://purl.obolibrary.org/obo/AISM_0000171="Ando, T., Sekine, S., Inagaki, S., Misaki, K., Badel, L., Moriya, H., Sami, M.M., Itakura, Y., Chihara, T., Kazama, H. and Yonemura, S., 2019. Nanopore formation in the cuticle of an insect olfactory sensillum. Current Biology, 29(9), pp.1512-1520.\nhttps://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4"}
 def: "The seta that has multiple cuticular pores (openings of class III exocrine glands)." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-04-21"}
 is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! seta
-relationship: BFO:0000051 AISM:0000177 {minCardinality="2", http://purl.org/dc/elements/1.1/contributor="imiko"} ! pore canal
+relationship: RO:0000053 PATO:0000984 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! porous
 
 [Term]
 id: AISM:0000132
@@ -1121,7 +1122,8 @@ id: AISM:0000134
 name: exocrine gland duct {creation_date="2020-11-11"}
 def: "The branching cuticular invagination that corresponds to the invagination of the membrane of a single cell and does not contain taenidia." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-04-21"}
 is_a: AISM:0000136 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! branching cuticular invagination
-relationship: RO:0002008 CL:0000066 {cardinality="1", http://purl.org/dc/elements/1.1/contributor="imiko"}
+relationship: RO:0002008 CL:0000066 {http://purl.org/dc/elements/1.1/contributor="imiko"}
+property_value: IAO:0000232 "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs." xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-26"}
 
 [Term]
 id: AISM:0000135
@@ -1307,8 +1309,8 @@ id: AISM:0000160
 name: pouch
 def: "The invagination of the cuticle that is largely membraneous." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2020-11-12"}
 is_a: AISM:0000006 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! cuticular invagination
+relationship: BFO:0000051 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! conjunctiva
 relationship: BFO:0000051 BSPO:0000077 {http://purl.org/dc/elements/1.1/contributor="imiko"}
-relationship: RO:0000053 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! conjunctiva
 
 [Term]
 id: AISM:0000161
@@ -1411,14 +1413,16 @@ def: "The anatomical space that is contained by the cuticle and connects the ins
 is_a: UBERON:0000464 {http://purl.org/dc/elements/1.1/contributor="imiko"}
 relationship: RO:0000053 PATO:0001873 {http://purl.org/dc/elements/1.1/contributor="imiko"}
 relationship: RO:0001018 UBERON:0001002 {http://purl.org/dc/elements/1.1/contributor="imiko"}
-relationship: RO:0002008 CL:0000066 {cardinality="1", http://purl.org/dc/elements/1.1/contributor="imiko"}
+relationship: RO:0002008 CL:0000066 {http://purl.org/dc/elements/1.1/contributor="imiko"}
+property_value: IAO:0000232 "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs." xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-26"}
 
 [Term]
 id: AISM:0000178
 name: acantha {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Acanthae: hairs without sockets, one per hypodermal cell.\""}
 def: "The solid cuticular protrusion that coincides with only one epidermal cell (smaller than the diameter of the epidermal cell)." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-02-04"}
 is_a: AISM:0000028 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! solid cuticular protrusion
-relationship: RO:0002008 CL:0000362 {cardinality="1", http://purl.org/dc/elements/1.1/contributor="imiko"}
+relationship: RO:0002008 CL:0000362 {http://purl.org/dc/elements/1.1/contributor="imiko"}
+property_value: IAO:0000232 "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs." xsd:string {http://purl.org/dc/elements/1.1/contributor="2021-04-26", http://purl.org/dc/elements/1.1/contributor="jgiron"}
 
 [Term]
 id: AISM:0000185
@@ -1471,7 +1475,7 @@ def: "The solid, paired, branching cuticular invagination of the head capsule th
 is_a: AISM:0000136 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! branching cuticular invagination
 is_a: AISM:0000138 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! apophysis
 relationship: BFO:0000050 AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! head capsule
-relationship: BSPO:0000106 AISM:0000191 {cardinality="1", http://purl.org/dc/elements/1.1/contributor="imiko"} ! tentorium
+relationship: BSPO:0000106 AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! tentorium
 property_value: IAO:0000232 "The paired apophysis that connects the posterior (ventral in prognathous head) and anterior (dorsal in prognathous head) walls of the head capsule and serves as site of isertion of atennal and mouthpart muscles." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-02-11"}
 
 [Term]
@@ -2600,7 +2604,7 @@ name: compound eye {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Frie
 def: "The sense organ of the insect head that is covered by the eye cuticle." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="jgiron"}
 is_a: UBERON:0000020 {http://purl.org/dc/elements/1.1/contributor="jgiron"}
 relationship: BFO:0000050 AISM:0000107 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! insect head
-relationship: RO:0000053 AISM:0000088 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! eye cuticle
+relationship: BFO:0000051 AISM:0000088 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! eye cuticle
 
 [Term]
 id: AISM:0004053
@@ -2608,7 +2612,7 @@ name: ocellus {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich
 def: "The sense organ of the insect head that is covered by eye cuticle." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="jgiron"}
 is_a: UBERON:0000020 {http://purl.org/dc/elements/1.1/contributor="jgiron"}
 relationship: BFO:0000050 AISM:0000107 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! insect head
-relationship: RO:0000053 AISM:0000088 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! eye cuticle
+relationship: BFO:0000051 AISM:0000088 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! eye cuticle
 
 [Term]
 id: AISM:0004054
@@ -3115,7 +3119,7 @@ relationship: posteriorly_connected_to AISM:0004116 {http://purl.org/dc/elements
 [Term]
 id: AISM:0004110
 name: abdominal sternite VIII
-def: "Is the abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa," [] {creation_date="2021-03-14", http://purl.org/dc/elements/1.1/contributor="jgiron"}
+def: "The abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VII by the abdominal sternite VII-abdominal sternite VIII conjunctiva. In males it is attached to the anterior margin of the abdominal sternite IX by the abdominal sternite VIII-abdominal sternite IX conjunctiva. In females it is attached to the anterior margin of the gonocoxa." [] {creation_date="2021-03-14", http://purl.org/dc/elements/1.1/contributor="jgiron"}
 is_a: AISM:0004058 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! abdominal sternite
 relationship: anteriorly_connected_to AISM:0004116 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! abdominal sternite VII-abdominal sternite VIII conjunctiva
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! postabdomen
@@ -4135,6 +4139,10 @@ is_a: AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! conj
 relationship: BFO:0000050 AISM:0004126 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! mesothorax
 relationship: RO:0002150 AISM:0000064 {comment="jgiron"} ! mesocoxa
 relationship: RO:0002150 AISM:0000121 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! mesosternum
+
+[Term]
+id: PATO:0000984
+name: porous
 
 [Term]
 id: PATO:0002219
