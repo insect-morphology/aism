@@ -29,13 +29,13 @@ The latest version of the ontology can always be found at:
 
 https://github.com/insect-morphology/aism
 
-The AISM was submitted for approval by the [OBO Foundry](http://obofoundry.org/) on [March 26 2021](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1474))
+The AISM was submitted for approval by the [OBO Foundry](http://obofoundry.org/) on [March 26 2021](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1474). The review and acceptance process concluded on May 8 2021.
 
-Once the request has been approved, the AISM will be available at http://purl.obolibrary.org/obo/aism.owl 
+The AISM is available at http://purl.obolibrary.org/obo/aism.owl since May 17 2021.
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/aism-edit.owl](src/ontology/aism-edit.owl)
+Editors of this ontology should use the edit version, [src/ontology/aism-edit.owl](src/ontology/aism-edit.owl). 
 
 ## Contact
 
