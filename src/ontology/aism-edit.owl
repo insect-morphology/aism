@@ -434,6 +434,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004230>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004231>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004232>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004233>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004236>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000677>))
@@ -635,6 +636,13 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002372> "has 
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/AISM_00000000> (cuticular internal depression)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#created_by> "2021 05 19") Annotation(<http://www.geneontology.org/formats/oboInOwl#created_by> "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_00000000> "The projection of the inner surface of the cuticle."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_00000000> "cuticular internal depression"@en)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_00000000> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_00000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001857>))
+
 # Class: <http://purl.obolibrary.org/obo/AISM_0000002> (insect articulation)
 
 AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000002> "The region of the cuticle that is composed two articular surfaces that are adjacent to each other."@en)
@@ -684,9 +692,9 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 
 AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000006> "The region of cuticle that corresponds with an invagination of the single layer epidermis (epidermal fold). The cuticular invagination sometimes corresponds to a cuticular depression (concavity on the surface of the cuticle)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000006> "cuticular invagination"@en)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000006> <http://purl.obolibrary.org/obo/AISM_0000005>)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001748>))
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/UBERON_0005157>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000006> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/AISM_00000000>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/AISM_0000005>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000007> (elastic cuticle)
 
@@ -2002,7 +2010,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Apophysis: hollow cuticular invagination.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000138> "apophysis"@en)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000138> <http://purl.obolibrary.org/obo/AISM_0000006>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000138> <http://purl.obolibrary.org/obo/AISM_00000000>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000138> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000003>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000138> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002078>))
 
@@ -2051,6 +2059,7 @@ https://doi.org/10.1515/9783110264043
 \"Furca (=sternal apophysis, endosternite): endoskeletal element (entapophysis) of furcasternum; paired furcal arms often connected with pleural ridge by short muscle.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000144> "furca"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000144> <http://purl.obolibrary.org/obo/AISM_0000136>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000144> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000144> <http://purl.obolibrary.org/obo/AISM_0000188>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000144> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000144> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BSPO_0000112>))
 SubClassOf(Annotation(rdfs:comment "imiko") <http://purl.obolibrary.org/obo/AISM_0000144> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000077>))))
@@ -2147,7 +2156,8 @@ AnnotationAssertion(Annotation(dce:contributor "jgiron") Annotation(<http://www.
 AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000157> "The cuticular depression (concavity on the surface of the cuticle) that does not correspond to a cuticular invagination (epithelial fold). The cuticule is less thick at the site of a cuticular impression.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000157> "impression"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000157> <http://purl.obolibrary.org/obo/AISM_0000005>)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000157> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/UBERON_0005157>)))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000157> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/AISM_0000158>)))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000157> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001154>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000158> (ridge)
 
@@ -2158,9 +2168,8 @@ https://doi.org/10.1515/9783110264043
 
 \"Ridge: cuticular strengthening ridge.\"
 \"They are not lines of fusion or molting lines.\"(p. 12)"@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000158> "ridge"@en)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000158> <http://purl.obolibrary.org/obo/AISM_0000006>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000158> <http://purl.obolibrary.org/obo/AISM_0000188>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000003>))
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0000158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000591>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001154>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000159> (salivarium)
@@ -2313,6 +2322,7 @@ https://doi.org/10.1515/9783110264043
 
 \"Acanthae: hairs without sockets, one per hypodermal cell.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000178> "acantha"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000178> <http://purl.obolibrary.org/obo/AISM_0000028>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000178> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/CL_0000066>))))))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000178> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> <http://purl.obolibrary.org/obo/CL_0000362>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000185> (sensillum chaeticum)
@@ -2362,7 +2372,7 @@ https://doi.org/10.1515/9783110264043
 https://doi.org/10.1111/j.1096-3642.2001.tb02239.x 
 
 \"tendon is used herein to designate sclerotized internal cuticular projections\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000188> "apodeme"@en)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000188> <http://purl.obolibrary.org/obo/AISM_0000006>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000188> <http://purl.obolibrary.org/obo/AISM_00000000>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000188> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002078>)))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000188> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000003>))
 
@@ -2400,7 +2410,7 @@ https://doi.org/10.1515/9783110264043
 
 \"Tentorium: cephalic endoskeleton, usually composed of paired anterior, posterior and dorsal tentorial arms and a transverse tentorial bridge (corpotentorium).\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0000191> "tentorium"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000191> <http://purl.obolibrary.org/obo/AISM_0000136>)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000191> <http://purl.obolibrary.org/obo/AISM_0000138>)
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000191> <http://purl.obolibrary.org/obo/AISM_0000188>)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000019>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0000191>))
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000032>))))
