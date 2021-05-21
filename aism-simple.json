@@ -399,6 +399,21 @@
           "sub": "http://purl.obolibrary.org/obo/AISM/AISM_0002088"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_00000000",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000006"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_00000000",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000138"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_00000000",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000188"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000002",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000014"
@@ -427,11 +442,6 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0000003",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000138"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/AISM_0000003",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://purl.obolibrary.org/obo/AISM_0000158"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000003",
@@ -1015,7 +1025,7 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000005",
-          "pred": "is_a",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000006"
         },
         {
@@ -1051,22 +1061,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000006",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/AISM_0000138"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/AISM_0000006",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/AISM_0000158"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/AISM_0000006",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000160"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/AISM_0000006",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/AISM_0000188"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000006",
@@ -1107,6 +1102,11 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0000008",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000190"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000008",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000501"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000008",
@@ -3981,11 +3981,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000138",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/AISM_0000191"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/AISM_0000138",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004024"
         },
         {
@@ -4381,6 +4376,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_00000000"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000002"
         },
         {
@@ -4397,6 +4397,11 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000005"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000006"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
@@ -4647,6 +4652,16 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0000188",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM/AISM_0002048"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000188",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000158"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000188",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000191"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000188",
@@ -7572,6 +7587,10 @@
             "val": "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932"
           },
           {
+            "pred": "http://purl.org/dc/elements/1.1/contributor",
+            "val": "Sergei Tarasov (starasov) https://orcid.org/0000-0001-5237-2330"
+          },
+          {
             "pred": "http://purl.org/dc/elements/1.1/description",
             "val": "The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research."
           },
@@ -7585,11 +7604,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-04-26"
+            "val": "2021-05-21"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/aism/releases/2021-04-26/aism-simple.json",
+        "version": "http://purl.obolibrary.org/obo/aism/releases/2021-05-21/aism-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -8283,7 +8302,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM/AISM_0002067",
-          "lbl": "dorsoventral thoracic muscle",
+          "lbl": "dorso-ventral thoracic muscle",
           "meta": {
             "definition": {
               "val": "The insect thoracic muscle that runs parallel to the dorsal-ventral axis.",
@@ -8507,6 +8526,17 @@
           "meta": {
             "definition": {
               "val": "The insect abdominal muscle that runs along the dorsal region, parallel to the anterior-posterior axis.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/AISM_00000000",
+          "lbl": "cuticular internal depression",
+          "meta": {
+            "definition": {
+              "val": "The projection of the inner surface of the cuticle.",
               "xrefs": []
             }
           },
@@ -9662,12 +9692,6 @@
           "id": "http://purl.obolibrary.org/obo/AISM_0000107",
           "lbl": "insect head",
           "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.org/dc/elements/1.1/description",
-                "val": ""
-              }
-            ],
             "definition": {
               "val": "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the head capsule, the antenna, the eyes, mouthparts and surrounds the brain.",
               "xrefs": []
@@ -10643,7 +10667,7 @@
           "lbl": "gonocoxa IX",
           "meta": {
             "definition": {
-              "val": "Is the paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX.",
+              "val": "The paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX.",
               "xrefs": []
             },
             "synonyms": [
@@ -10672,6 +10696,17 @@
           "meta": {
             "definition": {
               "val": "Is the conjunctiva of the postabdomen that connects the abdominal tergite IX and the gonocoxa IX.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/AISM_0000501",
+          "lbl": "carina",
+          "meta": {
+            "definition": {
+              "val": "The protrusion on a sclerite that is elongated.",
               "xrefs": []
             }
           },
@@ -11496,7 +11531,7 @@
           "lbl": "genital chamber",
           "meta": {
             "definition": {
-              "val": "The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII and is adjacent to the gonopore.",
+              "val": "The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII, and is adjacent to the gonopore.",
               "xrefs": []
             }
           },
@@ -11865,7 +11900,7 @@
           "lbl": "abdominal sternite I",
           "meta": {
             "definition": {
-              "val": "Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the metasternum by the metasterno-abdominal sternite I conjunctiva and to the anterior margin of the abdominal sternite II by the abdominal sternite I-abdominal sternite II conjunctiva.",
+              "val": "The abdominal sternite of the preabdomen that is attached to the posterior margin of the metasternum by the metasterno-abdominal sternite I conjunctiva and to the anterior margin of the abdominal sternite II by the abdominal sternite I-abdominal sternite II conjunctiva.",
               "xrefs": []
             }
           },

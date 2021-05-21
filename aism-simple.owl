@@ -13,14 +13,15 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-04-26/aism-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-05-21/aism-simple.owl"/>
         <dc:contributor>István Mikó (imiko) https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <dc:contributor>Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <dc:contributor>Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932</dc:contributor>
+        <dc:contributor>Sergei Tarasov (starasov) https://orcid.org/0000-0001-5237-2330</dc:contributor>
         <dc:description xml:lang="en">The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research.</dc:description>
         <dc:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-26</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-05-21</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1141,7 +1142,24 @@ range: spatial region or site (immaterial continuant)
 
     <!-- http://purl.obolibrary.org/obo/AISM_00000000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_00000000"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_00000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <obo:IAO_0000115 xml:lang="en">The projection of the inner surface of the cuticle.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cuticular internal depression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_00000000"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_00000000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The projection of the inner surface of the cuticle.</owl:annotatedTarget>
+        <oboInOwl:created_by>2021 05 19</oboInOwl:created_by>
+        <oboInOwl:created_by>jgiron</oboInOwl:created_by>
+    </owl:Axiom>
     
 
 
@@ -1382,14 +1400,48 @@ https://doi.org/10.1515/9783110264043
     <!-- http://purl.obolibrary.org/obo/AISM_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_00000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The region of cuticle that corresponds with an invagination of the single layer epidermis (epidermal fold). The cuticular invagination sometimes corresponds to a cuticular depression (concavity on the surface of the cuticle).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cuticular invagination</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_00000000"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -1661,45 +1713,6 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
-        <dc:contributor>imiko</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000044"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>jgiron</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000099"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>imiko</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000110"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>imiko</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
@@ -1735,6 +1748,45 @@ https://doi.org/10.1515/9783110264043
 https://doi.org/10.1515/9783110264043
 
 &quot;Cardo: basal element of maxilla, articulating with head capsule; usually moved by one cranial muscle and one tentorial muscle.&quot;</obo:AISM_0000171>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000044"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000099"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000018"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000110"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     
 
@@ -8214,7 +8266,6 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the head capsule, the antenna, the eyes, mouthparts and surrounds the brain.</obo:IAO_0000115>
-        <dc:description></dc:description>
         <rdfs:label xml:lang="en">insect head</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -9930,6 +9981,12 @@ https://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4</obo:AI
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000132"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">placoid sensillum</owl:annotatedTarget>
+        <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000132"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000133"/>
         <dc:contributor>imiko</dc:contributor>
@@ -9940,12 +9997,6 @@ https://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4</obo:AI
         <owl:annotatedTarget xml:lang="en">The multiporous plate that is elongated.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000132"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">placoid sensillum</owl:annotatedTarget>
-        <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
     </owl:Axiom>
     
 
@@ -10000,6 +10051,12 @@ https://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4</obo:AI
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000136"/>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Class>
                 <owl:complementOf>
@@ -10031,12 +10088,6 @@ https://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4</obo:AI
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">exocrine gland duct</owl:annotatedTarget>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000136"/>
-        <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     
 
@@ -10137,7 +10188,7 @@ https://doi.org/10.1515/9783110264043
     <!-- http://purl.obolibrary.org/obo/AISM_0000138 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000138">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_00000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -10151,7 +10202,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000138"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_00000000"/>
         <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -10887,6 +10938,16 @@ https://doi.org/10.1515/9783110264043
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000157">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000158"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The cuticular depression that does not correspond to an epithelial fold.</obo:IAO_0000115>
         <obo:IAO_0000232>The cuticular depression (concavity on the surface of the cuticle) that does not correspond to a cuticular invagination (epithelial fold). The cuticule is less thick at the site of a cuticular impression.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">impression</rdfs:label>
@@ -10895,6 +10956,21 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000157"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+        <dc:contributor>imiko</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000157"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000158"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -10917,31 +10993,14 @@ https://doi.org/10.1515/9783110264043
     <!-- http://purl.obolibrary.org/obo/AISM_0000158 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000158">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000188"/>
         <obo:IAO_0000115>The invagination on a sclerite that is elongated.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000158"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
-        <dc:contributor>imiko</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000158"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000188"/>
         <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -11881,7 +11940,7 @@ https://doi.org/10.1515/9783110264043
     <!-- http://purl.obolibrary.org/obo/AISM_0000188 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000188">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_00000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -11894,7 +11953,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000188"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_00000000"/>
         <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -12054,7 +12113,7 @@ https://doi.org/10.1515/9783110264043
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000136"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000138"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000188"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -12080,7 +12139,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000191"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000138"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000188"/>
         <dc:contributor>imiko</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -12524,7 +12583,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000201"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">second coxopodite</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">second gonocoxite</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">second valvifer</oboInOwl:hasExactSynonym>
@@ -12603,7 +12662,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000200"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2021-03-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -12710,6 +12769,32 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the postabdomen that connects the abdominal tergite IX and the gonocoxa IX.</owl:annotatedTarget>
         <dc:contributor>imiko</dc:contributor>
         <oboInOwl:creation_date>2021-03-19</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
+        <obo:IAO_0000115>The protrusion on a sclerite that is elongated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">carina</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000501"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The protrusion on a sclerite that is elongated.</owl:annotatedTarget>
+        <dc:contributor>starasov</dc:contributor>
+        <oboInOwl:creation_date>2021-05-06</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000501"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">carina</owl:annotatedTarget>
+        <obo:AISM_0000171>???????
+Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
     </owl:Axiom>
     
 
@@ -17725,7 +17810,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII and is adjacent to the gonopore.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII, and is adjacent to the gonopore.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">genital chamber</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -17781,7 +17866,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004069"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII and is adjacent to the gonopore.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII, and is adjacent to the gonopore.</owl:annotatedTarget>
         <dc:contributor>jgiron</dc:contributor>
         <oboInOwl:creation_date>2021-03-05</oboInOwl:creation_date>
     </owl:Axiom>
@@ -19827,7 +19912,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the metasternum by the metasterno-abdominal sternite I conjunctiva and to the anterior margin of the abdominal sternite II by the abdominal sternite I-abdominal sternite II conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the metasternum by the metasterno-abdominal sternite I conjunctiva and to the anterior margin of the abdominal sternite II by the abdominal sternite I-abdominal sternite II conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite I</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -19872,7 +19957,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004100"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the metasternum by the metasterno-abdominal sternite I conjunctiva and to the anterior margin of the abdominal sternite II by the abdominal sternite I-abdominal sternite II conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the metasternum by the metasterno-abdominal sternite I conjunctiva and to the anterior margin of the abdominal sternite II by the abdominal sternite I-abdominal sternite II conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron</dc:contributor>
         <rdfs:comment>2021-03-14</rdfs:comment>
     </owl:Axiom>
@@ -31909,7 +31994,7 @@ https://doi.org/10.1016/j.asd.2007.04.003</obo:AISM_0000171>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM/AISM_0002067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002065"/>
         <obo:IAO_0000115 xml:lang="en">The insect thoracic muscle that runs parallel to the dorsal-ventral axis.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">dorsoventral thoracic muscle</rdfs:label>
+        <rdfs:label xml:lang="en">dorso-ventral thoracic muscle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
@@ -31927,7 +32012,7 @@ https://doi.org/10.1016/j.asd.2007.04.003</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM/AISM_0002067"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">dorsoventral thoracic muscle</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">dorso-ventral thoracic muscle</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Friedrich, F., &amp; Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. 
 Arthropod Structure &amp; Development, 37(1), 29-54.
 
