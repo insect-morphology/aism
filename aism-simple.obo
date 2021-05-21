@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2021-04-26/aism-simple.owl
+data-version: aism/releases/2021-05-21/aism-simple.owl
 subsetdef: AISM:0000171 ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -11,10 +11,17 @@ ontology: aism/aism-simple
 property_value: dc-contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
 property_value: dc-contributor "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883" xsd:string
 property_value: dc-contributor "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932" xsd:string
+property_value: dc-contributor "Sergei Tarasov (starasov) https://orcid.org/0000-0001-5237-2330" xsd:string
 property_value: dc-description "The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research." xsd:string
 property_value: dc-title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-04-26" xsd:string
+property_value: owl:versionInfo "2021-05-21" xsd:string
+
+[Term]
+id: AISM:00000000
+name: cuticular internal depression
+def: "The projection of the inner surface of the cuticle." [] {created_by="jgiron", created_by="2021 05 19"}
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! region of cuticle
 
 [Term]
 id: AISM:0000002
@@ -49,7 +56,9 @@ property_value: curator_notes "The surface of the cuticle in insects is the enti
 id: AISM:0000006
 name: cuticular invagination
 def: "The region of cuticle that corresponds with an invagination of the single layer epidermis (epidermal fold). The cuticular invagination sometimes corresponds to a cuticular depression (concavity on the surface of the cuticle)." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2020-10-27"}
-is_a: AISM:0000005 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! cuticular depression
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! region of cuticle
+relationship: RO:0002008 AISM:00000000 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! coincident with cuticular internal depression
+relationship: RO:0002008 AISM:0000005 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! coincident with cuticular depression
 
 [Term]
 id: AISM:0000007
@@ -869,7 +878,6 @@ relationship: has_part AISM:0000099 {http://purl.org/dc/elements/1.1/contributor
 relationship: has_part AISM:0000105 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! epipharynx
 relationship: has_part AISM:0000112 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! cranio-antennal conjunctiva
 relationship: has_part AISM:0000165 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! mouthpart
-property_value: dc-description "" xsd:string
 
 [Term]
 id: AISM:0000108
@@ -1107,7 +1115,7 @@ is_a: AISM:0000136 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! branc
 id: AISM:0000138
 name: apophysis {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Apophysis: hollow cuticular invagination.\""}
 def: "The cuticular invagination that is hollow." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-04-21"}
-is_a: AISM:0000006 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! cuticular invagination
+is_a: AISM:00000000 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! cuticular internal depression
 relationship: part_of AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! sclerite
 property_value: curator_notes "The apophysis in HAO refers to an ivagination of the cuticle that is cylindrical as opposed to a ridge that is elongate. Beutel et al. 2014 differentiate apodemes from apophyses in that apodemes are solid and apophyses are hollow." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2020-11-11"}
 
@@ -1241,8 +1249,7 @@ property_value: curator_notes "The cuticular depression (concavity on the surfac
 id: AISM:0000158
 name: ridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ridge: cuticular strengthening ridge.\"\n\"They are not lines of fusion or molting lines.\"(p. 12)"}
 def: "The invagination on a sclerite that is elongated." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2020-11-11"}
-is_a: AISM:0000006 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! cuticular invagination
-relationship: part_of AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! sclerite
+is_a: AISM:0000188 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! apodeme
 
 [Term]
 id: AISM:0000159
@@ -1386,7 +1393,7 @@ is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! seta
 id: AISM:0000188
 name: apodeme {http://purl.obolibrary.org/obo/AISM_0000171="Klass K-D (2001) The female abdomen of the viviparous earwig Hemimerus vosseleri (Insecta: Dermaptera: Hemimeridae), with a discussion of the postgenital abdomen of Insecta. Zoological Journal of the Linnean Society 131: 251–307. \n\nhttps://doi.org/10.1111/j.1096-3642.2001.tb02239.x \n\n\"tendon is used herein to designate sclerotized internal cuticular projections\"", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Apodeme: solid cuticular invagination serving as muscle insertion area.\""}
 def: "The solid cuticular invagination of a sclerite." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
-is_a: AISM:0000006 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! cuticular invagination
+is_a: AISM:00000000 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! cuticular internal depression
 relationship: part_of AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! sclerite
 
 [Term]
@@ -1409,7 +1416,7 @@ id: AISM:0000191
 name: tentorium {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tentorium: cephalic endoskeleton, usually composed of paired anterior, posterior and dorsal tentorial arms and a transverse tentorial bridge (corpotentorium).\""}
 def: "The solid, paired, branching cuticular invagination of the head capsule that is attached to the antenna and the mouthparts via muscles." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-21"}
 is_a: AISM:0000136 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! branching cuticular invagination
-is_a: AISM:0000138 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! apophysis
+is_a: AISM:0000188 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! apodeme
 relationship: contralateral_to AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! tentorium
 relationship: part_of AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="imiko"} ! head capsule
 property_value: curator_notes "The paired apophysis that connects the posterior (ventral in prognathous head) and anterior (dorsal in prognathous head) walls of the head capsule and serves as site of isertion of atennal and mouthpart muscles." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-02-11"}
@@ -1468,7 +1475,7 @@ relationship: has_part AISM:0000190 {http://purl.org/dc/elements/1.1/contributor
 [Term]
 id: AISM:0000200
 name: gonocoxa IX
-def: "Is the paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-03-19"}
+def: "The paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX." [] {http://purl.org/dc/elements/1.1/contributor="imiko", creation_date="2021-03-19"}
 synonym: "second coxopodite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "second gonocoxite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "second valvifer" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
@@ -1485,6 +1492,12 @@ is_a: AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! conj
 relationship: continuous_with AISM:0000200 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! gonocoxa IX
 relationship: continuous_with AISM:0004117 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! abdominal tergite IX
 relationship: part_of AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! postabdomen
+
+[Term]
+id: AISM:0000501
+name: carina {http://purl.obolibrary.org/obo/AISM_0000171="???????\nBeutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043"}
+def: "The protrusion on a sclerite that is elongated." [] {http://purl.org/dc/elements/1.1/contributor="starasov", creation_date="2021-05-06"}
+is_a: AISM:0000008 ! cuticular protrusion
 
 [Term]
 id: AISM:0002002
@@ -1937,7 +1950,7 @@ is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} 
 
 [Term]
 id: AISM:0002067
-name: dorsoventral thoracic muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
+name: dorso-ventral thoracic muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
 def: "The insect thoracic muscle that runs parallel to the dorsal-ventral axis." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
 is_a: AISM:0002065 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! insect thoracic muscle
 
@@ -2014,20 +2027,20 @@ relationship: part_of AISM:0000052 {http://purl.org/dc/elements/1.1/contributor=
 id: AISM:0002078
 name: anterior cervico-occipital muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"The dorsoventral muscle that arises from dorsolateral postocciput and inserts on anterior tip of first lateral cervical sclerite.\""}
 def: "The dorsoventral thoracic muscle of the prothorax that is attached to the anterior margin of a cervical sclerite and the dorso-lateral region of the postocciput." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
-is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorso-ventral thoracic muscle
 relationship: part_of AISM:0004125 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! prothorax
 
 [Term]
 id: AISM:0002079
 name: anterior pronoto-cervical muscle {def="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"The dorsoventral muscle that arises from anterolateral pronotum and inserts on atypically on middle region of anterior propleural sclerite.\""}
 def: "The dorsoventral thoracic muscle that extends between the antero-lateral region of the pronotum and the medial region of the propleuron." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
-is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorso-ventral thoracic muscle
 
 [Term]
 id: AISM:0002080
 name: prophragma-tentorial muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
 def: "The dorsoventral thoracic muscle that extends between the tentorium and the prophragma." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
-is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorso-ventral thoracic muscle
 relationship: continuous_with AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! tentorium
 relationship: continuous_with AISM:0002076 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! prophragma
 
@@ -2035,14 +2048,14 @@ relationship: continuous_with AISM:0002076 {http://purl.org/dc/elements/1.1/cont
 id: AISM:0002081
 name: profurca-prophragmal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003\n\n\"The dorsoventral muscle that arises from posterior face of proximal profurcal arm and inserts on lateral prophragma.\""}
 def: "The dorsoventral thoracic muscle that extends between the profurca and the lateral region of the prophragma." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
-is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorso-ventral thoracic muscle
 relationship: continuous_with AISM:0000143 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! profurca
 
 [Term]
 id: AISM:0002082
 name: profurca-occipital muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
 def: "The dorsoventral thoracic muscle that extends between the posterior region (occipital region) of the head capsule and the profurca." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
-is_a: AISM:0002067 ! dorsoventral thoracic muscle
+is_a: AISM:0002067 ! dorso-ventral thoracic muscle
 relationship: continuous_with AISM:0000143 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! profurca
 
 [Term]
@@ -2055,7 +2068,7 @@ is_a: AISM:0002066 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} 
 id: AISM:0002084
 name: profurca-mesonotal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Friedrich, F., & Beutel, R. G. (2008). The thorax of Zorotypus (Hexapoda, Zoraptera) and a new nomenclature for the musculature of Neoptera. \nArthropod Structure & Development, 37(1), 29-54.\n\nhttps://doi.org/10.1016/j.asd.2007.04.003"}
 def: "The dorsoventral thoracic muscle that extends between the profurca and the mesonotum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-04-22"}
-is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorsoventral thoracic muscle
+is_a: AISM:0002067 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo"} ! dorso-ventral thoracic muscle
 relationship: continuous_with AISM:0000052 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! mesonotum
 relationship: continuous_with AISM:0000143 ! profurca
 
@@ -2667,7 +2680,7 @@ relationship: part_of AISM:0004056 {http://purl.org/dc/elements/1.1/contributor=
 [Term]
 id: AISM:0004069
 name: genital chamber {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Genital chamber: cavity formed by an inflection of the body wall, receiving the common oviduct.\""}
-def: "The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII and is adjacent to the gonopore." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-03-05"}
+def: "The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII, and is adjacent to the gonopore." [] {http://purl.org/dc/elements/1.1/contributor="jgiron", creation_date="2021-03-05"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! region of cuticle
 relationship: adjacent_to AISM:0004075 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! gonopore
 relationship: continuous_with AISM:0004067 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! bursa copulatrix
@@ -2928,7 +2941,7 @@ relationship: part_of AISM:0000109 {http://purl.org/dc/elements/1.1/contributor=
 [Term]
 id: AISM:0004100
 name: abdominal sternite I
-def: "Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the metasternum by the metasterno-abdominal sternite I conjunctiva and to the anterior margin of the abdominal sternite II by the abdominal sternite I-abdominal sternite II conjunctiva." [] {comment="2021-03-14", http://purl.org/dc/elements/1.1/contributor="jgiron"}
+def: "The abdominal sternite of the preabdomen that is attached to the posterior margin of the metasternum by the metasterno-abdominal sternite I conjunctiva and to the anterior margin of the abdominal sternite II by the abdominal sternite I-abdominal sternite II conjunctiva." [] {comment="2021-03-14", http://purl.org/dc/elements/1.1/contributor="jgiron"}
 is_a: AISM:0004058 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! abdominal sternite
 relationship: anteriorly_connected_to AISM:0004102 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! metasterno-abdominal sternite I conjunctiva
 relationship: part_of AISM:0004055 {http://purl.org/dc/elements/1.1/contributor="jgiron"} ! preabdomen
