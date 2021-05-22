@@ -45,4 +45,4 @@ If you would like to collaborate editing the AISM or need assistance using the A
 
 ## Acknowledgements
 
-This ontology repository was created using the [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit)
+This ontology repository was created using the [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit). The development of this ontology is supported by the [Department of Entomology of Purdue University](https://ag.purdue.edu/entm/Pages/default.aspx) and the National Science Foundation, NSF ARTS Program (DEB #s [1523605](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1523605), [1754630](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1754630), and [2009247](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2009247)).
