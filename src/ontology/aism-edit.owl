@@ -218,6 +218,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000532>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000533>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000534>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000535>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000536>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0000537>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0002002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0002003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0002004>))
@@ -574,6 +576,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000012>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000078>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000079>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000519>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000538>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BSPO_0000099>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BSPO_0000106>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PATO_0000642>))
@@ -643,14 +646,21 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#cre
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000079> "encircled by"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/RO_0002150>)
 
-# Object Property: <http://purl.obolibrary.org/obo/AISM_0000519> (links to)
+# Object Property: <http://purl.obolibrary.org/obo/AISM_0000519> (encircles via conjunctiva)
 
-AnnotationAssertion(Annotation(dce:contributor "starasov") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-05-31") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000519> "sclerite A links_to sclerite B iff A encircled_by conjuntiva X that encircles B")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000519> "links to"@en)
+AnnotationAssertion(Annotation(dce:contributor "starasov") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-05-31") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000519> "sclerite A encircles_via_conjunctiva sclerite B iff A encircled_by conjuntiva X that encircles B")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000519> "encircles via conjunctiva"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000519> <http://purl.obolibrary.org/obo/RO_0002323>)
-SymmetricObjectProperty(<http://purl.obolibrary.org/obo/AISM_0000519>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/AISM_0000519> <http://purl.obolibrary.org/obo/AISM_0000538>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/AISM_0000519> <http://purl.obolibrary.org/obo/AISM_0000003>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/AISM_0000519> <http://purl.obolibrary.org/obo/AISM_0000003>)
+
+# Object Property: <http://purl.obolibrary.org/obo/AISM_0000538> (encircled via conjunctiva)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000538> "encircled via conjunctiva"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/AISM_0000538> <http://purl.obolibrary.org/obo/RO_0002323>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/AISM_0000538> <http://purl.obolibrary.org/obo/AISM_0000003>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/AISM_0000538> <http://purl.obolibrary.org/obo/AISM_0000003>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002372> (has_muscle_origin)
 
@@ -667,7 +677,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002372> "has 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#created_by> "2021 05 19") Annotation(<http://www.geneontology.org/formats/oboInOwl#created_by> "jgiron") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_00000000> "The projection of the inner surface of the cuticle."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_00000000> "cuticular internal depression"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_00000000> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_00000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_00000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000537>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_00000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001857>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000002> (insect articulation)
@@ -712,9 +722,9 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-10-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000005> "The region of the cuticle that corresponds to a concave surface."@en)
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000005> "External cuticular depression. The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Concavities sometimes correspons with invaginations of the cuticle and the underlaying sinlge layer epidermis, somtimes correspond to a decreased cuticular thickness.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000005> "cuticular depression"@en)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000005> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001002>))))
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035159>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001857>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000005> <http://purl.obolibrary.org/obo/AISM_0000174>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000536>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001857>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000006> (cuticular invagination)
 
@@ -737,7 +747,8 @@ AnnotationAssertion(Annotation(dce:contributor "imiko") Annotation(<http://www.g
 AnnotationAssertion(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/AISM_0000008> "The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.\"")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000008> "cuticular protrusion"@en)
 SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000008> <http://purl.obolibrary.org/obo/AISM_0000174>)
-SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035159>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001355>))))
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000536>))
+SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/AISM_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0001355>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000013> (evaginated)
 
@@ -2647,6 +2658,18 @@ SubClassOf(Annotation(dce:contributor "imiko") <http://purl.obolibrary.org/obo/A
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000535> "conjunctival appendage"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000535> <http://purl.obolibrary.org/obo/AISM_0000029>)
 SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000535> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/AISM_0000004>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000536> (external side)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000536> "external side"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000536> <http://purl.obolibrary.org/obo/BSPO_0000054>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000536> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000113> <http://purl.obolibrary.org/obo/AISM_0000537>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0000537> (internal side)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000537> "internal side"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000537> <http://purl.obolibrary.org/obo/BSPO_0000054>)
+SubClassOf(<http://purl.obolibrary.org/obo/AISM_0000537> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000113> <http://purl.obolibrary.org/obo/AISM_0000536>))
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0002002> (anterior tentorio-scapal muscle)
 
@@ -5696,9 +5719,9 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Be
 https://doi.org/10.1515/9783110264043
 
 \"Cerci: tactile appendages of segment XI, primarily multisegmented and tactile bearing setae.\""@en) rdfs:label <http://purl.obolibrary.org/obo/AISM_0004165> "cercus"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/AISM_0004165> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000008> <http://purl.obolibrary.org/obo/AISM_0000522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000519> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000523>))))
-EquivalentClasses(<http://purl.obolibrary.org/obo/AISM_0004165> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000008> <http://purl.obolibrary.org/obo/AISM_0000522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000519> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000523>)))))
-SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004165> <http://purl.obolibrary.org/obo/AISM_0000029>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/AISM_0004165> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000008> <http://purl.obolibrary.org/obo/AISM_0000522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000538> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000523>))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/AISM_0004165> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000008> <http://purl.obolibrary.org/obo/AISM_0000522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000538> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000523>)))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/AISM_0004165> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/AISM_0000522> ObjectUnionOf(<http://purl.obolibrary.org/obo/AISM_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/AISM_0000008>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000523>)))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004165> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004056>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004165> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BSPO_0000106> <http://purl.obolibrary.org/obo/AISM_0004165>))
 SubClassOf(Annotation(dce:contributor "jgiron") <http://purl.obolibrary.org/obo/AISM_0004165> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002220> <http://purl.obolibrary.org/obo/AISM_0004060>))
@@ -6381,4 +6404,5 @@ AnnotationAssertion(rdfs:label <http://rs.tdwg.org/dwc/terms/Organism> "Organism
 
 
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/AISM_0000078> <http://purl.obolibrary.org/obo/AISM_0000078>) <http://purl.obolibrary.org/obo/AISM_0000519>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000079>) <http://purl.obolibrary.org/obo/AISM_0000538>)
 )
