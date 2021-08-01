@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2021-07-03/aism-base.owl
+data-version: aism/releases/2021-08-01/aism-base.owl
 subsetdef: AISM:0000171 ""
 ontology: aism/aism-base
 property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
@@ -10,7 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/description "The ontology for th
 property_value: http://purl.org/dc/elements/1.1/title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-07-03" xsd:string
+property_value: owl:versionInfo "2021-08-01" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -46,8 +46,11 @@ property_value: IAO:0000232 "Conjunctivae are more flexible and usually less thi
 id: AISM:0000005
 name: cuticular depression
 def: "The region of the cuticle that corresponds to a concave surface." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
-is_a: AISM:0000174 ! region of cuticle
-relationship: BFO:0000050 BSPO:0000378 ! external side
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
+intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! region of cuticle
+intersection_of: BFO:0000050 BSPO:0000378 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! external side
+intersection_of: RO:0000053 PATO:0001857 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"}
+relationship: BFO:0000050 BSPO:0000378 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! external side
 relationship: RO:0000053 PATO:0001857 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 property_value: IAO:0000232 "External cuticular depression. The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Concavities sometimes correspons with invaginations of the cuticle and the underlaying sinlge layer epidermis, somtimes correspond to a decreased cuticular thickness." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
@@ -71,7 +74,10 @@ id: AISM:0000008
 name: cuticular protrusion
 def: "The region of the cuticle that corresponds to a convex surface." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
-relationship: BFO:0000050 BSPO:0000378 ! external side
+intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
+intersection_of: BFO:0000050 BSPO:0000378 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! external side
+intersection_of: RO:0000053 PATO:0001355 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+relationship: BFO:0000050 BSPO:0000378 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! external side
 relationship: RO:0000053 PATO:0001355 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 property_value: IAO:0000232 "The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.\"" xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
@@ -154,26 +160,27 @@ relationship: BSPO:0000096 AISM:0004223 {http://purl.org/dc/elements/1.1/contrib
 [Term]
 id: AISM:0000023
 name: galea {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Galea: outer endite lobe of maxilla, usually semimembranous and equipped with sensilla (mainly chemoreceptors).\""}
-def: "Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+def: "The appendage of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
+is_a: AISM:0000029 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! appendage
 relationship: BFO:0000050 AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect maxilla
 relationship: RO:0002150 AISM:0004011 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! stipito-galeal conjunctiva
-relationship: RO:0002220 AISM:0000111 ! stipes
+relationship: RO:0002220 AISM:0000111 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! stipes
 
 [Term]
 id: AISM:0000024
 name: labial palpus {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Labial palp: tactile appendage of the labium.\""}
-def: "Is the appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
+def: "The paired appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
 is_a: AISM:0000029 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! appendage
 relationship: AISM:0000079 AISM:0004017 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by palpigero-palpal conjunctiva
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! labium
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002220 AISM:0004006 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! palpiger
 
 [Term]
 id: AISM:0000026
 name: lacinia {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Lacinia: inner endite lobe of maxilla, usually firmly connected or fused with stipes; usually sclerotized, with mesally curved apex and articulated spines arranged along mesal edge.\""}
-def: "Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-lacinial conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+def: "The appendage of the insect maxilla that is attached to the stipes by the stipito-lacinial conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
+is_a: AISM:0000029 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! appendage
 relationship: BFO:0000050 AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect maxilla
 relationship: RO:0002150 AISM:0004009 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! stipito-lacinial conjunctiva
 relationship: RO:0002220 AISM:0000111 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! stipes
@@ -183,6 +190,9 @@ id: AISM:0000027
 name: cuticular evagination
 def: "The region of cuticle that corresponds with an evagination of the cuticle and the single layer epidermis (epidermal fold). The cuticular evagination usually corresponds to a cuticular protrusion (convexity on the surface of the cuticle)." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular protrusion
+intersection_of: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! cuticular protrusion
+intersection_of: RO:0000053 AISM:0000013 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! evaginated
+intersection_of: RO:0002008 UBERON:0005157 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"}
 relationship: RO:0000053 AISM:0000013 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! evaginated
 relationship: RO:0002008 UBERON:0005157 {creation_date="imiko https://orcid.org/0000-0003-2938-9075"}
 
@@ -194,9 +204,11 @@ is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 
 [Term]
 id: AISM:0000029
-name: appendage
+name: appendage {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"any part, piece, or organ attached by a joint to the body or to any other main structure\""}
 def: "The evagination of the cuticle that is musculated (connected to the body via muscles)." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000128 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! multicellular cuticular evagination
+intersection_of: AISM:0000128 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! multicellular cuticular evagination
+intersection_of: RO:0002150 UBERON:0001134 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"}
 relationship: RO:0002150 UBERON:0001134 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
 [Term]
@@ -212,6 +224,7 @@ relationship: BFO:0000051 AISM:0000077 {http://purl.org/dc/elements/1.1/contribu
 relationship: BFO:0000051 AISM:0004168 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! trochanter
 relationship: BFO:0000051 AISM:0004169 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarsus
 relationship: BSPO:0000106 AISM:0000031 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect leg
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000032
@@ -227,6 +240,8 @@ relationship: BFO:0000051 AISM:0000116 {http://purl.org/dc/elements/1.1/contribu
 relationship: BFO:0000051 AISM:0000117 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! first flagellomere
 relationship: BFO:0000051 AISM:0000118 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pedicellar-first flagellomeral conjunctiva
 relationship: BFO:0000051 AISM:0004008 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! interflagellomeral conjunctiva
+relationship: BSPO:0000106 AISM:0000032 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! antenna
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000033
@@ -235,6 +250,7 @@ def: "The flat, paired appendage on the dorso-lateral region of the pterothorax.
 is_a: AISM:0000029 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! appendage
 relationship: BSPO:0000106 AISM:0000033 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect wing
 relationship: RO:0000053 PATO:0000407 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000034
@@ -250,6 +266,7 @@ relationship: BFO:0000051 AISM:0004190 {http://purl.org/dc/elements/1.1/contribu
 relationship: BFO:0000051 AISM:0004194 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! propretarsus
 relationship: BSPO:0000096 AISM:0000035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
 relationship: BSPO:0000106 AISM:0000034 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore leg
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000035
@@ -266,6 +283,7 @@ relationship: BFO:0000051 AISM:0004195 {http://purl.org/dc/elements/1.1/contribu
 relationship: BSPO:0000096 AISM:0000036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind leg
 relationship: BSPO:0000099 AISM:0000034 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore leg
 relationship: BSPO:0000106 AISM:0000035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000036
@@ -281,6 +299,7 @@ relationship: BFO:0000051 AISM:0004188 {http://purl.org/dc/elements/1.1/contribu
 relationship: BFO:0000051 AISM:0004196 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metapretarsus
 relationship: BSPO:0000099 AISM:0000035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
 relationship: BSPO:0000106 AISM:0000036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind leg
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000037
@@ -288,6 +307,7 @@ name: fore wing
 def: "The paired insect wing that is continuous with the mesonotum." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000033 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect wing
 relationship: BSPO:0000106 AISM:0000037 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore wing
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002150 AISM:0000052 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! mesonotum
 
 [Term]
@@ -296,6 +316,7 @@ name: hind wing
 def: "The paired insect wing that is continuous with the metanotum." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000033 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect wing
 relationship: BSPO:0000106 AISM:0000038 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind wing
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002150 AISM:0000169 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! metanotum
 
 [Term]
@@ -309,7 +330,7 @@ relationship: AISM:0000079 AISM:0000126 {http://purl.org/dc/elements/1.1/contrib
 [Term]
 id: AISM:0000040
 name: spur {source="https://doi.org/10.1016/0020-7322(79)90013-8", http://purl.obolibrary.org/obo/AISM_0000171="Richards AG, Richards PA (1979) The cuticular protuberances of insects. International Journal of Insect Morphology and Embryology 8: 143–157. \n\n\"Multicellular protuberances without differentiation of specialized cells\""}
-def: "The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of a single sclerite that is encricled by a conjunctiva (moveable), and not musculated." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+def: "The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of some sclerite that is encricled by a conjunctiva (moveable)." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
 is_a: AISM:0000128 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! multicellular cuticular evagination
 relationship: AISM:0000079 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by conjunctiva
@@ -340,6 +361,8 @@ is_a: AISM:0000029 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 is_a: AISM:0000165 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! mouthpart
 relationship: BSPO:0000096 AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect maxilla
 relationship: BSPO:0000099 AISM:0000042 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! labrum
+relationship: BSPO:0000106 AISM:0000043 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect mandible
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002150 AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cranio-mandibular muscle
 relationship: RO:0002150 AISM:0000099 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! oral foraminal conjunctiva
 relationship: RO:0002220 AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! head capsule
@@ -363,6 +386,8 @@ relationship: BFO:0000051 AISM:0004011 {http://purl.org/dc/elements/1.1/contribu
 relationship: BFO:0000051 AISM:0004012 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! palpifero-palpal conjunctiva
 relationship: BSPO:0000096 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! labium
 relationship: BSPO:0000099 AISM:0000043 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect mandible
+relationship: BSPO:0000106 AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect maxilla
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002220 AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! head capsule
 
 [Term]
@@ -414,7 +439,7 @@ relationship: RO:0002220 AISM:0000057 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0000050
 name: paraglossa {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Paraglossa: paired outer endite lobes of the prementum (labium).\""}
-def: "Is the appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-paraglossal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
+def: "The paired appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-paraglossal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
 is_a: AISM:0000029 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! appendage
 relationship: BFO:0000050 AISM:0000048 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! ligula
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! labium
@@ -428,6 +453,7 @@ def: "Is the appendage of the insect maxilla that is attached to the palpifer by
 is_a: AISM:0000029 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! appendage
 relationship: AISM:0000079 AISM:0004012 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by palpifero-palpal conjunctiva
 relationship: BFO:0000050 AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect maxilla
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002220 AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! head capsule
 relationship: RO:0002220 AISM:0004001 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! palpifer
 
@@ -546,6 +572,7 @@ is_a: AISM:0000077 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 relationship: AISM:0000078 AISM:0000124 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircles mesocoxal-mesotrochanteral conjunctiva
 relationship: AISM:0000079 AISM:0000103 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by basal mesocoxal conjunctiva
 relationship: BFO:0000050 AISM:0000035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000065
@@ -555,6 +582,7 @@ is_a: AISM:0000077 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 relationship: AISM:0000078 AISM:0000125 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircles metacoxal-metatrochanteral conjunctiva
 relationship: AISM:0000079 AISM:0000104 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by basal metacoxal conjunctiva
 relationship: BFO:0000050 AISM:0000036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind leg
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000066
@@ -564,39 +592,40 @@ is_a: AISM:0000077 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 relationship: AISM:0000078 AISM:0000123 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircles procoxal-protrochanteral conjunctiva
 relationship: AISM:0000079 AISM:0000106 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by basal procoxal conjunctiva
 relationship: BFO:0000050 AISM:0000034 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore leg
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000067
 name: protibia
 def: "The segment of a fore leg attached to the distal margin of the profemur by the profemoro-protibial conjunctiva and to the proximal margin of the protarsus by the protibio-protarsal conjunctiva." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000063 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! appendage segment
 is_a: AISM:0000075 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tibia
 relationship: AISM:0000078 AISM:0004183 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles protibio-protarsal conjunctiva
 relationship: AISM:0000079 AISM:0004179 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by profemoro-protibial conjunctiva
 relationship: BFO:0000050 AISM:0000034 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore leg
 relationship: BSPO:0000106 AISM:0000067 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! protibia
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000068
 name: mesotibia
 def: "The segment of a mid leg attached to the distal margin of the mesofemur by the mesofemoro-mesotibial conjunctiva and to the proximal margin of the mesotarsus by the mesotibio-mesotarsal conjunctiva." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000063 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! appendage segment
 is_a: AISM:0000075 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tibia
 relationship: AISM:0000078 AISM:0004184 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles mesotibio-mesotarsal conjunctiva
 relationship: AISM:0000079 AISM:0004180 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by mesofemoro-mesotibial conjunctiva
 relationship: BFO:0000050 AISM:0000035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
 relationship: BSPO:0000106 AISM:0000068 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesotibia
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000069
 name: metatibia
 def: "The segment of a hind leg attached to the distal margin of the metafemur by the metafemoro-metatibial conjunctiva and to the proximal margin of the metatarsus by the metatibio-metatarsal conjunctiva." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000063 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! appendage segment
 is_a: AISM:0000075 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tibia
 relationship: AISM:0000078 AISM:0004185 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles metatibio-metatarsal conjunctiva
 relationship: AISM:0000079 AISM:0004181 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by metafemoro-metatibial conjunctiva
 relationship: BFO:0000050 AISM:0000036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind leg
 relationship: BSPO:0000106 AISM:0000069 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metatibia
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000070
@@ -607,6 +636,7 @@ relationship: AISM:0000078 AISM:0004179 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0000123 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by procoxal-protrochanteral conjunctiva
 relationship: BFO:0000050 AISM:0000034 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore leg
 relationship: BSPO:0000106 AISM:0000070 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! profemur
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000071
@@ -617,6 +647,7 @@ relationship: AISM:0000078 AISM:0004180 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0000124 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by mesocoxal-mesotrochanteral conjunctiva
 relationship: BFO:0000050 AISM:0000035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
 relationship: BSPO:0000106 AISM:0000071 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesofemur
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000072
@@ -627,6 +658,7 @@ relationship: AISM:0000078 AISM:0004181 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0000125 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by metacoxal-metatrochanteral conjunctiva
 relationship: BFO:0000050 AISM:0000036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind leg
 relationship: BSPO:0000106 AISM:0000072 {http://purl.obolibrary.org/obo/IAO_0000232="jgiron https://orcid.org/0000-0002-0851-6883"} ! metafemur
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000073
@@ -651,6 +683,7 @@ relationship: AISM:0000078 AISM:0004182 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0004178 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by femoro-tibial conjunctiva
 relationship: BFO:0000050 AISM:0000031 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect leg
 relationship: BSPO:0000106 AISM:0000075 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tibia
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000076
@@ -661,6 +694,7 @@ relationship: AISM:0000078 AISM:0004178 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0004174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by trochantero-femoral conjunctiva
 relationship: BFO:0000050 AISM:0000031 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect leg
 relationship: BSPO:0000106 AISM:0000076 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! femur
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000077
@@ -671,6 +705,7 @@ relationship: AISM:0000078 AISM:0004170 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0000173 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by basal coxal conjunctiva
 relationship: BFO:0000050 AISM:0000031 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect leg
 relationship: BSPO:0000106 AISM:0000077 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! coxa
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0000080
@@ -901,6 +936,10 @@ name: insect head {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Fried
 def: "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the head capsule, the antenna, the eyes, mouthparts and surrounds the brain." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
 is_a: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! region of cuticle
+intersection_of: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"}
+intersection_of: BFO:0000051 AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! head capsule
+intersection_of: BSPO:0000096 AISM:0000098 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! neck membrane
 relationship: AISM:0000079 AISM:0000098 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by neck membrane
 relationship: BFO:0000051 AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! head capsule
 relationship: BFO:0000051 AISM:0000032 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! antenna
@@ -909,7 +948,7 @@ relationship: BFO:0000051 AISM:0000099 {http://purl.org/dc/elements/1.1/contribu
 relationship: BFO:0000051 AISM:0000105 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! epipharynx
 relationship: BFO:0000051 AISM:0000112 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cranio-antennal conjunctiva
 relationship: BFO:0000051 AISM:0000165 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mouthpart
-relationship: BSPO:0000097 AISM:0000098 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! neck membrane
+relationship: BSPO:0000096 AISM:0000098 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! neck membrane
 relationship: RO:0002221 UBERON:0000955 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
 [Term]
@@ -918,7 +957,10 @@ name: insect thorax
 def: "The region of cuticle that is connected to some muscles of the fore and hind legs and is posterior to the neck membrane and aterior to the first abdominal spiracle." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
 is_a: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
-relationship: anteriorly_connected_to AISM:0000107 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect head
+intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! region of cuticle
+intersection_of: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"}
+intersection_of: BSPO:0000096 AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! insect abdomen
+intersection_of: BSPO:0000099 AISM:0000098 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! neck membrane
 relationship: BFO:0000051 AISM:0000031 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect leg
 relationship: BFO:0000051 AISM:0000033 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect wing
 relationship: BFO:0000051 AISM:0000085 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! mesocoxal muscle
@@ -926,8 +968,8 @@ relationship: BFO:0000051 AISM:0000145 {consistent_with="imiko https://orcid.org
 relationship: BFO:0000051 AISM:0004125 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! prothorax
 relationship: BFO:0000051 AISM:0004126 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesothorax
 relationship: BFO:0000051 AISM:0004127 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metathorax
+relationship: BSPO:0000096 AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect abdomen
 relationship: BSPO:0000099 AISM:0000098 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! neck membrane
-relationship: posteriorly_connected_to AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect abdomen
 property_value: IAO:0000232 "The hind leg muscles sometimes attach to the second abdominal sternite. The abdominal sopiracles are different in their structure from tghe thoracic spiracles as they are opened and closed by two articulating sclerites that are moved by two sets of muscles whereas the thoracic spiracles are closed by only one occlusor muscle and opened by the flexibility of the distal tracheal region. The border between the thorax and the abdomen is sometimes marked by the anterior first abdmonial tergal conjunctiva. In Hymenoptera, the border between the abdomen and the thorax cannot be defined as the anterior first abdmonial tergal conjunctiva is absent, the sclerite that receives muscles from the metacoxa also contains the first abdominal spiracle." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-11"}
 
 [Term]
@@ -936,6 +978,9 @@ name: insect abdomen
 def: "The region of the cuticle that is posterior to the thorax." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
 is_a: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! region of cuticle
+intersection_of: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"}
+intersection_of: BSPO:0000099 AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! insect thorax
 relationship: BFO:0000051 AISM:0004055 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! preabdomen
 relationship: BFO:0000051 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: BSPO:0000099 AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect thorax
@@ -1319,7 +1364,7 @@ relationship: RO:0002150 AISM:0000134 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0000160
 name: pouch
-def: "The invagination of the cuticle that is largely membraneous." [] {creation_date="2020-11-12", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+def: "The invagination of the cuticle that is largely membranous." [] {creation_date="2020-11-12", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000006 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular invagination
 relationship: BFO:0000051 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! conjunctiva
 
@@ -1554,6 +1599,7 @@ synonym: "second valvifer" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: BSPO:0000106 AISM:0000200 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gonocoxa IX
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002150 AISM:0000201 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! abdominal tergite IX-gonocoxa IX conjunctiva
 
 [Term]
@@ -1567,68 +1613,68 @@ relationship: RO:0002150 AISM:0004117 {http://purl.org/dc/elements/1.1/contribut
 
 [Term]
 id: AISM:0000501
-name: carina {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043"}
+name: carina {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"an elevated ridge or keel, not necessarily high or acute\""}
 def: "The protrusion on a sclerite that is elongated." [] {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330", creation_date="2021-05-06"}
 is_a: AISM:0000008 ! cuticular protrusion
 relationship: BFO:0000050 AISM:0000003 ! sclerite
 relationship: RO:0000053 PATO:0001154
 
 [Term]
-id: AISM:0000522
-name: paired
-def: "A paired (bilateral) body part or organ" [] {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330", creation_date="2021-05-31"}
-relationship: RO:0001025 BSPO:0000000
-relationship: RO:0001025 BSPO:0000007
-
-[Term]
 id: AISM:0000523
 name: dorsal postabdomen
 def: "Dorsal part of postabdomen" [] {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330", creation_date="2021-05-31"}
-is_a: AISM:0004057 ! abdominal tergite
-relationship: BFO:0000050 AISM:0004056 ! postabdomen
+is_a: AISM:0004057 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! abdominal tergite
+relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! postabdomen
 
 [Term]
 id: AISM:0000524
-name: puncture
-is_a: AISM:0000156 ! fovea
-relationship: RO:0000053 PATO:0000587
+name: puncture {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a small impression on the cuticle\""}
+def: "The fovea that is small." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
+is_a: AISM:0000156 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! fovea
+relationship: RO:0000053 PATO:0000587 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"}
 
 [Term]
 id: AISM:0000525
-name: granula
+name: granule {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a little grain or a minute grainlike elevation\"."}
+def: "The cuticular protrusion of a sclerite that is small." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: AISM:0000008 ! cuticular protrusion
 relationship: BFO:0000050 AISM:0000003 ! sclerite
 relationship: RO:0000053 PATO:0000587
 
 [Term]
 id: AISM:0000526
-name: tubercle
+name: tubercle {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a small knoblike or rounded protuberance\""}
+def: "The cuticular protrusion of a sclerite that is rounded (circular)." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: AISM:0000008 ! cuticular protrusion
 relationship: BFO:0000050 AISM:0000003 ! sclerite
 relationship: RO:0000053 PATO:0000411
 
 [Term]
 id: AISM:0000527
-name: spine
+name: spine {http://purl.obolibrary.org/obo/AISM_0000171="Richards AG, Richards PA (1979) The cuticular protuberances of insects. International Journal of Insect Morphology and Embryology 8: 143–157. \n\n\"Multicellular protuberances without differentiation of specialized cells [...] evaginations, non-movable\"", source="https://doi.org/10.1016/0020-7322(79)90013-8"}
+def: "The cuticular protrusion of a sclerite that is sharp." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: AISM:0000008 ! cuticular protrusion
 relationship: BFO:0000050 AISM:0000003 ! sclerite
 relationship: RO:0000053 PATO:0001419
 
 [Term]
 id: AISM:0000528
-name: granulated
+name: granulated {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"covered with or made up of very small grains or granules\""}
+def: "The anatomical collection that is composed of granules." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: UBERON:0034925
-relationship: RO:0002351 AISM:0000525 ! granula
+relationship: RO:0002351 AISM:0000525 ! granule
 
 [Term]
 id: AISM:0000529
-name: punctate
+name: punctate {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"set with fine, impressed points or punctures appearing as pin-pricks\""}
+def: "The anatomical collection that is composed of punctures." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: UBERON:0034925
 relationship: RO:0002351 AISM:0000524 ! puncture
 
 [Term]
 id: AISM:0000530
-name: setose
+name: setose {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"furnished or covered with setae or stiff hairs\""}
+def: "The anatomical collection that is composed of setae." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: UBERON:0034925
 relationship: RO:0002351 AISM:0000039 ! seta
 
@@ -1649,26 +1695,12 @@ relationship: BFO:0000050 AISM:0000004 ! conjunctiva
 relationship: RO:0000053 PATO:0000411
 
 [Term]
-id: AISM:0000533
-name: conjunctival pouch
-is_a: AISM:0000005 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular depression
-is_a: AISM:0000006 ! cuticular invagination
-relationship: BFO:0000050 AISM:0000004 ! conjunctiva
-relationship: RO:0000053 PATO:0000411 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
-
-[Term]
 id: AISM:0000534
 name: conjunctival fold
 is_a: AISM:0000005 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular depression
-is_a: AISM:0000006 ! cuticular invagination
-relationship: BFO:0000050 AISM:0000004 ! conjunctiva
+is_a: AISM:0000160 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! pouch
+relationship: BFO:0000050 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! conjunctiva
 relationship: RO:0000053 PATO:0001154 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
-
-[Term]
-id: AISM:0000535
-name: conjunctival appendage
-is_a: AISM:0000029 ! appendage
-relationship: BFO:0000051 AISM:0000004 ! conjunctiva
 
 [Term]
 id: AISM:0002002
@@ -2837,6 +2869,7 @@ is_a: AISM:0000027 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: BSPO:0000097 AISM:0004065 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! phallobase
 relationship: BSPO:0000106 AISM:0004064 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! paramere
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002150 AISM:0004200 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! paramero-aedeagal conjunctiva
 relationship: RO:0002150 AISM:0004201 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! phallobasal-parameral conjunctiva
 relationship: RO:0002220 AISM:0004062 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! aedeagus
@@ -2879,6 +2912,7 @@ synonym: "first valvifer" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171=
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: BSPO:0000106 AISM:0004068 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gonocoxa VIII
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002150 AISM:0004084 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! abdominal sternite VII-gonocoxa VIII conjunctiva
 relationship: RO:0002220 AISM:0004075 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! gonopore
 
@@ -2944,6 +2978,7 @@ def: "The region of the cuticle of the postabdomen that is paired and connected 
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: BSPO:0000106 AISM:0004076 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gonostylus VIII
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004077
@@ -3677,9 +3712,15 @@ relationship: RO:0002150 AISM:0004139 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0004165
 name: cercus {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Cerci: tactile appendages of segment XI, primarily multisegmented and tactile bearing setae.\""}
-def: "The paired appendage of the postabdomen located between the epiproct and the paraproct." [] {creation_date="2021-04-10", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The bilaterally paired region of the cuticle of the postabdomen located between the epiproct and the paraproct" [] {creation_date="2021-04-10", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
+intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! region of cuticle
+intersection_of: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! postabdomen
+intersection_of: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! bilaterally paired
+intersection_of: RO:0002220 AISM:0004060 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! epiproct
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: BSPO:0000106 AISM:0004165 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cercus
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002220 AISM:0004060 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! epiproct
 relationship: RO:0002220 AISM:0004061 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! paraproct
 
@@ -3713,6 +3754,7 @@ relationship: AISM:0000078 AISM:0004174 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0004170 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by coxal-trochanteral conjunctiva
 relationship: BFO:0000050 AISM:0000031 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect leg
 relationship: BSPO:0000106 AISM:0004168 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! trochanter
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004169
@@ -3724,6 +3766,7 @@ relationship: AISM:0000079 AISM:0004182 {http://purl.org/dc/elements/1.1/contrib
 relationship: BFO:0000050 AISM:0000031 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect leg
 relationship: BFO:0000051 AISM:0000074 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarsomere
 relationship: BSPO:0000106 AISM:0004169 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarsus
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004170
@@ -3742,6 +3785,7 @@ relationship: AISM:0000078 AISM:0004175 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0000123 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by procoxal-protrochanteral conjunctiva
 relationship: BFO:0000050 AISM:0000034 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore leg
 relationship: BSPO:0000106 AISM:0004171 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! protrochanter
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004172
@@ -3752,6 +3796,7 @@ relationship: AISM:0000078 AISM:0004176 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0000124 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by mesocoxal-mesotrochanteral conjunctiva
 relationship: BFO:0000050 AISM:0000035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
 relationship: BSPO:0000106 AISM:0004172 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesotrochanter
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004173
@@ -3762,6 +3807,7 @@ relationship: AISM:0000078 AISM:0004177 {http://purl.org/dc/elements/1.1/contrib
 relationship: AISM:0000079 AISM:0000125 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by metacoxal-metatrochanteral conjunctiva
 relationship: BFO:0000050 AISM:0000036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind leg
 relationship: BSPO:0000106 AISM:0004173 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metatrochanter
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004174
@@ -3896,6 +3942,7 @@ relationship: AISM:0000079 AISM:0004185 {http://purl.org/dc/elements/1.1/contrib
 relationship: BFO:0000050 AISM:0000036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind leg
 relationship: BFO:0000051 AISM:0000074 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarsomere
 relationship: BSPO:0000106 AISM:0004188 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metatarsus
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004189
@@ -3907,6 +3954,7 @@ relationship: AISM:0000079 AISM:0004184 {http://purl.org/dc/elements/1.1/contrib
 relationship: BFO:0000050 AISM:0000031 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect leg
 relationship: BFO:0000051 AISM:0000074 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarsomere
 relationship: BSPO:0000106 AISM:0004189 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesotarsus
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004190
@@ -3918,6 +3966,7 @@ relationship: AISM:0000079 AISM:0004183 {http://purl.org/dc/elements/1.1/contrib
 relationship: BFO:0000050 AISM:0000034 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore leg
 relationship: BFO:0000051 AISM:0000074 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarsomere
 relationship: BSPO:0000106 AISM:0004190 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! protarsus
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004191
@@ -3986,6 +4035,7 @@ def: "The region of the cuticle of the postabdomen that is paired and connected 
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: BSPO:0000106 AISM:0004198 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gonostylus IX
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 
 [Term]
 id: AISM:0004200
@@ -4262,10 +4312,16 @@ relationship: RO:0002150 AISM:0000064 {http://purl.org/dc/elements/1.1/contribut
 relationship: RO:0002150 AISM:0000121 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesosternum
 
 [Term]
+id: AISM:0004234
+name: circular pouch {creation_date="2021-07-21"}
+def: "The pouch that is circular." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-07-21"}
+is_a: AISM:0000160 ! pouch
+
+[Term]
 id: AISM:0004237
-name: lobe
-def: "The cuticular evagination of the cuticle that is largely membranous." [] {creation_date="2021-06-14", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000027 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-06-14"} ! cuticular evagination
+name: lobe {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a rounded projection or protuberance\""}
+def: "The cuticular evagination that is largely membranous." [] {creation_date="2021-06-14", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000128 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-06-14"} ! multicellular cuticular evagination
 relationship: BFO:0000051 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-06-14"} ! conjunctiva
 
 [Term]
@@ -4279,10 +4335,6 @@ name: external side
 relationship: BSPO:0000113 BSPO:0000377 ! internal side
 
 [Term]
-id: OBI:0002648
-name: individual organism specimen
-
-[Term]
 id: PATO:0000984
 name: porous
 
@@ -4291,35 +4343,39 @@ id: PATO:0002219
 name: fan-shaped
 
 [Term]
+id: PATO:0040024
+name: bilaterally paired
+
+[Term]
 id: UBERON:0001134
 
 [Term]
 id: UBERON:0004175
 name: internal genitalia
 
-[Term]
-id: http://rs.tdwg.org/dwc/terms/Organism
-name: Organism
-
 [Typedef]
 id: AISM:0000011
 name: lateral_to {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
+def: "X lateral to y if x is further from the midsagittal plane than y." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
 
 [Typedef]
 id: AISM:0000012
 name: medial_to {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
+def: "X medial to y if x is closer to the midsagittal plane than y." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
 
 [Typedef]
 id: AISM:0000078
-name: encircles
-property_value: http://purl.org/dc/elements/1.1/contributor "imiko https://orcid.org/0000-0003-2938-9075" xsd:string {creation_date="2020-11-11"}
+name: encircles {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+def: "x encircles y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
+is_transitive: true
 is_a: RO:0002150
 inverse_of: AISM:0000079 ! encircled by
 
 [Typedef]
 id: AISM:0000079
-name: encircled by
-property_value: http://purl.org/dc/elements/1.1/contributor "imiko https://orcid.org/0000-0003-2938-9075" xsd:string {creation_date="2020-11-11"}
+name: encircled by {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+def: "y is encircled by x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
+is_transitive: true
 is_a: RO:0002150
 
 [Typedef]
