@@ -13,7 +13,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-07-03/aism-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-08-01/aism-simple.owl"/>
         <dc:contributor>István Mikó (imiko) https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <dc:contributor>Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <dc:contributor>Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932</dc:contributor>
@@ -21,7 +21,7 @@
         <dc:description xml:lang="en">The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research.</dc:description>
         <dc:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-07-03</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -249,12 +249,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
@@ -395,8 +389,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/AISM_0000011 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000011">
+        <obo:IAO_0000115 xml:lang="en">X lateral to y if x is further from the midsagittal plane than y.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">lateral_to</rdfs:label>
     </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">X lateral to y if x is further from the midsagittal plane than y.</owl:annotatedTarget>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000011"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -410,8 +412,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/AISM_0000012 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000012">
+        <obo:IAO_0000115 xml:lang="en">X medial to y if x is closer to the midsagittal plane than y.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">medial_to</rdfs:label>
     </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000012"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">X medial to y if x is closer to the midsagittal plane than y.</owl:annotatedTarget>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000012"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -427,13 +437,22 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000078">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
-        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">x encircles y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">encircles</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
-        <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
-        <owl:annotatedTarget>imiko https://orcid.org/0000-0003-2938-9075</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">x encircles y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x.</owl:annotatedTarget>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">encircles</owl:annotatedTarget>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
     </owl:Axiom>
     
@@ -443,13 +462,22 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000079">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
-        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">y is encircled by x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">encircled by</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
-        <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
-        <owl:annotatedTarget>imiko https://orcid.org/0000-0003-2938-9075</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">y is encircled by x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y.</owl:annotatedTarget>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">encircled by</owl:annotatedTarget>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
     </owl:Axiom>
     
@@ -589,7 +617,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PATOC:CJM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -618,7 +646,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:cjm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
@@ -650,7 +678,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000097"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x distal to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:cjm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000097"/>
@@ -682,7 +710,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000098"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:cjm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000098"/>
@@ -715,7 +743,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:cjm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
@@ -753,7 +781,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000100"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x proximal to y iff x is closer to the point of attachment with the body than y.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:cjm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000100"/>
@@ -784,7 +812,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000102"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x ventral to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:cjm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000102"/>
@@ -812,7 +840,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>On the opposite side from. For example, the left arm is contralateral to the right arm (and the right leg).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:cjm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -831,7 +859,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000113"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Direcly opposite to. i.e. on the opposite side through the axis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:cjm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:cjm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -886,10 +914,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001018">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001019"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        </owl:propertyChainAxiom>
         <obo:IAO_0000111 xml:lang="en">contained in</obo:IAO_0000111>
         <obo:IAO_0000116>Containment is location not involving parthood, and arises only where some immaterial continuant is involved.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Containment obtains in each case between material and immaterial continuants, for instance: lung contained_in thoracic cavity; bladder contained_in pelvic cavity. Hence containment is not a transitive relation.    If c part_of c1 at t then we have also, by our definition and by the axioms of mereology applied to spatial regions, c located_in c1 at t. Thus, many examples of instance-level location relations for continuants are in fact cases of instance-level parthood. For material continuants location and parthood coincide. Containment is location not involving parthood, and arises only where some immaterial continuant is involved. To understand this relation, we first define overlap for continuants as follows:    c1 overlap c2 at t =def for some c, c part_of c1 at t and c part_of c2 at t. The containment relation on the instance level can then be defined (see definition):</obo:IAO_0000116>
@@ -917,36 +941,6 @@ range: spatial region or site (immaterial continuant)
         <oboInOwl:shorthand>contains</oboInOwl:shorthand>
         <rdfs:label>contains</rdfs:label>
         <rdfs:label xml:lang="en">contains</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        </owl:propertyChainAxiom>
-        <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">my brain is located in my head</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this rat is located in this cage</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
-        <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
-        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
-        <oboInOwl:hasDbXref>RO:0001025</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>located_in</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
-        <oboInOwl:shorthand>located_in</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">located in</rdfs:label>
-        <rdfs:label>located_in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1150,7 +1144,7 @@ range: spatial region or site (immaterial continuant)
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bspo#parallel_to"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x is parallel t y iff x and y are lines or planes which when extended indefinitely do not cross.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BSPO:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSPO:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1170,7 +1164,7 @@ range: spatial region or site (immaterial continuant)
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) &lt; magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PATOC:CJM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1187,7 +1181,7 @@ range: spatial region or site (immaterial continuant)
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/pato#different_in_magnitude_relative_to"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PATOC:CJM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1207,7 +1201,7 @@ range: spatial region or site (immaterial continuant)
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) &gt; magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PATOC:CJM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1224,7 +1218,7 @@ range: spatial region or site (immaterial continuant)
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/pato#similar_in_magnitude_relative_to"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>q1 similar_in_magnitude_relative_to q2 if and only if magnitude(q1) =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PATOC:CJM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1511,6 +1505,12 @@ https://doi.org/10.1515/9783110264043
         <obo:IAO_0000232>External cuticular depression. The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Concavities sometimes correspons with invaginations of the cuticle and the underlaying sinlge layer epidermis, somtimes correspond to a decreased cuticular thickness.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">cuticular depression</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2186,7 +2186,7 @@ https://doi.org/10.1515/9783110264043
     <!-- http://purl.obolibrary.org/obo/AISM_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2205,13 +2205,13 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The appendage of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">galea</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000023"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -2238,8 +2238,19 @@ https://doi.org/10.1515/9783110264043
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000023"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000111"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000023"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The appendage of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -2278,7 +2289,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The paired appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">labial palpus</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2323,7 +2334,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000024"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The paired appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -2343,7 +2354,7 @@ https://doi.org/10.1515/9783110264043
     <!-- http://purl.obolibrary.org/obo/AISM_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2362,13 +2373,13 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-lacinial conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The appendage of the insect maxilla that is attached to the stipes by the stipito-lacinial conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">lacinia</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000026"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -2407,7 +2418,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000026"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-lacinial conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The appendage of the insect maxilla that is attached to the stipes by the stipito-lacinial conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -2537,6 +2548,16 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>The evagination of the cuticle that is musculated (connected to the body via muscles).</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">appendage</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;any part, piece, or organ attached by a joint to the body or to any other main structure&quot;</obo:AISM_0000171>
     </owl:Axiom>
     
 
@@ -2752,6 +2773,12 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Is the appendage of the head capsule that is connected by the  antenniferal-scapal conjunctiva to the scapus, which is connected by the scapal-pedicellar conjunctiva to the pedicellus; the pedicellus is connected by the pedicellar-first flagellomeral conjunctiva to the first flagellomere; the first flagellomere is connected by interflagellomeral conjunctiva to the next flagellomere. Further flagellomeres are connected to each other by interflagellomeral conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">antenna</rdfs:label>
     </owl:Class>
@@ -2845,6 +2872,17 @@ https://doi.org/10.1515/9783110264043
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004008"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000032"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000032"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
@@ -3637,7 +3675,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of a single sclerite that is encricled by a conjunctiva (moveable), and not musculated.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of some sclerite that is encricled by a conjunctiva (moveable).</obo:IAO_0000115>
         <obo:IAO_0000232>The difference between an appendage and a spur is the lack of muscles attached to the spur, otherwise, the mandible would be also a spur. Spines are multicellular evaginations that are not encircled by conjunctivae. Moveable beetle horns are spurs while not moveable beetle horns are spines.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">spur</rdfs:label>
     </owl:Class>
@@ -3667,7 +3705,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000040"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of a single sclerite that is encricled by a conjunctiva (moveable), and not musculated.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of some sclerite that is encricled by a conjunctiva (moveable).</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
     </owl:Axiom>
@@ -3799,6 +3837,12 @@ https://doi.org/10.1515/9783110264043
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000082"/>
             </owl:Restriction>
@@ -3848,6 +3892,17 @@ https://doi.org/10.1515/9783110264043
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
@@ -3985,6 +4040,12 @@ https://doi.org/10.1515/9783110264043
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4141,6 +4202,17 @@ https://doi.org/10.1515/9783110264043
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000044"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000106"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000044"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
@@ -4582,7 +4654,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-paraglossal conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The paired appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-paraglossal conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">paraglossa</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -4627,7 +4699,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000050"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-paraglossal conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The paired appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-paraglossal conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -8442,7 +8514,7 @@ https://doi.org/10.1515/9783110264043
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000097"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8548,7 +8620,7 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000097"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
             </owl:Restriction>
         </owl:annotatedTarget>
@@ -8610,20 +8682,14 @@ https://doi.org/10.1515/9783110264043
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/uberon/core#anteriorly_connected_to"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000107"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/uberon/core#posteriorly_connected_to"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The region of cuticle that is connected to some muscles of the fore and hind legs and is posterior to the neck membrane and aterior to the first abdominal spiracle.</obo:IAO_0000115>
@@ -8696,33 +8762,22 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/uberon/core#anteriorly_connected_to"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000107"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/uberon/core#posteriorly_connected_to"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000109"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
@@ -9983,12 +10038,6 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000126"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
-        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000126"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
@@ -10023,6 +10072,12 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">socket membrane</owl:annotatedTarget>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000126"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
     </owl:Axiom>
     
 
@@ -11299,7 +11354,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The invagination of the cuticle that is largely membraneous.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The invagination of the cuticle that is largely membranous.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pouch</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -11322,7 +11377,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000160"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The invagination of the cuticle that is largely membraneous.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The invagination of the cuticle that is largely membranous.</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2020-11-12</oboInOwl:creation_date>
     </owl:Axiom>
@@ -12973,25 +13028,11 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000501"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">carina</owl:annotatedTarget>
-        <obo:AISM_0000171>Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
 
-https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
-    </owl:Axiom>
-    
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
 
-
-    <!-- http://purl.obolibrary.org/obo/AISM_0000522 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000522">
-        <obo:IAO_0000115>A paired (bilateral) body part or organ</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">paired</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000522"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A paired (bilateral) body part or organ</owl:annotatedTarget>
-        <dc:contributor>starasov https://orcid.org/0000-0001-5237-2330</dc:contributor>
-        <oboInOwl:creation_date>2021-05-31</oboInOwl:creation_date>
+&quot;an elevated ridge or keel, not necessarily high or acute&quot;</obo:AISM_0000171>
     </owl:Axiom>
     
 
@@ -13011,6 +13052,23 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000523"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004057"/>
+        <dc:contributor>starasov https://orcid.org/0000-0001-5237-2330</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000523"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004056"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>starasov https://orcid.org/0000-0001-5237-2330</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000523"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Dorsal part of postabdomen</owl:annotatedTarget>
         <dc:contributor>starasov https://orcid.org/0000-0001-5237-2330</dc:contributor>
@@ -13023,8 +13081,32 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000524">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000156"/>
+        <obo:IAO_0000115 xml:lang="en">The fovea that is small.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">puncture</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000524"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000156"/>
+        <dc:contributor>starasov https://orcid.org/0000-0001-5237-2330</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000524"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The fovea that is small.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000524"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">puncture</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;a small impression on the cuticle&quot;</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -13038,8 +13120,26 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">granula</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The cuticular protrusion of a sclerite that is small.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">granule</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000525"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The cuticular protrusion of a sclerite that is small.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000525"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">granule</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;a little grain or a minute grainlike elevation&quot;.</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -13053,8 +13153,26 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The cuticular protrusion of a sclerite that is rounded (circular).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tubercle</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000526"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The cuticular protrusion of a sclerite that is rounded (circular).</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000526"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">tubercle</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;a small knoblike or rounded protuberance&quot;</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -13068,8 +13186,25 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The cuticular protrusion of a sclerite that is sharp.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">spine</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000527"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The cuticular protrusion of a sclerite that is sharp.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000527"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">spine</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Richards AG, Richards PA (1979) The cuticular protuberances of insects. International Journal of Insect Morphology and Embryology 8: 143–157. 
+
+&quot;Multicellular protuberances without differentiation of specialized cells [...] evaginations, non-movable&quot;</obo:AISM_0000171>
+        <oboInOwl:source>https://doi.org/10.1016/0020-7322(79)90013-8</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -13082,8 +13217,26 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000525"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The anatomical collection that is composed of granules.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">granulated</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000528"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The anatomical collection that is composed of granules.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000528"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">granulated</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;covered with or made up of very small grains or granules&quot;</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -13096,8 +13249,26 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000524"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The anatomical collection that is composed of punctures.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">punctate</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000529"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The anatomical collection that is composed of punctures.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000529"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">punctate</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;set with fine, impressed points or punctures appearing as pin-pricks&quot;</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -13110,8 +13281,26 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The anatomical collection that is composed of setae.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">setose</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000530"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The anatomical collection that is composed of setae.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000530"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">setose</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;furnished or covered with setae or stiff hairs&quot;</obo:AISM_0000171>
+    </owl:Axiom>
     
 
 
@@ -13145,33 +13334,11 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AISM_0000533 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000533">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">conjunctival pouch</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000533"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
-        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/AISM_0000534 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000534">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000160"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -13186,21 +13353,23 @@ https://doi.org/10.1515/9783110264043</obo:AISM_0000171>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/AISM_0000535 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000535">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
-        <rdfs:subClassOf>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000534"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000160"/>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000534"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">conjunctival appendage</rdfs:label>
-    </owl:Class>
+        </owl:annotatedTarget>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+    </owl:Axiom>
     
 
 
@@ -14669,6 +14838,7 @@ sulcus&quot;</obo:AISM_0000171>
     <!-- http://purl.obolibrary.org/obo/AISM_0002031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0002031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000005"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000158"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -29084,39 +29254,11 @@ https://doi.org/10.1515/9783110264043
     <!-- http://purl.obolibrary.org/obo/AISM_0004165 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004165">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000522"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000538"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000523"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000523"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000538"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000523"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -29137,9 +29279,26 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The paired appendage of the postabdomen located between the epiproct and the paraproct.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The bilaterally paired region of the cuticle of the postabdomen located between the epiproct and the paraproct</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cercus</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004165"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004165"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004056"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004165"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -29176,7 +29335,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004165"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The paired appendage of the postabdomen located between the epiproct and the paraproct.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The bilaterally paired region of the cuticle of the postabdomen located between the epiproct and the paraproct</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-04-10</oboInOwl:creation_date>
     </owl:Axiom>
@@ -33518,23 +33677,46 @@ https://doi.org/10.1515/9783110264043
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AISM_0004234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000160"/>
+        <obo:IAO_0000115 xml:lang="en">The pouch that is circular.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">circular pouch</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004234"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The pouch that is circular.</owl:annotatedTarget>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004234"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">circular pouch</owl:annotatedTarget>
+        <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/AISM_0004237 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004237">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000128"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The cuticular evagination of the cuticle that is largely membranous.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cuticular evagination that is largely membranous.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">lobe</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004237"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000027"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000128"/>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-06-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -33553,9 +33735,19 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004237"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cuticular evagination of the cuticle that is largely membranous.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cuticular evagination that is largely membranous.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-06-14</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004237"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">lobe</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;a rounded projection or protuberance&quot;</obo:AISM_0000171>
     </owl:Axiom>
 </rdf:RDF>
 

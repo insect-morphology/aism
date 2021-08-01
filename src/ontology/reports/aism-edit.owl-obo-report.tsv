@@ -1,40 +1,24 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	multiple_equivalent_classes	cercus	owl:equivalentClass	c4b9033d-8e83-4055-8905-4e57d8d73dd0genid4609
-ERROR	multiple_equivalent_classes	cercus	owl:equivalentClass	c4b9033d-8e83-4055-8905-4e57d8d73dd0genid4619
-ERROR	multiple_equivalent_classes	cercus	owl:equivalentClass	c4b9033d-8e83-4055-8905-4e57d8d73dd0genid4628
 ERROR	missing_label	skeletal muscle tissue	rdfs:label	
-WARN	missing_definition	lateral_to	definition	
-WARN	missing_definition	medial_to	definition	
-WARN	missing_definition	encircles	definition	
-WARN	missing_definition	encircled by	definition	
-WARN	missing_definition	puncture	definition	
-WARN	missing_definition	granula	definition	
-WARN	missing_definition	tubercle	definition	
-WARN	missing_definition	spine	definition	
-WARN	missing_definition	granulated	definition	
-WARN	missing_definition	punctate	definition	
-WARN	missing_definition	setose	definition	
 WARN	missing_definition	conjunctival keel	definition	
 WARN	missing_definition	conjunctival tubercle	definition	
-WARN	missing_definition	conjunctival pouch	definition	
 WARN	missing_definition	conjunctival fold	definition	
-WARN	missing_definition	conjunctival appendage	definition	
 WARN	missing_definition	proximal surface	definition	
 WARN	missing_definition	distal surface	definition	
 WARN	missing_definition	definition	definition	
-WARN	missing_definition	curator note	definition	
-WARN	missing_definition	individual organism specimen	definition	
+WARN	missing_definition	curator notes	definition	
 WARN	missing_definition	porous	definition	
 WARN	missing_definition	fan-shaped	definition	
-WARN	missing_definition	has muscle origin	definition	
+WARN	missing_definition	bilaterally paired	definition	
+WARN	missing_definition	has_muscle_origin	definition	
 WARN	missing_definition	internal genitalia	definition	
-WARN	missing_definition	Organism	definition	
+INFO	lowercase_definition	encircles	definition	x encircles y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x.@en
+INFO	lowercase_definition	encircled by	definition	y is encircled by x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y.@en
 INFO	lowercase_definition	encircles via conjunctiva	definition	sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B@en
 INFO	lowercase_definition	encircled via conjunctiva	definition	sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B@en
 INFO	lowercase_definition	skeletal muscle tissue	definition	
-INFO	missing_superclass	individual organism specimen	rdfs:subClassOf	
 INFO	missing_superclass	porous	rdfs:subClassOf	
 INFO	missing_superclass	fan-shaped	rdfs:subClassOf	
+INFO	missing_superclass	bilaterally paired	rdfs:subClassOf	
 INFO	missing_superclass	skeletal muscle tissue	rdfs:subClassOf	
 INFO	missing_superclass	internal genitalia	rdfs:subClassOf	
-INFO	missing_superclass	Organism	rdfs:subClassOf	
