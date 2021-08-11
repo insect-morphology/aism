@@ -1,12 +1,88 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/aism/components/aism1_template.owl#"
      xml:base="http://purl.obolibrary.org/obo/aism/components/aism1_template.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/components/aism1_template.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has characteristic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002150 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002150">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuous with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002176 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002176">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002220 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002220">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adjacent to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002371 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002371">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attached to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">composed primarily of</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -21,9 +97,488 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AISM_0000029 -->
+    <!-- AISM:0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000029"/>
+    <owl:Class rdf:about="AISM:0000003">
+        <rdfs:subClassOf rdf:resource="AISM:0000174"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sclerite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0000004 -->
+
+    <owl:Class rdf:about="AISM:0000004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conjunctiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0000008 -->
+
+    <owl:Class rdf:about="AISM:0000008">
+        <rdfs:subClassOf rdf:resource="AISM:0000174"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cuticular protrusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0000029 -->
+
+    <owl:Class rdf:about="AISM:0000029">
+        <rdfs:subClassOf rdf:resource="AISM:0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appendage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0000039 -->
+
+    <owl:Class rdf:about="AISM:0000039">
+        <rdfs:subClassOf rdf:resource="AISM:0000008"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0000073 -->
+
+    <owl:Class rdf:about="AISM:0000073">
+        <rdfs:subClassOf rdf:resource="AISM:0000003"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0000109 -->
+
+    <owl:Class rdf:about="AISM:0000109">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect abdomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0000174 -->
+
+    <owl:Class rdf:about="AISM:0000174">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">region of cuticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0004055 -->
+
+    <owl:Class rdf:about="AISM:0004055">
+        <rdfs:subClassOf rdf:resource="AISM:0000109"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preabdomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0004056 -->
+
+    <owl:Class rdf:about="AISM:0004056">
+        <rdfs:subClassOf rdf:resource="AISM:0000109"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">postabdomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0004057 -->
+
+    <owl:Class rdf:about="AISM:0004057">
+        <rdfs:subClassOf rdf:resource="AISM:0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="AISM:0000109"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000079"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abdominal tergite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0004060 -->
+
+    <owl:Class rdf:about="AISM:0004060">
+        <rdfs:subClassOf rdf:resource="AISM:0000174"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epiproct</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0004165 -->
+
+    <owl:Class rdf:about="AISM:0004165">
+        <rdfs:subClassOf rdf:resource="AISM:0000008"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="AISM:0004056"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0040024"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                        <owl:someValuesFrom rdf:resource="AISM:0004060"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- AISM:0004199 -->
+
+    <owl:Class rdf:about="AISM:0004199">
+        <rdfs:subClassOf rdf:resource="AISM:0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="AISM:0004165"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercomere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- EX:2234 -->
+
+    <owl:Class rdf:about="EX:2234">
+        <rdfs:subClassOf rdf:resource="AISM:0000008"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="AISM:0004055"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0040024"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cornicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- EX:2255 -->
+
+    <owl:Class rdf:about="EX:2255">
+        <rdfs:subClassOf rdf:resource="AISM:0004165"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0034925"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="AISM:0000039"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">setal patch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- EX:2264 -->
+
+    <owl:Class rdf:about="EX:2264">
+        <rdfs:subClassOf rdf:resource="AISM:0000029"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="AISM:0004055"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0040024"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000082"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="AISM:0004057"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tergalius</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000070">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dorsal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000070"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lateral region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1930602 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1930602">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C40098"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psocodea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_27434 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_27434">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C40098"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dermaptera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_27482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_27482">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7524"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aphididae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_29994 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_29994">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C40098"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archaeognatha</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_30073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_30073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C40098"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ephemeroptera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_30264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_30264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C40098"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zygentoma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_41073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_41073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7041"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carabidae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C40098"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coleoptera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C40098"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hemiptera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C40098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C40098">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OARCS_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OARCS_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OARCS_0000177"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vessel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OARCS_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OARCS_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002385"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myocard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OARCS_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OARCS_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002385"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002371"/>
+                        <owl:someValuesFrom rdf:resource="AISM:0004057"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002371"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OARCS_0000253"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alary muscle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OARCS_0000177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OARCS_0000177">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hemolymph vascular system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OARCS_0000253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OARCS_0000253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OARCS_0000000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OARCS_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0040024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0040024">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bilaterally paired</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000468">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multicellular organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001134">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skeletal muscle tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002385">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">muscle tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002416">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integumental system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0034925 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0034925">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical collection</rdfs:label>
+    </owl:Class>
     
 
 
@@ -38,10 +593,524 @@
     
 
 
-    <!-- EX:0001 -->
+    <!-- EX:1230 -->
 
-    <owl:NamedIndividual rdf:about="EX:0001">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AISM_0000029"/>
+    <owl:NamedIndividual rdf:about="EX:1230">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_27482"/>
+        <obo:BFO_0000051 rdf:resource="EX:2230"/>
+        <obo:BFO_0000051 rdf:resource="EX:2231"/>
+        <obo:BFO_0000051 rdf:resource="EX:2232"/>
+        <obo:BFO_0000051 rdf:resource="EX:2233"/>
+        <obo:BFO_0000051 rdf:resource="EX:2235"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aphididae_organism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:1231 -->
+
+    <owl:NamedIndividual rdf:about="EX:1231">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_41073"/>
+        <obo:BFO_0000051 rdf:resource="EX:2236"/>
+        <obo:BFO_0000051 rdf:resource="EX:2237"/>
+        <obo:BFO_0000051 rdf:resource="EX:2238"/>
+        <obo:BFO_0000051 rdf:resource="EX:2239"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carabidae_organism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:1232 -->
+
+    <owl:NamedIndividual rdf:about="EX:1232">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_30264"/>
+        <obo:BFO_0000051 rdf:resource="EX:2240"/>
+        <obo:BFO_0000051 rdf:resource="EX:2241"/>
+        <obo:BFO_0000051 rdf:resource="EX:2242"/>
+        <obo:BFO_0000051 rdf:resource="EX:2243"/>
+        <obo:BFO_0000051 rdf:resource="EX:2244"/>
+        <obo:BFO_0000051 rdf:resource="EX:2245"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zygentoma_organism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:1233 -->
+
+    <owl:NamedIndividual rdf:about="EX:1233">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_27434"/>
+        <obo:BFO_0000051 rdf:resource="EX:2246"/>
+        <obo:BFO_0000051 rdf:resource="EX:2247"/>
+        <obo:BFO_0000051 rdf:resource="EX:2248"/>
+        <obo:BFO_0000051 rdf:resource="EX:2249"/>
+        <obo:BFO_0000051 rdf:resource="EX:2250"/>
+        <obo:BFO_0000051 rdf:resource="EX:2251"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dermaptera_organism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:1234 -->
+
+    <owl:NamedIndividual rdf:about="EX:1234">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1930602"/>
+        <obo:BFO_0000051 rdf:resource="EX:2252"/>
+        <obo:BFO_0000051 rdf:resource="EX:2253"/>
+        <obo:BFO_0000051 rdf:resource="EX:2254"/>
+        <obo:BFO_0000051 rdf:resource="EX:2256"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psocodea_organism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:1235 -->
+
+    <owl:NamedIndividual rdf:about="EX:1235">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_29994"/>
+        <obo:BFO_0000051 rdf:resource="EX:2257"/>
+        <obo:BFO_0000051 rdf:resource="EX:2258"/>
+        <obo:BFO_0000051 rdf:resource="EX:2259"/>
+        <obo:BFO_0000051 rdf:resource="EX:2260"/>
+        <obo:BFO_0000051 rdf:resource="EX:2261"/>
+        <obo:BFO_0000051 rdf:resource="EX:2262"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archaeognatha_organism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:1236 -->
+
+    <owl:NamedIndividual rdf:about="EX:1236">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_30073"/>
+        <obo:BFO_0000051 rdf:resource="EX:2263"/>
+        <obo:BFO_0000051 rdf:resource="EX:2265"/>
+        <obo:BFO_0000051 rdf:resource="EX:2266"/>
+        <obo:BFO_0000051 rdf:resource="EX:2267"/>
+        <obo:BFO_0000051 rdf:resource="EX:2268"/>
+        <obo:BFO_0000051 rdf:resource="EX:2269"/>
+        <obo:BFO_0000051 rdf:resource="EX:2270"/>
+        <obo:BFO_0000051 rdf:resource="EX:2271"/>
+        <obo:BFO_0000051 rdf:resource="EX:2272"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ephemeroptera_organism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2230 -->
+
+    <owl:NamedIndividual rdf:about="EX:2230">
+        <rdf:type rdf:resource="AISM:0004060"/>
+        <obo:BFO_0000050 rdf:resource="EX:2233"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epiproct_Aphididae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2231 -->
+
+    <owl:NamedIndividual rdf:about="EX:2231">
+        <rdf:type rdf:resource="AISM:0000109"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect abdomen_Aphididae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2232 -->
+
+    <owl:NamedIndividual rdf:about="EX:2232">
+        <rdf:type rdf:resource="AISM:0004055"/>
+        <obo:BFO_0000050 rdf:resource="EX:2231"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preabdomen_Aphididae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2233 -->
+
+    <owl:NamedIndividual rdf:about="EX:2233">
+        <rdf:type rdf:resource="AISM:0004056"/>
+        <obo:BFO_0000050 rdf:resource="EX:2231"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">postabdomen_Aphididae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2235 -->
+
+    <owl:NamedIndividual rdf:about="EX:2235">
+        <rdf:type rdf:resource="EX:2234"/>
+        <obo:BFO_0000050 rdf:resource="EX:2232"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cornicle_Aphididae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2236 -->
+
+    <owl:NamedIndividual rdf:about="EX:2236">
+        <rdf:type rdf:resource="AISM:0004060"/>
+        <obo:BFO_0000050 rdf:resource="EX:2238"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epiproct_Carabidae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2237 -->
+
+    <owl:NamedIndividual rdf:about="EX:2237">
+        <rdf:type rdf:resource="AISM:0000109"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect abdomen_Carabidae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2238 -->
+
+    <owl:NamedIndividual rdf:about="EX:2238">
+        <rdf:type rdf:resource="AISM:0004056"/>
+        <obo:BFO_0000050 rdf:resource="EX:2237"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">postabdomen_Carabidae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2239 -->
+
+    <owl:NamedIndividual rdf:about="EX:2239">
+        <rdf:type rdf:resource="AISM:0004165"/>
+        <obo:BFO_0000050 rdf:resource="EX:2238"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercus_Carabidae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2240 -->
+
+    <owl:NamedIndividual rdf:about="EX:2240">
+        <rdf:type rdf:resource="AISM:0004060"/>
+        <obo:BFO_0000050 rdf:resource="EX:2242"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epiproct_Zygentoma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2241 -->
+
+    <owl:NamedIndividual rdf:about="EX:2241">
+        <rdf:type rdf:resource="AISM:0000109"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect abdomen_Zygentoma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2242 -->
+
+    <owl:NamedIndividual rdf:about="EX:2242">
+        <rdf:type rdf:resource="AISM:0004056"/>
+        <obo:BFO_0000050 rdf:resource="EX:2241"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">postabdomen_Zygentoma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2243 -->
+
+    <owl:NamedIndividual rdf:about="EX:2243">
+        <rdf:type rdf:resource="AISM:0004165"/>
+        <obo:BFO_0000050 rdf:resource="EX:2242"/>
+        <obo:BFO_0000051 rdf:resource="EX:2245"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercus_Zygentoma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2244 -->
+
+    <owl:NamedIndividual rdf:about="EX:2244">
+        <rdf:type rdf:resource="AISM:0000029"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appendage_Zygentoma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2245 -->
+
+    <owl:NamedIndividual rdf:about="EX:2245">
+        <rdf:type rdf:resource="AISM:0004199"/>
+        <obo:BFO_0000050 rdf:resource="EX:2243"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercomere_Zygentoma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2246 -->
+
+    <owl:NamedIndividual rdf:about="EX:2246">
+        <rdf:type rdf:resource="AISM:0000109"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect abdomen_Dermaptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2247 -->
+
+    <owl:NamedIndividual rdf:about="EX:2247">
+        <rdf:type rdf:resource="AISM:0004056"/>
+        <obo:BFO_0000050 rdf:resource="EX:2246"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">postabdomen_Dermaptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2248 -->
+
+    <owl:NamedIndividual rdf:about="EX:2248">
+        <rdf:type rdf:resource="AISM:0004060"/>
+        <obo:BFO_0000050 rdf:resource="EX:2247"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epiproct_Dermaptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2249 -->
+
+    <owl:NamedIndividual rdf:about="EX:2249">
+        <rdf:type rdf:resource="AISM:0004165"/>
+        <obo:BFO_0000050 rdf:resource="EX:2247"/>
+        <obo:BFO_0000051 rdf:resource="EX:2251"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercus_Dermaptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2250 -->
+
+    <owl:NamedIndividual rdf:about="EX:2250">
+        <rdf:type rdf:resource="AISM:0000029"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appendage_Dermaptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2251 -->
+
+    <owl:NamedIndividual rdf:about="EX:2251">
+        <rdf:type rdf:resource="AISM:0004199"/>
+        <obo:BFO_0000050 rdf:resource="EX:2249"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercomere_Dermaptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2252 -->
+
+    <owl:NamedIndividual rdf:about="EX:2252">
+        <rdf:type rdf:resource="AISM:0000109"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect abdomen_Psocodea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2253 -->
+
+    <owl:NamedIndividual rdf:about="EX:2253">
+        <rdf:type rdf:resource="AISM:0004056"/>
+        <obo:BFO_0000050 rdf:resource="EX:2252"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">postabdomen_Psocodea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2254 -->
+
+    <owl:NamedIndividual rdf:about="EX:2254">
+        <rdf:type rdf:resource="AISM:0004060"/>
+        <obo:BFO_0000050 rdf:resource="EX:2253"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epiproct_Psocodea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2256 -->
+
+    <owl:NamedIndividual rdf:about="EX:2256">
+        <rdf:type rdf:resource="EX:2255"/>
+        <obo:BFO_0000050 rdf:resource="EX:2253"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">setal patch_Psocodea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2257 -->
+
+    <owl:NamedIndividual rdf:about="EX:2257">
+        <rdf:type rdf:resource="AISM:0000109"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect abdomen_Archaeognatha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2258 -->
+
+    <owl:NamedIndividual rdf:about="EX:2258">
+        <rdf:type rdf:resource="AISM:0004056"/>
+        <obo:BFO_0000050 rdf:resource="EX:2257"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">postabdomen_Archaeognatha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2259 -->
+
+    <owl:NamedIndividual rdf:about="EX:2259">
+        <rdf:type rdf:resource="AISM:0004060"/>
+        <obo:BFO_0000050 rdf:resource="EX:2258"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epiproct_Archaeognatha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2260 -->
+
+    <owl:NamedIndividual rdf:about="EX:2260">
+        <rdf:type rdf:resource="AISM:0004165"/>
+        <obo:BFO_0000050 rdf:resource="EX:2258"/>
+        <obo:BFO_0000051 rdf:resource="EX:2262"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercus_Archaeognatha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2261 -->
+
+    <owl:NamedIndividual rdf:about="EX:2261">
+        <rdf:type rdf:resource="AISM:0000029"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appendage_Archaeognatha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2262 -->
+
+    <owl:NamedIndividual rdf:about="EX:2262">
+        <rdf:type rdf:resource="AISM:0004199"/>
+        <obo:BFO_0000050 rdf:resource="EX:2260"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercomere_Archaeognatha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2263 -->
+
+    <owl:NamedIndividual rdf:about="EX:2263">
+        <rdf:type rdf:resource="AISM:0000109"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect abdomen_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2265 -->
+
+    <owl:NamedIndividual rdf:about="EX:2265">
+        <rdf:type rdf:resource="EX:2264"/>
+        <obo:BFO_0000050 rdf:resource="EX:2263"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tergalius_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2266 -->
+
+    <owl:NamedIndividual rdf:about="EX:2266">
+        <rdf:type rdf:resource="AISM:0004057"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abdominal tergite_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2267 -->
+
+    <owl:NamedIndividual rdf:about="EX:2267">
+        <rdf:type rdf:resource="AISM:0004056"/>
+        <obo:BFO_0000050 rdf:resource="EX:2263"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">postabdomen_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2268 -->
+
+    <owl:NamedIndividual rdf:about="EX:2268">
+        <rdf:type rdf:resource="AISM:0004060"/>
+        <obo:BFO_0000050 rdf:resource="EX:2267"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epiproct_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2269 -->
+
+    <owl:NamedIndividual rdf:about="EX:2269">
+        <rdf:type rdf:resource="AISM:0004165"/>
+        <obo:BFO_0000050 rdf:resource="EX:2267"/>
+        <obo:BFO_0000051 rdf:resource="EX:2271"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercus_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2270 -->
+
+    <owl:NamedIndividual rdf:about="EX:2270">
+        <rdf:type rdf:resource="AISM:0000029"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appendage_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2271 -->
+
+    <owl:NamedIndividual rdf:about="EX:2271">
+        <rdf:type rdf:resource="AISM:0004199"/>
+        <obo:BFO_0000050 rdf:resource="EX:2269"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercomere_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2272 -->
+
+    <owl:NamedIndividual rdf:about="EX:2272">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OARCS_0000253"/>
+        <obo:RO_0002473 rdf:resource="EX:2275"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heart_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2273 -->
+
+    <owl:NamedIndividual rdf:about="EX:2273">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OARCS_0000151"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alary_muscle_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2274 -->
+
+    <owl:NamedIndividual rdf:about="EX:2274">
+        <rdf:type rdf:resource="AISM:0004057"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abdominal_tergite_Ephemeroptera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- EX:2275 -->
+
+    <owl:NamedIndividual rdf:about="EX:2275">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OARCS_0000018"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myocard_Ephemeroptera</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
