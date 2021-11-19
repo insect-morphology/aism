@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2021-09-08
+data-version: releases/2021-11-19
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: abnormal_slim ""
@@ -62,15 +62,12 @@ property_value: dc-contributor "Sergei Tarasov (starasov) https://orcid.org/0000
 property_value: dc-description "The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research." xsd:string
 property_value: dc-title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-09-08" xsd:string
+property_value: owl:versionInfo "2021-11-19" xsd:string
 
 [Term]
 id: AISM:0000000
 name: cuticular internal depression
 def: "The projection of the inner surface of the cuticle." [] {created_by="2021-05-19", created_by="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
-relationship: bearer_of PATO:0001857 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! concave
-relationship: part_of BSPO:0000377 ! internal side
 
 [Term]
 id: AISM:0000002
@@ -98,12 +95,6 @@ property_value: curator_notes "Conjunctivae are more flexible and usually less t
 id: AISM:0000005
 name: cuticular depression
 def: "The region of the cuticle that corresponds to a concave surface." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
-is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
-intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! region of cuticle
-intersection_of: bearer_of PATO:0001857 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! concave
-intersection_of: part_of BSPO:0000378 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! distal surface
-relationship: bearer_of PATO:0001857 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! concave
-relationship: part_of BSPO:0000378 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! distal surface
 property_value: curator_notes "External cuticular depression. The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Concavities sometimes correspons with invaginations of the cuticle and the underlaying sinlge layer epidermis, somtimes correspond to a decreased cuticular thickness." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
 [Term]
@@ -125,12 +116,6 @@ relationship: contains PR:Q9V7U0 {http://purl.org/dc/elements/1.1/contributor="i
 id: AISM:0000008
 name: cuticular protrusion
 def: "The region of the cuticle that corresponds to a convex surface." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
-is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
-intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
-intersection_of: bearer_of PATO:0001355 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! convex
-intersection_of: part_of BSPO:0000378 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distal surface
-relationship: bearer_of PATO:0001355 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! convex
-relationship: part_of BSPO:0000378 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! distal surface
 property_value: curator_notes "The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.\"" xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
 [Term]
@@ -948,6 +933,7 @@ id: AISM:0000107
 name: insect head {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"The head is a compact and complex tagma with a concentration of a broad array of structures und functions. It is equipped with sense organs such as the highly complex compound eyes and the antennae, an elaborate set of mouthparts, and a complex muscle apparatus. It also contains central elements of the nervous system, the anterior part of the digestive tract including the cibarium (preoral cavity) and the salivarium, and also neurohaemal organs.\""}
 def: "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the head capsule, the antenna, the eyes, mouthparts and surrounds the brain." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
+is_a: UBERON:0004121 ! ectoderm-derived structure
 is_a: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect tagmatic subdivision of integument
 intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! region of cuticle
 intersection_of: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! insect tagmatic subdivision of integument
@@ -969,6 +955,7 @@ id: AISM:0000108
 name: insect thorax
 def: "The region of cuticle that is connected to some muscles of the fore and hind legs and is posterior to the neck membrane and aterior to the first abdominal spiracle." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
+is_a: UBERON:0004121 ! ectoderm-derived structure
 is_a: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect tagmatic subdivision of integument
 intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! region of cuticle
 intersection_of: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! insect tagmatic subdivision of integument
@@ -988,6 +975,7 @@ id: AISM:0000109
 name: insect abdomen
 def: "The region of the cuticle that is posterior to the thorax." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
+is_a: UBERON:0004121 ! ectoderm-derived structure
 is_a: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect tagmatic subdivision of integument
 intersection_of: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! region of cuticle
 intersection_of: UBERON:6007289 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-08-01"} ! insect tagmatic subdivision of integument
@@ -1219,9 +1207,9 @@ is_a: AISM:0000136 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 id: AISM:0000138
 name: apophysis {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Apophysis: hollow cuticular invagination.\""}
 def: "The cuticular invagination that is hollow." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
-is_a: AISM:0000006 ! cuticular invagination
+is_a: AISM:0000006 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular invagination
 is_a: AISM:0000188 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! apodeme
-relationship: RO:0002008 AISM:0000193 ! coincident with cuticular pit
+relationship: RO:0002008 AISM:0000193 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! coincident with cuticular pit
 property_value: curator_notes "The apophysis in HAO refers to an ivagination of the cuticle that is cylindrical as opposed to a ridge that is elongate. Beutel et al. 2014 differentiate apodemes from apophyses in that apodemes are solid and apophyses are hollow." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-11"}
 
 [Term]
@@ -1365,7 +1353,7 @@ name: ridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F
 def: "The invagination on a sclerite that is elongated." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000000 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular internal depression
 relationship: bearer_of PATO:0001154 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! elongated
-relationship: part_of AISM:0000003 ! sclerite
+relationship: part_of AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
 
 [Term]
 id: AISM:0000159
@@ -1425,10 +1413,8 @@ is_a: AISM:0000002 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 id: AISM:0000167
 name: articular surface
 def: "The anatomical surface where two sclerites meet." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: CARO:0000000 ! anatomical entity
 is_a: UBERON:0006984 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! anatomical surface
 relationship: adjacent_to AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
-relationship: part_of AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
 
 [Term]
 id: AISM:0000168
@@ -1478,9 +1464,9 @@ property_value: curator_notes "These conjunctivae can be used as stable referenc
 id: AISM:0000174
 name: region of cuticle
 def: "The insect region of integument that is part of the chitin-based cuticle." [] {creation_date="2020-11-23", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
-is_a: UBERON:0004121 ! ectoderm-derived structure
-is_a: UBERON:6007284 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect region of integument
+is_a: CARO:0000000 ! anatomical entity
 relationship: part_of UBERON:0001001 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! chitin-based cuticle
+relationship: part_of UBERON:6007284 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect region of integument
 property_value: curator_notes "The AISM focuses on anatomical structures that are part of the insect (chitinous) cuticle. These structures are acellular regions of the integument. Regions of the insect cuticle with different mechanical properties (i.e. increased and descresed flexinility, thickness, and elasticity) are continuous with each other (e.g. sclerites are continuous with conjunctivae or resilin rich regions are continuous with regions with less resilin content)." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-23"}
 
 [Term]
@@ -1529,7 +1515,7 @@ name: apodeme {http://purl.obolibrary.org/obo/AISM_0000171="Klass K-D (2001) The
 def: "The solid cuticular invagination of a sclerite." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000000 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular internal depression
 relationship: bearer_of PATO:0001873 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cylindrical
-relationship: part_of AISM:0000003 ! sclerite
+relationship: part_of AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
 
 [Term]
 id: AISM:0000189
@@ -1656,9 +1642,9 @@ relationship: bearer_of PATO:0000587 {http://purl.org/dc/elements/1.1/contributo
 id: AISM:0000525
 name: granule {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a little grain or a minute grainlike elevation\"."}
 def: "The cuticular protrusion of a sclerite that is small." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
-is_a: AISM:0000008 ! cuticular protrusion
-relationship: bearer_of PATO:0000587 ! decreased size
-relationship: part_of AISM:0000003 ! sclerite
+is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! cuticular protrusion
+relationship: bearer_of PATO:0000587 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! decreased size
+relationship: part_of AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! sclerite
 
 [Term]
 id: AISM:0000526
@@ -1681,44 +1667,46 @@ id: AISM:0000528
 name: granulated {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"covered with or made up of very small grains or granules\""}
 def: "The anatomical collection that is composed of granules." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: CARO:0000000 ! anatomical entity
-is_a: UBERON:0034925 ! anatomical collection
-relationship: has_member AISM:0000525 ! granule
+is_a: UBERON:0034925 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! anatomical collection
+relationship: has_member AISM:0000525 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! granule
 
 [Term]
 id: AISM:0000529
 name: punctate {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"set with fine, impressed points or punctures appearing as pin-pricks\""}
 def: "The anatomical collection that is composed of punctures." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: CARO:0000000 ! anatomical entity
-is_a: UBERON:0034925 ! anatomical collection
-relationship: has_member AISM:0000524 ! puncture
+is_a: UBERON:0034925 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! anatomical collection
+relationship: has_member AISM:0000524 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! puncture
 
 [Term]
 id: AISM:0000530
 name: setose {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"furnished or covered with setae or stiff hairs\""}
 def: "The anatomical collection that is composed of setae." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: CARO:0000000 ! anatomical entity
-is_a: UBERON:0034925 ! anatomical collection
-relationship: has_member AISM:0000039 ! seta
+is_a: UBERON:0034925 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! anatomical collection
+relationship: has_member AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! seta
 
 [Term]
 id: AISM:0000531
 name: conjunctival keel
-is_a: AISM:0000027 ! cuticular evagination
-relationship: bearer_of PATO:0001154 ! elongated
-relationship: part_of AISM:0000004 ! conjunctiva
+def: "The cuticular evagination constituted by conjunctiva that is elongated." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
+is_a: AISM:0000027 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! cuticular evagination
+relationship: bearer_of PATO:0001154 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! elongated
+relationship: part_of AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! conjunctiva
 
 [Term]
 id: AISM:0000532
 name: conjunctival tubercle
-is_a: AISM:0000027 ! cuticular evagination
-relationship: bearer_of PATO:0000411 ! circular
-relationship: part_of AISM:0000004 ! conjunctiva
+def: "The cuticular evagination constituted by conjunctiva that is circular." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
+is_a: AISM:0000027 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! cuticular evagination
+relationship: bearer_of PATO:0000411 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! circular
+relationship: part_of AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! conjunctiva
 
 [Term]
 id: AISM:0000534
 name: conjunctival fold
+def: "The cuticular depression constituted by conjunctiva that is elongated." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
 is_a: AISM:0000005 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular depression
-is_a: AISM:0000160 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! pouch
 relationship: bearer_of PATO:0001154 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! elongated
 relationship: part_of AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! conjunctiva
 
@@ -1913,7 +1901,6 @@ relationship: attaches_to AISM:0002031 {http://purl.org/dc/elements/1.1/contribu
 id: AISM:0002031
 name: stipital ridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043"}
 def: "The ridge that is part of the stipes." [] {creation_date="2021-04-22", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000005 ! cuticular depression
 is_a: AISM:0000158 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! ridge
 relationship: part_of AISM:0000111 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! stipes
 
@@ -2044,7 +2031,7 @@ relationship: continuous_with UBERON:0001002 {http://purl.org/dc/elements/1.1/co
 id: AISM:0002049
 name: postoccipital phragma {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x"}
 def: "The phragma that is continuous with the postocciput." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-09"}
-is_a: AISM:0002048 ! phragma
+is_a: AISM:0002048 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! phragma
 relationship: continuous_with AISM:0004045 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postocciput
 
 [Term]
@@ -2650,8 +2637,6 @@ relationship: part_of AISM:0000019 {http://purl.org/dc/elements/1.1/contributor=
 id: AISM:0004034
 name: frontoclypeal ridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Frontoclypeal (strengthening) ridge (=frontoclypeal “suture”, epistomal “suture”): internal ridge separating clypeus from frons, between anterior tentorial pits.\""}
 def: "Is the ridge of the head capsule that separates the clypeus and the frons." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-synonym: "epistomal suture" EXACT [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-synonym: "frontoclypeal suture" EXACT [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000158 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! ridge
 relationship: adjacent_to AISM:0004019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! clypeus
 relationship: adjacent_to AISM:0004020 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! frons
@@ -2759,6 +2744,7 @@ name: occipital ridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, F
 def: "Is the ridge that runs along the posterior region of the head capsule." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "occipital suture" EXACT [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000158 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! ridge
+is_a: BSPO:0000077 ! proximal region
 
 [Term]
 id: AISM:0004049
@@ -2998,9 +2984,8 @@ relationship: proximal_to AISM:0004075 {http://purl.org/dc/elements/1.1/contribu
 id: AISM:0004075
 name: gonopore {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Gonopore: external opening of the common oviduct.\"", creation_date="2021-03-05"}
 def: "The anatomical space in the postabdomen that marks the opening of the reproductive system." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: CARO:0000000 ! anatomical entity
 is_a: UBERON:0000464 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! anatomical space
-relationship: part_of AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
+relationship: AISM:0000079 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by postabdomen
 
 [Term]
 id: AISM:0004076
@@ -4027,11 +4012,10 @@ relationship: part_of AISM:0000036 {http://purl.org/dc/elements/1.1/contributor=
 id: AISM:0004197
 name: insect anus
 def: "The anatomical space on the postabdomen at the posterior margin of the digestive tract, connected to the epiproct and paraprocti." [] {creation_date="2021-04-10", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: CARO:0000000 ! anatomical entity
 is_a: UBERON:0000464 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! anatomical space
 relationship: adjacent_to AISM:0004060 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! epiproct
 relationship: adjacent_to AISM:0004061 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! paraproct
-relationship: part_of AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
+relationship: AISM:0000079 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by postabdomen
 
 [Term]
 id: AISM:0004198
@@ -4335,7 +4319,8 @@ relationship: part_of AISM:0004126 {http://purl.org/dc/elements/1.1/contributor=
 id: AISM:0004234
 name: circular pouch {creation_date="2021-07-21"}
 def: "The pouch that is circular." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-07-21"}
-is_a: AISM:0000160 ! pouch
+is_a: AISM:0000160 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! pouch
+relationship: bearer_of PATO:0000411 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! circular
 
 [Term]
 id: AISM:0004235
@@ -4349,6 +4334,7 @@ id: AISM:0004236
 name: unicellular ectodermal gland {http://purl.obolibrary.org/obo/AISM_0000171="Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.\n\nhttps://www.jstor.org/stable/10.7591/j.ctv1nhm1j\n\n\"one-celled gland usually larger than the cells surrounding it; discharges its products directly through the covering cuticula. [...] In many glands a minute cuticular ductule extends from the exterior into the body of each cell, allowing the secretion to pass out through an extremely thin layer of cuticula.\""}
 def: "The ectodermal gland that is composed of one cell" [] {creation_date="2021-08-16", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004235 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! ectodermal gland
+relationship: has_part CL:0000000 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cell
 
 [Term]
 id: AISM:0004237
@@ -4415,12 +4401,14 @@ name: anal field {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedr
 def: "The posterior region of the insect wing." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "vannus" EXACT []
 is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing region
+is_a: BSPO:0000078 ! distal region
 
 [Term]
 id: AISM:0004246
 name: anal vein {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Anal veins: longitudinal veins of the anal field proximally articulated with 3rd axillary sclerite; usually unbranched and arranged like a fan.\""}
 def: "The insect wing vein of the anal field that is posterior to the anal fold or the postcubitus and anterior to the jugal fold or the jugal veins." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
+is_a: BFO:0000040 ! material entity
 relationship: RO:0001018 AISM:0004245 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! contained in anal field
 
 [Term]
@@ -4428,6 +4416,7 @@ id: AISM:0004247
 name: costa {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Costa: main longitudinal vein along anterior wing margin, articulated with humeral plate.\""}
 def: "The insect wing vein of the costal field that is anterior to the subcosta." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
+is_a: BFO:0000040 ! material entity
 relationship: anterior_to AISM:0004257 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! subcosta
 relationship: RO:0001018 AISM:0004248 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! contained in costal field
 
@@ -4437,6 +4426,7 @@ name: costal field {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Frie
 def: "The anterior region of the insect wing." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "remigium" EXACT []
 is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing region
+is_a: BSPO:0000078 ! distal region
 
 [Term]
 id: AISM:0004249
@@ -4458,6 +4448,7 @@ id: AISM:0004251
 name: jugal vein {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Jugal veins: veins of the jugal field.\""}
 def: "The insect wing vein in the jugal field, posterior to the jugal fold or to the anal veins." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
+is_a: BFO:0000040 ! material entity
 relationship: RO:0001018 AISM:0004250 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! contained in jugal field
 
 [Term]
@@ -4512,6 +4503,7 @@ id: AISM:0004258
 name: axillary region {http://purl.obolibrary.org/obo/AISM_0000171="Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.\n\nhttps://www.jstor.org/stable/10.7591/j.ctv1nhm1j\n\n\"The region of the wing base containing the axillary sclerites\""}
 def: "The proximal region of the insect wing." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing region
+is_a: BSPO:0000078 ! distal region
 
 [Term]
 id: AISM:0004259
@@ -4520,6 +4512,34 @@ def: "The insect wing fold that is distal to the axillary region." [] {creation_
 synonym: "plica basalis" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.\n\nhttps://www.jstor.org/stable/10.7591/j.ctv1nhm1j\n\n\"Plica basalis (bf).The basal fold of the wing, or line of flection between the base of the mediocubital fold and the axillary region, forming a prominent convex fold in the flexed wing extending between the median plates from the articulation of radius with the second axillary to the articulation of the vannal veins with the third axillary.\""}
 is_a: AISM:0004244 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing fold
 relationship: distal_to AISM:0004258 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! axillary region
+
+[Term]
+id: AISM:0004260
+name: pretarsal claw {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ungues: pretarsal claws; unpaired in Collembola and Protura, usually paired in Diplura and Insecta.\""}
+def: "The sclerite that is part of the pretarsus." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
+synonym: "ungues" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ungues: pretarsal claws; unpaired in Collembola and Protura, usually paired in Diplura and Insecta.\""}
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+relationship: part_of AISM:0000047 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsus
+
+[Term]
+id: AISM:0004261
+name: empodium {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a spine- or lobelike process of the unguitractor\""}
+def: "The cuticular protrusion that is part of the pretarsus, ventral to the tarsal claws." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
+is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular protrusion
+relationship: part_of AISM:0000047 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsus
+relationship: ventral_to AISM:0004260 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsal claw
+
+[Term]
+id: AISM:0004262
+name: frontoclypeal sulcus
+def: "The sulcus that coincides with the frontoclypeal ridge and separated the frons from the clypeus." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
+synonym: "epistomal sulcus" EXACT [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+synonym: "epistomal suture" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Lawrence J, Ślipiński A (2013) Adult morphology. In: Australian beetles volume 1: morphology, classification and keys. CSIRO Publishing, 30–63. \n\nhttps://www.publish.csiro.au/book/6466/\n\n[adjusted] the 'suture' separating the clypeus from the frons, representing the internal invagination of the epistomal ridge."}
+synonym: "frontoclypeal suture" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"the suture between the frons and the clypeus\""}
+is_a: AISM:0000162 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sulcus
+relationship: adjacent_to AISM:0004019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! clypeus
+relationship: adjacent_to AISM:0004020 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! frons
+relationship: RO:0002008 AISM:0004034 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! coincident with frontoclypeal ridge
 
 [Term]
 id: BFO:0000001
@@ -5670,6 +5690,7 @@ id: CARO:0000007
 name: immaterial anatomical entity
 namespace: spatial
 def: "An anatomical entity that has no mass." [CC:DOS]
+is_a: BFO:0000141 ! immaterial entity
 is_a: CARO:0000000 ! anatomical entity
 
 [Term]
@@ -11377,7 +11398,6 @@ synonym: "horsetail nucleus" NARROW [GOC:al, GOC:mah, GOC:vw, PMID:15030757]
 xref: NIF_Subcellular:sao1702920020
 xref: Wikipedia:Cell_nucleus
 is_a: GO:0043231 ! intracellular membrane-bounded organelle
-is_a: GO:0044464 ! obsolete cell part
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Term]
@@ -13420,6 +13440,7 @@ namespace: biological_process
 alt_id: GO:0044707
 alt_id: GO:0050874
 def: "Any biological process, occurring at the level of a multicellular organism, pertinent to its function." [GOC:curators, GOC:dph, GOC:isa_complete, GOC:tb]
+subset: gocheck_do_not_annotate
 subset: goslim_pir
 synonym: "organismal physiological process" EXACT []
 synonym: "single-multicellular organism process" RELATED []
@@ -13961,9 +13982,11 @@ id: GO:0043228
 name: non-membrane-bounded organelle
 namespace: cellular_component
 def: "Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane. Includes ribosomes, the cytoskeleton and chromosomes." [GOC:go_curators]
+synonym: "biological condensate" NARROW []
 synonym: "non-membrane-enclosed organelle" EXACT []
 xref: NIF_Subcellular:sao1456184038
 is_a: GO:0043226 ! organelle
+property_value: IAO:0000233 https://github.com/geneontology/go-ontology/issues/21881 xsd:anyURI
 
 [Term]
 id: GO:0043229
@@ -14235,12 +14258,6 @@ creation_date: 2009-04-21T04:11:06Z
 id: GO:0044297
 name: cell body
 is_a: GO:0110165 ! cellular anatomical entity
-
-[Term]
-id: GO:0044464
-name: cell part
-name: obsolete cell part
-is_a: CARO:0000003 ! anatomical structure
 
 [Term]
 id: GO:0044703
@@ -44345,7 +44362,6 @@ xref: FMA:83115
 is_a: BFO:0000040 ! material entity
 is_a: UBERON:0000477 {source="FMA"} ! anatomical cluster
 relationship: composed_primarily_of GO:0005575 ! cellular_component
-relationship: has_component GO:0044464 {minCardinality="2"} ! obsolete cell part
 property_value: UBPROP:0000012 "we go with the FMA classification rather than the CARO one. FMA def: 'Anatomical cluster which has as direct parts cell parts from two or more cells.'" xsd:string {external_ontology="CARO", external_ontology="FMA"}
 
 [Term]
@@ -46118,8 +46134,8 @@ subset: pheno_slim
 synonym: "adnexae cutis" RELATED LATIN [Wikipedia:Skin_appendage]
 synonym: "adnexae cutis" RELATED LATIN [http://en.wikipedia.org/wiki/Skin_appendage]
 synonym: "body hair or bristle" NARROW [GO:GO]
-synonym: "skin adnexa" RELATED [Wikipedia:Skin_appendage]
 synonym: "skin adnexa" RELATED [http://en.wikipedia.org/wiki/Skin_appendage]
+synonym: "skin adnexa" RELATED [Wikipedia:Skin_appendage]
 synonym: "skin adnexal structure" RELATED []
 synonym: "skin appendage" RELATED [http://en.wikipedia.org/wiki/Skin_appendage]
 synonym: "skin appendage" RELATED [Wikipedia:Skin_appendage]
@@ -51540,8 +51556,8 @@ synonym: "facial bone" RELATED [MA:0000318]
 synonym: "facial skeleton" EXACT [FMA:53673]
 synonym: "ossa facialia" RELATED LATIN [http://en.wikipedia.org/wiki/Facial_skeleton]
 synonym: "ossa facialia" RELATED LATIN [Wikipedia:Facial_skeleton]
-synonym: "ossa faciei" RELATED LATIN [Wikipedia:Facial_skeleton]
 synonym: "ossa faciei" RELATED LATIN [http://en.wikipedia.org/wiki/Facial_skeleton]
+synonym: "ossa faciei" RELATED LATIN [Wikipedia:Facial_skeleton]
 synonym: "viscerocranium" RELATED INCONSISTENT [MA:0000318]
 xref: EHDAA2:0002206
 xref: EHDAA:8361
@@ -51669,8 +51685,8 @@ property_value: UBPROP:0000001 "Muscles within the eye (bulbus oculi).[AAO]" xsd
 id: UBERON:0011233
 name: synovial membrane of synovial tendon sheath
 namespace: uberon
-def: "Synovial sac which surrounds parts of one or more tendons. Examples: synovial tendon sheath of manual digit 2, radial bursa." [FMA:45087, http://en.wikipedia.org/wiki/Synovial_sheath]
 def: "Synovial sac which surrounds parts of one or more tendons. Examples: synovial tendon sheath of manual digit 2, radial bursa." [FMA:45087, Wikipedia:Synovial_sheath]
+def: "Synovial sac which surrounds parts of one or more tendons. Examples: synovial tendon sheath of manual digit 2, radial bursa." [FMA:45087, http://en.wikipedia.org/wiki/Synovial_sheath]
 comment: Alternate def: A synovial sheath is a layer of a tendon sheath containing tendons in the hand and foot. They lie internal to the fibrous tendon sheaths. An example is the common synovial sheath for the flexor tendons. [Wikipedia:Synovial_sheath]
 synonym: "synovium" BROAD [BTO:0001823]
 xref: BTO:0001823
@@ -56745,7 +56761,7 @@ property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
 property_value: seeAlso Involved:in
 holds_over_chain: RO:0002327 part_of
-is_a: participates_in ! participates in
+is_a: participates_in ! participates_in
 is_a: RO:0002431 ! involved in or involved in regulation of
 transitive_over: part_of ! part_of
 
@@ -58098,8 +58114,8 @@ name: has muscle origin
 name: has_muscle_origin
 namespace: uberon
 def: "m has_muscle_origin s iff m is attached_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to." []
-def: "m has_muscle_origin s iff m is attaches_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to." [Wikipedia:Insertion_(anatomy)#Muscles]
 def: "m has_muscle_origin s iff m is attaches_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to." [http://en.wikipedia.org/wiki/Insertion_(anatomy)#Muscles]
+def: "m has_muscle_origin s iff m is attaches_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to." [Wikipedia:Insertion_(anatomy)#Muscles]
 comment: The origin is the end of a muscle that attaches to the more fixed part of the skeleton, which is the proximal end in limb muscles
 xref: RO:0002372
 property_value: IAO:0000117 "Chris Mungall" xsd:string
@@ -58314,6 +58330,7 @@ is_a: part_of ! part_of
 id: in_lateral_side_of
 name: in lateral side of
 name: in_lateral_side_of
+namespace: spatial
 namespace: uberon
 def: "X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure" [UBERON:cjm]
 def: "X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure" [https://orcid.org/0000-0002-6601-2165]
@@ -58325,12 +58342,14 @@ is_a: part_of ! part_of
 id: in_left_side_of
 name: in left side of
 name: in_left_side_of
+namespace: spatial
 namespace: uberon
 def: "X in left side of Y <=> if Y is subdivided into two left and right portions, X is part of the left portion." [BSPO:PATO_mtg_2009]
 def: "X in_left_side_of Y <=> if Y is subdivided into left and right portions, X is part_of the left portion." [BSPO:PATO_mtg_2009]
 xref: BSPO:0000120
 property_value: seeAlso https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 is_a: in_lateral_side_of ! in lateral side of
+disjoint_from: in_right_side_of ! in_right_side_of
 inverse_of: in_right_side_of ! in_right_side_of
 
 [Typedef]
@@ -58358,6 +58377,7 @@ inverse_of: in_distal_side_of ! in distal side of
 id: in_right_side_of
 name: in right side of
 name: in_right_side_of
+namespace: spatial
 namespace: uberon
 def: "X in right side of Y <=> if Y is subdivided into two left and right portions, X is part of the right portion." [BSPO:PATO_mtg_2009]
 def: "X in_right_side_of Y <=> if Y is subdivided into left and right portions, X is part_of the right portion." [BSPO:PATO_mtg_2009]
@@ -58464,7 +58484,7 @@ subset: RO:0002259
 xref: RO:0002352
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 is_a: functionally_related_to ! functionally related to
-is_a: participates_in ! participates in
+is_a: participates_in ! participates_in
 
 [Typedef]
 id: intersects_midsagittal_plane_of
@@ -58646,7 +58666,7 @@ def: "inverse of has output" []
 xref: RO:0002353
 is_transitive: false
 is_a: functionally_related_to ! functionally related to
-is_a: participates_in ! participates in
+is_a: participates_in ! participates_in
 
 [Typedef]
 id: overlaps
