@@ -1559,11 +1559,6 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000039",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002351",
-          "sub": "http://purl.obolibrary.org/obo/AISM_0000530"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/AISM_0000039",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000041"
         },
@@ -2516,6 +2511,11 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0000079",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000538"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000080",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002371",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000059"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000080",
@@ -4130,6 +4130,26 @@
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000167"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000528"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000529"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0000530"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000174",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004019"
         },
         {
@@ -4541,16 +4561,6 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0000523",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004118"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/AISM_0000524",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002351",
-          "sub": "http://purl.obolibrary.org/obo/AISM_0000529"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/AISM_0000525",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002351",
-          "sub": "http://purl.obolibrary.org/obo/AISM_0000528"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000538",
@@ -7918,11 +7928,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-11-19"
+            "val": "2021-12-13"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/aism/releases/2021-11-19/aism-simple.json",
+        "version": "http://purl.obolibrary.org/obo/aism/releases/2021-12-13/aism-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -7944,7 +7954,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "Articulations are `anatomical clusters`, collections of not direclty connected (continuous) sclerite surfaces that are adjacent to another sclerite. The cranio-mandibular articulation is the articular surface of the cranium and the adjacent articular surface of the mandible. The articular surfaces are sometimes located on the same sclerite."
+                "val": "Articulations are 'anatomical clusters', collections of not direclty connected (continuous) sclerite surfaces that are adjacent to another sclerite. The cranio-mandibular articulation is the articular surface of the cranium and the adjacent articular surface of the mandible. The articular surfaces are sometimes located on the same sclerite."
               }
             ],
             "definition": {
@@ -8124,10 +8134,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000018",
-          "lbl": "cardo",
+          "lbl": "cuticle of cardo",
           "meta": {
             "definition": {
-              "val": "Is the sclerite of the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and to the stipes by the stipito-cardinal conjunctiva.",
+              "val": "The sclerite of the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and to the cuticle of stipes by the stipito-cardinal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8138,7 +8148,7 @@
           "lbl": "head capsule",
           "meta": {
             "definition": {
-              "val": "Is the sclerite of the insect head that is attached to the neck membrane and the oral foraminal conjunctiva, bears the eye cuticle and surrounds the brain",
+              "val": "The sclerite of the insect head that is attached to the neck membrane and the oral foraminal conjunctiva, bears the eye cuticle and surrounds the brain",
               "xrefs": []
             },
             "synonyms": [
@@ -8191,10 +8201,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000023",
-          "lbl": "galea",
+          "lbl": "cuticle of galea",
           "meta": {
             "definition": {
-              "val": "The appendage of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva.",
+              "val": "The cuticle of the appendage of the insect maxilla that is attached to the stipes by the stipito-galeal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8202,10 +8212,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000024",
-          "lbl": "labial palpus",
+          "lbl": "cuticle of labial palpus",
           "meta": {
             "definition": {
-              "val": "The paired appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva.",
+              "val": "The cuticle of the paired appendage of the labium that is attached to the palpiger by the palpigero-palpal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8213,10 +8223,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000026",
-          "lbl": "lacinia",
+          "lbl": "cuticle of lacinia",
           "meta": {
             "definition": {
-              "val": "The appendage of the insect maxilla that is attached to the stipes by the stipito-lacinial conjunctiva.",
+              "val": "The cuticle of the appendage of the insect maxilla that is attached to the cuticle of stipes by the stipito-lacinial conjunctiva.",
               "xrefs": []
             }
           },
@@ -8246,7 +8256,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000029",
-          "lbl": "insect appendage",
+          "lbl": "cuticle of insect appendage",
           "meta": {
             "definition": {
               "val": "The evagination of the cuticle that is musculated (connected to the body via muscles).",
@@ -8257,10 +8267,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000031",
-          "lbl": "insect leg",
+          "lbl": "cuticle of insect leg",
           "meta": {
             "definition": {
-              "val": "Is the paired appendage of the insect thorax that is composed of coxa, trochanter, femur, tibia, tarsus, and pretarsus.",
+              "val": "The cuticle of the paired appendage of the insect thorax that is composed of coxa, trochanter, femur, tibia, tarsus, and pretarsus.",
               "xrefs": []
             }
           },
@@ -8268,10 +8278,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000032",
-          "lbl": "antenna",
+          "lbl": "cuticle of antenna",
           "meta": {
             "definition": {
-              "val": "Is the appendage of the head capsule that is connected by the  antenniferal-scapal conjunctiva to the scapus, which is connected by the scapal-pedicellar conjunctiva to the pedicellus; the pedicellus is connected by the pedicellar-first flagellomeral conjunctiva to the first flagellomere; the first flagellomere is connected by interflagellomeral conjunctiva to the next flagellomere. Further flagellomeres are connected to each other by interflagellomeral conjunctiva.",
+              "val": "The cuticle of the appendage of the head capsule that is connected by the  antenniferal-scapal conjunctiva to the cuticle of the scapus, which is connected by the scapal-pedicellar conjunctiva to the cuticle of the pedicellus; the cuticle of the pedicellus is connected by the pedicellar-first flagellomeral conjunctiva to the cuticle of the first flagellomere; the cuticle of the first flagellomere is connected by interflagellomeral conjunctiva to the next cuticle of flagellomere. Further cuticle of flagellomeres are connected to each other by interflagellomeral conjunctiva.",
               "xrefs": []
             }
           },
@@ -8279,10 +8289,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000033",
-          "lbl": "insect wing",
+          "lbl": "cuticle of insect wing",
           "meta": {
             "definition": {
-              "val": "The flat, paired appendage on the dorso-lateral region of the pterothorax.",
+              "val": "The cuticle of the flat, paired appendage on the dorso-lateral region of the pterothorax.",
               "xrefs": []
             }
           },
@@ -8290,10 +8300,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000034",
-          "lbl": "fore leg",
+          "lbl": "cuticle of fore leg",
           "meta": {
             "definition": {
-              "val": "The paired appendage of the prothorax that is anterior to a mid leg and composed of procoxa, protrochanter, profemur, protibia, protarsus, and propretarsus.",
+              "val": "The cuticle of the paired appendage of the prothorax that is anterior to the cuticle of a mid leg and composed of cuticle of procoxa, cuticle of protrochanter, cuticle of profemur, cuticle of protibia, cuticle of protarsus, and cuticle of propretarsus.",
               "xrefs": []
             }
           },
@@ -8301,10 +8311,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000035",
-          "lbl": "mid leg",
+          "lbl": "cuticle of mid leg",
           "meta": {
             "definition": {
-              "val": "The paired appendage of the mesothorax that is posterior to a fore leg, anterior to a hind leg, and composed of mesocoxa, mesotrochanter, mesofemur, mesotibia, mesotarsus, and mesopretarsus.",
+              "val": "The cuticle of the paired appendage of the mesothorax that is posterior to the cuticle of a fore leg, anterior to the cuticle of a hind leg, and composed of cuticle of mesocoxa, cuticle of mesotrochanter, cuticle of mesofemur, cuticle of mesotibia, cuticle of mesotarsus, and cuticle of mesopretarsus.",
               "xrefs": []
             }
           },
@@ -8312,10 +8322,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000036",
-          "lbl": "hind leg",
+          "lbl": "cuticle of hind leg",
           "meta": {
             "definition": {
-              "val": "The paired appendage of the metathorax that is posterior to a mid leg and composed of metacoxa, metatrochanter, metafemur, metatibia, metatarsus, and metapretarsus.",
+              "val": "The cuticle of the paired appendage of the metathorax that is posterior to the cuticle of a mid leg and composed of cuticle of metacoxa, cuticle of metatrochanter, cuticle of metafemur, cuticle of metatibia, cuticle of metatarsus, and cuticle of metapretarsus.",
               "xrefs": []
             }
           },
@@ -8323,10 +8333,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000037",
-          "lbl": "fore wing",
+          "lbl": "cuticle of fore wing",
           "meta": {
             "definition": {
-              "val": "The paired insect wing that is continuous with the mesonotum.",
+              "val": "The cuticle of the paired insect wing that is continuous with the mesonotum.",
               "xrefs": []
             }
           },
@@ -8334,10 +8344,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000038",
-          "lbl": "hind wing",
+          "lbl": "cuticle of hind wing",
           "meta": {
             "definition": {
-              "val": "The paired insect wing that is continuous with the metanotum.",
+              "val": "The cuticle of the paired insect wing that is continuous with the metanotum.",
               "xrefs": []
             }
           },
@@ -8345,7 +8355,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000039",
-          "lbl": "seta",
+          "lbl": "cuticular seta",
           "meta": {
             "definition": {
               "val": "The unicellular cuticular evagination that constitutes a sclerite with its base surrounded by socket membrane.",
@@ -8356,7 +8366,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000040",
-          "lbl": "spur",
+          "lbl": "cuticular spur",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8373,7 +8383,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000041",
-          "lbl": "scale",
+          "lbl": "cuticular scale",
           "meta": {
             "definition": {
               "val": "The seta that is flat.",
@@ -8384,10 +8394,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000042",
-          "lbl": "labrum",
+          "lbl": "cuticle of labrum",
           "meta": {
             "definition": {
-              "val": "Is the mouthpart and appendage that is attached to the clypeus by the clypeo-labral conjunctiva and to the proximal margin of the epipharynx.",
+              "val": "The cuticle of the mouthpart and appendage that is attached to the clypeus by the clypeo-labral conjunctiva and to the proximal margin of the epipharynx.",
               "xrefs": []
             }
           },
@@ -8395,10 +8405,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000043",
-          "lbl": "insect mandible",
+          "lbl": "cuticle of insect mandible",
           "meta": {
             "definition": {
-              "val": "Is a mouthpart and sclerite between the labrum and the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and the cranio-mandibular muscle.",
+              "val": "The cuticle of the mouthpart and sclerite between the cuticle of the labrum and the cuticle of the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and the cranio-mandibular muscle.",
               "xrefs": []
             }
           },
@@ -8406,10 +8416,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000044",
-          "lbl": "insect maxilla",
+          "lbl": "cuticle of insect maxilla",
           "meta": {
             "definition": {
-              "val": "Is a mouthpart appendage of the head capsule, between the insect mandible and the labium, composed of cardo, which is attached to the stipes by the cardo-stipital conjunctiva; the stipes, which is attached to the galea by the stipito-galeal conjunctiva, to the lacinia by the stipito-lacinial conjunctiva, and to the palpifer by the stipito-palpiferal conjunctiva; the palpifer is attached to the maxillary palpus by the palpifero-palpal conjunctiva.",
+              "val": "The cuticle of the mouthpart appendage of the head capsule, between the cuticle of the insect mandible and the cuticle of the labium, composed of cuticle of cardo, which is attached to the cuticle of stipes by the cardo-stipital conjunctiva; the cuticle of stipes, which is attached to the cuticle of galea by the stipito-galeal conjunctiva, to the cuticle of lacinia by the stipito-lacinial conjunctiva, and to the cuticle of palpifer by the stipito-palpiferal conjunctiva; the cuticle of palpifer is attached to the cuticle of maxillary palpus by the palpifero-palpal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8439,10 +8449,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000047",
-          "lbl": "pretarsus",
+          "lbl": "cuticle of pretarsus",
           "meta": {
             "definition": {
-              "val": "The appendage of the leg that is attached to the tarsus by the tarso-pretarsal conjunctiva.",
+              "val": "The cuticle of the appendage of the insect leg that is attached to the cuticle of tarsus by the tarso-pretarsal conjunctiva.",
               "xrefs": []
             },
             "synonyms": [
@@ -8457,10 +8467,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000048",
-          "lbl": "ligula",
+          "lbl": "cuticle of ligula",
           "meta": {
             "definition": {
-              "val": "Is the appendage of the labium composed of the glossa and paraglossa jointly.",
+              "val": "The cuticle of the appendage of the cuticle of labium composed of the cuticle of glossa and cuticle of paraglossa jointly.",
               "xrefs": []
             }
           },
@@ -8468,10 +8478,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000049",
-          "lbl": "glossa",
+          "lbl": "cuticle of glossa",
           "meta": {
             "definition": {
-              "val": "Is the appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-glossal conjunctiva.",
+              "val": "The cuticle of the appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-glossal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8479,10 +8489,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000050",
-          "lbl": "paraglossa",
+          "lbl": "cuticle of paraglossa",
           "meta": {
             "definition": {
-              "val": "The paired appendage of the labium, and part of the ligula, that is attached to the prementum by the premental-paraglossal conjunctiva.",
+              "val": "The cuticle of the paired appendage of the labium, and part of the ligula, that is attached to the cuticle of prementum by the premental-paraglossal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8490,10 +8500,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000051",
-          "lbl": "maxillary palpus",
+          "lbl": "cuticle of maxillary palpus",
           "meta": {
             "definition": {
-              "val": "Is the appendage of the insect maxilla that is attached to the palpifer by the palpifero-palpal conjunctiva.",
+              "val": "The cuticle of the appendage of the insect maxilla that is attached to the cuticle of palpifer by the palpifero-palpal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8589,10 +8599,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000060",
-          "lbl": "labial palpomere",
+          "lbl": "cuticle of labial palpomere",
           "meta": {
             "definition": {
-              "val": "The mere that is part of the labial palpus.",
+              "val": "The cuticle of the mere that is part of the labial palpus.",
               "xrefs": []
             }
           },
@@ -8622,7 +8632,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000063",
-          "lbl": "appendage segment",
+          "lbl": "cuticle of appendage segment",
           "meta": {
             "definition": {
               "val": "The ring sclerite that is part of an appendage and is attached to muscle.",
@@ -8633,10 +8643,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000064",
-          "lbl": "mesocoxa",
+          "lbl": "cuticle of mesocoxa",
           "meta": {
             "definition": {
-              "val": "The segment of the mid leg that is attached to the latero-ventral region of the mesothorax by the basal mesocoxal conjunctiva and to the mesotrochanter by the mesocoxal-mesotrochanteral conjunctiva.",
+              "val": "The cuticle of the segment of the mid leg that is attached to the latero-ventral region of the mesothorax by the basal mesocoxal conjunctiva and to the mesotrochanter by the mesocoxal-mesotrochanteral conjunctiva.",
               "xrefs": []
             }
           },
@@ -8644,10 +8654,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000065",
-          "lbl": "metacoxa",
+          "lbl": "cuticle of metacoxa",
           "meta": {
             "definition": {
-              "val": "The segment of the hind leg that is attached to the latero-ventral region of the metathorax by the basal metacoxal conjunctiva and to the metatrochanter by the metacoxal-metatrochanteral conjunctiva.",
+              "val": "The cuticle of the segment of the hind leg that is attached to the latero-ventral region of the metathorax by the basal metacoxal conjunctiva and to the metatrochanter by the metacoxal-metatrochanteral conjunctiva.",
               "xrefs": []
             }
           },
@@ -8655,10 +8665,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000066",
-          "lbl": "procoxa",
+          "lbl": "cuticle of procoxa",
           "meta": {
             "definition": {
-              "val": "The segment of the fore leg that is attached to the latero-ventral region of the prothorax by the basal procoxal conjunctiva and to the protrochanter by the procoxal-protrochanteral conjunctiva.",
+              "val": "The cuticle of the segment of the fore leg that is attached to the latero-ventral region of the prothorax by the basal procoxal conjunctiva and to the protrochanter by the procoxal-protrochanteral conjunctiva.",
               "xrefs": []
             }
           },
@@ -8666,10 +8676,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000067",
-          "lbl": "protibia",
+          "lbl": "cuticle of protibia",
           "meta": {
             "definition": {
-              "val": "The segment of a fore leg attached to the distal margin of the profemur by the profemoro-protibial conjunctiva and to the proximal margin of the protarsus by the protibio-protarsal conjunctiva.",
+              "val": "The cuticle of the segment of a fore leg attached to the distal margin of the profemur by the profemoro-protibial conjunctiva and to the proximal margin of the protarsus by the protibio-protarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8677,10 +8687,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000068",
-          "lbl": "mesotibia",
+          "lbl": "cuticle of mesotibia",
           "meta": {
             "definition": {
-              "val": "The segment of a mid leg attached to the distal margin of the mesofemur by the mesofemoro-mesotibial conjunctiva and to the proximal margin of the mesotarsus by the mesotibio-mesotarsal conjunctiva.",
+              "val": "The cuticle of the segment of a mid leg attached to the distal margin of the mesofemur by the mesofemoro-mesotibial conjunctiva and to the proximal margin of the mesotarsus by the mesotibio-mesotarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8688,10 +8698,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000069",
-          "lbl": "metatibia",
+          "lbl": "cuticle of metatibia",
           "meta": {
             "definition": {
-              "val": "The segment of a hind leg attached to the distal margin of the metafemur by the metafemoro-metatibial conjunctiva and to the proximal margin of the metatarsus by the metatibio-metatarsal conjunctiva.",
+              "val": "The cuticle of the segment of a hind leg attached to the distal margin of the metafemur by the metafemoro-metatibial conjunctiva and to the proximal margin of the metatarsus by the metatibio-metatarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8699,10 +8709,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000070",
-          "lbl": "profemur",
+          "lbl": "cuticle of profemur",
           "meta": {
             "definition": {
-              "val": "The segment of a fore leg attached to the distal margin of the protrochanter by the protrochantero-profemoral conjunctiva and to the proximal margin of the protibia by the profemoro-protibial conjunctiva.",
+              "val": "The cuticle of the segment of a fore leg attached to the distal margin of the protrochanter by the protrochantero-profemoral conjunctiva and to the proximal margin of the protibia by the profemoro-protibial conjunctiva.",
               "xrefs": []
             }
           },
@@ -8710,10 +8720,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000071",
-          "lbl": "mesofemur",
+          "lbl": "cuticle of mesofemur",
           "meta": {
             "definition": {
-              "val": "The segment of a mid leg attached to the distal margin of the mesotrochanter by the mesotrochantero-mesofemoral conjunctiva and to the proximal margin of the mesotibia by the mesofemoro-mesotibial conjunctiva.",
+              "val": "The cuticle of the segment of a mid leg attached to the distal margin of the mesotrochanter by the mesotrochantero-mesofemoral conjunctiva and to the proximal margin of the mesotibia by the mesofemoro-mesotibial conjunctiva.",
               "xrefs": []
             }
           },
@@ -8721,10 +8731,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000072",
-          "lbl": "metafemur",
+          "lbl": "cuticle of metafemur",
           "meta": {
             "definition": {
-              "val": "The segment of a hind leg attached to the distal margin of the metatrochanter by the metatrochantero-metafemoral conjunctiva and to the proximal margin of the metatibia by the metafemoro-metatibial conjunctiva.",
+              "val": "The cuticle of the segment of a hind leg attached to the distal margin of the metatrochanter by the metatrochantero-metafemoral conjunctiva and to the proximal margin of the metatibia by the metafemoro-metatibial conjunctiva.",
               "xrefs": []
             }
           },
@@ -8732,10 +8742,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000073",
-          "lbl": "mere",
+          "lbl": "cuticle of mere",
           "meta": {
             "definition": {
-              "val": "The ring sclerite that is part of an appendage and is not attached to skeletal muscle tissue.",
+              "val": "The ring sclerite that is part of an appendage and is not attached to somatic muscle.",
               "xrefs": []
             }
           },
@@ -8743,10 +8753,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000074",
-          "lbl": "tarsomere",
+          "lbl": "cuticle of tarsomere",
           "meta": {
             "definition": {
-              "val": "The mere that is part of the tarsus.",
+              "val": "The cuticle of the mere that is part of the tarsus.",
               "xrefs": []
             }
           },
@@ -8754,10 +8764,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000075",
-          "lbl": "tibia",
+          "lbl": "cuticle of tibia",
           "meta": {
             "definition": {
-              "val": "The segment of a leg attached to the distal margin of the femur by the femoro-tibial conjunctiva and to the proximal margin of the tarsus by the tibio-tarsal conjunctiva.",
+              "val": "The cuticle of the segment of a leg attached to the distal margin of the femur by the femoro-tibial conjunctiva and to the proximal margin of the tarsus by the tibio-tarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -8765,10 +8775,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000076",
-          "lbl": "femur",
+          "lbl": "cuticle of femur",
           "meta": {
             "definition": {
-              "val": "The segment of a leg attached to the distal margin of the trochanter by the trochantero-femoral conjunctiva and to the proximal margin of the tibia by the femoro-tibial conjunctiva.",
+              "val": "The cuticle of the segment of a leg attached to the distal margin of the trochanter by the trochantero-femoral conjunctiva and to the proximal margin of the tibia by the femoro-tibial conjunctiva.",
               "xrefs": []
             }
           },
@@ -8776,10 +8786,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000077",
-          "lbl": "coxa",
+          "lbl": "cuticle of coxa",
           "meta": {
             "definition": {
-              "val": "The segment of the leg that is attached to the latero-ventral region of the insect thorax by the basal coxal conjunctiva and to the trochanter by the coxal-trochanteral conjunctiva.",
+              "val": "The cuticle of the segment of the leg that is attached to the latero-ventral region of the insect thorax by the basal coxal conjunctiva and to the trochanter by the coxal-trochanteral conjunctiva.",
               "xrefs": []
             }
           },
@@ -8812,7 +8822,7 @@
           "lbl": "insect cranial muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that is attached to the head capsule.",
+              "val": "The somatic muscle that is attached to the head capsule.",
               "xrefs": []
             }
           },
@@ -8823,7 +8833,7 @@
           "lbl": "cranio-antennal muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that is attached to the head capsule and the antenna.",
+              "val": "The somatic muscle that is attached to the head capsule and the antenna.",
               "xrefs": []
             }
           },
@@ -8834,7 +8844,7 @@
           "lbl": "cranio-mandibular muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that is attached to the head capsule and the insect mandible.",
+              "val": "The somatic muscle that is attached to the head capsule and the insect mandible.",
               "xrefs": []
             }
           },
@@ -8845,7 +8855,7 @@
           "lbl": "cranio-labial muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that is attached to the head capsule and the labium.",
+              "val": "The somatic muscle that is attached to the head capsule and the labium.",
               "xrefs": []
             }
           },
@@ -8856,7 +8866,7 @@
           "lbl": "cranio-labral muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that is attached to the head capsule and the labrum.",
+              "val": "The somatic muscle that is attached to the head capsule and the labrum.",
               "xrefs": []
             }
           },
@@ -8884,7 +8894,7 @@
               }
             ],
             "definition": {
-              "val": "The skeletal muscle that inserts in the coxa.",
+              "val": "The somatic muscle that inserts in the coxa.",
               "xrefs": []
             }
           },
@@ -8892,10 +8902,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000087",
-          "lbl": "labium",
+          "lbl": "cuticle of labium",
           "meta": {
             "definition": {
-              "val": "Is the mouthpart appendage composed of the submentum, which is attached by the submental-mental conjunctiva to the mentum, which is attached by the mental-premental conjunctiva to the prementum, which is attached to the palpiger by the premental-palpigeral conjunctiva, the paraglossa by the premental-paraglossal conjunctiva, and the glossa by the premental-glossal conjunctiva; the palpiger is attached by the palpigero-palpal conjunctiva to the labial palpus.",
+              "val": "The cuticle of the mouthpart appendage composed of the cuticle of submentum, which is attached by the submental-mental conjunctiva to the cuticle of mentum, which is attached by the mental-premental conjunctiva to the cuticle of prementum, which is attached to the cuticle of palpiger by the premental-palpigeral conjunctiva, the cuticle of paraglossa by the premental-paraglossal conjunctiva, and the cuticle of glossa by the premental-glossal conjunctiva; the cuticle of palpiger is attached by the palpigero-palpal conjunctiva to the cuticle of labial palpus.",
               "xrefs": []
             }
           },
@@ -8928,7 +8938,7 @@
           "lbl": "cuticular tendon",
           "meta": {
             "definition": {
-              "val": "The usually cylindircal evagination of the cuticle that is resilin rich and is continuous with skeletal muscles.",
+              "val": "The usually cylindircal evagination of the cuticle that is resilin rich and is continuous with somatic muscles.",
               "xrefs": []
             }
           },
@@ -9108,7 +9118,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000107",
-          "lbl": "insect head",
+          "lbl": "cuticle of insect head",
           "meta": {
             "definition": {
               "val": "The cuticular region that is anterior (distal) to the neck membrane (encircled by the neck membrane) and contains the head capsule, the antenna, the eyes, mouthparts and surrounds the brain.",
@@ -9119,7 +9129,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000108",
-          "lbl": "insect thorax",
+          "lbl": "cuticle of insect thorax",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9136,7 +9146,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000109",
-          "lbl": "insect abdomen",
+          "lbl": "cuticle of insect abdomen",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9168,10 +9178,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000111",
-          "lbl": "stipes",
+          "lbl": "cuticle of stipes",
           "meta": {
             "definition": {
-              "val": "Is the sclerite of the insect maxilla that is attached to the cardo by the cardo-stipital conjunctiva, attached to the lacinia by the stipito-lacinial conjunctiva, attached to the palpifer by the stipito-palpiferal conjunctiva, and attached to the galea by the stipito-galeal conjunctiva.",
+              "val": "The cuticle of the sclerite of the insect maxilla that is attached to the cuticle of cardo by the cardo-stipital conjunctiva, attached to the cuticle of lacinia by the stipito-lacinial conjunctiva, attached to the cuticle of palpifer by the stipito-palpiferal conjunctiva, and attached to the cuticle of galea by the stipito-galeal conjunctiva.",
               "xrefs": []
             }
           },
@@ -9190,10 +9200,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000113",
-          "lbl": "scapus",
+          "lbl": "cuticle of scapus",
           "meta": {
             "definition": {
-              "val": "The segment of the antenna that is connected to the head capsule and the antennifer by the basal antennal conjunctiva and to the pedicellus by the scapal-pedicellar conjunctiva.",
+              "val": "The cuticle of the segment of the antenna that is connected to the head capsule and the antennifer by the basal antennal conjunctiva and to the pedicellus by the scapal-pedicellar conjunctiva.",
               "xrefs": []
             }
           },
@@ -9212,10 +9222,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000115",
-          "lbl": "pedicellus",
+          "lbl": "cuticle of pedicellus",
           "meta": {
             "definition": {
-              "val": "Is the segment of the antenna that is attached to the scapus by the scapal-pedicellar conjunctiva and to the first flagellomere by the pedicel-first flagellomere conjunctiva.",
+              "val": "The cuticle of the segment of the antenna that is attached to the scapus by the scapal-pedicellar conjunctiva and to the first flagellomere by the pedicel-first flagellomere conjunctiva.",
               "xrefs": []
             }
           },
@@ -9223,10 +9233,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000116",
-          "lbl": "flagellomere",
+          "lbl": "cuticle of flagellomere",
           "meta": {
             "definition": {
-              "val": "The mere that is part of the antenna.",
+              "val": "The cuticle of the mere that is part of the antenna.",
               "xrefs": []
             }
           },
@@ -9234,10 +9244,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000117",
-          "lbl": "first flagellomere",
+          "lbl": "cuticle of first flagellomere",
           "meta": {
             "definition": {
-              "val": "The first flagellomere of the antenna, attached to the pedicel by the pedicel-first flagellomere conjunctiva.",
+              "val": "The cuticle of the first flagellomere of the antenna, attached to the pedicel by the pedicel-first flagellomere conjunctiva.",
               "xrefs": []
             }
           },
@@ -9417,7 +9427,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000134",
-          "lbl": "exocrine gland duct",
+          "lbl": "cuticular exocrine gland duct",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9437,7 +9447,7 @@
           "lbl": "spiracle",
           "meta": {
             "definition": {
-              "val": "The region of the cuticle that is continuous to the proximal region of the trachea and can be closed by muscles.",
+              "val": "The region of the cuticle that is continuous to the proximal region of a trachea and can be closed by muscles.",
               "xrefs": []
             }
           },
@@ -9467,13 +9477,18 @@
             "definition": {
               "val": "The branching cuticular invagination that is located between the mid and hindgut.",
               "xrefs": []
-            }
+            },
+            "xrefs": [
+              {
+                "val": "http://purl.obolibrary.org/obo/UBERON_0001054"
+              }
+            ]
           },
           "type": "CLASS"
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000138",
-          "lbl": "apophysis",
+          "lbl": "cuticular apophysis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9577,7 +9592,7 @@
           "lbl": "femoral muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that inserts in the femur.",
+              "val": "The somatic muscle that inserts in the femur.",
               "xrefs": []
             }
           },
@@ -9588,7 +9603,7 @@
           "lbl": "tibial muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that inserts in the tibia.",
+              "val": "The somatic muscle that inserts in the tibia.",
               "xrefs": []
             }
           },
@@ -9605,7 +9620,7 @@
               }
             ],
             "definition": {
-              "val": "The skeletal muscle that inserts in the pretarsus.",
+              "val": "The somatic muscle that inserts in the pretarsus.",
               "xrefs": []
             }
           },
@@ -9616,7 +9631,7 @@
           "lbl": "profemoral muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that inserts in the profemur.",
+              "val": "The somatic muscle that inserts in the profemur.",
               "xrefs": []
             }
           },
@@ -9627,7 +9642,7 @@
           "lbl": "mesofemoral muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that inserts in the mesofemur.",
+              "val": "The somatic muscle that inserts in the mesofemur.",
               "xrefs": []
             }
           },
@@ -9638,7 +9653,7 @@
           "lbl": "metafemoral muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that inserts in the metafemur.",
+              "val": "The somatic muscle that inserts in the metafemur.",
               "xrefs": []
             }
           },
@@ -9649,7 +9664,7 @@
           "lbl": "protibial muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that inserts in the protibia.",
+              "val": "The somatic muscle that inserts in the protibia.",
               "xrefs": []
             }
           },
@@ -9660,7 +9675,7 @@
           "lbl": "mesotibial muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that inserts in the mesotibia.",
+              "val": "The somatic muscle that inserts in the mesotibia.",
               "xrefs": []
             }
           },
@@ -9671,7 +9686,7 @@
           "lbl": "metatibial muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that inserts in the metatibia.",
+              "val": "The somatic muscle that inserts in the metatibia.",
               "xrefs": []
             }
           },
@@ -9679,7 +9694,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000156",
-          "lbl": "fovea",
+          "lbl": "cuticular fovea",
           "meta": {
             "definition": {
               "val": "The cuticular depression that is circular.",
@@ -9690,7 +9705,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000157",
-          "lbl": "groove",
+          "lbl": "cuticular groove",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9707,7 +9722,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000158",
-          "lbl": "ridge",
+          "lbl": "cuticular ridge",
           "meta": {
             "definition": {
               "val": "The invagination on a sclerite that is elongated.",
@@ -9729,7 +9744,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000160",
-          "lbl": "pouch",
+          "lbl": "cuticular pouch",
           "meta": {
             "definition": {
               "val": "The invagination of the cuticle that is largely membranous.",
@@ -9751,10 +9766,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000162",
-          "lbl": "sulcus",
+          "lbl": "cuticular sulcus",
           "meta": {
             "definition": {
-              "val": "The cuticular depression (concavity on cuticle surface) that corresponds with a ridge (an elongate cuticular invagination).",
+              "val": "The cuticular depression (concavity on cuticle surface) that corresponds with a cuticular ridge (an elongate cuticular invagination).",
               "xrefs": []
             }
           },
@@ -9773,10 +9788,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000165",
-          "lbl": "mouthpart",
+          "lbl": "cuticle of mouthpart",
           "meta": {
             "definition": {
-              "val": "The appendage of the insect head that is encircled by the oral foraminal conjunctiva.",
+              "val": "The cuticle of the appendage of the insect head that is encircled by the oral foraminal conjunctiva.",
               "xrefs": []
             }
           },
@@ -9798,7 +9813,7 @@
           "lbl": "articular surface",
           "meta": {
             "definition": {
-              "val": "The anatomical surface where two sclerites meet.",
+              "val": "The region of cuticle where two sclerites meet.",
               "xrefs": []
             }
           },
@@ -9904,7 +9919,7 @@
               }
             ],
             "definition": {
-              "val": "The anatomical space that is contained by the cuticle and connects the inside of the insect with the outside, is tubular, and whose diameter is smaller than 100 nm.",
+              "val": "The orifice that is contained by the cuticle and connects the inside of the insect with the outside, is tubular, and whose diameter is smaller than 100 nm.",
               "xrefs": []
             }
           },
@@ -10059,7 +10074,7 @@
           "lbl": "tentorial pit",
           "meta": {
             "definition": {
-              "val": "The pit that correspods to the tentorium.",
+              "val": "The cuticular pit that correspods to the tentorium.",
               "xrefs": []
             }
           },
@@ -10070,7 +10085,7 @@
           "lbl": "arthropod foramen",
           "meta": {
             "definition": {
-              "val": "Is the anatomical space encircled a sclerite",
+              "val": "Is the foramen encircled a sclerite.",
               "xrefs": []
             }
           },
@@ -10089,7 +10104,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000200",
-          "lbl": "gonocoxa IX",
+          "lbl": "cuticle of gonocoxa IX",
           "meta": {
             "definition": {
               "val": "The paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX.",
@@ -10128,7 +10143,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000501",
-          "lbl": "carina",
+          "lbl": "cuticular carina",
           "meta": {
             "definition": {
               "val": "The protrusion on a sclerite that is elongated.",
@@ -10161,10 +10176,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000524",
-          "lbl": "puncture",
+          "lbl": "cuticular puncture",
           "meta": {
             "definition": {
-              "val": "The fovea that is small.",
+              "val": "The cuticular fovea that is small.",
               "xrefs": []
             }
           },
@@ -10172,7 +10187,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000525",
-          "lbl": "granule",
+          "lbl": "cuticular granule",
           "meta": {
             "definition": {
               "val": "The cuticular protrusion of a sclerite that is small.",
@@ -10183,7 +10198,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000526",
-          "lbl": "tubercle",
+          "lbl": "cuticular tubercle",
           "meta": {
             "definition": {
               "val": "The cuticular protrusion of a sclerite that is rounded (circular).",
@@ -10194,7 +10209,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000527",
-          "lbl": "spine",
+          "lbl": "cuticular spine",
           "meta": {
             "definition": {
               "val": "The cuticular protrusion of a sclerite that is sharp.",
@@ -10205,10 +10220,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000528",
-          "lbl": "granulated",
+          "lbl": "granulated cuticle",
           "meta": {
             "definition": {
-              "val": "The anatomical collection that is composed of granules.",
+              "val": "The region of the cuticle that bears an anatomical collection that is composed of granules.",
               "xrefs": []
             }
           },
@@ -10216,10 +10231,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000529",
-          "lbl": "punctate",
+          "lbl": "punctate cuticle",
           "meta": {
             "definition": {
-              "val": "The anatomical collection that is composed of punctures.",
+              "val": "The region of the cuticle that bears an anatomical collection that is composed of punctures.",
               "xrefs": []
             }
           },
@@ -10227,10 +10242,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000530",
-          "lbl": "setose",
+          "lbl": "setose cuticle",
           "meta": {
             "definition": {
-              "val": "The anatomical collection that is composed of setae.",
+              "val": "The region of the cuticle that bears an anatomical collection that is composed of setae.",
               "xrefs": []
             }
           },
@@ -10533,7 +10548,7 @@
           "lbl": "insect cranio-maxillar muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that is attached to the head capsule and the insect maxilla.",
+              "val": "The somatic muscle that is attached to the head capsule and the insect maxilla.",
               "xrefs": []
             }
           },
@@ -10544,7 +10559,7 @@
           "lbl": "cranio-cardinal muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the gena and the cardo.",
+              "val": "The insect cranio-maxillar muscle that is attached to the gena and the cardo.",
               "xrefs": []
             }
           },
@@ -10555,7 +10570,7 @@
           "lbl": "cranio-lacinial muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the gena and the lacinia.",
+              "val": "The insect cranio-maxillar muscle that is attached to the gena and the lacinia.",
               "xrefs": []
             }
           },
@@ -10566,7 +10581,7 @@
           "lbl": "tentorio-cardinal muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the tentorium and the cardo.",
+              "val": "The insect cranio-maxillar muscle that is attached to the tentorium and the cardo.",
               "xrefs": []
             }
           },
@@ -10577,7 +10592,7 @@
           "lbl": "anterior tentorio-stipital muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the tentorium and the stipital ridge.",
+              "val": "The insect cranio-maxillar muscle that is attached to the tentorium and the stipital ridge.",
               "xrefs": []
             }
           },
@@ -10599,7 +10614,7 @@
           "lbl": "posterior tentorio-stipital muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the tentorium and the stipes.",
+              "val": "The insect cranio-maxillar muscle that is attached to the tentorium and the stipes.",
               "xrefs": []
             }
           },
@@ -10610,7 +10625,7 @@
           "lbl": "stipito-lacinial muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the stipes and the lacinia.",
+              "val": "The insect cranio-maxillar muscle that is attached to the stipes and the lacinia.",
               "xrefs": []
             }
           },
@@ -10621,7 +10636,7 @@
           "lbl": "stipito-galeal muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the stipes and the galea.",
+              "val": "The insect cranio-maxillar muscle that is attached to the stipes and the galea.",
               "xrefs": []
             }
           },
@@ -10632,7 +10647,7 @@
           "lbl": "stipito-palpal muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the stipes and the maxillary palpus.",
+              "val": "The insect cranio-maxillar muscle that is attached to the stipes and the maxillary palpus.",
               "xrefs": []
             }
           },
@@ -10640,10 +10655,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0002036",
-          "lbl": "maxillary palpomere",
+          "lbl": "cuticle of maxillary palpomere",
           "meta": {
             "definition": {
-              "val": "The mere that is part of the maxillary palpus.",
+              "val": "The cuticle of the mere that is part of the maxillary palpus.",
               "xrefs": []
             }
           },
@@ -10651,10 +10666,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0002037",
-          "lbl": "maxillary palpomere I",
+          "lbl": "cuticle of maxillary palpomere I",
           "meta": {
             "definition": {
-              "val": "The maxillary palpomere that is attached to the distal margin of the palpiger and to the proximal margin of the maxillary palpomere II.",
+              "val": "The cuticle of the maxillary palpomere that is attached to the distal margin of the palpiger and to the proximal margin of the maxillary palpomere II.",
               "xrefs": []
             }
           },
@@ -10662,10 +10677,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0002038",
-          "lbl": "maxillary palpomere II",
+          "lbl": "cuticle of maxillary palpomere II",
           "meta": {
             "definition": {
-              "val": "The maxillary palpomere that is attached to the distal margin of the maxillary palpomere I and to the proximal margin of the maxillary palpomere III.",
+              "val": "The cuticle of the maxillary palpomere that is attached to the distal margin of the maxillary palpomere I and to the proximal margin of the maxillary palpomere III.",
               "xrefs": []
             }
           },
@@ -10673,10 +10688,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0002039",
-          "lbl": "maxillary palpomere III",
+          "lbl": "cuticle of maxillary palpomere III",
           "meta": {
             "definition": {
-              "val": "The maxillary palpomere that is attached to the distal margin of the maxillary palpomere II and to the proximal margin of the maxillary palpomere IV.",
+              "val": "The cuticle of the maxillary palpomere that is attached to the distal margin of the maxillary palpomere II and to the proximal margin of the maxillary palpomere IV.",
               "xrefs": []
             }
           },
@@ -10684,10 +10699,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0002040",
-          "lbl": "maxillary palpomere IV",
+          "lbl": "cuticle of maxillary palpomere IV",
           "meta": {
             "definition": {
-              "val": "The maxillary palpomere that is attached to the distal margin of the maxillary palpomere III and to the proximal margin of the maxillary palpomere V.",
+              "val": "The cuticle of the maxillary palpomere that is attached to the distal margin of the maxillary palpomere III and to the proximal margin of the maxillary palpomere V.",
               "xrefs": []
             }
           },
@@ -10695,10 +10710,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0002041",
-          "lbl": "maxillary palpomere V",
+          "lbl": "cuticle of maxillary palpomere V",
           "meta": {
             "definition": {
-              "val": "The maxillary palpomere that is attached to the distal margin of the maxillary palpomere IV.",
+              "val": "The cuticle of the maxillary palpomere that is attached to the distal margin of the maxillary palpomere IV.",
               "xrefs": []
             }
           },
@@ -10709,7 +10724,7 @@
           "lbl": "first maxillar palpopalpal muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the first maxillar palpomere and  the second maxillar palpomere.",
+              "val": "The insect cranio-maxillar muscle that is attached to the first maxillar palpomere and  the second maxillar palpomere.",
               "xrefs": []
             }
           },
@@ -10720,7 +10735,7 @@
           "lbl": "second maxillar palpopalpal muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the second maxillar palpomere and  the third maxillar palpomere.",
+              "val": "The insect cranio-maxillar muscle that is attached to the second maxillar palpomere and  the third maxillar palpomere.",
               "xrefs": []
             }
           },
@@ -10731,7 +10746,7 @@
           "lbl": "third maxillar palpopalpal muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the third maxillar palpomere and  the fourth maxillar palpomere.",
+              "val": "The insect cranio-maxillar muscle that is attached to the third maxillar palpomere and  the fourth maxillar palpomere.",
               "xrefs": []
             }
           },
@@ -10742,7 +10757,7 @@
           "lbl": "fourth maxillar palpopalpal muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-maxillar muscle that is attached to the fourth maxillar palpomere and  the fifth maxillar palpomere.",
+              "val": "The insect cranio-maxillar muscle that is attached to the fourth maxillar palpomere and  the fifth maxillar palpomere.",
               "xrefs": []
             }
           },
@@ -10874,7 +10889,7 @@
           "lbl": "cranio-hypopharyngeal muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that is attached to the head capsule and the hypopharynx.",
+              "val": "The somatic muscle that is attached to the head capsule and the hypopharynx.",
               "xrefs": []
             }
           },
@@ -10885,7 +10900,7 @@
           "lbl": "fronto-oral muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-antennal muscle that is attached to the frons and  the suspensorium.",
+              "val": "The cranio-hypopharyngeal muscle that is attached to the frons and  the suspensorium.",
               "xrefs": []
             }
           },
@@ -10896,7 +10911,7 @@
           "lbl": "tentorio-oral muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-antennal muscle that is attached to the anterior tentorial arm and  the suspensorium.",
+              "val": "The cranio-hypopharyngeal muscle that is attached to the anterior tentorial arm and the suspensorium.",
               "xrefs": []
             }
           },
@@ -10907,7 +10922,7 @@
           "lbl": "insect cranio-tentorial muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle that is attached to the head capsule and the tentorium.",
+              "val": "The somatic muscle that is attached to the head capsule and the tentorium.",
               "xrefs": []
             }
           },
@@ -10918,7 +10933,7 @@
           "lbl": "tentorio-frontal muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-antennal muscle that is attached to the tentorial bridge and the frons.",
+              "val": "The insect cranio-antennal muscle that is attached to the tentorial bridge and the frons.",
               "xrefs": []
             }
           },
@@ -10929,7 +10944,7 @@
           "lbl": "tentorio-tentorial muscle",
           "meta": {
             "definition": {
-              "val": "The cranio-antennal muscle that is attached to the tentorial bridge and the tentorium.",
+              "val": "The insect cranio-antennal muscle that is attached to the tentorial bridge and the tentorium.",
               "xrefs": []
             }
           },
@@ -10940,7 +10955,7 @@
           "lbl": "insect leg muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle tissue that is part of the insect leg.",
+              "val": "The somatic muscle that is part of the insect leg.",
               "xrefs": []
             }
           },
@@ -10951,7 +10966,7 @@
           "lbl": "insect thoracic muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle tissue that is part of the insect thorax.",
+              "val": "The somatic muscle that is part of the insect thorax.",
               "xrefs": []
             }
           },
@@ -10962,7 +10977,7 @@
           "lbl": "dorsal longitudinal thoracic muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that is not fan-shaped and runs along the dorsal region, parallel to the anterior-posterior axis.",
+              "val": "The insect thoracic muscle that is not fan-shaped and runs along the dorsal region, parallel to the anterior-posterior axis.",
               "xrefs": []
             }
           },
@@ -10984,7 +10999,7 @@
           "lbl": "tergo-pleural muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the notum (or tergum) and the pleura.",
+              "val": "The insect thoracic muscle that extends between the notum (or tergum) and the pleura.",
               "xrefs": []
             }
           },
@@ -10995,7 +11010,7 @@
           "lbl": "sterno-pleural muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the sternum and the pleura.",
+              "val": "The insect thoracic muscle that extends between the sternum and the pleura.",
               "xrefs": []
             }
           },
@@ -11006,7 +11021,7 @@
           "lbl": "ventral-longitudinal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that is not fan-shaped and runs along the ventral region, parallel to the anterior-posterior axis.",
+              "val": "The insect thoracic muscle that is not fan-shaped and runs along the ventral region, parallel to the anterior-posterior axis.",
               "xrefs": []
             }
           },
@@ -11017,7 +11032,7 @@
           "lbl": "prophragma-occipital muscle",
           "meta": {
             "definition": {
-              "val": "The dorsal longitudinal muscle that is attached to the prophragma and the postocciput.",
+              "val": "The dorsal longitudinal thoracic muscle that is attached to the prophragma and the postocciput.",
               "xrefs": []
             }
           },
@@ -11028,7 +11043,7 @@
           "lbl": "pronoto-occipital muscle",
           "meta": {
             "definition": {
-              "val": "The dorsal longitudinal muscle that is attached to the pronotum and the postocciput.",
+              "val": "The dorsal longitudinal thoracic muscle that is attached to the pronotum and the postocciput.",
               "xrefs": []
             }
           },
@@ -11039,7 +11054,7 @@
           "lbl": "prophragma-cervical muscle",
           "meta": {
             "definition": {
-              "val": "The dorsal longitudinal muscle that is attached to the prophragma and the cervical sclerite.",
+              "val": "The dorsal longitudinal thoracic muscle that is attached to the prophragma and the cervical sclerite.",
               "xrefs": []
             }
           },
@@ -11050,7 +11065,7 @@
           "lbl": "dorsal cervico-occipital muscle",
           "meta": {
             "definition": {
-              "val": "The dorsal longitudinal muscle that is attached to the cervical sclerite and the postocciput.",
+              "val": "The dorsal longitudinal thoracic muscle that is attached to the cervical sclerite and the postocciput.",
               "xrefs": []
             }
           },
@@ -11061,7 +11076,7 @@
           "lbl": "pronoto-phragmal muscle",
           "meta": {
             "definition": {
-              "val": "The dorsal longitudinal muscle that is attached to the pronotum and the prophragma.",
+              "val": "The dorsal longitudinal thoracic muscle that is attached to the pronotum and the prophragma.",
               "xrefs": []
             }
           },
@@ -11160,7 +11175,7 @@
           "lbl": "insect abdominal muscle",
           "meta": {
             "definition": {
-              "val": "The skeletal muscle tissue that is part of the insect abdomen.",
+              "val": "The somatic muscle that is part of the insect abdomen.",
               "xrefs": []
             }
           },
@@ -11201,10 +11216,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004001",
-          "lbl": "palpifer",
+          "lbl": "cuticle of palpifer",
           "meta": {
             "definition": {
-              "val": "Is the sclerite of the insect maxilla that is attached to the stipes by the stipito-palpiferal conjunctiva and to the maxillary palpus by the palpifero-palpal conjunctiva.",
+              "val": "The sclerite of the insect maxilla that is attached to the cuticle of stipes by the stipito-palpiferal conjunctiva and to the cuticle of maxillary palpus by the palpifero-palpal conjunctiva.",
               "xrefs": []
             }
           },
@@ -11226,7 +11241,7 @@
           "lbl": "postmentum",
           "meta": {
             "definition": {
-              "val": "Is the sclerite of the labium that is cmposed of the submentum and the mentum, which are connected by the submental-mental conjunctiva",
+              "val": "The sclerite of the cuticle of labium that is cmposed of the submentum and the mentum, which are connected by the submental-mental conjunctiva",
               "xrefs": []
             }
           },
@@ -11237,7 +11252,7 @@
           "lbl": "mentum",
           "meta": {
             "definition": {
-              "val": "Is the sclerite of the labium that is anterior to the submentum and posterior to the prementum, and attached to the prementum by the mental-premental conjunctiva.",
+              "val": "The sclerite of the labium that is anterior to the submentum and posterior to the prementum, and attached to the prementum by the mental-premental conjunctiva.",
               "xrefs": []
             }
           },
@@ -11256,10 +11271,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004006",
-          "lbl": "palpiger",
+          "lbl": "cuticle of palpiger",
           "meta": {
             "definition": {
-              "val": "Is the sclerite of the labium that is attached to the prementum by the premental-palpigeral conjunctiva and to the labial palpus by the palpigero-palpal conjunctiva.",
+              "val": "The sclerite of the cuticle of labium that is attached to the prementum by the premental-palpigeral conjunctiva and to the cuticle of labial palpus by the palpigero-palpal conjunctiva.",
               "xrefs": []
             }
           },
@@ -11512,7 +11527,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004028",
-          "lbl": "suture",
+          "lbl": "cuticular suture",
           "meta": {
             "definition": {
               "val": "The region of the cuticle of the head capsule that coincides with an ecdysial line.",
@@ -11526,7 +11541,7 @@
           "lbl": "frontal suture",
           "meta": {
             "definition": {
-              "val": "The suture that surrounds the frons and is connected to the coronal suture.",
+              "val": "The cuticular suture that surrounds the frons and is connected to the coronal suture.",
               "xrefs": []
             }
           },
@@ -11537,7 +11552,7 @@
           "lbl": "coronal suture",
           "meta": {
             "definition": {
-              "val": "The longitudinal suture that is on the vertex and is connected to the frontal suture.",
+              "val": "The longitudinal cuticular suture that is on the vertex and is connected to the frontal suture.",
               "xrefs": []
             }
           },
@@ -11764,7 +11779,7 @@
           "lbl": "anteclypeus",
           "meta": {
             "definition": {
-              "val": "Is the region of the cuticle comprising the anterior region of the clypeus.",
+              "val": "The region of the cuticle comprising the anterior region of the clypeus.",
               "xrefs": []
             }
           },
@@ -11914,10 +11929,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004062",
-          "lbl": "aedeagus",
+          "lbl": "cuticle of aedeagus",
           "meta": {
             "definition": {
-              "val": "The cuticular evagination of the postabdomen that is distal and attached to the parameres by the paramero-aedeagal conjunctiva and is connected to the endophallus.",
+              "val": "The cuticular evagination of the postabdomen that is distal and attached to the cuticle of parameres by the paramero-aedeagal conjunctiva and is connected to the endophallus.",
               "xrefs": []
             },
             "synonyms": [
@@ -11943,10 +11958,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004064",
-          "lbl": "paramere",
+          "lbl": "cuticle of paramere",
           "meta": {
             "definition": {
-              "val": "The paired cuticular evagination of the postabdomen that is attached to the phallobase by the phallobasal-parameral conjunctiva and to the aedeagus by the paramero-aedeagal conjunctiva.",
+              "val": "The cuticle of the paired cuticular evagination of the postabdomen that is attached to the cuticle of phallobase by the phallobasal-parameral conjunctiva and to the cuticle of aedeagus by the paramero-aedeagal conjunctiva.",
               "xrefs": []
             }
           },
@@ -11994,7 +12009,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004068",
-          "lbl": "gonocoxa VIII",
+          "lbl": "cuticle of gonocoxa VIII",
           "meta": {
             "definition": {
               "val": "The paired sclerite of the postabdomen that is attached to the abdominal sternite VII by the abdominal sternite VII-gonocoxa conjunctiva and is articulated with abdominal tergite IX. It is attached at the base of gonostylus VIII and adjacent to the gonopore.",
@@ -12033,10 +12048,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004070",
-          "lbl": "gonapophysis",
+          "lbl": "cuticle of gonapophysis",
           "meta": {
             "definition": {
-              "val": "The appendage of the abdominal sternite VIII that is part of the ovipositor.",
+              "val": "The cuticle of the appendage of the abdominal sternite VIII that is part of the ovipositor.",
               "xrefs": []
             }
           },
@@ -12098,7 +12113,7 @@
           "lbl": "gonopore",
           "meta": {
             "definition": {
-              "val": "The anatomical space in the postabdomen that marks the opening of the reproductive system.",
+              "val": "The orifice in the postabdomen that marks the opening of the reproductive system.",
               "xrefs": []
             }
           },
@@ -12666,7 +12681,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004125",
-          "lbl": "prothorax",
+          "lbl": "cuticle of prothorax",
           "meta": {
             "definition": {
               "val": "Is the region of the cuticle of the insect thorax that is anteriorly connected to the head by the neck membrane, posteriorly connected to the mesothorax by the prothorax-mesothorax conjunctiva, and contains the pronotum, the propeluron, the prosternum and one pair of legs.",
@@ -12677,7 +12692,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004126",
-          "lbl": "mesothorax",
+          "lbl": "cuticle of mesothorax",
           "meta": {
             "definition": {
               "val": "The region of the cuticle of the pterothorax that bears mid legs and fore wings.",
@@ -12688,7 +12703,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004127",
-          "lbl": "metathorax",
+          "lbl": "cuticle of metathorax",
           "meta": {
             "definition": {
               "val": "The region of the cuticle of the pterothorax that bears the hind legs and the hind wings.",
@@ -13175,10 +13190,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004168",
-          "lbl": "trochanter",
+          "lbl": "cuticle of trochanter",
           "meta": {
             "definition": {
-              "val": "The segment of a leg attached to the distal margin of the coxa by the coxal-trochanteral conjunctiva and to the proximal margin of the femur by the trochantero-femoral conjunctiva.",
+              "val": "The cuticle of the segment of a leg attached to the distal margin of the coxa by the coxal-trochanteral conjunctiva and to the proximal margin of the femur by the trochantero-femoral conjunctiva.",
               "xrefs": []
             }
           },
@@ -13186,10 +13201,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004169",
-          "lbl": "tarsus",
+          "lbl": "cuticle of tarsus",
           "meta": {
             "definition": {
-              "val": "The segment of the leg that is composed of tarsomeres connected to each other by intertarsomeral conjunctiva. The first tarsomere is connected to the distal margin of the tibia by the tibio-tarsal conjunctiva and last tarsomere is connected to the proximal margin of the pretarsus by the tarso-pretarsal conjunctiva.",
+              "val": "The cuticle of the segment of the leg that is composed of tarsomeres connected to each other by intertarsomeral conjunctiva. The first tarsomere is connected to the distal margin of the tibia by the tibio-tarsal conjunctiva and last tarsomere is connected to the proximal margin of the pretarsus by the tarso-pretarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -13208,10 +13223,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004171",
-          "lbl": "protrochanter",
+          "lbl": "cuticle of protrochanter",
           "meta": {
             "definition": {
-              "val": "The segment of a fore leg attached to the distal margin of the procoxa by the procoxal-protrochanteral conjunctiva and to the proximal margin of the profemur by the protrochantero-profemoral conjunctiva.",
+              "val": "The cuticle of the segment of a fore leg attached to the distal margin of the procoxa by the procoxal-protrochanteral conjunctiva and to the proximal margin of the profemur by the protrochantero-profemoral conjunctiva.",
               "xrefs": []
             }
           },
@@ -13219,10 +13234,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004172",
-          "lbl": "mesotrochanter",
+          "lbl": "cuticle of mesotrochanter",
           "meta": {
             "definition": {
-              "val": "The segment of a mid leg attached to the distal margin of the mesocoxa by the mesocoxal-mesotrochanteral conjunctiva and to the proximal margin of the mesofemur by the mesotrochantero-mesofemoral conjunctiva.",
+              "val": "The cuticle of the segment of a mid leg attached to the distal margin of the mesocoxa by the mesocoxal-mesotrochanteral conjunctiva and to the proximal margin of the mesofemur by the mesotrochantero-mesofemoral conjunctiva.",
               "xrefs": []
             }
           },
@@ -13230,10 +13245,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004173",
-          "lbl": "metatrochanter",
+          "lbl": "cuticle of metatrochanter",
           "meta": {
             "definition": {
-              "val": "The segment of a hind leg attached to the distal margin of the metacoxa by the metacoxal-metatrochanteral conjunctiva and to the proximal margin of the metafemur by the metatrochantero-metafemoral conjunctiva.",
+              "val": "The cuticle of the segment of a hind leg attached to the distal margin of the metacoxa by the metacoxal-metatrochanteral conjunctiva and to the proximal margin of the metafemur by the metatrochantero-metafemoral conjunctiva.",
               "xrefs": []
             }
           },
@@ -13395,10 +13410,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004188",
-          "lbl": "metatarsus",
+          "lbl": "cuticle of metatarsus",
           "meta": {
             "definition": {
-              "val": "The segment of the leg that is composed of metatarsomeres connected to each other by intertarsomeral conjunctiva. The first metatarsomere is connected to the distal margin of the metatibia by the metatibio-metatarsal conjunctiva and the last metatarsomere is connected to the proximal margin of the metapretarsus by the metatarso-metapretarsal conjunctiva.",
+              "val": "The cuticle of the segment of the leg that is composed of metatarsomeres connected to each other by intertarsomeral conjunctiva. The first metatarsomere is connected to the distal margin of the metatibia by the metatibio-metatarsal conjunctiva and the last metatarsomere is connected to the proximal margin of the metapretarsus by the metatarso-metapretarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -13406,10 +13421,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004189",
-          "lbl": "mesotarsus",
+          "lbl": "cuticle of mesotarsus",
           "meta": {
             "definition": {
-              "val": "The segment of the mid leg that is composed of mesotarsomeres connected to each other by intertarsomeral conjunctiva. The first mesotarsomere is connected to the distal margin of the mesotibia by the mesotibio-mesotarsal conjunctiva and the last mesotarsomere is connected to the proximal margin of the mesopretarsus by the mesotarso-mesopretarsal conjunctiva.",
+              "val": "The cuticle of the segment of the mid leg that is composed of mesotarsomeres connected to each other by intertarsomeral conjunctiva. The first mesotarsomere is connected to the distal margin of the mesotibia by the mesotibio-mesotarsal conjunctiva and the last mesotarsomere is connected to the proximal margin of the mesopretarsus by the mesotarso-mesopretarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -13417,10 +13432,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004190",
-          "lbl": "protarsus",
+          "lbl": "cuticle of protarsus",
           "meta": {
             "definition": {
-              "val": "The segment of the leg that is composed of protarsomeres connected to each other by intertarsomeral conjunctiva. The first protarsomere is connected to the distal margin of the protibia by the protibio-protarsal conjunctiva and the last protarsomere is connected to the proximal margin of the propretarsus by the protarso-propretarsal conjunctiva.",
+              "val": "The cuticle of the segment of the leg that is composed of protarsomeres connected to each other by intertarsomeral conjunctiva. The first protarsomere is connected to the distal margin of the protibia by the protibio-protarsal conjunctiva and the last protarsomere is connected to the proximal margin of the propretarsus by the protarso-propretarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -13461,10 +13476,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004194",
-          "lbl": "propretarsus",
+          "lbl": "cuticle of propretarsus",
           "meta": {
             "definition": {
-              "val": "The appendage of the fore leg that is attached to the protarsus by the protarso-propretarsal conjunctiva.",
+              "val": "The cuticle of the appendage of the fore leg that is attached to the protarsus by the protarso-propretarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -13472,10 +13487,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004195",
-          "lbl": "mesopretarsus",
+          "lbl": "cuticle of mesopretarsus",
           "meta": {
             "definition": {
-              "val": "The appendage of the mid leg that is attached to the mesotarsus by the mesotarso-mesopretarsal conjunctiva.",
+              "val": "The cuticle of the appendage of the mid leg that is attached to the mesotarsus by the mesotarso-mesopretarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -13483,10 +13498,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004196",
-          "lbl": "metapretarsus",
+          "lbl": "cuticle of metapretarsus",
           "meta": {
             "definition": {
-              "val": "The appendage of the hind leg that is attached to the metatarsus by the metatarso-metapretarsal conjunctiva.",
+              "val": "The cuticle of the appendage of the hind leg that is attached to the metatarsus by the metatarso-metapretarsal conjunctiva.",
               "xrefs": []
             }
           },
@@ -13497,7 +13512,7 @@
           "lbl": "insect anus",
           "meta": {
             "definition": {
-              "val": "The anatomical space on the postabdomen at the posterior margin of the digestive tract, connected to the epiproct and paraprocti.",
+              "val": "The orifice on the postabdomen at the posterior margin of the digestive tract, connected to the epiproct and paraprocti.",
               "xrefs": []
             }
           },
@@ -13516,10 +13531,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004199",
-          "lbl": "cercomere",
+          "lbl": "cuticle of cercomere",
           "meta": {
             "definition": {
-              "val": "The mere that is part of the cercus.",
+              "val": "The cuticle of the mere that is part of the cercus.",
               "xrefs": []
             }
           },
@@ -13580,7 +13595,7 @@
               }
             ],
             "definition": {
-              "val": "The thoracic muscle that attaches to the notum and to the trochantin.",
+              "val": "The insect thoracic muscle that attaches to the notum and to the trochantin.",
               "xrefs": []
             }
           },
@@ -13624,7 +13639,7 @@
           "lbl": "tergo-tergal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between two nota (or terga).",
+              "val": "The insect thoracic muscle that extends between two nota (or terga).",
               "xrefs": []
             }
           },
@@ -13635,7 +13650,7 @@
           "lbl": "pronoto-mesonotal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the pronotum and the mesonotum.",
+              "val": "The insect thoracic muscle that extends between the pronotum and the mesonotum.",
               "xrefs": []
             }
           },
@@ -13646,7 +13661,7 @@
           "lbl": "mesonoto-metanotal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the mesonotum and the metanotum.",
+              "val": "The insect thoracic muscle that extends between the mesonotum and the metanotum.",
               "xrefs": []
             }
           },
@@ -13657,7 +13672,7 @@
           "lbl": "tergo-coxal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the notum (or tergum) and the coxa.",
+              "val": "The insect thoracic muscle that extends between the notum (or tergum) and the coxa.",
               "xrefs": []
             }
           },
@@ -13668,7 +13683,7 @@
           "lbl": "tergo-trochanteral muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the notum (or tergum) and the trochanter.",
+              "val": "The insect thoracic muscle that extends between the notum (or tergum) and the trochanter.",
               "xrefs": []
             }
           },
@@ -13679,7 +13694,7 @@
           "lbl": "pleuro-coxal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that attaches to the pleuron and to a coxa.",
+              "val": "The insect thoracic muscle that attaches to the pleuron and to a coxa.",
               "xrefs": []
             }
           },
@@ -13690,7 +13705,7 @@
           "lbl": "furco-coxal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that is attached to a furca and to a coxa.",
+              "val": "The insect thoracic muscle that is attached to a furca and to a coxa.",
               "xrefs": []
             }
           },
@@ -13701,7 +13716,7 @@
           "lbl": "furco-trochanteral muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that is attached to a furca and to a trochanter.",
+              "val": "The insect thoracic muscle that is attached to a furca and to a trochanter.",
               "xrefs": []
             }
           },
@@ -13712,7 +13727,7 @@
           "lbl": "interfurcal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between two furcae.",
+              "val": "The insect thoracic muscle that extends between two furcae.",
               "xrefs": []
             }
           },
@@ -13723,7 +13738,7 @@
           "lbl": "profurco-mesofurcal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the profurca and the mesofurca.",
+              "val": "The insect thoracic muscle that extends between the profurca and the mesofurca.",
               "xrefs": []
             }
           },
@@ -13734,7 +13749,7 @@
           "lbl": "mesofurco-metafurcal muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the mesofurca and the metafurca.",
+              "val": "The insect thoracic muscle that extends between the mesofurca and the metafurca.",
               "xrefs": []
             }
           },
@@ -13822,7 +13837,7 @@
           "lbl": "mesophragmo-abdominal tergite I muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the mesophragma and the abdominal tergite I.",
+              "val": "The insect thoracic muscle that extends between the mesophragma and the abdominal tergite I.",
               "xrefs": []
             }
           },
@@ -13833,7 +13848,7 @@
           "lbl": "metafurco-abdominal sternite muscle",
           "meta": {
             "definition": {
-              "val": "The thoracic muscle that extends between the metafurca and an abdominal sternite.",
+              "val": "The insect thoracic muscle that extends between the metafurca and an abdominal sternite.",
               "xrefs": []
             }
           },
@@ -13940,7 +13955,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004237",
-          "lbl": "lobe",
+          "lbl": "cuticular lobe",
           "meta": {
             "definition": {
               "val": "The cuticular evagination that is largely membranous.",
@@ -13976,7 +13991,7 @@
           "lbl": "epicranial suture",
           "meta": {
             "definition": {
-              "val": "The suture composed of both the coronal suture and paired frontal sutures.",
+              "val": "The cuticular suture composed of both the coronal suture and paired frontal sutures.",
               "xrefs": []
             }
           },
@@ -14251,7 +14266,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004261",
-          "lbl": "empodium",
+          "lbl": "cuticle of empodium",
           "meta": {
             "definition": {
               "val": "The cuticular protrusion that is part of the pretarsus, ventral to the tarsal claws.",
@@ -14621,7 +14636,7 @@
               }
             ],
             "definition": {
-              "val": "x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer",
+              "val": "x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer.",
               "xrefs": [
                 "http://orcid.org/0000-0002-6601-2165"
               ]
@@ -15083,6 +15098,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "external"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "uberon"
               },
               {
@@ -15333,7 +15352,7 @@
               }
             ],
             "definition": {
-              "val": "x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y",
+              "val": "x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y.",
               "xrefs": [
                 "https://orcid.org/0000-0002-6601-2165"
               ]
@@ -15382,6 +15401,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/RO_0001900",
                 "val": "http://purl.obolibrary.org/obo/RO_0001901"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "external"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -15820,8 +15843,24 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.org/dc/terms/modified",
+          "lbl": "date_modified",
+          "meta": {
+            "definition": {
+              "val": "Date on which the resource was changed.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
           "lbl": "subset_property",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "lbl": "database_cross_reference",
           "type": "PROPERTY"
         },
         {

@@ -211,31 +211,6 @@
     
 
 
-    <!-- http://flybase.org/reports/FBgn0034157 -->
-
-    <owl:Class rdf:about="http://flybase.org/reports/FBgn0034157">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001217"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002160"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7227"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A protein coding gene resilin in fruit fly.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>gene</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FlyBase:FBgn0034157</oboInOwl:id>
-        <rdfs:comment>Category=external.</rdfs:comment>
-        <rdfs:label>resilin (fruit fly)</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBgn0034157"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A protein coding gene resilin in fruit fly.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PRO:DNx</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
@@ -361,7 +336,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006412"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The cellular metabolic process in which a protein is formed, using the sequence of a mature mRNA or circRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA or circRNA. Translation ends with the release of a polypeptide chain from the ribosome.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -632,32 +607,11 @@
     <!-- http://purl.obolibrary.org/obo/PR_Q9V7U0 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_Q9V7U0">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000000001"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002160"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7227"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pr#has_gene_template"/>
-                        <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0034157"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000029060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002160"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7227"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pr#has_gene_template"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0034157"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A protein that is a translation product of the resilin gene in fruit fly.</obo:IAO_0000115>
@@ -710,65 +664,9 @@
         <oboInOwl:id>SO:0000010</oboInOwl:id>
         <rdfs:label>protein_coding</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SO_0000110 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000110">
-        <obo:IAO_0000115>An extent of biological sequence.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>located_sequence_feature</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>sequence feature</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>located sequence feature</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>SO:0000110</oboInOwl:id>
-        <rdfs:label>sequence_feature</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An extent of biological sequence.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SO:ke</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SO_0000704 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000704">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
-        <obo:IAO_0000115>A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>SO:0000704</oboInOwl:id>
-        <rdfs:label>gene</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SO:immuno_workshop</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SO_0001217 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001217">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>protein coding gene</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>SO:0001217</oboInOwl:id>
-        <rdfs:label>protein_coding_gene</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
