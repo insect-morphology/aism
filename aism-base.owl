@@ -9,10 +9,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2021-12-13/aism-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2022-03-17/aism-base.owl"/>
         <dc:contributor>István Mikó (imiko) https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <dc:contributor>Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <dc:contributor>Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932</dc:contributor>
@@ -21,7 +22,7 @@
         <dc:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-13</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-03-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -100,6 +101,15 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
     
 
 
+    <!-- http://purl.org/dc/terms/isReferencedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReferencedBy">
+        <obo:IAO_0000115 xml:lang="en">A related resource that references, cites, or otherwise points to the described resource.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">isReferencedBy</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
@@ -154,6 +164,16 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
     <!-- http://www.geneontology.org/formats/oboInOwl#source -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <obo:IAO_0000115 xml:lang="en">A preferred label.</obo:IAO_0000115>
+        <oboInOwl:creation_date>2022-03-03</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">skos:prefLabel</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -275,13 +295,8 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000519">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000538"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000078"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000078"/>
-        </owl:propertyChainAxiom>
         <obo:IAO_0000115 xml:lang="en">sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B</obo:IAO_0000115>
         <rdfs:label xml:lang="en">encircles via conjunctiva</rdfs:label>
     </owl:ObjectProperty>
@@ -301,10 +316,6 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000079"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AISM_0000003"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000079"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000079"/>
-        </owl:propertyChainAxiom>
         <obo:IAO_0000115 xml:lang="en">sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B</obo:IAO_0000115>
         <rdfs:label xml:lang="en">encircled via conjunctiva</rdfs:label>
     </owl:ObjectProperty>
@@ -464,6 +475,18 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0015007 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0015007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0015008 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0015008"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/bspo#parallel_to -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/bspo#parallel_to"/>
@@ -614,7 +637,7 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle that is composed two articular surfaces that are adjacent to each other.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle that is composed two articular surfaces that are adjacent to each other.</obo:IAO_0000115>
         <obo:IAO_0000232>Articulations are &apos;anatomical clusters&apos;, collections of not direclty connected (continuous) sclerite surfaces that are adjacent to another sclerite. The cranio-mandibular articulation is the articular surface of the cranium and the adjacent articular surface of the mandible. The articular surfaces are sometimes located on the same sclerite.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect articulation</rdfs:label>
     </owl:Class>
@@ -668,7 +691,7 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle that is composed two articular surfaces that are adjacent to each other.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle that is composed two articular surfaces that are adjacent to each other.</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2020-10-27</oboInOwl:creation_date>
     </owl:Axiom>
@@ -693,7 +716,7 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001543"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
@@ -731,7 +754,7 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001543"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
@@ -783,7 +806,7 @@ https://doi.org/10.1515/9783110264043
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000915"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
@@ -809,7 +832,7 @@ https://doi.org/10.1515/9783110264043
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001543"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
@@ -858,7 +881,7 @@ If a conjunctiva entirelly encircles a sclerite, then the &apos;encircles&apos; 
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000915"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
@@ -889,7 +912,7 @@ If a conjunctiva entirelly encircles a sclerite, then the &apos;encircles&apos; 
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001543"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1080,7 +1103,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PR_Q9V7U0"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle with higher content of resilin.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle with higher content of resilin.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">elastic cuticle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1103,7 +1126,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle with higher content of resilin.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle with higher content of resilin.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
     </owl:Axiom>
@@ -1139,6 +1162,23 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000062"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
@@ -1160,23 +1200,6 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget>The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.&quot;</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
-        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000062"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
-    </owl:Axiom>
     
 
 
@@ -1187,12 +1210,6 @@ https://doi.org/10.1515/9783110264043
         <obo:IAO_0000115 xml:lang="en">A part or structure that is produced by evagination.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">evaginated</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000013"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0001355"/>
-        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -1206,6 +1223,12 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget xml:lang="en">evaginated</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2020-10-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000013"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0001355"/>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
     </owl:Axiom>
     
 
@@ -6044,7 +6067,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the sclerite of the labium that is connected to the mentum by the mental-premental conjunctiva, to the palpiger by the premental-palpigeral conjunctiva, to the paraglossa by the premental-paraglossal conjunctiva, and to the glossa by the premental-glossal conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The sclerite of the labium that is connected to the mentum by the mental-premental conjunctiva, to the palpiger by the premental-palpigeral conjunctiva, to the paraglossa by the premental-paraglossal conjunctiva, and to the glossa by the premental-glossal conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">prementum</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -6155,7 +6178,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000057"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the sclerite of the labium that is connected to the mentum by the mental-premental conjunctiva, to the palpiger by the premental-palpigeral conjunctiva, to the paraglossa by the premental-paraglossal conjunctiva, and to the glossa by the premental-glossal conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The sclerite of the labium that is connected to the mentum by the mental-premental conjunctiva, to the palpiger by the premental-palpigeral conjunctiva, to the paraglossa by the premental-paraglossal conjunctiva, and to the glossa by the premental-glossal conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -6366,7 +6389,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The sclerite that is attached to cranial muscles, procoxal muscles, contiuous posterioirly with the neck membrane and with pronoto-propleural conjunctiva and not adjacent (not touching) to the procoxa.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The notum or sclerite on the dorsal region of the prothorax that is attached to cranial muscles, procoxal muscles, contiuous posterioirly with the neck membrane and with pronoto-propleural conjunctiva and not adjacent (not touching) to the procoxa.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pronotum</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -6485,8 +6508,9 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000059"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The sclerite that is attached to cranial muscles, procoxal muscles, contiuous posterioirly with the neck membrane and with pronoto-propleural conjunctiva and not adjacent (not touching) to the procoxa.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The notum or sclerite on the dorsal region of the prothorax that is attached to cranial muscles, procoxal muscles, contiuous posterioirly with the neck membrane and with pronoto-propleural conjunctiva and not adjacent (not touching) to the procoxa.</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <terms:modified>2022-03-09</terms:modified>
         <oboInOwl:creation_date>2021-03-18</oboInOwl:creation_date>
     </owl:Axiom>
     <owl:Axiom>
@@ -8156,35 +8180,6 @@ https://doi.org/10.1515/9783110264043
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000071"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000678"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004172"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000071"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The cuticle of the segment of a mid leg attached to the distal margin of the mesotrochanter by the mesotrochantero-mesofemoral conjunctiva and to the proximal margin of the mesotibia by the mesofemoro-mesotibial conjunctiva.</owl:annotatedTarget>
-        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
-        <terms:modified>2021-12-08</terms:modified>
-        <oboInOwl:creation_date>2021-03-18</oboInOwl:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000071"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">cuticle of mesofemur</owl:annotatedTarget>
         <terms:modified>2021-12-08</terms:modified>
@@ -8259,6 +8254,35 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000071"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000678"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004172"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000071"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The cuticle of the segment of a mid leg attached to the distal margin of the mesotrochanter by the mesotrochantero-mesofemoral conjunctiva and to the proximal margin of the mesotibia by the mesofemoro-mesotibial conjunctiva.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <terms:modified>2021-12-08</terms:modified>
+        <oboInOwl:creation_date>2021-03-18</oboInOwl:creation_date>
     </owl:Axiom>
     
 
@@ -14730,7 +14754,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The cuticular depression that is circular.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cuticular depression that is circular.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cuticular fovea</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -14774,7 +14798,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000156"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The cuticular depression that is circular.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The cuticular depression that is circular.</owl:annotatedTarget>
         <obo:IAO_0000232>imiko https://orcid.org/0000-0003-2938-9075</obo:IAO_0000232>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
     </owl:Axiom>
@@ -14978,7 +15002,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000134"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva in the head capsule that forms a pouch between the hypopharynx and the labium and bears the exocrine gland duct.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva in the head capsule that forms a pouch between the hypopharynx and the labium and bears the exocrine gland duct.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">salivarium</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15040,7 +15064,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000159"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva in the head capsule that forms a pouch between the hypopharynx and the labium and bears the exocrine gland duct.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva in the head capsule that forms a pouch between the hypopharynx and the labium and bears the exocrine gland duct.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -16189,7 +16213,7 @@ https://doi.org/10.1515/9783110264043
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000117"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
@@ -16245,7 +16269,7 @@ https://doi.org/10.1515/9783110264043
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000117"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015008"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
@@ -16326,7 +16350,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002228"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Hairlike seta that is short and thick walled.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The hairlike seta that is short and thick walled.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">sensillum chaeticum</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16367,7 +16391,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000185"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Hairlike seta that is short and thick walled.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The hairlike seta that is short and thick walled.</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2021-02-08</oboInOwl:creation_date>
     </owl:Axiom>
@@ -17537,7 +17561,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the postabdomen that connects the abdominal tergite IX and the gonocoxa IX.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the postabdomen that connects the abdominal tergite IX and the gonocoxa IX.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite IX-gonocoxa IX conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -17582,7 +17606,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000201"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the postabdomen that connects the abdominal tergite IX and the gonocoxa IX.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the postabdomen that connects the abdominal tergite IX and the gonocoxa IX.</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2021-03-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -17970,7 +17994,7 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle that bears an anatomical collection that is composed of granules.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle that bears an anatomical collection that is composed of granules.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">granulated cuticle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -18001,7 +18025,7 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000528"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle that bears an anatomical collection that is composed of granules.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle that bears an anatomical collection that is composed of granules.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <terms:modified>2021-12-10</terms:modified>
         <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
@@ -18038,7 +18062,7 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle that bears an anatomical collection that is composed of punctures.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle that bears an anatomical collection that is composed of punctures.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">punctate cuticle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -18069,7 +18093,7 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000529"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle that bears an anatomical collection that is composed of punctures.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle that bears an anatomical collection that is composed of punctures.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <terms:modified>20021-12-10</terms:modified>
         <oboInOwl:creation_date>2021-07-21</oboInOwl:creation_date>
@@ -24906,7 +24930,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the sclerite of the labium that is attached to the mentum by the submental-mental conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The sclerite of the labium that is attached to the mentum by the submental-mental conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">submentum</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -24951,7 +24975,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the sclerite of the labium that is attached to the mentum by the submental-mental conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The sclerite of the labium that is attached to the mentum by the submental-mental conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-17</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25108,7 +25132,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000190"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the head capsule that connects the antennifer and the scapus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the head capsule that connects the antennifer and the scapus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">antenniferal-scapal conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25153,7 +25177,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the head capsule that connects the antennifer and the scapus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the head capsule that connects the antennifer and the scapus.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25256,7 +25280,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect maxilla that connects the stipes and the lacinia.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect maxilla that connects the stipes and the lacinia.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">stipito-lacinial conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25301,7 +25325,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004009"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect maxilla that connects the stipes and the lacinia.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect maxilla that connects the stipes and the lacinia.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25330,7 +25354,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect maxilla that connects the stipes and the palpifer.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect maxilla that connects the stipes and the palpifer.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">stipito-palpiferal conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25375,7 +25399,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004010"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect maxilla that connects the stipes and the palpifer.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect maxilla that connects the stipes and the palpifer.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25404,7 +25428,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect maxilla that connects the stipes and the galea.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect maxilla that connects the stipes and the galea.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">stipito-galeal conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25449,7 +25473,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect maxilla that connects the stipes and the galea.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect maxilla that connects the stipes and the galea.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25478,7 +25502,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect maxilla that connects the palpifer and the maxillary palpus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect maxilla that connects the palpifer and the maxillary palpus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">palpifero-palpal conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25523,7 +25547,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect maxilla that connects the palpifer and the maxillary palpus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect maxilla that connects the palpifer and the maxillary palpus.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25552,7 +25576,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the labium that connects the submentum and the mentum.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the labium that connects the submentum and the mentum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">submental-mental conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25597,7 +25621,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the labium that connects the submentum and the mentum.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the labium that connects the submentum and the mentum.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25626,7 +25650,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the labium that connects the prementum and the palpiger.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the labium that connects the prementum and the palpiger.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">premental-palpigeral conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25671,7 +25695,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004014"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the labium that connects the prementum and the palpiger.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the labium that connects the prementum and the palpiger.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25700,7 +25724,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the labium that connects the prementum and the paraglossa.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the labium that connects the prementum and the paraglossa.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">premental-paraglossal conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25745,7 +25769,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004015"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the labium that connects the prementum and the paraglossa.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the labium that connects the prementum and the paraglossa.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25774,7 +25798,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the labium that connects the prementum and the glossa.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the labium that connects the prementum and the glossa.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">premental-glossal conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25819,7 +25843,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the labium that connects the prementum and the glossa.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the labium that connects the prementum and the glossa.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25848,7 +25872,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the labium that connects the palpiger and the labial palpus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the labium that connects the palpiger and the labial palpus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">palpigero-palpal conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -25893,7 +25917,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the labium that connects the palpiger and the labial palpus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the labium that connects the palpiger and the labial palpus.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -25985,7 +26009,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the region of the head capsule that is anterior to the frons and is attached to the labrum by the clypeo-labral conjunctiva</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of the head capsule that is anterior to the frons and is attached to the labrum by the clypeo-labral conjunctiva</obo:IAO_0000115>
         <rdfs:label xml:lang="en">clypeus</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -26041,7 +26065,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004019"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the region of the head capsule that is anterior to the frons and is attached to the labrum by the clypeo-labral conjunctiva</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of the head capsule that is anterior to the frons and is attached to the labrum by the clypeo-labral conjunctiva</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -26173,7 +26197,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the ridge along the dorsal and lateral regions of the head capsule that is adjacent to the foramen occipitale.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The ridge along the dorsal and lateral regions of the head capsule that is adjacent to the foramen occipitale.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">postoccipital ridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -26222,7 +26246,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004021"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the ridge along the dorsal and lateral regions of the head capsule that is adjacent to the foramen occipitale.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The ridge along the dorsal and lateral regions of the head capsule that is adjacent to the foramen occipitale.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -26255,7 +26279,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the ridge of the head capsule surrounding the eye cuticle.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The ridge of the head capsule surrounding the eye cuticle.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">circumocular ridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -26289,7 +26313,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004022"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the ridge of the head capsule surrounding the eye cuticle.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The ridge of the head capsule surrounding the eye cuticle.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -26551,7 +26575,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the dorsal region of the head capsule that surrounds the coronal suture, and is connected laterally to the genae.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The dorsal region of the head capsule that surrounds the coronal suture, and is connected laterally to the genae.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">vertex</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -26616,7 +26640,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004025"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the dorsal region of the head capsule that surrounds the coronal suture, and is connected laterally to the genae.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The dorsal region of the head capsule that surrounds the coronal suture, and is connected laterally to the genae.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -26669,7 +26693,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the lateral region of the head capsule, connected dorsally to the sides of the vertex.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The lateral region of the head capsule, connected dorsally to the sides of the vertex.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">gena</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -26723,7 +26747,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004026"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the lateral region of the head capsule, connected dorsally to the sides of the vertex.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The lateral region of the head capsule, connected dorsally to the sides of the vertex.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -26782,7 +26806,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the lateral region of the head capsule that connects dorsally to the ventral side of the gena and ventrally to the mandible.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The lateral region of the head capsule that connects dorsally to the ventral side of the gena and ventrally to the mandible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">subgena</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -26847,7 +26871,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the lateral region of the head capsule that connects dorsally to the ventral side of the gena and ventrally to the mandible.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The lateral region of the head capsule that connects dorsally to the ventral side of the gena and ventrally to the mandible.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -27128,7 +27152,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the ridge of the head capsule comprising the posterior region of the subgenal ridge.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The ridge of the head capsule comprising the posterior region of the subgenal ridge.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pleurostomal ridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -27172,7 +27196,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004031"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the ridge of the head capsule comprising the posterior region of the subgenal ridge.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The ridge of the head capsule comprising the posterior region of the subgenal ridge.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -27211,7 +27235,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the ridge of the head capsule that separates the gena and the subgena.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The ridge of the head capsule that separates the gena and the subgena.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">subgenal ridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -27256,7 +27280,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004032"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the ridge of the head capsule that separates the gena and the subgena.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The ridge of the head capsule that separates the gena and the subgena.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -27305,7 +27329,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the lateral region of the head capsule that is adjacent to the foramen occipitale</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The lateral region of the head capsule that is adjacent to the foramen occipitale</obo:IAO_0000115>
         <rdfs:label xml:lang="en">hypostomal bridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -27360,7 +27384,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004033"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the lateral region of the head capsule that is adjacent to the foramen occipitale</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The lateral region of the head capsule that is adjacent to the foramen occipitale</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -27400,7 +27424,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Is the ridge of the head capsule that separates the clypeus and the frons.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The ridge of the head capsule that separates the clypeus and the frons.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">frontoclypeal ridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -27445,7 +27469,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004034"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Is the ridge of the head capsule that separates the clypeus and the frons.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The ridge of the head capsule that separates the clypeus and the frons.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -27500,7 +27524,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the sclerite on the ventral region of the head capsule that is limited laterally by the gular ridges, posteriorly by the foramen occipitale and anteriorly by the submentum.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The sclerite on the ventral region of the head capsule that is limited laterally by the gular ridges, posteriorly by the foramen occipitale and anteriorly by the submentum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">gula</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -27566,7 +27590,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004035"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the sclerite on the ventral region of the head capsule that is limited laterally by the gular ridges, posteriorly by the foramen occipitale and anteriorly by the submentum.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The sclerite on the ventral region of the head capsule that is limited laterally by the gular ridges, posteriorly by the foramen occipitale and anteriorly by the submentum.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28072,7 +28096,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the posterior region of the head capsule that is continuous with the posterior region of the gena and is anterior to the postoccipital ridge.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The posterior region of the head capsule that is continuous with the posterior region of the gena and is anterior to the postoccipital ridge.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">postgena</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -28142,7 +28166,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004042"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the posterior region of the head capsule that is continuous with the posterior region of the gena and is anterior to the postoccipital ridge.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The posterior region of the head capsule that is continuous with the posterior region of the gena and is anterior to the postoccipital ridge.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28181,7 +28205,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the region of the head capsule that is continuous with the postgena and adjacent to the foramen occipitale.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of the head capsule that is continuous with the postgena and adjacent to the foramen occipitale.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">postgenal bridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -28226,7 +28250,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004043"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the region of the head capsule that is continuous with the postgena and adjacent to the foramen occipitale.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of the head capsule that is continuous with the postgena and adjacent to the foramen occipitale.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28259,7 +28283,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the ridge of the head capsule that encircles the antennal foramen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The ridge of the head capsule that encircles the antennal foramen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">circumantennal ridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -28293,7 +28317,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004044"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the ridge of the head capsule that encircles the antennal foramen.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The ridge of the head capsule that encircles the antennal foramen.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28428,7 +28452,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the region of the head capsule that comprises the posterior region of the subgena.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of the head capsule that comprises the posterior region of the subgena.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">hypostoma</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -28467,7 +28491,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004046"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the region of the head capsule that comprises the posterior region of the subgena.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of the head capsule that comprises the posterior region of the subgena.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28504,7 +28528,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the ridge composing the posterior region of the subgenal ridge.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The ridge composing the posterior region of the subgenal ridge.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">hypostomal ridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -28537,7 +28561,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004047"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the ridge composing the posterior region of the subgenal ridge.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The ridge composing the posterior region of the subgenal ridge.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28569,7 +28593,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the ridge that runs along the posterior region of the head capsule.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The ridge that runs along the posterior region of the head capsule.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">occipital suture</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">occipital ridge</rdfs:label>
     </owl:Class>
@@ -28598,7 +28622,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004048"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the ridge that runs along the posterior region of the head capsule.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The ridge that runs along the posterior region of the head capsule.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28636,7 +28660,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the region of the cuticle comprising the posterior region of the clypeus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle comprising the posterior region of the clypeus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">postclypeus</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -28664,7 +28688,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004049"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the region of the cuticle comprising the posterior region of the clypeus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle comprising the posterior region of the clypeus.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -28757,7 +28781,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the region of the cuticle that is composed of the clypeus and the labrum.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of the cuticle that is composed of the clypeus and the labrum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">clypeolabrum</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -28791,7 +28815,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004051"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the region of the cuticle that is composed of the clypeus and the labrum.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of the cuticle that is composed of the clypeus and the labrum.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-24</oboInOwl:creation_date>
     </owl:Axiom>
@@ -29025,7 +29049,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the region of cuticle of the insect abdomen that is posteriorly connected to the postabdomen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle of the insect abdomen that is posteriorly connected to the postabdomen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">preabdomen</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -29059,7 +29083,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004055"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the region of cuticle of the insect abdomen that is posteriorly connected to the postabdomen.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle of the insect abdomen that is posteriorly connected to the postabdomen.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-05</oboInOwl:creation_date>
     </owl:Axiom>
@@ -29092,7 +29116,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the region of cuticle of the insect abdomen that is anteriorly connected to the preabdomen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle of the insect abdomen that is anteriorly connected to the preabdomen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">postabdomen</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -29126,7 +29150,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004056"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the region of cuticle of the insect abdomen that is anteriorly connected to the preabdomen.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle of the insect abdomen that is anteriorly connected to the preabdomen.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-05</oboInOwl:creation_date>
     </owl:Axiom>
@@ -30186,7 +30210,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000591"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle of the endophallus that is thicker.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle of the endophallus that is thicker.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">endophallite</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -30220,7 +30244,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004066"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle of the endophallus that is thicker.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle of the endophallus that is thicker.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-04-05</oboInOwl:creation_date>
     </owl:Axiom>
@@ -30560,7 +30584,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII, and is adjacent to the gonopore.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII, and is adjacent to the gonopore.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">genital chamber</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -30616,7 +30640,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004069"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII, and is adjacent to the gonopore.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle that is connected to the oviduct, the bursa copulatrix and the gonocoxa VIII, and is adjacent to the gonopore.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-05</oboInOwl:creation_date>
     </owl:Axiom>
@@ -31014,7 +31038,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The region of the cuticle of the postabdomen that is paired and connected to the anterior region of the gonocoxa VIII.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">gonostylus VIII</rdfs:label>
+        <rdfs:label xml:lang="en">cuticle of gonostylus VIII</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004076"/>
@@ -31075,12 +31099,13 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004076"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">gonostylus VIII</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">cuticle of gonostylus VIII</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 &quot;Gonostyli: appendages of gonocoxae (usually only on coxopodite IX)&quot;</obo:AISM_0000171>
+        <terms:modified>2021-12-13</terms:modified>
     </owl:Axiom>
     
 
@@ -31482,7 +31507,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004069"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle that is continuous with the genital chamber.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle that is continuous with the genital chamber.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">oviduct</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -31505,7 +31530,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004083"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle that is continuous with the genital chamber.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle that is continuous with the genital chamber.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -31544,7 +31569,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004109"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that joins the abdominal sternite VIII and the gonocoxa VIII.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that joins the abdominal sternite VIII and the gonocoxa VIII.</obo:IAO_0000115>
         <rdfs:label>abdominal sternite VII-gonocoxa VIII conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -31589,7 +31614,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004084"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that joins the abdominal sternite VIII and the gonocoxa VIII.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that joins the abdominal sternite VIII and the gonocoxa VIII.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -31766,7 +31791,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite I and the abdominal tergite II.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite I and the abdominal tergite II.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite I-abdominal tergite II conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -31811,7 +31836,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004086"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite I and the abdominal tergite II.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite I and the abdominal tergite II.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -31988,7 +32013,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite II and the abdominal tergite III.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite II and the abdominal tergite III.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite II-abdominal tergite III conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -32033,7 +32058,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004088"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite II and the abdominal tergite III.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite II and the abdominal tergite III.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -32062,7 +32087,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite III and the abdominal tergite IV.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite III and the abdominal tergite IV.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite III-abdominal tergite IV conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -32107,7 +32132,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004089"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite III and the abdominal tergite IV.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite III and the abdominal tergite IV.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -32432,7 +32457,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004091"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite IV and the abdominal tergite V.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite IV and the abdominal tergite V.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite IV-abdominal tergite V conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -32477,7 +32502,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004092"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite IV and the abdominal tergite V.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite IV and the abdominal tergite V.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -32654,7 +32679,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004093"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite V and the abdominal tergite VI.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite V and the abdominal tergite VI.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite V-abdominal tergite VI conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -32699,7 +32724,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004094"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite V and the abdominal tergite VI.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite V and the abdominal tergite VI.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -32876,7 +32901,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004095"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite VI and the abdominal tergite VII.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite VI and the abdominal tergite VII.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite VI-abdominal tergite VII conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -32921,7 +32946,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004096"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite VI and the abdominal tergite VII.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite VI and the abdominal tergite VII.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -33104,7 +33129,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite VII and the abdominal tergite VIII.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite VII and the abdominal tergite VIII.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite VII-abdominal tergite VIII conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -33149,7 +33174,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004098"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite VII and the abdominal tergite VIII.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite VII and the abdominal tergite VIII.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -33688,7 +33713,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the abdominal tergite of the preabdomen that is attached to the posterior margin of the abdominal sternite I by the abdominal sternite I-abdominal sternite II conjunctiva and to the anterior margin of the abdominal sternite III by the abdominal sternite II-abdominal sternite III conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The abdominal tergite of the preabdomen that is attached to the posterior margin of the abdominal sternite I by the abdominal sternite I-abdominal sternite II conjunctiva and to the anterior margin of the abdominal sternite III by the abdominal sternite II-abdominal sternite III conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite II</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -33775,7 +33800,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004104"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the abdominal tergite of the preabdomen that is attached to the posterior margin of the abdominal sternite I by the abdominal sternite I-abdominal sternite II conjunctiva and to the anterior margin of the abdominal sternite III by the abdominal sternite II-abdominal sternite III conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The abdominal tergite of the preabdomen that is attached to the posterior margin of the abdominal sternite I by the abdominal sternite I-abdominal sternite II conjunctiva and to the anterior margin of the abdominal sternite III by the abdominal sternite II-abdominal sternite III conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -33836,7 +33861,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004112"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite II by the abdominal sternite II-abdominal sternite III conjunctiva and to the anterior margin of the abdominal sternite IV by the abdominal sternite III-abdominal sternite IV conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite II by the abdominal sternite II-abdominal sternite III conjunctiva and to the anterior margin of the abdominal sternite IV by the abdominal sternite III-abdominal sternite IV conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite III</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -33923,7 +33948,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004105"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite II by the abdominal sternite II-abdominal sternite III conjunctiva and to the anterior margin of the abdominal sternite IV by the abdominal sternite III-abdominal sternite IV conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite II by the abdominal sternite II-abdominal sternite III conjunctiva and to the anterior margin of the abdominal sternite IV by the abdominal sternite III-abdominal sternite IV conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -33984,7 +34009,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004113"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite III by the abdominal sternite III-abdominal sternite IV conjunctiva and to the anterior margin of the abdominal sternite V by the abdominal sternite IV-abdominal sternite V conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite III by the abdominal sternite III-abdominal sternite IV conjunctiva and to the anterior margin of the abdominal sternite V by the abdominal sternite IV-abdominal sternite V conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite IV</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34071,7 +34096,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004106"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite III by the abdominal sternite III-abdominal sternite IV conjunctiva and to the anterior margin of the abdominal sternite V by the abdominal sternite IV-abdominal sternite V conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite III by the abdominal sternite III-abdominal sternite IV conjunctiva and to the anterior margin of the abdominal sternite V by the abdominal sternite IV-abdominal sternite V conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -34132,7 +34157,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004114"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite IV by the abdominal sternite IV-abdominal sternite V conjunctiva and to the anterior margin of the abdominal sternite VI by the abdominal sternite V-abdominal sternite VI conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite IV by the abdominal sternite IV-abdominal sternite V conjunctiva and to the anterior margin of the abdominal sternite VI by the abdominal sternite V-abdominal sternite VI conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite V</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34219,7 +34244,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004107"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite IV by the abdominal sternite IV-abdominal sternite V conjunctiva and to the anterior margin of the abdominal sternite VI by the abdominal sternite V-abdominal sternite VI conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite IV by the abdominal sternite IV-abdominal sternite V conjunctiva and to the anterior margin of the abdominal sternite VI by the abdominal sternite V-abdominal sternite VI conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -34280,7 +34305,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite V by the abdominal sternite V-abdominal sternite VI conjunctiva and to the anterior margin of the abdominal sternite VII by the abdominal sternite VI-abdominal sternite VII conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite V by the abdominal sternite V-abdominal sternite VI conjunctiva and to the anterior margin of the abdominal sternite VII by the abdominal sternite VI-abdominal sternite VII conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite VI</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34367,7 +34392,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004108"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite V by the abdominal sternite V-abdominal sternite VI conjunctiva and to the anterior margin of the abdominal sternite VII by the abdominal sternite VI-abdominal sternite VII conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite V by the abdominal sternite V-abdominal sternite VI conjunctiva and to the anterior margin of the abdominal sternite VII by the abdominal sternite VI-abdominal sternite VII conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -34428,7 +34453,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite VI by the abdominal sternite VI-abdominal sternite VII conjunctiva and to the anterior margin of the abdominal sternite VIII by the abdominal sternite VII-abdominal sternite VIII conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite VI by the abdominal sternite VI-abdominal sternite VII conjunctiva and to the anterior margin of the abdominal sternite VIII by the abdominal sternite VII-abdominal sternite VIII conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite VII</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34515,7 +34540,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004109"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite VI by the abdominal sternite VI-abdominal sternite VII conjunctiva and to the anterior margin of the abdominal sternite VIII by the abdominal sternite VII-abdominal sternite VIII conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The abdominal sternite of the preabdomen that is attached to the posterior margin of the abdominal sternite VI by the abdominal sternite VI-abdominal sternite VII conjunctiva and to the anterior margin of the abdominal sternite VIII by the abdominal sternite VII-abdominal sternite VIII conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -34728,7 +34753,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004105"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite II and the abdominal sternite III.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite II and the abdominal sternite III.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite II-abdominal sternite III conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34773,7 +34798,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004111"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite II and the abdominal sternite III.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite II and the abdominal sternite III.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -34802,7 +34827,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004106"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite III and the abdominal sternite IV.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite III and the abdominal sternite IV.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite III-abdominal sternite IV conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34847,7 +34872,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004112"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite III and the abdominal sternite IV.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite III and the abdominal sternite IV.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -34876,7 +34901,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite IV and the abdominal sternite V.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite IV and the abdominal sternite V.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite IV-abdominal sternite V conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34921,7 +34946,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004113"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite IV and the abdominal sternite V.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite IV and the abdominal sternite V.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -34950,7 +34975,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite V and the abdominal sternite VI.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite V and the abdominal sternite VI.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite V-abdominal sternite VI conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34995,7 +35020,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004114"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite V and the abdominal sternite VI.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite V and the abdominal sternite VI.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -35024,7 +35049,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004109"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite VI and the abdominal sternite VII.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite VI and the abdominal sternite VII.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite VI-abdominal sternite VII conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35069,7 +35094,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004115"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite VI and the abdominal sternite VII.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite VI and the abdominal sternite VII.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -35098,7 +35123,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite VII and the abdominal sternite VIII.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite VII and the abdominal sternite VIII.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite VII-abdominal sternite VIII conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35143,7 +35168,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004116"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite VII and the abdominal sternite VIII.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite VII and the abdominal sternite VIII.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -35532,7 +35557,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VIII by the abdominal sternite VIII-abdominal sternite IX conjunctiva and to the anterior margin of the abdominal sternite X by the abdominal sternite IX-abdominal sternite X conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VIII by the abdominal sternite VIII-abdominal sternite IX conjunctiva and to the anterior margin of the abdominal sternite X by the abdominal sternite IX-abdominal sternite X conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite IX</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35619,7 +35644,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004119"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VIII by the abdominal sternite VIII-abdominal sternite IX conjunctiva and to the anterior margin of the abdominal sternite X by the abdominal sternite IX-abdominal sternite X conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The abdominal sternite of the postabdomen that is attached to the posterior margin of the abdominal sternite VIII by the abdominal sternite VIII-abdominal sternite IX conjunctiva and to the anterior margin of the abdominal sternite X by the abdominal sternite IX-abdominal sternite X conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -35648,7 +35673,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004118"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the postabdomen that joins the abdominal tergite X and the epiproct.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the postabdomen that joins the abdominal tergite X and the epiproct.</obo:IAO_0000115>
         <rdfs:label>abdominal tergite X-epiproct conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35693,7 +35718,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004120"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the postabdomen that joins the abdominal tergite X and the epiproct.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the postabdomen that joins the abdominal tergite X and the epiproct.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -35722,7 +35747,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite VIII and the abdominal tergite IX.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite VIII and the abdominal tergite IX.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite VIII-abdominal tergite IX conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35767,7 +35792,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004121"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite VIII and the abdominal tergite IX.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite VIII and the abdominal tergite IX.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -35796,7 +35821,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004118"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite IX and the abdominal tergite X.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite IX and the abdominal tergite X.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite IX-abdominal tergite X conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35841,7 +35866,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004122"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal tergite IX and the abdominal tergite X.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal tergite IX and the abdominal tergite X.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -35870,7 +35895,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004119"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite VIII and the abdominal sternite IX.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite VIII and the abdominal sternite IX.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite VIII-abdominal sternite IX conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35915,7 +35940,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004123"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite VIII and the abdominal sternite IX.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite VIII and the abdominal sternite IX.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -35944,7 +35969,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004119"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite IX and the abdominal sternite X.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite IX and the abdominal sternite X.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal sternite IX-phallobase conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35989,7 +36014,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004124"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the insect abdomen that connects the abdominal sternite IX and the abdominal sternite X.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the insect abdomen that connects the abdominal sternite IX and the abdominal sternite X.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -36042,7 +36067,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the region of the cuticle of the insect thorax that is anteriorly connected to the head by the neck membrane, posteriorly connected to the mesothorax by the prothorax-mesothorax conjunctiva, and contains the pronotum, the propeluron, the prosternum and one pair of legs.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of the cuticle of the insect thorax that is anteriorly connected to the head by the neck membrane, posteriorly connected to the mesothorax by the prothorax-mesothorax conjunctiva, and contains the pronotum, the propeluron, the prosternum and one pair of legs.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cuticle of prothorax</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -36131,7 +36156,7 @@ additional pair of sclerites flanking each tergite</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004125"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the region of the cuticle of the insect thorax that is anteriorly connected to the head by the neck membrane, posteriorly connected to the mesothorax by the prothorax-mesothorax conjunctiva, and contains the pronotum, the propeluron, the prosternum and one pair of legs.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of the cuticle of the insect thorax that is anteriorly connected to the head by the neck membrane, posteriorly connected to the mesothorax by the prothorax-mesothorax conjunctiva, and contains the pronotum, the propeluron, the prosternum and one pair of legs.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -36491,7 +36516,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle on the lateral region of the insect thorax that is attached to the notum and the sternum and is attached to the coxae by skeletal muscle tissue and the basal coxal conjunctiva.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle on the lateral region of the insect thorax that is attached to the notum and the sternum and is attached to the coxae by skeletal muscle tissue and the basal coxal conjunctiva.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pleuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -36578,7 +36603,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004129"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle on the lateral region of the insect thorax that is attached to the notum and the sternum and is attached to the coxae by skeletal muscle tissue and the basal coxal conjunctiva.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle on the lateral region of the insect thorax that is attached to the notum and the sternum and is attached to the coxae by skeletal muscle tissue and the basal coxal conjunctiva.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-04-05</oboInOwl:creation_date>
     </owl:Axiom>
@@ -38464,7 +38489,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004133"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle of the dorso-lateral region of the pterothorax that is surrounded by the noto-pleural conjunctiva and articulated with the episternum.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle of the dorso-lateral region of the pterothorax that is surrounded by the noto-pleural conjunctiva and articulated with the episternum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">prealar bridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -38519,7 +38544,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004149"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle of the dorso-lateral region of the pterothorax that is surrounded by the noto-pleural conjunctiva and articulated with the episternum.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle of the dorso-lateral region of the pterothorax that is surrounded by the noto-pleural conjunctiva and articulated with the episternum.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
     </owl:Axiom>
@@ -38568,7 +38593,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004134"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle of the dorso-lateral region of the pterothorax that is surrounded by the noto-pleural conjunctiva and articulated with the epimeron.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle of the dorso-lateral region of the pterothorax that is surrounded by the noto-pleural conjunctiva and articulated with the epimeron.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">postalar bridge</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -38623,7 +38648,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004150"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle of the dorso-lateral region of the pterothorax that is surrounded by the noto-pleural conjunctiva and articulated with the epimeron.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle of the dorso-lateral region of the pterothorax that is surrounded by the noto-pleural conjunctiva and articulated with the epimeron.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-04-21</oboInOwl:creation_date>
     </owl:Axiom>
@@ -39096,7 +39121,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004156"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle on the antero-ventral region of the episternum that is anterior to the anapleural sulcus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle on the antero-ventral region of the episternum that is anterior to the anapleural sulcus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">preepisternum</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -39140,7 +39165,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004155"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle on the antero-ventral region of the episternum that is anterior to the anapleural sulcus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle on the antero-ventral region of the episternum that is anterior to the anapleural sulcus.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-04-09</oboInOwl:creation_date>
     </owl:Axiom>
@@ -39380,7 +39405,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004156"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle on the postero-ventral region of the episternum that is posterior to the anapleural sulcus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle on the postero-ventral region of the episternum that is posterior to the anapleural sulcus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">katepisternum</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -39424,7 +39449,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004158"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle on the postero-ventral region of the episternum that is posterior to the anapleural sulcus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle on the postero-ventral region of the episternum that is posterior to the anapleural sulcus.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-04-09</oboInOwl:creation_date>
     </owl:Axiom>
@@ -39548,7 +39573,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle on the ventral region of the epimeron.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle on the ventral region of the epimeron.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">katepimeron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -39581,7 +39606,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004160"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle on the ventral region of the epimeron.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle on the ventral region of the epimeron.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-04-10</oboInOwl:creation_date>
     </owl:Axiom>
@@ -39841,7 +39866,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The bilaterally paired region of the cuticle of the postabdomen located between the epiproct and the paraproct</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">cercus</rdfs:label>
+        <rdfs:label xml:lang="en">cuticle of cercus</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004165"/>
@@ -39928,12 +39953,13 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004165"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">cercus</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">cuticle of cercus</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 &quot;Cerci: tactile appendages of segment XI, primarily multisegmented and tactile bearing setae.&quot;</obo:AISM_0000171>
+        <terms:modified>2021-12-13</terms:modified>
     </owl:Axiom>
     
 
@@ -40095,7 +40121,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004118"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the postabdomen that joins the abdominal tergite X and each paraproct.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the postabdomen that joins the abdominal tergite X and each paraproct.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abdominal tergite X-paraproct conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -40140,7 +40166,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004167"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the postabdomen that joins the abdominal tergite X and each paraproct.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the postabdomen that joins the abdominal tergite X and each paraproct.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-14</oboInOwl:creation_date>
     </owl:Axiom>
@@ -44607,7 +44633,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The region of the cuticle of the postabdomen that is paired and connected to the anterior region of the gonocoxa IX.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">gonostylus IX</rdfs:label>
+        <rdfs:label xml:lang="en">cuticle of gonostylus IX</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004198"/>
@@ -44664,6 +44690,12 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget xml:lang="en">The region of the cuticle of the postabdomen that is paired and connected to the anterior region of the gonocoxa IX.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-28</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004198"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">cuticle of gonostylus IX</owl:annotatedTarget>
+        <terms:modified>2021-12-13</terms:modified>
     </owl:Axiom>
     
 
@@ -44737,7 +44769,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the conjunctiva of the postabdomen that joins the parameres and the aedeagus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva of the postabdomen that joins the parameres and the aedeagus.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">paramero-aedeagal conjunctiva</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -44782,7 +44814,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004200"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the conjunctiva of the postabdomen that joins the parameres and the aedeagus.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva of the postabdomen that joins the parameres and the aedeagus.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-03-28</oboInOwl:creation_date>
     </owl:Axiom>
@@ -47180,7 +47212,7 @@ https://www.jstor.org/stable/10.7591/j.ctv1nhm1j
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The region of the cuticle on the posterodorsal region of the head capsule that is posterior to the occipital ridge and anterior to the postoccipital ridge.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle on the posterodorsal region of the head capsule that is posterior to the occipital ridge and anterior to the postoccipital ridge.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">occiput</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -47256,7 +47288,7 @@ https://www.jstor.org/stable/10.7591/j.ctv1nhm1j
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004239"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The region of the cuticle on the posterodorsal region of the head capsule that is posterior to the occipital ridge and anterior to the postoccipital ridge.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle on the posterodorsal region of the head capsule that is posterior to the occipital ridge and anterior to the postoccipital ridge.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-08-16</oboInOwl:creation_date>
     </owl:Axiom>
@@ -48908,6 +48940,286 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AISM_0004263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000105"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The conjunctiva that is part of the head capsule and is continuous with the epipharynx and the hypopharynx.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cibarium</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004263"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004263"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000019"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004263"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000093"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004263"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000105"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004263"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The conjunctiva that is part of the head capsule and is continuous with the epipharynx and the hypopharynx.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004263"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">cibarium</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
+
+https://doi.org/10.1515/9783110264043
+
+&quot;Anterior part of preoral space between epipharynx and hypopharynx.&quot;</obo:AISM_0000171>
+        <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The region of cuticle that is posterior to the cuticle of the labrum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">epistoma</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004264"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-02-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004264"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000042"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-02-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004264"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The region of cuticle that is posterior to the cuticle of the labrum.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-02-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004264"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">epistoma</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;the oral margin or sclerite directly behind the labrum&quot;</obo:AISM_0000171>
+        <oboInOwl:creation_date>2022-02-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000162"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The cuticular sulcus that is adjacent to the subgena and coincides with the subgenal ridge.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">subgenal suture</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">subgenal sulcus</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004265"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000162"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-02-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004265"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004032"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-02-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004265"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004027"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-02-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004265"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The cuticular sulcus that is adjacent to the subgena and coincides with the subgenal ridge.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-02-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004265"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">subgenal sulcus</owl:annotatedTarget>
+        <obo:AISM_0000171 xml:lang="en">Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.
+
+https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf
+
+&quot;the lateral submarginal groove of the cranium just above the bases of the gnathal appendages, extending between the anterior tentorial pit and the posterior tentorial pit&quot;</obo:AISM_0000171>
+        <oboInOwl:creation_date>2022-02-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The cranio-mandibular articulation that is part of the subgena and lateral to the clypeus.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">dorsal cranio-mandibular articulation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004266"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000014"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-03-09</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004266"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000011"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004019"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-03-09</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004266"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004027"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-03-09</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004266"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The cranio-mandibular articulation that is part of the subgena and lateral to the clypeus.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-03-09</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004266"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">dorsal cranio-mandibular articulation</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-03-09</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSPO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000000"/>
@@ -49412,7 +49724,10 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
 
     <!-- http://purl.obolibrary.org/obo/UBERON_6007289 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_6007289"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_6007289">
+        <obo:IAO_0000115 xml:lang="en">Region of integument of a tagma.
+http://flybase.org/cgi-bin/fbcvq.html?query=FBbt:00007289</obo:IAO_0000115>
+    </owl:Class>
     
 
 
