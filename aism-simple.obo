@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2022-03-17/aism-simple.owl
+data-version: aism/releases/2022-06-18/aism-simple.owl
 subsetdef: AISM:0000171 ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -15,7 +15,7 @@ property_value: dc-contributor "Sergei Tarasov (starasov) https://orcid.org/0000
 property_value: dc-description "The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research." xsd:string
 property_value: dc-title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-03-17" xsd:string
+property_value: owl:versionInfo "2022-06-18" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -1435,7 +1435,7 @@ relationship: adjacent_to AISM:0004038 {http://purl.org/dc/elements/1.1/contribu
 
 [Term]
 id: AISM:0000195
-name: posterior tetorial pit {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Posterior tentorial pit (or groove): externally visible invagination of posterior part of head capsule and origin of posterior tentorial arm; adjacent with foramen occipitale or gula.\""}
+name: posterior tentorial pit {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Posterior tentorial pit (or groove): externally visible invagination of posterior part of head capsule and origin of posterior tentorial arm; adjacent with foramen occipitale or gula.\""}
 def: "The tentorial pit that correspods to the posterior (ventral in prognathous head) end of the tentorium." [] {creation_date="2021-02-12", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000196 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! tentorial pit
 relationship: continuous_with AISM:0004037 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! posterior tentorial arm
@@ -2199,7 +2199,7 @@ relationship: posterior_to AISM:0000057 {http://purl.org/dc/elements/1.1/contrib
 [Term]
 id: AISM:0004005
 name: submentum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Submentum: posterior part of a divided postmentum.\""}
-def: "The sclerite of the labium that is attached to the mentum by the submental-mental conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
+def: "The sclerite of the labium that is anteriorly attached to the mentum by the submental-mental conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
 relationship: continuous_with AISM:0004013 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submental-mental conjunctiva
 relationship: part_of AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
@@ -2360,7 +2360,7 @@ relationship: part_of AISM:0000019 {http://purl.org/dc/elements/1.1/contributor=
 [Term]
 id: AISM:0004023
 name: foramen occipitale {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Foramen occipitale (=foramen magnum): posterior opening of head capsule; divided by tentorial bridge into alaforamen and neuroforamen.\""}
-def: "Is the foramen of the head capsule that connects with the neck membrane and is divided by the tentorial bridge into alaforamen and neuroforamen." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The foramen of the head capsule that connects with the neck membrane and is divided by the tentorial bridge into alaforamen and neuroforamen." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "occipital foramen" EXACT [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000197 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! arthropod foramen
 relationship: adjacent_to AISM:0004024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tentorial bridge
@@ -2372,7 +2372,7 @@ relationship: has_part AISM:0004041 {http://purl.org/dc/elements/1.1/contributor
 [Term]
 id: AISM:0004024
 name: tentorial bridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tentorial bridge (=corpotentorium): transverse element connecting posterior tentorial arms, often plate-like.\""}
-def: "Is the apophysis of the tentorium originating from each posterior tentorial arm." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The apophysis of the tentorium originating from each posterior tentorial arm." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "corpotentorium" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tentorial bridge (=corpotentorium): transverse element connecting posterior tentorial arms, often plate-like.\""}
 is_a: AISM:0000138 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular apophysis
 relationship: continuous_with AISM:0004037 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! posterior tentorial arm
@@ -2461,13 +2461,13 @@ name: gula {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F,
 def: "The sclerite on the ventral region of the head capsule that is limited laterally by the gular ridges, posteriorly by the foramen occipitale and anteriorly by the submentum." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
 relationship: anterior_to AISM:0004023 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! foramen occipitale
-relationship: continuous_with AISM:0004036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gular ridges
+relationship: continuous_with AISM:0004036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gular ridge
 relationship: posterior_to AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submentum
 
 [Term]
 id: AISM:0004036
-name: gular ridges {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Gular ridges: lateral internal ridges enclosing the gula.\""}
-def: "The ridges on the ventral region of the head capsule marking the sides of the gula." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+name: gular ridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Gular ridges: lateral internal ridges enclosing the gula.\""}
+def: "Each ridge on the ventral region of the head capsule marking the sides of the gula." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000158 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular ridge
 
 [Term]
@@ -2475,7 +2475,7 @@ id: AISM:0004037
 name: posterior tentorial arm {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Posterior tentorial arm: paired posterior element of tentorium; originates at posterior tentorial pit.\""}
 def: "Is the apophysis of the tentorium that originates from each posterior tetorial pit." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000138 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular apophysis
-relationship: continuous_with AISM:0000195 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! posterior tetorial pit
+relationship: continuous_with AISM:0000195 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! posterior tentorial pit
 relationship: part_of AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tentorium
 
 [Term]
@@ -2536,8 +2536,9 @@ relationship: part_of AISM:0000019 {http://purl.org/dc/elements/1.1/contributor=
 [Term]
 id: AISM:0004045
 name: postocciput {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Postocciput: posteriormost head region.\""}
-def: "The posterior region of the head capsule that is adjacent to the posterior region of the vertex." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The dorsolateral region of the head capsule that is posterior to the postoccipital ridge" [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/terms/modified="2022-06-17"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
+relationship: posterior_to AISM:0004021 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! postoccipital ridge
 
 [Term]
 id: AISM:0004046
@@ -4338,6 +4339,26 @@ is_a: AISM:0000014 {http://purl.org/dc/elements/1.1/contributor="jgiron https://
 relationship: AISM:0000011 AISM:0004019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-03-09"} ! lateral_to clypeus
 relationship: part_of AISM:0004027 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-03-09"} ! subgena
 
+[Term]
+id: AISM:0004267
+name: postoccipital sulcus {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n[as postoccipital suture] \"posterior submarginal groove having the posterior tentorial pits in its lower end, separatig the postocciput from the rest of the cranium\"", creation_date="2022-06-17"}
+def: "The cuticular sulcus that coincides with the postoccipital ridge and is posterior to the occiput and anterior to the postocciput" [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"}
+synonym: "postoccipital sulcus" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"posterior submarginal groove having the posterior tentorial pits in its lower end, separatig the postocciput from the rest of the cranium\""}
+is_a: AISM:0000162 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! cuticular sulcus
+relationship: anterior_to AISM:0004045 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! postocciput
+relationship: posterior_to AISM:0004239 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! occiput
+relationship: RO:0002008 AISM:0004021 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! coincident with postoccipital ridge
+
+[Term]
+id: AISM:0004268
+name: gular sulcus {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n[as gular suture] \"the line or division between the gula and the genae\""}
+def: "The cuticular sulcus that coincides with the gular ridge, separating the gula fron the gena" [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"}
+synonym: "gular suture" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"the line or division between the gula and the genae\""}
+is_a: AISM:0000162 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! cuticular sulcus
+relationship: adjacent_to AISM:0004026 {http://purl.org/dc/elements/1.1/contributor="2022-06-17", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gena
+relationship: adjacent_to AISM:0004035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! gula
+relationship: RO:0002008 AISM:0004036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! coincident with gular ridge
+
 [Typedef]
 id: AISM:0000011
 name: lateral_to {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
@@ -4353,7 +4374,7 @@ id: AISM:0000078
 name: encircles {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 def: "x encircles y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
 is_transitive: true
-is_a: continuous_with ! continuous_with
+is_a: continuous_with ! continuous with
 inverse_of: AISM:0000079 ! encircled by
 
 [Typedef]
@@ -4361,7 +4382,7 @@ id: AISM:0000079
 name: encircled by {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 def: "y is encircled by x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
 is_transitive: true
-is_a: continuous_with ! continuous_with
+is_a: continuous_with ! continuous with
 
 [Typedef]
 id: AISM:0000519
@@ -4438,6 +4459,7 @@ namespace: external
 namespace: spatial
 namespace: uberon
 def: "x adjacent to y if and only if x and y share a boundary." []
+def: "x adjacent_to y iff: x and y share a boundary" []
 def: "x adjacent_to y iff: x and y share a boundary." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -4460,6 +4482,7 @@ name: anterior_to
 namespace: spatial
 namespace: uberon
 def: "x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail." [BSPO:cjm]
+def: "x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer" [http://orcid.org/0000-0002-6601-2165]
 def: "x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer." [http://orcid.org/0000-0002-6601-2165]
 synonym: "rostral_to" EXACT []
 xref: BSPO:0000096
@@ -4476,7 +4499,6 @@ id: anteriorly_connected_to
 name: anteriorly connected to
 namespace: uberon
 def: "x anteriorly_connected_to y iff the anterior part of x is connected to y. i.e. x connected_to y and x posterior_to y." [http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern]
-xref: anteriorly_connected_to
 is_a: posterior_to ! posterior to
 
 [Typedef]
@@ -4514,6 +4536,7 @@ is_inverse_functional: true
 id: boundary_of
 name: 2D boundary of
 name: boundary of
+name: boundary_of
 namespace: uberon
 def: "a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity" []
 xref: RO:0002000
@@ -4524,6 +4547,7 @@ property_value: IAO:0000118 "2D_boundary_of" xsd:string
 property_value: IAO:0000118 "boundary of" xsd:string
 property_value: IAO:0000118 "is 2D boundary of" xsd:string
 property_value: IAO:0000118 "is boundary of" xsd:string
+property_value: IAO:0000118 "surface of" xsd:string
 property_value: RO:0001900 RO:0001901
 
 [Typedef]
@@ -4673,7 +4697,6 @@ name: has muscle origin
 name: has_muscle_origin
 namespace: uberon
 def: "m has_muscle_origin s iff m is attached_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to." []
-def: "m has_muscle_origin s iff m is attaches_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to." [http://en.wikipedia.org/wiki/Insertion_(anatomy)#Muscles]
 def: "m has_muscle_origin s iff m is attaches_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to." [Wikipedia:Insertion_(anatomy)#Muscles]
 comment: The origin is the end of a muscle that attaches to the more fixed part of the skeleton, which is the proximal end in limb muscles
 xref: RO:0002372
@@ -4681,7 +4704,7 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 Wikipedia:Insertion_(anatomy) xsd:string
 property_value: seeAlso dbpprop:origin
 property_value: seeAlso http://dbpedia.org/property/origin
-is_a: attaches_to ! attaches_to
+is_a: attaches_to ! attached to
 
 [Typedef]
 id: has_part
@@ -4694,7 +4717,7 @@ namespace: quality
 namespace: spatial
 namespace: uberon
 def: "a core relation that holds between a whole and its part" []
-def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." []
+def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
 comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -4712,7 +4735,6 @@ property_value: IAO:0000116 "Everything has itself as a part. Any part of any pa
 property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
-property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
@@ -4773,7 +4795,6 @@ property_value: IAO:0000116 "Everything is part of itself. Any part of any part 
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
-property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
 property_value: IAO:0000118 "part_of" xsd:string
@@ -4812,7 +4833,6 @@ id: posteriorly_connected_to
 name: posteriorly connected to
 namespace: uberon
 def: "x posteriorly_connected_to y iff the posterior part of x is connected to y. i.e. x connected_to y and x anterior_to y." [http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern]
-xref: posteriorly_connected_to
 is_a: anterior_to ! anterior_to
 
 [Typedef]
@@ -4844,6 +4864,7 @@ name: surrounded by
 name: surrounded_by
 namespace: uberon
 def: "x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x" []
+def: "x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y" [https://orcid.org/0000-0002-6601-2165]
 def: "x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y." [https://orcid.org/0000-0002-6601-2165]
 xref: RO:0002219
 property_value: IAO:0000114 IAO:0000125
@@ -4857,6 +4878,7 @@ id: surrounds
 name: surrounds
 namespace: uberon
 def: "inverse of surrounded by" []
+def: "inverse of surrounded_by" [https://orcid.org/0000-0002-6601-2165]
 def: "inverse of surrounded_by." [https://orcid.org/0000-0002-6601-2165]
 subset: RO:0002259
 xref: RO:0002221
