@@ -3978,6 +3978,16 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004265"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000162",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004267"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000162",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004268"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000165",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000107"
@@ -5368,6 +5378,16 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004239"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004021",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000099",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004045"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004021",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004267"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004023",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004040"
@@ -5431,6 +5451,11 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0004026",
           "pred": "http://purl.obolibrary.org/obo/RO_0002220",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004032"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004026",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002220",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004268"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004026",
@@ -5523,6 +5548,16 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0002010"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004035",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002220",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004268"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004036",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004268"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004036",
           "pred": "http://purl.obolibrary.org/obo/RO_0002150",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004035"
@@ -5611,6 +5646,11 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0004042",
           "pred": "http://purl.obolibrary.org/obo/RO_0002150",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004043"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004045",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000096",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004267"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004045",
@@ -7663,6 +7703,11 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004238"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004239",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000099",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004267"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004242",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004245"
@@ -7953,11 +7998,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-03-17"
+            "val": "2022-06-18"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/aism/releases/2022-03-17/aism-simple.json",
+        "version": "http://purl.obolibrary.org/obo/aism/releases/2022-06-18/aism-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -10085,7 +10130,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000195",
-          "lbl": "posterior tetorial pit",
+          "lbl": "posterior tentorial pit",
           "meta": {
             "definition": {
               "val": "The tentorial pit that correspods to the posterior (ventral in prognathous head) end of the tentorium.",
@@ -11288,7 +11333,7 @@
           "lbl": "submentum",
           "meta": {
             "definition": {
-              "val": "The sclerite of the labium that is attached to the mentum by the submental-mental conjunctiva.",
+              "val": "The sclerite of the labium that is anteriorly attached to the mentum by the submental-mental conjunctiva.",
               "xrefs": []
             }
           },
@@ -11486,7 +11531,7 @@
           "lbl": "foramen occipitale",
           "meta": {
             "definition": {
-              "val": "Is the foramen of the head capsule that connects with the neck membrane and is divided by the tentorial bridge into alaforamen and neuroforamen.",
+              "val": "The foramen of the head capsule that connects with the neck membrane and is divided by the tentorial bridge into alaforamen and neuroforamen.",
               "xrefs": []
             },
             "synonyms": [
@@ -11504,7 +11549,7 @@
           "lbl": "tentorial bridge",
           "meta": {
             "definition": {
-              "val": "Is the apophysis of the tentorium originating from each posterior tentorial arm.",
+              "val": "The apophysis of the tentorium originating from each posterior tentorial arm.",
               "xrefs": []
             },
             "synonyms": [
@@ -11640,10 +11685,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004036",
-          "lbl": "gular ridges",
+          "lbl": "gular ridge",
           "meta": {
             "definition": {
-              "val": "The ridges on the ventral region of the head capsule marking the sides of the gula.",
+              "val": "Each ridge on the ventral region of the head capsule marking the sides of the gula.",
               "xrefs": []
             }
           },
@@ -11742,7 +11787,7 @@
           "lbl": "postocciput",
           "meta": {
             "definition": {
-              "val": "The posterior region of the head capsule that is adjacent to the posterior region of the vertex.",
+              "val": "The dorsolateral region of the head capsule that is posterior to the postoccipital ridge",
               "xrefs": []
             }
           },
@@ -14380,6 +14425,42 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/AISM_0004267",
+          "lbl": "postoccipital sulcus",
+          "meta": {
+            "definition": {
+              "val": "The cuticular sulcus that coincides with the postoccipital ridge and is posterior to the occiput and anterior to the postocciput",
+              "xrefs": []
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "postoccipital sulcus",
+                "xrefs": []
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/AISM_0004268",
+          "lbl": "gular sulcus",
+          "meta": {
+            "definition": {
+              "val": "The cuticular sulcus that coincides with the gular ridge, separating the gula fron the gena",
+              "xrefs": []
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "gular suture",
+                "xrefs": []
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/BFO_0000050",
           "lbl": "part of",
           "meta": {
@@ -14431,10 +14512,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -14602,10 +14679,6 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."
               },
               {
@@ -14716,7 +14789,7 @@
               }
             ],
             "definition": {
-              "val": "x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer.",
+              "val": "x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer",
               "xrefs": [
                 "http://orcid.org/0000-0002-6601-2165"
               ]
@@ -15304,6 +15377,10 @@
                 "val": "is boundary of"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "surface of"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/RO_0001900",
                 "val": "http://purl.obolibrary.org/obo/RO_0001901"
               },
@@ -15407,7 +15484,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002219",
-          "lbl": "surrounded_by",
+          "lbl": "surrounded by",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15432,7 +15509,7 @@
               }
             ],
             "definition": {
-              "val": "x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y.",
+              "val": "x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y",
               "xrefs": [
                 "https://orcid.org/0000-0002-6601-2165"
               ]
@@ -15846,10 +15923,6 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "uberon"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "anteriorly_connected_to"
               }
             ],
             "definition": {
@@ -15857,12 +15930,7 @@
               "xrefs": [
                 "http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern"
               ]
-            },
-            "xrefs": [
-              {
-                "val": "anteriorly_connected_to"
-              }
-            ]
+            }
           },
           "type": "PROPERTY"
         },
@@ -15874,10 +15942,6 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "uberon"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "posteriorly_connected_to"
               }
             ],
             "definition": {
@@ -15885,12 +15949,7 @@
               "xrefs": [
                 "http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern"
               ]
-            },
-            "xrefs": [
-              {
-                "val": "posteriorly_connected_to"
-              }
-            ]
+            }
           },
           "type": "PROPERTY"
         },
@@ -15910,11 +15969,6 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
                 "val": "dc-contributor"
-              }
-            ],
-            "xrefs": [
-              {
-                "val": "http://purl.org/dc/elements/1.1/contributor"
               }
             ]
           },

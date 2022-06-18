@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2022-03-17/aism-base.owl
+data-version: aism/releases/2022-06-18/aism-base.owl
 subsetdef: AISM:0000171 ""
 ontology: aism/aism-base
 property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
@@ -10,7 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/description "The ontology for th
 property_value: http://purl.org/dc/elements/1.1/title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-03-17" xsd:string
+property_value: owl:versionInfo "2022-06-18" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -1535,7 +1535,7 @@ relationship: RO:0002220 AISM:0004038 {http://purl.org/dc/elements/1.1/contribut
 
 [Term]
 id: AISM:0000195
-name: posterior tetorial pit {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Posterior tentorial pit (or groove): externally visible invagination of posterior part of head capsule and origin of posterior tentorial arm; adjacent with foramen occipitale or gula.\""}
+name: posterior tentorial pit {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Posterior tentorial pit (or groove): externally visible invagination of posterior part of head capsule and origin of posterior tentorial arm; adjacent with foramen occipitale or gula.\""}
 def: "The tentorial pit that correspods to the posterior (ventral in prognathous head) end of the tentorium." [] {creation_date="2021-02-12", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000196 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! tentorial pit
 relationship: RO:0002150 AISM:0004037 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! posterior tentorial arm
@@ -2336,7 +2336,7 @@ relationship: RO:0002220 AISM:0000057 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0004005
 name: submentum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Submentum: posterior part of a divided postmentum.\""}
-def: "The sclerite of the labium that is attached to the mentum by the submental-mental conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
+def: "The sclerite of the labium that is anteriorly attached to the mentum by the submental-mental conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
 relationship: BSPO:0000099 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mentum
@@ -2497,7 +2497,7 @@ relationship: BFO:0000050 AISM:0000019 {http://purl.org/dc/elements/1.1/contribu
 [Term]
 id: AISM:0004023
 name: foramen occipitale {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Foramen occipitale (=foramen magnum): posterior opening of head capsule; divided by tentorial bridge into alaforamen and neuroforamen.\""}
-def: "Is the foramen of the head capsule that connects with the neck membrane and is divided by the tentorial bridge into alaforamen and neuroforamen." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The foramen of the head capsule that connects with the neck membrane and is divided by the tentorial bridge into alaforamen and neuroforamen." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "occipital foramen" EXACT [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000197 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! arthropod foramen
 relationship: BFO:0000051 AISM:0004040 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! alaforamen
@@ -2509,7 +2509,7 @@ relationship: RO:0002220 AISM:0004024 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0004024
 name: tentorial bridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tentorial bridge (=corpotentorium): transverse element connecting posterior tentorial arms, often plate-like.\""}
-def: "Is the apophysis of the tentorium originating from each posterior tentorial arm." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The apophysis of the tentorium originating from each posterior tentorial arm." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "corpotentorium" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tentorial bridge (=corpotentorium): transverse element connecting posterior tentorial arms, often plate-like.\""}
 is_a: AISM:0000138 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular apophysis
 relationship: BFO:0000050 AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tentorium
@@ -2601,12 +2601,12 @@ def: "The sclerite on the ventral region of the head capsule that is limited lat
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
 relationship: BSPO:0000096 AISM:0004023 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! foramen occipitale
 relationship: BSPO:0000099 AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submentum
-relationship: RO:0002150 AISM:0004036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gular ridges
+relationship: RO:0002150 AISM:0004036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gular ridge
 
 [Term]
 id: AISM:0004036
-name: gular ridges {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Gular ridges: lateral internal ridges enclosing the gula.\""}
-def: "The ridges on the ventral region of the head capsule marking the sides of the gula." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+name: gular ridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Gular ridges: lateral internal ridges enclosing the gula.\""}
+def: "Each ridge on the ventral region of the head capsule marking the sides of the gula." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000158 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular ridge
 
 [Term]
@@ -2615,7 +2615,7 @@ name: posterior tentorial arm {http://purl.obolibrary.org/obo/AISM_0000171="Beut
 def: "Is the apophysis of the tentorium that originates from each posterior tetorial pit." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000138 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular apophysis
 relationship: BFO:0000050 AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tentorium
-relationship: RO:0002150 AISM:0000195 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! posterior tetorial pit
+relationship: RO:0002150 AISM:0000195 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! posterior tentorial pit
 
 [Term]
 id: AISM:0004038
@@ -2675,8 +2675,9 @@ relationship: BFO:0000050 AISM:0000019 {http://purl.org/dc/elements/1.1/contribu
 [Term]
 id: AISM:0004045
 name: postocciput {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Postocciput: posteriormost head region.\""}
-def: "The posterior region of the head capsule that is adjacent to the posterior region of the vertex." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The dorsolateral region of the head capsule that is posterior to the postoccipital ridge" [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/terms/modified="2022-06-17"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
+relationship: BSPO:0000099 AISM:0004021 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! postoccipital ridge
 
 [Term]
 id: AISM:0004046
@@ -4529,6 +4530,26 @@ def: "The cranio-mandibular articulation that is part of the subgena and lateral
 is_a: AISM:0000014 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-03-09"} ! cranio-mandibular articulation
 relationship: AISM:0000011 AISM:0004019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-03-09"} ! lateral_to clypeus
 relationship: BFO:0000050 AISM:0004027 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-03-09"} ! subgena
+
+[Term]
+id: AISM:0004267
+name: postoccipital sulcus {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n[as postoccipital suture] \"posterior submarginal groove having the posterior tentorial pits in its lower end, separatig the postocciput from the rest of the cranium\"", creation_date="2022-06-17"}
+def: "The cuticular sulcus that coincides with the postoccipital ridge and is posterior to the occiput and anterior to the postocciput" [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"}
+synonym: "postoccipital sulcus" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"posterior submarginal groove having the posterior tentorial pits in its lower end, separatig the postocciput from the rest of the cranium\""}
+is_a: AISM:0000162 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! cuticular sulcus
+relationship: BSPO:0000096 AISM:0004045 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! postocciput
+relationship: BSPO:0000099 AISM:0004239 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! occiput
+relationship: RO:0002008 AISM:0004021 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! postoccipital ridge
+
+[Term]
+id: AISM:0004268
+name: gular sulcus {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n[as gular suture] \"the line or division between the gula and the genae\""}
+def: "The cuticular sulcus that coincides with the gular ridge, separating the gula fron the gena" [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"}
+synonym: "gular suture" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"the line or division between the gula and the genae\""}
+is_a: AISM:0000162 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! cuticular sulcus
+relationship: RO:0002008 AISM:0004036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! gular ridge
+relationship: RO:0002220 AISM:0004026 {http://purl.org/dc/elements/1.1/contributor="2022-06-17", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gena
+relationship: RO:0002220 AISM:0004035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! gula
 
 [Term]
 id: BSPO:0000377

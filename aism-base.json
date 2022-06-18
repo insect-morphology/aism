@@ -4118,6 +4118,16 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004265"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000162",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004267"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000162",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004268"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0000165",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/AISM_0000107"
@@ -5513,6 +5523,16 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004239"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004021",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000099",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004045"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004021",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004267"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004023",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004040"
@@ -5576,6 +5596,11 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0004026",
           "pred": "http://purl.obolibrary.org/obo/RO_0002220",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004032"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004026",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002220",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004268"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004026",
@@ -5668,6 +5693,16 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0002010"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004035",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002220",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004268"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004036",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002008",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004268"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004036",
           "pred": "http://purl.obolibrary.org/obo/RO_0002150",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004035"
@@ -5756,6 +5791,11 @@
           "obj": "http://purl.obolibrary.org/obo/AISM_0004042",
           "pred": "http://purl.obolibrary.org/obo/RO_0002150",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004043"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004045",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000096",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004267"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004045",
@@ -7828,6 +7868,11 @@
           "sub": "http://purl.obolibrary.org/obo/AISM_0004238"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/AISM_0004239",
+          "pred": "http://purl.obolibrary.org/obo/BSPO_0000099",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004267"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/AISM_0004242",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/AISM_0004245"
@@ -8848,11 +8893,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-03-17"
+            "val": "2022-06-18"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/aism/releases/2022-03-17/aism-base.json",
+        "version": "http://purl.obolibrary.org/obo/aism/releases/2022-06-18/aism-base.json",
         "xrefs": []
       },
       "nodes": [
@@ -10980,7 +11025,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000195",
-          "lbl": "posterior tetorial pit",
+          "lbl": "posterior tentorial pit",
           "meta": {
             "definition": {
               "val": "The tentorial pit that correspods to the posterior (ventral in prognathous head) end of the tentorium.",
@@ -12183,7 +12228,7 @@
           "lbl": "submentum",
           "meta": {
             "definition": {
-              "val": "The sclerite of the labium that is attached to the mentum by the submental-mental conjunctiva.",
+              "val": "The sclerite of the labium that is anteriorly attached to the mentum by the submental-mental conjunctiva.",
               "xrefs": []
             }
           },
@@ -12381,7 +12426,7 @@
           "lbl": "foramen occipitale",
           "meta": {
             "definition": {
-              "val": "Is the foramen of the head capsule that connects with the neck membrane and is divided by the tentorial bridge into alaforamen and neuroforamen.",
+              "val": "The foramen of the head capsule that connects with the neck membrane and is divided by the tentorial bridge into alaforamen and neuroforamen.",
               "xrefs": []
             },
             "synonyms": [
@@ -12399,7 +12444,7 @@
           "lbl": "tentorial bridge",
           "meta": {
             "definition": {
-              "val": "Is the apophysis of the tentorium originating from each posterior tentorial arm.",
+              "val": "The apophysis of the tentorium originating from each posterior tentorial arm.",
               "xrefs": []
             },
             "synonyms": [
@@ -12535,10 +12580,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0004036",
-          "lbl": "gular ridges",
+          "lbl": "gular ridge",
           "meta": {
             "definition": {
-              "val": "The ridges on the ventral region of the head capsule marking the sides of the gula.",
+              "val": "Each ridge on the ventral region of the head capsule marking the sides of the gula.",
               "xrefs": []
             }
           },
@@ -12637,7 +12682,7 @@
           "lbl": "postocciput",
           "meta": {
             "definition": {
-              "val": "The posterior region of the head capsule that is adjacent to the posterior region of the vertex.",
+              "val": "The dorsolateral region of the head capsule that is posterior to the postoccipital ridge",
               "xrefs": []
             }
           },
@@ -15271,6 +15316,42 @@
               "val": "The cranio-mandibular articulation that is part of the subgena and lateral to the clypeus.",
               "xrefs": []
             }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/AISM_0004267",
+          "lbl": "postoccipital sulcus",
+          "meta": {
+            "definition": {
+              "val": "The cuticular sulcus that coincides with the postoccipital ridge and is posterior to the occiput and anterior to the postocciput",
+              "xrefs": []
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "postoccipital sulcus",
+                "xrefs": []
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/AISM_0004268",
+          "lbl": "gular sulcus",
+          "meta": {
+            "definition": {
+              "val": "The cuticular sulcus that coincides with the gular ridge, separating the gula fron the gena",
+              "xrefs": []
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "gular suture",
+                "xrefs": []
+              }
+            ]
           },
           "type": "CLASS"
         },
