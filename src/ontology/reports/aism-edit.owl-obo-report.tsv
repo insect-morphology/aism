@@ -1,29 +1,9 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	UBERON:0001134	rdfs:label	
-ERROR	missing_label	UBERON:6007289	rdfs:label	
-WARN	missing_definition	internal side	definition	
-WARN	missing_definition	external side	definition	
-WARN	missing_definition	definition	definition	
-WARN	missing_definition	curator note	definition	
-WARN	missing_definition	porous	definition	
-WARN	missing_definition	fan-shaped	definition	
-WARN	missing_definition	bilaterally paired	definition	
-WARN	missing_definition	has muscle origin	definition	
-WARN	missing_definition	internal genitalia	definition	
-WARN	missing_definition	somatic muscle	definition	
-WARN	duplicate_label_synonym	sternum	oboInOwl:hasExactSynonym	sternum@en
-WARN	duplicate_label_synonym	postoccipital sulcus	oboInOwl:hasExactSynonym	postoccipital sulcus@en
 WARN	duplicate_exact_synonym	cuticle of pretarsus	oboInOwl:hasExactSynonym	ungues@en
 WARN	duplicate_exact_synonym	pretarsal claw	oboInOwl:hasExactSynonym	ungues@en
+WARN	duplicate_label_synonym	sternum	oboInOwl:hasExactSynonym	sternum@en
+WARN	duplicate_label_synonym	postoccipital sulcus	oboInOwl:hasExactSynonym	postoccipital sulcus@en
 INFO	lowercase_definition	encircles	definition	x encircles y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x.@en
 INFO	lowercase_definition	encircled by	definition	y is encircled by x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y.@en
 INFO	lowercase_definition	encircles via conjunctiva	definition	sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B@en
 INFO	lowercase_definition	encircled via conjunctiva	definition	sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B@en
-INFO	lowercase_definition	UBERON:0001134	definition	
-INFO	missing_superclass	porous	rdfs:subClassOf	
-INFO	missing_superclass	fan-shaped	rdfs:subClassOf	
-INFO	missing_superclass	bilaterally paired	rdfs:subClassOf	
-INFO	missing_superclass	UBERON:0001134	rdfs:subClassOf	
-INFO	missing_superclass	internal genitalia	rdfs:subClassOf	
-INFO	missing_superclass	somatic muscle	rdfs:subClassOf	
-INFO	missing_superclass	UBERON:6007289	rdfs:subClassOf	

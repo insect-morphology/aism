@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2022-06-18/aism-base.owl
+data-version: aism/releases/2022-06-27/aism-base.owl
 subsetdef: AISM:0000171 ""
 ontology: aism/aism-base
 property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
@@ -10,7 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/description "The ontology for th
 property_value: http://purl.org/dc/elements/1.1/title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-06-18" xsd:string
+property_value: owl:versionInfo "2022-06-27" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -773,10 +773,11 @@ relationship: RO:0002150 AISM:0000003 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0000090
 name: cuticular tendon {http://purl.obolibrary.org/obo/AISM_0000171="Klass K-D (2001) The female abdomen of the viviparous earwig Hemimerus vosseleri (Insecta: Dermaptera: Hemimeridae), with a discussion of the postgenital abdomen of Insecta. Zoological Journal of the Linnean Society 131: 251–307. \n\nhttps://doi.org/10.1111/j.1096-3642.2001.tb02239.x \n\n\"tendon is used herein to designate membranous internal cuticular projections\""}
-def: "The usually cylindircal evagination of the cuticle that is resilin rich and is continuous with somatic muscles." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
-is_a: AISM:0000006 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular invagination
+def: "The apodeme of elastic cuticle that is continuous with somatic muscle." [] {http://purl.org/dc/elements/1.1/contributor="2022-06-22", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000007 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! elastic cuticle
+is_a: AISM:0000188 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! apodeme
 relationship: RO:0002150 UBERON:0014895 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! somatic muscle
+property_value: IAO:0000232 "The usually cylindircal evagination of the cuticle that is resilin rich and is continuous with somatic muscles." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-11"}
 
 [Term]
 id: AISM:0000091
@@ -1465,10 +1466,11 @@ relationship: RO:0000053 PATO:0002228 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0000186
 name: sensillum trichodeum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum trichodeum: hair-like sensilla, seta associated with sensory cell.\""}
-def: "Hairlike seta that is long." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-02-08"}
+def: "The cuticular seta that is elongated and acuminate." [] {creation_date="2022-06-20", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
 relationship: RO:0000053 PATO:0001154 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 relationship: RO:0000053 PATO:0002228 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+property_value: IAO:0000232 "Hairlike seta that is long." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-02-08"}
 
 [Term]
 id: AISM:0000187
@@ -1494,11 +1496,12 @@ relationship: RO:0000053 PATO:0002021 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0000190
 name: antennifer {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Antennifer: small cephalic process articulating with the antenna.\""}
-def: "The cuticular protrusion (process, protuberace) that bears the cranial articular surface of the cranio-antennal articulation." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-02-08"}
+def: "The cuticular protrusion of the head capsule thag is continuous with the antenniferal-scapal conjunctiva and adjacent to the cuticle of the scapus" [] {creation_date="2022-06-20", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular protrusion
 relationship: BFO:0000050 AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! head capsule
 relationship: RO:0002150 AISM:0004007 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! antenniferal-scapal conjunctiva
 relationship: RO:0002220 AISM:0000113 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticle of scapus
+property_value: IAO:0000232 "The cuticular protrusion (process, protuberace) that bears the cranial articular surface of the cranio-antennal articulation." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-02-08"}
 
 [Term]
 id: AISM:0000191
@@ -1557,6 +1560,8 @@ relationship: AISM:0000079 AISM:0000174 {http://purl.org/dc/elements/1.1/contrib
 id: AISM:0000198
 name: antennal foramen
 def: "The arthropod foramen of the head capsule that contains the antennifer and surrounds the scapus via the antenniferal-scapal conjunctiva." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+synonym: "antennal socket" EXACT []
+synonym: "torulus" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"antennal socket = torulus = basal socket of antenna\""}
 is_a: AISM:0000197 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! arthropod foramen
 relationship: AISM:0000079 AISM:0000019 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by head capsule
 relationship: AISM:0000079 AISM:0004007 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by antenniferal-scapal conjunctiva
@@ -1745,12 +1750,12 @@ id: AISM:0002011
 name: frontoepypharyngeal muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Mesally on the frons or on the antennal base,\nusually on the same level as musculus\nfrontolabralis\"\n\n\"Insertion: Basal labral wall or tormae\""}
 def: "The cranio-labral muscle that is attached to the frons and the tormae." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"}
 is_a: AISM:0000084 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! cranio-labral muscle
-relationship: RO:0002371 AISM:0002012 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! tormae
+relationship: RO:0002371 AISM:0002012 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! torma
 relationship: RO:0002371 AISM:0004020 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! frons
 
 [Term]
 id: AISM:0002012
-name: tormae {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tormae: lateral apodemes of labral base\""}
+name: torma {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tormae: lateral apodemes of labral base\""}
 def: "The apodeme at either side of the proximal margin of the labrum." [] {creation_date="2021-04-22", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000188 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! apodeme
 
@@ -1784,20 +1789,19 @@ relationship: RO:0002371 AISM:0004026 {http://purl.org/dc/elements/1.1/contribut
 
 [Term]
 id: AISM:0002019
-name: suspensorium {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Suspensorium (=fulturae, hypopharyngeal arms, oral arms): sclerotized strengthening elements of proximal hypopharynx.\""}
-def: "The sclerite of the hypopharynx." [] {creation_date="2021-04-22", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+name: hypopharyngeal suspensorium {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Suspensorium (=fulturae, hypopharyngeal arms, oral arms): sclerotized strengthening elements of proximal hypopharynx.\""}
+def: "The hypopharyngeal sclerite on the proximal region of the hypopharynx." [] {creation_date="2021-04-22", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/terms/modified="2022-06-22"}
 synonym: "fulturae" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043"}
 synonym: "hypopharyngeal arms" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043"}
 synonym: "oral arms" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
-relationship: RO:0002150 AISM:0000093 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! hypopharynx
+is_a: AISM:0004275 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hypopharyngeal sclerite
 
 [Term]
 id: AISM:0002021
 name: hypopharyngeomandibular muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Small sclerite close to the loral arm\n(Thermobia), scleroticed arm that elongates\nthe loral arm (Neoptera)\"\n\n\"Insertion: Inner side of the lateral wall of the mandible\""}
 def: "The cranio-mandibular muscle that is attached to the suspensorium and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"}
 is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! cranio-mandibular muscle
-relationship: RO:0002371 AISM:0002019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! suspensorium
+relationship: RO:0002371 AISM:0002019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! hypopharyngeal suspensorium
 
 [Term]
 id: AISM:0002022
@@ -2078,7 +2082,7 @@ id: AISM:0002059
 name: fronto-oral muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Frons\"\n\n\"Insertion: Oral arms of the suspensorial sclerites\""}
 def: "The cranio-hypopharyngeal muscle that is attached to the frons and  the suspensorium." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"}
 is_a: AISM:0002058 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! cranio-hypopharyngeal muscle
-relationship: RO:0002371 AISM:0002019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! suspensorium
+relationship: RO:0002371 AISM:0002019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! hypopharyngeal suspensorium
 relationship: RO:0002371 AISM:0004020 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! frons
 
 [Term]
@@ -2086,7 +2090,7 @@ id: AISM:0002060
 name: tentorio-oral muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior tentorial arm, epistomal sulcus or\nfrons close to epistomal sulcus\"\n\n\"Insertion: Oral arms of the suspensorial sclerites, well\nseperated from above\""}
 def: "The cranio-hypopharyngeal muscle that is attached to the anterior tentorial arm and the suspensorium." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"}
 is_a: AISM:0002058 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! cranio-hypopharyngeal muscle
-relationship: RO:0002371 AISM:0002019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! suspensorium
+relationship: RO:0002371 AISM:0002019 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! hypopharyngeal suspensorium
 relationship: RO:0002371 AISM:0004038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! anterior tentorial arm
 
 [Term]
@@ -2612,7 +2616,7 @@ is_a: AISM:0000158 {http://purl.org/dc/elements/1.1/contributor="jgiron https://
 [Term]
 id: AISM:0004037
 name: posterior tentorial arm {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Posterior tentorial arm: paired posterior element of tentorium; originates at posterior tentorial pit.\""}
-def: "Is the apophysis of the tentorium that originates from each posterior tetorial pit." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The apophysis of the tentorium that originates from each posterior tentorial pit." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000138 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular apophysis
 relationship: BFO:0000050 AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tentorium
 relationship: RO:0002150 AISM:0000195 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! posterior tentorial pit
@@ -2620,7 +2624,7 @@ relationship: RO:0002150 AISM:0000195 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0004038
 name: anterior tentorial arm {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Anterior tentorial arm: paired tentorial element anterior to tentorial bridge; originates at anterior tentorial pit.\""}
-def: "Is the apophysis of the tentorium that is connected to an anterior tentorial pit." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The apophysis of the tentorium that is connected to an anterior tentorial pit." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000138 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular apophysis
 relationship: BFO:0000050 AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tentorium
 relationship: RO:0002150 AISM:0000194 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! anterior tentorial pit
@@ -2628,7 +2632,7 @@ relationship: RO:0002150 AISM:0000194 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0004039
 name: dorsal tentorial arm {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Dorsal tentorial arm: paired dorsal element of tentorium, originating at anterior arm or connecting area of anterior and posterior arm; often connected with head capsule by fibrillae.\""}
-def: "Is the apophysis of the tentorium that is connected to an anterior tentorial arm." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The apophysis of the tentorium that is connected to an anterior tentorial arm." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000138 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular apophysis
 relationship: BFO:0000050 AISM:0000191 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tentorium
 relationship: RO:0002150 AISM:0004038 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! anterior tentorial arm
@@ -4525,11 +4529,10 @@ relationship: RO:0002220 AISM:0004027 {http://purl.org/dc/elements/1.1/contribut
 
 [Term]
 id: AISM:0004266
-name: dorsal cranio-mandibular articulation {creation_date="2022-03-09"}
-def: "The cranio-mandibular articulation that is part of the subgena and lateral to the clypeus." [] {creation_date="2022-03-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000014 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-03-09"} ! cranio-mandibular articulation
-relationship: AISM:0000011 AISM:0004019 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-03-09"} ! lateral_to clypeus
-relationship: BFO:0000050 AISM:0004027 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-03-09"} ! subgena
+name: cuticle of antennomere {creation_date="2022-06-20"}
+def: "The cuticle of a mere that is part of the cuticle of the antenna." [] {creation_date="2022-06-20", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000073 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-20"} ! cuticle of mere
+relationship: BFO:0000050 AISM:0000032 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-20"} ! cuticle of antenna
 
 [Term]
 id: AISM:0004267
@@ -4550,6 +4553,54 @@ is_a: AISM:0000162 {http://purl.org/dc/elements/1.1/contributor="jgiron https://
 relationship: RO:0002008 AISM:0004036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! gular ridge
 relationship: RO:0002220 AISM:0004026 {http://purl.org/dc/elements/1.1/contributor="2022-06-17", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gena
 relationship: RO:0002220 AISM:0004035 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-17"} ! gula
+
+[Term]
+id: AISM:0004269
+name: mandibular incisor lobe {creation_date="2022-06-20", http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"toothed distal lobe of mandible\""}
+def: "The region of the cuticle that is distal and medial on the cuticle of the insect mandible." [] {creation_date="2022-06-20", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-20"} ! region of cuticle
+
+[Term]
+id: AISM:0004270
+name: mandibular molar lobe {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"the ridged or roughened grinding surface of the mandible\"", creation_date="2022-06-20"}
+def: "The region of the cuticle that is proximal and medial on the cuticle of the insect mandible." [] {creation_date="2022-06-20", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+synonym: "mola" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\nmola = molar lobe = \"the ridged or roughened grinding surface of the mandible\""}
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-20"} ! region of cuticle
+
+[Term]
+id: AISM:0004271
+name: prostheca {creation_date="2022-06-20", http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"mandibular region set with hair\""}
+def: "The cuticular lobe of the cuticle of the insect mandible between the mandibular molar lobe and the mandibular incisor lobe." [] {creation_date="2022-06-20", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+synonym: "lacinia mobilis" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"An articulated mesal appendage, the lacinia mobilis or prostheca, occurs in several groups. It can be sclerotized or largely membranous and is often equipped with microtrichia.\""}
+is_a: AISM:0004237 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-20"} ! cuticular lobe
+relationship: BFO:0000050 AISM:0000043 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-20"} ! cuticle of insect mandible
+relationship: BSPO:0000096 AISM:0004270 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-20"} ! mandibular molar lobe
+relationship: BSPO:0000099 AISM:0004269 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-20"} ! mandibular incisor lobe
+
+[Term]
+id: AISM:0004272
+name: basistipes {creation_date="2022-06-23", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Basistipes: basolateral part of stipes.\""}
+def: "The region of cuticle on the lateral region of the cuticle of stipes, adjacent to the distal margin of the cuticle of the cardo, to the proximal margin of the cuticle of the palpifer, and adjacent to the proximal margin of the mediostipes." [] {creation_date="2022-06-23", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-23"} ! region of cuticle
+
+[Term]
+id: AISM:0004273
+name: mediostipes {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Mediostipes: mesal part of stipes.\""}
+def: "The region of cuticle on the medial region of the cuticle of stipes, adjacent to the distal margin of the cuticle of the basistipes, and to the proximal margin of the cuticle of the galea and the lacinia." [] {creation_date="2022-06-23", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-23"} ! region of cuticle
+
+[Term]
+id: AISM:0004274
+name: maxillary gland {http://purl.obolibrary.org/obo/AISM_0000171="Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.\n\nhttps://www.jstor.org/stable/10.7591/j.ctv1nhm1j\n\n\"Glands present in some insects opening mesally at the bases of the maxillae\""}
+def: "The ectodermal gland continuous with the proximal region of the cuticle of the cardo." [] {creation_date="2022-06-23", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004235 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-23"} ! ectodermal gland
+
+[Term]
+id: AISM:0004275
+name: hypopharyngeal sclerite
+def: "The sclerite that is continuous with the hypopharynx." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! sclerite
+relationship: RO:0002150 AISM:0000093 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! hypopharynx
 
 [Term]
 id: BSPO:0000377
