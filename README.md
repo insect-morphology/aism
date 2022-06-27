@@ -35,7 +35,11 @@ The AISM is available at http://purl.obolibrary.org/obo/aism.owl since May 17 20
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/aism-edit.owl](src/ontology/aism-edit.owl). 
+Editors of this ontology should use the edit version, [src/ontology/aism-edit.owl](src/ontology/aism-edit.owl).
+
+## Reference
+
+A preprint about the AISM was published in February 2022: Girón, J. C., S. Tarasov, L. A. González Montaña, N. Matentzoglu, A. D. Smith, M. Koch, B. E. Boudinot, P. Bouchard, R. Burks, L. Vogt, M. Yoder, D. Osumi-Sutherland, F. Friedrich, R. Beutel, I. Mikó (2022) Formalizing insect morphological data: a model-based, extensible insect anatomy ontology and its potential applications in biodiversity research and informatics. Preprints. https://doi.org/10.20944/preprints202201.0254.v1
 
 ## Contact
 
