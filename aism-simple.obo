@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2022-06-27/aism-simple.owl
+data-version: aism/releases/2022-08-25/aism-simple.owl
 subsetdef: AISM:0000171 ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -9,14 +9,14 @@ subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
 synonymtypedef: vertebrate ""
 ontology: aism/aism-simple
-property_value: dc-contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
-property_value: dc-contributor "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883" xsd:string
-property_value: dc-contributor "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932" xsd:string
-property_value: dc-contributor "Sergei Tarasov (starasov) https://orcid.org/0000-0001-5237-2330" xsd:string
 property_value: dc-description "The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research." xsd:string
 property_value: dc-title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-06-27" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sergei Tarasov (starasov) https://orcid.org/0000-0001-5237-2330" xsd:string
+property_value: owl:versionInfo "2022-08-25" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -785,7 +785,7 @@ relationship: part_of AISM:0004127 {http://purl.org/dc/elements/1.1/contributor=
 [Term]
 id: AISM:0000098
 name: neck membrane
-def: "The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prnotum, and bears cervical sclerites." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+def: "The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prothorax, and bears cervical sclerites." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", http://purl.org/dc/terms/modified="2022-06-27"}
 synonym: "cervical membrane" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Cervical membrane: membrane connecting the head and prothorax.\""}
 is_a: AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! conjunctiva
 relationship: AISM:0000078 AISM:0004141 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles cervical sclerite
@@ -1453,7 +1453,7 @@ is_a: AISM:0000193 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 [Term]
 id: AISM:0000197
 name: arthropod foramen
-def: "Is the foramen encircled a sclerite." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
+def: "The foramen encircled by a sclerite." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
 relationship: AISM:0000079 AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by region of cuticle
 
 [Term]
@@ -4411,6 +4411,49 @@ def: "The sclerite that is continuous with the hypopharynx." [] {creation_date="
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! sclerite
 relationship: continuous_with AISM:0000093 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! hypopharynx
 
+[Term]
+id: AISM:0004276
+name: thoracic foramen {creation_date="2022-06-27"}
+def: "The arthropod foramen that is part of the cuticle of the insect thorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000197 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! arthropod foramen
+relationship: part_of AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! cuticle of insect thorax
+
+[Term]
+id: AISM:0004277
+name: anterior prothoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the anterior margin of the cuticle of the prothorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004278
+name: posterior prothoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the posterior margin of the cuticle of the prothorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004279
+name: anterior mesothoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the anterior margin of the cuticle of the mesothorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004280
+name: posterior mesothoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the posterior margin of the cuticle of the mesothorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004281
+name: posterior metathoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the posterior margin of the cuticle of the metathorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004282
+name: anterior metathoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the anterior margin of the cuticle of the metathorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
 [Typedef]
 id: AISM:0000011
 name: lateral_to {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
@@ -4426,7 +4469,7 @@ id: AISM:0000078
 name: encircles {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 def: "x encircles y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
 is_transitive: true
-is_a: continuous_with ! continuous_with
+is_a: continuous_with ! continuous with
 inverse_of: AISM:0000079 ! encircled by
 
 [Typedef]
@@ -4434,7 +4477,7 @@ id: AISM:0000079
 name: encircled by {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 def: "y is encircled by x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
 is_transitive: true
-is_a: continuous_with ! continuous_with
+is_a: continuous_with ! continuous with
 
 [Typedef]
 id: AISM:0000519
@@ -4483,6 +4526,21 @@ property_value: RO:0001900 RO:0001901
 inverse_of: contains ! contains
 
 [Typedef]
+id: RO:0002000
+name: 2D boundary of
+name: boundary_of
+def: "a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity" []
+property_value: IAO:0000112 "the surface of my skin is a 2D boundary of my body" xsd:string
+property_value: IAO:0000116 "A 2D boundary may have holes and gaps, but it must be a single connected entity, not an aggregate of several disconnected parts." xsd:string
+property_value: IAO:0000116 "Although the boundary is two-dimensional, it exists in three-dimensional space and thus has a 3D shape." xsd:string
+property_value: IAO:0000118 "2D_boundary_of" xsd:string
+property_value: IAO:0000118 "boundary of" xsd:string
+property_value: IAO:0000118 "is 2D boundary of" xsd:string
+property_value: IAO:0000118 "is boundary of" xsd:string
+property_value: IAO:0000118 "surface of" xsd:string
+property_value: RO:0001900 RO:0001901
+
+[Typedef]
 id: RO:0002008
 name: coincident with
 def: "A relation that holds between two linear structures that are approximately parallel to each other for their entire length and where either the two structures are adjacent to each other or one is part of the other." []
@@ -4506,13 +4564,11 @@ comment: This relation is used to determine the 'directionality' of relative qua
 [Typedef]
 id: adjacent_to
 name: adjacent to
-name: adjacent_to
 namespace: external
 namespace: spatial
 namespace: uberon
 def: "x adjacent to y if and only if x and y share a boundary." []
 def: "x adjacent_to y iff: x and y share a boundary" []
-def: "x adjacent_to y iff: x and y share a boundary." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
@@ -4535,10 +4591,8 @@ namespace: spatial
 namespace: uberon
 def: "x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail." [BSPO:cjm]
 def: "x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer" [http://orcid.org/0000-0002-6601-2165]
-def: "x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer." [http://orcid.org/0000-0002-6601-2165]
 synonym: "rostral_to" EXACT []
 xref: BSPO:0000096
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6601-2165
 property_value: seeAlso FBcv:0000039
 property_value: seeAlso FBql:00005863
 is_transitive: true
@@ -4556,7 +4610,6 @@ is_a: posterior_to ! posterior to
 [Typedef]
 id: attaches_to
 name: attached to
-name: attaches_to
 namespace: uberon
 def: "a is attached to b if and only if a and b are discrete objects or object parts, and there are physical connections between a and b such that a force pulling a will move b, or a force pulling b will move a" []
 subset: ro-eco
@@ -4585,24 +4638,6 @@ property_value: RO:0001900 RO:0001901
 is_inverse_functional: true
 
 [Typedef]
-id: boundary_of
-name: 2D boundary of
-name: boundary of
-name: boundary_of
-namespace: uberon
-def: "a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity" []
-xref: RO:0002000
-property_value: IAO:0000112 "the surface of my skin is a 2D boundary of my body" xsd:string
-property_value: IAO:0000116 "A 2D boundary may have holes and gaps, but it must be a single connected entity, not an aggregate of several disconnected parts." xsd:string
-property_value: IAO:0000116 "Although the boundary is two-dimensional, it exists in three-dimensional space and thus has a 3D shape." xsd:string
-property_value: IAO:0000118 "2D_boundary_of" xsd:string
-property_value: IAO:0000118 "boundary of" xsd:string
-property_value: IAO:0000118 "is 2D boundary of" xsd:string
-property_value: IAO:0000118 "is boundary of" xsd:string
-property_value: IAO:0000118 "surface of" xsd:string
-property_value: RO:0001900 RO:0001901
-
-[Typedef]
 id: contains
 name: contains
 namespace: uberon
@@ -4614,7 +4649,6 @@ property_value: RO:0001900 RO:0001901
 [Typedef]
 id: continuous_with
 name: continuous with
-name: continuous_with
 namespace: uberon
 def: "X continuous_with Y if and only if X and Y share a fiat boundary." []
 xref: RO:0002150
@@ -4647,13 +4681,6 @@ property_value: IAO:0000111 "curator note" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "PERSON:Alan Ruttenberg" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
-is_metadata_tag: true
-
-[Typedef]
-id: dc-contributor
-name: contributor
-namespace: uberon
-xref: http://purl.org/dc/elements/1.1/contributor
 is_metadata_tag: true
 
 [Typedef]
@@ -4746,15 +4773,11 @@ is_a: has_part ! has_part
 [Typedef]
 id: has_muscle_origin
 name: has muscle origin
-name: has_muscle_origin
 namespace: uberon
 def: "m has_muscle_origin s iff m is attached_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to." []
-def: "m has_muscle_origin s iff m is attaches_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to." [Wikipedia:Insertion_(anatomy)#Muscles]
-comment: The origin is the end of a muscle that attaches to the more fixed part of the skeleton, which is the proximal end in limb muscles
 xref: RO:0002372
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 Wikipedia:Insertion_(anatomy) xsd:string
-property_value: seeAlso dbpprop:origin
 property_value: seeAlso http://dbpedia.org/property/origin
 is_a: attaches_to ! attached to
 
@@ -4913,16 +4936,14 @@ replaced_by: RO:0015009
 [Typedef]
 id: surrounded_by
 name: surrounded by
-name: surrounded_by
 namespace: uberon
 def: "x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x" []
 def: "x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y" [https://orcid.org/0000-0002-6601-2165]
-def: "x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y." [https://orcid.org/0000-0002-6601-2165]
 xref: RO:0002219
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: RO:0001900 RO:0001901
-is_a: adjacent_to ! adjacent_to
+is_a: adjacent_to ! adjacent to
 inverse_of: surrounds ! surrounds
 
 [Typedef]
@@ -4931,13 +4952,12 @@ name: surrounds
 namespace: uberon
 def: "inverse of surrounded by" []
 def: "inverse of surrounded_by" [https://orcid.org/0000-0002-6601-2165]
-def: "inverse of surrounded_by." [https://orcid.org/0000-0002-6601-2165]
 subset: RO:0002259
 xref: RO:0002221
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: RO:0001900 RO:0001901
-is_a: adjacent_to ! adjacent_to
+is_a: adjacent_to ! adjacent to
 
 [Typedef]
 id: ventral_to

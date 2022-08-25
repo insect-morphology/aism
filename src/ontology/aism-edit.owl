@@ -571,6 +571,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004272>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004273>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004274>))
 Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004275>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004276>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004277>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004278>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004279>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004280>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004281>))
+Declaration(Class(<http://purl.obolibrary.org/obo/AISM_0004282>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000377>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000378>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BSPO_0000671>))
@@ -1735,7 +1742,7 @@ SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000098> (neck membrane)
 
-AnnotationAssertion(Annotation(dce:contributor "imiko https://orcid.org/0000-0003-2938-9075") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000098> "The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prnotum, and bears cervical sclerites."@en)
+AnnotationAssertion(Annotation(dce:contributor "imiko https://orcid.org/0000-0003-2938-9075") Annotation(dcterms:modified "2022-06-27") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2020-11-11") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000098> "The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prothorax, and bears cervical sclerites."@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/AISM_0000171> "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -2593,7 +2600,7 @@ SubClassOf(Annotation(dce:contributor "imiko https://orcid.org/0000-0003-2938-90
 
 # Class: <http://purl.obolibrary.org/obo/AISM_0000197> (arthropod foramen)
 
-AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000197> "Is the foramen encircled a sclerite."@en)
+AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2021-02-19") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0000197> "The foramen encircled by a sclerite."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0000197> "arthropod foramen"@en)
 SubClassOf(Annotation(dce:contributor "imiko https://orcid.org/0000-0003-2938-9075") <http://purl.obolibrary.org/obo/AISM_0000197> <http://purl.obolibrary.org/obo/UBERON_0000161>)
 SubClassOf(Annotation(dce:contributor "imiko https://orcid.org/0000-0003-2938-9075") <http://purl.obolibrary.org/obo/AISM_0000197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/AISM_0000079> <http://purl.obolibrary.org/obo/AISM_0000174>))
@@ -7007,6 +7014,55 @@ AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-00
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/AISM_0004275> "hypopharyngeal sclerite"@en)
 SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004275> <http://purl.obolibrary.org/obo/AISM_0000003>)
 SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004275> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/AISM_0000093>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004276> (thoracic foramen)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004276> "The arthropod foramen that is part of the cuticle of the insect thorax."@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0004276> "thoracic foramen"@en)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004276> <http://purl.obolibrary.org/obo/AISM_0000197>)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004276> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0000108>))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004277> (anterior prothoracic foramen)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004277> "The thoracic foramen that is at the anterior margin of the cuticle of the prothorax."@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0004277> "anterior prothoracic foramen"@en)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004277> <http://purl.obolibrary.org/obo/AISM_0004276>)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004277> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000671> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004125>)))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004278> (posterior prothoracic foramen)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004278> "The thoracic foramen that is at the posterior margin of the cuticle of the prothorax."@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0004278> "posterior prothoracic foramen"@en)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004278> <http://purl.obolibrary.org/obo/AISM_0004276>)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004278> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004125>)))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004279> (anterior mesothoracic foramen)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004279> "The thoracic foramen that is at the anterior margin of the cuticle of the mesothorax."@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0004279> "anterior mesothoracic foramen"@en)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004279> <http://purl.obolibrary.org/obo/AISM_0004276>)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004279> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000671> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004126>)))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004280> (posterior mesothoracic foramen)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004280> "The thoracic foramen that is at the posterior margin of the cuticle of the mesothorax."@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0004280> "posterior mesothoracic foramen"@en)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004280> <http://purl.obolibrary.org/obo/AISM_0004276>)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004280> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004126>)))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004281> (posterior metathoracic foramen)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004281> "The thoracic foramen that is at the posterior margin of the cuticle of the metathorax."@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0004281> "posterior metathoracic foramen"@en)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004281> <http://purl.obolibrary.org/obo/AISM_0004276>)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004281> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004127>)))
+
+# Class: <http://purl.obolibrary.org/obo/AISM_0004282> (anterior metathoracic foramen)
+
+AnnotationAssertion(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/AISM_0004282> "The thoracic foramen that is at the anterior margin of the cuticle of the metathorax."@en)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") rdfs:label <http://purl.obolibrary.org/obo/AISM_0004282> "anterior metathoracic foramen"@en)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004282> <http://purl.obolibrary.org/obo/AISM_0004276>)
+SubClassOf(Annotation(dce:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(<http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-06-27") <http://purl.obolibrary.org/obo/AISM_0004282> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BSPO_0000671> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/AISM_0004127>)))
 
 # Class: <http://purl.obolibrary.org/obo/BSPO_0000377> (proximal surface)
 

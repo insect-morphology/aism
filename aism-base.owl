@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2022-06-27/aism-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2022-08-25/aism-base.owl"/>
         <dc:contributor>István Mikó (imiko) https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <dc:contributor>Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <dc:contributor>Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932</dc:contributor>
@@ -22,7 +22,7 @@
         <dc:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-27</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -10416,7 +10416,7 @@ https://doi.org/10.1515/9783110264043
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prnotum, and bears cervical sclerites.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prothorax, and bears cervical sclerites.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>cervical membrane</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">neck membrane</rdfs:label>
     </owl:Class>
@@ -10482,8 +10482,9 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prnotum, and bears cervical sclerites.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prothorax, and bears cervical sclerites.</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <terms:modified>2022-06-27</terms:modified>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
     </owl:Axiom>
     <owl:Axiom>
@@ -17312,7 +17313,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the foramen encircled a sclerite.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The foramen encircled by a sclerite.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">arthropod foramen</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -17335,7 +17336,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000197"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the foramen encircled a sclerite.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The foramen encircled by a sclerite.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -50197,6 +50198,402 @@ https://www.jstor.org/stable/10.7591/j.ctv1nhm1j
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">The sclerite that is continuous with the hypopharynx.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000197"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The arthropod foramen that is part of the cuticle of the insect thorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">thoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000197"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The arthropod foramen that is part of the cuticle of the insect thorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">thoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004125"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the prothorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anterior prothoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004125"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004277"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the prothorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">anterior prothoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004125"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the prothorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">posterior prothoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004125"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004278"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the prothorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">posterior prothoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004126"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the mesothorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anterior mesothoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004126"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004279"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the mesothorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">anterior mesothoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004126"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the mesothorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">posterior mesothoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004280"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004280"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004126"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004280"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the mesothorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004280"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">posterior mesothoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004127"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the metathorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">posterior metathoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004281"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004281"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004127"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004281"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the metathorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004281"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">posterior metathoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004127"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the metathorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anterior metathoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004282"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004282"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004127"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004282"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the metathorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004282"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">anterior metathoracic foramen</owl:annotatedTarget>
         <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
     </owl:Axiom>
     

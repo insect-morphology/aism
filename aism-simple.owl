@@ -15,7 +15,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2022-06-27/aism-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2022-08-25/aism-simple.owl"/>
         <dc:contributor>István Mikó (imiko) https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <dc:contributor>Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <dc:contributor>Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932</dc:contributor>
@@ -23,7 +23,7 @@
         <dc:description xml:lang="en">The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research.</dc:description>
         <dc:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-27</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -247,14 +247,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
-        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>dc-contributor</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
-        <rdfs:label>contributor</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
@@ -283,12 +276,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:shorthand>dc-title</oboInOwl:shorthand>
         <rdfs:label>title</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
@@ -715,8 +702,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.</obo:IAO_0000115>
         <obo:IAO_0000115>x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer</obo:IAO_0000115>
-        <obo:IAO_0000115>x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:created_by>cjm</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-31T02:15:46Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BSPO:0000096</oboInOwl:hasDbXref>
@@ -741,12 +726,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -780,12 +759,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>x distal_to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000097"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>x distal_to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -817,12 +790,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x dorsal_to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000098"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>x dorsal_to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -856,12 +823,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x posterior_to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>x posterior_to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
@@ -901,12 +862,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>x proximal_to y iff x is closer to the point of attachment with the body than y.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000100"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>x proximal_to y iff x is closer to the point of attachment with the body than y.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -937,12 +892,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000102"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1083,12 +1032,7 @@ range: spatial region or site (immaterial continuant)
         <obo:IAO_0000118 xml:lang="en">is boundary of</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">surface of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <oboInOwl:hasDbXref>RO:0002000</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>boundary_of</oboInOwl:id>
-        <oboInOwl:shorthand>boundary_of</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">2D boundary of</rdfs:label>
-        <rdfs:label>boundary of</rdfs:label>
         <rdfs:label>boundary_of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1123,7 +1067,6 @@ range: spatial region or site (immaterial continuant)
         <oboInOwl:shorthand>continuous_with</oboInOwl:shorthand>
         <rdfs:label>continuous with</rdfs:label>
         <rdfs:label xml:lang="en">continuous with</rdfs:label>
-        <rdfs:label>continuous_with</rdfs:label>
         <rdfs:seeAlso>FMA:85972</rdfs:seeAlso>
     </owl:ObjectProperty>
     
@@ -1137,7 +1080,6 @@ range: spatial region or site (immaterial continuant)
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x</obo:IAO_0000115>
         <obo:IAO_0000115>x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y</obo:IAO_0000115>
-        <obo:IAO_0000115>x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <oboInOwl:hasDbXref>RO:0002219</oboInOwl:hasDbXref>
@@ -1146,19 +1088,12 @@ range: spatial region or site (immaterial continuant)
         <oboInOwl:shorthand>surrounded_by</oboInOwl:shorthand>
         <rdfs:label>surrounded by</rdfs:label>
         <rdfs:label xml:lang="en">surrounded by</rdfs:label>
-        <rdfs:label>surrounded_by</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002219"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002219"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1174,7 +1109,6 @@ range: spatial region or site (immaterial continuant)
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>x adjacent to y if and only if x and y share a boundary.</obo:IAO_0000115>
         <obo:IAO_0000115>x adjacent_to y iff: x and y share a boundary</obo:IAO_0000115>
-        <obo:IAO_0000115>x adjacent_to y iff: x and y share a boundary.</obo:IAO_0000115>
         <obo:IAO_0000116>This relation acts as a join point with BSPO</obo:IAO_0000116>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
@@ -1189,7 +1123,6 @@ range: spatial region or site (immaterial continuant)
         <oboInOwl:shorthand>adjacent_to</oboInOwl:shorthand>
         <rdfs:label>adjacent to</rdfs:label>
         <rdfs:label xml:lang="en">adjacent to</rdfs:label>
-        <rdfs:label>adjacent_to</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
@@ -1207,7 +1140,6 @@ range: spatial region or site (immaterial continuant)
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>inverse of surrounded by</obo:IAO_0000115>
         <obo:IAO_0000115>inverse of surrounded_by</obo:IAO_0000115>
-        <obo:IAO_0000115>inverse of surrounded_by.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <oboInOwl:hasDbXref>RO:0002221</oboInOwl:hasDbXref>
@@ -1223,12 +1155,6 @@ range: spatial region or site (immaterial continuant)
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>inverse of surrounded_by</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002221"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>inverse of surrounded_by.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1265,7 +1191,6 @@ range: spatial region or site (immaterial continuant)
         <oboInOwl:shorthand>attaches_to</oboInOwl:shorthand>
         <rdfs:label>attached to</rdfs:label>
         <rdfs:label xml:lang="en">attached to</rdfs:label>
-        <rdfs:label>attaches_to</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/FMA_85990"/>
     </owl:ObjectProperty>
     
@@ -1276,26 +1201,16 @@ range: spatial region or site (immaterial continuant)
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002372">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002371"/>
         <obo:IAO_0000115 xml:lang="en">m has_muscle_origin s iff m is attached_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to.</obo:IAO_0000115>
-        <obo:IAO_0000115>m has_muscle_origin s iff m is attaches_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Wikipedia:Insertion_(anatomy)</obo:IAO_0000119>
         <oboInOwl:hasDbXref>RO:0002372</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>has_muscle_origin</oboInOwl:id>
         <oboInOwl:shorthand>has_muscle_origin</oboInOwl:shorthand>
-        <rdfs:comment>The origin is the end of a muscle that attaches to the more fixed part of the skeleton, which is the proximal end in limb muscles</rdfs:comment>
         <rdfs:label>has muscle origin</rdfs:label>
         <rdfs:label xml:lang="en">has muscle origin</rdfs:label>
-        <rdfs:label>has_muscle_origin</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://dbpedia.org/property/origin"/>
-        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/dbpprop_origin"/>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002372"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>m has_muscle_origin s iff m is attaches_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Wikipedia:Insertion_(anatomy)#Muscles</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -1984,12 +1899,6 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000017"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000002"/>
-        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -2018,6 +1927,12 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget xml:lang="en">The articulation between the head and the neck.</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
         <oboInOwl:creation_date>2020-10-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000017"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000002"/>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
     </owl:Axiom>
     
 
@@ -8115,7 +8030,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004141"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prnotum, and bears cervical sclerites.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prothorax, and bears cervical sclerites.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>cervical membrane</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">neck membrane</rdfs:label>
     </owl:Class>
@@ -8139,8 +8054,9 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000098"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prnotum, and bears cervical sclerites.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prothorax, and bears cervical sclerites.</owl:annotatedTarget>
         <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+        <terms:modified>2022-06-27</terms:modified>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
     </owl:Axiom>
     <owl:Axiom>
@@ -10190,6 +10106,12 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000126"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
+        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000126"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AISM_0000078"/>
@@ -10224,12 +10146,6 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">socket membrane</owl:annotatedTarget>
         <oboInOwl:creation_date>2020-11-11</oboInOwl:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000126"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000004"/>
-        <dc:contributor>imiko https://orcid.org/0000-0003-2938-9075</dc:contributor>
     </owl:Axiom>
     
 
@@ -12913,7 +12829,7 @@ https://doi.org/10.1515/9783110264043
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Is the foramen encircled a sclerite.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The foramen encircled by a sclerite.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">arthropod foramen</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -12930,7 +12846,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000197"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">Is the foramen encircled a sclerite.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The foramen encircled by a sclerite.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2021-02-19</oboInOwl:creation_date>
     </owl:Axiom>
@@ -36571,6 +36487,234 @@ https://www.jstor.org/stable/10.7591/j.ctv1nhm1j
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">The sclerite that is continuous with the hypopharynx.</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000197"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The arthropod foramen that is part of the cuticle of the insect thorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">thoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000197"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000108"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The arthropod foramen that is part of the cuticle of the insect thorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">thoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the prothorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anterior prothoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004277"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the prothorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004277"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">anterior prothoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the prothorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">posterior prothoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004278"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the prothorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">posterior prothoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the mesothorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anterior mesothoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004279"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the mesothorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004279"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">anterior mesothoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the mesothorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">posterior mesothoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004280"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004280"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the mesothorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004280"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">posterior mesothoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the metathorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">posterior metathoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004281"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004281"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the posterior margin of the cuticle of the metathorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004281"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">posterior metathoracic foramen</owl:annotatedTarget>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <obo:IAO_0000115 xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the metathorax.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anterior metathoracic foramen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004282"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004276"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004282"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The thoracic foramen that is at the anterior margin of the cuticle of the metathorax.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004282"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">anterior metathoracic foramen</owl:annotatedTarget>
         <oboInOwl:creation_date>2022-06-27</oboInOwl:creation_date>
     </owl:Axiom>
 </rdf:RDF>
