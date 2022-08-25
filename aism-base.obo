@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2022-06-27/aism-base.owl
+data-version: aism/releases/2022-08-25/aism-base.owl
 subsetdef: AISM:0000171 ""
 ontology: aism/aism-base
 property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
@@ -10,7 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/description "The ontology for th
 property_value: http://purl.org/dc/elements/1.1/title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-06-27" xsd:string
+property_value: owl:versionInfo "2022-08-25" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -836,7 +836,7 @@ relationship: RO:0002150 AISM:0000119 {http://purl.org/dc/elements/1.1/contribut
 [Term]
 id: AISM:0000098
 name: neck membrane
-def: "The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prnotum, and bears cervical sclerites." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+def: "The conjuctiva that is continuous with the posterior margin of the head capsule and with the anterior margin of the prothorax, and bears cervical sclerites." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", http://purl.org/dc/terms/modified="2022-06-27"}
 synonym: "cervical membrane" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Cervical membrane: membrane connecting the head and prothorax.\""}
 is_a: AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! conjunctiva
 relationship: AISM:0000078 AISM:0004141 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles cervical sclerite
@@ -1552,7 +1552,7 @@ is_a: AISM:0000193 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 [Term]
 id: AISM:0000197
 name: arthropod foramen
-def: "Is the foramen encircled a sclerite." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
+def: "The foramen encircled by a sclerite." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
 is_a: UBERON:0000161 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 relationship: AISM:0000079 AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by region of cuticle
 
@@ -4601,6 +4601,49 @@ name: hypopharyngeal sclerite
 def: "The sclerite that is continuous with the hypopharynx." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! sclerite
 relationship: RO:0002150 AISM:0000093 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! hypopharynx
+
+[Term]
+id: AISM:0004276
+name: thoracic foramen {creation_date="2022-06-27"}
+def: "The arthropod foramen that is part of the cuticle of the insect thorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000197 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! arthropod foramen
+relationship: BFO:0000050 AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! cuticle of insect thorax
+
+[Term]
+id: AISM:0004277
+name: anterior prothoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the anterior margin of the cuticle of the prothorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004278
+name: posterior prothoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the posterior margin of the cuticle of the prothorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004279
+name: anterior mesothoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the anterior margin of the cuticle of the mesothorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004280
+name: posterior mesothoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the posterior margin of the cuticle of the mesothorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004281
+name: posterior metathoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the posterior margin of the cuticle of the metathorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
+
+[Term]
+id: AISM:0004282
+name: anterior metathoracic foramen {creation_date="2022-06-27"}
+def: "The thoracic foramen that is at the anterior margin of the cuticle of the metathorax." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
 
 [Term]
 id: BSPO:0000377

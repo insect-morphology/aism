@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/aism/imports/pr_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/aism/imports/pr_import.owl"
+     xmlns:pr="http://purl.obolibrary.org/obo/pr#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/imports/pr_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2022-06-18/imports/pr_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-18</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2022-08-24/imports/pr_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -31,6 +32,36 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#Gene-based -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pr#Gene-based">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#PRO-common-name -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pr#PRO-common-name">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#PRO-short-label -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pr#PRO-short-label">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     
 
 
