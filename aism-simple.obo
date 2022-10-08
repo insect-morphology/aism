@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2022-08-25/aism-simple.owl
+data-version: aism/releases/2022-10-08/aism-simple.owl
 subsetdef: AISM:0000171 ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -12,11 +12,12 @@ ontology: aism/aism-simple
 property_value: dc-description "The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research." xsd:string
 property_value: dc-title "Ontology for the Anatomy of the Insect SkeletoMuscular system" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
+property_value: has_ontology_root_term http://purl.obolibrary.org/obo/AISM_0000174 xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Sergei Tarasov (starasov) https://orcid.org/0000-0001-5237-2330" xsd:string
-property_value: owl:versionInfo "2022-08-25" xsd:string
+property_value: owl:versionInfo "2022-10-08" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -4780,6 +4781,18 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 Wikipedia:Insertion_(anatomy) xsd:string
 property_value: seeAlso http://dbpedia.org/property/origin
 is_a: attaches_to ! attached to
+
+[Typedef]
+id: has_ontology_root_term
+name: has ontology root term
+name: preferred_root
+namespace: uberon
+def: "Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root" []
+def: "Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root." []
+xref: IAO:0000700
+property_value: IAO:0000111 "has ontology root term" xsd:string
+property_value: IAO:0000117 "Nicolas Matentzoglu" xsd:string
+is_metadata_tag: true
 
 [Typedef]
 id: has_part
