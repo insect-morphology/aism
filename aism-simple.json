@@ -20880,6 +20880,10 @@
       "meta": {
         "basicPropertyValues": [
           {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000700",
+            "val": "http://purl.obolibrary.org/obo/AISM_0000174"
+          },
+          {
             "pred": "http://purl.org/dc/elements/1.1/contributor",
             "val": "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075"
           },
@@ -20909,10 +20913,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-08-25"
+            "val": "2022-10-08"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/aism/releases/2022-08-25/aism-simple.json"
+        "version": "http://purl.obolibrary.org/obo/aism/releases/2022-10-08/aism-simple.json"
       },
       "nodes": [
         {
@@ -27654,6 +27658,43 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000700",
+          "lbl": "preferred_root",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "has ontology root term"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Nicolas Matentzoglu"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "has_ontology_root_term"
+              }
+            ],
+            "definition": {
+              "val": "Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root."
+            },
+            "xrefs": [
+              {
+                "val": "IAO:0000700"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0000052",
           "lbl": "inheres in",
           "meta": {
@@ -28522,6 +28563,30 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+          "lbl": "has_exact_synonym",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "http://orcid.org/0000-0001-5208-3432"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/ontology-metadata/issues/20"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "https://github.com/information-artifact-ontology/ontology-metadata/issues/20"
+              }
+            ],
+            "definition": {
+              "val": "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://www.w3.org/2004/02/skos/core#prefLabel",
           "lbl": "skos:prefLabel",
           "meta": {
@@ -28545,11 +28610,6 @@
         {
           "id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
           "lbl": "database_cross_reference",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
-          "lbl": "has_exact_synonym",
           "type": "PROPERTY"
         }
       ]

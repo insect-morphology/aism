@@ -23156,6 +23156,10 @@
       "meta": {
         "basicPropertyValues": [
           {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000700",
+            "val": "http://purl.obolibrary.org/obo/AISM_0000174"
+          },
+          {
             "pred": "http://purl.org/dc/elements/1.1/contributor",
             "val": "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075"
           },
@@ -23189,10 +23193,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-08-25"
+            "val": "2022-10-08"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/aism/releases/2022-08-25/aism-base.json"
+        "version": "http://purl.obolibrary.org/obo/aism/releases/2022-10-08/aism-base.json"
       },
       "nodes": [
         {
@@ -29239,6 +29243,16 @@
             }
           },
           "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000700",
+          "lbl": "has ontology root term",
+          "meta": {
+            "definition": {
+              "val": "Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root"
+            }
+          },
+          "type": "PROPERTY"
         },
         {
           "id": "http://purl.org/dc/terms/isReferencedBy",
