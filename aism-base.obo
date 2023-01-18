@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2022-10-08/aism-base.owl
+data-version: aism/releases/2023-01-18/aism-base.owl
 subsetdef: AISM:0000171 ""
 ontology: aism/aism-base
 property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
@@ -11,7 +11,9 @@ property_value: http://purl.org/dc/elements/1.1/title "Ontology for the Anatomy 
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: IAO:0000700 http://purl.obolibrary.org/obo/AISM_0000174 xsd:string
-property_value: owl:versionInfo "2022-10-08" xsd:string
+property_value: IAO:0000700 http://purl.obolibrary.org/obo/PATO_0000001 xsd:string
+property_value: IAO:0000700 http://purl.obolibrary.org/obo/UBERON_0001062 xsd:string
+property_value: owl:versionInfo "2023-01-18" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -30,17 +32,22 @@ property_value: IAO:0000232 "Articulations are 'anatomical clusters', collection
 
 [Term]
 id: AISM:0000003
-name: sclerite {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sclerite: distinctly sclerotized region of the integument, with thick layer of exocuticle.\""}
+name: esclerito {http://purl.org/dc/terms/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"}
+name: insect sclerite {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sclerite: distinctly sclerotized region of the integument, with thick layer of exocuticle.\"", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect sclerite.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The region of the insect cuticle that is less flexible than the neighboring conjunctiva(e) (conjunctiva(e) that the sclerite is continuous with." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
+xref: http://flybase.org/cgi-bin/fbcvq.html?query=FBbt\:00004475 "sclerite"
+xref: http://purl.obolibrary.org/obo/HAO_0000909 "sclerite" {def="The area of the cuticle that is less flexible than adjacent conjunctivae."}
+xref: http://purl.obolibrary.org/obo/UBERON_6004475 "insect sclerite"
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
 
 [Term]
 id: AISM:0000004
 name: conjunctiva
-def: "The region of the insect cuticle that is more flexible than the neighboring sclerite(s) (sclerite(s) that the conjunctiva is continuous with)." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
+def: "The region of the insect cuticle that is more flexible than the neighboring sclerite(s) [sclerite(s) that the conjunctiva is continuous with]." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
 synonym: "membrane" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Membrane: very flexible, unsclerotized area of the integument.\""}
+xref: http://purl.obolibrary.org/obo/HAO_0000221 "conjunctiva" {def="The area of the cuticle that is more flexible than adjacent sclerites."}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
-relationship: RO:0002150 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+relationship: RO:0002150 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 property_value: IAO:0000232 "Conjunctivae are more flexible and usually less thick than sclerties of the cuticle allowing the sclerites to move relative to each other.\nMicro-CT based methods cannot be used to accurately differentiate slcerites from conjunctiuvae. CLSM (the excitation wavelengths of sclerites and conjunctivae are different in response of 488 nm emission vawelength), histological sections or simple dissections need to be applied to define relative flexibility of the insect cuticle.\n\nIf a conjunctiva entirelly encircles a sclerite, then the 'encircles' and 'encircled by' object properties are used to link the sclerite and the conjunctiva even in cases in which the encircled sclerites or conjunctivae are part of an evagination allowing to model spatial relationship between appendage segments: the pedicel is encircled by the scapal-pedicellar conjunctiva, which is encircled by the scape or the the coxa encircles the coxo-femoral conjunctiuva that encircels the femur." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
 [Term]
@@ -110,7 +117,7 @@ is_a: AISM:0000002 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 id: AISM:0000018
 name: cuticle of cardo {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Cardo: basal element of maxilla, articulating with head capsule; usually moved by one cranial muscle and one tentorial muscle.\""}
 def: "The sclerite of the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and to the cuticle of stipes by the stipito-cardinal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: BFO:0000050 AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect maxilla
 relationship: RO:0002150 AISM:0000099 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! oral foraminal conjunctiva
 relationship: RO:0002150 AISM:0000110 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cardo-stipital conjunctiva
@@ -123,7 +130,7 @@ name: head capsule {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Frie
 def: "The sclerite of the insect head that is attached to the neck membrane and the oral foraminal conjunctiva, bears the eye cuticle and surrounds the brain" [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
 synonym: "cephalic capsule" EXACT [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "insect cranium" EXACT [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: AISM:0000078 AISM:0000099 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircles oral foraminal conjunctiva
 relationship: BFO:0000050 AISM:0000107 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect head
 relationship: BFO:0000051 AISM:0000088 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! eye cuticle
@@ -311,7 +318,7 @@ relationship: RO:0002150 AISM:0000169 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0000039
 name: cuticular seta {creation_date="2020-11-11", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Seta (=macrotrichium): articulated hair with socket, formed by trichogen cell.\"", http://purl.org/dc/terms/modified="2021-12-10"}
 def: "The unicellular cuticular evagination that constitutes a sclerite with its base surrounded by socket membrane." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 is_a: AISM:0000127 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! unicellular cuticular evagination
 relationship: AISM:0000079 AISM:0000126 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by socket membrane
 
@@ -319,7 +326,7 @@ relationship: AISM:0000079 AISM:0000126 {http://purl.org/dc/elements/1.1/contrib
 id: AISM:0000040
 name: cuticular spur {source="https://doi.org/10.1016/0020-7322(79)90013-8", http://purl.obolibrary.org/obo/AISM_0000171="Richards AG, Richards PA (1979) The cuticular protuberances of insects. International Journal of Insect Morphology and Embryology 8: 143–157. \n\n\"Multicellular protuberances without differentiation of specialized cells\"", http://purl.org/dc/terms/modified="2021-12-10"}
 def: "The multicellular evagination of the cuticle that corresponds to an epithelial fold, composed of some sclerite that is encricled by a conjunctiva (moveable)." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 is_a: AISM:0000128 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! multicellular cuticular evagination
 relationship: AISM:0000079 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by conjunctiva
 property_value: IAO:0000232 "The difference between an appendage and a spur is the lack of muscles attached to the spur, otherwise, the mandible would be also a spur. Spines are multicellular evaginations that are not encircled by conjunctivae. Moveable beetle horns are spurs while not moveable beetle horns are spines." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-11"}
@@ -344,7 +351,7 @@ relationship: RO:0002220 AISM:0004019 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0000043
 name: cuticle of insect mandible {http://purl.org/dc/terms/modified="2021-12-08", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"The mandibles are the paired appendages of the 4th head segment and receive their innervation from the anterior part of the suboesophageal ganglion [...] They are primarily a compact, undivided and strongly sclerotized element without appendages.\""}
 def: "The cuticle of the mouthpart and sclerite between the cuticle of the labrum and the cuticle of the insect maxilla that is attached to the head capsule by the oral foraminal conjunctiva and the cranio-mandibular muscle." [] {http://purl.org/dc/terms/modified="2021-12-08", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 is_a: AISM:0000029 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticle of insect appendage
 is_a: AISM:0000165 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticle of mouthpart
 relationship: BSPO:0000096 AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticle of insect maxilla
@@ -447,7 +454,7 @@ relationship: RO:0002220 AISM:0004001 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0000052
 name: mesonotum
 def: "The notum or sclerite on the dorsal region of the mesothorax that is posterior to the pronotum, connected via the mesonoto-mesopleural conjuntiva to the dorsal margin of the mesopleuron, that is not adjacent to the mesocoxa, but attached to it by the mesocoxal muscle." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jcgiron"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jcgiron"} ! esclerito
 is_a: AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! notum
 relationship: BSPO:0000099 AISM:0000059 {http://purl.org/dc/elements/1.1/contributor="jcgiron"} ! pronotum
 relationship: RO:0002150 AISM:0004219 {http://purl.org/dc/elements/1.1/contributor="jcgiron"} ! mesonoto-mesopleural conjuntiva
@@ -457,7 +464,7 @@ relationship: RO:0002371 AISM:0000085 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0000053
 name: mesopectus {creation_date="2020-11-11"}
 def: "The sclerite that is continuous with the basal mesocoxal conjunctiva and the basal wing conjunctiva and contains the mesofurca." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: BFO:0000051 AISM:0000141 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! mesofurca
 relationship: RO:0002150 AISM:0000103 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! basal mesocoxal conjunctiva
 relationship: RO:0002150 AISM:0004203 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! basal wing conjunctiva
@@ -490,7 +497,7 @@ relationship: RO:0002220 AISM:0000065 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0000057
 name: prementum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Prementum: distal main element of labium, bearing the endite lobes (glossa and paraglossa) and the labial palp.\""}
 def: "The sclerite of the labium that is connected to the mentum by the mental-premental conjunctiva, to the palpiger by the premental-palpigeral conjunctiva, to the paraglossa by the premental-paraglossal conjunctiva, and to the glossa by the premental-glossal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
 relationship: RO:0002150 AISM:0004002 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mental-premental conjunctiva
 relationship: RO:0002150 AISM:0004014 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! premental-palpigeral conjunctiva
@@ -505,13 +512,13 @@ relationship: RO:0002220 AISM:0004006 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0000058
 name: prepectus {creation_date="2020-11-11"}
 def: "The sclerite that is posterior to the pronotum and receives the site of attachment of the dilutor muscle of the first thoracic spiracle." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 
 [Term]
 id: AISM:0000059
 name: pronotum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Pronotum: prothoracic tergum.\""}
 def: "The notum or sclerite on the dorsal region of the prothorax that is attached to cranial muscles, procoxal muscles, contiuous posterioirly with the neck membrane and with pronoto-propleural conjunctiva and not adjacent (not touching) to the procoxa." [] {http://purl.org/dc/terms/modified="2022-03-09", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-03-18"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 is_a: AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! notum
 relationship: anteriorly_connected_to AISM:0000098 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! neck membrane
 relationship: RO:0002150 AISM:0004220 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! pronoto-propleural conjunctiva
@@ -537,7 +544,7 @@ relationship: RO:0002150 AISM:0004202 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0000062
 name: ring sclerite
 def: "The sclerite that is cylindrical and encircles and is encircled by conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: AISM:0000078 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircles conjunctiva
 relationship: AISM:0000079 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by conjunctiva
 relationship: RO:0000053 PATO:0001873 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
@@ -765,11 +772,11 @@ relationship: RO:0000053 PATO:0000964 {http://purl.org/dc/elements/1.1/contribut
 
 [Term]
 id: AISM:0000089
-name: ligament {creation_date="2020-11-11"}
+name: insect ligament {creation_date="2020-11-11", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09 to specify insect ligament.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The resilin rich region that connects two sclerites." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
 is_a: AISM:0000007 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! elastic cuticle
 relationship: BFO:0000050 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! conjunctiva
-relationship: RO:0002150 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+relationship: RO:0002150 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 
 [Term]
 id: AISM:0000090
@@ -782,7 +789,7 @@ property_value: IAO:0000232 "The usually cylindircal evagination of the cuticle 
 
 [Term]
 id: AISM:0000091
-name: trachea {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Trachea: tube-shaped elements of the tracheal system.\""}
+name: insect trachea {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Trachea: tube-shaped elements of the tracheal system.\"", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09 to specify insect trachea.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The branching invagination of elastic cuticle that is cylindrical and contains taenidia." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000007 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! elastic cuticle
 is_a: AISM:0000136 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! branching cuticular invagination
@@ -974,7 +981,7 @@ relationship: RO:0002150 AISM:0000111 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0000111
 name: cuticle of stipes {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Stipes: second element of maxilla, connected with cardo by a hinge; bearing endite lobes (galea and lacinia) and maxillary palp.\""}
 def: "The cuticle of the sclerite of the insect maxilla that is attached to the cuticle of cardo by the cardo-stipital conjunctiva, attached to the cuticle of lacinia by the stipito-lacinial conjunctiva, attached to the cuticle of palpifer by the stipito-palpiferal conjunctiva, and attached to the cuticle of galea by the stipito-galeal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: BFO:0000050 AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect maxilla
 relationship: RO:0002150 AISM:0000110 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cardo-stipital conjunctiva
 relationship: RO:0002150 AISM:0004009 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! stipito-lacinial conjunctiva
@@ -1121,17 +1128,19 @@ relationship: RO:0002008 UBERON:0005157 {creation_date="imiko https://orcid.org/
 
 [Term]
 id: AISM:0000130
-name: uniporous sensillum
+name: uniporous sensillum {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: moved under cuticular sensilla; added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The seta that has one opening distally." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
-is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
-relationship: BFO:0000051 AISM:0000177 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! pore canal
+is_a: AISM:0004304 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular sensilla
+relationship: BFO:0000051 AISM:0000039 {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
+relationship: BFO:0000051 AISM:0000177 {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! pore canal
 property_value: IAO:0000232 "Should coincide with 'exactly one' pore canal, but that violates OWL specs." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-23"}
 
 [Term]
 id: AISM:0000131
-name: multiporous sensillum {creation_date="2020-11-11", http://purl.obolibrary.org/obo/AISM_0000171="Ando, T., Sekine, S., Inagaki, S., Misaki, K., Badel, L., Moriya, H., Sami, M.M., Itakura, Y., Chihara, T., Kazama, H. and Yonemura, S., 2019. Nanopore formation in the cuticle of an insect olfactory sensillum. Current Biology, 29(9), pp.1512-1520.\nhttps://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4"}
+name: multiporous sensillum {creation_date="2020-11-11", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: moved under cuticular sensilla; added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Ando, T., Sekine, S., Inagaki, S., Misaki, K., Badel, L., Moriya, H., Sami, M.M., Itakura, Y., Chihara, T., Kazama, H. and Yonemura, S., 2019. Nanopore formation in the cuticle of an insect olfactory sensillum. Current Biology, 29(9), pp.1512-1520.\nhttps://www.sciencedirect.com/science/article/pii/S0960982219303410#fig4"}
 def: "The seta that has multiple cuticular pores (openings of class III exocrine glands)." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
-is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
+is_a: AISM:0004304 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular sensilla
+relationship: BFO:0000051 AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! cuticular seta
 relationship: RO:0000053 PATO:0000984 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! porous
 
 [Term]
@@ -1158,7 +1167,7 @@ property_value: IAO:0000232 "Should coincide with 'exactly one' epithelial cell,
 
 [Term]
 id: AISM:0000135
-name: spiracle {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Spiracle: external opening of the tracheal system.\""}
+name: insect spiracle {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Spiracle: external opening of the tracheal system.\"", http://purl.org/dc/terms/modified="2023-01-09", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect spiracle.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The region of the cuticle that is continuous to the proximal region of a trachea and can be closed by muscles." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
 relationship: RO:0002371 UBERON:0014895 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! somatic muscle
@@ -1323,7 +1332,7 @@ id: AISM:0000158
 name: cuticular ridge {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ridge: cuticular strengthening ridge.\"\n\"They are not lines of fusion or molting lines.\"(p. 12)", http://purl.org/dc/terms/modified="2021-12-10"}
 def: "The invagination on a sclerite that is elongated." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000000 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular internal depression
-relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: RO:0000053 PATO:0001154 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
 [Term]
@@ -1376,7 +1385,7 @@ relationship: BFO:0000050 AISM:0000107 {http://purl.org/dc/elements/1.1/contribu
 
 [Term]
 id: AISM:0000166
-name: propleuro-procoxal artiulation
+name: propleuro-procoxal articulation
 def: "The insect articulation between the propleuron and the procoxa." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000002 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect articulation
 
@@ -1385,20 +1394,20 @@ id: AISM:0000167
 name: articular surface
 def: "The region of cuticle where two sclerites meet." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
-relationship: RO:0002220 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+relationship: RO:0002220 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 
 [Term]
 id: AISM:0000168
 name: salivary sclerite
 def: "The sclerite of the salivarium." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: BFO:0000050 AISM:0000159 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! salivarium
 
 [Term]
 id: AISM:0000169
 name: metanotum
 def: "The notum or sclerite on the dorsal region of the metathorax that is posterior to the mesonotum, connected via the metanoto-metapleural conjuntiva to the dorsal margin of the metapleuron, that is not adjacent to the metacoxa, but attached to it by the metacoxal muscle." [] {http://purl.org/dc/elements/1.1/contributor="jcgiron", creation_date="2021-04-21"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 is_a: AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! notum
 relationship: BSPO:0000099 AISM:0000052 {http://purl.org/dc/elements/1.1/contributor="jcgiron"} ! mesonotum
 relationship: RO:0002150 AISM:0004221 {http://purl.org/dc/elements/1.1/contributor="jcgiron"} ! metanoto-metapleural conjunctiva
@@ -1408,7 +1417,7 @@ relationship: RO:0002371 AISM:0000146 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0000170
 name: metapectus
 def: "The sclerite that is continuous with the basal metacoxal conjunctiva and the basal wing conjunctiva and contains the metafurca." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-04-21"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: BFO:0000051 AISM:0000142 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! metafurca
 relationship: RO:0002150 AISM:0000104 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! basal metacoxal conjunctiva
 relationship: RO:0002150 AISM:0004203 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! basal wing conjunctiva
@@ -1453,45 +1462,49 @@ id: AISM:0000178
 name: acantha {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Acanthae: hairs without sockets, one per hypodermal cell.\""}
 def: "The solid cuticular protrusion that coincides with only one epidermal cell (smaller than the diameter of the epidermal cell)." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-02-04"}
 is_a: AISM:0000028 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! solid cuticular protrusion
-relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: RO:0002008 CL:0000362 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 property_value: IAO:0000232 "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs." xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-26"}
 
 [Term]
 id: AISM:0000185
-name: sensillum chaeticum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum chaeticum: shorter than sensillum trichodeum, thick-walled.\""}
+name: sensillum chaeticum {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: moved under cuticular sensilla; added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum chaeticum: shorter than sensillum trichodeum, thick-walled.\""}
 def: "The hairlike seta that is short and thick walled." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-02-08"}
-is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
-relationship: RO:0000053 PATO:0002228 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+is_a: AISM:0004304 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular sensilla
+relationship: BFO:0000051 AISM:0000039 {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
+relationship: RO:0000053 PATO:0002228 {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
 [Term]
 id: AISM:0000186
-name: sensillum trichodeum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum trichodeum: hair-like sensilla, seta associated with sensory cell.\""}
+name: sensillum trichodeum {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: moved under cuticular sensilla; added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum trichodeum: hair-like sensilla, seta associated with sensory cell.\""}
 def: "The cuticular seta that is elongated and acuminate." [] {creation_date="2022-06-20", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
-relationship: RO:0000053 PATO:0001154 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
-relationship: RO:0000053 PATO:0002228 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+is_a: AISM:0004304 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular sensilla
+relationship: BFO:0000051 AISM:0000039 {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
+relationship: BFO:0000051 AISM:0000039 {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
+relationship: RO:0000053 PATO:0001154 {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+relationship: RO:0000053 PATO:0002228 {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 property_value: IAO:0000232 "Hairlike seta that is long." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-02-08"}
 
 [Term]
 id: AISM:0000187
-name: sensillum coeloconicum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum coeloconicum: sensillum with modified seta in a cavity, with narrowed external opening of surrounding cuticle.\""}
+name: sensillum coeloconicum {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: moved under cuticular sensilla; added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum coeloconicum: sensillum with modified seta in a cavity, with narrowed external opening of surrounding cuticle.\""}
 def: "Seta that is located in the middle of a depression with narrowed external opening." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-02-08"}
-is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
+is_a: AISM:0004304 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular sensilla
 
 [Term]
 id: AISM:0000188
 name: apodeme {http://purl.obolibrary.org/obo/AISM_0000171="Klass K-D (2001) The female abdomen of the viviparous earwig Hemimerus vosseleri (Insecta: Dermaptera: Hemimeridae), with a discussion of the postgenital abdomen of Insecta. Zoological Journal of the Linnean Society 131: 251–307. \n\nhttps://doi.org/10.1111/j.1096-3642.2001.tb02239.x \n\n\"tendon is used herein to designate sclerotized internal cuticular projections\"", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Apodeme: solid cuticular invagination serving as muscle insertion area.\""}
 def: "The solid cuticular invagination of a sclerite." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000000 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular internal depression
-relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: RO:0000053 PATO:0001873 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
 [Term]
 id: AISM:0000189
-name: sensillum basiconicum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum basiconicum: sensillum with rounded, conical seta.\""}
+name: sensillum basiconicum {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: moved under cuticular sensilla; added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum basiconicum: sensillum with rounded, conical seta.\""}
 def: "The seta that is conical." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
+is_a: AISM:0004304 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular sensilla
+relationship: BFO:0000051 AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! cuticular seta
 relationship: RO:0000053 PATO:0002021 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 
 [Term]
@@ -1574,7 +1587,7 @@ def: "The paired sclerite of the postabdomen that is attached to the abdominal t
 synonym: "second coxopodite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "second gonocoxite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "second valvifer" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0004301 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of gonocoxite
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
 relationship: RO:0002150 AISM:0000201 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! abdominal tergite IX-gonocoxa IX conjunctiva
@@ -1593,7 +1606,7 @@ id: AISM:0000501
 name: cuticular carina {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"an elevated ridge or keel, not necessarily high or acute\"", http://purl.org/dc/terms/modified="2021-12-10"}
 def: "The protrusion on a sclerite that is elongated." [] {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330", creation_date="2021-05-06"}
 is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! cuticular protrusion
-relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! sclerite
+relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! esclerito
 relationship: RO:0000053 PATO:0001154 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"}
 
 [Term]
@@ -1615,7 +1628,7 @@ id: AISM:0000525
 name: cuticular granule {http://purl.org/dc/terms/modified="2021-12-10", http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a little grain or a minute grainlike elevation\"."}
 def: "The cuticular protrusion of a sclerite that is small." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! cuticular protrusion
-relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! sclerite
+relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! esclerito
 relationship: RO:0000053 PATO:0000587 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"}
 
 [Term]
@@ -1623,7 +1636,7 @@ id: AISM:0000526
 name: cuticular tubercle {http://purl.org/dc/terms/modified="2021-12-10", http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a small knoblike or rounded protuberance\""}
 def: "The cuticular protrusion of a sclerite that is rounded (circular)." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! cuticular protrusion
-relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! sclerite
+relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! esclerito
 relationship: RO:0000053 PATO:0000411 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"}
 
 [Term]
@@ -1631,7 +1644,7 @@ id: AISM:0000527
 name: cuticular spine {http://purl.obolibrary.org/obo/AISM_0000171="Richards AG, Richards PA (1979) The cuticular protuberances of insects. International Journal of Insect Morphology and Embryology 8: 143–157. \n\n\"Multicellular protuberances without differentiation of specialized cells [...] evaginations, non-movable\"", source="https://doi.org/10.1016/0020-7322(79)90013-8", http://purl.org/dc/terms/modified="2021-12-10"}
 def: "The cuticular protrusion of a sclerite that is sharp." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-07-21"}
 is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! cuticular protrusion
-relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! sclerite
+relationship: BFO:0000050 AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! esclerito
 relationship: RO:0000053 PATO:0001419 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"}
 
 [Term]
@@ -2301,7 +2314,7 @@ relationship: parallel_to BSPO:0000013 {http://purl.org/dc/elements/1.1/contribu
 id: AISM:0004001
 name: cuticle of palpifer {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Palpifer: small separate element of stipes, bears the maxillary palp.\""}
 def: "The sclerite of the insect maxilla that is attached to the cuticle of stipes by the stipito-palpiferal conjunctiva and to the cuticle of maxillary palpus by the palpifero-palpal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000044 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect maxilla
 relationship: RO:0002150 AISM:0004010 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! stipito-palpiferal conjunctiva
 relationship: RO:0002150 AISM:0004012 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! palpifero-palpal conjunctiva
@@ -2321,7 +2334,7 @@ relationship: RO:0002150 AISM:0004004 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004003
 name: postmentum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Postmentum: posterior main element of labium, posteriorly adjacent with foramen occipitale in hexapods without gula or hypostomal bridge; often separated into two sclerites, the anterior mentum and the posterior submentum.\""}
 def: "The sclerite of the cuticle of labium that is cmposed of the submentum and the mentum, which are connected by the submental-mental conjunctiva" [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
 relationship: BFO:0000051 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mentum
 relationship: BFO:0000051 AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submentum
@@ -2331,7 +2344,7 @@ relationship: BFO:0000051 AISM:0004013 {http://purl.org/dc/elements/1.1/contribu
 id: AISM:0004004
 name: mentum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Mentum: intermediate part of labium, anterior part of postmentum; bears the prementum at its distal edge.\""}
 def: "The sclerite of the labium that is anterior to the submentum and posterior to the prementum, and attached to the prementum by the mental-premental conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
 relationship: BSPO:0000096 AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submentum
 relationship: BSPO:0000099 AISM:0000057 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! prementum
@@ -2342,7 +2355,7 @@ relationship: RO:0002220 AISM:0000057 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004005
 name: submentum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Submentum: posterior part of a divided postmentum.\""}
 def: "The sclerite of the labium that is anteriorly attached to the mentum by the submental-mental conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
 relationship: BSPO:0000099 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mentum
 relationship: RO:0002150 AISM:0004013 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submental-mental conjunctiva
@@ -2351,7 +2364,7 @@ relationship: RO:0002150 AISM:0004013 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004006
 name: cuticle of palpiger {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter. \n\nhttps://doi.org/10.1515/9783110264043\n\n\"Palpiger: small separate element of prementum, bears the labial palp.\""}
 def: "The sclerite of the cuticle of labium that is attached to the prementum by the premental-palpigeral conjunctiva and to the cuticle of labial palpus by the palpigero-palpal conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
 relationship: RO:0002150 AISM:0004014 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! premental-palpigeral conjunctiva
 relationship: RO:0002150 AISM:0004017 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! palpigero-palpal conjunctiva
@@ -2603,7 +2616,7 @@ relationship: RO:0002220 AISM:0004020 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004035
 name: gula {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Gula: sclerite partially closing foramen occipitale, formed by sclerotized region of ventral cervical membrane.\""}
 def: "The sclerite on the ventral region of the head capsule that is limited laterally by the gular ridges, posteriorly by the foramen occipitale and anteriorly by the submentum." [] {creation_date="2021-02-24", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BSPO:0000096 AISM:0004023 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! foramen occipitale
 relationship: BSPO:0000099 AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submentum
 relationship: RO:0002150 AISM:0004036 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gular ridge
@@ -2726,15 +2739,15 @@ relationship: BFO:0000051 AISM:0004019 {http://purl.org/dc/elements/1.1/contribu
 
 [Term]
 id: AISM:0004052
-name: compound eye {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Compound eye: paired main light sense organs; almost always composed of numerous ommatidia.\""}
+name: insect compound eye {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Compound eye: paired main light sense organs; almost always composed of numerous ommatidia.\"", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect compound eye.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The sense organ of the insect head that is covered by the eye cuticle." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: UBERON:0000020 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: UBERON:0000018 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 relationship: BFO:0000050 AISM:0000107 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect head
 relationship: BFO:0000051 AISM:0000088 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! eye cuticle
 
 [Term]
 id: AISM:0004053
-name: ocellus {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ocellus: relatively simple median eye with single cornea lens and always lacking a crystalline cone: three are probably present in the groundplan of Insecta, but reductions occur in many groups.\""}
+name: insect ocellus {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ocellus: relatively simple median eye with single cornea lens and always lacking a crystalline cone: three are probably present in the groundplan of Insecta, but reductions occur in many groups.\"", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect ocellus.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The sense organ of the insect head that is covered by eye cuticle." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: UBERON:0000020 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 relationship: BFO:0000050 AISM:0000107 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect head
@@ -2769,7 +2782,7 @@ id: AISM:0004057
 name: abdominal tergite {http://purl.obolibrary.org/obo/AISM_0000171="Lawrence J, Ślipiński A (2013) 1 Australian beetles volume 1: morphology, classification and keys. CSIRO Publishing, 520 pp. \n\nhttps://www.publish.csiro.au/book/6466/\n\n\"major plate of the abdominal tergum\""}
 def: "The sclerite of the insect abdomen that is dorsal and medial." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
 synonym: "abdominal tergum" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Tergum: plate-like dorsal sclerite of abdominal segment.\""}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! esclerito
 relationship: BFO:0000050 AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticle of insect abdomen
 relationship: BFO:0000050 BSPO:0000079 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 relationship: BFO:0000050 BSPO:0000083 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
@@ -2779,7 +2792,7 @@ id: AISM:0004058
 name: abdominal sternite
 def: "The sclerite of the insect abdomen that is ventral and medial." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
 synonym: "sternum" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sternum: plate-like ventral sclerite of abdominal segment.\""}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect abdomen
 relationship: BFO:0000050 BSPO:0000083 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 relationship: BFO:0000050 BSPO:0000084 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
@@ -2789,7 +2802,7 @@ id: AISM:0004059
 name: pleural membrane {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Pleural membrane: lateral unsclerotized part of abdominal segments, connecting tergum and sternum; usually bearing spiracles I–VIII.\""}
 def: "The conjunctiva of the insect abdomen that surrounds the spiracles." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
 is_a: AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000135 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles spiracle
+relationship: AISM:0000078 AISM:0000135 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles insect spiracle
 relationship: BFO:0000050 AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect abdomen
 
 [Term]
@@ -2797,7 +2810,7 @@ id: AISM:0004060
 name: epiproct {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Epiproct: unpaired dorsal element (tergum) of segment XI.\""}
 def: "The sclerite of the postabdomen that is attached to the posterior margin of the abdominal tergite X by the abdominal tergite X-epiproct conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-05"}
 synonym: "proctiger" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Lawrence J, Ślipiński A (2013) 1 Australian beetles volume 1: morphology, classification and keys. CSIRO Publishing, 520 pp. \n\nhttps://www.publish.csiro.au/book/6466/\n\n[not defined]"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: BSPO:0000098 AISM:0004197 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect anus
 relationship: RO:0002150 AISM:0004120 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! abdominal tergite X-epiproct conjunctiva
@@ -2807,7 +2820,7 @@ relationship: RO:0002150 AISM:0004197 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004061
 name: paraproct {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Paraproct: paired lateral element of segment XI.\""}
 def: "The paired sclerite of the insect abdomen that is attached to the lateral margin of the abdominal tergite X by the abdominal tergite X-paraproct conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: RO:0002150 AISM:0004167 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! abdominal tergite X-paraproct conjunctiva
 relationship: RO:0002220 AISM:0004197 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect anus
@@ -2882,10 +2895,10 @@ def: "The paired sclerite of the postabdomen that is attached to the abdominal s
 synonym: "first coxopodite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "first gonocoxite" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
 synonym: "first valvifer" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0004301 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of gonocoxite
 relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
 relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
-relationship: RO:0002150 AISM:0004084 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! abdominal sternite VII-gonocoxa VIII conjunctiva
+relationship: RO:0002150 AISM:0004084 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! abdominal sternite VIII-gonocoxa VIII conjunctiva
 relationship: RO:0002220 AISM:0004075 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! gonopore
 
 [Term]
@@ -2895,7 +2908,7 @@ def: "The region of cuticle that is connected to the oviduct, the bursa copulatr
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
 relationship: RO:0002150 AISM:0004067 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bursa copulatrix
 relationship: RO:0002150 AISM:0004068 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of gonocoxa VIII
-relationship: RO:0002150 AISM:0004083 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! oviduct
+relationship: RO:0002150 AISM:0004083 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect oviduct
 relationship: RO:0002220 AISM:0004075 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! gonopore
 
 [Term]
@@ -2908,9 +2921,10 @@ relationship: BFO:0000050 AISM:0004110 {http://purl.org/dc/elements/1.1/contribu
 
 [Term]
 id: AISM:0004071
-name: sensillum placodeum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum placodeum: flat sensillum with strongly modified plate-like seta.\""}
+name: sensillum placodeum {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: moved under cuticular sensilla; added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum placodeum: flat sensillum with strongly modified plate-like seta.\""}
 def: "The seta that is flattened." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular seta
+is_a: AISM:0004304 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular sensilla
+relationship: BFO:0000051 AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! cuticular seta
 relationship: RO:0000053 PATO:0000407 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 
 [Term]
@@ -2964,7 +2978,7 @@ id: AISM:0004078
 name: spermatheca {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Spermatheca (=receptaculum seminis): unpaired or paired evagination of female genital tract; storage of sperm; connected by spermathecal duct (=ductus receptaculi) with vagina or bursa copulatrix.\""}
 def: "The region of the cuticle that is part of the oviduct and connected to the bursa copulatrix." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
-relationship: BFO:0000050 AISM:0004083 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! oviduct
+relationship: BFO:0000050 AISM:0004083 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect oviduct
 relationship: RO:0002150 AISM:0004067 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bursa copulatrix
 
 [Term]
@@ -2972,7 +2986,7 @@ id: AISM:0004079
 name: spermathecal gland {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Spermathecal gland: provides nourishment for spermatozoa stored in spermatheca.\""}
 def: "The region of the cuticle that is part of the oviduct and attached to the spermatheca." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
-relationship: BFO:0000050 AISM:0004083 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! oviduct
+relationship: BFO:0000050 AISM:0004083 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect oviduct
 relationship: RO:0002150 AISM:0004078 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! spermatheca
 
 [Term]
@@ -3002,19 +3016,20 @@ relationship: RO:0002150 AISM:0000169 {http://purl.org/dc/elements/1.1/contribut
 
 [Term]
 id: AISM:0004083
-name: oviduct {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Oviduct: female genital duct; originating as paired structures from ovarioles, uniting as common (median) oviduct.\""}
+name: insect oviduct {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Oviduct: female genital duct; originating as paired structures from ovarioles, uniting as common (median) oviduct.\""}
 def: "The region of cuticle that is continuous with the genital chamber." [] {creation_date="2021-03-14", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
+is_a: UBERON:0000993 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
 relationship: RO:0002150 AISM:0004069 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! genital chamber
 
 [Term]
 id: AISM:0004084
-name: abdominal sternite VII-gonocoxa VIII conjunctiva
-def: "The conjunctiva of the insect abdomen that joins the abdominal sternite VIII and the gonocoxa VIII." [] {creation_date="2021-03-14", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+name: abdominal sternite VIII-gonocoxa VIII conjunctiva
+def: "The conjunctiva of the insect abdomen that joins the abdominal sternite VIII and the gonocoxa VIII." [] {creation_date="2021-03-14", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: correct sternite VII to VIII.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! conjunctiva
 relationship: BFO:0000050 AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect abdomen
 relationship: RO:0002150 AISM:0004068 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of gonocoxa VIII
-relationship: RO:0002150 AISM:0004109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! abdominal sternite VII
+relationship: RO:0002150 AISM:0004110 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! abdominal sternite VIII
 
 [Term]
 id: AISM:0004085
@@ -3149,7 +3164,7 @@ name: laterotergite {http://purl.obolibrary.org/obo/AISM_0000171="Lawrence J, Ś
 name: laterotergite {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Laterotergite: separate lateral portion of abdominal tergum (only few groups).\""}
 def: "The sclerite of the insect thorax or the insect abdomen that is on the lateral region of the notum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
 synonym: "paranota" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Paranota (=laterotergites): dorsolateral tergal duplicatures.\""}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect thorax
 relationship: BFO:0000050 AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect abdomen
 
@@ -3435,7 +3450,7 @@ is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://
 id: AISM:0004131
 name: pleurite {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Pleurite: sclerotized element of pleuron.\""}
 def: "The sclerite that is part of the pleuron." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0004129 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pleuron
 
 [Term]
@@ -3450,7 +3465,7 @@ relationship: RO:0002150 AISM:0004134 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004133
 name: episternum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Episternum: part of pleuron anterior to pleural ridge.\""}
 def: "The sclerite of the insect thorax that is part of the pleuron and anterior to the pleural ridge and attached to the anterior margin of the epimeron." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect thorax
 relationship: BFO:0000050 AISM:0004129 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pleuron
 relationship: BSPO:0000096 AISM:0004132 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pleural ridge
@@ -3460,7 +3475,7 @@ relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004134
 name: epimeron {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Epimeron: part of pleuron posterior to pleural ridge.\""}
 def: "The sclerite of the insect thorax that is part of the pleuron and posterior to the pleural ridge and attached to the posterior margin of the episternum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect thorax
 relationship: BFO:0000050 AISM:0004129 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pleuron
 relationship: BSPO:0000099 AISM:0004132 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pleural ridge
@@ -3470,7 +3485,7 @@ relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004135
 name: trochantin {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Trochantin: small triangular or sickle-shaped ventral pleural sclerite; anteriorly articulating with coxa (trochantino-coxal joint).\""}
 def: "The sclerite that is located on the ventro-lateral region of the insect thorax and is attached to a coxa." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: AISM:0000079 AISM:0000173 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by basal coxal conjunctiva
 relationship: RO:0002220 AISM:0000077 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of coxa
 
@@ -3509,7 +3524,7 @@ is_a: AISM:0004130 {http://purl.org/dc/elements/1.1/contributor="jgiron https://
 id: AISM:0004141
 name: cervical sclerite {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Cervical sclerite: articulatory sclerite embedded in the cervical membrane.\""}
 def: "The sclerite that is surrounded by the neck membrane." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: AISM:0000079 AISM:0000098 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by neck membrane
 
 [Term]
@@ -3526,35 +3541,35 @@ relationship: RO:0002220 AISM:0000061 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004143
 name: postnotum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Postnotum: smaller posterior part of tergum, forming internal intersegmental phragma; attachment area for dorsal indirect flight muscles.\""}
 def: "The sclerite of the notum that is attached to the posterior margin of the scutellum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! notum
 
 [Term]
 id: AISM:0004144
 name: prescutum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Prescutum: anteriormost part of notum.\""}
 def: "The sclerite of the notum that is attached to the anterior margin of the scutum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! notum
 
 [Term]
 id: AISM:0004145
 name: scutum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Scutum: large anterior part of notum.\""}
 def: "The sclerite of the notum that is attached to the posterior margin of the prescutum and to the anterior margin of the scutellum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! notum
 
 [Term]
 id: AISM:0004146
 name: scutellum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Scutellum: smaller posterior part of notum.\""}
 def: "The sclerite of the notum that is attached to the posterior margin of the scutum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0004128 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! notum
 
 [Term]
 id: AISM:0004147
 name: alinotum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Alinotum: part of the notum connected with the wing base.\""}
 def: "The sclerite that is on the lateral region of the notum and is adjacent to the wing." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: RO:0002220 AISM:0000033 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect wing
 
 [Term]
@@ -3562,7 +3577,7 @@ id: AISM:0004148
 name: prealar sclerite {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Prealare (=prealar sclerite): small attachment area of short direct flight muscles.\""}
 def: "The sclerite of the pterothorax that is attached to some muscle." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "prealare" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Prealare (=prealar sclerite): small attachment area of short direct flight muscles.\""}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0004166 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pterothorax
 relationship: RO:0002150 UBERON:0014895 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! somatic muscle
 
@@ -3586,7 +3601,7 @@ relationship: RO:0002220 AISM:0004134 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004151
 name: epipleurite {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Epipleurites: basalare and subalare.\""}
 def: "The sclerite of the insect thorax that is surrounded by the noto-pleural conjunctiva and is adjacent to the wing." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: AISM:0000079 AISM:0004080 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by precoxal sulcus
 relationship: BFO:0000050 AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect thorax
 relationship: RO:0002220 AISM:0000033 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of insect wing
@@ -3666,7 +3681,7 @@ id: AISM:0004161
 name: axillary sclerite {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Axillary sclerites (=axillaria, pteralia): small sclerites of wing base (usually 3); articulating with notal wing processes.\""}
 def: "The sclerite that is surrounded by the basal wing conjunctiva." [] {creation_date="2021-04-10", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "pteralia" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Pteralia: small sclerites of wing base (axillary sclerites + plates).\""}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: AISM:0000079 AISM:0004203 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by basal wing conjunctiva
 relationship: BFO:0000050 AISM:0004258 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! axillary region
 
@@ -3682,7 +3697,7 @@ relationship: RO:0002150 AISM:0004156 {http://purl.org/dc/elements/1.1/contribut
 id: AISM:0004163
 name: spina {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Spina: smaller posterior endoskeletal element of thoracic segments, unpaired, arising on spinasternum.\""}
 def: "The sclerite attached to the spinasternum." [] {creation_date="2021-04-10", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: RO:0002150 AISM:0004139 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! spinasternum
 
 [Term]
@@ -4339,7 +4354,7 @@ id: AISM:0004241
 name: temple {http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"the part of the head above and behind the compound eyes\""}
 def: "The region of cuticle that is behind the compound eye." [] {creation_date="2021-08-16", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! region of cuticle
-relationship: BSPO:0000099 AISM:0004052 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! compound eye
+relationship: BSPO:0000099 AISM:0004052 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect compound eye
 
 [Term]
 id: AISM:0004242
@@ -4372,17 +4387,17 @@ is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://
 
 [Term]
 id: AISM:0004246
-name: anal vein {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Anal veins: longitudinal veins of the anal field proximally articulated with 3rd axillary sclerite; usually unbranched and arranged like a fan.\""}
+name: insect wing anal vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Anal veins: longitudinal veins of the anal field proximally articulated with 3rd axillary sclerite; usually unbranched and arranged like a fan.\""}
 def: "The insect wing vein of the anal field that is posterior to the anal fold or the postcubitus and anterior to the jugal fold or the jugal veins." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
 relationship: RO:0001018 AISM:0004245 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! anal field
 
 [Term]
 id: AISM:0004247
-name: costa {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Costa: main longitudinal vein along anterior wing margin, articulated with humeral plate.\""}
+name: insect wing costal vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Costa: main longitudinal vein along anterior wing margin, articulated with humeral plate.\""}
 def: "The insect wing vein of the costal field that is anterior to the subcosta." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004257 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! subcosta
+relationship: BSPO:0000096 AISM:0004257 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing subcostal vein
 relationship: RO:0001018 AISM:0004248 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! costal field
 
 [Term]
@@ -4394,11 +4409,11 @@ is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://
 
 [Term]
 id: AISM:0004249
-name: cubitus {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Cubitus: 5th main longitudinal vein.\""}
+name: insect wing cubital vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Cubitus: 5th main longitudinal vein.\""}
 def: "The insect wing vein that is posterior to the media and anterior to the postcubitus." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004255 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postcubitus
-relationship: BSPO:0000099 AISM:0004252 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! media
+relationship: BSPO:0000096 AISM:0004255 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing postcubital vein
+relationship: BSPO:0000099 AISM:0004252 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing medial vein
 
 [Term]
 id: AISM:0004250
@@ -4409,18 +4424,18 @@ relationship: BSPO:0000099 AISM:0004253 {http://purl.org/dc/elements/1.1/contrib
 
 [Term]
 id: AISM:0004251
-name: jugal vein {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Jugal veins: veins of the jugal field.\""}
+name: insect wing jugal vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Jugal veins: veins of the jugal field.\""}
 def: "The insect wing vein in the jugal field, posterior to the jugal fold or to the anal veins." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
 relationship: RO:0001018 AISM:0004250 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! jugal field
 
 [Term]
 id: AISM:0004252
-name: media {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Media: 4th main longitudinal vein.\""}
+name: insect wing medial vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Media: 4th main longitudinal vein.\""}
 def: "The insect wing vein that is posterior to some radius and anterior to some cubitus." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004249 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cubitus
-relationship: BSPO:0000099 AISM:0004256 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! radius
+relationship: BSPO:0000096 AISM:0004249 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing cubital vein
+relationship: BSPO:0000099 AISM:0004256 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing radial vein
 
 [Term]
 id: AISM:0004253
@@ -4436,30 +4451,30 @@ def: "The insect wing fold that is posterior to the postcubitus and separates th
 synonym: "claval furrow" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Chapman RF (2012) The Insects: Structure and Function. Fifth Edition. Cambridge University Press. 959 pp. \n\nhttps://doi.org/10.1017/CBO9781139035460\n\n\"longitudinal flexion line which runs close to the CuP. This furrow allows the posterior part of the wing to flap up and down with respect to the rest of the wing.\""}
 synonym: "plica vannalis" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Plica vannalis: separates the costal and anal fields.\""}
 is_a: AISM:0004244 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing fold
-relationship: BSPO:0000099 AISM:0004255 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postcubitus
+relationship: BSPO:0000099 AISM:0004255 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing postcubital vein
 
 [Term]
 id: AISM:0004255
-name: postcubitus {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Postcubitus: posteriormost longitudinal vein of the remigium.\""}
+name: insect wing postcubital vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Postcubitus: posteriormost longitudinal vein of the remigium.\""}
 def: "The insect wing vein that is posterior to the cubitus and anterior to the anal fold or the anal vein." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000099 AISM:0004249 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cubitus
+relationship: BSPO:0000099 AISM:0004249 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing cubital vein
 
 [Term]
 id: AISM:0004256
-name: radius {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Radius: 3rd main longitudinal vein.\""}
+name: insect wing radial vein {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Radius: 3rd main longitudinal vein.\"", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The insect wing vein that is posterior to the subcosta and anterior to the media." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004252 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! media
-relationship: BSPO:0000099 AISM:0004257 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! subcosta
+relationship: BSPO:0000096 AISM:0004252 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing medial vein
+relationship: BSPO:0000099 AISM:0004257 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing subcostal vein
 
 [Term]
 id: AISM:0004257
-name: subcosta {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Subcosta: 2nd main longitudinal vein, following costal vein.\""}
+name: insect wing subcostal vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Subcosta: 2nd main longitudinal vein, following costal vein.\""}
 def: "The insect wing vein that is posterior to the costa and anterior to the radius." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004256 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! radius
-relationship: BSPO:0000099 AISM:0004247 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! costa
+relationship: BSPO:0000096 AISM:0004256 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing radial vein
+relationship: BSPO:0000099 AISM:0004247 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing costal vein
 
 [Term]
 id: AISM:0004258
@@ -4480,14 +4495,15 @@ id: AISM:0004260
 name: pretarsal claw {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ungues: pretarsal claws; unpaired in Collembola and Protura, usually paired in Diplura and Insecta.\""}
 def: "The sclerite that is part of the pretarsus." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
 synonym: "ungues" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ungues: pretarsal claws; unpaired in Collembola and Protura, usually paired in Diplura and Insecta.\""}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000047 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of pretarsus
 
 [Term]
 id: AISM:0004261
-name: cuticle of empodium {http://purl.org/dc/terms/modified="2021-12-08", http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a spine- or lobelike process of the unguitractor\""}
-def: "The cuticular protrusion that is part of the pretarsus, ventral to the tarsal claws." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
+name: cuticle of empodium {http://purl.org/dc/terms/modified="2021-12-08", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Empodium: a median process between the claws and pulvilli (if present). It arises from the distal end of the unguitractor plate, is spine-shaped or lobe-like and is sometimes similar in form to the pulvilli (“empodial pulvillus”).\" p. 43.", http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a spine- or lobelike process of the unguitractor\""}
+def: "The cuticular protrusion that is part of the pretarsus, ventral to the tarsal claws and medial to the pulvilli (if present)." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-11: added medial to pulvilli.\njgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular protrusion
+relationship: AISM:0000012 AISM:0004308 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! medial_to cuticle of pulvillus
 relationship: BFO:0000050 AISM:0000047 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of pretarsus
 relationship: BSPO:0000102 AISM:0004260 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsal claw
 
@@ -4600,7 +4616,7 @@ is_a: AISM:0004235 {http://purl.org/dc/elements/1.1/contributor="jgiron https://
 id: AISM:0004275
 name: hypopharyngeal sclerite
 def: "The sclerite that is continuous with the hypopharynx." [] {creation_date="2022-06-27", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! sclerite
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! esclerito
 relationship: RO:0002150 AISM:0000093 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! hypopharynx
 
 [Term]
@@ -4647,6 +4663,240 @@ def: "The thoracic foramen that is at the anterior margin of the cuticle of the 
 is_a: AISM:0004276 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2022-06-27"} ! thoracic foramen
 
 [Term]
+id: AISM:0004283
+name: insect body segment {creation_date="2023-01-09", http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"segment, subdivision of the body between areas of flexibility associated with muscle attachments\"", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect region of integument that is continuous with conjunctiva and attached to somatic muscle." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/fbcvq.html?query=FBbt\:00000003 "segment" {def="One of the repeated divisions of the whole organism."}
+xref: http://purl.obolibrary.org/obo/HAO_0000929 "segment" {def="An anatomical structure that is metameric and is connected to other metameric subdivisions by muscles and is delimited by its sclerites."}
+is_a: UBERON:6007284 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"}
+relationship: RO:0002150 AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! conjunctiva
+relationship: RO:0002371 UBERON:0014895 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! somatic muscle
+
+[Term]
+id: AISM:0004284
+name: insect appendage segment {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"segment, subdivision of an appendage between areas of flexibility associated with muscle attachments\""}
+def: "The insect region of integument that has a ring sclerirte, continuous with ring conjunctiva, and attached to somatic muscle." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: UBERON:6007284 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"}
+relationship: BFO:0000051 AISM:0000062 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! ring sclerite
+relationship: RO:0002150 AISM:0000102 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! ring conjunctiva
+relationship: RO:0002371 UBERON:0014895 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! somatic muscle
+
+[Term]
+id: AISM:0004285
+name: insect cephalic segment {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect body segment that is part of the insect head." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: https://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000006 "head segment" {def="Any segment (FBbt:00000003) that is part of some head (FBbt:00000004)."}
+is_a: AISM:0004283 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect body segment
+relationship: BFO:0000051 AISM:0000107 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! cuticle of insect head
+
+[Term]
+id: AISM:0004286
+name: insect thoracic segment {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect body segment that is part of the insect thorax." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000016 "thoracic segment" {def="Any segment (FBbt:00000003) that is part of some thorax (FBbt:00000015)."}
+is_a: AISM:0004283 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect body segment
+relationship: BFO:0000051 AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! cuticle of insect thorax
+
+[Term]
+id: AISM:0004287
+name: insect abdominal segment {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect body segment that is part of the insect abdomen." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000021 "abdominal segment" {def="Metameric subdivision of the abdomen."}
+is_a: AISM:0004283 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect body segment
+relationship: BFO:0000051 AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! cuticle of insect abdomen
+
+[Term]
+id: AISM:0004288
+name: insect abdominal segment I {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect body segment that is part of the insect abdomen and is posterior to the insect metathoracic segment." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000022 "abdominal segment 1" {def="Most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BFO:0000051 AISM:0000021 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal tergite I
+relationship: BFO:0000051 AISM:0004100 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal sternite I
+relationship: BSPO:0000099 AISM:0004300 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect metathoracic segment
+
+[Term]
+id: AISM:0004289
+name: insect abdominal segment II {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect abdominal segment that is posterior to the insect abdominal segment I and composed of abdominal tergite II and abdominal sternite II." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000023 "abdominal segment 2" {def="Second most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BFO:0000051 AISM:0004085 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal tergite II
+relationship: BFO:0000051 AISM:0004104 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal sternite II
+relationship: BSPO:0000099 AISM:0004288 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment I
+
+[Term]
+id: AISM:0004290
+name: insect abdominal segment III {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect abdominal segment that is posterior to the insect abdominal segment II and composed of abdominal tergite III and abdominal sternite III." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000024 "abdominal segment 3" {def="Third most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BFO:0000051 AISM:0004087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal tergite III
+relationship: BFO:0000051 AISM:0004105 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal sternite III
+relationship: BSPO:0000099 AISM:0004289 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment II
+
+[Term]
+id: AISM:0004291
+name: insect abdominal segment IV {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect abdominal segment that is posterior to the insect abdominal segment III and composed of abdominal tergite IV and abdominal sternite IV." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000025 "abdominal segment 4" {def="Fourth most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BFO:0000051 AISM:0004090 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal tergite IV
+relationship: BFO:0000051 AISM:0004106 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal sternite IV
+relationship: BSPO:0000099 AISM:0004290 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment III
+
+[Term]
+id: AISM:0004292
+name: insect abdominal segment V {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect abdominal segment that is posterior to the insect abdominal segment IV and composed of abdominal tergite V and abdominal sternite V." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000026 "abdominal segment 5" {def="Fifth most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BFO:0000051 AISM:0004091 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal tergite V
+relationship: BFO:0000051 AISM:0004107 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal sternite V
+relationship: BSPO:0000099 AISM:0004291 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment IV
+
+[Term]
+id: AISM:0004293
+name: insect abdominal segment VI {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect abdominal segment that is posterior to the insect abdominal segment V and composed of abdominal tergite VI and abdominal sternite VI." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000027 "abdominal segment 6" {def="Sixth most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BFO:0000051 AISM:0004093 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal tergite VI
+relationship: BFO:0000051 AISM:0004108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal sternite VI
+relationship: BSPO:0000099 AISM:0004292 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment V
+
+[Term]
+id: AISM:0004294
+name: insect abdominal segment VII {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect abdominal segment that is posterior to the insect abdominal segment VI and composed of abdominal tergite VII and abdominal sternite VII." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000028 "abdominal segment 7" {def="Seventh most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BFO:0000051 AISM:0004095 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal tergite VII
+relationship: BFO:0000051 AISM:0004109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal sternite VII
+relationship: BSPO:0000099 AISM:0004293 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment VI
+
+[Term]
+id: AISM:0004295
+name: insect abdominal segment VIII {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect abdominal segment that is posterior to the insect abdominal segment VII and composed of abdominal tergite VIII and abdominal sternite VIII." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000029 "abdominal segment 8" {def="Eigth most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BFO:0000051 AISM:0004097 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal tergite VIII
+relationship: BFO:0000051 AISM:0004110 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal sternite VIII
+relationship: BSPO:0000099 AISM:0004294 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment VII
+
+[Term]
+id: AISM:0004296
+name: insect abdominal segment IX {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect abdominal segment that is posterior to the insect abdominal segment VIII and composed of abdominal tergite IX and abdominal sternite IX." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000030 "abdominal segment 9" {def="Ninth most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BFO:0000051 AISM:0004117 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal tergite IX
+relationship: BFO:0000051 AISM:0004119 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! abdominal sternite IX
+relationship: BSPO:0000099 AISM:0004295 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment VIII
+
+[Term]
+id: AISM:0004297
+name: insect abdominal segment X {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect abdominal segment that is posterior to the insect abdominal segment IX and composed of abdominal tergite X and abdominal sternite X." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+xref: http://flybase.org/cgi-bin/cvreport.pl?cvterm=FBbt\:00000031 "abdominal segment 10" {def="Tenth most anterior segment of the abdomen."}
+is_a: AISM:0004287 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment
+relationship: BSPO:0000099 AISM:0004296 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect abdominal segment IX
+
+[Term]
+id: AISM:0004298
+name: insect prothoracic segment {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect body segment that corresponds to the prothorax and is posterior to the insect cephalic segment." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004286 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect thoracic segment
+relationship: BFO:0000051 AISM:0004125 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! cuticle of prothorax
+relationship: BSPO:0000099 AISM:0004285 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect cephalic segment
+
+[Term]
+id: AISM:0004299
+name: insect mesothoracic segment {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect body segment that corresponds to the mesothorax and is posterior to the insect prothoracic segment." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004286 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect thoracic segment
+relationship: BFO:0000051 AISM:0004126 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! cuticle of mesothorax
+relationship: BSPO:0000099 AISM:0004298 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect prothoracic segment
+
+[Term]
+id: AISM:0004300
+name: insect metathoracic segment {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The insect body segment that corresponds to the mesothorax and is posterior to the insect prothoracic segment." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004286 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect thoracic segment
+relationship: BFO:0000051 AISM:0004127 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! cuticle of metathorax
+relationship: BSPO:0000099 AISM:0004299 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! insect mesothoracic segment
+
+[Term]
+id: AISM:0004301
+name: cuticle of gonocoxite {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
+def: "The paired sclerite of the postabdomen, attached to either the abdominal tergite VIII or IX." [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+synonym: "coxopodite" EXACT [] {creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Coxopodite (=valvifer, gonocoxa, gonocoxite): short basal piece of ovipositor elements of female genital segments VIII and IX.\""}
+is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
+relationship: BFO:0000050 AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postabdomen
+relationship: RO:0000053 PATO:0040024 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! bilaterally paired
+
+[Term]
+id: AISM:0004302
+name: insect mouth {http://purl.obolibrary.org/obo/AISM_0000171="Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.\n\nhttps://www.jstor.org/stable/10.7591/j.ctv1nhm1j\n\n\"Mouth. The external opening of the stomodaeum, situated in the ventral wall of the head between the labrum and the hypopharynx.\"", creation_date="2023-01-09", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+synonym: "preoral cavity" EXACT [] {creation_date="2023-01-09", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"The preoral cavity is the space enclosed between the labrum and labium and the paired mandibles and maxillae\"", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: UBERON:0000165 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"}
+relationship: BSPO:0000096 AISM:0000093 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! hypopharynx
+relationship: RO:0002219 AISM:0000042 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! cuticle of labrum
+relationship: RO:0002219 AISM:0000043 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! cuticle of insect mandible
+relationship: RO:0002219 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-09"} ! cuticle of labium
+
+[Term]
+id: AISM:0004303
+name: insect gland opening
+is_a: UBERON:0000161 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+relationship: RO:0002150 AISM:0004235 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! ectodermal gland
+
+[Term]
+id: AISM:0004304
+name: cuticular sensilla {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensilla are the basal functional and structural units of cuticular mechanoreceptors and chemoreceptors. They include the cuticular component (e.g., the cuticle of a seta), the sensory neuron (or neurons), the associated sheath cells with the cavities they enclose and the structures they produce\" p. 5.", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+def: "The region of cuticle that is attached to arthropod sensillum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-10-11"}
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! region of cuticle
+relationship: RO:0002371 UBERON:0002536 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+
+[Term]
+id: AISM:0004305
+name: sensilla ampullacea {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Modified type of cuticular sensilla sunk below the external cuticular surface\"", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+xref: http://purl.obolibrary.org/obo/HAO_0001098 "basiconic capitate peg sensillum" {def="Mushroom-shaped sensory structure on the flagellum, particularly the\nclava; sometimes called the sensilla ampullacea."}
+is_a: AISM:0004304 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! cuticular sensilla
+relationship: RO:0000053 PATO:0001571 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! dilated
+
+[Term]
+id: AISM:0004306
+name: stridulatory file {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+comment: The region of the cuticle that bears an anatomical collection composed of cuticular carinae. {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! region of cuticle
+relationship: BFO:0000051 UBERON:0034925 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+relationship: RO:0002351 AISM:0000501 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! cuticular carina
+
+[Term]
+id: AISM:0004307
+name: pretarsal seta {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+def: "The cuticular seta that is adjacent to the cuticle of the pretarsus." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+is_a: AISM:0000039 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! cuticular seta
+relationship: RO:0002220 AISM:0000047 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! cuticle of pretarsus
+
+[Term]
+id: AISM:0004308
+name: cuticle of pulvillus {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Pulvilli: smooth or hairy paired lateral membranous lobes below the claws\". p. 44.", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+def: "The cuticular protrusion that is part of the pretarsus, ventral to the tarsal claws." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
+is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular protrusion
+relationship: BFO:0000050 AISM:0000047 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of pretarsus
+relationship: BSPO:0000102 AISM:0004260 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsal claw
+relationship: RO:0000053 PATO:0040024 ! bilaterally paired
+
+[Term]
+id: AISM:0004309
+name: cuticle of arolium {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Arolium: the median hollow lobe of the pretarsus. It can be completely membranous or partly sclerotized.\" p. 42.\n\"unpaired, between the claws\" p. 40.", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+def: "The medial cuticular protrusion of the pretarsus." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular protrusion
+
+[Term]
 id: BSPO:0000377
 name: internal side
 relationship: BSPO:0000113 BSPO:0000378 ! external side
@@ -4661,12 +4911,24 @@ id: PATO:0000984
 name: porous
 
 [Term]
+id: PATO:0001571
+name: dilated
+def: "A size quality inhering in a bearer by virtue of the bearer's being made wider or larger in all dimensions. [database_cross_reference: WordNet:WordNet]" []
+is_a: PATO:0000586
+
+[Term]
 id: PATO:0002219
 name: fan-shaped
 
 [Term]
 id: PATO:0040024
 name: bilaterally paired
+
+[Term]
+id: UBERON:0000046
+name: stemma {def="Eye-spots which may be set into a pit to reduce the angles of light that enters and affects the eyespot, to allow the organism to deduce the angle of incoming light. \n[http://en.wikipedia.org/wiki/Stemma http://en.wikipedia.org/wiki/Eye#Pit_eyes]"}
+is_a: UBERON:0000047
+property_value: AISM:0000171 "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Stemmata are specific lateral eyes (the term “lateral ocelli” is inappropriate) of larvae of most groups of Holometabola. They are replaced by the adult compound eyes during the metamorphosis. The number ranges between seven and one and they are absent in different groups. Structurally, they resemble ommatidia and are suitable to perceive movements, directions and distances.\"" xsd:string
 
 [Term]
 id: UBERON:0001134
@@ -4712,16 +4974,16 @@ is_a: RO:0002150
 id: AISM:0000519
 name: encircles via conjunctiva
 def: "sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B" [] {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330", creation_date="2021-05-31"}
-domain: AISM:0000003 ! sclerite
-range: AISM:0000003 ! sclerite
+domain: AISM:0000003 ! esclerito
+range: AISM:0000003 ! esclerito
 is_a: AISM:0000078 ! encircles
 
 [Typedef]
 id: AISM:0000538
 name: encircled via conjunctiva
 def: "sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B" [] {creation_date="2021-06-14", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
-domain: AISM:0000003 ! sclerite
-range: AISM:0000003 ! sclerite
+domain: AISM:0000003 ! esclerito
+range: AISM:0000003 ! esclerito
 is_a: AISM:0000079 ! encircled by
 
 [Typedef]
