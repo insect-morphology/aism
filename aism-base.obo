@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2023-01-18/aism-base.owl
+data-version: aism/releases/2023-01-22/aism-base.owl
 subsetdef: AISM:0000171 ""
 ontology: aism/aism-base
 property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
@@ -13,12 +13,12 @@ property_value: http://purl.org/dc/terms/license https://creativecommons.org/lic
 property_value: IAO:0000700 http://purl.obolibrary.org/obo/AISM_0000174 xsd:string
 property_value: IAO:0000700 http://purl.obolibrary.org/obo/PATO_0000001 xsd:string
 property_value: IAO:0000700 http://purl.obolibrary.org/obo/UBERON_0001062 xsd:string
-property_value: owl:versionInfo "2023-01-18" xsd:string
+property_value: owl:versionInfo "2023-01-22" xsd:string
 
 [Term]
 id: AISM:0000000
 name: cuticular internal depression
-def: "The projection of the inner surface of the cuticle." [] {created_by="2021-05-19", created_by="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The projection of the inner surface of the cuticle." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-05-19"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! region of cuticle
 relationship: BFO:0000050 BSPO:0000061 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 relationship: RO:0000053 PATO:0001857 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
@@ -505,7 +505,7 @@ relationship: RO:0002150 AISM:0004015 {http://purl.org/dc/elements/1.1/contribut
 relationship: RO:0002150 AISM:0004016 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! premental-glossal conjunctiva
 relationship: RO:0002220 AISM:0000049 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of glossa
 relationship: RO:0002220 AISM:0000050 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of paraglossa
-relationship: RO:0002220 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mentum
+relationship: RO:0002220 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect mentum
 relationship: RO:0002220 AISM:0004006 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of palpiger
 
 [Term]
@@ -753,7 +753,7 @@ relationship: BFO:0000051 AISM:0000049 {http://purl.org/dc/elements/1.1/contribu
 relationship: BFO:0000051 AISM:0000050 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of paraglossa
 relationship: BFO:0000051 AISM:0000057 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! prementum
 relationship: BFO:0000051 AISM:0004002 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mental-premental conjunctiva
-relationship: BFO:0000051 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mentum
+relationship: BFO:0000051 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect mentum
 relationship: BFO:0000051 AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submentum
 relationship: BFO:0000051 AISM:0004006 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of palpiger
 relationship: BFO:0000051 AISM:0004013 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submental-mental conjunctiva
@@ -2057,7 +2057,7 @@ id: AISM:0002054
 name: submentomental muscle {http://purl.obolibrary.org/obo/AISM_0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: submentum\"\n\n\"Insertion: mentum\""}
 def: "The cranio-labial muscle that is attached to the submentum and the mentum." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"}
 is_a: AISM:0000083 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! cranio-labial muscle
-relationship: RO:0002371 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! mentum
+relationship: RO:0002371 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! insect mentum
 relationship: RO:0002371 AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! submentum
 
 [Term]
@@ -2328,7 +2328,7 @@ def: "The conjunctiva of the labium that connects the mentum and the prementum."
 is_a: AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! conjunctiva
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
 relationship: RO:0002150 AISM:0000057 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! prementum
-relationship: RO:0002150 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mentum
+relationship: RO:0002150 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect mentum
 
 [Term]
 id: AISM:0004003
@@ -2336,13 +2336,13 @@ name: postmentum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedr
 def: "The sclerite of the cuticle of labium that is cmposed of the submentum and the mentum, which are connected by the submental-mental conjunctiva" [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
-relationship: BFO:0000051 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mentum
+relationship: BFO:0000051 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect mentum
 relationship: BFO:0000051 AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submentum
 relationship: BFO:0000051 AISM:0004013 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submental-mental conjunctiva
 
 [Term]
 id: AISM:0004004
-name: mentum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Mentum: intermediate part of labium, anterior part of postmentum; bears the prementum at its distal edge.\""}
+name: insect mentum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Mentum: intermediate part of labium, anterior part of postmentum; bears the prementum at its distal edge.\"", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-20: to specify insect mentum.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The sclerite of the labium that is anterior to the submentum and posterior to the prementum, and attached to the prementum by the mental-premental conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
@@ -2357,7 +2357,7 @@ name: submentum {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedri
 def: "The sclerite of the labium that is anteriorly attached to the mentum by the submental-mental conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-17"}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
-relationship: BSPO:0000099 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mentum
+relationship: BSPO:0000099 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect mentum
 relationship: RO:0002150 AISM:0004013 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submental-mental conjunctiva
 
 [Term]
@@ -2431,7 +2431,7 @@ name: submental-mental conjunctiva
 def: "The conjunctiva of the labium that connects the submentum and the mentum." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-02-19"}
 is_a: AISM:0000004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! conjunctiva
 relationship: BFO:0000050 AISM:0000087 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticle of labium
-relationship: RO:0002150 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mentum
+relationship: RO:0002150 AISM:0004004 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect mentum
 relationship: RO:0002150 AISM:0004005 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! submentum
 
 [Term]
@@ -3683,7 +3683,7 @@ def: "The sclerite that is surrounded by the basal wing conjunctiva." [] {creati
 synonym: "pteralia" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Pteralia: small sclerites of wing base (axillary sclerites + plates).\""}
 is_a: AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! esclerito
 relationship: AISM:0000079 AISM:0004203 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by basal wing conjunctiva
-relationship: BFO:0000050 AISM:0004258 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! axillary region
+relationship: BFO:0000050 AISM:0004258 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! axillary region of the insect wing
 
 [Term]
 id: AISM:0004162
@@ -4380,115 +4380,116 @@ relationship: BFO:0000050 AISM:0000033 {http://purl.org/dc/elements/1.1/contribu
 
 [Term]
 id: AISM:0004245
-name: anal field {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Anal field (=vannus): posterior part of wings, usually enlarged in Polyneoptera.\""}
+name: anal field of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-21: specifying insect wing field.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Anal field (=vannus): posterior part of wings, usually enlarged in Polyneoptera.\""}
 def: "The posterior region of the insect wing." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "vannus" EXACT []
 is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing region
+relationship: BSPO:0000099 AISM:0004311 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cubital field of the insect wing
 
 [Term]
 id: AISM:0004246
-name: insect wing anal vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Anal veins: longitudinal veins of the anal field proximally articulated with 3rd axillary sclerite; usually unbranched and arranged like a fan.\""}
+name: anal vein of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Anal veins: longitudinal veins of the anal field proximally articulated with 3rd axillary sclerite; usually unbranched and arranged like a fan.\""}
 def: "The insect wing vein of the anal field that is posterior to the anal fold or the postcubitus and anterior to the jugal fold or the jugal veins." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: RO:0001018 AISM:0004245 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! anal field
+relationship: RO:0001018 AISM:0004245 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! anal field of the insect wing
 
 [Term]
 id: AISM:0004247
-name: insect wing costal vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Costa: main longitudinal vein along anterior wing margin, articulated with humeral plate.\""}
+name: costal vein of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Costa: main longitudinal vein along anterior wing margin, articulated with humeral plate.\""}
 def: "The insect wing vein of the costal field that is anterior to the subcosta." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004257 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing subcostal vein
-relationship: RO:0001018 AISM:0004248 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! costal field
+relationship: BSPO:0000096 AISM:0004257 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! subcostal vein of the insect wing
+relationship: RO:0001018 AISM:0004248 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! costal field of the insect wing
 
 [Term]
 id: AISM:0004248
-name: costal field {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Costal field (=remigium): anterior part of wing; usually largest region.\""}
+name: costal field of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-21: specifying insect wing field.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Costal field (=remigium): anterior part of wing; usually largest region.\""}
 def: "The anterior region of the insect wing." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "remigium" EXACT []
 is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing region
 
 [Term]
 id: AISM:0004249
-name: insect wing cubital vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Cubitus: 5th main longitudinal vein.\""}
+name: cubital vein of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Cubitus: 5th main longitudinal vein.\""}
 def: "The insect wing vein that is posterior to the media and anterior to the postcubitus." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004255 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing postcubital vein
-relationship: BSPO:0000099 AISM:0004252 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing medial vein
+relationship: BSPO:0000096 AISM:0004255 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postcubital vein of the insect wing
+relationship: BSPO:0000099 AISM:0004252 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! medial vein of the insect wing
 
 [Term]
 id: AISM:0004250
-name: jugal field {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Jugal field: small wing region posteriorly adjacent with anal field.\""}
+name: jugal field of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-21: specifying insect wing field.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Jugal field: small wing region posteriorly adjacent with anal field.\""}
 def: "The insect wing region that is posterior to the jugal fold." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing region
-relationship: BSPO:0000099 AISM:0004253 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! jugal fold
+relationship: BSPO:0000099 AISM:0004253 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! jugal fold of the insect wing
 
 [Term]
 id: AISM:0004251
-name: insect wing jugal vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Jugal veins: veins of the jugal field.\""}
+name: jugal vein of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Jugal veins: veins of the jugal field.\""}
 def: "The insect wing vein in the jugal field, posterior to the jugal fold or to the anal veins." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: RO:0001018 AISM:0004250 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! jugal field
+relationship: RO:0001018 AISM:0004250 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! jugal field of the insect wing
 
 [Term]
 id: AISM:0004252
-name: insect wing medial vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Media: 4th main longitudinal vein.\""}
+name: medial vein of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Media: 4th main longitudinal vein.\""}
 def: "The insect wing vein that is posterior to some radius and anterior to some cubitus." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004249 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing cubital vein
-relationship: BSPO:0000099 AISM:0004256 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing radial vein
+relationship: BSPO:0000096 AISM:0004249 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cubital vein of the insect wing
+relationship: BSPO:0000099 AISM:0004256 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! radial vein of the insect wing
 
 [Term]
 id: AISM:0004253
-name: jugal fold
+name: jugal fold of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-21: specifying insect wing fold.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The insect wing fold that separates the anal field and the jugal field." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "plica jugalis" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Plica jugalis: separates the anal and jugal fields.\""}
 is_a: AISM:0004244 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing fold
 
 [Term]
 id: AISM:0004254
-name: anal fold
+name: anal fold of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-21: specifying insect wing fold.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The insect wing fold that is posterior to the postcubitus and separates the costal field and the anal field." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "claval furrow" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Chapman RF (2012) The Insects: Structure and Function. Fifth Edition. Cambridge University Press. 959 pp. \n\nhttps://doi.org/10.1017/CBO9781139035460\n\n\"longitudinal flexion line which runs close to the CuP. This furrow allows the posterior part of the wing to flap up and down with respect to the rest of the wing.\""}
 synonym: "plica vannalis" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Plica vannalis: separates the costal and anal fields.\""}
 is_a: AISM:0004244 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing fold
-relationship: BSPO:0000099 AISM:0004255 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing postcubital vein
+relationship: BSPO:0000099 AISM:0004255 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! postcubital vein of the insect wing
 
 [Term]
 id: AISM:0004255
-name: insect wing postcubital vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Postcubitus: posteriormost longitudinal vein of the remigium.\""}
+name: postcubital vein of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Postcubitus: posteriormost longitudinal vein of the remigium.\""}
 def: "The insect wing vein that is posterior to the cubitus and anterior to the anal fold or the anal vein." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000099 AISM:0004249 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing cubital vein
+relationship: BSPO:0000099 AISM:0004249 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cubital vein of the insect wing
 
 [Term]
 id: AISM:0004256
-name: insect wing radial vein {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Radius: 3rd main longitudinal vein.\"", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883"}
+name: radial vein of the insect wing {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Radius: 3rd main longitudinal vein.\"", http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The insect wing vein that is posterior to the subcosta and anterior to the media." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004252 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing medial vein
-relationship: BSPO:0000099 AISM:0004257 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing subcostal vein
+relationship: BSPO:0000096 AISM:0004252 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! medial vein of the insect wing
+relationship: BSPO:0000099 AISM:0004257 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! subcostal vein of the insect wing
 
 [Term]
 id: AISM:0004257
-name: insect wing subcostal vein {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Subcosta: 2nd main longitudinal vein, following costal vein.\""}
+name: subcostal vein of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-09: specifying insect wing vein.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Subcosta: 2nd main longitudinal vein, following costal vein.\""}
 def: "The insect wing vein that is posterior to the costa and anterior to the radius." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
-relationship: BSPO:0000096 AISM:0004256 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing radial vein
-relationship: BSPO:0000099 AISM:0004247 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing costal vein
+relationship: BSPO:0000096 AISM:0004256 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! radial vein of the insect wing
+relationship: BSPO:0000099 AISM:0004247 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! costal vein of the insect wing
 
 [Term]
 id: AISM:0004258
-name: axillary region {http://purl.obolibrary.org/obo/AISM_0000171="Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.\n\nhttps://www.jstor.org/stable/10.7591/j.ctv1nhm1j\n\n\"The region of the wing base containing the axillary sclerites\""}
+name: axillary region of the insect wing {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-01-21: specifying insect wing region.\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.obolibrary.org/obo/AISM_0000171="Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.\n\nhttps://www.jstor.org/stable/10.7591/j.ctv1nhm1j\n\n\"The region of the wing base containing the axillary sclerites\""}
 def: "The proximal region of the insect wing." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing region
 
 [Term]
 id: AISM:0004259
-name: basal fold
+name: basal fold of the insect wing {comment="Modified 2023-01-21: specifying insect wing fold.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The insect wing fold that is distal to the axillary region." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "plica basalis" EXACT [] {http://purl.obolibrary.org/obo/AISM_0000171="Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.\n\nhttps://www.jstor.org/stable/10.7591/j.ctv1nhm1j\n\n\"Plica basalis (bf).The basal fold of the wing, or line of flection between the base of the mediocubital fold and the axillary region, forming a prominent convex fold in the flexed wing extending between the median plates from the articulation of radius with the second axillary to the articulation of the vannal veins with the third axillary.\""}
 is_a: AISM:0004244 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing fold
-relationship: BSPO:0000097 AISM:0004258 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! axillary region
+relationship: BSPO:0000097 AISM:0004258 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! axillary region of the insect wing
 
 [Term]
 id: AISM:0004260
@@ -4895,6 +4896,27 @@ id: AISM:0004309
 name: cuticle of arolium {http://purl.obolibrary.org/obo/AISM_0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Arolium: the median hollow lobe of the pretarsus. It can be completely membranous or partly sclerotized.\" p. 42.\n\"unpaired, between the claws\" p. 40.", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
 def: "The medial cuticular protrusion of the pretarsus." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
 is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular protrusion
+
+[Term]
+id: AISM:0004310
+name: radial field of the insect wing
+def: "The region of the insect wing that is posterior to the costal field of the insect wing." [] {creation_date="2023-01-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! insect wing region
+relationship: BSPO:0000099 AISM:0004248 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! costal field of the insect wing
+
+[Term]
+id: AISM:0004311
+name: cubital field of the insect wing
+def: "The region of the insect wing that is posterior to the radial field of the insect wing." [] {creation_date="2023-01-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! insect wing region
+relationship: BSPO:0000099 AISM:0004312 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! medial field of the insect wing
+
+[Term]
+id: AISM:0004312
+name: medial field of the insect wing
+def: "The region of the insect wing that is posterior to the radial field of the insect wing." [] {creation_date="2023-01-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! insect wing region
+relationship: BSPO:0000099 AISM:0004310 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! radial field of the insect wing
 
 [Term]
 id: BSPO:0000377

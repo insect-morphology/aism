@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2023-01-18/aism-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2023-01-22/aism-base.owl"/>
         <obo:IAO_0000700>http://purl.obolibrary.org/obo/AISM_0000174</obo:IAO_0000700>
         <obo:IAO_0000700>http://purl.obolibrary.org/obo/PATO_0000001</obo:IAO_0000700>
         <obo:IAO_0000700>http://purl.obolibrary.org/obo/UBERON_0001062</obo:IAO_0000700>
@@ -25,7 +25,7 @@
         <dc:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-18</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -152,12 +152,6 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
     <!-- http://www.geneontology.org/formats/oboInOwl#consistent_with -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consistent_with"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
     
 
 
@@ -609,8 +603,8 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">The projection of the inner surface of the cuticle.</owl:annotatedTarget>
-        <oboInOwl:created_by>2021-05-19</oboInOwl:created_by>
-        <oboInOwl:created_by>jgiron https://orcid.org/0000-0002-0851-6883</oboInOwl:created_by>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2021-05-19</oboInOwl:creation_date>
     </owl:Axiom>
     
 
@@ -25103,7 +25097,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The sclerite of the labium that is anterior to the submentum and posterior to the prementum, and attached to the prementum by the mental-premental conjunctiva.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">mentum</rdfs:label>
+        <rdfs:label xml:lang="en">insect mentum</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004004"/>
@@ -25176,12 +25170,14 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004004"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">mentum</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">insect mentum</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 &quot;Mentum: intermediate part of labium, anterior part of postmentum; bears the prementum at its distal edge.&quot;</obo:AISM_0000171>
+        <obo:IAO_0000232 xml:lang="en">Modified 2023-01-20: to specify insect mentum.
+jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     </owl:Axiom>
     
 
@@ -47963,19 +47959,14 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004245">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004242"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000072"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004311"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The posterior region of the insect wing.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>vannus</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">anal field</rdfs:label>
+        <rdfs:label xml:lang="en">anal field of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004245"/>
@@ -47987,15 +47978,10 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004245"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000072"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000033"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004311"/>
+            </owl:Restriction>
         </owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
     </owl:Axiom>
@@ -48009,12 +47995,14 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004245"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">anal field</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">anal field of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 &quot;Anal field (=vannus): posterior part of wings, usually enlarged in Polyneoptera.&quot;</obo:AISM_0000171>
+        <obo:IAO_0000232 xml:lang="en">Modified 2023-01-21: specifying insect wing field.
+jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     </owl:Axiom>
     
 
@@ -48056,7 +48044,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing vein of the anal field that is posterior to the anal fold or the postcubitus and anterior to the jugal fold or the jugal veins.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">insect wing anal vein</rdfs:label>
+        <rdfs:label xml:lang="en">anal vein of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004246"/>
@@ -48116,7 +48104,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004246"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">insect wing anal vein</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">anal vein of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -48145,7 +48133,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing vein of the costal field that is anterior to the subcosta.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">insect wing costal vein</rdfs:label>
+        <rdfs:label xml:lang="en">costal vein of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004247"/>
@@ -48184,7 +48172,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004247"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">insect wing costal vein</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">costal vein of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -48213,7 +48201,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The anterior region of the insect wing.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>remigium</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">costal field</rdfs:label>
+        <rdfs:label xml:lang="en">costal field of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004248"/>
@@ -48247,12 +48235,14 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004248"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">costal field</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">costal field of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 &quot;Costal field (=remigium): anterior part of wing; usually largest region.&quot;</obo:AISM_0000171>
+        <obo:IAO_0000232 xml:lang="en">Modified 2023-01-21: specifying insect wing field.
+jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     </owl:Axiom>
     
 
@@ -48274,7 +48264,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing vein that is posterior to the media and anterior to the postcubitus.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">insect wing cubital vein</rdfs:label>
+        <rdfs:label xml:lang="en">cubital vein of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004249"/>
@@ -48314,7 +48304,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004249"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">insect wing cubital vein</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">cubital vein of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -48337,7 +48327,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing region that is posterior to the jugal fold.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">jugal field</rdfs:label>
+        <rdfs:label xml:lang="en">jugal field of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004250"/>
@@ -48366,12 +48356,14 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004250"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">jugal field</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">jugal field of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
 &quot;Jugal field: small wing region posteriorly adjacent with anal field.&quot;</obo:AISM_0000171>
+        <obo:IAO_0000232 xml:lang="en">Modified 2023-01-21: specifying insect wing field.
+jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     </owl:Axiom>
     
 
@@ -48400,7 +48392,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing vein in the jugal field, posterior to the jugal fold or to the anal veins.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">insect wing jugal vein</rdfs:label>
+        <rdfs:label xml:lang="en">jugal vein of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004251"/>
@@ -48447,7 +48439,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004251"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">insect wing jugal vein</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">jugal vein of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -48476,7 +48468,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing vein that is posterior to some radius and anterior to some cubitus.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">insect wing medial vein</rdfs:label>
+        <rdfs:label xml:lang="en">medial vein of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004252"/>
@@ -48516,7 +48508,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004252"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">insect wing medial vein</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">medial vein of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -48547,7 +48539,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing fold that separates the anal field and the jugal field.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plica jugalis</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">jugal fold</rdfs:label>
+        <rdfs:label xml:lang="en">jugal fold of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004253"/>
@@ -48590,6 +48582,13 @@ https://doi.org/10.1515/9783110264043
 
 &quot;Plica jugalis: separates the anal and jugal fields.&quot;</obo:AISM_0000171>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004253"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">jugal fold of the insect wing</owl:annotatedTarget>
+        <obo:IAO_0000232 xml:lang="en">Modified 2023-01-21: specifying insect wing fold.
+jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
+    </owl:Axiom>
     
 
 
@@ -48619,7 +48618,7 @@ https://doi.org/10.1515/9783110264043
         <obo:IAO_0000115 xml:lang="en">The insect wing fold that is posterior to the postcubitus and separates the costal field and the anal field.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">claval furrow</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>plica vannalis</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">anal fold</rdfs:label>
+        <rdfs:label xml:lang="en">anal fold of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004254"/>
@@ -48683,6 +48682,13 @@ https://doi.org/10.1515/9783110264043
 
 &quot;Plica vannalis: separates the costal and anal fields.&quot;</obo:AISM_0000171>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004254"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">anal fold of the insect wing</owl:annotatedTarget>
+        <obo:IAO_0000232 xml:lang="en">Modified 2023-01-21: specifying insect wing fold.
+jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
+    </owl:Axiom>
     
 
 
@@ -48710,7 +48716,7 @@ https://doi.org/10.1515/9783110264043
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing vein that is posterior to the cubitus and anterior to the anal fold or the anal vein.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">insect wing postcubital vein</rdfs:label>
+        <rdfs:label xml:lang="en">postcubital vein of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004255"/>
@@ -48757,7 +48763,7 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004255"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">insect wing postcubital vein</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">postcubital vein of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -48786,7 +48792,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing vein that is posterior to the subcosta and anterior to the media.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">insect wing radial vein</rdfs:label>
+        <rdfs:label xml:lang="en">radial vein of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004256"/>
@@ -48826,7 +48832,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004256"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">insect wing radial vein</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">radial vein of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -48855,7 +48861,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing vein that is posterior to the costa and anterior to the radius.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">insect wing subcostal vein</rdfs:label>
+        <rdfs:label xml:lang="en">subcostal vein of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004257"/>
@@ -48895,7 +48901,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004257"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">insect wing subcostal vein</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">subcostal vein of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -48923,7 +48929,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The proximal region of the insect wing.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">axillary region</rdfs:label>
+        <rdfs:label xml:lang="en">axillary region of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004258"/>
@@ -48957,12 +48963,14 @@ jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004258"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">axillary region</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">axillary region of the insect wing</owl:annotatedTarget>
         <obo:AISM_0000171 xml:lang="en">Snodgrass RE (1993) Principles of Insect Morphology. Cornell University Press, 768 pp.
 
 https://www.jstor.org/stable/10.7591/j.ctv1nhm1j
 
 &quot;The region of the wing base containing the axillary sclerites&quot;</obo:AISM_0000171>
+        <obo:IAO_0000232 xml:lang="en">Modified 2023-01-21: specifying insect wing region.
+jgiron https://orcid.org/0000-0002-0851-6883</obo:IAO_0000232>
     </owl:Axiom>
     
 
@@ -48979,7 +48987,7 @@ https://www.jstor.org/stable/10.7591/j.ctv1nhm1j
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The insect wing fold that is distal to the axillary region.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plica basalis</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">basal fold</rdfs:label>
+        <rdfs:label xml:lang="en">basal fold of the insect wing</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004259"/>
@@ -49014,6 +49022,13 @@ https://www.jstor.org/stable/10.7591/j.ctv1nhm1j
 https://www.jstor.org/stable/10.7591/j.ctv1nhm1j
 
 &quot;Plica basalis (bf).The basal fold of the wing, or line of flection between the base of the mediocubital fold and the axillary region, forming a prominent convex fold in the flexed wing extending between the median plates from the articulation of radius with the second axillary to the articulation of the vannal veins with the third axillary.&quot;</obo:AISM_0000171>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004259"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">basal fold of the insect wing</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Modified 2023-01-21: specifying insect wing fold.
+jgiron https://orcid.org/0000-0002-0851-6883</rdfs:comment>
     </owl:Axiom>
     
 
@@ -52922,6 +52937,132 @@ https://doi.org/10.1515/9783110264043
 &quot;unpaired, between the claws&quot; p. 40.</obo:AISM_0000171>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2023-01-11</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004242"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004248"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The region of the insect wing that is posterior to the costal field of the insect wing.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">radial field of the insect wing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004310"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004242"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2023-01-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004310"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004248"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2023-01-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004310"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The region of the insect wing that is posterior to the costal field of the insect wing.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2023-01-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004242"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004312"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The region of the insect wing that is posterior to the radial field of the insect wing.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cubital field of the insect wing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004311"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004242"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2023-01-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004311"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004312"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2023-01-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004311"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The region of the insect wing that is posterior to the radial field of the insect wing.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2023-01-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0004312 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0004312">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004242"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The region of the insect wing that is posterior to the radial field of the insect wing.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">medial field of the insect wing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004312"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004242"/>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2023-01-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004312"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000099"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004310"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2023-01-21</oboInOwl:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0004312"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The region of the insect wing that is posterior to the radial field of the insect wing.</owl:annotatedTarget>
+        <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
+        <oboInOwl:creation_date>2023-01-21</oboInOwl:creation_date>
     </owl:Axiom>
     
 
