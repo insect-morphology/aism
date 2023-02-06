@@ -19762,6 +19762,108 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "jgiron https://orcid.org/0000-0002-0851-6883"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2023-02-05"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000008",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004313"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "jgiron https://orcid.org/0000-0002-0851-6883"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2023-02-05"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000091",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004313"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "jgiron https://orcid.org/0000-0002-0851-6883"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2023-02-05"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000108",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004314"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "jgiron https://orcid.org/0000-0002-0851-6883"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2023-02-05"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000109",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004315"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "jgiron https://orcid.org/0000-0002-0851-6883"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2023-02-05"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000135",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004314"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "jgiron https://orcid.org/0000-0002-0851-6883"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2023-02-05"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/AISM_0000135",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/AISM_0004315"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
                 "val": "lagonzalezmo https://orcid.org/0000-0002-9136-9932"
               }
             ]
@@ -22206,10 +22308,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2023-01-22"
+            "val": "2023-02-06"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/aism/releases/2023-01-22/aism-simple.json"
+        "version": "http://purl.obolibrary.org/obo/aism/releases/2023-02-06/aism-simple.json"
       },
       "nodes": [
         {
@@ -22370,7 +22472,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000014",
-          "lbl": "cranio-mandibular articulation",
+          "lbl": "insect cranio-mandibular articulation",
           "meta": {
             "definition": {
               "val": "The articulation between the mandible and the cranium."
@@ -22400,7 +22502,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/AISM_0000017",
-          "lbl": "head-cervical articulation",
+          "lbl": "insect head-cervical articulation",
           "meta": {
             "definition": {
               "val": "The articulation between the head and the neck."
@@ -28628,7 +28730,7 @@
           "lbl": "cubital field of the insect wing",
           "meta": {
             "definition": {
-              "val": "The region of the insect wing that is posterior to the radial field of the insect wing."
+              "val": "The region of the insect wing that is posterior to the medial field of the insect wing."
             }
           },
           "type": "CLASS"
@@ -28639,6 +28741,36 @@
           "meta": {
             "definition": {
               "val": "The region of the insect wing that is posterior to the radial field of the insect wing."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/AISM_0004313",
+          "lbl": "tracheal gill",
+          "meta": {
+            "definition": {
+              "val": "The bilaterally paired cuticular protrusion that contains insect tracheae."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/AISM_0004314",
+          "lbl": "insect thoracic spiracle",
+          "meta": {
+            "definition": {
+              "val": "The insect spiracle that is part of the insect thorax."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/AISM_0004315",
+          "lbl": "insect abdominal insect spiracle",
+          "meta": {
+            "definition": {
+              "val": "The insect spiracle that is part of the insect abdomen."
             }
           },
           "type": "CLASS"

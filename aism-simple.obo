@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2023-01-22/aism-simple.owl
+data-version: aism/releases/2023-02-06/aism-simple.owl
 subsetdef: AISM:0000171 ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -19,7 +19,7 @@ property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imik
 property_value: http://purl.org/dc/elements/1.1/contributor "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Sergei Tarasov (starasov) https://orcid.org/0000-0001-5237-2330" xsd:string
-property_value: owl:versionInfo "2023-01-22" xsd:string
+property_value: owl:versionInfo "2023-02-06" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -89,7 +89,7 @@ def: "A part or structure that is produced by evagination." [] {http://purl.org/
 
 [Term]
 id: AISM:0000014
-name: cranio-mandibular articulation
+name: insect cranio-mandibular articulation {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-02-05: specified insect.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The articulation between the mandible and the cranium." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
 is_a: AISM:0000002 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect articulation
 
@@ -107,7 +107,7 @@ is_a: AISM:0000002 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 
 [Term]
 id: AISM:0000017
-name: head-cervical articulation
+name: insect head-cervical articulation {http://purl.obolibrary.org/obo/IAO_0000232="Modified 2023-02-05: specified insect.\njgiron https://orcid.org/0000-0002-0851-6883"}
 def: "The articulation between the head and the neck." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
 is_a: AISM:0000002 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect articulation
 
@@ -4695,7 +4695,7 @@ relationship: posterior_to AISM:0004248 {http://purl.org/dc/elements/1.1/contrib
 [Term]
 id: AISM:0004311
 name: cubital field of the insect wing
-def: "The region of the insect wing that is posterior to the radial field of the insect wing." [] {creation_date="2023-01-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The region of the insect wing that is posterior to the medial field of the insect wing." [] {creation_date="2023-01-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! insect wing region
 relationship: posterior_to AISM:0004312 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! medial field of the insect wing
 
@@ -4705,6 +4705,27 @@ name: medial field of the insect wing
 def: "The region of the insect wing that is posterior to the radial field of the insect wing." [] {creation_date="2023-01-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0004242 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! insect wing region
 relationship: posterior_to AISM:0004310 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-21"} ! radial field of the insect wing
+
+[Term]
+id: AISM:0004313
+name: tracheal gill {http://purl.obolibrary.org/obo/AISM_0000171="http://insecta.bio.spbu.ru/z/antidictionary/tergalii&gills.htm\n\n\"Paraspiracular tracheal gill. Paired abdominal appendage, whose trachea arises either directly from the spiracular trachea of the same abdominal segment, or from the nearest point of tracheae branching\"", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"}
+def: "The bilaterally paired cuticular protrusion that contains insect tracheae." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"}
+is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"} ! cuticular protrusion
+relationship: has_characteristic AISM:0000091 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"} ! insect trachea
+
+[Term]
+id: AISM:0004314
+name: insect thoracic spiracle {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"}
+def: "The insect spiracle that is part of the insect thorax." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"}
+is_a: AISM:0000135 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"} ! insect spiracle
+relationship: part_of AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"} ! cuticle of insect thorax
+
+[Term]
+id: AISM:0004315
+name: insect abdominal insect spiracle {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"}
+def: "The insect spiracle that is part of the insect abdomen." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"}
+is_a: AISM:0000135 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"} ! insect spiracle
+relationship: part_of AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-02-05"} ! cuticle of insect abdomen
 
 [Typedef]
 id: 2D_boundary_of
