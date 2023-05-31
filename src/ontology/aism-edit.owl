@@ -445,6 +445,159 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000398 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000398">
+        <obo:IAO_0000115>The highest value of a measurement range.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has maximum value</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000398"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The highest value of a measurement range.</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000398"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">has maximum value</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000399 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000399">
+        <obo:IAO_0000115>The lowest value of a measurement range.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has minimum range</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000399"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The lowest value of a measurement range.</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000399"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">has minimum range</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000400 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000400">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000398"/>
+        <obo:IAO_0000115>The highest value of a measurement range excluding the boundary value.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has maximum value exclusive</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000400"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The highest value of a measurement range excluding the boundary value.</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000400"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">has maximum value exclusive</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000401 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000401">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000398"/>
+        <obo:IAO_0000115>The maximum value of a measurement range including the boundary value.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has maximum value inclusive</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000401"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The maximum value of a measurement range including the boundary value.</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000401"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">has maximum value inclusive</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000402 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000402">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000399"/>
+        <obo:IAO_0000115>The minimum value of a measurement range excluding the boundary value.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has minimum value exclusive</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000402"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The minimum value of a measurement range excluding the boundary value.</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000402"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">has minimum value exclusive</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000403 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000403">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000399"/>
+        <obo:IAO_0000115>The minimum value of a measurement range including the boundary value.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has minimum value inclusive</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000403"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The minimum value of a measurement range including the boundary value.</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000403"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">has minimum value inclusive</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>2023-05-31</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -1010,12 +1163,6 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
-        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
@@ -1041,6 +1188,12 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget xml:lang="en">The region of cuticle that corresponds with an invagination of the single layer epidermis (epidermal fold). The cuticular invagination sometimes corresponds to a cuticular depression (concavity on the surface of the cuticle).</owl:annotatedTarget>
         <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
         <oboI:creation_date>2020-10-27</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
     </owl:Axiom>
     
 
@@ -1114,6 +1267,23 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000062"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
@@ -1133,23 +1303,6 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
         <owl:annotatedTarget>The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.&quot;</owl:annotatedTarget>
-        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
-        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000062"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
         <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
     </owl:Axiom>
     
@@ -8206,12 +8359,6 @@ starasov https://orcid.org/0000-0001-5237-2330</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000073"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000062"/>
-        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000073"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Class>
                 <owl:complementOf>
@@ -8255,6 +8402,12 @@ starasov https://orcid.org/0000-0001-5237-2330</obo:IAO_0000232>
         <owl:annotatedTarget xml:lang="en">mere</owl:annotatedTarget>
         <obo:IAO_0000232 xml:lang="en">Modified 2023-04-13: removed ‘cuticle of’ from label.
 starasov https://orcid.org/0000-0001-5237-2330</obo:IAO_0000232>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000073"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000062"/>
+        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
     </owl:Axiom>
     
 
