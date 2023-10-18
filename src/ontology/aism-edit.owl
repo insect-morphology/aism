@@ -306,6 +306,29 @@ This annotation property is on the label of a class in owl.</owl:annotatedTarget
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AISM_0000404 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000404">
+        <obo:IAO_0000115>The object property of an object consisting of having a measurement unit.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has_unit</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000404"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The object property of an object consisting of having a measurement unit.</owl:annotatedTarget>
+        <oboI:created_by>gmontanaro https://orcid.org/0000-0003-0836-1364</oboI:created_by>
+        <oboI:creation_date>2023-18-10</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000404"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">has_unit</owl:annotatedTarget>
+        <oboI:created_by>gmontanaro https://orcid.org/0000-0003-0836-1364</oboI:created_by>
+        <oboI:creation_date>2023-18-10</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/AISM_0000519 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AISM_0000519">
@@ -1163,6 +1186,12 @@ https://doi.org/10.1515/9783110264043
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
+        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002008"/>
@@ -1188,12 +1217,6 @@ https://doi.org/10.1515/9783110264043
         <owl:annotatedTarget xml:lang="en">The region of cuticle that corresponds with an invagination of the single layer epidermis (epidermal fold). The cuticular invagination sometimes corresponds to a cuticular depression (concavity on the surface of the cuticle).</owl:annotatedTarget>
         <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
         <oboI:creation_date>2020-10-27</oboI:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000006"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000174"/>
-        <x_1.1:contributor>imiko https://orcid.org/0000-0003-2938-9075</x_1.1:contributor>
     </owl:Axiom>
     
 
