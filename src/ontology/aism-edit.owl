@@ -23636,12 +23636,6 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000376">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002176"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000524"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The distance between two cuticular punctures.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">interpunctural distance</rdfs:label>
     </owl:Class>
@@ -23649,18 +23643,6 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</obo:IAO_0000232>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000376"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000040"/>
-        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
-        <oboI:creation_date>2023-05-04</oboI:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000376"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002176"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000524"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
         <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
         <oboI:creation_date>2023-05-04</oboI:creation_date>
     </owl:Axiom>
