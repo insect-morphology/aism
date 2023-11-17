@@ -25402,6 +25402,124 @@ Figure 2d</obo:AISM_0000171>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AISM_0000405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000405">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000006"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000055"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000062"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The anatomical margin that overlaps with the distal side and the anterior side.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">antero-distal margin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000405"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000006"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000055"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000062"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>11-17-2023</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000405"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The anatomical margin that overlaps with the distal side and the anterior side.</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>11-17-2023</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000405"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">antero-distal margin</owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>11-17-2023</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000406">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000006"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000056"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000062"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The anatomical margin that overlaps with the distal side and the posterior side.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">postero-distal margin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000406"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000006"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000056"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000062"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
+        <oboI:creation_date>11-17-2023</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000406"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The anatomical margin that overlaps with the distal side and the posterior side.</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>11-17-2023</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000406"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">postero-distal margin</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>11-17-2023</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/AISM_0000501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000501">
