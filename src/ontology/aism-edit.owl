@@ -23498,98 +23498,6 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</obo:IAO_0000232>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AISM_0000374 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000374">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000174"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004063"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000527"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000591"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The thickened region of the cuticle of the endophallus that has cuticular spines.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">raspula</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000374"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000174"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004063"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:annotatedTarget>
-        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
-        <oboI:creation_date>2023-04-04</oboI:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000374"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000527"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
-        <oboI:creation_date>2023-04-04</oboI:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000374"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000591"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
-        <oboI:creation_date>2023-04-04</oboI:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000374"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The thickened region of the cuticle of the endophallus that has cuticular spines.</owl:annotatedTarget>
-        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
-        <oboI:creation_date>2023-04-04</oboI:creation_date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000374"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">raspula</owl:annotatedTarget>
-        <obo:AISM_0000171 xml:lang="en">Medina, C. A., Molano, F., &amp; Scholtz, C. H. (2013). Morphology and terminology of dung beetles (Coleoptera: Scarabaeidae: Scarabaeinae) male genitalia. Zootaxa, 3626(4), 455-476. http://dx.doi.org/10.11646/zootaxa.3626.4.3
-
-&quot;The submedial area can be covered by small or large spines or setae that can be arranged in structures that have the appearance of brushes with thick and long spikes, or are formed by large scales or bristles. These structures are known as raspules (Zunino 1972), or brushes of the internal sac (Medina et al. 2003).&quot; Plate 1, Fig. 3.</obo:AISM_0000171>
-        <obo:IAO_0000232>Moved from COLAO to AISM: 2023-05-08
-gmontanaro https://orcid.org/0000-0003-0836-1364</obo:IAO_0000232>
-        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
-        <oboI:creation_date>2023-04-04</oboI:creation_date>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/AISM_0000375 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000375">
@@ -24496,7 +24404,7 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</obo:IAO_0000232>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The ventral region of the cuticle of paramere that has decreased thickness.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ventral membrane of paramere</rdfs:label>
+        <rdfs:label xml:lang="en">ventral conjunctiva of paramere</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000387"/>
@@ -24547,7 +24455,7 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000387"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">ventral membrane of paramere</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">ventral conjunctiva of paramere</owl:annotatedTarget>
         <obo:AISM_0000171>Rossini, M., Grebennikov, V., Merrien, T., Miraldo, A., Viljanen, H., &amp; Tarasov, S. (2022). Paleogene forest fragmentation and out‐of‐Africa dispersal explain radiation of the Paleotropical dung beetle tribe Epactoidini trib. nov.(Coleoptera: Scarabaeinae). Systematic Entomology, 47(4), 655-667.
 https://doi.org/10.1111/syen.12564
 
@@ -24568,8 +24476,8 @@ Figure 2d</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000372"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <x_1.1:contributor>The ventral membrane of paramere of the right paramere.</x_1.1:contributor>
-        <rdfs:label xml:lang="en">left ventral membrane of paramere</rdfs:label>
+        <x_1.1:contributor>The ventral conjunctiva of paramere of the right paramere.</x_1.1:contributor>
+        <rdfs:label xml:lang="en">left ventral conjunctiva of paramere</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000388"/>
@@ -24593,14 +24501,14 @@ Figure 2d</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000388"/>
         <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
-        <owl:annotatedTarget>The ventral membrane of paramere of the right paramere.</owl:annotatedTarget>
+        <owl:annotatedTarget>The ventral conjunctiva of paramere of the right paramere.</owl:annotatedTarget>
         <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
         <oboI:creation_date>2023-05-08</oboI:creation_date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000388"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">left ventral membrane of paramere</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">left ventral conjunctiva of paramere</owl:annotatedTarget>
         <term:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</term:contributor>
         <oboI:creation_date>2023-05-08</oboI:creation_date>
     </owl:Axiom>
@@ -24617,8 +24525,8 @@ Figure 2d</obo:AISM_0000171>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000372"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <x_1.1:contributor>The ventral membrane of paramere of the right paramere.</x_1.1:contributor>
-        <rdfs:label xml:lang="en">right ventral membrane of paramere</rdfs:label>
+        <x_1.1:contributor>The ventral conjunctiva of paramere of the right paramere.</x_1.1:contributor>
+        <rdfs:label xml:lang="en">right ventral conjunctiva of paramere</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000389"/>
@@ -24642,14 +24550,14 @@ Figure 2d</obo:AISM_0000171>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000389"/>
         <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
-        <owl:annotatedTarget>The ventral membrane of paramere of the right paramere.</owl:annotatedTarget>
+        <owl:annotatedTarget>The ventral conjunctiva of paramere of the right paramere.</owl:annotatedTarget>
         <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
         <oboI:creation_date>2023-05-04</oboI:creation_date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000389"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">right ventral membrane of paramere</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">right ventral conjunctiva of paramere</owl:annotatedTarget>
         <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
         <oboI:creation_date>2023-05-04</oboI:creation_date>
     </owl:Axiom>
