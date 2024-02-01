@@ -37,9 +37,9 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-01-17"
+        "val" : "2024-02-01"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-01-17/aism-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-02-01/aism-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000000",
@@ -77,6 +77,10 @@
           "val" : "http://purl.obolibrary.org/obo/HAO_0000909"
         }, {
           "val" : "http://purl.obolibrary.org/obo/UBERON_6004475"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "esclerito"
         } ]
       }
     }, {
@@ -532,10 +536,6 @@
         "definition" : {
           "val" : "The cuticle of the appendage of the insect leg that is attached to the cuticle of tarsus by the tarso-pretarsal conjunctiva."
         },
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "ungues"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
           "val" : "cuticle of pretarsus"
@@ -897,7 +897,7 @@
       "type" : "PROPERTY",
       "meta" : {
         "definition" : {
-          "val" : "x encircles y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x."
+          "val" : "Structure x encircles structure y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x."
         }
       }
     }, {
@@ -906,7 +906,7 @@
       "type" : "PROPERTY",
       "meta" : {
         "definition" : {
-          "val" : "y is encircled by x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y."
+          "val" : "Structure y is encircled by structure x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y."
         }
       }
     }, {
@@ -1194,7 +1194,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The region of the cuticle that is posterior to the thorax."
+          "val" : "The region of the cuticle that is an insect tagmatic subdivision of the integument, posterior to the thorax."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
@@ -1679,7 +1679,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular depression that does not correspond to an epithelial fold."
+          "val" : "The cuticular depression that is elongated and coincides with the distal side of an insect sclerite."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
@@ -1994,7 +1994,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The foramen encircled by a sclerite."
+          "val" : "The foramen encircled by insect region of cuticle."
         }
       }
     }, {
@@ -2050,7 +2050,9 @@
       "lbl" : "protarsomere",
       "type" : "CLASS",
       "meta" : {
-        "comments" : [ "The tarsomere that is part of the protarsus." ]
+        "definition" : {
+          "val" : "The tarsomere that is part of the protarsus."
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000302",
@@ -2462,104 +2464,99 @@
       "lbl" : "flagellomere 2-flagellomere 3 conjunctiva",
       "type" : "CLASS",
       "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
+        "definition" : {
           "val" : "The conjunctiva that is part of the antenna, is encircled by the flagellomere 2 and encircles the flagellomere 3."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000344",
       "lbl" : "flagellomere 1-flagellomere 2 conjunctiva",
       "type" : "CLASS",
       "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
+        "definition" : {
           "val" : "The conjunctiva that is part of the antenna, is encircled by the flagellomere 1 and encircles the flagellomere 2."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000345",
       "lbl" : "flagellomere 3-flagellomere 4 conjunctiva",
       "type" : "CLASS",
       "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
+        "definition" : {
           "val" : "The conjunctiva that is part of the antenna, is encircled by the flagellomere 3 and encircles the flagellomere 4."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000346",
       "lbl" : "flagellomere 4-flagellomere 5 conjunctiva",
       "type" : "CLASS",
       "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
+        "definition" : {
           "val" : "The conjunctiva that is part of the antenna, is encircled by the flagellomere 4 and encircles the flagellomere 5."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000347",
       "lbl" : "flagellomere 5-flagellomere 6 conjunctiva",
       "type" : "CLASS",
       "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
+        "definition" : {
           "val" : "The conjunctiva that is part of the antenna, is encircled by the flagellomere 5 and encircles the flagellomere 6."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000348",
       "lbl" : "flagellomere 6-flagellomere 7 conjunctiva",
       "type" : "CLASS",
       "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
+        "definition" : {
           "val" : "The conjunctiva that is part of the antenna, is encircled by the flagellomere 6 and encircles the flagellomere 7."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000349",
       "lbl" : "flagellomere 7-flagellomere 8 conjunctiva",
       "type" : "CLASS",
       "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
+        "definition" : {
           "val" : "The conjunctiva that is part of the antenna, is encircled by the flagellomere 7 and encircles the flagellomere 8."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000350",
       "lbl" : "flagellomere 8-flagellomere 9 conjunctiva",
       "type" : "CLASS",
       "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
+        "definition" : {
           "val" : "The conjunctiva that is part of the antenna, is encircled by the flagellomere 8 and encircles the flagellomere 9."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000351",
       "lbl" : "flagellomere 9-flagellomere 10 conjunctiva",
       "type" : "CLASS",
       "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
+        "definition" : {
           "val" : "The conjunctiva that is part of the antenna, is encircled by the flagellomere 9 and encircles the flagellomere 10."
-        } ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000352",
       "lbl" : "microreticulate",
       "type" : "CLASS",
       "meta" : {
-        "comments" : [ "A structural quality inhering in a bearer by virtue of the bearer's having its surface covered with microscopic cuticular grooves forming a network." ]
+        "definition" : {
+          "val" : "A structural quality inhering in a bearer by virtue of the bearer's having its surface covered with microscopic cuticular grooves forming a network."
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000353",
       "lbl" : "reticulate",
       "type" : "CLASS",
       "meta" : {
-        "comments" : [ "A structural quality inhering in a bearer by virtue of the bearer's presenting on its surface a network of raised and interconnected wrinkles." ]
+        "definition" : {
+          "val" : "A structural quality inhering in a bearer by virtue of the bearer's presenting on its surface a network of raised and interconnected wrinkles."
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000354",
@@ -2820,12 +2817,12 @@
       "lbl" : "head margin at genoclypeal sulcus",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "The anatomical margin that is part of the anterior margin of the gena and of the lateral region of the posterior margin of the clypeus."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
           "val" : "Corresponds with the region of the clypeal margin next to the distal end of the genoclypeal sulcus."
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
-          "val" : "The anatomical margin that is part of the anterior margin of the gena and of the lateral region of the posterior margin of the clypeus."
         } ]
       }
     }, {
@@ -2861,7 +2858,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Theanatomical margin of the anterior region of clypeus."
+          "val" : "The anatomical margin of the anterior region of clypeus."
         }
       }
     }, {
@@ -2887,20 +2884,18 @@
       "lbl" : "left ventral conjunctiva of paramere",
       "type" : "CLASS",
       "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/elements/1.1/contributor",
-          "val" : "The ventral conjunctiva of paramere of the right paramere."
-        } ]
+        "definition" : {
+          "val" : "The ventral conjunctiva of the left paramere."
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000389",
       "lbl" : "right ventral conjunctiva of paramere",
       "type" : "CLASS",
       "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/elements/1.1/contributor",
-          "val" : "The ventral conjunctiva of paramere of the right paramere."
-        } ]
+        "definition" : {
+          "val" : "The ventral conjunctiva of the right paramere."
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000390",
@@ -3101,7 +3096,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The setigerous cuticular puncture that is flattened."
+          "val" : "The setigerous cuticular puncture that is flattened and does not have a cuticular granule."
         }
       }
     }, {
@@ -3128,7 +3123,7 @@
       "type" : "PROPERTY",
       "meta" : {
         "definition" : {
-          "val" : "sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B"
+          "val" : "Sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B."
         }
       }
     }, {
@@ -3236,7 +3231,7 @@
       "type" : "PROPERTY",
       "meta" : {
         "definition" : {
-          "val" : "sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B"
+          "val" : "Sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B."
         }
       }
     }, {
@@ -4258,7 +4253,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The lateral region of the head capsule, connected dorsally to the sides of the vertex."
+          "val" : "The lateral region of the head capsule, connected dorsally to the lateral regions of the vertex."
         }
       }
     }, {
@@ -4558,7 +4553,7 @@
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
-          "val" : "sternum"
+          "val" : "abdominal sternum"
         } ]
       }
     }, {
@@ -6639,11 +6634,11 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular sulcus that coincides with the postoccipital ridge and is posterior to the occiput and anterior to the postocciput"
+          "val" : "The cuticular sulcus that coincides with the postoccipital ridge and is posterior to the occiput and anterior to the postocciput."
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
-          "val" : "postoccipital sulcus"
+          "val" : "postoccipital suture"
         } ]
       }
     }, {
@@ -6996,7 +6991,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The insect body segment that corresponds to the mesothorax and is posterior to the insect prothoracic segment."
+          "val" : "The insect body segment that corresponds to the metathorax and is posterior to the insect mesothoracic segment."
         }
       }
     }, {
@@ -7005,7 +7000,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The paired sclerite of the postabdomen, attached to either the abdominal tergite VIII or IX."
+          "val" : "The bilaterally paired insect sclerite of the postabdomen, attached to either the abdominal tergite VIII or IX."
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -7021,6 +7016,9 @@
       "lbl" : "insect mouth",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "The mouth that is surrounded by insect mandibles, labium, and labrum and is anterior to the hypopharynx."
+        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "preoral cavity"
@@ -7029,7 +7027,12 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004303",
       "lbl" : "insect gland opening",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The orifice that is continuous with an ectodermal gland."
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004304",
       "lbl" : "cuticular sensilla",
@@ -7044,6 +7047,9 @@
       "lbl" : "sensilla ampullacea",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "The cuticular sensilla that is dilated."
+        },
         "xrefs" : [ {
           "val" : "http://purl.obolibrary.org/obo/HAO_0001098"
         } ]
@@ -7053,7 +7059,9 @@
       "lbl" : "stridulatory file",
       "type" : "CLASS",
       "meta" : {
-        "comments" : [ "The region of the cuticle that bears an anatomical collection composed of cuticular carinae." ]
+        "definition" : {
+          "val" : "The region of the cuticle that bears an anatomical collection composed of cuticular carinae."
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004307",
@@ -7579,6 +7587,32 @@
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "lbl" : "alternative label",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."
+        },
+        "comments" : [ "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "alternative label"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "OBO Operations committee"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
         } ]
       }
     }, {
@@ -16933,7 +16967,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000389",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000372",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000373",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",

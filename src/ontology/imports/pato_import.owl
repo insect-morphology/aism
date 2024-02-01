@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>
-<http://purl.obolibrary.org/obo/aism/releases/2024-01-17/imports/pato_import.owl>
+<http://purl.obolibrary.org/obo/aism/releases/2024-02-01/imports/pato_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2023-05-18/pato-base.owl>)
-Annotation(owl:versionInfo "2024-01-17")
+Annotation(owl:versionInfo "2024-02-01")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005634>))
@@ -67,6 +67,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001748>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001794>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001795>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001796>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001847>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001857>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001873>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001908>))
@@ -146,7 +147,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#shorthand>))
-Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:label))
 ############################
 #   Annotation Properties
@@ -944,6 +944,19 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001796> "de
 EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0001796> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000404> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015008> <http://purl.obolibrary.org/obo/PATO_0000461>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001796> <http://purl.obolibrary.org/obo/PATO_0000404>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001796> <http://purl.obolibrary.org/obo/PATO_0002303>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001847> (constricted)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WordNet:WordNet") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001847> "A structural quality inhering in a bearer by virtue of the bearer's being drawn together, compressed or squeezed physically.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0001847> "PATO:0001837")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001847> "stenosis")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001847> "stenotic")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001847> "stricture")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001847> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001847> "PATO:0001847")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001847> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001847> "constricted")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001847> <http://purl.obolibrary.org/obo/PATO_0000141>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001857> (concave)
 
