@@ -98,6 +98,9 @@
         <Class abbreviatedIRI="obo:AISM_0000000"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:AISM_0000001"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:AISM_0000002"/>
     </Declaration>
     <Declaration>
@@ -117,6 +120,12 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:AISM_0000008"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:AISM_0000009"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:AISM_0000010"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:AISM_0000013"/>
@@ -2168,6 +2177,9 @@
         <Class abbreviatedIRI="obo:AISM_0004316"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:AISM_0004317"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:BSPO_0000006"/>
     </Declaration>
     <Declaration>
@@ -2267,6 +2279,9 @@
         <Class abbreviatedIRI="obo:CL_0000362"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:PATO_0000039"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:PATO_0000040"/>
     </Declaration>
     <Declaration>
@@ -2277,6 +2292,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:PATO_0000141"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:PATO_0000365"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:PATO_0000402"/>
@@ -2336,6 +2354,9 @@
         <Class abbreviatedIRI="obo:PATO_0001571"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:PATO_0001573"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:PATO_0001748"/>
     </Declaration>
     <Declaration>
@@ -2346,6 +2367,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:PATO_0001873"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:PATO_0001901"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:PATO_0002021"/>
@@ -2781,6 +2805,18 @@
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0000001"/>
+        <Class abbreviatedIRI="obo:PR_000000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
             <Literal>imiko https://orcid.org/0000-0003-2938-9075</Literal>
         </Annotation>
         <Class abbreviatedIRI="obo:AISM_0000002"/>
@@ -2973,13 +3009,18 @@
     </SubClassOf>
     <SubClassOf>
         <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
+            <Literal xml:lang="en">Modified 2024-02-14: updated to &apos;composed primarily of&apos; and linked to resilin
+jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
             <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
             <Literal>imiko https://orcid.org/0000-0003-2938-9075</Literal>
         </Annotation>
         <Class abbreviatedIRI="obo:AISM_0000007"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:RO_0001019"/>
-            <Class abbreviatedIRI="obo:PR_Q9V7U0"/>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002473"/>
+            <Class abbreviatedIRI="obo:AISM_0000001"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3010,6 +3051,75 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0000053"/>
             <Class abbreviatedIRI="obo:PATO_0001355"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0000009"/>
+        <Class abbreviatedIRI="obo:AISM_0000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0000009"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002220"/>
+            <Class abbreviatedIRI="obo:AISM_0000010"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0000010"/>
+        <Class abbreviatedIRI="obo:AISM_0000008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0000010"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+            <Class abbreviatedIRI="obo:AISM_0000003"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0000010"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002220"/>
+            <Class abbreviatedIRI="obo:AISM_0000167"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -13241,16 +13351,72 @@ jgiron https://orcid.org/0000-0002-0851-6883</Literal>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
         <Class abbreviatedIRI="obo:AISM_0000352"/>
-        <Class abbreviatedIRI="obo:PATO_0000141"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:AISM_0000353"/>
-        <Class abbreviatedIRI="obo:PATO_0000141"/>
     </SubClassOf>
     <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0000352"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000051"/>
+            <Class abbreviatedIRI="obo:AISM_0000157"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
+            <Literal>Modified 2024-02-14: moved as subclass of texture
+jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2023-05-05</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0000353"/>
+        <Class abbreviatedIRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
         <Class abbreviatedIRI="obo:AISM_0000354"/>
         <Class abbreviatedIRI="obo:AISM_0000352"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0000354"/>
+        <Class abbreviatedIRI="obo:PATO_0001573"/>
     </SubClassOf>
     <SubClassOf>
         <Annotation>
@@ -14354,14 +14520,20 @@ jgiron https://orcid.org/0000-0002-0851-6883</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
-            <Literal>gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
-            <Literal>2023-05-04</Literal>
+            <Literal>2024-02-14</Literal>
         </Annotation>
         <Class abbreviatedIRI="obo:AISM_0000376"/>
-        <Class abbreviatedIRI="obo:PATO_0000040"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="obo:UBERON_0000464"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0002220"/>
+                <Class abbreviatedIRI="obo:AISM_0000524"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Annotation>
@@ -15253,7 +15425,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
-            <Literal>18-11-2023</Literal>
+            <Literal>2023-11-18</Literal>
         </Annotation>
         <Class abbreviatedIRI="obo:AISM_0000407"/>
         <ObjectIntersectionOf>
@@ -31307,6 +31479,10 @@ jgiron https://orcid.org/0000-0002-0851-6883</Literal>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
         <Class abbreviatedIRI="obo:AISM_0004308"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0000053"/>
@@ -31636,6 +31812,18 @@ jgiron https://orcid.org/0000-0002-0851-6883</Literal>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="obo:AISM_0004317"/>
+        <Class abbreviatedIRI="obo:PATO_0001591"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:BSPO_0000377"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:BSPO_0000113"/>
@@ -31650,12 +31838,28 @@ jgiron https://orcid.org/0000-0002-0851-6883</Literal>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:PATO_0000039"/>
+        <Class abbreviatedIRI="obo:PATO_0001241"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:PATO_0000365"/>
+        <Class abbreviatedIRI="obo:PATO_0000039"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:PATO_0001571"/>
         <Class abbreviatedIRI="obo:PATO_0000586"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:PATO_0001573"/>
+        <Class abbreviatedIRI="obo:PATO_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:PATO_0001847"/>
         <Class abbreviatedIRI="obo:PATO_0000141"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:PATO_0001901"/>
+        <Class abbreviatedIRI="obo:PATO_0000039"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:UBERON_0000046"/>
@@ -31748,6 +31952,46 @@ jgiron https://orcid.org/0000-0002-0851-6883</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:AISM_0000000</AbbreviatedIRI>
         <Literal xml:lang="en">cuticular internal depression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:AISM_0000001</AbbreviatedIRI>
+        <Literal xml:lang="en">Resilin is an elastomeric protein found in many insects and other arthropods. It provides soft rubber-elasticity to mechanically active organs and tissue.
+https://en.wikipedia.org/wiki/Resilin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
+        <AbbreviatedIRI>obo:AISM_0000001</AbbreviatedIRI>
+        <Literal xml:lang="en">This is a generalized term to refer to this protein as the only option available now is pro-resilin (fruit fly) [http://purl.obolibrary.org/obo/PR_Q9V7U0]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:AISM_0000001</AbbreviatedIRI>
+        <Literal xml:lang="en">resilin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -31896,7 +32140,7 @@ https://doi.org/10.1515/9783110264043
         </Annotation>
         <AnnotationProperty abbreviatedIRI="oboI:hasExactSynonym"/>
         <AbbreviatedIRI>obo:AISM_0000004</AbbreviatedIRI>
-        <Literal>membrane</Literal>
+        <Literal xml:lang="en">membrane</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -31996,6 +32240,58 @@ https://doi.org/10.1515/9783110264043
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:AISM_0000008</AbbreviatedIRI>
         <Literal xml:lang="en">cuticular protrusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:AISM_0000009</AbbreviatedIRI>
+        <Literal xml:lang="en">The cuticular depression that is adjacent to a cuticular condyle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:AISM_0000009</AbbreviatedIRI>
+        <Literal xml:lang="en">cuticular fossa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:AISM_0000010</AbbreviatedIRI>
+        <Literal xml:lang="en">The cuticular protrusion that is part of an insect sclerite and adjacent to an articular surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:AISM_0000010</AbbreviatedIRI>
+        <Literal xml:lang="en">cuticular condyle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -32127,7 +32423,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000016</AbbreviatedIRI>
-        <Literal>The articulation between the scapus and the cranium.</Literal>
+        <Literal xml:lang="en">The articulation between the scapus and the cranium.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -32483,7 +32779,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000029</AbbreviatedIRI>
-        <Literal>The evagination of the cuticle that is musculated (connected to the body via muscles).</Literal>
+        <Literal xml:lang="en">The evagination of the cuticle that is musculated (connected to the body via muscles).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -32906,7 +33202,7 @@ https://doi.org/10.1515/9783110264043
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000041</AbbreviatedIRI>
-        <Literal>The seta that is flat.</Literal>
+        <Literal xml:lang="en">The seta that is flat.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -34896,7 +35192,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000108</AbbreviatedIRI>
-        <Literal>The region of cuticle that is connected to some muscles of the fore and hind legs and is posterior to the neck membrane and aterior to the first abdominal spiracle.</Literal>
+        <Literal xml:lang="en">The region of cuticle that is connected to some muscles of the fore and hind legs and is posterior to the neck membrane and aterior to the first abdominal spiracle.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -34909,7 +35205,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
         <AbbreviatedIRI>obo:AISM_0000108</AbbreviatedIRI>
-        <Literal>The hind leg muscles sometimes attach to the second abdominal sternite. The abdominal sopiracles are different in their structure from tghe thoracic spiracles as they are opened and closed by two articulating sclerites that are moved by two sets of muscles whereas the thoracic spiracles are closed by only one occlusor muscle and opened by the flexibility of the distal tracheal region. The border between the thorax and the abdomen is sometimes marked by the anterior first abdmonial tergal conjunctiva. In Hymenoptera, the border between the abdomen and the thorax cannot be defined as the anterior first abdmonial tergal conjunctiva is absent, the sclerite that receives muscles from the metacoxa also contains the first abdominal spiracle.</Literal>
+        <Literal xml:lang="en">The hind leg muscles sometimes attach to the second abdominal sternite. The abdominal sopiracles are different in their structure from tghe thoracic spiracles as they are opened and closed by two articulating sclerites that are moved by two sets of muscles whereas the thoracic spiracles are closed by only one occlusor muscle and opened by the flexibility of the distal tracheal region. The border between the thorax and the abdomen is sometimes marked by the anterior first abdmonial tergal conjunctiva. In Hymenoptera, the border between the abdomen and the thorax cannot be defined as the anterior first abdmonial tergal conjunctiva is absent, the sclerite that receives muscles from the metacoxa also contains the first abdominal spiracle.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -35486,7 +35782,7 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000127</AbbreviatedIRI>
-        <Literal>The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer.</Literal>
+        <Literal xml:lang="en">The cuticular evagination that corresponds to the evagination on the membrane of a single cell and not to the evagination of a cell layer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -35725,7 +36021,7 @@ jgiron https://orcid.org/0000-0002-0851-6883</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000136</AbbreviatedIRI>
-        <Literal>The cuticular ivagination that is branched into umerous branches.</Literal>
+        <Literal xml:lang="en">The cuticular ivagination that ramifies into umerous branches.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -35910,7 +36206,7 @@ https://doi.org/10.1515/9783110264043
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000144</AbbreviatedIRI>
-        <Literal>The apophysis that is located ventromedially on the thorax and is connected to the coxa via muscles.</Literal>
+        <Literal xml:lang="en">The apophysis that is located ventromedially on the thorax and is connected to the coxa via muscles.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -36271,7 +36567,7 @@ imiko https://orcid.org/0000-0003-2938-9075</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000158</AbbreviatedIRI>
-        <Literal>The invagination on a sclerite that is elongated.</Literal>
+        <Literal xml:lang="en">The invagination on a sclerite that is elongated.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -36350,7 +36646,7 @@ https://doi.org/10.1515/9783110264043
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000161</AbbreviatedIRI>
-        <Literal>The ridge that is in the sagittal line of the ventral part thorax.</Literal>
+        <Literal xml:lang="en">The ridge that is in the sagittal line of the ventro-medial region of the thorax.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -36372,7 +36668,7 @@ https://doi.org/10.1515/9783110264043
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000162</AbbreviatedIRI>
-        <Literal>The cuticular depression (concavity on cuticle surface) that corresponds with a cuticular ridge (an elongate cuticular invagination).</Literal>
+        <Literal xml:lang="en">The cuticular depression (concavity on cuticle surface) that corresponds with a cuticular ridge (an elongate cuticular invagination).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -36592,7 +36888,7 @@ This annotation property is on the label of a class in owl.</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000173</AbbreviatedIRI>
-        <Literal>The conjunctiva that encircles the coxa and connects them to the ventral and lateral thoracic regions.</Literal>
+        <Literal xml:lang="en">The conjunctiva that encircles the coxa and connects it to the ventral and lateral thoracic regions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -36605,7 +36901,7 @@ This annotation property is on the label of a class in owl.</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
         <AbbreviatedIRI>obo:AISM_0000173</AbbreviatedIRI>
-        <Literal>These conjunctivae can be used as stable reference points in insects that poseess legs, and can be used to define sclerites on the lateral side of the thorax.</Literal>
+        <Literal xml:lang="en">These conjunctivae can be used as stable reference points in insects that poseess legs, and can be used to define sclerites on the lateral side of the thorax.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -37004,7 +37300,7 @@ https://doi.org/10.1515/9783110264043
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000193</AbbreviatedIRI>
-        <Literal>The cuticular depression that corresponds to an apophysis.</Literal>
+        <Literal xml:lang="en">The cuticular depression that corresponds to an apophysis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37026,7 +37322,7 @@ https://doi.org/10.1515/9783110264043
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000194</AbbreviatedIRI>
-        <Literal>The tentorial pit that correspods to the anterior (dorsal in prognathous head) end of the tentorium.</Literal>
+        <Literal xml:lang="en">The tentorial pit that correspods to the anterior (dorsal in prognathous head) end of the tentorium.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37052,7 +37348,7 @@ https://doi.org/10.1515/9783110264043
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000195</AbbreviatedIRI>
-        <Literal>The tentorial pit that correspods to the posterior (ventral in prognathous head) end of the tentorium.</Literal>
+        <Literal xml:lang="en">The tentorial pit that correspods to the posterior (ventral in prognathous head) end of the tentorium.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37118,7 +37414,7 @@ https://doi.org/10.1515/9783110264043
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000198</AbbreviatedIRI>
-        <Literal xml:lang="en">The arthropod foramen of the head capsule that contains the antennifer and surrounds the scapus via the antenniferal-scapal conjunctiva.</Literal>
+        <Literal xml:lang="en">The arthropod foramen of the head capsule with the antennifer and surrounds the scapus via the antenniferal-scapal conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboI:hasExactSynonym"/>
@@ -37269,7 +37565,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000302</AbbreviatedIRI>
-        <Literal>The protarsomere distal to the protibia and encircled by the protibio-protarsal conjunctiva.</Literal>
+        <Literal xml:lang="en">The protarsomere distal to the protibia and encircled by the protibio-protarsal conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37295,7 +37591,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000303</AbbreviatedIRI>
-        <Literal>The protarsomere that is distal to the protarsomere I and is encircled by the protarsomere I-protarsomere II conjunctiva.</Literal>
+        <Literal xml:lang="en">The protarsomere that is distal to the protarsomere I and is encircled by the protarsomere I-protarsomere II conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37321,7 +37617,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000304</AbbreviatedIRI>
-        <Literal>The protarsomere that is distal to the protarsomere II and is encircled by the protarsomere II-protarsomere III conjunctiva.</Literal>
+        <Literal xml:lang="en">The protarsomere that is distal to the protarsomere II and is encircled by the protarsomere II-protarsomere III conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37347,7 +37643,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000305</AbbreviatedIRI>
-        <Literal>The protarsomere that is distal to the protarsomere III and is encircled by the protarsomere III-protarsomere IV conjunctiva.</Literal>
+        <Literal xml:lang="en">The protarsomere that is distal to the protarsomere III and is encircled by the protarsomere III-protarsomere IV conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37373,7 +37669,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000306</AbbreviatedIRI>
-        <Literal>The protarsomere that is distal to the protarsomere IV and is encircled by the protarsomere IV-protarsomere V conjunctiva.</Literal>
+        <Literal xml:lang="en">The protarsomere that is distal to the protarsomere IV and is encircled by the protarsomere IV-protarsomere V conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37399,7 +37695,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000307</AbbreviatedIRI>
-        <Literal>The tarsomere that is part of the mesotarsus.</Literal>
+        <Literal xml:lang="en">The tarsomere that is part of the mesotarsus.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37425,7 +37721,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000308</AbbreviatedIRI>
-        <Literal>The mesotarsomere that is distal to the mesotibia and is encircled by the mesotibio-mesotarsal conjunctiva.</Literal>
+        <Literal xml:lang="en">The mesotarsomere that is distal to the mesotibia and is encircled by the mesotibio-mesotarsal conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37451,7 +37747,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000309</AbbreviatedIRI>
-        <Literal>The mesotarsomere that is distal to the mesotarsomere I and is encircled by the mesotarsomere I-mesotarsomere II conjunctiva.</Literal>
+        <Literal xml:lang="en">The mesotarsomere that is distal to the mesotarsomere I and is encircled by the mesotarsomere I-mesotarsomere II conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37477,7 +37773,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000310</AbbreviatedIRI>
-        <Literal>The mesotarsomere that is distal to the mesotarsomere II and is encircled by the mesotarsomere II-mesotarsomere III conjunctiva.</Literal>
+        <Literal xml:lang="en">The mesotarsomere that is distal to the mesotarsomere II and is encircled by the mesotarsomere II-mesotarsomere III conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37503,7 +37799,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000311</AbbreviatedIRI>
-        <Literal>The mesotarsomere that is distal to the mesotarsomere III and is encircled by the mesotarsomere III-mesotarsomere IV conjunctiva.</Literal>
+        <Literal xml:lang="en">The mesotarsomere that is distal to the mesotarsomere III and is encircled by the mesotarsomere III-mesotarsomere IV conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37529,7 +37825,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000312</AbbreviatedIRI>
-        <Literal>The mesotarsomere that is distal to the mesotarsomere IV and is encircled by the mesotarsomere IV-mesotarsomere V conjunctiva.</Literal>
+        <Literal xml:lang="en">The mesotarsomere that is distal to the mesotarsomere IV and is encircled by the mesotarsomere IV-mesotarsomere V conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37555,7 +37851,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000313</AbbreviatedIRI>
-        <Literal>The tarsomere that is part of the metatarsus.</Literal>
+        <Literal xml:lang="en">The tarsomere that is part of the metatarsus.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37581,7 +37877,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000314</AbbreviatedIRI>
-        <Literal>The metatarsomere that is distal to the metatibia and is encircled by the metatibio-metatarsal conjunctiva.</Literal>
+        <Literal xml:lang="en">The metatarsomere that is distal to the metatibia and is encircled by the metatibio-metatarsal conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37607,7 +37903,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000315</AbbreviatedIRI>
-        <Literal>The metatarsomere that is distal to the metatarsomere I and is encircled by the metatarsomere I-metatarsomere II conjunctiva.</Literal>
+        <Literal xml:lang="en">The metatarsomere that is distal to the metatarsomere I and is encircled by the metatarsomere I-metatarsomere II conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37633,7 +37929,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000316</AbbreviatedIRI>
-        <Literal>The metatarsomere that is distal to the metatarsomere II and is encircled by the metatarsomere II-metatarsomere III conjunctiva.</Literal>
+        <Literal xml:lang="en">The metatarsomere that is distal to the metatarsomere II and is encircled by the metatarsomere II-metatarsomere III conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37659,7 +37955,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000317</AbbreviatedIRI>
-        <Literal>The metatarsomere that is distal to the metatarsomere III and is encircled by the metatarsomere III-metatarsomere IV conjunctiva.</Literal>
+        <Literal xml:lang="en">The metatarsomere that is distal to the metatarsomere III and is encircled by the metatarsomere III-metatarsomere IV conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37685,7 +37981,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000318</AbbreviatedIRI>
-        <Literal>The metatarsomere that is distal to the metatarsomere IV and is encircled by the metatarsomere IV-metatarsomere V conjunctiva.</Literal>
+        <Literal xml:lang="en">The metatarsomere that is distal to the metatarsomere IV and is encircled by the metatarsomere IV-metatarsomere V conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37711,7 +38007,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000319</AbbreviatedIRI>
-        <Literal>The conjunctiva that is part of the protarsus, is encircled by protarsomere I and encircles protarsomere II.</Literal>
+        <Literal xml:lang="en">The conjunctiva that is part of the protarsus, is encircled by protarsomere I and encircles protarsomere II.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37737,7 +38033,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000320</AbbreviatedIRI>
-        <Literal>The conjunctiva that is part of the protarsus, is encircled by protarsomere II and encircles protarsomere III.</Literal>
+        <Literal xml:lang="en">The conjunctiva that is part of the protarsus, is encircled by protarsomere II and encircles protarsomere III.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37763,7 +38059,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000321</AbbreviatedIRI>
-        <Literal>The conjunctiva that is part of the protarsus, is encircled by protarsomere III and encircles protarsomere IV.</Literal>
+        <Literal xml:lang="en">The conjunctiva that is part of the protarsus, is encircled by protarsomere III and encircles protarsomere IV.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37789,7 +38085,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000322</AbbreviatedIRI>
-        <Literal>The conjunctiva that is part of the protarsus, is encircled by protarsomere IV and encircles protarsomere V.</Literal>
+        <Literal xml:lang="en">The conjunctiva that is part of the protarsus, is encircled by protarsomere IV and encircles protarsomere V.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37815,7 +38111,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000323</AbbreviatedIRI>
-        <Literal>The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere I and encircles mesotarsomere II.</Literal>
+        <Literal xml:lang="en">The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere I and encircles mesotarsomere II.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37841,7 +38137,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000324</AbbreviatedIRI>
-        <Literal>The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere II and encircles mesotarsomere III.</Literal>
+        <Literal xml:lang="en">The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere II and encircles mesotarsomere III.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37867,7 +38163,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000325</AbbreviatedIRI>
-        <Literal>The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere III and encircles mesotarsomere IV.</Literal>
+        <Literal xml:lang="en">The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere III and encircles mesotarsomere IV.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -37893,7 +38189,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000326</AbbreviatedIRI>
-        <Literal>The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere IV and encircles mesotarsomere V.</Literal>
+        <Literal xml:lang="en">The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere IV and encircles mesotarsomere V.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -38023,7 +38319,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000331</AbbreviatedIRI>
-        <Literal>The protarsus that is composed by protarsomeres 1-5.</Literal>
+        <Literal xml:lang="en">The protarsus that is composed by protarsomeres 1-5.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -38049,7 +38345,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000332</AbbreviatedIRI>
-        <Literal>The mesotarsus that is composed by mesotarsomeres 1-5.</Literal>
+        <Literal xml:lang="en">The mesotarsus that is composed by mesotarsomeres 1-5.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -38075,7 +38371,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000333</AbbreviatedIRI>
-        <Literal>The metatarsus that is composed by metatarsomeres 1-5.</Literal>
+        <Literal xml:lang="en">The metatarsus that is composed by metatarsomeres 1-5.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -38413,7 +38709,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000342</AbbreviatedIRI>
-        <Literal>The cuticle of the flagellomere that is distal to the flagellomere 9 and is encircled by the flagellomere 9-flagellomere 10 conjunctiva.</Literal>
+        <Literal xml:lang="en">The cuticle of the flagellomere that is distal to flagellomere 9 and is encircled by the flagellomere 9-flagellomere 10 conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -38738,7 +39034,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000354</AbbreviatedIRI>
-        <Literal>A structural quality inhering in a bearer by virtue of the bearer&apos;s being microreticulate and having meshes of isometric diameter.</Literal>
+        <Literal xml:lang="en">A structural quality inhering in a bearer by virtue of the bearer&apos;s being microreticulate and having meshes of isometric diameter.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -38764,7 +39060,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000355</AbbreviatedIRI>
-        <Literal>The insect abdomen that has parts abdominal sternites 1-7 and has not part abdominal sternite 8.</Literal>
+        <Literal xml:lang="en">The insect abdomen that has abdominal sternites 1-7 and does not have abdominal sternite 8.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -38790,7 +39086,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000356</AbbreviatedIRI>
-        <Literal>The insect abdomen that has parts abdominal sternites 1-8 and has not part abdominal sternite 9.</Literal>
+        <Literal xml:lang="en">The insect abdomen that has abdominal sternites 1-8 and does not have abdominal sternite 9.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -38816,7 +39112,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000357</AbbreviatedIRI>
-        <Literal>The antenna that has part scapus, pedicellus, and flagellomeres 1-6, and has not part flagellomere 7.</Literal>
+        <Literal xml:lang="en">The antenna that has scapus, pedicellus, and flagellomeres 1-6, and does not have flagellomere 7.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -38842,7 +39138,7 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000358</AbbreviatedIRI>
-        <Literal>The antenna that has part scapus, pedicellus, and flagellomeres 1-7, and has not part flagellomere 8.</Literal>
+        <Literal xml:lang="en">The antenna that has scapus, pedicellus, and flagellomeres 1-7, and does not have flagellomere 8.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -39339,7 +39635,7 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000372</AbbreviatedIRI>
-        <Literal>The cuticle of the paramere that is located in the left side of the body.</Literal>
+        <Literal xml:lang="en">The cuticle of the paramere that is located in the left side of the body.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -39384,7 +39680,7 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000373</AbbreviatedIRI>
-        <Literal>The cuticle of the paramere that is located in the right side of the body.</Literal>
+        <Literal xml:lang="en">The cuticle of the paramere that is located in the right side of the body.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -39429,7 +39725,7 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000375</AbbreviatedIRI>
-        <Literal>The cuticular groove that is parallel and distal to the basal carina of tergite VIII.</Literal>
+        <Literal xml:lang="en">The cuticular groove that is parallel and distal to the proximal carina of tergite VIII.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -39460,7 +39756,20 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000376</AbbreviatedIRI>
-        <Literal xml:lang="en">The distance between two cuticular punctures.</Literal>
+        <Literal xml:lang="en">The anatomical space adjacent to two cuticular punctures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
+        <AbbreviatedIRI>obo:AISM_0000376</AbbreviatedIRI>
+        <Literal xml:lang="en">Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -39592,7 +39901,7 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000379</AbbreviatedIRI>
-        <Literal>The cuticular puncture that is flattened.</Literal>
+        <Literal xml:lang="en">The cuticular puncture that is flattened.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -39787,7 +40096,7 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000384</AbbreviatedIRI>
-        <Literal>An anatomical row composed by cuticular punctures.</Literal>
+        <Literal xml:lang="en">An anatomical row composed by cuticular punctures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -39839,7 +40148,7 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000386</AbbreviatedIRI>
-        <Literal>The anatomical margin of the lateral region of the gena.</Literal>
+        <Literal xml:lang="en">The anatomical margin of the lateral region of the gena.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -39950,7 +40259,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000390</AbbreviatedIRI>
-        <Literal>The region of the cuticle part of the distal posterior region of protibia and adjacent to the protibio-protarsal articulation.</Literal>
+        <Literal xml:lang="en">The region of the cuticle part of the distal posterior region of protibia and adjacent to the protibio-protarsal articulation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -39963,7 +40272,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:AISM_0000390</AbbreviatedIRI>
-        <Literal xml:lang="en">protibial apex below protibio-protarsal articulation</Literal>
+        <Literal xml:lang="en">protibial apex adjacent to protibio-protarsal articulation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40002,7 +40311,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000392</AbbreviatedIRI>
-        <Literal>The region of the insect cuticle that has part the left and right parameres.</Literal>
+        <Literal xml:lang="en">The region of the insect cuticle that has left and right parameres.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40041,7 +40350,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000393</AbbreviatedIRI>
-        <Literal>The maxillary palpus that has part maxillary palpomeres I to IV but not maxillary palpomere V.</Literal>
+        <Literal xml:lang="en">The maxillary palpus that has maxillary palpomeres I to IV but not maxillary palpomere V.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40067,7 +40376,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000394</AbbreviatedIRI>
-        <Literal>The labial palpomere that is adjacent to the distal margin of the palpiger.</Literal>
+        <Literal xml:lang="en">The labial palpomere that is adjacent to the distal margin of the palpiger.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40093,7 +40402,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000395</AbbreviatedIRI>
-        <Literal>The labial palpomere that is adjacent to the distal margin of the labial palpomere I.</Literal>
+        <Literal xml:lang="en">The labial palpomere that is adjacent to the distal margin of the labial palpomere I.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40119,7 +40428,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000396</AbbreviatedIRI>
-        <Literal>The labial palpomere that is adjacent to the distal margin of the labial palpomere II.</Literal>
+        <Literal xml:lang="en">The labial palpomere that is adjacent to the distal margin of the labial palpomere II.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40145,7 +40454,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000397</AbbreviatedIRI>
-        <Literal>The labial palpus that has part labial palpomeres I to III.</Literal>
+        <Literal xml:lang="en">The labial palpus that has labial palpomeres I to III.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40171,7 +40480,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000398</AbbreviatedIRI>
-        <Literal>The highest value of a measurement range.</Literal>
+        <Literal xml:lang="en">The highest value of a measurement range.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40197,7 +40506,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000399</AbbreviatedIRI>
-        <Literal>The lowest value of a measurement range.</Literal>
+        <Literal xml:lang="en">The lowest value of a measurement range.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40223,7 +40532,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000400</AbbreviatedIRI>
-        <Literal>The highest value of a measurement range excluding the boundary value.</Literal>
+        <Literal xml:lang="en">The highest value of a measurement range excluding the boundary value.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40249,7 +40558,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000401</AbbreviatedIRI>
-        <Literal>The maximum value of a measurement range including the boundary value.</Literal>
+        <Literal xml:lang="en">The maximum value of a measurement range including the boundary value.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40275,7 +40584,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000402</AbbreviatedIRI>
-        <Literal>The minimum value of a measurement range excluding the boundary value.</Literal>
+        <Literal xml:lang="en">The minimum value of a measurement range excluding the boundary value.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40301,7 +40610,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000403</AbbreviatedIRI>
-        <Literal>The minimum value of a measurement range including the boundary value.</Literal>
+        <Literal xml:lang="en">The minimum value of a measurement range including the boundary value.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40353,7 +40662,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000405</AbbreviatedIRI>
-        <Literal>The anatomical margin that overlaps with the distal side and the anterior side.</Literal>
+        <Literal xml:lang="en">The anatomical margin that overlaps with the distal side and the anterior side.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40379,7 +40688,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000406</AbbreviatedIRI>
-        <Literal>The anatomical margin that overlaps with the distal side and the posterior side.</Literal>
+        <Literal xml:lang="en">The anatomical margin that overlaps with the distal side and the posterior side.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40401,11 +40710,11 @@ Figure 2d</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
-            <Literal>18-11-2023</Literal>
+            <Literal>2023-11-18</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000407</AbbreviatedIRI>
-        <Literal>The cuticular protrusion that is located on an anatomical margin.</Literal>
+        <Literal xml:lang="en">The cuticular protrusion that is located on an anatomical margin.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40414,7 +40723,7 @@ Figure 2d</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
-            <Literal>18-11-2023</Literal>
+            <Literal>2023-11-18</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:AISM_0000407</AbbreviatedIRI>
@@ -40431,7 +40740,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000408</AbbreviatedIRI>
-        <Literal>The cuticular puncture that encircles a cuticular seta.</Literal>
+        <Literal xml:lang="en">The cuticular puncture that encircles a cuticular seta.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40535,7 +40844,7 @@ Figure 2d</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000412</AbbreviatedIRI>
-        <Literal>The region of the insect cuticle that is covered by a collection of setigerous cuticular punctures.</Literal>
+        <Literal xml:lang="en">The region of the insect cuticle that is covered by a collection of setigerous cuticular punctures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -40609,7 +40918,7 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0000523</AbbreviatedIRI>
-        <Literal>Dorsal part of postabdomen</Literal>
+        <Literal xml:lang="en">Dorsal part of postabdomen.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -41508,11 +41817,9 @@ the loral arm (Neoptera)&quot;
 
  https://doi.org/10.1111/j.1365-3113.2010.00556.x
 
-&quot;Origin: Anterior and dorsal tentorial arm below musculus
-tentoriomandibularis externus dorsalis&quot;
+&quot;Origin: Anterior and dorsal tentorial arm below musculus tentoriomandibularis externus dorsalis&quot;
 
-&quot;Insertion: Upper inner end of the mandible, just below the
-posterior mandibular condyle&quot;</Literal>
+&quot;Insertion: Upper inner end of the mandible, just below the posterior mandibular condyle&quot;</Literal>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:AISM_0002024</AbbreviatedIRI>
@@ -49379,7 +49686,7 @@ https://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.p
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:AISM_0004242</AbbreviatedIRI>
-        <Literal xml:lang="en">The region of cuticle of the insect wing that contains wing veins, folds, and conjunctiva.</Literal>
+        <Literal xml:lang="en">The region of cuticle of the insect wing that has wing veins, folds, and conjunctiva.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -51899,6 +52206,36 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         <Literal xml:lang="en">insect external male genitalia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:hasDbXref"/>
+            <Literal>Oxford Languages through Google.</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:AISM_0004317</AbbreviatedIRI>
+        <Literal xml:lang="en">A quality inhering in a bearer by virtue of the bearer&apos;s surface becoming bent or curving downward or backward.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="x_1.1:contributor"/>
+            <Literal>jgiron https://orcid.org/0000-0002-0851-6883</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="oboI:creation_date"/>
+            <Literal>2024-02-14</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:AISM_0004317</AbbreviatedIRI>
+        <Literal xml:lang="en">deflexed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:BFO_0000009</AbbreviatedIRI>
         <Literal xml:lang="en">two-dimensional spatial region</Literal>
@@ -51954,6 +52291,26 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         <Literal xml:lang="en">has ontology root term</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:PATO_0000039</AbbreviatedIRI>
+        <Literal xml:lang="en">A physical quality inhering in a bearer by virtue of the bearer&apos;s orientation in space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:PATO_0000039</AbbreviatedIRI>
+        <Literal xml:lang="en">direction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:PATO_0000365</AbbreviatedIRI>
+        <Literal xml:lang="en">A directional quality inhering in a bearer by virtue of the bearer&apos;s direction from a higher to a lower point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:PATO_0000365</AbbreviatedIRI>
+        <Literal xml:lang="en">down</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:PATO_0000984</AbbreviatedIRI>
         <Literal xml:lang="en">porous</Literal>
@@ -51969,6 +52326,16 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         <Literal xml:lang="en">dilated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:PATO_0001573</AbbreviatedIRI>
+        <Literal xml:lang="en">A symmetry quality inhering in a bearer by virtue of the bearer&apos;s having equal dimensions or measurements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:PATO_0001573</AbbreviatedIRI>
+        <Literal xml:lang="en">isometrical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="oboI:hasDbXref"/>
             <Literal>WordNet:WordNet</Literal>
@@ -51981,6 +52348,16 @@ starasov https://orcid.org/0000-0001-5237-2330</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:PATO_0001847</AbbreviatedIRI>
         <Literal xml:lang="en">constricted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:PATO_0001901</AbbreviatedIRI>
+        <Literal xml:lang="en">A directional quality inhering in a bearer by virtue of the bearer&apos;s direction that is similar to the direction of an object to the north when it faces south.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:PATO_0001901</AbbreviatedIRI>
+        <Literal xml:lang="en">back</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

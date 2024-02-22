@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2024-02-01/aism-simple.owl
+data-version: aism/releases/2024-02-22/aism-simple.owl
 subsetdef: AISM:0000171 ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -20,13 +20,19 @@ property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imik
 property_value: http://purl.org/dc/elements/1.1/contributor "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Sergei Tarasov (starasov) https://orcid.org/0000-0001-5237-2330" xsd:string
-property_value: owl:versionInfo "2024-02-01" xsd:string
+property_value: owl:versionInfo "2024-02-22" xsd:string
 
 [Term]
 id: AISM:0000000
 name: cuticular internal depression
 def: "The projection of the inner surface of the cuticle." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-05-19"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect region of cuticle
+
+[Term]
+id: AISM:0000001
+name: resilin {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+def: "Resilin is an elastomeric protein found in many insects and other arthropods. It provides soft rubber-elasticity to mechanically active organs and tissue.\nhttps://en.wikipedia.org/wiki/Resilin" [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+property_value: curator_notes "This is a generalized term to refer to this protein as the only option available now is pro-resilin (fruit fly) [http://purl.obolibrary.org/obo/PR_Q9V7U0]" xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
 
 [Term]
 id: AISM:0000002
@@ -75,6 +81,7 @@ id: AISM:0000007
 name: elastic cuticle {creation_date="2020-10-27"}
 def: "The region of cuticle with higher content of resilin." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect region of cuticle
+relationship: composed_primarily_of AISM:0000001 {IAO:0000232="Modified 2024-02-14: updated to 'composed primarily of' and linked to resilin\njgiron https://orcid.org/0000-0002-0851-6883", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! resilin
 
 [Term]
 id: AISM:0000008
@@ -82,6 +89,21 @@ name: cuticular protrusion
 def: "The region of the cuticle that corresponds to a convex surface." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect region of cuticle
 property_value: curator_notes "The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.\"" xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+
+[Term]
+id: AISM:0000009
+name: cuticular fossa {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+def: "The cuticular depression that is adjacent to a cuticular condyle." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+is_a: AISM:0000005 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"} ! cuticular depression
+relationship: adjacent_to AISM:0000010 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"} ! cuticular condyle
+
+[Term]
+id: AISM:0000010
+name: cuticular condyle {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+def: "The cuticular protrusion that is part of an insect sclerite and adjacent to an articular surface." [] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+is_a: AISM:0000008 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"} ! cuticular protrusion
+relationship: adjacent_to AISM:0000167 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"} ! articular surface
+relationship: part_of AISM:0000003 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"} ! insect sclerite
 
 [Term]
 id: AISM:0000013
@@ -1132,7 +1154,7 @@ is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="imiko https://o
 [Term]
 id: AISM:0000136
 name: branching cuticular invagination
-def: "The cuticular ivagination that is branched into umerous branches." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+def: "The cuticular ivagination that ramifies into umerous branches." [] {creation_date="2020-11-11", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000006 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular invagination
 property_value: curator_notes "Branching cuticular invaginations porvide important models for branchig morphogenesis." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-11"}
 
@@ -1307,7 +1329,7 @@ relationship: has_part AISM:0000004 {http://purl.org/dc/elements/1.1/contributor
 [Term]
 id: AISM:0000161
 name: discrimenal lamella
-def: "The ridge that is in the sagittal line of the ventral part thorax." [] {creation_date="2020-11-12", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
+def: "The ridge that is in the sagittal line of the ventro-medial region of the thorax." [] {creation_date="2020-11-12", http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"}
 is_a: AISM:0000158 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cuticular ridge
 
 [Term]
@@ -1384,7 +1406,7 @@ relationship: continuous_with AISM:0000074 {http://purl.org/dc/elements/1.1/cont
 [Term]
 id: AISM:0000173
 name: basal coxal conjunctiva
-def: "The conjunctiva that encircles the coxa and connects them to the ventral and lateral thoracic regions." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-17"}
+def: "The conjunctiva that encircles the coxa and connects it to the ventral and lateral thoracic regions." [] {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-17"}
 is_a: AISM:0000102 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! ring conjunctiva
 relationship: part_of AISM:0000108 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect thorax
 property_value: curator_notes "These conjunctivae can be used as stable reference points in insects that poseess legs, and can be used to define sclerites on the lateral side of the thorax." xsd:string {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-17"}
@@ -1505,7 +1527,7 @@ relationship: AISM:0000079 AISM:0000174 {http://purl.org/dc/elements/1.1/contrib
 [Term]
 id: AISM:0000198
 name: antennal foramen
-def: "The arthropod foramen of the head capsule that contains the antennifer and surrounds the scapus via the antenniferal-scapal conjunctiva." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The arthropod foramen of the head capsule with the antennifer and surrounds the scapus via the antenniferal-scapal conjunctiva." [] {creation_date="2021-04-21", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 synonym: "antennal socket" EXACT []
 synonym: "torulus" EXACT [] {AISM:0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"antennal socket = torulus = basal socket of antenna\""}
 is_a: AISM:0000197 {http://purl.org/dc/elements/1.1/contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! arthropod foramen
@@ -1889,7 +1911,7 @@ relationship: distal_to AISM:0000340 {http://purl.org/dc/elements/1.1/contributo
 [Term]
 id: AISM:0000342
 name: flagellomere 10 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The cuticle of the flagellomere that is distal to the flagellomere 9 and is encircled by the flagellomere 9-flagellomere 10 conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The cuticle of the flagellomere that is distal to flagellomere 9 and is encircled by the flagellomere 9-flagellomere 10 conjunctiva." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 synonym: "antennomere 12" EXACT [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000116 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! flagellomere
 relationship: AISM:0000079 AISM:0000351 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by flagellomere 9-flagellomere 10 conjunctiva
@@ -1980,6 +2002,8 @@ relationship: part_of AISM:0000032 {http://purl.org/dc/elements/1.1/contributor=
 id: AISM:0000352
 name: microreticulate {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 def: "A structural quality inhering in a bearer by virtue of the bearer's having its surface covered with microscopic cuticular grooves forming a network." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+is_a: AISM:0000353 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"} ! reticulate
+relationship: has_part AISM:0000157 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"} ! cuticular groove
 
 [Term]
 id: AISM:0000353
@@ -1990,12 +2014,12 @@ def: "A structural quality inhering in a bearer by virtue of the bearer's presen
 id: AISM:0000354
 name: isodiametrically microreticulate {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 def: "A structural quality inhering in a bearer by virtue of the bearer's being microreticulate and having meshes of isometric diameter." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-is_a: AISM:0000352 ! microreticulate
+is_a: AISM:0000352 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"} ! microreticulate
 
 [Term]
 id: AISM:0000355
 name: abdomen with 7 sternites {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The insect abdomen that has parts abdominal sternites 1-7 and has not part abdominal sternite 8." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The insect abdomen that has abdominal sternites 1-7 and does not have abdominal sternite 8." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! insect abdomen
 relationship: has_part AISM:0004100 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! abdominal sternite I
 relationship: has_part AISM:0004104 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! abdominal sternite II
@@ -2008,7 +2032,7 @@ relationship: has_part AISM:0004109 {http://purl.org/dc/elements/1.1/contributor
 [Term]
 id: AISM:0000356
 name: abdomen with 8 sternites {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The insect abdomen that has parts abdominal sternites 1-8 and has not part abdominal sternite 9." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The insect abdomen that has abdominal sternites 1-8 and does not have abdominal sternite 9." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000109 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! insect abdomen
 relationship: has_part AISM:0004100 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! abdominal sternite I
 relationship: has_part AISM:0004104 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! abdominal sternite II
@@ -2022,7 +2046,7 @@ relationship: has_part AISM:0004110 {http://purl.org/dc/elements/1.1/contributor
 [Term]
 id: AISM:0000357
 name: antenna with 8 antennomeres {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The antenna that has part scapus, pedicellus, and flagellomeres 1-6, and has not part flagellomere 7." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The antenna that has scapus, pedicellus, and flagellomeres 1-6, and does not have flagellomere 7." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000032 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! antenna
 relationship: has_part AISM:0000334 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! flagellomere 2
 relationship: has_part AISM:0000335 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! flagellomere 3
@@ -2033,7 +2057,7 @@ relationship: has_part AISM:0000338 {http://purl.org/dc/elements/1.1/contributor
 [Term]
 id: AISM:0000358
 name: antenna with 9 antennomeres {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The antenna that has part scapus, pedicellus, and flagellomeres 1-7, and has not part flagellomere 8." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The antenna that has scapus, pedicellus, and flagellomeres 1-7, and does not have flagellomere 8." [] {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000032 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! antenna
 relationship: has_part AISM:0000334 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! flagellomere 2
 relationship: has_part AISM:0000335 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! flagellomere 3
@@ -2144,7 +2168,7 @@ property_value: IAO:0000589 "cuticle of right paramere" xsd:string {creation_dat
 [Term]
 id: AISM:0000375
 name: anterior groove of tergite VIII {creation_date="2023-06-04", IAO:0000232="Modified and moved from COLAO to AISM: 2023-05-08\ngmontanaro https://orcid.org/0000-0003-0836-1364", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The cuticular groove that is parallel and distal to the basal carina of tergite VIII." [] {creation_date="2023-06-04", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The cuticular groove that is parallel and distal to the proximal carina of tergite VIII." [] {creation_date="2023-06-04", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000157 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-06-04"} ! cuticular groove
 relationship: distal_to AISM:0000377 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-06-04"} ! proximal carina of tergite VIII
 relationship: parallel_to AISM:0000377 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-06-04"} ! proximal carina of tergite VIII
@@ -2152,7 +2176,8 @@ relationship: parallel_to AISM:0000377 {http://purl.org/dc/elements/1.1/contribu
 [Term]
 id: AISM:0000376
 name: interpunctural distance {creation_date="2023-06-04", IAO:0000232="Moved from COLAO to AISM: 2023-05-08\ngmontanaro https://orcid.org/0000-0003-0836-1364", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The distance between two cuticular punctures." [] {creation_date="2023-06-04", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical space adjacent to two cuticular punctures." [] {creation_date="2023-06-04", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+property_value: curator_notes "Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188" xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
 
 [Term]
 id: AISM:0000377
@@ -2235,7 +2260,7 @@ relationship: part_of AISM:0000373 {http://purl.org/dc/elements/1.1/contributor=
 
 [Term]
 id: AISM:0000390
-name: protibial apex below protibio-protarsal articulation {creation_date="2023-05-10", http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+name: protibial apex adjacent to protibio-protarsal articulation {creation_date="2023-05-10", http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 def: "The region of the cuticle part of the distal posterior region of protibia and adjacent to the protibio-protarsal articulation." [] {creation_date="2023-05-10", http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000174 {http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-10"} ! insect region of cuticle
 relationship: adjacent_to AISM:0000391 {http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-10"} ! insect protibio-protarsal articulation
@@ -2249,7 +2274,7 @@ is_a: AISM:0000002 {http://purl.org/dc/terms/contributor="gmontanaro https://orc
 [Term]
 id: AISM:0000392
 name: parameres {creation_date="2023-05-30", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The region of the insect cuticle that has part the left and right parameres." [] {creation_date="2023-05-30", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The region of the insect cuticle that has left and right parameres." [] {creation_date="2023-05-30", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000174 {http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-30"} ! insect region of cuticle
 relationship: has_part AISM:0000372 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-30"} ! left paramere
 relationship: has_part AISM:0000373 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-30"} ! right paramere
@@ -2258,7 +2283,7 @@ property_value: curator_notes "This term has been created to indicate simultaneo
 [Term]
 id: AISM:0000393
 name: maxillary palpus with 4 palpomeres {creation_date="2023-05-30", http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The maxillary palpus that has part maxillary palpomeres I to IV but not maxillary palpomere V." [] {creation_date="2023-05-30", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The maxillary palpus that has maxillary palpomeres I to IV but not maxillary palpomere V." [] {creation_date="2023-05-30", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000051 {http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-30"} ! maxillary palpus
 relationship: has_part AISM:0002037 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-30"} ! maxillary palpomere I
 relationship: has_part AISM:0002038 {http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-30"} ! maxillary palpomere II
@@ -2287,7 +2312,7 @@ is_a: AISM:0000060 {http://purl.org/dc/terms/contributor="gmontanaro https://orc
 [Term]
 id: AISM:0000397
 name: labial palpus with 3 palpomeres {creation_date="2023-05-30", http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The labial palpus that has part labial palpomeres I to III." [] {creation_date="2023-05-30", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The labial palpus that has labial palpomeres I to III." [] {creation_date="2023-05-30", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000024 {http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-30"} ! labial palpus
 relationship: has_part AISM:0000394 {http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-30"} ! labial palpomere I
 relationship: has_part AISM:0000395 {http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-30"} ! labial palpomere II
@@ -2305,8 +2330,8 @@ def: "The anatomical margin that overlaps with the distal side and the posterior
 
 [Term]
 id: AISM:0000407
-name: cuticular tooth {creation_date="18-11-2023", http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The cuticular protrusion that is located on an anatomical margin." [] {creation_date="18-11-2023", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+name: cuticular tooth {creation_date="2023-11-18", http://purl.org/dc/terms/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The cuticular protrusion that is located on an anatomical margin." [] {creation_date="2023-11-18", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000008 ! cuticular protrusion
 
 [Term]
@@ -2348,7 +2373,7 @@ relationship: part_of AISM:0000003 {http://purl.org/dc/elements/1.1/contributor=
 [Term]
 id: AISM:0000523
 name: dorsal postabdomen
-def: "Dorsal part of postabdomen" [] {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330", creation_date="2021-05-31"}
+def: "Dorsal part of postabdomen." [] {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330", creation_date="2021-05-31"}
 is_a: AISM:0004057 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! abdominal tergite
 relationship: part_of AISM:0004056 {http://purl.org/dc/elements/1.1/contributor="starasov https://orcid.org/0000-0001-5237-2330"} ! postabdomen
 
@@ -2552,7 +2577,7 @@ relationship: attaches_to AISM:0004038 {http://purl.org/dc/elements/1.1/contribu
 
 [Term]
 id: AISM:0002024
-name: superomedial tentorio-mandibular muscle {AISM:0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior and dorsal tentorial arm below musculus\ntentoriomandibularis externus dorsalis\"\n\n\"Insertion: Upper inner end of the mandible, just below the\nposterior mandibular condyle\""}
+name: superomedial tentorio-mandibular muscle {AISM:0000171="Wipfler B, Machida R, Mueller B, Beutel RG (2011). On the head morphology of Grylloblattodea (Insecta) and the systematic position of the order, with a new nomenclature for the head muscles of Dicondylia. Systematic Entomology, 36(2), 241-266.\n\n https://doi.org/10.1111/j.1365-3113.2010.00556.x\n\n\"Origin: Anterior and dorsal tentorial arm below musculus tentoriomandibularis externus dorsalis\"\n\n\"Insertion: Upper inner end of the mandible, just below the posterior mandibular condyle\""}
 def: "The cranio-mandibular muscle that is attached to the anterior tentorial arm and the insect mandible." [] {creation_date="2021-04-03", http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"}
 is_a: AISM:0000082 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! cranio-mandibular muscle
 relationship: attaches_to AISM:0004038 {http://purl.org/dc/elements/1.1/contributor="lagonzalezmo https://orcid.org/0000-0002-9136-9932"} ! anterior tentorial arm
@@ -5010,7 +5035,7 @@ relationship: posterior_to AISM:0004052 {http://purl.org/dc/elements/1.1/contrib
 [Term]
 id: AISM:0004242
 name: insect wing region {AISM:0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"the principal areas of the wings differentiated in the wing-flexing insects (Neoptera), and often separated by distinct lines of folding, including the wing base, remigium, clavus, and jugum.\""}
-def: "The region of cuticle of the insect wing that contains wing veins, folds, and conjunctiva." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The region of cuticle of the insect wing that has wing veins, folds, and conjunctiva." [] {creation_date="2021-09-07", http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000174 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect region of cuticle
 relationship: has_part AISM:0004243 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing vein
 relationship: has_part AISM:0004244 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect wing fold
@@ -5595,6 +5620,11 @@ relationship: has_part AISM:0004065 {http://purl.org/dc/elements/1.1/contributor
 relationship: has_part AISM:0004200 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-01-12"} ! paramero-aedeagal conjunctiva
 relationship: has_part AISM:0004201 {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-01-12"} ! phallobasal-parameral conjunctiva
 
+[Term]
+id: AISM:0004317
+name: deflexed {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+def: "A quality inhering in a bearer by virtue of the bearer's surface becoming bent or curving downward or backward." [Oxford Languages through Google.] {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+
 [Typedef]
 id: 2D_boundary_of
 name: 2D boundary of
@@ -5748,6 +5778,19 @@ is_functional: true
 inverse_of: has_characteristic ! has characteristic
 
 [Typedef]
+id: composed_primarily_of
+name: composed primarily of
+namespace: uberon
+def: "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y." []
+subset: ro-eco
+xref: RO:0002473
+property_value: IAO:0000112 "'otolith organ' SubClassOf 'composed primarily of' some 'calcium carbonate'" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
+property_value: RO:0001900 RO:0001901
+is_a: has_part ! has part
+
+[Typedef]
 id: continuous_with
 name: continuous with
 namespace: uberon
@@ -5890,6 +5933,7 @@ property_value: IAO:0000116 "A bearer can have many dependents, and its dependen
 property_value: IAO:0000118 "bearer_of" xsd:string
 property_value: IAO:0000118 "is bearer of" xsd:string
 property_value: RO:0001900 RO:0001901
+property_value: seeAlso "https://github.com/oborel/obo-relations/pull/284" xsd:string
 is_inverse_functional: true
 
 [Typedef]

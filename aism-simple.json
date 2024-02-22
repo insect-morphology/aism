@@ -37,9 +37,9 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-02-01"
+        "val" : "2024-02-22"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-02-01/aism-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-02-22/aism-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000000",
@@ -49,6 +49,19 @@
         "definition" : {
           "val" : "The projection of the inner surface of the cuticle."
         }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000001",
+      "lbl" : "resilin",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Resilin is an elastomeric protein found in many insects and other arthropods. It provides soft rubber-elasticity to mechanically active organs and tissue.\nhttps://en.wikipedia.org/wiki/Resilin"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "This is a generalized term to refer to this protein as the only option available now is pro-resilin (fruit fly) [http://purl.obolibrary.org/obo/PR_Q9V7U0]"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000002",
@@ -146,6 +159,24 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
           "val" : "The surface of the cuticle in insects is the entire surface of an organism, and it is composed of flat, concave and convex regions. Convexities sometimes correspons with evaginations of the cuticle and the underlaying sinlge layer epidermis and sometimes correspond to an increased cuticular thickness.\""
         } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000009",
+      "lbl" : "cuticular fossa",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The cuticular depression that is adjacent to a cuticular condyle."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000010",
+      "lbl" : "cuticular condyle",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The cuticular protrusion that is part of an insect sclerite and adjacent to an articular surface."
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000011",
@@ -1480,7 +1511,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular ivagination that is branched into umerous branches."
+          "val" : "The cuticular ivagination that ramifies into umerous branches."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
@@ -1719,7 +1750,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The ridge that is in the sagittal line of the ventral part thorax."
+          "val" : "The ridge that is in the sagittal line of the ventro-medial region of the thorax."
         }
       }
     }, {
@@ -1822,7 +1853,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The conjunctiva that encircles the coxa and connects them to the ventral and lateral thoracic regions."
+          "val" : "The conjunctiva that encircles the coxa and connects it to the ventral and lateral thoracic regions."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
@@ -2003,7 +2034,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The arthropod foramen of the head capsule that contains the antennifer and surrounds the scapus via the antenniferal-scapal conjunctiva."
+          "val" : "The arthropod foramen of the head capsule with the antennifer and surrounds the scapus via the antenniferal-scapal conjunctiva."
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -2452,7 +2483,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticle of the flagellomere that is distal to the flagellomere 9 and is encircled by the flagellomere 9-flagellomere 10 conjunctiva."
+          "val" : "The cuticle of the flagellomere that is distal to flagellomere 9 and is encircled by the flagellomere 9-flagellomere 10 conjunctiva."
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -2573,7 +2604,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The insect abdomen that has parts abdominal sternites 1-7 and has not part abdominal sternite 8."
+          "val" : "The insect abdomen that has abdominal sternites 1-7 and does not have abdominal sternite 8."
         }
       }
     }, {
@@ -2582,7 +2613,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The insect abdomen that has parts abdominal sternites 1-8 and has not part abdominal sternite 9."
+          "val" : "The insect abdomen that has abdominal sternites 1-8 and does not have abdominal sternite 9."
         }
       }
     }, {
@@ -2591,7 +2622,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The antenna that has part scapus, pedicellus, and flagellomeres 1-6, and has not part flagellomere 7."
+          "val" : "The antenna that has scapus, pedicellus, and flagellomeres 1-6, and does not have flagellomere 7."
         }
       }
     }, {
@@ -2600,7 +2631,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The antenna that has part scapus, pedicellus, and flagellomeres 1-7, and has not part flagellomere 8."
+          "val" : "The antenna that has scapus, pedicellus, and flagellomeres 1-7, and does not have flagellomere 8."
         }
       }
     }, {
@@ -2752,7 +2783,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular groove that is parallel and distal to the basal carina of tergite VIII."
+          "val" : "The cuticular groove that is parallel and distal to the proximal carina of tergite VIII."
         }
       }
     }, {
@@ -2761,8 +2792,12 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The distance between two cuticular punctures."
-        }
+          "val" : "The anatomical space adjacent to two cuticular punctures."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000377",
@@ -2899,7 +2934,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000390",
-      "lbl" : "protibial apex below protibio-protarsal articulation",
+      "lbl" : "protibial apex adjacent to protibio-protarsal articulation",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -2921,7 +2956,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The region of the insect cuticle that has part the left and right parameres."
+          "val" : "The region of the insect cuticle that has left and right parameres."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
@@ -2934,7 +2969,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The maxillary palpus that has part maxillary palpomeres I to IV but not maxillary palpomere V."
+          "val" : "The maxillary palpus that has maxillary palpomeres I to IV but not maxillary palpomere V."
         }
       }
     }, {
@@ -2970,7 +3005,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The labial palpus that has part labial palpomeres I to III."
+          "val" : "The labial palpus that has labial palpomeres I to III."
         }
       }
     }, {
@@ -3132,7 +3167,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Dorsal part of postabdomen"
+          "val" : "Dorsal part of postabdomen."
         }
       }
     }, {
@@ -6357,7 +6392,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The region of cuticle of the insect wing that contains wing veins, folds, and conjunctiva."
+          "val" : "The region of cuticle of the insect wing that has wing veins, folds, and conjunctiva."
         }
       }
     }, {
@@ -7162,6 +7197,16 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0004317",
+      "lbl" : "deflexed",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A quality inhering in a bearer by virtue of the bearer's surface becoming bent or curving downward or backward.",
+          "xrefs" : [ "Oxford Languages through Google." ]
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "lbl" : "part_of",
       "type" : "PROPERTY",
@@ -7778,6 +7823,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
           "val" : "has_characteristic"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://github.com/oborel/obo-relations/pull/284"
         } ]
       }
     }, {
@@ -8242,6 +8290,38 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002473",
+      "lbl" : "composed primarily of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "xrefs" : [ {
+          "val" : "RO:0002473"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "'otolith organ' SubClassOf 'composed primarily of' some 'calcium carbonate'"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/22293552"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "composed_primarily_of"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0015007",
       "lbl" : "increased in magnitude relative to",
       "type" : "PROPERTY",
@@ -8677,6 +8757,19 @@
         } ]
       }
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000007",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002473",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000001",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Modified 2024-02-14: updated to 'composed primarily of' and linked to resilin\njgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "imiko https://orcid.org/0000-0003-2938-9075"
+        } ]
+      }
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000008",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000174",
@@ -8684,6 +8777,71 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "imiko https://orcid.org/0000-0003-2938-9075"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000005",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-02-14"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000009",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002220",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000010",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-02-14"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000008",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-02-14"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000010",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000003",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-02-14"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000010",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002220",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000167",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-02-14"
         } ]
       }
     }, {
@@ -16159,9 +16317,44 @@
         } ]
       }
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000352",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000353",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-02-14"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000352",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000157",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-02-14"
+        } ]
+      }
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000354",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000352"
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000352",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-02-14"
+        } ]
+      }
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000355",
       "pred" : "is_a",
@@ -28791,6 +28984,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002372",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002371"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002473",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/uberon/core#anteriorly_connected_to",
       "pred" : "subPropertyOf",
