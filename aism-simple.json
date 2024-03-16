@@ -37,9 +37,9 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-02-22"
+        "val" : "2024-03-16"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-02-22/aism-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-03-16/aism-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000000",
@@ -8330,14 +8330,7 @@
           "val" : "q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) > magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
           "xrefs" : [ "https://orcid.org/0000-0002-6601-2165" ]
         },
-        "comments" : [ "This relation is used to determine the 'directionality' of relative qualities such as 'increased strength', relative to the parent type, 'strength'." ],
-        "xrefs" : [ {
-          "val" : "RO:0015007"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "increased_in_magnitude_relative_to"
-        } ]
+        "comments" : [ "This relation is used to determine the 'directionality' of relative qualities such as 'increased strength', relative to the parent type, 'strength'." ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0015008",
@@ -8512,25 +8505,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.org/dc/terms/contributor",
-      "lbl" : "contributor",
-      "type" : "PROPERTY",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "http://purl.org/dc/terms/contributor"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "dc-contributor"
-        } ]
-      }
-    }, {
       "id" : "http://purl.org/dc/terms/isReferencedBy",
       "lbl" : "isReferencedBy",
       "type" : "PROPERTY",
@@ -8583,10 +8557,6 @@
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
       "lbl" : "subset_property",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-      "lbl" : "created by",
       "type" : "PROPERTY"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17176,7 +17146,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000174",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17189,7 +17159,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000391",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17202,7 +17172,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000002",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17215,7 +17185,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000174",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17254,7 +17224,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000051",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17280,7 +17250,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0002038",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17293,7 +17263,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0002039",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17306,7 +17276,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0002040",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17319,7 +17289,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000060",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17332,7 +17302,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0004017",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17345,7 +17315,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000060",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17358,7 +17328,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000060",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17371,7 +17341,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000024",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17397,7 +17367,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000395",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17410,7 +17380,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000396",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -17457,7 +17427,7 @@
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000174",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
