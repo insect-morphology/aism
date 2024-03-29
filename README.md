@@ -4,7 +4,7 @@
 
 A resource managed by [Jennifer C. Girón](https://github.com/JCGiron) and [István Mikó](https://github.com/teleaslamellatus).
 
-**Suggested citation:** Girón, J. C., Mikó, I., Gonzalez-Montaña, L. A., Tarasov, S. & Matentzoglu, N. (2023, April 14). Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM). v2023-04-14. Zenodo. https://doi.org/10.5281/zenodo.4660322
+**Suggested citation:** Girón, J. C., Mikó, I., Gonzalez-Montaña, L. A., Montanaro, G., Tarasov, S. & Matentzoglu, N. (2024, March 16). Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM). v2024-03-16. Zenodo. https://doi.org/10.5281/zenodo.4660322
 
 
 Multispecies insect anatomy ontologies are used as bases for robust knowledge bases for specific anatomical terms ([Yoder et al. 2010](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015991), [HAO Portal](http://portal.hymao.org/projects/32/public/ontology/)), improve the accessibility of morphology descriptions ([Balhoff et al. 2014](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0094056)), and are useful for improving the modeling of discrete morphological characters in phylogenetic context ([Tarasov 2019a](https://academic.oup.com/sysbio/article/68/5/698/5298740), [2019b](https://academic.oup.com/isd/article/3/6/1/5584145)).
@@ -37,7 +37,7 @@ Editors of this ontology should use the edit version, [src/ontology/aism-edit.ow
 
 ## Reference
 
-A preprint about the AISM was published in February 2022: Girón, J. C., S. Tarasov, L. A. González Montaña, N. Matentzoglu, A. D. Smith, M. Koch, B. E. Boudinot, P. Bouchard, R. Burks, L. Vogt, M. Yoder, D. Osumi-Sutherland, F. Friedrich, R. Beutel, I. Mikó (2022) Formalizing insect morphological data: a model-based, extensible insect anatomy ontology and its potential applications in biodiversity research and informatics. Preprints. [https://doi.org/10.20944/preprints202201.0254.v1](https://doi.org/10.20944/preprints202201.0254.v1)
+Girón JC, Tarasov S, González Montaña LA, Matentzoglu N, Smith AD, Koch M, Boudinot BE, Bouchard P, Burks R, Vogt L, Yoder M, Osumi-Sutherland D, Friedrich F, Beutel R, Mikó I (2023) Formalizing Invertebrate Morphological Data: A Descriptive Model for Cuticle-Based Skeleto-Muscular Systems, an Ontology for Insect Anatomy, and their Potential Applications in Biodiversity Research and Informatics. Systematic Biology: syad025. [https://doi.org/10.1093/sysbio/syad025](https://doi.org/10.1093/sysbio/syad025)
 
 ## Contact
 
