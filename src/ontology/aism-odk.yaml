@@ -22,10 +22,12 @@ import_group:
     - id: uberon
       is_large: TRUE
     - id: pato
+      use_base: true
     - id: bspo
     - id: pr
       use_gzipped: TRUE
       is_large: TRUE
     - id: cl
+      use_base: true
     - id: iao
 robot_java_args: '-Xmx5G'
