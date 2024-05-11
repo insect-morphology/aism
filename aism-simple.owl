@@ -15,7 +15,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2024-03-16/aism-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2024-05-11/aism-simple.owl"/>
         <obo:IAO_0000700>http://purl.obolibrary.org/obo/AISM_0000174</obo:IAO_0000700>
         <obo:IAO_0000700>http://purl.obolibrary.org/obo/PATO_0000001</obo:IAO_0000700>
         <obo:IAO_0000700>http://purl.obolibrary.org/obo/UBERON_0001062</obo:IAO_0000700>
@@ -27,7 +27,7 @@
         <dc:description xml:lang="en">The ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) contains terms used to describe the cuticle - as a single anatomical structure - and the skeletal muscle system, to be used in insect biodiversity research.</dc:description>
         <dc:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo>2024-03-16</owl:versionInfo>
+        <owl:versionInfo>2024-05-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1042,8 +1042,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref>RO:0000053</oboInOwl:hasDbXref>
         <oboInOwl:shorthand>has_characteristic</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has characteristic</rdfs:label>
-        <rdfs:label>has characteristic</rdfs:label>
-        <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
     </owl:ObjectProperty>
     
 
@@ -16140,21 +16138,31 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/AISM_0000376 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000376">
-        <obo:IAO_0000115 xml:lang="en">The anatomical space adjacent to two cuticular punctures.</obo:IAO_0000115>
-        <obo:IAO_0000232 xml:lang="en">Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">The distance between two cuticular punctures.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Edited by jgiron https://orcid.org/0000-0002-0851-6883 
+2024-05-11
+To make it a distance as opposed to an anatomical space and change &apos;adjacent to&apos; for &apos;characteristic of&apos;
+Matching existing definitions e.g. http://purl.obolibrary.org/obo/AGRO_00000318
+
+Former definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188</obo:IAO_0000232>
         <rdfs:label xml:lang="en">interpunctural distance</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000376"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The anatomical space adjacent to two cuticular punctures.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The distance between two cuticular punctures.</owl:annotatedTarget>
         <dc:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</dc:contributor>
         <oboInOwl:creation_date>2023-06-04</oboInOwl:creation_date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000376"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
-        <owl:annotatedTarget xml:lang="en">Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Edited by jgiron https://orcid.org/0000-0002-0851-6883 
+2024-05-11
+To make it a distance as opposed to an anatomical space and change &apos;adjacent to&apos; for &apos;characteristic of&apos;
+Matching existing definitions e.g. http://purl.obolibrary.org/obo/AGRO_00000318
+
+Former definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188</owl:annotatedTarget>
         <dc:contributor>jgiron https://orcid.org/0000-0002-0851-6883</dc:contributor>
         <oboInOwl:creation_date>2024-02-14</oboInOwl:creation_date>
     </owl:Axiom>

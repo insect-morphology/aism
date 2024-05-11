@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2024-03-16/aism-simple.owl
+data-version: aism/releases/2024-05-11/aism-simple.owl
 subsetdef: AISM:0000171 ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -20,7 +20,7 @@ property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imik
 property_value: http://purl.org/dc/elements/1.1/contributor "Jennifer C. Girón (jgiron) https://orcid.org/0000-0002-0851-6883" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Luis A. González Montaña (lagonzalezmo) https://orcid.org/0000-0002-9136-9932" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Sergei Tarasov (starasov) https://orcid.org/0000-0001-5237-2330" xsd:string
-property_value: owl:versionInfo "2024-03-16" xsd:string
+property_value: owl:versionInfo "2024-05-11" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -2176,8 +2176,8 @@ relationship: parallel_to AISM:0000377 {http://purl.org/dc/elements/1.1/contribu
 [Term]
 id: AISM:0000376
 name: interpunctural distance {creation_date="2023-06-04", IAO:0000232="Moved from COLAO to AISM: 2023-05-08\ngmontanaro https://orcid.org/0000-0003-0836-1364", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The anatomical space adjacent to two cuticular punctures." [] {creation_date="2023-06-04", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-property_value: curator_notes "Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188" xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+def: "The distance between two cuticular punctures." [] {creation_date="2023-06-04", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+property_value: curator_notes "Edited by jgiron https://orcid.org/0000-0002-0851-6883 \n2024-05-11\nTo make it a distance as opposed to an anatomical space and change 'adjacent to' for 'characteristic of'\nMatching existing definitions e.g. http://purl.obolibrary.org/obo/AGRO_00000318\n\nFormer definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188" xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
 
 [Term]
 id: AISM:0000377
@@ -5932,7 +5932,6 @@ property_value: IAO:0000116 "A bearer can have many dependents, and its dependen
 property_value: IAO:0000118 "bearer_of" xsd:string
 property_value: IAO:0000118 "is bearer of" xsd:string
 property_value: RO:0001900 RO:0001901
-property_value: seeAlso "https://github.com/oborel/obo-relations/pull/284" xsd:string
 is_inverse_functional: true
 
 [Typedef]
