@@ -38,7 +38,7 @@
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
      xmlns:caloha-reqs-vetted="http://purl.obolibrary.org/obo/caloha-reqs-vetted#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aism/aism-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2024-03-16/aism-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aism/releases/2024-05-11/aism-base.owl"/>
         <obo:IAO_0000700>http://purl.obolibrary.org/obo/AISM_0000174</obo:IAO_0000700>
         <obo:IAO_0000700>http://purl.obolibrary.org/obo/PATO_0000001</obo:IAO_0000700>
         <obo:IAO_0000700>http://purl.obolibrary.org/obo/UBERON_0001062</obo:IAO_0000700>
@@ -51,7 +51,7 @@
         <x_1.1:title xml:lang="en">Ontology for the Anatomy of the Insect SkeletoMuscular system</x_1.1:title>
         <x_1.1:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <term:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo>2024-03-16</owl:versionInfo>
+        <owl:versionInfo>2024-05-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -17943,15 +17943,19 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000376">
         <rdfs:subClassOf rdf:nodeID="genid2677"/>
-        <obo:IAO_0000115 xml:lang="en">The anatomical space adjacent to two cuticular punctures.</obo:IAO_0000115>
-        <obo:IAO_0000232 xml:lang="en">Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">The distance adjacent to two cuticular punctures.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188
+
+Edited by jgiron https://orcid.org/0000-0002-0851-6883 
+2024-05-11
+To make it a distance as opposed to an anatomical space and change &apos;adjacent to&apos; for &apos;characteristic of&apos;</obo:IAO_0000232>
         <rdfs:label xml:lang="en">interpunctural distance</rdfs:label>
     </owl:Class>
     <owl:Class rdf:nodeID="genid2677">
         <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000464"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000040"/>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000524"/>
             </owl:Restriction>
         </owl:intersectionOf>
@@ -17966,14 +17970,18 @@ gmontanaro https://orcid.org/0000-0003-0836-1364</obo:IAO_0000232>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000376"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">The anatomical space adjacent to two cuticular punctures.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">The distance adjacent to two cuticular punctures.</owl:annotatedTarget>
         <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
         <oboI:creation_date>2023-06-04</oboI:creation_date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000376"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
-        <owl:annotatedTarget xml:lang="en">Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188
+
+Edited by jgiron https://orcid.org/0000-0002-0851-6883 
+2024-05-11
+To make it a distance as opposed to an anatomical space and change &apos;adjacent to&apos; for &apos;characteristic of&apos;</owl:annotatedTarget>
         <x_1.1:contributor>jgiron https://orcid.org/0000-0002-0851-6883</x_1.1:contributor>
         <oboI:creation_date>2024-02-14</oboI:creation_date>
     </owl:Axiom>
@@ -45927,6 +45935,12 @@ starasov https://orcid.org/0000-0001-5237-2330</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000040"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000052"/>
@@ -46134,12 +46148,6 @@ starasov https://orcid.org/0000-0001-5237-2330</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/UBERON_0000165 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000165"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000464 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000464"/>
     
 
 

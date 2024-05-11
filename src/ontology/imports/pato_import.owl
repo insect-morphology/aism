@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>
-<http://purl.obolibrary.org/obo/aism/releases/2024-03-16/imports/pato_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2023-05-18/pato-base.owl>)
-Annotation(owl:versionInfo "2024-03-16")
+<http://purl.obolibrary.org/obo/aism/releases/2024-05-11/imports/pato_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2024-03-28/pato-base.owl>)
+Annotation(owl:versionInfo "2024-05-11")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005634>))
@@ -209,6 +209,10 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/pato#value_slim> <http:/
 
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#SubsetProperty> "subset_property")
 
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#creation_date> (creation date)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#creation_date> "creation date")
+
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
 
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "database_cross_reference")
@@ -220,6 +224,10 @@ AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#has
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> (has_obo_namespace)
 
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "has_obo_namespace")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#id> (id)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#id> "id")
 
 
 ############################

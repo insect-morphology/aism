@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aism/imports/cl_import.owl>
-<http://purl.obolibrary.org/obo/aism/releases/2024-03-16/imports/cl_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/cl/releases/2024-02-13/cl-base.owl>)
-Annotation(owl:versionInfo "2024-03-16")
+<http://purl.obolibrary.org/obo/aism/releases/2024-05-11/imports/cl_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/cl/releases/2024-04-05/cl-base.owl>)
+Annotation(owl:versionInfo "2024-05-11")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000066>))
@@ -57,8 +57,6 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/cl#cellxgene_subs
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ubprop#_upper_level>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
@@ -76,19 +74,10 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#source>))
-Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(<http://xmlns.com/foaf/0.1/depiction>))
 ############################
 #   Annotation Properties
 ############################
-
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
-
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000700> (preferred_root)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000700> "preferred_root")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/cl#cellxgene_subset> (<http://purl.obolibrary.org/obo/cl#cellxgene_subset>)
 
@@ -105,18 +94,6 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/uberon/core#human_refere
 # Annotation Property: <http://purl.obolibrary.org/obo/ubprop#_upper_level> (<http://purl.obolibrary.org/obo/ubprop#_upper_level>)
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/ubprop#_upper_level> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#SubsetProperty> (subset_property)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#SubsetProperty> "subset_property")
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "database_cross_reference")
-
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has_exact_synonym)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has_exact_synonym")
 
 
 
@@ -182,6 +159,8 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000151> <http://purl.obolibrary.org/obo/cl#cellxgene_subset>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000151> "secretory cell")
 EquivalentClasses(<http://purl.obolibrary.org/obo/CL_0000151> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0032940>)))
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000151> <http://purl.obolibrary.org/obo/CL_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000151> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0032940>))
 
 # Class: <http://purl.obolibrary.org/obo/CL_0000188> (cell of skeletal muscle)
 
@@ -196,6 +175,8 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CL_0000188> <http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000188> "cell of skeletal muscle")
 EquivalentClasses(<http://purl.obolibrary.org/obo/CL_0000188> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001134>)))
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000188> <http://purl.obolibrary.org/obo/CL_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000188> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001134>))
 
 # Class: <http://purl.obolibrary.org/obo/CL_0000221> (ectodermal cell)
 
@@ -228,6 +209,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000362> "epidermal cell")
 EquivalentClasses(<http://purl.obolibrary.org/obo/CL_0000362> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0007376>)))
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000362> <http://purl.obolibrary.org/obo/CL_0002159>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000362> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0007376>))
 
 # Class: <http://purl.obolibrary.org/obo/CL_0002076> (endo-epithelial cell)
 
@@ -247,6 +229,8 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CL_0002077> "FMA:69074")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0002077> "ecto-epithelial cell")
 EquivalentClasses(<http://purl.obolibrary.org/obo/CL_0002077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/CL_0000221>)))
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0002077> <http://purl.obolibrary.org/obo/CL_0000066>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0002077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/CL_0000221>))
 
 # Class: <http://purl.obolibrary.org/obo/CL_0002159> (general ecto-epithelial cell)
 
@@ -265,6 +249,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0002251> "epithelial cell of alimentary canal")
 EquivalentClasses(<http://purl.obolibrary.org/obo/CL_0002251> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001555>)))
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0002251> <http://purl.obolibrary.org/obo/CL_0002076>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0002251> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001555>))
 
 # Class: <http://purl.obolibrary.org/obo/CL_0002321> (embryonic cell (metazoa))
 
@@ -286,6 +271,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CALOHA:TS-1277") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CL_1001591> "uterine tube glandular cell")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_1001591> "oviduct glandular cell")
 EquivalentClasses(<http://purl.obolibrary.org/obo/CL_1001591> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000150> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000993>)))
+SubClassOf(<http://purl.obolibrary.org/obo/CL_1001591> <http://purl.obolibrary.org/obo/CL_0000150>)
 SubClassOf(<http://purl.obolibrary.org/obo/CL_1001591> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0004804>))
 
 

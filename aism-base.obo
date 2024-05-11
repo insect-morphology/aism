@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2024-03-16/aism-base.owl
+data-version: aism/releases/2024-05-11/aism-base.owl
 ontology: aism/aism-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Giulio Montanaro (gmontanaro) https://orcid.org/0000-0003-0836-1364" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
@@ -13,7 +13,7 @@ property_value: http://purl.org/dc/terms/license https://creativecommons.org/lic
 property_value: IAO:0000700 "http://purl.obolibrary.org/obo/AISM_0000174" xsd:string
 property_value: IAO:0000700 "http://purl.obolibrary.org/obo/PATO_0000001" xsd:string
 property_value: IAO:0000700 "http://purl.obolibrary.org/obo/UBERON_0001062" xsd:string
-property_value: owl:versionInfo "2024-03-16" xsd:string
+property_value: owl:versionInfo "2024-05-11" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -2266,8 +2266,8 @@ relationship: parallel_to AISM:0000377 {http://purl.org/dc/elements/1.1/contribu
 [Term]
 id: AISM:0000376
 name: interpunctural distance {creation_date="2023-06-04", IAO:0000232="Moved from COLAO to AISM: 2023-05-08\ngmontanaro https://orcid.org/0000-0003-0836-1364", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The anatomical space adjacent to two cuticular punctures." [] {creation_date="2023-06-04", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-property_value: IAO:0000232 "Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188" xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
+def: "The distance adjacent to two cuticular punctures." [] {creation_date="2023-06-04", http://purl.org/dc/elements/1.1/contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+property_value: IAO:0000232 "Definition based on suggestions at https://github.com/obophenotype/uberon/issues/3188\n\nEdited by jgiron https://orcid.org/0000-0002-0851-6883 \n2024-05-11\nTo make it a distance as opposed to an anatomical space and change 'adjacent to' for 'characteristic of'" xsd:string {http://purl.org/dc/elements/1.1/contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-02-14"}
 
 [Term]
 id: AISM:0000377
