@@ -40,9 +40,9 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-05-11"
+        "val" : "2024-06-20"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-05-11/aism-base.json"
+      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-06-20/aism-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000000",
@@ -179,24 +179,6 @@
       "meta" : {
         "definition" : {
           "val" : "The cuticular protrusion that is part of an insect sclerite and adjacent to an articular surface."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000011",
-      "lbl" : "lateral_to",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X lateral to y if x is further from the midsagittal plane than y."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000012",
-      "lbl" : "medial_to",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X medial to y if x is closer to the midsagittal plane than y."
         }
       }
     }, {
@@ -924,24 +906,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
           "val" : "cuticle of coxa"
         } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000078",
-      "lbl" : "encircles",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Structure x encircles structure y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000079",
-      "lbl" : "encircled by",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Structure y is encircled by structure x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y."
-        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000080",
@@ -1830,15 +1794,6 @@
       "meta" : {
         "definition" : {
           "val" : "The sclerite that is continuous with the basal metacoxal conjunctiva and the basal wing conjunctiva and contains the metafurca."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000171",
-      "lbl" : "sensu",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "This annotation property defines a \"sensu\", which is the combination of a bibliographic reference, a label and a class (represented by verbatim and logical definitions). Given this model, independent observations can be inferred across to compute synonymy (multiple labels attached to one), homonymy (one label attached to multiple classes).\n\nYoder MJ, Mikó I, Seltmann KC, Bertone MA, Deans AR (2010) A Gross Anatomy Ontology for Hymenoptera. PLOS ONE 5: e15991.  \n\nhttps://doi.org/10.1371/journal.pone.0015991.g004\n\nThis annotation property is on the label of a class in owl."
         }
       }
     }, {
@@ -3012,69 +2967,6 @@
         }
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000398",
-      "lbl" : "has maximum value",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The highest value of a measurement range."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000399",
-      "lbl" : "has minimum value",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The lowest value of a measurement range."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000400",
-      "lbl" : "has maximum value exclusive",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The highest value of a measurement range excluding the boundary value."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000401",
-      "lbl" : "has maximum value inclusive",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The maximum value of a measurement range including the boundary value."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000402",
-      "lbl" : "has minimum value exclusive",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The minimum value of a measurement range excluding the boundary value."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000403",
-      "lbl" : "has minimum value inclusive",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The minimum value of a measurement range including the boundary value."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000404",
-      "lbl" : "has_unit",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The object property of an object consisting of having a measurement unit."
-        }
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000405",
       "lbl" : "antero-distal margin",
       "type" : "CLASS",
@@ -3152,16 +3044,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The protrusion on a sclerite that is elongated."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000519",
-      "lbl" : "encircles via conjunctiva",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B."
+          "val" : "The protrusion on a sclerite that is linear."
         }
       }
     }, {
@@ -3188,7 +3071,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular protrusion of a sclerite that is small."
+          "val" : "The cuticular protrusion of a sclerite that is small and convex."
         }
       }
     }, {
@@ -3206,7 +3089,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular protrusion of a sclerite that is sharp."
+          "val" : "The cuticular protrusion of a sclerite that is pointed and narrow."
         }
       }
     }, {
@@ -3261,15 +3144,6 @@
       "meta" : {
         "definition" : {
           "val" : "The cuticular depression constituted by conjunctiva that is elongated."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000538",
-      "lbl" : "encircled via conjunctiva",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B."
         }
       }
     }, {
@@ -7209,6 +7083,633 @@
           "xrefs" : [ "Oxford Languages through Google." ]
         }
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "lbl" : "antenna with 10 antennomeres",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The antenna that has scapus, pedicellus, and flagellomeres 1-8, and does not have flagellomere 9."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "lbl" : "antenna with 11 antennomeres",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The antenna that has scapus, pedicellus, and flagellomeres 1-9."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0004320",
+      "lbl" : "empodial seta",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The cuticular seta that is adjacent to the cuticle of the empodium."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000004",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000000",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000006",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000007",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000013",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000016",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000017",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000027",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000029",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000035",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000055",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000056",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000061",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000062",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000069",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000070",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000071",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000072",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000077",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000078",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000079",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000080",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000082",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000083",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000084",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000085",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000112",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000417",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000671",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000672",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000677",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000678",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000679",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000682",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000684",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CARO_0000008",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000000",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000066",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000150",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000362",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000040",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000052",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000117",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000150",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000402",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000404",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000407",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000411",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000587",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000591",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000592",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000599",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000915",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000964",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000984",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001154",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001199",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001355",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001543",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001571",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001573",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001591",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001857",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001873",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0002021",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0002078",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0002219",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0002228",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0002254",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0002258",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0040024",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PR_000000001",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PR_000050567",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000018",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000020",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000061",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000161",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000165",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000955",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000993",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0001001",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0001002",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0001555",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0002536",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0004053",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0005157",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0014895",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0034925",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0034926",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_6003007",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_6007284",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_6007289",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000011",
+      "lbl" : "lateral_to",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "X lateral to y if x is further from the midsagittal plane than y."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000012",
+      "lbl" : "medial_to",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "X medial to y if x is closer to the midsagittal plane than y."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000078",
+      "lbl" : "encircles",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Structure x encircles structure y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000079",
+      "lbl" : "encircled by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Structure y is encircled by structure x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000404",
+      "lbl" : "has_unit",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "The object property of an object consisting of having a measurement unit."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000519",
+      "lbl" : "encircles via conjunctiva",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000538",
+      "lbl" : "encircled via conjunctiva",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000096",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000097",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000098",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000099",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000100",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000102",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BSPO_0000125",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000052",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000053",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0001018",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0001025",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002008",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002131",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002150",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002219",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002220",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002221",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002351",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002371",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002473",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0015007",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0015008",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/bspo#parallel_to",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/uberon/core#anteriorly_connected_to",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/uberon/core#posteriorly_connected_to",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000398",
+      "lbl" : "has maximum value",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The highest value of a measurement range."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000399",
+      "lbl" : "has minimum value",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The lowest value of a measurement range."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000400",
+      "lbl" : "has maximum value exclusive",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The highest value of a measurement range excluding the boundary value."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000401",
+      "lbl" : "has maximum value inclusive",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The maximum value of a measurement range including the boundary value."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000402",
+      "lbl" : "has minimum value exclusive",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The minimum value of a measurement range excluding the boundary value."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000403",
+      "lbl" : "has minimum value inclusive",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The minimum value of a measurement range including the boundary value."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000171",
+      "lbl" : "sensu",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "This annotation property defines a \"sensu\", which is the combination of a bibliographic reference, a label and a class (represented by verbatim and logical definitions). Given this model, independent observations can be inferred across to compute synonymy (multiple labels attached to one), homonymy (one label attached to multiple classes).\n\nYoder MJ, Mikó I, Seltmann KC, Bertone MA, Deans AR (2010) A Gross Anatomy Ontology for Hymenoptera. PLOS ONE 5: e15991.  \n\nhttps://doi.org/10.1371/journal.pone.0015991.g004\n\nThis annotation property is on the label of a class in owl."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000232",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000589",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000700",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/creator",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/type",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/modified",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://xmlns.com/foaf/0.1/depiction",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000000",
@@ -8462,7 +8963,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000039",
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000126",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000102",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
@@ -8492,7 +8993,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000040",
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000004",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000102",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
@@ -16842,7 +17343,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000501",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000053",
-      "obj" : "http://purl.obolibrary.org/obo/PATO_0001154",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001199",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
@@ -16972,7 +17473,20 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000527",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000053",
-      "obj" : "http://purl.obolibrary.org/obo/PATO_0001419",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000599",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-06-20"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000527",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000053",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0002258",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
@@ -28995,6 +29509,240 @@
         } ]
       }
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000032",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000334",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000335",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000336",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000337",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000338",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000339",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000340",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-06-20"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000032",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000334",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000335",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000336",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000337",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000338",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000339",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000340",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-06-20"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004320",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000039",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-06-20"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004320",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002220",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0004261",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-06-20"
+        } ]
+      }
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000078",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002150"
@@ -29009,6 +29757,14 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000538",
       "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000079"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000011",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0000078",
+      "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0000079"
     } ],
     "logicalDefinitionAxioms" : [ {
@@ -29068,6 +29824,15 @@
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0002220",
         "fillerId" : "http://purl.obolibrary.org/obo/AISM_0004060"
       } ]
+    } ],
+    "domainRangeAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/AISM_0000519",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/AISM_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/AISM_0000003" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/AISM_0000538",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/AISM_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/AISM_0000003" ]
     } ]
   } ]
 }
