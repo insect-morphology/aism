@@ -37,9 +37,9 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-05-11"
+        "val" : "2024-06-20"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-05-11/aism-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/aism/releases/2024-06-20/aism-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000000",
@@ -176,24 +176,6 @@
       "meta" : {
         "definition" : {
           "val" : "The cuticular protrusion that is part of an insect sclerite and adjacent to an articular surface."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000011",
-      "lbl" : "lateral_to",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X lateral to y if x is further from the midsagittal plane than y."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000012",
-      "lbl" : "medial_to",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "X medial to y if x is closer to the midsagittal plane than y."
         }
       }
     }, {
@@ -921,24 +903,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
           "val" : "cuticle of coxa"
         } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000078",
-      "lbl" : "encircles",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Structure x encircles structure y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000079",
-      "lbl" : "encircled by",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Structure y is encircled by structure x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y."
-        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000080",
@@ -1827,15 +1791,6 @@
       "meta" : {
         "definition" : {
           "val" : "The sclerite that is continuous with the basal metacoxal conjunctiva and the basal wing conjunctiva and contains the metafurca."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000171",
-      "lbl" : "sensu",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "This annotation property defines a \"sensu\", which is the combination of a bibliographic reference, a label and a class (represented by verbatim and logical definitions). Given this model, independent observations can be inferred across to compute synonymy (multiple labels attached to one), homonymy (one label attached to multiple classes).\n\nYoder MJ, Mikó I, Seltmann KC, Bertone MA, Deans AR (2010) A Gross Anatomy Ontology for Hymenoptera. PLOS ONE 5: e15991.  \n\nhttps://doi.org/10.1371/journal.pone.0015991.g004\n\nThis annotation property is on the label of a class in owl."
         }
       }
     }, {
@@ -3009,69 +2964,6 @@
         }
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000398",
-      "lbl" : "has maximum value",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The highest value of a measurement range."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000399",
-      "lbl" : "has minimum value",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The lowest value of a measurement range."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000400",
-      "lbl" : "has maximum value exclusive",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The highest value of a measurement range excluding the boundary value."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000401",
-      "lbl" : "has maximum value inclusive",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The maximum value of a measurement range including the boundary value."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000402",
-      "lbl" : "has minimum value exclusive",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The minimum value of a measurement range excluding the boundary value."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000403",
-      "lbl" : "has minimum value inclusive",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The minimum value of a measurement range including the boundary value."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000404",
-      "lbl" : "has_unit",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The object property of an object consisting of having a measurement unit."
-        }
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000405",
       "lbl" : "antero-distal margin",
       "type" : "CLASS",
@@ -3149,16 +3041,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The protrusion on a sclerite that is elongated."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000519",
-      "lbl" : "encircles via conjunctiva",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B."
+          "val" : "The protrusion on a sclerite that is linear."
         }
       }
     }, {
@@ -3185,7 +3068,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular protrusion of a sclerite that is small."
+          "val" : "The cuticular protrusion of a sclerite that is small and convex."
         }
       }
     }, {
@@ -3203,7 +3086,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular protrusion of a sclerite that is sharp."
+          "val" : "The cuticular protrusion of a sclerite that is pointed and narrow."
         }
       }
     }, {
@@ -3258,15 +3141,6 @@
       "meta" : {
         "definition" : {
           "val" : "The cuticular depression constituted by conjunctiva that is elongated."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/AISM_0000538",
-      "lbl" : "encircled via conjunctiva",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B."
         }
       }
     }, {
@@ -7207,9 +7081,107 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "lbl" : "antenna with 10 antennomeres",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The antenna that has scapus, pedicellus, and flagellomeres 1-8, and does not have flagellomere 9."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "lbl" : "antenna with 11 antennomeres",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The antenna that has scapus, pedicellus, and flagellomeres 1-9."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0004320",
+      "lbl" : "empodial seta",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The cuticular seta that is adjacent to the cuticle of the empodium."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000011",
+      "lbl" : "lateral_to",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "X lateral to y if x is further from the midsagittal plane than y."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000012",
+      "lbl" : "medial_to",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "X medial to y if x is closer to the midsagittal plane than y."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000078",
+      "lbl" : "encircles",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Structure x encircles structure y if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with x."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000079",
+      "lbl" : "encircled by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Structure y is encircled by structure x if both x and y are regions of the 2D structure z, or 2D cross-sections of a 3D object z, and the boundary of y on z is exclusively continuous with y."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000404",
+      "lbl" : "has_unit",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "The object property of an object consisting of having a measurement unit."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000519",
+      "lbl" : "encircles via conjunctiva",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Sclerite A encircles_via_conjunctiva sclerite B if A is encircled_via_conjuntiva X that encircles B."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000538",
+      "lbl" : "encircled via conjunctiva",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Sclerite B is encircled_via_conjunctiva if sclerite A encircles_via_conjuntiva X sclerite B."
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "lbl" : "part_of",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "a core relation that holds between a part and its whole"
@@ -7299,6 +7271,7 @@
       "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "lbl" : "has_part",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "a core relation that holds between a whole and its part"
@@ -7355,6 +7328,7 @@
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000096",
       "lbl" : "anterior to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.",
@@ -7388,6 +7362,7 @@
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000097",
       "lbl" : "distal to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x distal to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).",
@@ -7417,6 +7392,7 @@
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000098",
       "lbl" : "dorsal to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).",
@@ -7446,6 +7422,7 @@
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000099",
       "lbl" : "posterior to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.",
@@ -7480,6 +7457,7 @@
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000100",
       "lbl" : "proximal to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x proximal to y iff x is closer to the point of attachment with the body than y.",
@@ -7512,6 +7490,7 @@
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000102",
       "lbl" : "ventral to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x ventral to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).",
@@ -7541,6 +7520,7 @@
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000106",
       "lbl" : "contralateral to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "On the opposite side from. For example, the left arm is contralateral to the right arm (and the right leg).",
@@ -7564,6 +7544,7 @@
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000113",
       "lbl" : "opposite to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "Direcly opposite to. i.e. on the opposite side through the axis.",
@@ -7584,6 +7565,7 @@
       "id" : "http://purl.obolibrary.org/obo/BSPO_0000125",
       "lbl" : "in distal side of",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.",
@@ -7604,162 +7586,10 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
-      "lbl" : "definition",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "definition"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Daniel Schober"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
-      "lbl" : "alternative label",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."
-        },
-        "comments" : [ "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "alternative label"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "OBO Operations committee"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Daniel Schober"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000232",
-      "lbl" : "curator notes",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "An administrative note of use for a curator but of no use for a user"
-        },
-        "xrefs" : [ {
-          "val" : "IAO:0000232"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "curator note"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Alan Ruttenberg"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "curator_notes"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000589",
-      "lbl" : "OBO foundry unique label",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "An alternative name for a class or property which is unique across the OBO Foundry."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "OBO foundry unique label"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = 'sequence ' + [label], etc. , MA could specify 'mouse + [label]' etc. Upon importing terms, ontology developers can choose to use the 'OBO foundry unique label' for an imported term or not. The same applies to tools ."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Alan Ruttenberg"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Bjoern Peters"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Chris Mungall"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Melanie Courtot"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "GROUP:OBO Foundry <http://obofoundry.org/>"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000700",
-      "lbl" : "preferred_root",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root."
-        },
-        "xrefs" : [ {
-          "val" : "IAO:0000700"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "has ontology root term"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Nicolas Matentzoglu"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-          "val" : "true"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "has_ontology_root_term"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000052",
       "lbl" : "characteristic of",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence."
@@ -7792,6 +7622,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0000053",
       "lbl" : "has characteristic",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "Inverse of characteristic_of"
@@ -7829,6 +7660,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0001018",
       "lbl" : "obsolete contained in",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -7852,6 +7684,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0001019",
       "lbl" : "obsolete contains",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "xrefs" : [ {
           "val" : "RO:0001019"
@@ -7878,6 +7711,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0001025",
       "lbl" : "located_in",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "a relation between two independent continuants, the target and the location, in which the target is entirely within the location"
@@ -7931,6 +7765,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002000",
       "lbl" : "2D boundary of",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity"
@@ -7974,6 +7809,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002008",
       "lbl" : "coincident with",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "A relation that holds between two linear structures that are approximately parallel to each other for their entire length and where either the two structures are adjacent to each other or one is part of the other."
@@ -7992,6 +7828,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002131",
       "lbl" : "overlaps",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x overlaps y iff they have some part in common.",
@@ -8026,6 +7863,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002150",
       "lbl" : "continuous with",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "X continuous_with Y if and only if X and Y share a fiat boundary."
@@ -8063,6 +7901,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002180",
       "lbl" : "has_component",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type."
@@ -8104,6 +7943,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002219",
       "lbl" : "surrounded by",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x"
@@ -8132,6 +7972,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002220",
       "lbl" : "adjacent to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x adjacent to y if and only if x and y share a boundary."
@@ -8179,6 +8020,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002221",
       "lbl" : "surrounds",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "inverse of surrounded by"
@@ -8208,6 +8050,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002351",
       "lbl" : "has member",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "has member is a mereological relation between a collection and an item."
@@ -8233,6 +8076,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002371",
       "lbl" : "attached to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "a is attached to b if and only if a and b are discrete objects or object parts, and there are physical connections between a and b such that a force pulling a will move b, or a force pulling b will move a"
@@ -8262,6 +8106,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002372",
       "lbl" : "has muscle origin",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "m has_muscle_origin s iff m is attached_to s, and it is the case that when m contracts, s does not move. The site of the origin tends to be more proximal and have greater mass than what the other end attaches to."
@@ -8290,6 +8135,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002473",
       "lbl" : "composed primarily of",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y."
@@ -8322,6 +8168,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0015007",
       "lbl" : "increased in magnitude relative to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) > magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
@@ -8333,6 +8180,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0015008",
       "lbl" : "decreased in magnitude relative to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) < magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
@@ -8341,9 +8189,14 @@
         "comments" : [ "This relation is used to determine the 'directionality' of relative qualities such as 'decreased strength', relative to the parent type, 'strength'." ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/bspo#parallel_to",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to",
       "lbl" : "obsolete decreased_in_magnitude_relative_to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "OBSOLETE. q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) < magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
@@ -8363,6 +8216,7 @@
       "id" : "http://purl.obolibrary.org/obo/pato#different_in_magnitude_relative_to",
       "lbl" : "obsolete different_in_magnitude_relative_to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "OBSOLETE. q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
@@ -8382,6 +8236,7 @@
       "id" : "http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to",
       "lbl" : "obsolete increased_in_magnitude_relative_to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "OBSOLETE. q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) > magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
@@ -8401,6 +8256,7 @@
       "id" : "http://purl.obolibrary.org/obo/pato#similar_in_magnitude_relative_to",
       "lbl" : "obsolete similar_in_magnitude_relative_to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "OBSOLETE. q1 similar_in_magnitude_relative_to q2 if and only if magnitude(q1) =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
@@ -8420,6 +8276,7 @@
       "id" : "http://purl.obolibrary.org/obo/uberon/core#anteriorly_connected_to",
       "lbl" : "anteriorly connected to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x anteriorly_connected_to y iff the anterior part of x is connected to y. i.e. x connected_to y and x posterior_to y.",
@@ -8434,6 +8291,7 @@
       "id" : "http://purl.obolibrary.org/obo/uberon/core#posteriorly_connected_to",
       "lbl" : "posteriorly connected to",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x posteriorly_connected_to y iff the posterior part of x is connected to y. i.e. x connected_to y and x anterior_to y.",
@@ -8445,9 +8303,314 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000398",
+      "lbl" : "has maximum value",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The highest value of a measurement range."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000399",
+      "lbl" : "has minimum value",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The lowest value of a measurement range."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000400",
+      "lbl" : "has maximum value exclusive",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The highest value of a measurement range excluding the boundary value."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000401",
+      "lbl" : "has maximum value inclusive",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The maximum value of a measurement range including the boundary value."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000402",
+      "lbl" : "has minimum value exclusive",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The minimum value of a measurement range excluding the boundary value."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000403",
+      "lbl" : "has minimum value inclusive",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The minimum value of a measurement range including the boundary value."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0000171",
+      "lbl" : "sensu",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "This annotation property defines a \"sensu\", which is the combination of a bibliographic reference, a label and a class (represented by verbatim and logical definitions). Given this model, independent observations can be inferred across to compute synonymy (multiple labels attached to one), homonymy (one label attached to multiple classes).\n\nYoder MJ, Mikó I, Seltmann KC, Bertone MA, Deans AR (2010) A Gross Anatomy Ontology for Hymenoptera. PLOS ONE 5: e15991.  \n\nhttps://doi.org/10.1371/journal.pone.0015991.g004\n\nThis annotation property is on the label of a class in owl."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000114",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "lbl" : "definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000116",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "lbl" : "alternative label",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."
+        },
+        "comments" : [ "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "alternative label"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "OBO Operations committee"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000232",
+      "lbl" : "curator notes",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "An administrative note of use for a curator but of no use for a user"
+        },
+        "xrefs" : [ {
+          "val" : "IAO:0000232"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "curator note"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Alan Ruttenberg"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "curator_notes"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000233",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000424",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000589",
+      "lbl" : "OBO foundry unique label",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "An alternative name for a class or property which is unique across the OBO Foundry."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "OBO foundry unique label"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = 'sequence ' + [label], etc. , MA could specify 'mouse + [label]' etc. Upon importing terms, ontology developers can choose to use the 'OBO foundry unique label' for an imported term or not. The same applies to tools ."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Bjoern Peters"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Melanie Courtot"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBO Foundry <http://obofoundry.org/>"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000700",
+      "lbl" : "preferred_root",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root."
+        },
+        "xrefs" : [ {
+          "val" : "IAO:0000700"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has ontology root term"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Nicolas Matentzoglu"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "has_ontology_root_term"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0100001",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0001900",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002259",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0040042",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_go_ontology",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_gocam",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/bspo#vertebrate",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ro/subsets#ro-eco",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/elements/1.1/creator",
       "lbl" : "creator",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "xrefs" : [ {
           "val" : "http://purl.org/dc/elements/1.1/creator"
@@ -8464,9 +8627,14 @@
         } ]
       }
     }, {
+      "id" : "http://purl.org/dc/elements/1.1/date",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/elements/1.1/description",
       "lbl" : "description",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "xrefs" : [ {
           "val" : "http://purl.org/dc/elements/1.1/description"
@@ -8483,9 +8651,14 @@
         } ]
       }
     }, {
+      "id" : "http://purl.org/dc/elements/1.1/source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/elements/1.1/title",
       "lbl" : "title",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "xrefs" : [ {
           "val" : "http://purl.org/dc/elements/1.1/title"
@@ -8505,6 +8678,7 @@
       "id" : "http://purl.org/dc/terms/isReferencedBy",
       "lbl" : "isReferencedBy",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "definition" : {
           "val" : "A related resource that references, cites, or otherwise points to the described resource."
@@ -8527,6 +8701,7 @@
       "id" : "http://purl.org/dc/terms/license",
       "lbl" : "license",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "xrefs" : [ {
           "val" : "http://purl.org/dc/terms/license"
@@ -8546,27 +8721,40 @@
       "id" : "http://purl.org/dc/terms/modified",
       "lbl" : "date_modified",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "definition" : {
           "val" : "Date on which the resource was changed."
         }
       }
     }, {
+      "id" : "http://purl.org/dc/terms/source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
       "lbl" : "subset_property",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
       "lbl" : "creation date",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
       "lbl" : "database_cross_reference",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
       "lbl" : "has_exact_synonym",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "definition" : {
           "val" : "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label."
@@ -8583,17 +8771,48 @@
         } ]
       }
     }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
       "lbl" : "has_obo_namespace",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasSynonymType",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#id",
       "lbl" : "id",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#is_transitive",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
       "lbl" : "skos:prefLabel",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "definition" : {
           "val" : "A preferred label."
@@ -8607,6 +8826,7 @@
       "id" : "http://xmlns.com/foaf/0.1/depiction",
       "lbl" : "depiction",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "xrefs" : [ {
           "val" : "http://xmlns.com/foaf/0.1/depiction"
@@ -9704,7 +9924,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000039",
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000126",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000102",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
@@ -9734,7 +9954,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0000040",
       "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
-      "obj" : "http://purl.obolibrary.org/obo/AISM_0000004",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000102",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
@@ -28897,6 +29117,240 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2024-01-12"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000032",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000334",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000335",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000336",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000337",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000338",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000339",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004318",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000340",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-06-20"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000032",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000334",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000335",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000336",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000337",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000338",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000339",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "gmontanaro https://orcid.org/0000-0003-0836-1364"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2023-05-05"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004319",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000340",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-06-20"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004320",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000039",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-06-20"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004320",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002220",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0004261",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2024-06-20"
         } ]
       }
     }, {

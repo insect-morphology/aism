@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>
-<http://purl.obolibrary.org/obo/aism/releases/2024-05-11/imports/pato_import.owl>
+<http://purl.obolibrary.org/obo/aism/releases/2024-06-20/imports/pato_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2024-03-28/pato-base.owl>)
-Annotation(owl:versionInfo "2024-05-11")
+Annotation(owl:versionInfo "2024-06-20")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005634>))
@@ -39,7 +39,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000586>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000587>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000591>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000592>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000599>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000915>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000921>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000944>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000947>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000957>))
@@ -51,6 +54,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001154>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001171>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001199>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001355>))
@@ -90,6 +94,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002198>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002219>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002228>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002254>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002258>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002287>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002288>))
@@ -645,6 +650,34 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0000592> ObjectIntersecti
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000592> <http://purl.obolibrary.org/obo/PATO_0000587>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000592> <http://purl.obolibrary.org/obo/PATO_0000915>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000599> (decreased width)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000599> "A width which is relatively small.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002604> <http://purl.obolibrary.org/obo/PATO_0000599> <http://purl.obolibrary.org/obo/PATO_0000600>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000599> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000599> "narrow")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000599> "PATO:0000599")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000599> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000599> "decreased width")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0000599> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000921> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015008> <http://purl.obolibrary.org/obo/PATO_0000461>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000599> <http://purl.obolibrary.org/obo/PATO_0000587>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000599> <http://purl.obolibrary.org/obo/PATO_0000921>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000600> (increased width)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000600> "A width which is relatively large.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002604> <http://purl.obolibrary.org/obo/PATO_0000600> <http://purl.obolibrary.org/obo/PATO_0000599>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000600> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000600> "broad")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000600> "wide")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000600> "wide/broad")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000600> "PATO:0000600")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000600> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000600> "increased width")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0000600> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000921> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015007> <http://purl.obolibrary.org/obo/PATO_0000461>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000600> <http://purl.obolibrary.org/obo/PATO_0000586>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000600> <http://purl.obolibrary.org/obo/PATO_0000921>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000915> (thickness)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WordNet:WordNet") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000915> "A 1-D extent quality which is equal to the dimension through an object as opposed to its length or width.")
@@ -656,6 +689,19 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000915> "Thickness often refers to the smallest 1-D extent compared to the other two orthogonal dimensions, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000915> "thickness")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000915> <http://purl.obolibrary.org/obo/PATO_0001708>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000921> (width)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000921> "A 1-D extent quality which is equal to the distance from one side of an object to another side which is opposite.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/pato#seeAlso> <http://purl.obolibrary.org/obo/PATO_0000921> "https://github.com/pato-ontology/pato/issues/337")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000921> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000921> "breadth")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000921> "PATO:0000921")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000921> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000921> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000921> "Width often refers to the dimension that is greater than the extent in only one of the other two orthogonal dimensions, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000921> "width")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000921> <http://purl.obolibrary.org/obo/PATO_0001708>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000944> (sharpness)
 
@@ -781,6 +827,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001171> <http://purl.obolibrary.org/obo/pato#value_slim>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001171> "elastic")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001171> <http://purl.obolibrary.org/obo/PATO_0001031>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001199> (linear)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0881923214") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001199> "A shape quality inhering in a bearer by virtue of the bearer's being narrow, with the two opposite margins parallel.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001199> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001199> "PATO:0001199")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001199> <http://purl.obolibrary.org/obo/pato#cell_quality>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001199> <http://purl.obolibrary.org/obo/pato#mpath_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001199> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001199> "linear")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001199> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001241> (physical object quality)
 
@@ -1226,6 +1283,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0002254> "Becoming flat but not necessarily completely flat.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002254> "flattened")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002254> <http://purl.obolibrary.org/obo/PATO_0001591>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002258> (pointed)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:http://www.merriam-webster.com/dictionary/pointed") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002258> "A shape quality inhering in a bearer by virtue of the bearer's having a point.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0002258> <https://orcid.org/0000-0002-2061-091X>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002258> "2010-09-08T03:15:16Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002258> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002258> "PATO:0002258")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0002258> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002258> "pointed")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002258> <http://purl.obolibrary.org/obo/PATO_0001419>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002266> (3-D shape)
 
