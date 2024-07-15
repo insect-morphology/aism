@@ -28149,6 +28149,695 @@ http://dx.doi.org/10.1080/00222933.2014.909072</owl:annotatedTarget>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AISM_0000438 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000438">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000008"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000088"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The anatomical line parallel to the left-right body axis that connects the anterior margins of the eyes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">line connecting anterior margins of eyes</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000438"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000008"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000671"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000088"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-06-26</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000438"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000017"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-06-26</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000438"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The anatomical line parallel to the left-right body axis that connects the anterior margins of the eyes.</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-06-26</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000438"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">line connecting anterior margins of eyes</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-06-26</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000439 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000439">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000008"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000088"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The anatomical line parallel to the left-right body axis that connects the posterior margins of the eyes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">line connecting posterior margins of eyes</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000439"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000008"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000672"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000088"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-02</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000439"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000017"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-02</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000439"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The anatomical line parallel to the left-right body axis that connects the posterior margins of the eyes.</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-02</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000439"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">line connecting posterior margins of eyes</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-02</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000440 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000440">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0004190"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000306"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000302"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000303"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000305"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The protarsus that is composed by protarsomeres 1-5.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protarsus with 4 protarsomeres</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000440"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0004190"/>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000440"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000306"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000440"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000302"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000440"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000303"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000440"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000304"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000440"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000305"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000440"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The protarsus that is composed by protarsomeres 1-5.</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000440"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">protarsus with 4 protarsomeres</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000441 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000441">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000501"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The carina part of the protibia that is parallel to the proximal-distal body axis.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protibial carina</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000441"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000501"/>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000441"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000441"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000015"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000441"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The carina part of the protibia that is parallel to the proximal-distal body axis.</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000441"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">protibial carina</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000442">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000441"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000027"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The protibial carina that is located in the antero-ventral region of the protibia.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protibial anteroventral carina</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000441"/>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000015"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000027"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The protibial carina that is located in the antero-ventral region of the protibia.</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">protibial anteroventral carina</owl:annotatedTarget>
+        <x_1.1:contributor>2024-07-03</x_1.1:contributor>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000443">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AISM_0000441"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000035"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The protibial carina that is located in the postero-ventral region of the protibia.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protibial posteroventral carina</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000443"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/AISM_0000441"/>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000443"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000443"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0001102"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000015"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000443"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000035"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000443"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The protibial carina that is located in the postero-ventral region of the protibia.</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000443"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">protibial posteroventral carina</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AISM_0000444 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000444">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000679"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000097"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004179"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000370"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000232>The anatomical margin part of the dorsal protibial margin that is proximal to dorsal protibial cuticular tooth 3 and distal to the profemoro-protibial conjunctiva.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">dorsal protibial margin proximal to protibial tooth 3</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000444"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000006"/>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000444"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BSPO_0000679"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000444"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000097"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0004179"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000444"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AISM_0000370"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000444"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <owl:annotatedTarget>The anatomical margin part of the dorsal protibial margin that is proximal to dorsal protibial cuticular tooth 3 and distal to the profemoro-protibial conjunctiva.</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AISM_0000444"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">dorsal protibial margin proximal to protibial tooth 3</owl:annotatedTarget>
+        <x_1.1:contributor>gmontanaro https://orcid.org/0000-0003-0836-1364</x_1.1:contributor>
+        <oboI:creation_date>2024-07-03</oboI:creation_date>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/AISM_0000501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AISM_0000501">
