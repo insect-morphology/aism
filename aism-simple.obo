@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2024-06-20/aism-simple.owl
+data-version: aism/releases/2025-03-18/aism-simple.owl
 subsetdef: AISM:0000171 ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -25,7 +25,7 @@ property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
 property_value: has_ontology_root_term "http://purl.obolibrary.org/obo/AISM_0000174" xsd:string
 property_value: has_ontology_root_term "http://purl.obolibrary.org/obo/PATO_0000001" xsd:string
 property_value: has_ontology_root_term "http://purl.obolibrary.org/obo/UBERON_0001062" xsd:string
-property_value: owl:versionInfo "2024-06-20" xsd:string
+property_value: owl:versionInfo "2025-03-18" xsd:string
 
 [Term]
 id: AISM:0000000
@@ -1437,6 +1437,19 @@ relationship: part_of AISM:0000003 {dc:contributor="imiko https://orcid.org/0000
 property_value: curator_notes "Should coincide with 'exactly one' epithelial cell, but that violates OWL specs." xsd:string {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-26"}
 
 [Term]
+id: AISM:0000180
+name: tergal carina {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-16"}
+def: "The cuticular carina on a tergite (or notum)." [] {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-16"}
+is_a: AISM:0000501 {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-16"} ! cuticular carina
+relationship: part_of AISM:0004128 {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-16"} ! notum
+
+[Term]
+id: AISM:0000181
+name: tibial spur {creation_date="2025-03-17", dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The cuticular spur that is continuous with the distal margin of the tibia." [] {creation_date="2025-03-17", dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
+is_a: AISM:0000040 {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-17"} ! cuticular spur
+
+[Term]
 id: AISM:0000185
 name: sensillum chaeticum {IAO:0000232="Modified 2023-01-11: moved under cuticular sensilla; added has part cuticular seta.\njgiron https://orcid.org/0000-0002-0851-6883", AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Sensillum chaeticum: shorter than sensillum trichodeum, thick-walled.\""}
 def: "The hairlike seta that is short and thick walled." [] {dc:contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-02-08"}
@@ -1540,6 +1553,13 @@ relationship: AISM:0000079 AISM:0000019 {dc:contributor="imiko https://orcid.org
 relationship: AISM:0000079 AISM:0004007 {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by antenniferal-scapal conjunctiva
 
 [Term]
+id: AISM:0000199
+name: tibial carina {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-03-16"}
+def: "The cuticular carina that is part of the tibia and parallel to the proximal-distal axis." [] {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-16"}
+is_a: AISM:0000501 {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-16"} ! cuticular carina
+relationship: part_of AISM:0000075 {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-16"} ! tibia
+
+[Term]
 id: AISM:0000200
 name: gonocoxa IX {IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
 def: "The paired sclerite of the postabdomen that is attached to the abdominal tergite IX by the abdominal tergite IX-gonocoxa IX conjunctiva and is articulated with abdominal tergite IX." [] {dc:contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2021-03-19"}
@@ -1568,7 +1588,7 @@ relationship: part_of AISM:0004190 {dc:contributor="gmontanaro https://orcid.org
 
 [Term]
 id: AISM:0000302
-name: protarsomere I {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+name: protarsomere 1 {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 def: "The protarsomere distal to the protibia and encircled by the protibio-protarsal conjunctiva." [] {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000301 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere
 relationship: AISM:0000079 AISM:0004183 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! encircled by protibio-protarsal conjunctiva
@@ -1576,35 +1596,35 @@ relationship: distal_to AISM:0000067 {dc:contributor="gmontanaro https://orcid.o
 
 [Term]
 id: AISM:0000303
-name: protarsomere II {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The protarsomere that is distal to the protarsomere I and is encircled by the protarsomere I-protarsomere II conjunctiva." [] {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+name: protarsomere 2 {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The protarsomere that is distal to the protarsomere 1 and is encircled by the protarsomere 1-protarsomere 2 conjunctiva." [] {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000301 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere
-relationship: AISM:0000079 AISM:0000319 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! encircled by protarsomere I-protarsomere II conjunctiva
-relationship: distal_to AISM:0000302 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere I
+relationship: AISM:0000079 AISM:0000319 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! encircled by protarsomere 1-protarsomere 2 conjunctiva
+relationship: distal_to AISM:0000302 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere 1
 
 [Term]
 id: AISM:0000304
-name: protarsomere III {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The protarsomere that is distal to the protarsomere II and is encircled by the protarsomere II-protarsomere III conjunctiva." [] {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+name: protarsomere 3 {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The protarsomere that is distal to the protarsomere 2 and is encircled by the protarsomere 2-protarsomere 3 conjunctiva." [] {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000301 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere
-relationship: AISM:0000079 AISM:0000320 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! encircled by protarsomere II-protarsomere III conjunctiva
-relationship: distal_to AISM:0000303 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere II
+relationship: AISM:0000079 AISM:0000320 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! encircled by protarsomere 2-protarsomere 3 conjunctiva
+relationship: distal_to AISM:0000303 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere 2
 
 [Term]
 id: AISM:0000305
-name: protarsomere IV {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The protarsomere that is distal to the protarsomere III and is encircled by the protarsomere III-protarsomere IV conjunctiva." [] {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+name: protarsomere 4 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The protarsomere that is distal to the protarsomere 3 and is encircled by the protarsomere 3-protarsomere 4 conjunctiva." [] {creation_date="2023-05-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000301 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere
-relationship: AISM:0000079 AISM:0000321 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! encircled by protarsomere III-protarsomere IV conjunctiva
-relationship: distal_to AISM:0000304 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere III
+relationship: AISM:0000079 AISM:0000321 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! encircled by protarsomere 3-protarsomere 4 conjunctiva
+relationship: distal_to AISM:0000304 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere 3
 
 [Term]
 id: AISM:0000306
-name: protarsomere V {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The protarsomere that is distal to the protarsomere IV and is encircled by the protarsomere IV-protarsomere V conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: protarsomere 5 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The protarsomere that is distal to the protarsomere 4 and is encircled by the protarsomere 4-protarsomere 5 conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000301 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere
-relationship: AISM:0000079 AISM:0000322 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! encircled by protarsomere IV-protarsomere V conjunctiva
-relationship: distal_to AISM:0000305 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere IV
+relationship: AISM:0000079 AISM:0000322 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! encircled by protarsomere 4-protarsomere 5 conjunctiva
+relationship: distal_to AISM:0000305 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-04"} ! protarsomere 4
 
 [Term]
 id: AISM:0000307
@@ -1615,7 +1635,7 @@ relationship: part_of AISM:0004189 {dc:contributor="gmontanaro https://orcid.org
 
 [Term]
 id: AISM:0000308
-name: mesotarsomere I {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: mesotarsomere 1 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 def: "The mesotarsomere that is distal to the mesotibia and is encircled by the mesotibio-mesotarsal conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000307 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere
 relationship: AISM:0000079 AISM:0004184 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotibio-mesotarsal conjunctiva
@@ -1623,35 +1643,35 @@ relationship: distal_to AISM:0000068 {dc:contributor="gmontanaro https://orcid.o
 
 [Term]
 id: AISM:0000309
-name: mesotarsomere II {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The mesotarsomere that is distal to the mesotarsomere I and is encircled by the mesotarsomere I-mesotarsomere II conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: mesotarsomere 2 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The mesotarsomere that is distal to the mesotarsomere 1 and is encircled by the mesotarsomere 1-mesotarsomere 2 conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000307 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere
-relationship: AISM:0000079 AISM:0000323 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere I-mesotarsomere II conjunctiva
-relationship: distal_to AISM:0000308 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere I
+relationship: AISM:0000079 AISM:0000323 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere 1-mesotarsomere 2 conjunctiva
+relationship: distal_to AISM:0000308 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere 1
 
 [Term]
 id: AISM:0000310
-name: mesotarsomere III {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The mesotarsomere that is distal to the mesotarsomere II and is encircled by the mesotarsomere II-mesotarsomere III conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: mesotarsomere 3 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The mesotarsomere that is distal to the mesotarsomere 2 and is encircled by the mesotarsomere 2-mesotarsomere 3 conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000307 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere
-relationship: AISM:0000079 AISM:0000324 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere II-mesotarsomere III conjunctiva
-relationship: distal_to AISM:0000309 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere II
+relationship: AISM:0000079 AISM:0000324 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere 2-mesotarsomere 3 conjunctiva
+relationship: distal_to AISM:0000309 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere 2
 
 [Term]
 id: AISM:0000311
-name: mesotarsomere IV {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The mesotarsomere that is distal to the mesotarsomere III and is encircled by the mesotarsomere III-mesotarsomere IV conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: mesotarsomere 4 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The mesotarsomere that is distal to the mesotarsomere 3 and is encircled by the mesotarsomere 3-mesotarsomere 4 conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000307 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere
-relationship: AISM:0000079 AISM:0000325 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere III-mesotarsomere IV conjunctiva
-relationship: distal_to AISM:0000310 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere III
+relationship: AISM:0000079 AISM:0000325 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere 3-mesotarsomere 4 conjunctiva
+relationship: distal_to AISM:0000310 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere 3
 
 [Term]
 id: AISM:0000312
-name: mesotarsomere V {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The mesotarsomere that is distal to the mesotarsomere IV and is encircled by the mesotarsomere IV-mesotarsomere V conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: mesotarsomere 5 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The mesotarsomere that is distal to the mesotarsomere 4 and is encircled by the mesotarsomere 4-mesotarsomere 5 conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000307 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere
-relationship: AISM:0000079 AISM:0000326 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere IV-mesotarsomere V conjunctiva
-relationship: distal_to AISM:0000311 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere IV
+relationship: AISM:0000079 AISM:0000326 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere 4-mesotarsomere 5 conjunctiva
+relationship: distal_to AISM:0000311 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere 4
 
 [Term]
 id: AISM:0000313
@@ -1662,7 +1682,7 @@ relationship: part_of AISM:0004188 {dc:contributor="gmontanaro https://orcid.org
 
 [Term]
 id: AISM:0000314
-name: metatarsomere I {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: metatarsomere 1 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 def: "The metatarsomere that is distal to the metatibia and is encircled by the metatibio-metatarsal conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000313 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere
 relationship: AISM:0000079 AISM:0004185 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatibio-metatarsal conjunctiva
@@ -1670,176 +1690,176 @@ relationship: distal_to AISM:0000069 {dc:contributor="gmontanaro https://orcid.o
 
 [Term]
 id: AISM:0000315
-name: metatarsomere II {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The metatarsomere that is distal to the metatarsomere I and is encircled by the metatarsomere I-metatarsomere II conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: metatarsomere 2 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The metatarsomere that is distal to the metatarsomere 1 and is encircled by the metatarsomere 1-metatarsomere 2 conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000313 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere
-relationship: AISM:0000079 AISM:0000327 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere I-metatarsomere II conjunctiva
-relationship: distal_to AISM:0000314 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere I
+relationship: AISM:0000079 AISM:0000327 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere 1-metatarsomere 2 conjunctiva
+relationship: distal_to AISM:0000314 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere 1
 
 [Term]
 id: AISM:0000316
-name: metatarsomere III {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The metatarsomere that is distal to the metatarsomere II and is encircled by the metatarsomere II-metatarsomere III conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: metatarsomere 3 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The metatarsomere that is distal to the metatarsomere 2 and is encircled by the metatarsomere 2-metatarsomere 3 conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000313 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere
-relationship: AISM:0000079 AISM:0000328 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere II-metatarsomere III conjunctiva
-relationship: distal_to AISM:0000315 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere II
+relationship: AISM:0000079 AISM:0000328 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere 2-metatarsomere 3 conjunctiva
+relationship: distal_to AISM:0000315 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere 2
 
 [Term]
 id: AISM:0000317
-name: metatarsomere IV {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The metatarsomere that is distal to the metatarsomere III and is encircled by the metatarsomere III-metatarsomere IV conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: metatarsomere 4 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The metatarsomere that is distal to the metatarsomere 3 and is encircled by the metatarsomere 3-metatarsomere 4 conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000313 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere
-relationship: AISM:0000079 AISM:0000329 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere III-metatarsomere IV conjunctiva
-relationship: distal_to AISM:0000316 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere III
+relationship: AISM:0000079 AISM:0000329 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere 3-metatarsomere 4 conjunctiva
+relationship: distal_to AISM:0000316 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere 3
 
 [Term]
 id: AISM:0000318
-name: metatarsomere V {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The metatarsomere that is distal to the metatarsomere IV and is encircled by the metatarsomere IV-metatarsomere V conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: metatarsomere 5 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The metatarsomere that is distal to the metatarsomere 4 and is encircled by the metatarsomere 4-metatarsomere 5 conjunctiva." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000313 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere
-relationship: AISM:0000079 AISM:0000330 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere IV-metatarsomere V conjunctiva
-relationship: distal_to AISM:0000317 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere IV
+relationship: AISM:0000079 AISM:0000330 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere 4-metatarsomere 5 conjunctiva
+relationship: distal_to AISM:0000317 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere 4
 
 [Term]
 id: AISM:0000319
-name: protarsomere I-protarsomere II conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the protarsus, is encircled by protarsomere I and encircles protarsomere II." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: protarsomere 1-protarsomere 2 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the protarsus, is encircled by protarsomere 2 and encircles protarsomere 2." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000303 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles protarsomere II
-relationship: AISM:0000079 AISM:0000302 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by protarsomere I
+relationship: AISM:0000078 AISM:0000303 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles protarsomere 2
+relationship: AISM:0000079 AISM:0000302 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by protarsomere 1
 relationship: part_of AISM:0004190 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsus
 
 [Term]
 id: AISM:0000320
-name: protarsomere II-protarsomere III conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the protarsus, is encircled by protarsomere II and encircles protarsomere III." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: protarsomere 2-protarsomere 3 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the protarsus, is encircled by protarsomere 2 and encircles protarsomere 3." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000304 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles protarsomere III
-relationship: AISM:0000079 AISM:0000303 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by protarsomere II
+relationship: AISM:0000078 AISM:0000304 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles protarsomere 3
+relationship: AISM:0000079 AISM:0000303 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by protarsomere 2
 relationship: part_of AISM:0004190 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsus
 
 [Term]
 id: AISM:0000321
-name: protarsomere III-protarsomere IV conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the protarsus, is encircled by protarsomere III and encircles protarsomere IV." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: protarsomere 3-protarsomere 4 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the protarsus, is encircled by protarsomere 3 and encircles protarsomere 4." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000305 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles protarsomere IV
-relationship: AISM:0000079 AISM:0000304 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by protarsomere III
+relationship: AISM:0000078 AISM:0000305 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles protarsomere 4
+relationship: AISM:0000079 AISM:0000304 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by protarsomere 3
 relationship: part_of AISM:0004190 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsus
 
 [Term]
 id: AISM:0000322
-name: protarsomere IV-protarsomere V conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the protarsus, is encircled by protarsomere IV and encircles protarsomere V." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: protarsomere 4-protarsomere 5 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the protarsus, is encircled by protarsomere 4 and encircles protarsomere 5." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000306 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles protarsomere V
-relationship: AISM:0000079 AISM:0000305 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by protarsomere IV
+relationship: AISM:0000078 AISM:0000306 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles protarsomere 5
+relationship: AISM:0000079 AISM:0000305 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by protarsomere 4
 relationship: part_of AISM:0004190 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsus
 
 [Term]
 id: AISM:0000323
-name: mesotarsomere I-mesotarsomere II conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere I and encircles mesotarsomere II." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: mesotarsomere 1-mesotarsomere 2 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere 1 and encircles mesotarsomere 2." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000309 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles mesotarsomere II
-relationship: AISM:0000079 AISM:0000308 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere I
+relationship: AISM:0000078 AISM:0000309 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles mesotarsomere 2
+relationship: AISM:0000079 AISM:0000308 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere 1
 relationship: part_of AISM:0004189 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsus
 
 [Term]
 id: AISM:0000324
-name: mesotarsomere II-mesotarsomere III conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere II and encircles mesotarsomere III." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: mesotarsomere 2-mesotarsomere 3 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere 2 and encircles mesotarsomere 3." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000310 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles mesotarsomere III
-relationship: AISM:0000079 AISM:0000309 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere II
+relationship: AISM:0000078 AISM:0000310 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles mesotarsomere 3
+relationship: AISM:0000079 AISM:0000309 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere 2
 relationship: part_of AISM:0004189 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsus
 
 [Term]
 id: AISM:0000325
-name: mesotarsomere III-mesotarsomere IV conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere III and encircles mesotarsomere IV." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: mesotarsomere 3-mesotarsomere 4 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere 3 and encircles mesotarsomere 4." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000311 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles mesotarsomere IV
-relationship: AISM:0000079 AISM:0000310 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere III
+relationship: AISM:0000078 AISM:0000311 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles mesotarsomere 4
+relationship: AISM:0000079 AISM:0000310 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere 3
 relationship: part_of AISM:0004189 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsus
 
 [Term]
 id: AISM:0000326
-name: mesotarsomere IV-mesotarsomere V conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere IV and encircles mesotarsomere V." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: mesotarsomere 4-mesotarsomere 5 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the mesotarsus, is encircled by mesotarsomere 4 and encircles mesotarsomere 5." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000312 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles mesotarsomere V
-relationship: AISM:0000079 AISM:0000311 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere IV
+relationship: AISM:0000078 AISM:0000312 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles mesotarsomere 5
+relationship: AISM:0000079 AISM:0000311 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by mesotarsomere 4
 relationship: part_of AISM:0004189 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsus
 
 [Term]
 id: AISM:0000327
-name: metatarsomere I-metatarsomere II conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the metatarsus, is encircled by metatarsomere I and encircles metatarsomere II." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: metatarsomere 1-metatarsomere 2 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the metatarsus, is encircled by metatarsomere 1 and encircles metatarsomere 2." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000315 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles metatarsomere II
-relationship: AISM:0000079 AISM:0000314 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere I
+relationship: AISM:0000078 AISM:0000315 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles metatarsomere 2
+relationship: AISM:0000079 AISM:0000314 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere 1
 relationship: part_of AISM:0004188 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsus
 
 [Term]
 id: AISM:0000328
-name: metatarsomere II-metatarsomere III conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the metatarsus, is encircled by metatarsomere II and encircles metatarsomere III." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: metatarsomere 2-metatarsomere 3 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the metatarsus, is encircled by metatarsomere 2 and encircles metatarsomere 3." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000316 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles metatarsomere III
-relationship: AISM:0000079 AISM:0000315 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere II
+relationship: AISM:0000078 AISM:0000316 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles metatarsomere 3
+relationship: AISM:0000079 AISM:0000315 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere 2
 relationship: part_of AISM:0004188 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsus
 
 [Term]
 id: AISM:0000329
-name: metatarsomere III-metatarsomere IV conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the metatarsus, is encircled by metatarsomere III and encircles metatarsomere IV." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: metatarsomere 3-metatarsomere 4 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the metatarsus, is encircled by metatarsomere 3 and encircles metatarsomere 4." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000317 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles metatarsomere IV
-relationship: AISM:0000079 AISM:0000316 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere III
+relationship: AISM:0000078 AISM:0000317 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles metatarsomere 4
+relationship: AISM:0000079 AISM:0000316 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere 3
 relationship: part_of AISM:0004188 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsus
 
 [Term]
 id: AISM:0000330
-name: metatarsomere IV-metatarsomere V conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The conjunctiva that is part of the metatarsus, is encircled by metatarsomere IV and encircles metatarsomere V." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+name: metatarsomere 4-metatarsomere 5 conjunctiva {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The conjunctiva that is part of the metatarsus, is encircled by metatarsomere 4 and encircles metatarsomere 5." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! conjunctiva
-relationship: AISM:0000078 AISM:0000318 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles metatarsomere V
-relationship: AISM:0000079 AISM:0000317 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere IV
+relationship: AISM:0000078 AISM:0000318 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircles metatarsomere 5
+relationship: AISM:0000079 AISM:0000317 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! encircled by metatarsomere 4
 relationship: part_of AISM:0004188 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsus
 
 [Term]
 id: AISM:0000331
 name: protarsus with 5 protarsomeres {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
-def: "The protarsus that is composed by protarsomeres 1-5." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
+def: "The protarsus with protarsomeres 1-5." [] {terms:modified="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0004190 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsus
-relationship: has_part AISM:0000302 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere I
-relationship: has_part AISM:0000303 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere II
-relationship: has_part AISM:0000304 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere III
-relationship: has_part AISM:0000305 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere IV
-relationship: has_part AISM:0000306 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere V
+relationship: has_part AISM:0000302 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere 1
+relationship: has_part AISM:0000303 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere 2
+relationship: has_part AISM:0000304 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere 3
+relationship: has_part AISM:0000305 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere 4
+relationship: has_part AISM:0000306 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! protarsomere 5
 
 [Term]
 id: AISM:0000332
 name: mesotarsus with 5 mesotarsomeres {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 def: "The mesotarsus that is composed by mesotarsomeres 1-5." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0004189 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsus
-relationship: has_part AISM:0000308 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere I
-relationship: has_part AISM:0000309 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere II
-relationship: has_part AISM:0000310 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere III
-relationship: has_part AISM:0000311 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere IV
-relationship: has_part AISM:0000312 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere V
+relationship: has_part AISM:0000308 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere 1
+relationship: has_part AISM:0000309 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere 2
+relationship: has_part AISM:0000310 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere 3
+relationship: has_part AISM:0000311 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere 4
+relationship: has_part AISM:0000312 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! mesotarsomere 5
 
 [Term]
 id: AISM:0000333
 name: metatarsus with 5 metatarsomeres {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 def: "The metatarsus that is composed by metatarsomeres 1-5." [] {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"}
 is_a: AISM:0004188 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsus
-relationship: has_part AISM:0000314 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere I
-relationship: has_part AISM:0000315 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere II
-relationship: has_part AISM:0000316 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere III
-relationship: has_part AISM:0000317 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere IV
-relationship: has_part AISM:0000318 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere V
+relationship: has_part AISM:0000314 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere 1
+relationship: has_part AISM:0000315 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere 2
+relationship: has_part AISM:0000316 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere 3
+relationship: has_part AISM:0000317 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere 4
+relationship: has_part AISM:0000318 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-05-05"} ! metatarsomere 5
 
 [Term]
 id: AISM:0000334
@@ -2171,6 +2191,11 @@ is_a: AISM:0004064 ! paramere
 property_value: IAO:0000589 "cuticle of right paramere" xsd:string {creation_date="2023-04-15"}
 
 [Term]
+id: AISM:0000374
+name: tibial margin {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-16"}
+def: "The anatomical margin that is part of the tibia." [] {dc:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2025-03-16"}
+
+[Term]
 id: AISM:0000375
 name: anterior groove of tergite VIII {creation_date="2023-06-04", IAO:0000232="Modified and moved from COLAO to AISM: 2023-05-08\ngmontanaro https://orcid.org/0000-0003-0836-1364", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 def: "The cuticular groove that is parallel and distal to the proximal carina of tergite VIII." [] {creation_date="2023-06-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
@@ -2189,7 +2214,7 @@ id: AISM:0000377
 name: proximal carina of tergite VIII {creation_date="2023-06-04", IAO:0000232="Moved from COLAO to AISM: 2023-05-08\ngmontanaro https://orcid.org/0000-0003-0836-1364", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 def: "The cuticular carina that is located on the proximal margin of the 8th tergite and is parallel to the left-right body axis." [] {creation_date="2023-06-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 synonym: "pygidium basal ridge" EXACT [] {creation_date="2023-06-04", AISM:0000171="Tarasov, S. I., & Solodovnikov, A. Y. (2011). Phylogenetic analyses reveal reliable morphological markers to classify mega‐diversity in Onthophagini dung beetles (Coleoptera: Scarabaeidae: Scarabaeinae). Cladistics, 27(5), 490-528. https://doi.org/10.1111/j.1096-0031.2011.00351.x\n \nPage 526, character 30", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-is_a: AISM:0000501 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-06-04"} ! cuticular carina
+is_a: AISM:0000180 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-06-04"} ! tergal carina
 property_value: curator_notes "In Scarabaeinae, this carina (when present) is located in the proximalmost margin of the surface of the 8th tergite (pygidium) that is not covered by elytra." xsd:string {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-06-04"}
 
 [Term]
@@ -2206,10 +2231,10 @@ is_a: AISM:0000524 ! cuticular puncture
 
 [Term]
 id: AISM:0000380
-name: distal carina of tergite VIII {creation_date="2023-06-04", IAO:0000232="Moved from COLAO to AISM: 2023-05-08\ngmontanaro https://orcid.org/0000-0003-0836-1364", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The cuticular carina that is located along the distal margin of abdominal tergite VIII." [] {creation_date="2023-06-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+name: posterior carina of tergite VIII {creation_date="2023-06-04", IAO:0000232="Moved from COLAO to AISM: 2023-05-08\ngmontanaro https://orcid.org/0000-0003-0836-1364", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The cuticular carina that is located along the posterior margin of abdominal tergite VIII." [] {creation_date="2023-06-04", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 synonym: "ribordo del margine ventrale del pigidio" EXACT [] {creation_date="2023-06-04", AISM:0000171="Marchisio, R., & Zunino, M. E. (2012). Il genere Copris Müller. Tassonomia, filogenesi e note di zoogeografia (Vol. 2, pp. 1-176). world biodiversity association onlus.\n\nPage 26", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-is_a: AISM:0000501 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-06-04"} ! cuticular carina
+is_a: AISM:0000180 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-06-04"} ! tergal carina
 
 [Term]
 id: AISM:0000381
@@ -2367,6 +2392,264 @@ id: AISM:0000412
 name: cuticle with setigerous punctures {creation_date="2023-12-03", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 def: "The region of the insect cuticle that is covered by a collection of setigerous cuticular punctures." [] {creation_date="2023-12-03", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000174 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2023-12-03"} ! insect region of cuticle
+
+[Term]
+id: AISM:0000413
+name: distal region of tergite VIII {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The region of the cuticle of tergite VIII that is posterior to the posterior carina of tergite VIII and anterior to the tergite's distal margin." [] {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000174 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! insect region of cuticle
+relationship: part_of AISM:0004097 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! abdominal tergite VIII
+relationship: posterior_to AISM:0000380 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! posterior carina of tergite VIII
+
+[Term]
+id: AISM:0000414
+name: clypeal margin between clypeal teeth 1 and 2 {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The bilaterally paired anatomical margin part of the anterior region of the clypeal margin that is lateral to lateral clypeal teeth 1 and medial to latera clypeal tooth 2." [] {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000385 ! clypeal margin
+relationship: AISM:0000011 AISM:0000362 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! lateral_to lateral clypeal tooth 1
+relationship: AISM:0000012 AISM:0000363 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! medial_to lateral clypeal tooth 2
+
+[Term]
+id: AISM:0000415
+name: clypeal margin between clypeal teeth 1 {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The not bilaterally paired anatomical margin part of the of the anterior region of the clypeal margin that is adjacent to lateral clypeal tooth 1 but not adjacent to the medial clypeal tooth." [] {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000385 ! clypeal margin
+relationship: adjacent_to AISM:0000362 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! lateral clypeal tooth 1
+
+[Term]
+id: AISM:0000416
+name: clypeal margin between clypeal tooth 1 and medial clypeal tooth {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The bilaterally paired anatomical margin part of the anterior region of the clypeal margin that is lateral to lateral clypeal tooth 1 and medial to latera clypeal tooth 2." [] {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000385 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! clypeal margin
+relationship: AISM:0000011 AISM:0000362 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! lateral_to lateral clypeal tooth 1
+relationship: AISM:0000012 AISM:0000363 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! medial_to lateral clypeal tooth 2
+
+[Term]
+id: AISM:0000417
+name: dorsal protibial margin between protibial teeth 1 and 2 {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical margin part of the dorsal protibial margin that is proximal to dorsal protibial cuticular tooth 1 and distal to dorsal protibial cuticular tooth 2." [] {creation_date="2025-02-21", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000374 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! tibial margin
+relationship: distal_to AISM:0000369 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! dorsal protibial cuticular tooth 2
+relationship: proximal_to AISM:0000368 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-21"} ! dorsal protibial cuticular tooth 1
+
+[Term]
+id: AISM:0000418
+name: dorsal protibial margin between protibial teeth 2 and 3 {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical margin part of the dorsal protibial margin that is proximal to dorsal protibial cuticular tooth 2 and distal to dorsal protibial cuticular tooth 3." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000374 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! tibial margin
+relationship: distal_to AISM:0000370 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! dorsal protibial cuticular tooth 3
+relationship: proximal_to AISM:0000369 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! dorsal protibial cuticular tooth 2
+
+[Term]
+id: AISM:0000419
+name: dorsal protibial margin between protibial teeth 3 and 4 {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical margin part of the dorsal protibial margin that is proximal to dorsal protibial cuticular tooth 3 and distal to dorsal protibial cuticular tooth 4." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000374 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! tibial margin
+relationship: distal_to AISM:0000371 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! dorsal protibial cuticular tooth 4
+relationship: proximal_to AISM:0000370 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! dorsal protibial cuticular tooth 3
+
+[Term]
+id: AISM:0000420
+name: dorsal protibial margin proximal to protibial tooth 4 {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical margin part of the dorsal protibial margin that is proximal to dorsal protibial cuticular tooth 4 and distal to the profemoro-protibial conjunctiva." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000374 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! tibial margin
+relationship: distal_to AISM:0004179 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! profemoro-protibial conjunctiva
+relationship: proximal_to AISM:0000371 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! dorsal protibial cuticular tooth 4
+
+[Term]
+id: AISM:0000421
+name: dorsal protibial margin between protibial spur and protibial tooth 1 {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical margin part of the dorsal protibial margin that is proximal to the protibial spur and distal to the dorsal protibial cuticular tooth 1." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000374 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! tibial margin
+relationship: distal_to AISM:0000368 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! dorsal protibial cuticular tooth 1
+relationship: proximal_to AISM:0000371 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! dorsal protibial cuticular tooth 4
+
+[Term]
+id: AISM:0000422
+name: protibial spur {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The cuticular spur that is encircled by the protibio-protarsal spur conjunctiva." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000181 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! tibial spur
+relationship: AISM:0000079 AISM:0000423 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! encircled by protibio-protibial spur conjunctiva
+
+[Term]
+id: AISM:0000423
+name: protibio-protibial spur conjunctiva {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The conjunctiva that enricles the protibial spur and is encircled by the protibia." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! conjunctiva
+relationship: AISM:0000078 AISM:0000422 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! encircles protibial spur
+relationship: AISM:0000079 AISM:0000067 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! encircled by protibia
+
+[Term]
+id: AISM:0000424
+name: mesotibial carina {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The tibial carina that is part of the mesotibia." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000199 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! tibial carina
+relationship: part_of AISM:0000068 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! mesotibia
+
+[Term]
+id: AISM:0000425
+name: metatibial carina {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The tibial carina that is part of the metatibia." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000199 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! tibial carina
+relationship: part_of AISM:0000069 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! metatibia
+
+[Term]
+id: AISM:0000426
+name: mesotibial posteroventral carina {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The mesotibial carina that is located in the postero-ventral region of the mesotibia." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000424 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! mesotibial carina
+
+[Term]
+id: AISM:0000427
+name: mesotibial anteroventral carina {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The mesotibial carina that is located in the antero-ventral region of the mesotibia." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000424 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! mesotibial carina
+
+[Term]
+id: AISM:0000428
+name: mesotibial anterodorsal carina {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The mesotibial carina that is located in the antero-dorsal region of the mesotibia." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000424 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! mesotibial carina
+
+[Term]
+id: AISM:0000429
+name: mesotibial posterodorsal carina {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The mesotibial carina that is located in the postero-dorsal region of the mesotibia." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000424 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! mesotibial carina
+
+[Term]
+id: AISM:0000430
+name: metatibial posteroventral carina {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The mesotibial carina that is located in the antero-dorsal region of the mesotibia." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000425 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! metatibial carina
+
+[Term]
+id: AISM:0000431
+name: metatibial anteroventral carina {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The metatibial carina that is located in the postero-ventral region of the metatibia." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000425 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! metatibial carina
+
+[Term]
+id: AISM:0000432
+name: metatibial anterodorsal carina {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The metatibial carina that is located in the antero-dorsal region of the metatibia." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000425 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! metatibial carina
+
+[Term]
+id: AISM:0000433
+name: metatibial posterodorsal carina {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The metatibial carina that is located in the postero-dorsal region of the metatibia." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000425 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! metatibial carina
+
+[Term]
+id: AISM:0000434
+name: mesotibial spur {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The cuticular spur encircled by the mesotibio-mesotibial spur conjunctiva." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000181 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! tibial spur
+relationship: AISM:0000079 AISM:0000436 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! encircled by mesotibio-mesotibial spur conjunctiva
+
+[Term]
+id: AISM:0000435
+name: metatibial spur {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The cuticular spur encircled by the metatibio-metatibial spur conjunctiva." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000181 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! tibial spur
+relationship: AISM:0000079 AISM:0000437 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! encircled by metatibio-metatibial spur conjunctiva
+
+[Term]
+id: AISM:0000436
+name: mesotibio-mesotibial spur conjunctiva {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The conjunctiva that enricles the mesotibial spur and is encircled by the mesotibia." [] {creation_date="2025-02-27", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! conjunctiva
+relationship: AISM:0000078 AISM:0000434 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! encircles mesotibial spur
+relationship: AISM:0000079 AISM:0000068 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-02-27"} ! encircled by mesotibia
+
+[Term]
+id: AISM:0000437
+name: metatibio-metatibial spur conjunctiva {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The conjunctiva that enricles the metatibial spur and is encircled by the metatibia." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000004 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! conjunctiva
+relationship: AISM:0000078 AISM:0000435 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! encircles metatibial spur
+relationship: AISM:0000079 AISM:0000069 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! encircled by metatibia
+
+[Term]
+id: AISM:0000438
+name: line connecting anterior margins of eyes {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical line parallel to the left-right body axis that is adjacent to the anterior margins of the eyes." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+
+[Term]
+id: AISM:0000439
+name: line connecting posterior margins of eyes {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical line parallel to the left-right body axis that is adjacent to the posterior margins of the eyes." [] {creation_date="2025-03-10", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+
+[Term]
+id: AISM:0000440
+name: protarsus with 4 protarsomeres {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The protarsus with protarsomeres 1-4, without protarsomere 5." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0004190 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! protarsus
+relationship: has_part AISM:0000302 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! protarsomere 1
+relationship: has_part AISM:0000303 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! protarsomere 2
+relationship: has_part AISM:0000304 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! protarsomere 3
+relationship: has_part AISM:0000305 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! protarsomere 4
+
+[Term]
+id: AISM:0000441
+name: protibial carina {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The tibial carina that is part of the protibia." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000199 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! tibial carina
+relationship: part_of AISM:0000067 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! protibia
+
+[Term]
+id: AISM:0000442
+name: protibial anteroventral carina {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The protibial carina that is located in the antero-ventral region of the protibia." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000441 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! protibial carina
+
+[Term]
+id: AISM:0000443
+name: protibial posteroventral carina {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The protibial carina that is located in the postero-ventral region of the protibia." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000441 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! protibial carina
+
+[Term]
+id: AISM:0000444
+name: dorsal protibial margin proximal to protibial tooth 3 {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical margin part of the dorsal protibial margin that is proximal to dorsal protibial cuticular tooth 3 and distal to the profemoro-protibial conjunctiva." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000374 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! tibial margin
+relationship: distal_to AISM:0004179 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! profemoro-protibial conjunctiva
+relationship: proximal_to AISM:0000370 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! dorsal protibial cuticular tooth 3
+
+[Term]
+id: AISM:0000445
+name: line adjacent to mesotarsomeres 2-4 of mesotarsus with 5 mesotarsomeres {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical line parallel to the proximal-distal axis that is adjacent to: 1) the proximal margin of mesotarsomere 2 of mesotarsus with 5 mesotarsomeres; and 2) the distal margin of mesotarsomere 4 of mesotarsus with 5 mesotarsomeres." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+
+[Term]
+id: AISM:0000446
+name: dorsal mesotibial spur {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The mesotibial spur that is located on the dorsal side of the tibial distal margin and is dorsal to the ventral protibial spur." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000434 ! mesotibial spur
+
+[Term]
+id: AISM:0000447
+name: ventral mesotibial spur {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The mesotibial spur that is located on the ventral side of the tibial distal margin and is ventral to the dorsal protibial spur." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000434 ! mesotibial spur
+
+[Term]
+id: AISM:0000448
+name: line adjacent to mesotarsomeres 2-5 of mesotarsus with 5 mesotarsomeres {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical line parallel to the proximal-distal axis that is adjacent to: 1) the proximal margin of mesotarsomere 2 of mesotarsus with 5 mesotarsomeres; and 2) the distal margin of mesotarsomere 5 of mesotarsus with 5 mesotarsomeres." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+
+[Term]
+id: AISM:0000449
+name: line connecting medial margin of eyes {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The anatomical line parallel to the left-right body axis that is adjacent to the medial margins of the eyes." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+
+[Term]
+id: AISM:0000450
+name: membranous dorsodistal region of paramere {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The dorsodistal region of the cuticle of the paramere which has decreased thickness." [] {creation_date="2025-03-11", dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+is_a: AISM:0000174 {dc:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-11"} ! insect region of cuticle
 
 [Term]
 id: AISM:0000501
@@ -5726,6 +6009,12 @@ range: AISM:0000003 ! insect sclerite
 is_a: AISM:0000079 ! encircled by
 
 [Typedef]
+id: BSPO:0001102
+name: parallel to
+namespace: spatial
+def: "x is parallel t y iff x and y are lines or planes which when extended indefinitely do not cross." [BSPO:curators]
+
+[Typedef]
 id: RO:0001018
 name: obsolete contained in
 property_value: IAO:0000111 "contained in" xsd:string
@@ -6046,6 +6335,20 @@ property_value: IAO:0000118 "has_part" xsd:string
 property_value: RO:0001900 RO:0001901
 is_transitive: true
 is_a: overlaps ! overlaps
+
+[Typedef]
+id: has_quality
+name: has quality
+name: has_quality
+namespace: protein
+namespace: uberon
+def: "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence" []
+xref: RO:0000086
+property_value: IAO:0000112 "this apple has quality this red color" xsd:string
+property_value: IAO:0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist." xsd:string
+property_value: IAO:0000118 "has_quality" xsd:string
+is_transitive: false
+is_a: has_characteristic ! has characteristic
 
 [Typedef]
 id: in_distal_side_of
