@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2025-03-18/aism-base.owl
+data-version: aism/releases/2026-01-28/aism-base.owl
 subsetdef: AISM:0000171 ""
 idspace: cito http://purl.org/spar/cito/ 
 idspace: doap http://usefulinc.com/ns/doap# 
@@ -17,7 +17,7 @@ ontology: aism/aism-base
 property_value: IAO:0000700 "http://purl.obolibrary.org/obo/AISM_0000174" xsd:string
 property_value: IAO:0000700 "http://purl.obolibrary.org/obo/PATO_0000001" xsd:string
 property_value: IAO:0000700 "http://purl.obolibrary.org/obo/UBERON_0001062" xsd:string
-property_value: owl:versionInfo "2025-03-18" xsd:string
+property_value: owl:versionInfo "2026-01-28" xsd:string
 property_value: term:license https://creativecommons.org/licenses/by/4.0/
 property_value: x_1.1:contributor "Giulio Montanaro (gmontanaro) https://orcid.org/0000-0003-0836-1364" xsd:string
 property_value: x_1.1:contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
@@ -399,7 +399,6 @@ relationship: BSPO:0000096 AISM:0000044 {x_1.1:contributor="imiko https://orcid.
 relationship: BSPO:0000099 AISM:0000042 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! labrum
 relationship: RO:0000053 PATO:0040024 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 relationship: RO:0002150 AISM:0000082 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! cranio-mandibular muscle
-relationship: RO:0002150 AISM:0000099 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! oral foraminal conjunctiva
 relationship: RO:0002220 AISM:0000019 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! head capsule
 property_value: IAO:0000589 "cuticle of insect mandible" xsd:string {creation_date="2023-04-13"}
 
@@ -1043,7 +1042,6 @@ def: "The conjunctiva that encircles the base of the antenna (scape) and is enci
 is_a: AISM:0000004 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! conjunctiva
 relationship: AISM:0000078 AISM:0000113 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircles scapus
 relationship: AISM:0000079 AISM:0000019 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! encircled by head capsule
-relationship: RO:0002150 AISM:0000019 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! head capsule
 
 [Term]
 id: AISM:0000113
@@ -1480,7 +1478,6 @@ def: "The conjunctiva is encircled by a tarsomere that encircles another tarsome
 is_a: AISM:0000102 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! ring conjunctiva
 relationship: AISM:0000078 AISM:0000074 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles tarsomere
 relationship: AISM:0000079 AISM:0000074 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by tarsomere
-relationship: RO:0002150 AISM:0000074 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarsomere
 
 [Term]
 id: AISM:0000173
@@ -4322,7 +4319,6 @@ relationship: RO:0002150 AISM:0004097 {x_1.1:contributor="jgiron https://orcid.o
 
 [Term]
 id: AISM:0004099
-name: laterotergite {AISM:0000171="Lawrence J, Ślipiński A (2013) 1 Australian beetles volume 1: morphology, classification and keys. CSIRO Publishing, 520 pp. \n\nhttps://www.publish.csiro.au/book/6466/\n\nadditional pair of sclerites flanking each tergite"}
 name: laterotergite {AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Laterotergite: separate lateral portion of abdominal tergum (only few groups).\""}
 def: "The sclerite of the insect thorax or the insect abdomen that is on the lateral region of the notum." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-04-05"}
 synonym: "paranota" EXACT [] {AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Paranota (=laterotergites): dorsolateral tergal duplicatures.\""}
